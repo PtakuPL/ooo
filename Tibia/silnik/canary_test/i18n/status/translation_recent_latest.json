@@ -1,8 +1,129 @@
 {
-  "timestamp": "2026-04-29T20:17:39.509874Z",
-  "language": "es",
-  "json_file": "server.json",
-  "translated": 0,
-  "entries": [],
+  "timestamp": "2026-04-29T20:21:53.179100Z",
+  "language": "tr",
+  "json_file": "items.json",
+  "translated": 30,
+  "entries": [
+    {
+      "key": "item.14373.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14374.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14375.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14376.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14377.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14378.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14379.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.1438.name",
+      "en": "ornamented wall",
+      "translated": "süslü duvar",
+      "source": "simple"
+    },
+    {
+      "key": "item.14380.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14381.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14382.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14383.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14384.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14385.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14386.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14387.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14388.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.14389.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    },
+    {
+      "key": "item.1439.name",
+      "en": "wall fountain",
+      "translated": "duvar çeşme",
+      "source": "simple"
+    },
+    {
+      "key": "item.14390.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
+    }
+  ],
   "filtered_untranslated_marker": 0
 }

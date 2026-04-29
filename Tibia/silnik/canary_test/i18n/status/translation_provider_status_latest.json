@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:20:00.735599Z",
-  "active_provider": "Free Google Translate",
-  "active_provider_code": "free_google_translate",
-  "active_provider_source": "google_translate",
-  "active_provider_timestamp": "2026-04-29T20:14:31.775995Z",
+  "generated_at_utc": "2026-04-29T20:22:17.431266Z",
+  "active_provider": "TM/simple",
+  "active_provider_code": "tm_simple",
+  "active_provider_source": "simple",
+  "active_provider_timestamp": "2026-04-29T20:21:53.179100Z",
   "active_model": "openai/gpt-4.1-mini",
   "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -69,7 +69,7 @@
       "provider_consistency_debt:305"
     ],
     "provider_consistency_debt": 305,
-    "recent_window_writes": 542,
+    "recent_window_writes": 558,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
@@ -79,12 +79,12 @@
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 186
+        "writes": 204
       },
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 98
+        "writes": 96
       },
       {
         "provider": "canonical_name_semantic_autofix",
@@ -118,12 +118,12 @@
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 186
+        "recent_writes": 204
       },
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 98
+        "recent_writes": 96
       },
       "google_cloud": {
         "status": "disabled",
@@ -245,7 +245,7 @@
       "used_pct": 60.8,
       "monthly_cap": 250.0,
       "spent": 152.0,
-      "latest_age_s": 779.913002,
+      "latest_age_s": 959.141927,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:20:01.765909Z",
+  "generated_at_utc": "2026-04-29T20:22:17.843754Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,7 +9,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 20:19:55"
+      "last_update": "2026-04-29 20:22:12"
     },
     "LIVE": {
       "state": "active",
@@ -17,31 +17,31 @@
       "reason": "",
       "freshness": "2min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T20:17:43Z"
+      "last_update": "2026-04-29T20:19:38Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "1min temu",
+      "freshness": "47s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 20:19:55"
+      "last_update": "2026-04-29 20:22:12"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "5min temu",
+      "freshness": "20s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-04-29T20:14:48.436234Z"
+      "last_update": "2026-04-29T20:21:57.453399Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "2min temu",
+      "freshness": "19s temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-04-29T20:17:43.107403Z"
+      "last_update": "2026-04-29T20:21:58.342178Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 20:19:55"
+      "last_update": "2026-04-29 20:22:12"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,28 +57,39 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T20:20:01.764348Z"
+      "last_update": "2026-04-29T20:22:17.842192Z"
     }
   },
   "operator_panels": {
     "worker_live": {
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
-      "stage": "heartbeat_tick",
-      "category": "tr",
+      "stage": "dispatch",
+      "category": "ru",
       "json_file": "items.json",
-      "current_lang": "tr",
-      "current_lang_name": "Turecki",
+      "current_lang": "ru",
+      "current_lang_name": "Rosyjski",
       "current_scope": "Serwer",
-      "detail": "auto translate in progress",
-      "current_key": "tr:items.json",
-      "heartbeat_at": "2026-04-29T20:17:43Z",
-      "heartbeat_age_s": 60,
-      "cycle": 18784
+      "detail": "cycle end",
+      "current_key": "ru:items.json",
+      "heartbeat_at": "2026-04-29T20:19:38Z",
+      "heartbeat_age_s": 121,
+      "cycle": 18787
     },
     "recent_writes": {
       "count": 17,
       "items": [
+        {
+          "timestamp": "2026-04-29T20:21:53.179100Z",
+          "lang": "tr",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 30,
+          "sample_source": "simple",
+          "sample_key": "item.14373.name",
+          "sample_text": "AYRILMIŞ SPRİTE",
+          "physical_verified": true
+        },
         {
           "timestamp": "2026-04-29T20:14:31.775995Z",
           "lang": "de",
@@ -253,17 +264,6 @@
           "sample_source": "simple",
           "sample_key": "item.14319.name",
           "sample_text": "AYRILMIŞ SPRİTE",
-          "physical_verified": true
-        },
-        {
-          "timestamp": "2026-04-29T18:24:41.245473Z",
-          "lang": "de",
-          "json_file": "npc.json",
-          "surface": "Serwer",
-          "translated": 30,
-          "sample_source": "tm",
-          "sample_key": "npc.a_majestic_warwolf.say_2",
-          "sample_text": "Ich kann in deinen Augen sehen, dass du ein ehrlicher und freundlicher Mensch bist, \\...",
           "physical_verified": true
         }
       ],
@@ -540,7 +540,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:19:59.285498Z",
+      "generated_at_utc": "2026-04-29T20:22:16.413231Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -632,8 +632,8 @@
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T20:19:59.285498Z",
-        "oldest_timestamp": "2026-04-28T20:21:03.993667Z",
+        "latest_timestamp": "2026-04-29T20:22:16.413231Z",
+        "oldest_timestamp": "2026-04-28T20:23:35.901766Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2302,12 +2302,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:19:59.728943Z",
+      "generated_at_utc": "2026-04-29T20:22:16.437320Z",
       "window": {
         "trend_hours": 24,
         "samples": 1053,
-        "window_start_utc": "2026-04-28T20:21:04.011500Z",
-        "window_end_utc": "2026-04-29T20:19:59.728943Z"
+        "window_start_utc": "2026-04-28T20:23:35.919601Z",
+        "window_end_utc": "2026-04-29T20:22:16.437320Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2323,7 +2323,7 @@
         "server": {
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 410558,
+          "real_translated_keys": 410588,
           "coverage_real_pct": 11.4,
           "langs_count": 51,
           "delta_24h_pp": 0.57,
@@ -2345,8 +2345,8 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z"
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z"
         },
         "website": {
           "label": "Website",
@@ -2373,8 +2373,8 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z"
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2401,8 +2401,8 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z"
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z"
         },
         "installer": {
           "label": "Installer",
@@ -2429,8 +2429,8 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z"
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z"
         }
       },
       "ranking": [
@@ -2460,8 +2460,8 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z",
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z",
           "rank": 1
         },
         {
@@ -2490,15 +2490,15 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z",
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z",
           "rank": 2
         },
         {
           "surface": "server",
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 410558,
+          "real_translated_keys": 410588,
           "coverage_real_pct": 11.4,
           "langs_count": 51,
           "delta_24h_pp": 0.57,
@@ -2520,8 +2520,8 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z",
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z",
           "rank": 3
         },
         {
@@ -2550,15 +2550,15 @@
             }
           ],
           "trend_samples": 1053,
-          "window_oldest_utc": "2026-04-28T20:21:04.011500Z",
-          "window_latest_utc": "2026-04-29T20:19:59.728943Z",
+          "window_oldest_utc": "2026-04-28T20:23:35.919601Z",
+          "window_latest_utc": "2026-04-29T20:22:16.437320Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:19:59.754326Z",
+      "generated_at_utc": "2026-04-29T20:22:16.461444Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2616,7 +2616,7 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1696,
+          "wave_history_rows_total": 1698,
           "wave_history_rows_window": 1053,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
@@ -2635,17 +2635,17 @@
         "quality_trend_24h": {
           "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
           "pass": true,
-          "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T20:18:48.783513Z",
-          "window_end_utc": "2026-04-29T20:19:59.754326Z",
-          "window_span_hours": 24.02,
+          "window_start_utc": "2026-04-28T20:21:48.848270Z",
+          "window_end_utc": "2026-04-29T20:22:16.461444Z",
+          "window_span_hours": 24.01,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
               "samples": 1055,
-              "oldest_timestamp": "2026-04-28T20:18:48.783513Z",
-              "latest_timestamp": "2026-04-29T20:19:59.754326Z",
+              "oldest_timestamp": "2026-04-28T20:21:48.848270Z",
+              "latest_timestamp": "2026-04-29T20:22:16.461444Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2656,8 +2656,8 @@
             },
             "otclient_modules.json": {
               "samples": 1055,
-              "oldest_timestamp": "2026-04-28T20:18:48.783513Z",
-              "latest_timestamp": "2026-04-29T20:19:59.754326Z",
+              "oldest_timestamp": "2026-04-28T20:21:48.848270Z",
+              "latest_timestamp": "2026-04-29T20:22:16.461444Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2719,11 +2719,11 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:20:00.735599Z",
-      "active_provider": "Free Google Translate",
-      "active_provider_code": "free_google_translate",
-      "active_provider_source": "google_translate",
-      "active_provider_timestamp": "2026-04-29T20:14:31.775995Z",
+      "generated_at_utc": "2026-04-29T20:22:17.431266Z",
+      "active_provider": "TM/simple",
+      "active_provider_code": "tm_simple",
+      "active_provider_source": "simple",
+      "active_provider_timestamp": "2026-04-29T20:21:53.179100Z",
       "active_model": "openai/gpt-4.1-mini",
       "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -2788,7 +2788,7 @@
           "provider_consistency_debt:305"
         ],
         "provider_consistency_debt": 305,
-        "recent_window_writes": 542,
+        "recent_window_writes": 558,
         "recent_write_breakdown": [
           {
             "provider": "openai_model_pool",
@@ -2798,12 +2798,12 @@
           {
             "provider": "tm_simple",
             "provider_label": "TM/simple",
-            "writes": 186
+            "writes": 204
           },
           {
             "provider": "free_google_translate",
             "provider_label": "Free Google Translate",
-            "writes": 98
+            "writes": 96
           },
           {
             "provider": "canonical_name_semantic_autofix",
@@ -2837,12 +2837,12 @@
         "providers": {
           "tm_simple": {
             "status": "active",
-            "recent_writes": 186
+            "recent_writes": 204
           },
           "free_google_translate": {
             "status": "active",
             "enabled": true,
-            "recent_writes": 98
+            "recent_writes": 96
           },
           "google_cloud": {
             "status": "disabled",
@@ -2964,7 +2964,7 @@
           "used_pct": 60.8,
           "monthly_cap": 250.0,
           "spent": 152.0,
-          "latest_age_s": 779.913002,
+          "latest_age_s": 959.141927,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3010,22 +3010,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:20:01.421863Z",
+      "generated_at_utc": "2026-04-29T20:22:17.504923Z",
       "available": true,
-      "lang": "es",
-      "json_file": "server.json",
-      "surface": "server",
+      "lang": "tr",
+      "json_file": "items.json",
+      "surface": "items",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 16620,
-      "keys_scanned": 0,
-      "keys_with_term_usages": 0,
-      "keys_with_conflicts": 0,
-      "term_conflicts_total": 0,
-      "term_conflict_rate_pct": 0.0,
-      "term_conflict_rate_delta_pct": 0.0,
+      "registry_terms_total": 8979,
+      "keys_scanned": 337,
+      "keys_with_term_usages": 125,
+      "keys_with_conflicts": 32,
+      "term_conflicts_total": 71,
+      "term_conflict_rate_pct": 25.6,
+      "term_conflict_rate_delta_pct": 25.6,
       "auto_fixed_english_name_leaks": 0,
-      "inflection_suspects_flagged": 0,
-      "manual_review_enqueued": 0,
+      "inflection_suspects_flagged": 1,
+      "manual_review_enqueued": 70,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3033,8 +3033,120 @@
       "canonical_name_existing_quality_sanitized": 0,
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
-      "conflict_type_breakdown": {},
-      "top_conflicts": []
+      "conflict_type_breakdown": {
+        "canonical_term_inflection_suspect": 1,
+        "canonical_term_missing": 70
+      },
+      "top_conflicts": [
+        {
+          "key": "item.10217.desc",
+          "conflict_type": "canonical_term_inflection_suspect",
+          "canonical": "kitap",
+          "canonical_en": "book",
+          "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
+          "source_file": "items.json",
+          "source_key": "item.12276.name"
+        },
+        {
+          "key": "item.10247.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.116.name"
+        },
+        {
+          "key": "item.10247.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.117.name"
+        },
+        {
+          "key": "item.10247.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.118.name"
+        },
+        {
+          "key": "item.10247.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.12763.name"
+        },
+        {
+          "key": "item.10247.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.12764.name"
+        },
+        {
+          "key": "item.10247.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.14166.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+          "source_file": "items.json",
+          "source_key": "item.116.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+          "source_file": "items.json",
+          "source_key": "item.117.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+          "source_file": "items.json",
+          "source_key": "item.118.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+          "source_file": "items.json",
+          "source_key": "item.12763.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+          "source_file": "items.json",
+          "source_key": "item.12764.name"
+        }
+      ]
     },
     "queue_health": {
       "blockers_state": "active",
@@ -3042,7 +3154,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 398,
-      "oldest_visible_pending_age_s": 23796,
+      "oldest_visible_pending_age_s": 23932,
       "top_langs": [
         {
           "lang": "ru",
@@ -3080,14 +3192,14 @@
         }
       ],
       "deferred_state_keys_total": 8918,
-      "deferred_state_updated_at": "2026-04-29T20:19:48.657130Z",
-      "deferred_state_age_s": 9,
+      "deferred_state_updated_at": "2026-04-29T20:21:56.122776Z",
+      "deferred_state_age_s": 18,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 15,
+        "suppressed_manual_review": 39,
         "deduped_ttl": 0,
-        "manual_review_escalations": 4,
+        "manual_review_escalations": 33,
         "partial_staged": 0,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
@@ -3096,7 +3208,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:20:01.764348Z",
+      "generated_at_utc": "2026-04-29T20:22:17.842192Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3111,16 +3223,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 60,
+          "value": 121,
           "threshold": 300,
-          "detail": "Heartbeat świeży (60s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=tr:items.json].",
+          "detail": "Heartbeat świeży (121s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=tr:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 329,
+          "value": 24,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3140,7 +3252,7 @@
           "severity": "warning",
           "value": {
             "pending": 398,
-            "oldest_s": 23796
+            "oldest_s": 23932
           },
           "threshold": {
             "pending_min": 200,
@@ -3177,7 +3289,7 @@
     },
     "doctor_remediation": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:17:57.333529Z",
+      "generated_at_utc": "2026-04-29T20:22:12.448573Z",
       "status": "ok",
       "open_alarms": [
         {
@@ -3202,23 +3314,16 @@
           "code": "SUSPICIOUS_HIGH_ELEVATED",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=922 rate=26.328% window=6.0h top_lang=es:363 per_lang=[es:363(77.399%/warning)] per_domain=[npc.json:230(61.17%/warning),server.json:130(1300.0%/warning)]"
-        },
-        {
-          "code": "TERM_CONSISTENCY_REGRESSION",
-          "severity": "critical",
-          "source": "statusd_doctor.json",
-          "detail": "TERM_CONSISTENCY_REGRESSION: rate=19.205% delta=19.205% total=86 source=term_conflicts_latest.json"
+          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=907 rate=26.071% window=6.0h top_lang=es:348 per_lang=[es:348(78.027%/warning)] per_domain=[npc.json:217(58.333%/warning),server.json:130(1300.0%/warning)]"
         }
       ],
       "resolved_this_cycle": [
-        "DISPATCH_STALE",
-        "GUARD_REPORT_STALE"
+        "TERM_CONSISTENCY_REGRESSION"
       ],
       "newly_opened": [],
       "summary": {
-        "open_count": 5,
-        "resolved_count": 2,
+        "open_count": 4,
+        "resolved_count": 1,
         "tracked_alarms": 32
       },
       "action_plan": {
@@ -3226,7 +3331,7 @@
         "selected_action": "none",
         "selected_command": "-",
         "result": "resolved_update",
-        "reason": "resolved_count=2",
+        "reason": "resolved_count=1",
         "suppressed_by_cooldown": true,
         "cooldown_remaining_cycles": 2
       }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:52:05.607492Z",
+  "generated_at_utc": "2026-04-29T22:54:40.510596Z",
   "summary": {
     "state": "in_progress",
     "state_label": "🟡 IN_PROGRESS",
@@ -58,8 +58,8 @@
       "required_waves": 3,
       "waves_observed": 0,
       "waves_considered": [],
-      "wave_history_rows_total": 1776,
-      "wave_history_rows_window": 1013,
+      "wave_history_rows_total": 1777,
+      "wave_history_rows_window": 1012,
       "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
       "stale_alerts_monitored": [
         "DLQ_GROWTH",
@@ -77,17 +77,17 @@
     "quality_trend_24h": {
       "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
       "pass": true,
-      "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+      "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
       "window_hours": 24,
-      "window_start_utc": "2026-04-28T22:51:39.317393Z",
-      "window_end_utc": "2026-04-29T22:52:05.607492Z",
-      "window_span_hours": 24.01,
+      "window_start_utc": "2026-04-28T22:53:32.140153Z",
+      "window_end_utc": "2026-04-29T22:54:40.510596Z",
+      "window_span_hours": 24.02,
       "has_min_24h_window": true,
       "files": {
         "client.json": {
-          "samples": 1015,
-          "oldest_timestamp": "2026-04-28T22:51:39.317393Z",
-          "latest_timestamp": "2026-04-29T22:52:05.607492Z",
+          "samples": 1014,
+          "oldest_timestamp": "2026-04-28T22:53:32.140153Z",
+          "latest_timestamp": "2026-04-29T22:54:40.510596Z",
           "oldest_identical_to_en_pct": 31.4,
           "latest_identical_to_en_pct": 31.4,
           "delta_identical_to_en_pct": 0.0,
@@ -97,9 +97,9 @@
           "trend_pass": true
         },
         "otclient_modules.json": {
-          "samples": 1015,
-          "oldest_timestamp": "2026-04-28T22:51:39.317393Z",
-          "latest_timestamp": "2026-04-29T22:52:05.607492Z",
+          "samples": 1014,
+          "oldest_timestamp": "2026-04-28T22:53:32.140153Z",
+          "latest_timestamp": "2026-04-29T22:54:40.510596Z",
           "oldest_identical_to_en_pct": 29.79,
           "latest_identical_to_en_pct": 29.79,
           "delta_identical_to_en_pct": 0.0,

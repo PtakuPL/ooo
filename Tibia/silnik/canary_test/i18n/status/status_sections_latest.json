@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:03:40.416215Z",
+  "generated_at_utc": "2026-04-29T19:06:08.001948Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,13 +9,13 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 19:03:33"
+      "last_update": "2026-04-29 19:06:00"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "28s temu",
+      "freshness": "2min temu",
       "source": "activity.json / worker_state.json",
       "last_update": "2026-04-29T19:03:12Z"
     },
@@ -23,25 +23,25 @@
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "1min temu",
+      "freshness": "45s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 19:03:33"
+      "last_update": "2026-04-29 19:06:00"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "5min temu",
+      "freshness": "31s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-04-29T18:57:51.365359Z"
+      "last_update": "2026-04-29T19:05:36.984663Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "1min temu",
+      "freshness": "30s temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-04-29T19:02:28.784701Z"
+      "last_update": "2026-04-29T19:05:37.923434Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 19:03:33"
+      "last_update": "2026-04-29 19:06:00"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,7 +57,7 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T19:03:40.414275Z"
+      "last_update": "2026-04-29T19:06:08.000171Z"
     }
   },
   "operator_panels": {
@@ -65,20 +65,31 @@
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
       "stage": "heartbeat_tick",
-      "category": "de",
-      "json_file": "npc.json",
-      "current_lang": "de",
-      "current_lang_name": "Niemiecki",
+      "category": "tr",
+      "json_file": "items.json",
+      "current_lang": "tr",
+      "current_lang_name": "Turecki",
       "current_scope": "Serwer",
-      "detail": "auto translate in progress",
-      "current_key": "de:npc.json",
+      "detail": "cycle end",
+      "current_key": "tr:items.json",
       "heartbeat_at": "2026-04-29T19:03:12Z",
-      "heartbeat_age_s": 22,
-      "cycle": 18761
+      "heartbeat_age_s": 130,
+      "cycle": 18764
     },
     "recent_writes": {
       "count": 17,
       "items": [
+        {
+          "timestamp": "2026-04-29T19:05:33.500592Z",
+          "lang": "de",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 33,
+          "sample_source": "tm",
+          "sample_key": "npc.a_sleeping_dragon.say_30",
+          "sample_text": "Wenn der Smaragd in die Kerbe gleitet, intensiviert sich das leuchtende Grün des Stei...",
+          "physical_verified": true
+        },
         {
           "timestamp": "2026-04-29T18:57:32.220311Z",
           "lang": "de",
@@ -253,17 +264,6 @@
           "sample_source": "openai:openai/gpt-4.1-mini",
           "sample_key": "item.14868.name",
           "sample_text": "маленькая басалт стена",
-          "physical_verified": true
-        },
-        {
-          "timestamp": "2026-04-29T17:55:27.496483Z",
-          "lang": "es",
-          "json_file": "npc.json",
-          "surface": "Serwer",
-          "translated": 4,
-          "sample_source": "tm",
-          "sample_key": "npc.barnabas_dee.say_5",
-          "sample_text": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dos...",
           "physical_verified": true
         }
       ],
@@ -540,7 +540,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:03:38.308394Z",
+      "generated_at_utc": "2026-04-29T19:06:05.439723Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -625,15 +625,15 @@
       },
       "trend_24h": {
         "window_hours": 24,
-        "samples": 1074,
-        "pass_samples": 1074,
+        "samples": 1075,
+        "pass_samples": 1075,
         "fail_samples": 0,
         "pass_rate_pct": 100.0,
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T19:03:38.308394Z",
-        "oldest_timestamp": "2026-04-28T19:06:00.131611Z",
+        "latest_timestamp": "2026-04-29T19:06:05.439723Z",
+        "oldest_timestamp": "2026-04-28T19:06:51.584780Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2302,12 +2302,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:03:38.508925Z",
+      "generated_at_utc": "2026-04-29T19:06:05.475886Z",
       "window": {
         "trend_hours": 24,
-        "samples": 1074,
-        "window_start_utc": "2026-04-28T19:06:00.149660Z",
-        "window_end_utc": "2026-04-29T19:03:38.508925Z"
+        "samples": 1075,
+        "window_start_utc": "2026-04-28T19:06:51.604097Z",
+        "window_end_utc": "2026-04-29T19:06:05.475886Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2323,7 +2323,7 @@
         "server": {
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 410384,
+          "real_translated_keys": 410387,
           "coverage_real_pct": 11.39,
           "langs_count": 51,
           "delta_24h_pp": 0.58,
@@ -2344,9 +2344,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z"
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z"
         },
         "website": {
           "label": "Website",
@@ -2372,9 +2372,9 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z"
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2400,9 +2400,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z"
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z"
         },
         "installer": {
           "label": "Installer",
@@ -2428,9 +2428,9 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z"
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z"
         }
       },
       "ranking": [
@@ -2459,9 +2459,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z",
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z",
           "rank": 1
         },
         {
@@ -2489,16 +2489,16 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z",
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z",
           "rank": 2
         },
         {
           "surface": "server",
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 410384,
+          "real_translated_keys": 410387,
           "coverage_real_pct": 11.39,
           "langs_count": 51,
           "delta_24h_pp": 0.58,
@@ -2519,9 +2519,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z",
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z",
           "rank": 3
         },
         {
@@ -2549,16 +2549,16 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1074,
-          "window_oldest_utc": "2026-04-28T19:06:00.149660Z",
-          "window_latest_utc": "2026-04-29T19:03:38.508925Z",
+          "trend_samples": 1075,
+          "window_oldest_utc": "2026-04-28T19:06:51.604097Z",
+          "window_latest_utc": "2026-04-29T19:06:05.475886Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:03:38.541227Z",
+      "generated_at_utc": "2026-04-29T19:06:05.507246Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2616,8 +2616,8 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1658,
-          "wave_history_rows_window": 1074,
+          "wave_history_rows_total": 1660,
+          "wave_history_rows_window": 1075,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
             "DLQ_GROWTH",
@@ -2637,15 +2637,15 @@
           "pass": true,
           "detail": "window=24.00h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T19:03:36.456712Z",
-          "window_end_utc": "2026-04-29T19:03:38.541227Z",
+          "window_start_utc": "2026-04-28T19:06:00.131611Z",
+          "window_end_utc": "2026-04-29T19:06:05.507246Z",
           "window_span_hours": 24.0,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
-              "samples": 1076,
-              "oldest_timestamp": "2026-04-28T19:03:36.456712Z",
-              "latest_timestamp": "2026-04-29T19:03:38.541227Z",
+              "samples": 1077,
+              "oldest_timestamp": "2026-04-28T19:06:00.131611Z",
+              "latest_timestamp": "2026-04-29T19:06:05.507246Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2655,9 +2655,9 @@
               "trend_pass": true
             },
             "otclient_modules.json": {
-              "samples": 1076,
-              "oldest_timestamp": "2026-04-28T19:03:36.456712Z",
-              "latest_timestamp": "2026-04-29T19:03:38.541227Z",
+              "samples": 1077,
+              "oldest_timestamp": "2026-04-28T19:06:00.131611Z",
+              "latest_timestamp": "2026-04-29T19:06:05.507246Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2719,11 +2719,11 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:03:39.965753Z",
-      "active_provider": "Free Google Translate",
-      "active_provider_code": "free_google_translate",
-      "active_provider_source": "google_translate",
-      "active_provider_timestamp": "2026-04-29T18:57:32.220311Z",
+      "generated_at_utc": "2026-04-29T19:06:07.122526Z",
+      "active_provider": "TM/simple",
+      "active_provider_code": "tm_simple",
+      "active_provider_source": "tm",
+      "active_provider_timestamp": "2026-04-29T19:05:33.500592Z",
       "active_model": "openai/gpt-4.1-mini",
       "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -2798,12 +2798,12 @@
           {
             "provider": "tm_simple",
             "provider_label": "TM/simple",
-            "writes": 185
+            "writes": 202
           },
           {
             "provider": "free_google_translate",
             "provider_label": "Free Google Translate",
-            "writes": 99
+            "writes": 82
           },
           {
             "provider": "canonical_name_semantic_autofix",
@@ -2837,12 +2837,12 @@
         "providers": {
           "tm_simple": {
             "status": "active",
-            "recent_writes": 185
+            "recent_writes": 202
           },
           "free_google_translate": {
             "status": "active",
             "enabled": true,
-            "recent_writes": 99
+            "recent_writes": 82
           },
           "google_cloud": {
             "status": "disabled",
@@ -2964,7 +2964,7 @@
           "used_pct": 48.8,
           "monthly_cap": 250.0,
           "spent": 122.0,
-          "latest_age_s": 887.41792,
+          "latest_age_s": 1031.976747,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3010,22 +3010,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:03:39.968227Z",
+      "generated_at_utc": "2026-04-29T19:06:07.534503Z",
       "available": true,
-      "lang": "es",
-      "json_file": "server.json",
-      "surface": "server",
+      "lang": "de",
+      "json_file": "npc.json",
+      "surface": "npc",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 16558,
-      "keys_scanned": 0,
-      "keys_with_term_usages": 0,
-      "keys_with_conflicts": 0,
-      "term_conflicts_total": 0,
-      "term_conflict_rate_pct": 0.0,
-      "term_conflict_rate_delta_pct": 0.0,
+      "registry_terms_total": 1980,
+      "keys_scanned": 427,
+      "keys_with_term_usages": 25,
+      "keys_with_conflicts": 6,
+      "term_conflicts_total": 11,
+      "term_conflict_rate_pct": 24.0,
+      "term_conflict_rate_delta_pct": 24.0,
       "auto_fixed_english_name_leaks": 0,
       "inflection_suspects_flagged": 0,
-      "manual_review_enqueued": 0,
+      "manual_review_enqueued": 11,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3033,8 +3033,111 @@
       "canonical_name_existing_quality_sanitized": 0,
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
-      "conflict_type_breakdown": {},
-      "top_conflicts": []
+      "conflict_type_breakdown": {
+        "canonical_term_missing": 5,
+        "english_name_leak": 6
+      },
+      "top_conflicts": [
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "items.json",
+          "source_key": "item.7174.name"
+        },
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "items.json",
+          "source_key": "item.7175.name"
+        },
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "Bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "monsters.json",
+          "source_key": "monster.bear.name"
+        },
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "Bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "monsters.json",
+          "source_key": "monster.old_bear.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_30",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Drachen",
+          "canonical_en": "Dragon",
+          "translated_text": "Ein majestätischer Drache ist im Schlaf von der Wärme und Energie von tausend Sonnen umgeben. Die Ruhe seines Anblicks lässt Sie sanft lächeln. ...",
+          "source_file": "monsters.json",
+          "source_key": "monster.dragon.name"
+        },
+        {
+          "key": "npc.angus.say_60",
+          "conflict_type": "english_name_leak",
+          "canonical": "stein",
+          "canonical_en": "stone",
+          "translated_text": "In the ruins of north-western Edron you should be able to find a memory stone. Good luck.",
+          "source_file": "items.json",
+          "source_key": "item.12007.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_1",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "items.json",
+          "source_key": "item.6.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_1",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "Slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "monsters.json",
+          "source_key": "monster.slime.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_2",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "items.json",
+          "source_key": "item.6.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_2",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "Slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "monsters.json",
+          "source_key": "monster.slime.name"
+        },
+        {
+          "key": "npc.cael.multi_4",
+          "conflict_type": "english_name_leak",
+          "canonical": "Drachen",
+          "canonical_en": "Dragon",
+          "translated_text": "On an interesting side note - there were some hints in the tome that the dragon kings themselves are somehow bound to the dragon emperor through the same kind o",
+          "source_file": "monsters.json",
+          "source_key": "monster.dragon.name"
+        }
+      ]
     },
     "queue_health": {
       "blockers_state": "active",
@@ -3042,7 +3145,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 399,
-      "oldest_visible_pending_age_s": 20588,
+      "oldest_visible_pending_age_s": 20736,
       "top_langs": [
         {
           "lang": "ru",
@@ -3080,14 +3183,14 @@
         }
       ],
       "deferred_state_keys_total": 8885,
-      "deferred_state_updated_at": "2026-04-29T19:03:23.885972Z",
-      "deferred_state_age_s": 12,
+      "deferred_state_updated_at": "2026-04-29T19:05:34.960867Z",
+      "deferred_state_age_s": 28,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 0,
+        "suppressed_manual_review": 11,
         "deduped_ttl": 0,
-        "manual_review_escalations": 1,
+        "manual_review_escalations": 30,
         "partial_staged": 0,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
@@ -3096,7 +3199,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:03:40.414275Z",
+      "generated_at_utc": "2026-04-29T19:06:08.000171Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3111,16 +3214,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 22,
+          "value": 130,
           "threshold": 300,
-          "detail": "Heartbeat świeży (22s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=de:npc.json].",
+          "detail": "Heartbeat świeży (130s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=de:npc.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 368,
+          "value": 34,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3140,7 +3243,7 @@
           "severity": "warning",
           "value": {
             "pending": 399,
-            "oldest_s": 20588
+            "oldest_s": 20736
           },
           "threshold": {
             "pending_min": 200,
@@ -3177,20 +3280,20 @@
     },
     "doctor_remediation": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:03:01.080640Z",
+      "generated_at_utc": "2026-04-29T19:05:57.220680Z",
       "status": "ok",
       "open_alarms": [
         {
           "code": "DEFERRED_RETRY_PIPELINE_WARNING",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "DEFERRED_RETRY_PIPELINE_WARNING: status=deferred_backlog_pressure tracked_keys=8885 retry_due_now=5396 manual_locked=2939 cooldown_locked=0 manual_queue=3484 deferred_backlog=52058 deferred_recent_1h=38 latest_age=-1.0s "
+          "detail": "DEFERRED_RETRY_PIPELINE_WARNING: status=deferred_backlog_pressure tracked_keys=8885 retry_due_now=5396 manual_locked=2939 cooldown_locked=0 manual_queue=3514 deferred_backlog=52058 deferred_recent_1h=38 latest_age=23.403"
         },
         {
           "code": "FIXTURE_REGRESSION",
           "severity": "critical",
           "source": "statusd_doctor.json",
-          "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5352476.0s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
+          "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5352627.7s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
         },
         {
           "code": "NATIVE_READINESS_BELOW_THRESHOLD",
@@ -3214,28 +3317,24 @@
           "code": "SUSPICIOUS_HIGH_ELEVATED",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1203 rate=31.733% window=6.0h top_lang=es:473 per_lang=[es:473(107.745%/warning)] per_domain=[npc.json:275(61.798%/warning),server.json:195(1300.0%/warning)]"
-        },
-        {
-          "code": "TERM_CONSISTENCY_REGRESSION",
-          "severity": "critical",
-          "source": "statusd_doctor.json",
-          "detail": "TERM_CONSISTENCY_REGRESSION: rate=19.205% delta=19.205% total=86 source=term_conflicts_latest.json"
+          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1202 rate=31.96% window=6.0h top_lang=es:473 per_lang=[es:473(107.745%/warning)] per_domain=[npc.json:275(61.798%/warning),server.json:195(1300.0%/warning)]"
         }
       ],
-      "resolved_this_cycle": [],
+      "resolved_this_cycle": [
+        "TERM_CONSISTENCY_REGRESSION"
+      ],
       "newly_opened": [],
       "summary": {
-        "open_count": 7,
-        "resolved_count": 0,
+        "open_count": 6,
+        "resolved_count": 1,
         "tracked_alarms": 32
       },
       "action_plan": {
         "recommended_action": "force_auto",
         "selected_action": "none",
         "selected_command": "-",
-        "result": "pending",
-        "reason": "write_starvation_or_queue_starvation",
+        "result": "resolved_update",
+        "reason": "resolved_count=1",
         "suppressed_by_cooldown": true,
         "cooldown_remaining_cycles": 2
       }

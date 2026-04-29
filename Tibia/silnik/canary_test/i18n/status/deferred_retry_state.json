@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T19:03:23.885972Z",
+  "updated_at": "2026-04-29T19:05:34.960867Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -224151,9 +224151,9 @@
   "stats": {
     "enqueued": 0,
     "suppressed_cooldown": 0,
-    "suppressed_manual_review": 0,
+    "suppressed_manual_review": 11,
     "deduped_ttl": 0,
-    "manual_review_escalations": 1,
+    "manual_review_escalations": 30,
     "partial_staged": 0,
     "partial_completed": 0,
     "retry_loop_cooldown": 0,

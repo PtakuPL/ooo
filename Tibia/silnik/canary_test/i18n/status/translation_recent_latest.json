@@ -1,8 +1,129 @@
 {
-  "timestamp": "2026-04-29T19:02:02.851954Z",
-  "language": "es",
-  "json_file": "server.json",
-  "translated": 0,
-  "entries": [],
+  "timestamp": "2026-04-29T19:05:33.500592Z",
+  "language": "de",
+  "json_file": "npc.json",
+  "translated": 33,
+  "entries": [
+    {
+      "key": "npc.a_sleeping_dragon.say_30",
+      "en": "As the emerald slips into the notch, the vibrant green of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.",
+      "translated": "Wenn der Smaragd in die Kerbe gleitet, intensiviert sich das leuchtende Grün des Steins um das Tausendfache. Sie haben Angst, sich die Augen zu verletzen und wenden sich sofort ab. Der Strahl scheint mit erstaunlicher Präzision auf die Mitte des Plateaus gerichtet zu sein.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_sleeping_dragon.say_6",
+      "en": "As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble. ",
+      "translated": "Wenn man den stabilen Ständer aus seiner Fassung reißt und mitnimmt, öffnet sich das große Tor mit ohrenbetäubendem Grollen. ",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_sleeping_dragon.say_7",
+      "en": "You gasp at the size of the large open gate as you walk through to head further to the east.",
+      "translated": "Sie staunen über die Größe des großen offenen Tors, während Sie weiter nach Osten gehen.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_sleeping_dragon.say_8",
+      "en": "You reach for a small solitary arrangement of combined small houses and put it in your pocket.",
+      "translated": "Du greifst nach einer kleinen Solitäranordnung aus kombinierten Häuschen und steckst sie in die Tasche.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_1",
+      "en": "Yes, well for instance I tried for some time to figure out how to enter the fiery portal in this complex. Most of the draken never come up here. They rather hide somewhere down there, planning and plotting. ...",
+      "translated": "Ja, zum Beispiel habe ich einige Zeit versucht, herauszufinden, wie man das feurige Portal in diesem Komplex betritt. Die meisten Draken kommen nie hierher. Sie verstecken sich lieber irgendwo da unten und planen und schmieden Pläne. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_10",
+      "en": "Then something happened, lizardfolk started to appear, searching the place. I had to retreat from my hiding place and advance through a safer position. ...",
+      "translated": "Dann geschah etwas: Echsenmenschen tauchten auf und durchsuchten den Ort. Ich musste mich aus meinem Versteck zurückziehen und durch eine sicherere Position vordringen. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_11",
+      "en": "I needed to get close and blend in. So I came up with the ultimate disguise: a chalice. I could establish foothold right in their midst, would never be identified as an intruder and could even analyse their drinks! ...",
+      "translated": "Ich musste nah herankommen und untertauchen. Also habe ich mir die ultimative Verkleidung ausgedacht: einen Kelch. Ich könnte mitten unter ihnen Fuß fassen, würde nie als Eindringling identifiziert werden und könnte sogar ihre Getränke analysieren! ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_13",
+      "en": "They also 'used' me a bit, you don't want to go into any details here. I am really {thirsty}.",
+      "translated": "Sie 'used' mich auch ein bisschen, du willst hier nicht auf Einzelheiten eingehen. Ich bin wirklich {thirsty}.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_16",
+      "en": "Since my valued and practical oriented colleague and mentor Spectulus did not join us, there is only one member of the academy exploration division to actually venture out to see the place - me. ...",
+      "translated": "Da mein geschätzter und praxisorientierter Kollege und Mentor Spectulus nicht zu uns kam, gibt es nur ein Mitglied der Erkundungsabteilung der Akademie, das sich tatsächlich auf den Weg macht, um den Ort zu besichtigen – mich. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_17",
+      "en": "You must know, most things in the academy happen 'inside', behind closed doors. But some of us simply refuse to let theory reign over practical experience in science. ...",
+      "translated": "Sie müssen wissen, dass die meisten Dinge in der Akademie 'inside' hinter verschlossenen Türen passieren. Aber einige von uns weigern sich einfach, die Theorie über die praktische Erfahrung in der Wissenschaft herrschen zu lassen. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_18",
+      "en": "Well, basically Spectulus is the only one likeminded so far. In fact, he incited me to work in the field in first place. So here I am! {Disguised} as a chalice.",
+      "translated": "Nun ja, im Grunde ist Spectulus bisher der einzige Gleichgesinnte. Tatsächlich hat er mich überhaupt erst dazu angeregt, in diesem Bereich zu arbeiten. Also hier bin ich! {Disguised} als Kelch.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_19",
+      "en": "Well, besides being a renowned sorcerer and scholar at the magic academy in Edron, I am also the proud father of a beautiful daughter, Ivalisse. My little endeavour here must have troubled the poor thing all the time since I left. ...",
+      "translated": "Nun, ich bin nicht nur ein berühmter Zauberer und Gelehrter der Zauberakademie in Edron, sondern auch stolzer Vater einer wunderschönen Tochter, Ivalisse. Mein kleines Unterfangen hier muss das arme Ding seit meiner Abreise ständig beunruhigt haben. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_3",
+      "en": " I heard them say it once, when a seemingly drunk guard yelled it in front of a wall mounted torch, hitting his head against it afterwards. He spilt all my contents on the floor, hmpf.",
+      "translated": "Ich hörte sie es einmal sagen, als ein scheinbar betrunkener Wachmann es vor einer der Wand befestigten Fackel schrie und anschließend mit dem Kopf dagegen schlug. Er hat meinen gesamten Inhalt auf den Boden verschüttet, hmpf.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_4",
+      "en": "Ah did I say that? Nevermind, I'm not really thirsty. It's part of this illusion. Somehow, I've been in hiding for so long, I started to... become... a vessel. ...",
+      "translated": "Ah, habe ich das gesagt? Egal, ich bin nicht wirklich durstig. Es ist Teil dieser Illusion. Irgendwie habe ich mich so lange versteckt, dass ich angefangen habe... zu einem Gefäß zu werden. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_6",
+      "en": "I basically communicate by making the metal of this goblet vibrate and using its form as a body of sound. Like a real voice, don't you think?? Yes, alright I know it's creepy. ...",
+      "translated": "Ich kommuniziere grundsätzlich, indem ich das Metall dieses Kelchs zum Schwingen bringe und seine Form als Klangkörper verwende. Wie eine echte Stimme, finden Sie nicht? Ja, alles klar, ich weiß, es ist gruselig. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_7",
+      "en": "I am still in the middle of my research and do not want to go home, so please tell my daughter to not worry about my - this will be a breakthrough! I already {learned} a lot!",
+      "translated": "Ich bin immer noch mitten in meiner Recherche und möchte nicht nach Hause, also sagen Sie meiner Tochter bitte, sie soll sich keine Sorgen um mich machen – das wird ein Durchbruch sein! Ich {learned} schon viel!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_8",
+      "en": "Oh yes, so since I wanted to study the Draken up close, I came up with an idea. Based on my research, and some slight bruises and a scar, the perfect hiding place is often right in the middle of subjects. ...",
+      "translated": "Oh ja, da ich die Draken aus der Nähe studieren wollte, kam mir eine Idee. Basierend auf meinen Recherchen und einigen leichten blauen Flecken und einer Narbe liegt das perfekte Versteck oft mitten in den Motiven. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.a_sleeping_dragon.say_10",
+      "en": "You return through the semi-translucent gate to the west. ",
+      "translated": "Sie kehren durch das halbdurchsichtige Tor nach Westen zurück. ",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_15",
+      "en": "The academy instated the 'Edron-Zaoan Exploration Division' shortly after. I was a founding member and head of the 'Draken' research branch. ...",
+      "translated": "Die Akademie führte kurz darauf den 'Edron-Zaoan Exploration Division' ein. Ich war Gründungsmitglied und Leiter des Forschungszweigs 'Draken'. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_20",
+      "en": "Tell her I love her and that I will take care. I have to press on! My research is most valuable to the 'Edron-Zaoan Exploration Division'. You don't happen to have some water, do you? Ah nevermind. It's a long {story}.",
+      "translated": "Sag ihr, dass ich sie liebe und dass ich auf sie aufpassen werde. Ich muss weitermachen! Meine Forschung ist für 'Edron-Zaoan Exploration Division' am wertvollsten. Du hast nicht zufällig etwas Wasser, oder? Ach, egal. Es ist ein langes {story}.",
+      "source": "google_translate"
+    }
+  ],
   "filtered_untranslated_marker": 0
 }

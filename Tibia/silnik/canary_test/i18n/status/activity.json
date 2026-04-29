@@ -1,9 +1,9 @@
 {
-  "category": "de",
-  "cycle": 3,
+  "category": "tr",
+  "cycle": 4,
   "eta_seconds": 0,
-  "file": "npc.json",
-  "generated_at_utc": "2026-04-29T19:03:12Z",
+  "file": "items.json",
+  "generated_at_utc": "2026-04-29T19:06:00Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,46 @@
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "tr",
+      "cycle": 4,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T19:06:00Z"
+    },
+    {
+      "action": "update",
+      "category": "tr",
+      "cycle": 4,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-04-29T19:06:00Z"
+    },
+    {
+      "action": "update",
+      "category": "de",
+      "cycle": 3,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T19:05:37Z"
+    },
+    {
+      "action": "update",
+      "category": "de",
+      "cycle": 3,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T19:04:57Z"
+    },
     {
       "action": "update",
       "category": "de",
@@ -71,46 +111,6 @@
       "result": "ok",
       "stage": "auto_done",
       "t": "2026-04-29T18:57:51Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 2,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T18:56:00Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 2,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T18:54:22Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 2,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-04-29T18:54:21Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 1,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-04-29T18:53:41Z"
     }
   ],
   "stage": "heartbeat_tick",

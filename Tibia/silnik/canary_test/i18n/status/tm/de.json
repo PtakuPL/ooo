@@ -61886,5 +61886,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T18:57:30.404328Z"
+  },
+  "npc.a_sleeping_dragon.say_10": {
+    "src_hash": "3dfc299ef9bb06feb416cd56e55b57f8",
+    "text": "Sie kehren durch das halbdurchsichtige Tor nach Westen zurück. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T19:03:43.963317Z"
+  },
+  "npc.a_strange_chalice.multi_15": {
+    "src_hash": "c162c2e4c136122010b050ee35901260",
+    "text": "Die Akademie führte kurz darauf den 'Edron-Zaoan Exploration Division' ein. Ich war Gründungsmitglied und Leiter des Forschungszweigs 'Draken'. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T19:03:43.979694Z"
+  },
+  "npc.a_strange_chalice.multi_20": {
+    "src_hash": "327276bd533fb0914c7b184008300024",
+    "text": "Sag ihr, dass ich sie liebe und dass ich auf sie aufpassen werde. Ich muss weitermachen! Meine Forschung ist für 'Edron-Zaoan Exploration Division' am wertvollsten. Du hast nicht zufällig etwas Wasser, oder? Ach, egal. Es ist ein langes {story}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T19:03:44.001802Z"
   }
 }

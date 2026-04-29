@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:20:05.044133Z",
+  "generated_at_utc": "2026-04-29T19:22:05.536480Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
-  "active_provider_source": "simple",
-  "active_provider_timestamp": "2026-04-29T19:09:11.995193Z",
+  "active_provider_source": "tm",
+  "active_provider_timestamp": "2026-04-29T19:20:13.086008Z",
   "active_model": "openai/gpt-4.1-mini",
   "fallback_reason": "OpenAI model pool → fallback chain exhausted high reject types [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -69,22 +69,22 @@
       "provider_consistency_debt:258"
     ],
     "provider_consistency_debt": 258,
-    "recent_window_writes": 556,
+    "recent_window_writes": 539,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 231
+        "writes": 219
       },
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 220
+        "writes": 214
       },
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 80
+        "writes": 81
       },
       {
         "provider": "canonical_name_semantic_autofix",
@@ -113,12 +113,12 @@
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 220
+        "recent_writes": 214
       },
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 80
+        "recent_writes": 81
       },
       "google_cloud": {
         "status": "disabled",
@@ -129,7 +129,7 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
-        "recent_writes": 231,
+        "recent_writes": 219,
         "requests_today": 128
       }
     },
@@ -240,7 +240,7 @@
       "used_pct": 51.2,
       "monthly_cap": 250.0,
       "spent": 128.0,
-      "latest_age_s": 0.535553,
+      "latest_age_s": 104.28888,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -268,7 +268,7 @@
       "pipeline_status": "active",
       "pipeline_severity": "ok",
       "pipeline_reason": "ok",
-      "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1620",
+      "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1647",
       "window_seconds": 86400
     }
   },

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T19:20:14.705476Z",
+  "updated_at": "2026-04-29T19:22:09.660364Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -224949,14 +224949,14 @@
     }
   },
   "stats": {
-    "enqueued": 0,
+    "enqueued": 32,
     "suppressed_cooldown": 0,
-    "suppressed_manual_review": 197,
-    "deduped_ttl": 0,
+    "suppressed_manual_review": 71,
+    "deduped_ttl": 2,
     "manual_review_escalations": 0,
-    "partial_staged": 2,
+    "partial_staged": 0,
     "partial_completed": 0,
     "retry_loop_cooldown": 0,
-    "retry_loop_manual_review": 2
+    "retry_loop_manual_review": 0
   }
 }

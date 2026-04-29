@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:41:56.157450Z",
+  "generated_at_utc": "2026-04-29T19:44:32.254228Z",
   "overall": "warning",
   "thresholds": {
     "heartbeat_stale_s": 300,
@@ -15,16 +15,16 @@
       "name": "HEARTBEAT_STALE",
       "status": "ok",
       "severity": "ok",
-      "value": 107,
+      "value": 167,
       "threshold": 300,
-      "detail": "Heartbeat świeży (107s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ro:items.json].",
+      "detail": "Heartbeat świeży (167s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ro:items.json].",
       "source": "worker_runtime_heartbeat.json"
     },
     {
       "name": "NO_WRITE",
       "status": "ok",
       "severity": "ok",
-      "value": 247,
+      "value": 10,
       "threshold": 900,
       "detail": "Recent writes wyglądają zdrowo.",
       "source": "translation_recent_report.jsonl"
@@ -44,7 +44,7 @@
       "severity": "warning",
       "value": {
         "pending": 399,
-        "oldest_s": 21510
+        "oldest_s": 21666
       },
       "threshold": {
         "pending_min": 200,

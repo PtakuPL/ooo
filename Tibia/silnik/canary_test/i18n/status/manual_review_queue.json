@@ -60459,11 +60459,911 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:43:54.650488Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.15822.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "As long as it is immersed that deep you won't be able to get a whetstone.",
+      "attempted_translation": "Atâta timp cât este scufundat atât de adânc, nu vei putea obține o piatră de ascuțit.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'piatra de ascuit' for EN 'whetstone' from items.json:item.15826.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:43:55.180292Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.15823.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "As long as it is immersed that deep you won't be able to get a whetstone.",
+      "attempted_translation": "Atâta timp cât este scufundat atât de adânc, nu vei putea obține o piatră de ascuțit.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'piatra de ascuit' for EN 'whetstone' from items.json:item.15826.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:43:55.809667Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.15824.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "As long as it is immersed that deep you won't be able to get a whetstone.",
+      "attempted_translation": "Atâta timp cât este scufundat atât de adânc, nu vei putea obține o piatră de ascuțit.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'piatra de ascuit' for EN 'whetstone' from items.json:item.15826.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:43:55.981404Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.15828.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "Micul porcușor trebuie returnat deținătorului său în termen de o oră",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'porcușorul' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:43:56.381035Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.15833.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "Micul porcușor trebuie returnat deținătorului său în termen de o oră",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'porcușorul' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:43:57.059928Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.16161.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Even in the light of day, the stars seem to reflect in each facet of this crystalline axe",
+      "attempted_translation": "Chiar și în lumina zilei, stelele par să se reflecte în fiecare fațetă a acestui topor cristalin",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aprinde' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:04.522741Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3203.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "animate dead rune",
+      "attempted_translation": "anima rune moarte",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Animați Dead Rune' for EN 'animate dead rune', but source key item.3203.name still uses conflicting variant 'anima rune moarte'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:04.638607Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3177.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "convince creature rune",
+      "attempted_translation": "convinge creatura rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Conving Creature Rune' for EN 'convince creature rune', but source key item.3177.name still uses conflicting variant 'convinge creatura rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:04.767744Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3149.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "energy bomb rune",
+      "attempted_translation": "Energy Bomb Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Rună Bombă Energetică' for EN 'energy bomb rune', but source key item.3149.name still uses conflicting variant 'Energy Bomb Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:04.873612Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3164.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "energy field rune",
+      "attempted_translation": "Energy Field Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa Câmpului Energetic' for EN 'energy field rune', but source key item.3164.name still uses conflicting variant 'Energy Field Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:04.982408Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3166.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "energy wall rune",
+      "attempted_translation": "Energy Wall Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa peretelui energetic' for EN 'energy wall rune', but source key item.3166.name still uses conflicting variant 'Energy Wall Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:05.499051Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3192.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fire bomb rune",
+      "attempted_translation": "Fire Bomb Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa Bombei de foc' for EN 'fire bomb rune', but source key item.3192.name still uses conflicting variant 'Fire Bomb Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:06.517133Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3188.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fire field rune",
+      "attempted_translation": "Fire Field Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa câmpului de foc' for EN 'fire field rune', but source key item.3188.name still uses conflicting variant 'Fire Field Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:06.635634Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3190.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fire wall rune",
+      "attempted_translation": "Fire Wall Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa zidului de foc' for EN 'fire wall rune', but source key item.3190.name still uses conflicting variant 'Fire Wall Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:06.751447Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11632.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11632.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:06.881840Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11634.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11634.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:07.032039Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11636.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11636.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:08.638027Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11638.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11638.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:09.314836Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11644.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11644.name still uses conflicting variant 'emblemăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:09.730322Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11646.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11646.name still uses conflicting variant 'emblemăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:09.877011Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11648.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11648.name still uses conflicting variant 'emblemăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:09.984552Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11650.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11650.name still uses conflicting variant 'emblemăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:10.131591Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11628.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11628.name still uses conflicting variant 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:10.258180Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11630.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "golden rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur' for EN 'golden rune emblem', but source key item.11630.name still uses conflicting variant 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:10.368545Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3191.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "great fireball rune",
+      "attempted_translation": "mare rună minge de foc",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Marea Rună Minge de Foc' for EN 'great fireball rune', but source key item.3191.name still uses conflicting variant 'mare rună minge de foc'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:10.471550Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3182.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "holy missile rune",
+      "attempted_translation": "rună sfântă a rachetei",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa Rachetei Sfinte' for EN 'holy missile rune', but source key item.3182.name still uses conflicting variant 'rună sfântă a rachetei'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:10.634434Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3180.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "magic wall rune",
+      "attempted_translation": "Magic Wall Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa peretelui magic' for EN 'magic wall rune', but source key item.3180.name still uses conflicting variant 'Magic Wall Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:10.779302Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3173.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "poison bomb rune",
+      "attempted_translation": "Poison Bomb Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa Bombă Otrăvitoare' for EN 'poison bomb rune', but source key item.3173.name still uses conflicting variant 'Poison Bomb Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:10.918159Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3172.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "poison field rune",
+      "attempted_translation": "Poison Field Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa Câmpului Otrăvitor' for EN 'poison field rune', but source key item.3172.name still uses conflicting variant 'Poison Field Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:11.045172Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3176.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "poison wall rune",
+      "attempted_translation": "Poison Wall Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa Zidului Otrăvitor' for EN 'poison wall rune', but source key item.3176.name still uses conflicting variant 'Poison Wall Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:11.194532Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.31306.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "ring of secret thoughts",
+      "attempted_translation": "inel de gânduri secrete",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Inelul gândurilor secrete' for EN 'ring of secret thoughts', but source key item.31306.name still uses conflicting variant 'inel de gânduri secrete'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:11.315860Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11631.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "silver rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de argint",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint' for EN 'silver rune emblem', but source key item.11631.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de argint'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:11.432512Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11633.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "silver rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de argint",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint' for EN 'silver rune emblem', but source key item.11633.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de argint'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:11.575754Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11635.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "silver rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de argint",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint' for EN 'silver rune emblem', but source key item.11635.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de argint'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:12.492073Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11637.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "silver rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăăăăă de rună de argint",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint' for EN 'silver rune emblem', but source key item.11637.name still uses conflicting variant 'emblemăăăăăăăăăăăăă de rună de argint'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:12.632154Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11645.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "silver rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăă de rună de argint",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint' for EN 'silver rune emblem', but source key item.11645.name still uses conflicting variant 'emblemăăăăăăăăăă de rună de argint'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:15.235596Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11647.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "silver rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăă de rună de argint",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint' for EN 'silver rune emblem', but source key item.11647.name still uses conflicting variant 'emblemăăăăăăăăăă de rună de argint'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:15.341476Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11649.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "silver rune emblem",
+      "attempted_translation": "emblemăăăăăăăăăă de rună de argint",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint' for EN 'silver rune emblem', but source key item.11649.name still uses conflicting variant 'emblemăăăăăăăăăă de rună de argint'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:17.129270Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.1566.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone archway",
+      "attempted_translation": "piatră archway",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'piatră arcadă' for EN 'stone archway', but source key item.1566.name still uses conflicting variant 'piatră archway'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:17.280268Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.17896.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone archway",
+      "attempted_translation": "piatră archway",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'piatră arcadă' for EN 'stone archway', but source key item.17896.name still uses conflicting variant 'piatră archway'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:17.674668Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.17899.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone archway",
+      "attempted_translation": "piatră archway",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'piatră arcadă' for EN 'stone archway', but source key item.17899.name still uses conflicting variant 'piatră archway'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:17.776339Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3175.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone shower rune",
+      "attempted_translation": "Stone Shower Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Rună de duș de piatră' for EN 'stone shower rune', but source key item.3175.name still uses conflicting variant 'Stone Shower Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:19.079889Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3155.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "sudden death rune",
+      "attempted_translation": "Sudden Death Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa morții subite' for EN 'sudden death rune', but source key item.3155.name still uses conflicting variant 'Sudden Death Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:19.470850Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.8174.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "Tibiacity Encyclopedia",
+      "attempted_translation": "Enciclopedia Tibiacității",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Tibiacity Enciclopedia' for EN 'tibiacity encyclopedia', but source key item.8174.name still uses conflicting variant 'Enciclopedia Tibiacității'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:19.722052Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3160.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "ultimate healing rune",
+      "attempted_translation": "runa de vindecare supremă",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Rună de vindecare supremă' for EN 'ultimate healing rune', but source key item.3160.name still uses conflicting variant 'runa de vindecare supremă'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:19.977667Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11252.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "wall lamp",
+      "attempted_translation": "lampăăăăăăăăăăăăăăăăă de perete",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'lampă de perete' for EN 'wall lamp', but source key item.11252.name still uses conflicting variant 'lampăăăăăăăăăăăăăăăăă de perete'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:20.137015Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11253.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "wall lamp",
+      "attempted_translation": "lampăăăăăăăăăăăăăăăăă de perete",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'lampă de perete' for EN 'wall lamp', but source key item.11253.name still uses conflicting variant 'lampăăăăăăăăăăăăăăăăă de perete'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:20.293893Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11254.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "wall lamp",
+      "attempted_translation": "lampăăăăăăăăăăăăăăăăă de perete",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'lampă de perete' for EN 'wall lamp', but source key item.11254.name still uses conflicting variant 'lampăăăăăăăăăăăăăăăăă de perete'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:20.456552Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.11255.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "wall lamp",
+      "attempted_translation": "lampăăăăăăăăăăăăăăăăă de perete",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'lampă de perete' for EN 'wall lamp', but source key item.11255.name still uses conflicting variant 'lampăăăăăăăăăăăăăăăăă de perete'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:44:20.606715Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.3156.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "wild growth rune",
+      "attempted_translation": "Wild Growth Rune",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa de creștere sălbatică' for EN 'wild growth rune', but source key item.3156.name still uses conflicting variant 'Wild Growth Rune'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3033
+    "total": 3083
   },
-  "updated_at": "2026-04-29T19:42:01.089186Z"
+  "updated_at": "2026-04-29T19:44:20.629600Z"
 }

@@ -1,159 +1,480 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:37:51.645931Z",
-  "lang": "cs",
+  "generated_at_utc": "2026-04-29T19:44:25.962155Z",
+  "lang": "ro",
   "source_files": [
     "items.json",
     "monsters.json",
     "spells.json"
   ],
-  "canonical_terms_total": 4730,
-  "total_conflicted_terms": 5,
-  "case_only_conflicts": 1,
-  "semantic_conflicts": 4,
-  "conflict_rate_pct": 0.11,
+  "canonical_terms_total": 7931,
+  "total_conflicted_terms": 29,
+  "case_only_conflicts": 5,
+  "semantic_conflicts": 24,
+  "conflict_rate_pct": 0.37,
   "examples": [
     {
-      "en_name": "dead wilting leaf golem",
-      "selected_translation": "mrtvý vadnoucí list golem",
+      "en_name": "animate dead rune",
+      "selected_translation": "Animați Dead Rune",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "mrtvý vadnoucí list golem",
-          "count": 2,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.19117.name",
-            "item.19120.name"
-          ]
-        },
-        {
-          "translated": "mrtvých vadnoucích listů golem",
-          "count": 2,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.19118.name",
-            "item.19119.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "eshtaba the conjurer",
-      "selected_translation": "Eshtaba Zaklínač",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Eshtaba Zaklínač",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.eshtaba_the_conjurer_stop.name"
-          ]
-        },
-        {
-          "translated": "Eshtaba kouzelník",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.eshtaba_the_conjurer.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "lightest missile rune",
-      "selected_translation": "nejlehčí raketová runa",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "nejlehčí raketová runa",
-          "count": 2,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.21352.name",
-            "item.21432.name"
-          ]
-        },
-        {
-          "translated": "Nejlehčí raketová runa",
+          "translated": "Animați Dead Rune",
           "count": 1,
           "source_files": [
             "spells.json"
           ],
           "sample_keys": [
-            "spell.lightest_missile_rune.name"
+            "spell.animate_dead_rune.name"
+          ]
+        },
+        {
+          "translated": "anima rune moarte",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3203.name"
           ]
         }
       ]
     },
     {
-      "en_name": "mushroom sponge",
-      "selected_translation": "houba houbová",
+      "en_name": "convince creature rune",
+      "selected_translation": "Conving Creature Rune",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "houba houbová",
-          "count": 12,
+          "translated": "Conving Creature Rune",
+          "count": 1,
           "source_files": [
-            "items.json"
+            "spells.json"
           ],
           "sample_keys": [
-            "item.15584.name",
-            "item.15585.name",
-            "item.15586.name",
-            "item.15587.name"
+            "spell.convince_creature_rune.name"
           ]
         },
         {
-          "translated": "houba houbička",
-          "count": 3,
+          "translated": "convinge creatura rune",
+          "count": 1,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.15532.name",
-            "item.15533.name",
-            "item.15534.name"
+            "item.3177.name"
           ]
         }
       ]
     },
     {
-      "en_name": "timber chair",
-      "selected_translation": "dřevěné křeslo",
+      "en_name": "energy bomb rune",
+      "selected_translation": "Rună Bombă Energetică",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "dřevěné křeslo",
-          "count": 2,
+          "translated": "Rună Bombă Energetică",
+          "count": 1,
           "source_files": [
-            "items.json"
+            "spells.json"
           ],
           "sample_keys": [
-            "item.11800.name",
-            "item.11802.name"
+            "spell.energy_bomb_rune.name"
           ]
         },
         {
-          "translated": "dřevěná židle",
+          "translated": "Energy Bomb Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3149.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "energy field rune",
+      "selected_translation": "Runa Câmpului Energetic",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa Câmpului Energetic",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.energy_field_rune.name"
+          ]
+        },
+        {
+          "translated": "Energy Field Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3164.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "energy wall rune",
+      "selected_translation": "Runa peretelui energetic",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa peretelui energetic",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.energy_wall_rune.name"
+          ]
+        },
+        {
+          "translated": "Energy Wall Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3166.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "fire bomb rune",
+      "selected_translation": "Runa Bombei de foc",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa Bombei de foc",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.fire_bomb_rune.name"
+          ]
+        },
+        {
+          "translated": "Fire Bomb Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3192.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "fire field rune",
+      "selected_translation": "Runa câmpului de foc",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa câmpului de foc",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.fire_field_rune.name"
+          ]
+        },
+        {
+          "translated": "Fire Field Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3188.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "fire wall rune",
+      "selected_translation": "Runa zidului de foc",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa zidului de foc",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.fire_wall_rune.name"
+          ]
+        },
+        {
+          "translated": "Fire Wall Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3190.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "golden rune emblem",
+      "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
+          "count": 14,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.11604.name",
+            "item.11606.name",
+            "item.11608.name",
+            "item.11610.name"
+          ]
+        },
+        {
+          "translated": "emblemăăăăăăăăăăăăă de rună de aur",
+          "count": 4,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.11632.name",
+            "item.11634.name",
+            "item.11636.name",
+            "item.11638.name"
+          ]
+        },
+        {
+          "translated": "emblemăăăăăăăăăă de rună de aur",
+          "count": 4,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.11644.name",
+            "item.11646.name",
+            "item.11648.name",
+            "item.11650.name"
+          ]
+        },
+        {
+          "translated": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
           "count": 2,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.11801.name",
-            "item.11803.name"
+            "item.11628.name",
+            "item.11630.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "great fireball rune",
+      "selected_translation": "Marea Rună Minge de Foc",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Marea Rună Minge de Foc",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.great_fireball_rune.name"
+          ]
+        },
+        {
+          "translated": "mare rună minge de foc",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3191.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "hive pore",
+      "selected_translation": "por de stup",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "por de stup",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.14064.name",
+            "item.14171.name"
+          ]
+        },
+        {
+          "translated": "Por de stup",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.hive_pore.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "holy missile rune",
+      "selected_translation": "Runa Rachetei Sfinte",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa Rachetei Sfinte",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.holy_missile_rune.name"
+          ]
+        },
+        {
+          "translated": "rună sfântă a rachetei",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3182.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "magic wall rune",
+      "selected_translation": "Runa peretelui magic",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa peretelui magic",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.magic_wall_rune.name"
+          ]
+        },
+        {
+          "translated": "Magic Wall Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3180.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "pillar",
+      "selected_translation": "stâlp",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "stâlp",
+          "count": 6,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.10954.name",
+            "item.11047.name",
+            "item.11053.name",
+            "item.11057.name"
+          ]
+        },
+        {
+          "translated": "Stâlp",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.pillar.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "poison bomb rune",
+      "selected_translation": "Runa Bombă Otrăvitoare",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa Bombă Otrăvitoare",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.poison_bomb_rune.name"
+          ]
+        },
+        {
+          "translated": "Poison Bomb Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3173.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "poison field rune",
+      "selected_translation": "Runa Câmpului Otrăvitor",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Runa Câmpului Otrăvitor",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.poison_field_rune.name"
+          ]
+        },
+        {
+          "translated": "Poison Field Rune",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.3172.name"
           ]
         }
       ]
@@ -161,20 +482,28 @@
   ],
   "case_only_autofixed": 0,
   "case_only_autofixed_keys": [],
-  "semantic_autofixed": 0,
-  "semantic_autofixed_keys": [],
+  "semantic_autofixed": 2,
+  "semantic_autofixed_keys": [
+    "item.10507.name",
+    "item.11365.name"
+  ],
   "semantic_quality_blocked": 0,
   "semantic_quality_blocked_keys": [],
   "existing_quality_sanitized": 0,
   "existing_quality_sanitized_keys": [],
-  "review_candidates_total": 7,
+  "review_candidates_total": 44,
   "review_keys": [
-    "item.19118.name",
-    "item.19119.name",
-    "item.15532.name",
-    "item.15533.name",
-    "item.15534.name",
-    "item.11801.name",
-    "item.11803.name"
+    "item.3203.name",
+    "item.3177.name",
+    "item.3149.name",
+    "item.3164.name",
+    "item.3166.name",
+    "item.3192.name",
+    "item.3188.name",
+    "item.3190.name",
+    "item.11632.name",
+    "item.11634.name",
+    "item.11636.name",
+    "item.11638.name"
   ]
 }

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T19:37:48.186535Z",
-  "language": "cs",
+  "timestamp": "2026-04-29T19:44:21.232338Z",
+  "language": "ro",
   "json_file": "items.json",
-  "translated": 69,
+  "translated": 50,
   "entries": [
     {
-      "key": "item.15576.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10190.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15577.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10191.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15578.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10192.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15579.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10193.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15580.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10216.name",
+      "en": "dragon statue kit",
+      "translated": "kit statuie dragon",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15581.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10334.name",
+      "en": "dead orc marauder",
+      "translated": "marauder orc mort",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15582.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10335.name",
+      "en": "dead orc marauder",
+      "translated": "marauder orc mort",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15583.name",
-      "en": "titanic mushroom",
-      "translated": "titanická houba",
+      "key": "item.10337.name",
+      "en": "dead orc marauder",
+      "translated": "marauder orc mort",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15584.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
+      "key": "item.11667.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15585.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
+      "key": "item.11668.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15586.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
+      "key": "item.11669.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15587.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
+      "key": "item.11670.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15588.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
+      "key": "item.1177.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15589.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
+      "key": "item.1178.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15590.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
+      "key": "item.1179.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.15591.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "item.13656.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
     },
     {
-      "key": "item.15592.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "item.13658.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
     },
     {
-      "key": "item.15593.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "item.14760.desc",
+      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
+      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
+      "source": "term_consistency_autofix"
     },
     {
-      "key": "item.15594.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "item.10507.name",
+      "en": "lamp",
+      "translated": "lampă",
+      "source": "canonical_name_semantic_autofix"
     },
     {
-      "key": "item.15595.name",
-      "en": "mushroom sponge",
-      "translated": "houba houbová",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "item.11365.name",
+      "en": "ramp",
+      "translated": "rampă",
+      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

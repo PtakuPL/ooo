@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-04-29T18:53:53.171674Z",
+  "checked_at": "2026-04-29T19:44:45.886501Z",
   "issues_total": 493,
   "issues_by_type": {
     "consistency_in_language": 31,
@@ -17,9 +17,9 @@
       "severity": "MEDIUM",
       "en": "golden rune emblem",
       "variants": [
-        "emblemăăăăăăăăă de rună de aur",
-        "emblemăăăăăăăăăăăă de rună de aur",
-        "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
+        "emblemăăăăăăăăăă de rună de aur",
+        "emblemăăăăăăăăăăăăă de rună de aur",
+        "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
         "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur"
       ],
       "variants_count": 4,
@@ -36,8 +36,8 @@
       "severity": "MEDIUM",
       "en": "silver rune emblem",
       "variants": [
-        "emblemăăăăăăăăă de rună de argint",
-        "emblemăăăăăăăăăăăă de rună de argint",
+        "emblemăăăăăăăăăă de rună de argint",
+        "emblemăăăăăăăăăăăăă de rună de argint",
         "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint"
       ],
       "variants_count": 3,
@@ -97,7 +97,7 @@
       "en": "This lamp is glowing very dimly.",
       "variants": [
         "Această lampă luminează foarte slab.",
-        "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab."
+        "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab."
       ],
       "variants_count": 2,
       "examples": [
@@ -4376,7 +4376,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 18,
-      "lang_ratio": 3.333,
+      "lang_ratio": 3.389,
       "pl_ratio": 1.278
     },
     {
@@ -4394,7 +4394,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 18,
-      "lang_ratio": 3.333,
+      "lang_ratio": 3.389,
       "pl_ratio": 1.278
     },
     {
@@ -4439,7 +4439,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 32,
-      "lang_ratio": 3.188,
+      "lang_ratio": 3.219,
       "pl_ratio": 0.906
     },
     {
@@ -4448,7 +4448,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 32,
-      "lang_ratio": 3.188,
+      "lang_ratio": 3.219,
       "pl_ratio": 0.906
     },
     {

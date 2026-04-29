@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T19:39:31.722535Z",
+  "timestamp": "2026-04-29T19:46:18.232457Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -101,7 +101,7 @@
   "json_files": 39,
   "cache_hit": true,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 1,
+  "cache_cycle": 2,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {

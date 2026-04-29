@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "timestamp": "2026-04-29T19:44:27.604898Z",
+  "timestamp": "2026-04-29T19:46:49.961132Z",
   "scope": "all",
   "en_total_keys": 74536,
   "en_signature": [
@@ -239,10 +239,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 2027,
-  "file_cache_misses": 1,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 2028,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T19:39:31.720618Z",
-  "cycle_counter": 13283,
-  "last_target_key": "ro:items.json",
-  "last_pending_total": 14608,
-  "last_marker_todo": 14608,
+  "timestamp": "2026-04-29T19:46:17.768042Z",
+  "cycle_counter": 13284,
+  "last_target_key": "it:items.json",
+  "last_pending_total": 13624,
+  "last_marker_todo": 13624,
   "last_tier": 2,
   "last_cat_priority": 1,
   "candidates_count": 96,
@@ -184,7 +184,7 @@
   },
   "cache_hit": true,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 1,
+  "cache_cycle": 2,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -548,6 +548,22 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
+      "ro": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 46.09,
+          "npc.json": 69.88,
+          "quests.json": 99.02
+        }
+      },
+      "it": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 52.73,
+          "npc.json": 76.51,
+          "quests.json": 99.18
+        }
+      },
       "cs": {
         "allowed_domain": null,
         "domain_coverages": {
@@ -562,22 +578,6 @@
           "items.json": 34.48,
           "npc.json": 19.1,
           "quests.json": 99.51
-        }
-      },
-      "it": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 52.73,
-          "npc.json": 76.51,
-          "quests.json": 99.18
-        }
-      },
-      "ro": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 46.06,
-          "npc.json": 69.88,
-          "quests.json": 99.02
         }
       }
     },

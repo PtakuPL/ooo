@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T19:44:28.885245Z",
+  "timestamp": "2026-04-29T19:46:51.182323Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 710950,
@@ -54,33 +54,33 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 5047,
-    "guard_reports_blocked": 4899,
+    "guard_reports_total": 5048,
+    "guard_reports_blocked": 4900,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 4899
+    "cannot_translate_reports_visible": 4900
   },
   "cache": {
-    "lang_stats_hits": 51,
-    "lang_stats_misses": 1,
-    "lang_stats_hit_pct": 98.1,
-    "lang_stats_mode": "mixed",
-    "lang_file_hits": 2027,
-    "lang_file_misses": 1,
+    "lang_stats_hits": 52,
+    "lang_stats_misses": 0,
+    "lang_stats_hit_pct": 100.0,
+    "lang_stats_mode": "warm-cache",
+    "lang_file_hits": 2028,
+    "lang_file_misses": 0,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-04-29T19:39:32.381910Z",
-    "cycle": 1,
+    "timestamp": "2026-04-29T19:46:18.526115Z",
+    "cycle": 2,
     "mode": "AUTO_TRANSLATE",
-    "category": "ro",
+    "category": "it",
     "events": {
-      "dispatch": 1764
+      "dispatch": 1763
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T18:44:27.745198Z",
-    "window_end_utc": "2026-04-29T19:44:27.745198Z",
+    "window_start_utc": "2026-04-29T18:46:50.051487Z",
+    "window_end_utc": "2026-04-29T19:46:50.051487Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -97,15 +97,15 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 192,
+    "translated": 242,
     "guard_fail": 0,
     "guard_fail_rate_pct": 0.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 271.1,
-    "throughput_runtime_hours": 0.7082,
+    "throughput_keys_per_h": 281.3,
+    "throughput_runtime_hours": 0.8602,
     "throughput_runtime_source": "cycle_duration_ms",
-    "suspicious_total": 466,
+    "suspicious_total": 436,
     "deferred_total": 36,
     "top_deferred_reasons": [
       {
@@ -154,21 +154,25 @@
         "translated": 30,
         "guard_fail": 0,
         "guard_command": 0
+      },
+      {
+        "target": "ro/items.json",
+        "translated": 50,
+        "guard_fail": 0,
+        "guard_command": 0
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-04-29T19:05:37.923434Z",
+      "timestamp": "2026-04-29T19:45:04.623970Z",
       "checked_entries": 100,
       "issues_found": 0,
       "issues_by_type": {
-        "suspicious_log_low": 23,
-        "suspicious_log_high": 16,
-        "suspicious_log_critical": 7,
-        "suspicious_log_medium": 154,
-        "suspicious_rejected_critical": 178,
-        "suspicious_rejected_high": 22
+        "suspicious_log_low": 123,
+        "suspicious_log_high": 77,
+        "suspicious_rejected_critical": 176,
+        "suspicious_rejected_high": 24
       },
       "issues": [],
       "threshold": 10,
@@ -182,9 +186,9 @@
         "total_rejected": 4720,
         "total_gt_guard_fail": 7501,
         "cycles": 349,
-        "last_audit": "2026-04-29T18:40:31.020512Z",
-        "issues_count": 59734,
-        "quality_score": 65.3
+        "last_audit": "2026-04-29T19:45:04.623970Z",
+        "issues_count": 59758,
+        "quality_score": 72.2
       },
       "pl": {
         "last_cycle": "2026-04-23T19:17:22.090384Z",
@@ -216,8 +220,8 @@
         "total_gt_guard_fail": 92183,
         "cycles": 4172,
         "quality_score": 60.1,
-        "last_audit": "2026-04-29T19:05:37.923434Z",
-        "issues_count": 754233
+        "last_audit": "2026-04-29T19:45:04.623970Z",
+        "issues_count": 754311
       },
       "pt": {
         "last_cycle": "2026-04-28T17:06:33.233314Z",
@@ -248,9 +252,9 @@
         "total_rejected": 7831,
         "total_gt_guard_fail": 15309,
         "cycles": 1128,
-        "quality_score": 71.8,
-        "last_audit": "2026-04-29T19:05:37.923434Z",
-        "issues_count": 180496
+        "quality_score": 77.1,
+        "last_audit": "2026-04-29T19:45:04.623970Z",
+        "issues_count": 180516
       },
       "ru": {
         "last_cycle": "2026-04-29T18:32:05.585017Z",
@@ -260,8 +264,8 @@
         "total_gt_guard_fail": 12639,
         "cycles": 1270,
         "quality_score": 60.1,
-        "last_audit": "2026-04-29T19:05:37.923434Z",
-        "issues_count": 377130
+        "last_audit": "2026-04-29T19:45:04.623970Z",
+        "issues_count": 377322
       },
       "nl": {
         "last_cycle": "2026-04-28T17:56:10.404027Z",
@@ -325,9 +329,9 @@
         "total_rejected": 6661,
         "total_gt_guard_fail": 8737,
         "cycles": 357,
-        "quality_score": 60.2,
-        "last_audit": "2026-04-29T19:05:37.923434Z",
-        "issues_count": 125871
+        "quality_score": 60.1,
+        "last_audit": "2026-04-29T19:45:04.623970Z",
+        "issues_count": 126137
       },
       "ar": {
         "last_cycle": "2026-02-21T09:31:20.346489Z",
@@ -491,8 +495,8 @@
         "total_gt_guard_fail": 684,
         "cycles": 639,
         "quality_score": 60.1,
-        "last_audit": "2026-04-29T19:05:37.923434Z",
-        "issues_count": 130341
+        "last_audit": "2026-04-29T19:45:04.623970Z",
+        "issues_count": 130381
       },
       "he": {
         "last_cycle": "2026-02-21T09:37:18.773315Z",
@@ -733,8 +737,8 @@
         "total_gt_guard_fail": 25284,
         "cycles": 1105,
         "quality_score": 60.1,
-        "last_audit": "2026-04-29T19:05:37.923434Z",
-        "issues_count": 448740
+        "last_audit": "2026-04-29T19:45:04.623970Z",
+        "issues_count": 448920
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -748,7 +752,7 @@
         "issues_count": 0
       }
     },
-    "summary": "OK | 0 issue(s) / 100 entries | 2026-04-29T19:05:37.923434Z"
+    "summary": "OK | 0 issue(s) / 100 entries | 2026-04-29T19:45:04.623970Z"
   },
   "languages": [
     {

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T19:41:23.905375Z",
+  "timestamp": "2026-04-29T19:46:16.711170Z",
   "week_number": 18,
   "global_pct": 18.34,
   "total_ref": 3875872,
-  "total_translated": 710937,
+  "total_translated": 710950,
   "languages": [
     {
       "lang": "pl",
@@ -68,13 +68,13 @@
     {
       "lang": "ro",
       "name": "Rumuński",
-      "pct": 69.81,
-      "translated": 52033,
+      "pct": 69.83,
+      "translated": 52046,
       "total": 74536,
       "en_copy": 12998,
       "missing": 0,
-      "delta_pct": 0.0,
-      "delta_keys": 0,
+      "delta_pct": 0.02,
+      "delta_keys": 13,
       "tier": "T3"
     },
     {
@@ -109,8 +109,8 @@
       "total": 74536,
       "en_copy": 29735,
       "missing": 0,
-      "delta_pct": 0.04,
-      "delta_keys": 26,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T2"
     },
     {
@@ -641,38 +641,38 @@
       "count": 10,
       "avg_pct": 49.8,
       "total_translated": 371160,
-      "total_delta_keys": 26
+      "total_delta_keys": 0
     },
     "T3": {
       "count": 40,
       "avg_pct": 7.31,
-      "total_translated": 217861,
-      "total_delta_keys": 0
+      "total_translated": 217874,
+      "total_delta_keys": 13
     }
   },
   "fastest": {
-    "lang": "cs",
-    "name": "Czeski",
-    "pct": 51.84,
-    "translated": 38637,
+    "lang": "ro",
+    "name": "Rumuński",
+    "pct": 69.83,
+    "translated": 52046,
     "total": 74536,
-    "en_copy": 29735,
+    "en_copy": 12998,
     "missing": 0,
-    "delta_pct": 0.04,
-    "delta_keys": 26,
-    "tier": "T2"
+    "delta_pct": 0.02,
+    "delta_keys": 13,
+    "tier": "T3"
   },
   "slowest": {
-    "lang": "cs",
-    "name": "Czeski",
-    "pct": 51.84,
-    "translated": 38637,
+    "lang": "ro",
+    "name": "Rumuński",
+    "pct": 69.83,
+    "translated": 52046,
     "total": 74536,
-    "en_copy": 29735,
+    "en_copy": 12998,
     "missing": 0,
-    "delta_pct": 0.04,
-    "delta_keys": 26,
-    "tier": "T2"
+    "delta_pct": 0.02,
+    "delta_keys": 13,
+    "tier": "T3"
   },
   "eta_global": null
 }

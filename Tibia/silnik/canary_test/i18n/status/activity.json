@@ -2,16 +2,26 @@
   "category": "cs",
   "cycle": 1,
   "eta_seconds": 0,
-  "file": "items.json",
-  "generated_at_utc": "2026-04-29T19:32:02Z",
-  "message": "auto translate in progress",
+  "file": "-",
+  "generated_at_utc": "2026-04-29T19:34:55Z",
+  "message": "stopping",
   "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
-    "total": 30,
-    "unit": "keys"
+    "total": 0,
+    "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 1,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T19:33:32Z"
+    },
     {
       "action": "update",
       "category": "cs",
@@ -101,18 +111,8 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T19:14:00Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 1,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-04-29T19:13:57Z"
     }
   ],
-  "stage": "heartbeat_tick",
-  "status": "running"
+  "stage": "signal",
+  "status": "interrupted"
 }

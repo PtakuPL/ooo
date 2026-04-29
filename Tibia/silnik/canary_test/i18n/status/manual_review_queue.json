@@ -63844,11 +63844,407 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:02.471598Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.14166.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode.",
+      "attempted_translation": "Esta caja está llena de coral fosilizado. Necesita ser obstruida a tiempo o se corroerá.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cajón' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:06.103768Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.14237.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The chair is tied to this strange machine. You could use this if you had appropriate instructions.",
+      "attempted_translation": "La silla está atada a esta extraña máquina. Podrías usar esto si tuvieras las instrucciones adecuadas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'machine extraño' for EN 'strange machine' from items.json:item.21743.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:06.692084Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.14682.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "No one really knows where it leads to, but the dragon graveyard might reveal the secret - or not",
+      "attempted_translation": "Nadie sabe realmente a dónde conduce, pero el cementerio de dragones podría revelar el secreto... o no.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Dragón' for EN 'Dragon' from monsters.json:monster.dragon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:06.771110Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.14756.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use it in your house to construct a cake cabinet",
+      "attempted_translation": "Úsalo en tu casa para construir un gabinete para pasteles.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'armario de pastel' for EN 'cake cabinet' from items.json:item.14754.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:07.677786Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.14762.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You see a medusa skull. Her hair's snakes are still alive. Awarded only on TibiaPic.com",
+      "attempted_translation": "Ves una calavera de medusa. Las serpientes de su pelo siguen vivas. Otorgado sólo en TibiaPic.com",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cráneo' for EN 'skull' from items.json:item.10876.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:09.606917Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.15817.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's empty. Gather some RED spores",
+      "attempted_translation": "Está vacío. Reúne algunas esporas ROJAS",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'spores rojo' for EN 'red spores' from items.json:item.15705.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:10.456234Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.15818.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red spores. Gather some GREEN spores",
+      "attempted_translation": "Contiene esporas rojas. Reúne algunas esporas VERDES",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'spores rojo' for EN 'red spores' from items.json:item.15705.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:12.575191Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.15819.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red and green spores. Gather some BLUE spores",
+      "attempted_translation": "Contiene esporas rojas y verdes. Reúne algunas esporas AZULES",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'spores verde' for EN 'green spores' from items.json:item.15706.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:16.463314Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.15820.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red, green and blue spores. Gather some YELLOW spores",
+      "attempted_translation": "Contiene esporas rojas, verdes y azules. Reúne algunas esporas AMARILLAS",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'spores azul' for EN 'blue spores' from items.json:item.15707.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:17.186031Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.15821.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red, green, blue and yellow spores. Deliver it to the gnomes",
+      "attempted_translation": "Contiene esporas rojas, verdes, azules y amarillas. Entregarlo a los gnomos",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'spores amarillo' for EN 'yellow spores' from items.json:item.15708.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:17.461609Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.15828.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "El cerdito necesita ser devuelto a su cuidador dentro de una hora",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cerdo de little' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:18.803299Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.15833.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "El cerdito necesita ser devuelto a su cuidador dentro de una hora",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cerdo de little' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:20.211239Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.16200.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this statue to train your club fighting and shielding skill offline.",
+      "attempted_translation": "Usa esta estatua para entrenar tu habilidad de lucha con garrotes y escudos sin conexión.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'maza' for EN 'club' from items.json:item.3270.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:21.827882Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.16246.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Another set of strange symbols.",
+      "attempted_translation": "Otro conjunto de símbolos extraños.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'symbols extraño' for EN 'strange symbols' from items.json:item.16246.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:32.526394Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.9197.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "carrion worm",
+      "attempted_translation": "gusano de carrion",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Gusano carroñero' for EN 'carrion worm', but source key item.9197.name still uses conflicting variant 'gusano de carrion'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:34.168985Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.32227.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "lost soul",
+      "attempted_translation": "soul perdido",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Alma perdida' for EN 'lost soul', but source key item.32227.name still uses conflicting variant 'soul perdido'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:34.283141Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.19150.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "norseman doll",
+      "attempted_translation": "muñeco nórdico",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Norseman doll' for EN 'norseman doll', but source key item.19150.name still uses conflicting variant 'muñeco nórdico'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:34.396193Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.31926.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "duende reservado",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ESPRITE RESERVADO' for EN 'reserved sprite', but source key item.31926.name still uses conflicting variant 'duende reservado'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:34.508805Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.31928.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "duende reservado",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ESPRITE RESERVADO' for EN 'reserved sprite', but source key item.31928.name still uses conflicting variant 'duende reservado'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:34.620405Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.31930.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "duende reservado",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ESPRITE RESERVADO' for EN 'reserved sprite', but source key item.31930.name still uses conflicting variant 'duende reservado'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:34.732499Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.31960.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "duende reservado",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ESPRITE RESERVADO' for EN 'reserved sprite', but source key item.31960.name still uses conflicting variant 'duende reservado'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:40.793777Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.9613.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "sea serpent trophy",
+      "attempted_translation": "trofeo de sea serpent",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'trofeo de serpiente marina' for EN 'sea serpent trophy', but source key item.9613.name still uses conflicting variant 'trofeo de sea serpent'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3221
+    "total": 3243
   },
-  "updated_at": "2026-04-29T20:06:13.913057Z"
+  "updated_at": "2026-04-29T20:08:40.821378Z"
 }

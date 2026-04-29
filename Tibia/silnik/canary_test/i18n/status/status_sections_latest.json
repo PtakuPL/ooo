@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:17:45.611696Z",
+  "generated_at_utc": "2026-04-29T23:20:23.334305Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,7 +9,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 23:17:41"
+      "last_update": "2026-04-29 23:20:16"
     },
     "LIVE": {
       "state": "active",
@@ -17,21 +17,21 @@
       "reason": "",
       "freshness": "3min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T23:14:23Z"
+      "last_update": "2026-04-29T23:17:23Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "1min temu",
+      "freshness": "10s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 23:17:41"
+      "last_update": "2026-04-29 23:20:16"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "10min temu",
+      "freshness": "13min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
       "last_update": "2026-04-29T23:07:01.275883Z"
     },
@@ -39,7 +39,7 @@
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "8min temu",
+      "freshness": "11min temu",
       "source": "quality_audit_latest.json",
       "last_update": "2026-04-29T23:08:50.085220Z"
     },
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 23:17:41"
+      "last_update": "2026-04-29 23:20:16"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,7 +57,7 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T23:17:45.610144Z"
+      "last_update": "2026-04-29T23:20:23.332750Z"
     }
   },
   "operator_panels": {
@@ -72,8 +72,8 @@
       "current_scope": "Serwer",
       "detail": "auto translate in progress",
       "current_key": "de:npc.json",
-      "heartbeat_at": "2026-04-29T23:14:23Z",
-      "heartbeat_age_s": 143,
+      "heartbeat_at": "2026-04-29T23:17:23Z",
+      "heartbeat_age_s": 170,
       "cycle": 18864
     },
     "recent_writes": {
@@ -265,6 +265,21 @@
     "recent_rejects": {
       "count": 20,
       "items": [
+        {
+          "timestamp": "2026-04-29T23:18:34.962043Z",
+          "lang": "de",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "too_many_issues",
+          "reject_types": [
+            "canonical_term_missing",
+            "canonical_term_missing",
+            "canonical_term_missing"
+          ],
+          "key": "npc.arkulius.multi_16"
+        },
         {
           "timestamp": "2026-04-29T23:14:27.592877Z",
           "lang": "de",
@@ -513,25 +528,12 @@
             "mixed_scripts"
           ],
           "key": "item.11541.name"
-        },
-        {
-          "timestamp": "2026-04-29T15:59:53.102933Z",
-          "lang": "es",
-          "category": "npc.json",
-          "surface": "Serwer",
-          "source": "google_translate",
-          "guard_level": "hard_block",
-          "decision_reason": "critical_issue",
-          "reject_types": [
-            "garble_en_chunk"
-          ],
-          "key": "npc.broken_servant_sentry.say_1"
         }
       ]
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:17:44.224349Z",
+      "generated_at_utc": "2026-04-29T23:20:21.690032Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -623,8 +625,8 @@
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T23:17:44.224349Z",
-        "oldest_timestamp": "2026-04-28T23:19:11.268380Z",
+        "latest_timestamp": "2026-04-29T23:20:21.690032Z",
+        "oldest_timestamp": "2026-04-28T23:20:33.983543Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2293,12 +2295,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:17:44.252461Z",
+      "generated_at_utc": "2026-04-29T23:20:21.719154Z",
       "window": {
         "trend_hours": 24,
         "samples": 1007,
-        "window_start_utc": "2026-04-28T23:19:11.309767Z",
-        "window_end_utc": "2026-04-29T23:17:44.252461Z"
+        "window_start_utc": "2026-04-28T23:20:34.007028Z",
+        "window_end_utc": "2026-04-29T23:20:21.719154Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2336,8 +2338,8 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z"
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z"
         },
         "website": {
           "label": "Website",
@@ -2364,8 +2366,8 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z"
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2392,8 +2394,8 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z"
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z"
         },
         "installer": {
           "label": "Installer",
@@ -2420,8 +2422,8 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z"
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z"
         }
       },
       "ranking": [
@@ -2451,8 +2453,8 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z",
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z",
           "rank": 1
         },
         {
@@ -2481,8 +2483,8 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z",
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z",
           "rank": 2
         },
         {
@@ -2511,8 +2513,8 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z",
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z",
           "rank": 3
         },
         {
@@ -2541,15 +2543,15 @@
             }
           ],
           "trend_samples": 1007,
-          "window_oldest_utc": "2026-04-28T23:19:11.309767Z",
-          "window_latest_utc": "2026-04-29T23:17:44.252461Z",
+          "window_oldest_utc": "2026-04-28T23:20:34.007028Z",
+          "window_latest_utc": "2026-04-29T23:20:21.719154Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:17:44.277498Z",
+      "generated_at_utc": "2026-04-29T23:20:21.745059Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2607,7 +2609,7 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1790,
+          "wave_history_rows_total": 1791,
           "wave_history_rows_window": 1007,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
@@ -2628,15 +2630,15 @@
           "pass": true,
           "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T23:16:42.612930Z",
-          "window_end_utc": "2026-04-29T23:17:44.277498Z",
+          "window_start_utc": "2026-04-28T23:19:11.268380Z",
+          "window_end_utc": "2026-04-29T23:20:21.745059Z",
           "window_span_hours": 24.02,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
               "samples": 1009,
-              "oldest_timestamp": "2026-04-28T23:16:42.612930Z",
-              "latest_timestamp": "2026-04-29T23:17:44.277498Z",
+              "oldest_timestamp": "2026-04-28T23:19:11.268380Z",
+              "latest_timestamp": "2026-04-29T23:20:21.745059Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2647,8 +2649,8 @@
             },
             "otclient_modules.json": {
               "samples": 1009,
-              "oldest_timestamp": "2026-04-28T23:16:42.612930Z",
-              "latest_timestamp": "2026-04-29T23:17:44.277498Z",
+              "oldest_timestamp": "2026-04-28T23:19:11.268380Z",
+              "latest_timestamp": "2026-04-29T23:20:21.745059Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2710,7 +2712,7 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:17:45.268647Z",
+      "generated_at_utc": "2026-04-29T23:20:22.982345Z",
       "active_provider": "OpenAI model pool",
       "active_provider_code": "openai_model_pool",
       "active_provider_source": "openai:openai/gpt-4o-mini",
@@ -2789,12 +2791,12 @@
           {
             "provider": "tm_simple",
             "provider_label": "TM/simple",
-            "writes": 174
+            "writes": 157
           },
           {
             "provider": "free_google_translate",
             "provider_label": "Free Google Translate",
-            "writes": 89
+            "writes": 106
           },
           {
             "provider": "canonical_name_semantic_autofix",
@@ -2812,12 +2814,12 @@
         "providers": {
           "tm_simple": {
             "status": "active",
-            "recent_writes": 174
+            "recent_writes": 157
           },
           "free_google_translate": {
             "status": "active",
             "enabled": true,
-            "recent_writes": 89
+            "recent_writes": 106
           },
           "google_cloud": {
             "status": "disabled",
@@ -2938,7 +2940,7 @@
           "used_pct": 100.8,
           "monthly_cap": 250.0,
           "spent": 252.0,
-          "latest_age_s": 756.846945,
+          "latest_age_s": 964.244131,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -2974,22 +2976,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:17:45.270424Z",
+      "generated_at_utc": "2026-04-29T23:20:22.984262Z",
       "available": true,
-      "lang": "es",
-      "json_file": "server.json",
-      "surface": "server",
+      "lang": "de",
+      "json_file": "npc.json",
+      "surface": "npc",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 16798,
-      "keys_scanned": 0,
-      "keys_with_term_usages": 0,
-      "keys_with_conflicts": 0,
-      "term_conflicts_total": 0,
-      "term_conflict_rate_pct": 0.0,
-      "term_conflict_rate_delta_pct": 0.0,
+      "registry_terms_total": 1980,
+      "keys_scanned": 1246,
+      "keys_with_term_usages": 90,
+      "keys_with_conflicts": 7,
+      "term_conflicts_total": 13,
+      "term_conflict_rate_pct": 7.778,
+      "term_conflict_rate_delta_pct": 7.778,
       "auto_fixed_english_name_leaks": 0,
       "inflection_suspects_flagged": 0,
-      "manual_review_enqueued": 0,
+      "manual_review_enqueued": 13,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -2997,8 +2999,120 @@
       "canonical_name_existing_quality_sanitized": 0,
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
-      "conflict_type_breakdown": {},
-      "top_conflicts": []
+      "conflict_type_breakdown": {
+        "canonical_term_missing": 7,
+        "english_name_leak": 6
+      },
+      "top_conflicts": [
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "items.json",
+          "source_key": "item.7174.name"
+        },
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "items.json",
+          "source_key": "item.7175.name"
+        },
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "Bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "monsters.json",
+          "source_key": "monster.bear.name"
+        },
+        {
+          "key": "npc.a_majestic_warwolf.say_male",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Tragen",
+          "canonical_en": "Bear",
+          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "source_file": "monsters.json",
+          "source_key": "monster.old_bear.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_30",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Drachen",
+          "canonical_en": "Dragon",
+          "translated_text": "Ein majestätischer Drache ist im Schlaf von der Wärme und Energie von tausend Sonnen umgeben. Die Ruhe seines Anblicks lässt Sie sanft lächeln. ...",
+          "source_file": "monsters.json",
+          "source_key": "monster.dragon.name"
+        },
+        {
+          "key": "npc.al_dee.stdmod_37",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Stangen",
+          "canonical_en": "rods",
+          "translated_text": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+          "source_file": "items.json",
+          "source_key": "item.11825.name"
+        },
+        {
+          "key": "npc.al_dee.stdmod_37",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Stangen",
+          "canonical_en": "rods",
+          "translated_text": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+          "source_file": "items.json",
+          "source_key": "item.11827.name"
+        },
+        {
+          "key": "npc.angus.say_60",
+          "conflict_type": "english_name_leak",
+          "canonical": "stein",
+          "canonical_en": "stone",
+          "translated_text": "In the ruins of north-western Edron you should be able to find a memory stone. Good luck.",
+          "source_file": "items.json",
+          "source_key": "item.12007.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_1",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "items.json",
+          "source_key": "item.6.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_1",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "Slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "monsters.json",
+          "source_key": "monster.slime.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_2",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "items.json",
+          "source_key": "item.6.name"
+        },
+        {
+          "key": "npc.broken_servant_sentry.say_2",
+          "conflict_type": "english_name_leak",
+          "canonical": "Schleim",
+          "canonical_en": "Slime",
+          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "source_file": "monsters.json",
+          "source_key": "monster.slime.name"
+        }
+      ]
     },
     "queue_health": {
       "blockers_state": "active",
@@ -3006,15 +3120,15 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 397,
-      "oldest_visible_pending_age_s": 30124,
+      "oldest_visible_pending_age_s": 30282,
       "top_langs": [
         {
           "lang": "ru",
-          "count": 366
+          "count": 365
         },
         {
           "lang": "de",
-          "count": 14
+          "count": 15
         },
         {
           "lang": "cs",
@@ -3028,11 +3142,11 @@
       "top_reason_buckets": [
         {
           "reason_bucket": "quality",
-          "count": 365
+          "count": 364
         },
         {
           "reason_bucket": "default",
-          "count": 22
+          "count": 23
         },
         {
           "reason_bucket": "word_salad",
@@ -3043,15 +3157,15 @@
           "count": 1
         }
       ],
-      "deferred_state_keys_total": 8987,
-      "deferred_state_updated_at": "2026-04-29T23:17:39.024081Z",
-      "deferred_state_age_s": 3,
+      "deferred_state_keys_total": 8988,
+      "deferred_state_updated_at": "2026-04-29T23:20:14.019436Z",
+      "deferred_state_age_s": 6,
       "deferred_state_stats": {
-        "enqueued": 4,
+        "enqueued": 5,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 0,
+        "suppressed_manual_review": 2,
         "deduped_ttl": 0,
-        "manual_review_escalations": 89,
+        "manual_review_escalations": 90,
         "partial_staged": 1,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
@@ -3060,7 +3174,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:17:45.610144Z",
+      "generated_at_utc": "2026-04-29T23:20:23.332750Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3075,16 +3189,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 143,
+          "value": 170,
           "threshold": 300,
-          "detail": "Heartbeat świeży (143s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=de:npc.json].",
+          "detail": "Heartbeat świeży (170s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=de:npc.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 652,
+          "value": 810,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3104,7 +3218,7 @@
           "severity": "warning",
           "value": {
             "pending": 397,
-            "oldest_s": 30124
+            "oldest_s": 30282
           },
           "threshold": {
             "pending_min": 200,

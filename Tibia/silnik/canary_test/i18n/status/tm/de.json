@@ -68038,5 +68038,2317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T22:15:43.035386Z"
+  },
+  "npc.aneus.farewell_msg_1": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "Auf Wiedersehen und pass auf Dich auf!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.453833Z"
+  },
+  "npc.aneus.greet_msg_1": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Grüße Abenteurer |PLAYERNAME|. Was führt dich zu mir?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.458344Z"
+  },
+  "npc.angelina.farewell_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Mögen die Götter dich segnen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.472953Z"
+  },
+  "npc.angelina.greet_msg_1": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Die Götter müssen dafür gelobt werden, dass ich endlich gerettet bin. Ich habe nicht viele weltliche Besitztümer, aber bitte nehmen Sie eine kleine Belohnung an, oder?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.481730Z"
+  },
+  "npc.angelina.greet_msg_2": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Danke, dass du mein Leben gerettet hast! Soll ich dich aus der Dunklen Kathedrale teleportieren?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.487122Z"
+  },
+  "npc.angelina.walkaway_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Mögen die Götter dich segnen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.489786Z"
+  },
+  "npc.angelo.greet_msg_1": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Der Druid von Crunor? Er hat dir erzählt, dass hier eine neue Höhle entstanden ist? Das ist richtig. Ich bin der Leiter eines {project}, der versucht, mehr über diesen neuen {area} herauszufinden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.500546Z"
+  },
+  "npc.angelo.greet_msg_2": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Geh mir einfach aus dem Weg! Du hast dieses wunderschöne Geschöpf getötet. Ich habe nichts mehr zu sagen. Verdammter Druide von Crunor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.507773Z"
+  },
+  "npc.angelo.greet_msg_4": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "Der Druid von Crunor? Er hat dir erzählt, dass hier eine neue Höhle entstanden ist? Das ist richtig. Ich bin Leiter eines Projekts, das versucht, mehr über diesen neuen Bereich herauszufinden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.518215Z"
+  },
+  "npc.angelo.say_6": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Geh mir einfach aus dem Weg! Du hast dieses wunderschöne Geschöpf getötet. Ich habe nichts mehr zu sagen. Verdammter Druide von Crunor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.530719Z"
+  },
+  "npc.angelo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Dann tschüss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.533720Z"
+  },
+  "npc.angus.greet_msg_1": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Grüße, was kann ich für dich tun?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.535959Z"
+  },
+  "npc.appaloosa.greet_msg_1": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Grüße, |PLAYERNAME| Ich schätze, Sie sind wegen des {horses} hier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.586017Z"
+  },
+  "npc.appaloosa.say_4": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du hast nicht genug Geld.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.589003Z"
+  },
+  "npc.appaloosa.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Gute Reise!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.590120Z"
+  },
+  "npc.appaloosa.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Dann nicht.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.592106Z"
+  },
+  "npc.archery.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Bitte kommen Sie von Zeit zu Zeit wieder vorbei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.595057Z"
+  },
+  "npc.archery.greet_msg_1": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Willkommen im Bogenschießen-Shop!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.597318Z"
+  },
+  "npc.archery.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Bitte kommen Sie von Zeit zu Zeit wieder vorbei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.600729Z"
+  },
+  "npc.archery_rook.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Bitte kommen Sie von Zeit zu Zeit wieder vorbei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.603724Z"
+  },
+  "npc.archery_rook.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Bitte kommen Sie von Zeit zu Zeit wieder vorbei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.607604Z"
+  },
+  "npc.ariella.greet_msg_1": {
+    "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
+    "text": "Hallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.608497Z"
+  },
+  "npc.arito.greet_msg_1": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Gott sei Dank bist du zurück!! Hast du... ähm... herausgefunden, worüber wir gesprochen haben??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.621014Z"
+  },
+  "npc.arito.sendtrade_msg_1": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Stöbern Sie doch mal in meinen Angeboten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.627800Z"
+  },
+  "npc.arkulius.farewell_msg_1": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "Endlich! Gute Dinge kommen zu denen, die warten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.631558Z"
+  },
+  "npc.arkulius.walkaway_msg_1": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "Auf Wiedersehen und bitte bleiben Sie weg, okay?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.672734Z"
+  },
+  "npc.armenius.greet_msg_1": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ah, ein Abenteurer. Lassen Sie sich begrüßen und nehmen Sie Platz. Wie kann ich Sie {serve}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.677960Z"
+  },
+  "npc.armenius.walkaway_msg_1": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Oh, der Nerv. Geh zu den Ratten, die dich großgezogen haben.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.683022Z"
+  },
+  "npc.arnold.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Nimm das!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.683954Z"
+  },
+  "npc.aruda.farewell_msg_1": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Auf Wiedersehen, |PLAYERNAME|. Ich hoffe wirklich, dass wir uns bald wieder unterhalten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:03.688912Z"
+  },
+  "npc.amber.stdmod_28": {
+    "src_hash": "4682ff8d4006bc084dc74417edde4f65",
+    "text": "Ich versuche, jeden Punkt von Tibia zu erkunden, und eines Tages werde ich alles gesehen haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.710968Z"
+  },
+  "npc.anerui.stdmod_1": {
+    "src_hash": "300b78d0d7007fcec263ce41c8cacd0d",
+    "text": "Ich bin die Herrin der Jagd. diesem Ort können Sie die Lebensmittel kaufen, die unsere Jagden liefern.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.720914Z"
+  },
+  "npc.anerui.stdmod_10": {
+    "src_hash": "351f81811be926e0e71d4e57a5a78eab",
+    "text": "Natürlich das Gleichgewicht der Natur. Es ist überall, also fragen Sie nicht, sondern beobachten und lernen Sie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.731773Z"
+  },
+  "npc.anerui.stdmod_11": {
+    "src_hash": "1f2c7de0f99be0ea79eab22ea079be2a",
+    "text": "Wir versuchen, im Einklang mit den Kräften der Natur zu leben, seien sie nun lebendig oder unbelebt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.741908Z"
+  },
+  "npc.anerui.stdmod_12": {
+    "src_hash": "9e2240a318adf829a747fcbc070a73ee",
+    "text": "Die Menschen sind eine laute und hässliche Rasse. Ihnen mangelt es jeglicher Anmut und sie sind eher mit den Orks verwandt als mit uns.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.753941Z"
+  },
+  "npc.anerui.stdmod_13": {
+    "src_hash": "524056b710abc38c3e850a0be26de879",
+    "text": "Leben und Tod sind wesentliche Teile des Gleichgewichts.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.757411Z"
+  },
+  "npc.anerui.stdmod_14": {
+    "src_hash": "524056b710abc38c3e850a0be26de879",
+    "text": "Leben und Tod sind wesentliche Teile des Gleichgewichts.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.760631Z"
+  },
+  "npc.anerui.stdmod_15": {
+    "src_hash": "9fdcad62b2fc6158010ce4c939e6a070",
+    "text": "Ich verachte ihre Anwesenheit in unserer Stadt, aber es könnte ein notwendiges Übel sein.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.765574Z"
+  },
+  "npc.anerui.stdmod_16": {
+    "src_hash": "d22db5184c7ade6ac70d28b7c45ffd60",
+    "text": "Das ist die Rasse, zu der ich gehöre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.767995Z"
+  },
+  "npc.anerui.stdmod_17": {
+    "src_hash": "4604e210b26a1c156dfe0899868c0f1e",
+    "text": "Die Magie, die sie ausüben, ist für sie das Einzige, was zählt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.771811Z"
+  },
+  "npc.anerui.stdmod_2": {
+    "src_hash": "bcafe904cf22cf9d3c6fa8654e64c6c5",
+    "text": "Die Jagd ist eine Kunst, die allzu oft von Diletanten ausgeübt wird. Jeder Narr mit Bogen oder Speer hält sich für einen Jäger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.779001Z"
+  },
+  "npc.anerui.stdmod_3": {
+    "src_hash": "4c3e46e7ff70e9a3210c66d2a56681d7",
+    "text": "Pfeil, Bogen und Speer sind die besten Freunde der Jäger. Im Nordosten der Stadt darf einer von uns solche Werkzeuge verkaufen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.786049Z"
+  },
+  "npc.anerui.stdmod_4": {
+    "src_hash": "9c12fe620847c4a2b019a98395e9d010",
+    "text": "Im Gegensatz zu einfachen Bauern oder Insektenhirten führen Jäger ein Leben in Freiheit und Nähe zur Natur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.791579Z"
+  },
+  "npc.anerui.stdmod_5": {
+    "src_hash": "109d7315f6283fd8ef25ad688bcf5417",
+    "text": "Die Natur ist kein Freund, sondern ein unversöhnlicher Lehrer, und die Lektionen, die wir lernen müssen, sind endlos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.797704Z"
+  },
+  "npc.anerui.stdmod_6": {
+    "src_hash": "11e94b21fcbfa073b3f1325a96c292bd",
+    "text": "Beobachten Sie den Himmel, er wird es Ihnen sagen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.800361Z"
+  },
+  "npc.anerui.stdmod_7": {
+    "src_hash": "43ea2a2e9de899294abfdafed579e9ee",
+    "text": "Ich denke, es ist ein menschlicher Gott für die menschliche Sicht auf die Natur. Ich habe nicht viel Wissen über dieses Wesen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.806948Z"
+  },
+  "npc.anerui.stdmod_8": {
+    "src_hash": "57681dc7d0d77477b89441d97e2df493",
+    "text": "Wenn sie jemals existierten, sind sie jetzt verschwunden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.810022Z"
+  },
+  "npc.anerui.stdmod_9": {
+    "src_hash": "1605afc4153bb21e8a195c0a8c5cea54",
+    "text": "Die Kuridai sind nicht nur gegenüber Menschen, sondern auch gegenüber der Umwelt zu aggressiv. Ihnen fehlt jegliches Verständnis für das Gleichgewicht, das wir als Natur kennen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.818808Z"
+  },
+  "npc.aneus.multi_1": {
+    "src_hash": "d6f7d61a0d3153426f78fecb9fe69cd5",
+    "text": "Sie verwendeten den gleichen Trick wie gegen die Rotlegion und die Orks ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.822940Z"
+  },
+  "npc.aneus.multi_10": {
+    "src_hash": "65681b604509ef60a126f013d9fb51e1",
+    "text": "Es heißt, die orkischen Schamanen hätten die Rote Legion verflucht. <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:30.826860Z"
+  },
+  "npc.aneus.multi_11": {
+    "src_hash": "283a093614ca3814c79add6836f07b7f",
+    "text": "Niemand weiß es. Doch ein Drittel der Soldaten starb auf dem Rückweg einer Krankheit. <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.713971Z"
+  },
+  "npc.aneus.multi_12": {
+    "src_hash": "082fbd01fc3acdbb185eabf1751b0ac9",
+    "text": "Und die Orks wollten sich rächen, und nach ein paar Tagen schlugen sie zurück! <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.717634Z"
+  },
+  "npc.aneus.multi_13": {
+    "src_hash": "cfc36044a88f7448dfe7258aa52b1b5c",
+    "text": "Die Orks und viele verbündete Zyklopen und Minotauren aus allen ...<m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.720362Z"
+  },
+  "npc.aneus.multi_14": {
+    "src_hash": "7212bb10862bdd33985e34fef3dcab04",
+    "text": "... über Tibia kamen, um ihre Freunde zu rächen, und sie töteten fast alle ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.723826Z"
+  },
+  "npc.aneus.multi_15": {
+    "src_hash": "8e6faf8ca19bd4b9f0690293f48a585c",
+    "text": "... Arbeiter und Soldaten im Schloss. Die HILFE der Königsschwester kam zu spät.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.726938Z"
+  },
+  "npc.aneus.multi_16": {
+    "src_hash": "65f608213319ed6525af22d4faac775f",
+    "text": "Der Großteil der Rotlegion marschierte nachts auf die Insel. Die Orks ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.729976Z"
+  },
+  "npc.aneus.multi_17": {
+    "src_hash": "694d16bc9e657fd5ce207d568868f2ac",
+    "text": "... waren nicht vorbereitet und die Rote Legion tötete Hunderte von Orks ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.733161Z"
+  },
+  "npc.aneus.multi_18": {
+    "src_hash": "7b959f07aa58497272dc85a18152a6a9",
+    "text": "... nahezu verlustfrei. Nachdem sie zufrieden waren, gingen sie zurück zum Schloss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.736399Z"
+  },
+  "npc.aneus.multi_19": {
+    "src_hash": "c6c26d980037158f68913dd96e4bbf65",
+    "text": "Sie befahl ihren treuen Druiden und Jägern, sich zu verkleiden ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.739291Z"
+  },
+  "npc.aneus.multi_2": {
+    "src_hash": "931841ded72493a0c82006a42beaa605",
+    "text": "... begannen, gegen ihre nicht-orkischen Verbündeten zu kämpfen. Nach einem verdammt langen Kampf ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.743285Z"
+  },
+  "npc.aneus.multi_20": {
+    "src_hash": "1a97ae41dba9a7e2e9de2253958d8992",
+    "text": "... als Orks von der nahen INSEL und um die Rote Legion immer wieder nachts anzugreifen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.746875Z"
+  },
+  "npc.aneus.multi_21": {
+    "src_hash": "1018cd2d0ebd629cda792cb33740ad4f",
+    "text": "Die Schwester des Königs war ziemlich verärgert über die Situation dort, aber ihr Bruder ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.750482Z"
+  },
+  "npc.aneus.multi_22": {
+    "src_hash": "e9e416eeafa0ae4ce295450fdaeb5916",
+    "text": "... wollte in dieser Angelegenheit nichts unternehmen. Also machte sie einen PLAN, die Rotlegion wegen ihrer Grausamkeit für immer zu vernichten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.755780Z"
+  },
+  "npc.aneus.multi_23": {
+    "src_hash": "dd535ceefd4a01d3a0eb5ed9d85a6d3c",
+    "text": "Alle Rebellen wurden zur Riesenburg gebracht. Bewacht von der Roten Legion, ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.759026Z"
+  },
+  "npc.aneus.multi_24": {
+    "src_hash": "cdef1f22dd12585b80432f9a95cb08b6",
+    "text": "... sie mussten unter noch schlechteren Bedingungen arbeiten und leben. Auch einige FREUNDE der Schwester des Königs wurden dorthin gebracht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.764295Z"
+  },
+  "npc.aneus.multi_25": {
+    "src_hash": "921318e9a9c80ba821f11052591ff9dd",
+    "text": "Die Entwicklung der Stadt verlief gut. Außerdem wurde eine riesige Burg gebaut ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.767786Z"
+  },
+  "npc.aneus.multi_26": {
+    "src_hash": "be22945fed87f9b1c1b4aaabafcc103f",
+    "text": "... nordöstlich der Stadt. Doch immer mehr Arbeiter begannen wegen der schlechten Bedingungen zu REBELLEN.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.771844Z"
+  },
+  "npc.aneus.multi_27": {
+    "src_hash": "d05e36758a7f6026c3ef793b1abc6591",
+    "text": "Die Arbeiten dieser neuen Stadt begannen und der König sandte sein Bestes ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.775058Z"
+  },
+  "npc.aneus.multi_28": {
+    "src_hash": "891ab7df63a8c68fcea66ec8097590b8",
+    "text": "... SOLDATEN, um die Arbeiter vor ORCS zu schützen und sie HÄRTER ARBEITEN zu lassen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.778414Z"
+  },
+  "npc.aneus.multi_29": {
+    "src_hash": "234878686d8e5f4b60a9b0fd801e5875",
+    "text": "Ok, setz dich hin und hör zu. In den frühen Tagen war einer der Vorfahren ... <press m for more>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:13:57.782432Z"
+  },
+  "npc.aneus.multi_3": {
+    "src_hash": "3df6e324aaae425a0643b2cb0b084529",
+    "text": "... die Orks kehrten in ihre Städte zurück. Die Stadt Carlin wurde gerettet. <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.503898Z"
+  },
+  "npc.aneus.multi_30": {
+    "src_hash": "752c01681ad48e8000d55f235e946795",
+    "text": "... unseres Königs Tibianus III. wollte die beste STADT in ganz Tibia bauen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.507137Z"
+  },
+  "npc.aneus.multi_4": {
+    "src_hash": "a7a5d2d36867362812518d949b12a566",
+    "text": "Seitdem herrscht immer eine Frau über Carlin und diese Statue ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.510068Z"
+  },
+  "npc.aneus.multi_5": {
+    "src_hash": "9d2dd18f0d19b89d5a672cedee3abdf5",
+    "text": "... wurde gemacht, um uns ihre großartige Taktik gegen die Orks zu erinnern ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.513472Z"
+  },
+  "npc.aneus.multi_6": {
+    "src_hash": "f1ae6b3f224f1cbd021178b3ebb19499",
+    "text": "... und die Rote Legion. Das war also die Geschichte von Carlin und diesen Fields of Glory. Ich hoffe, es hat dir gefallen. *Er lächelt*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.518942Z"
+  },
+  "npc.aneus.multi_7": {
+    "src_hash": "2247366675696c56429607a99058272f",
+    "text": "Sie versuchte, die Arbeiter zu retten, aber es war zu spät. Die Orks ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.522252Z"
+  },
+  "npc.aneus.multi_8": {
+    "src_hash": "9c04ebb842d3f4fc9b06a1977371a9cb",
+    "text": "... begann auch sofort, ihre Truppen anzugreifen. Ihre königlichen Truppen ... <m>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.525501Z"
+  },
+  "npc.aneus.multi_9": {
+    "src_hash": "e77773d4e8dfb95af7f15d748aa70461",
+    "text": "... ging zurück in die Stadt. Ein Trick rettete die Stadt vor der Zerstörung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.528571Z"
+  },
+  "npc.aneus.stdmod_1": {
+    "src_hash": "68fe341e8fd230b2cb2372cc71e19f26",
+    "text": "Es war die Elite der gesamten Armee. Sie wurden Rote Legion (auch Blutige Legion genannt) genannt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.532398Z"
+  },
+  "npc.aneus.stdmod_2": {
+    "src_hash": "d8bad38f59547eb027071034ae632e07",
+    "text": "Die Orks griffen die Arbeiter von Zeit zu Zeit und störten so die ARBEITEN in der Stadt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.536050Z"
+  },
+  "npc.aneus.stdmod_3": {
+    "src_hash": "a63a49d249bab9ba950e2dae05560421",
+    "text": "Die Soldaten behandelten die Arbeiter wie Sklaven.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.537970Z"
+  },
+  "npc.aneus.stdmod_4": {
+    "src_hash": "2d2338d4bc00d75a3a8e1a6ba147b674",
+    "text": "Der General der Roten Legion wurde über diese Angriffe sehr wütend und nach einigen Monaten schlug er zurück!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.542281Z"
+  },
+  "npc.angelina.say_1": {
+    "src_hash": "3c52818a7a0c9c247b1e476a061f2ce6",
+    "text": "Ich werde dir jetzt ein kleines Geheimnis verraten. Meine Freundin Lynda in Thais kann einen gesegneten Zauberstab erschaffen. Grüße sie von mir, vielleicht hilft sie dir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.548516Z"
+  },
+  "npc.angelo.say_1": {
+    "src_hash": "0d08763be2c9977a913843907aae4a64",
+    "text": "Die Wissenschaftler fehlen noch? Du hast gerade ein paar seltsame grün leuchtende Mumien und eine große Oase gefunden? Ich gebe Ihnen dieses Analysetool für das Wasser der Oase. Vielleicht ist das der Schlüssel. Könnten Sie mir eine Probe dieses Wassers bringen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.558613Z"
+  },
+  "npc.angelo.say_10": {
+    "src_hash": "f8aaffe843ca66e49a4c4e14e86cb16d",
+    "text": "MoTA ist die Abkürzung für das kürzlich gegründete Museum of Tibian Arts. Wir arbeiten eng zusammen. Neue {results} werden dem Museum sofort mitgeteilt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.564684Z"
+  },
+  "npc.angelo.say_11": {
+    "src_hash": "fbd44dc035bd2a5715e1691a8dab6477",
+    "text": "Wir haben bisher keine wissenschaftlichen Ergebnisse, um unser {goal} zu erreichen, weil meine Arbeiter noch nicht zurück sind. Sollte ich {worried} sein?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.570876Z"
+  },
+  "npc.angelo.say_12": {
+    "src_hash": "13ebbfd0518e546cda269be89a8655f9",
+    "text": "Dann muss ich herausfinden, warum sie nicht zurückkommen. Aber ich bin alt und mein Rücken schmerzt. Möchtest du dorthin gehen und nach meinen Arbeitern suchen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.576963Z"
+  },
+  "npc.angelo.say_13": {
+    "src_hash": "8497d81f59756d7ea99bab88674d875e",
+    "text": "Fantastisch! Gehen Sie dorthin und erzählen Sie mir dann, was Sie gesehen haben. Ich habe die Tür für dich geöffnet. Pass auf dich auf!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:27.582322Z"
+  },
+  "npc.angelo.say_15": {
+    "src_hash": "a198fb4a6c345a471722de1b3fe335fa",
+    "text": "Wir wissen noch nicht, inwieweit die Höhle und die dunkle Pyramide zusammengehören. Das versuchen wir herauszufinden. Vielleicht muss die Geschichte dieses Ortes neu geschrieben werden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:28.787043Z"
+  },
+  "npc.angelo.say_2": {
+    "src_hash": "c7c8d27d58fccdd97d8e8fb9bd3fd223",
+    "text": "Sehr gut. Hoffentlich bringt uns die Analyse dieser Probe der Lösung dieses Rätsels näher.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.536854Z"
+  },
+  "npc.angelo.say_3": {
+    "src_hash": "da4d32217ff1dadde5f369a30d3977bd",
+    "text": "Haben Sie die Probe, um die ich Sie gebeten habe?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.706295Z"
+  },
+  "npc.angelo.say_4": {
+    "src_hash": "f24eba6488a093389d611f5a4214a988",
+    "text": "Vielen Dank. Lassen Sie mich das Ergebnis überprüfen. Nun, ich denke, Sie brauchen das Gegenmittel. Bitte wenden Sie es auf die Oase an!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.712286Z"
+  },
+  "npc.angelo.say_5": {
+    "src_hash": "2de32f826102f63ea0ccd1f1288f66cb",
+    "text": "Was ist passiert? Du hast das Gegenmittel auf die Oase aufgetragen und sie wurde dann von einem Sandsturm zerstört? Untersuchen Sie den Ort weiter.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.717579Z"
+  },
+  "npc.angelo.say_7": {
+    "src_hash": "50d9e98b81750b73530fef2fe4c3ed66",
+    "text": "{Gareth} hat Ihnen erzählt, dass es Gerüchte über gefälschte Artefakte im MoTA gibt? Und es ist Ihre Aufgabe, das mit der Lupe zu überprüfen? Ich verstehe. Ich brauche im Moment keins, also kannst du eines von mir haben. Du findest einen in der Kiste dort drüben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.727424Z"
+  },
+  "npc.angelo.say_8": {
+    "src_hash": "3e5723ed6466616e9c012f6abe1ec04e",
+    "text": "Sie haben also herausgefunden, dass ein Artefakt im MoTA gefälscht ist? Und {Gareth} hat dich zu mir geschickt, um als Ersatz ein neues Artefakt zu besorgen? Tut mir leid, ich kenne dich kaum, deshalb vertraue ich dir nicht. Da helfe ich dir nicht!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.736434Z"
+  },
+  "npc.angelo.say_9": {
+    "src_hash": "64f2150216a69aa761df1b544e6c0a22",
+    "text": "Das Projekt heißt 'Sandy {cave} Project' und wird vom {MoTA} finanziert. Ihr Ziel ist die Untersuchung dieses {cave}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.741334Z"
+  },
+  "npc.angus.multi_1": {
+    "src_hash": "f91a9519d595fa9e2fa986102e0edc06",
+    "text": "Unsere Mitglieder reisen weit entfernte Orte und durchqueren gefährliche Gebiete, viele fallen Feinden oder dem Land zum Opfer ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.746075Z"
+  },
+  "npc.angus.multi_10": {
+    "src_hash": "ad66eef7d46daaeabde9ff86bd71494a",
+    "text": "Glauben Sie, dass Sie für diese Mission bereit sind?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.748121Z"
+  },
+  "npc.angus.multi_11": {
+    "src_hash": "d649bf320c3a3351571eee4877ea1939",
+    "text": "Gut, aber um in unsere Reihen aufgenommen zu werden, bedarf es mehr als nur eines Lippenbekenntnisses. Um Ihr Engagement für die Sache zu beweisen, müssen Sie einen Artikel für uns erwerben ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.754888Z"
+  },
+  "npc.angus.multi_12": {
+    "src_hash": "8fb420a67bb8d7182b4262ff964e9344",
+    "text": "Die Mission sollte einfach zu erfüllen sein. Für unsere Ausgrabungen haben wir in Kazordoon eine robuste Spitzhacke bestellt. Ihr müsstet diesen Händler Uzgod aufsuchen und die Spitzhacke für uns besorgen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.762298Z"
+  },
+  "npc.angus.multi_13": {
+    "src_hash": "f3e9abd3321bf1f39ee49a38b3da9bb7",
+    "text": "Einfach genug? Interessieren Sie sich für diese Aufgabe?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.764408Z"
+  },
+  "npc.angus.multi_14": {
+    "src_hash": "2dea33e94c7862cf9525abee5b48ac68",
+    "text": "Wir möchten einige alte Runen studieren, die von der Echsenrasse verwendet wurden. Wir vermuten eine Verbindung der Eidechsen zu den Gründern von Ankrahmun ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.770227Z"
+  },
+  "npc.angus.multi_15": {
+    "src_hash": "6d7e02870b1f2bd6a4a75d091d6c2448",
+    "text": "Irgendwo unter der von Affen befallenen Stadt Banuta kann man Kerker finden, die einst von Eidechsen bewohnt waren ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.774516Z"
+  },
+  "npc.angus.multi_16": {
+    "src_hash": "58480b8f06d05b95b682740398ebc477",
+    "text": "Suchen Sie dort nach einer atypischen Struktur, die eher zu Ankrahmun und seinen Ankrahmun-Gräbern passen würde. Kopieren Sie die Runen, die Sie auf dieser Struktur finden ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.780906Z"
+  },
+  "npc.angus.multi_17": {
+    "src_hash": "e71d2d46fe9dc56efb9fa1542ac9376c",
+    "text": "Sind Sie dieser Herausforderung gewachsen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.782528Z"
+  },
+  "npc.angus.multi_18": {
+    "src_hash": "606b5e886fe8b7fac68be368feb09fe3",
+    "text": "Wir haben uns etwas Wissen über besondere Zaubersteine ​​angeeignet. Einige untergegangene Zivilisationen nutzten es zur Speicherung von Wissen und Überlieferungen, genau wie wir Bücher nutzen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.790035Z"
+  },
+  "npc.angus.multi_19": {
+    "src_hash": "6d48f259f0e14561b06f20c1c99abbec",
+    "text": "Die Weisheit in solchen Steinen muss immens sein, aber auch die Gefahren, denen jeder Mensch ausgesetzt ist, der versucht, einen zu erlangen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.795193Z"
+  },
+  "npc.angus.multi_2": {
+    "src_hash": "0f6f27bd429a6246e8915eaf4b13629d",
+    "text": "Manchmal können die persönlichen Entdeckerbroschen wiedergefunden werden. So erfahren wir etwas über das Schicksal unserer Mitglieder ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.800062Z"
+  },
+  "npc.angus.multi_20": {
+    "src_hash": "05ee0b0584330b394bb849f53ea366b7",
+    "text": "Soweit wir wissen, wurden die im Nordwesten von Edron gefundenen Ruinen einst von Wesen bewohnt, die solche Steine ​​verwendeten. Haben Sie das Herz, dorthin zu gehen und uns einen solchen Stein zu besorgen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:14:55.808182Z"
+  },
+  "npc.angus.multi_21": {
+    "src_hash": "39237b534a1923196110ddbbf14ada07",
+    "text": "Einige hochrangige Mitglieder würden gerne Elfenpoesie studieren. Sie wollen das seltene Buch 'Songs of the Forest' ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.723457Z"
+  },
+  "npc.angus.multi_22": {
+    "src_hash": "e674100e4e7ff0c63782c8fc637eb1ae",
+    "text": "Sicherlich wird jemand in Ab'Dendriel ein Exemplar besitzen. Man müsste also dort einfach mal nachfragen. Sind Sie bereit, diese Mission anzunehmen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.729433Z"
+  },
+  "npc.angus.multi_23": {
+    "src_hash": "fd1ca43a04a60f07f86aaa1d5d924d1a",
+    "text": "Wir wollen mehr über die alte Rasse der Knochenlords erfahren. Wir glauben, dass die schwarze Pyramide nordöstlich von Darashia ursprünglich von ihnen erbaut wurde ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.735708Z"
+  },
+  "npc.angus.multi_24": {
+    "src_hash": "0f3ace58a37fac6ddbfe8fe8ecc6c7cc",
+    "text": "Wir bitten Sie, die Ruinen der schwarzen Pyramide zu erkunden und nach Anzeichen zu suchen, die unsere Theorie bestätigen. Möglicherweise finden Sie ein Dokument mit der numerischen Bonelord-Sprache ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.743414Z"
+  },
+  "npc.angus.multi_25": {
+    "src_hash": "d259ccb119f75ea227dbd1dad096bb71",
+    "text": "Das wäre ein ausreichender Beweis. Möchten Sie diese Mission annehmen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.746294Z"
+  },
+  "npc.angus.multi_26": {
+    "src_hash": "08cef1cfc8fcecfbf5781c716fe08d8e",
+    "text": "Beide Schnitzereien sind nun aufgeladen und harmonisiert. Theoretisch sollten Sie in der Lage sein, in Nullzeit von einer Basis zur anderen zu reisen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.752007Z"
+  },
+  "npc.angus.multi_27": {
+    "src_hash": "07438ccddb233b3362eed211f1015e36",
+    "text": "Allerdings müssen Sie eine Orichalcum-Perle in Ihrem Besitz haben, um sie als Energiequelle nutzen zu können. Es wird während des Vorgangs zerstört. Ich gebe dir 6 solcher Perlen und du kannst in unseren Basen neue kaufen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.760329Z"
+  },
+  "npc.angus.multi_28": {
+    "src_hash": "f76f42c4d2ec81f4480932e7fd5e2b89",
+    "text": "Darüber hinaus müssen Sie ein Premium-Entdecker sein, um die Astralreise nutzen zu können. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.763877Z"
+  },
+  "npc.angus.multi_29": {
+    "src_hash": "ac1dbbbb1af69d60e23fe6b662ad0375",
+    "text": "Und denken Sie daran: Es ist ein kleiner Teleport für Sie, aber ein großer Teleport für alle Tibianer! Hier ist ein kleines Geschenk für Ihre Bemühungen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.769736Z"
+  },
+  "npc.angus.multi_3": {
+    "src_hash": "a956076fcff01f900a40761fb65e58c6",
+    "text": "Für jede uns zurückgegebene Brosche bieten wir eine Belohnung an. Haben Sie eine Entdeckerbrosche gefunden?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.773919Z"
+  },
+  "npc.angus.multi_30": {
+    "src_hash": "489c305d7e1c73be47f94d405a2dfe0b",
+    "text": "Diese Geschichten sind einfach unglaublich! Männer mit Gesichtern auf dem Bauch statt Köpfen, sagen Sie? Und Hühner, die goldene Eier legen? Am erstaunlichsten ist jedoch dieser Jungbrunnen, den Sie erwähnt haben! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.782196Z"
+  },
+  "npc.angus.multi_31": {
+    "src_hash": "ffb687ecc9d990125f12c0b6a4a6cf90",
+    "text": "Ich werde sofort einige unserer engagiertesten Entdecker schicken, um diese Dinge zu überprüfen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.785771Z"
+  },
+  "npc.angus.multi_4": {
+    "src_hash": "25094cb87ba0e6f491f2e830082e1eb8",
+    "text": "Ratha war ein großartiger Entdecker und ein noch großartigerer Frauenheld. Leider kehrte er nie von einem Besuch bei den Amazonen zurück. Wahrscheinlich ist er tot ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.792562Z"
+  },
+  "npc.angus.multi_5": {
+    "src_hash": "7c10e329b4a57dbd0d3c7175149adf8d",
+    "text": "Die Gesellschaft bietet eine beträchtliche Belohnung für die Bergung von Ratha oder seinen sterblichen Überresten. Gibt es Neuigkeiten über Ratha?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.798013Z"
+  },
+  "npc.angus.multi_6": {
+    "src_hash": "b8a8e31569ad1400711e8b5c46838889",
+    "text": "Das ist ziemlich mutig. Wir wissen, dass wir viel verlangen. Die Königin der Banshees lebt in den sogenannten Ghostlands, südwestlich von Carlin. Es wird gemunkelt, dass sich ihr Versteck in den tiefsten Kerkern unter diesem verfluchten Ort befindet ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.807238Z"
+  },
+  "npc.angus.multi_7": {
+    "src_hash": "f92b7e2780d0361c6781e39ff486b82b",
+    "text": "Jegliche Gewalt wird wahrscheinlich zwecklos sein, Sie müssen mit ihr verhandeln. Versuchen Sie, ein Spektralkleid von ihr zu bekommen. Viel Glück.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.812713Z"
+  },
+  "npc.angus.multi_8": {
+    "src_hash": "be89d3dbc12ff96bd10a1c34b442d5c0",
+    "text": "Bußgeld. Die Gesellschaft sucht nach neuen Reisemöglichkeiten. Einige unserer brillantesten Köpfe haben Theorien über Astralreisen, die sie weiter erforschen möchten ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.818996Z"
+  },
+  "npc.angus.multi_9": {
+    "src_hash": "d6b40ee18bd79a975ead70f9cb3fa99e",
+    "text": "Deshalb müssen Sie etwas Ektoplasma aus der Leiche eines Geistes sammeln. Wir stellen Ihnen einen Sammler zur Verfügung, den Sie am Körper eines getöteten Geistes verwenden können ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.825849Z"
+  },
+  "npc.angus.say_1": {
+    "src_hash": "4004163d9a4de051f32618f25fa503f1",
+    "text": "Möchten Sie der Entdeckergesellschaft beitreten?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:24.827742Z"
+  },
+  "npc.angus.say_11": {
+    "src_hash": "c8b5a09280d3a626d97d77288a558304",
+    "text": "Die Forschung zum Ektoplasma macht gute Fortschritte. Jetzt brauchen wir einen Spektralartikel. Unsere Wissenschaftler glauben, dass ein Spektralkleid ein perfektes Objekt für ihre Studien wäre ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.175314Z"
+  },
+  "npc.angus.say_12": {
+    "src_hash": "1aa63839380759edf5b86d78365654e3",
+    "text": "Habt Ihr das Spektralkleid erhalten, das wir brauchen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.177681Z"
+  },
+  "npc.angus.say_13": {
+    "src_hash": "f5ea2129e1be3653ea1f3f0142d972a3",
+    "text": "Mit den von Ihnen bereitgestellten Objekten werden unsere Forscher stetige Fortschritte machen. Noch fehlen uns einige Testergebnisse von Mitentdeckern ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.183259Z"
+  },
+  "npc.angus.say_14": {
+    "src_hash": "af6795c8c3d6c71cb42b8077e752f70e",
+    "text": "Ach ja! Sagen Sie unserem Entdeckerkollegen, dass die Papiere bereits in der Post sind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.186647Z"
+  },
+  "npc.angus.say_15": {
+    "src_hash": "44e5666b530e8f62db0990c6ba02ec4b",
+    "text": "Die Berichte aus Northport sind bereits hier eingetroffen und unsere Fortschritte sind erstaunlich. Wir glauben, dass es möglich ist, eine astrale Brücke zwischen unseren Stützpunkten zu schaffen. Haben Sie Interesse, uns dabei zu unterstützen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.195669Z"
+  },
+  "npc.angus.say_16": {
+    "src_hash": "4b3363e5d3b8999a0af43a0f40ccd8de",
+    "text": "Hast du die gewünschte Spitzhacke von Uzgod in Kazordoon erhalten?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.198433Z"
+  },
+  "npc.angus.say_17": {
+    "src_hash": "dfc5ac49eb8d3ea80743ffc0306c16d5",
+    "text": "Unsere klügsten Köpfe kamen auf die Theorie, dass tief unter der Eisinsel Folda uraltes Eis zu finden ist. Um diese Theorie zu beweisen, bräuchten wir eine Probe des oben genannten Eises ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.205705Z"
+  },
+  "npc.angus.say_18": {
+    "src_hash": "c2aafac7aec4ab21a6c7325db8bb361d",
+    "text": "Haben Sie das Eis bekommen, das wir suchen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.207543Z"
+  },
+  "npc.angus.say_19": {
+    "src_hash": "17784738b379cb7f12cc256ea095876d",
+    "text": "Die Mission fordert Sie auf, einige Schmetterlingsarten zu sammeln. Sind Sie interessiert?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.211089Z"
+  },
+  "npc.angus.say_2": {
+    "src_hash": "4b60bc43dabd9b31255e05f2ed853731",
+    "text": "Oh ja, ein interessantes Thema. Wir hatten lebhafte Diskussionen über diese Entdeckung. Aber was wollen Sie?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.215249Z"
+  },
+  "npc.angus.say_20": {
+    "src_hash": "202bc421be1d2a8c5a8f5f62d614779c",
+    "text": "Haben Sie den lila Schmetterling erworben, den wir suchen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.217664Z"
+  },
+  "npc.angus.say_21": {
+    "src_hash": "cb5598bc461a5a6a5cfae6cfe84f98c4",
+    "text": "Mit diesem Vorbereitungsset können Sie einen getöteten blauen Schmetterling einsammeln ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.221055Z"
+  },
+  "npc.angus.say_22": {
+    "src_hash": "0791722408ef8fb47b7063a5387323a6",
+    "text": "Haben Sie den blauen Schmetterling erworben, den wir suchen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.223483Z"
+  },
+  "npc.angus.say_23": {
+    "src_hash": "59d832175850554186c76307ef967864",
+    "text": "Mit diesem Vorbereitungsset können Sie einen getöteten roten Schmetterling einsammeln ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.226891Z"
+  },
+  "npc.angus.say_24": {
+    "src_hash": "4b492af572daa4eaa8b008d4b2c1ffcc",
+    "text": "Haben Sie den roten Schmetterling erworben, den wir suchen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.229255Z"
+  },
+  "npc.angus.say_25": {
+    "src_hash": "1e3ce998af65b2f9115f67b03275ee2c",
+    "text": "In dieser Mission bitten wir Sie, uns einige Pflanzenproben von Tiquanda-Pflanzen zu besorgen. Möchten Sie diese Mission erfüllen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.234453Z"
+  },
+  "npc.angus.say_26": {
+    "src_hash": "7658be1e78e4fa62af43dfe438c83fa1",
+    "text": "Haben Sie die Probe der von uns gesuchten Dschungelglockenpflanze erworben?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.237536Z"
+  },
+  "npc.angus.say_27": {
+    "src_hash": "d2ef0a97c44d4bfe0a19b1453939c6c1",
+    "text": "Benutzen Sie den Behälter dieses Botanikers auf einem Hexenkessel, um eine Probe für uns zu sammeln. Bringen Sie es hierher und berichten Sie über Ihre Pflanzensammlung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.243761Z"
+  },
+  "npc.angus.say_28": {
+    "src_hash": "5b714d0c80a6c73bd18e2df74f730aff",
+    "text": "Haben Sie die Probe des von uns gesuchten Hexenkessels erworben?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.246332Z"
+  },
+  "npc.angus.say_29": {
+    "src_hash": "45aced636b00875c88331e566ef329fe",
+    "text": "Verwenden Sie den Behälter dieses Botanikers für eine riesige Dschungelrose, um eine Probe für uns zu erhalten. Bringen Sie es hierher und berichten Sie über Ihre Pflanzensammlung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:15:53.253214Z"
+  },
+  "npc.angus.say_3": {
+    "src_hash": "df547cb9f28d68ac72b7a0e07ad9479c",
+    "text": "Du sprichst dieses Thema noch einmal an? Ich glaube nicht, dass unsere Gespräche Sinn ergeben, wenn Sie nicht beweisen, dass Sie ein Befürworter der Wissenschaft sind. Haben Sie einen Beweis für Ihr Engagement für die Wissenschaft?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.471759Z"
+  },
+  "npc.angus.say_30": {
+    "src_hash": "c2d1281ef23ec34e1af4f0f25617ec8f",
+    "text": "Haben Sie die Probe der von uns gesuchten Riesen-Dschungelrose erworben?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.476324Z"
+  },
+  "npc.angus.say_31": {
+    "src_hash": "4371136e87655e87a08b2762f638571f",
+    "text": "Die Entdeckergesellschaft möchte eine alte Urne erwerben, die eine Art Reliquie des Echsenvolkes von Tiquanda darstellt. Möchten Sie diese Mission annehmen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.485031Z"
+  },
+  "npc.angus.say_32": {
+    "src_hash": "6d81757f3a07c512f691dc53e8f417b5",
+    "text": "Haben Sie es geschafft, die alte Urne zu bekommen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.488374Z"
+  },
+  "npc.angus.say_33": {
+    "src_hash": "d01610bec3f9aa1d641a66728fdba293",
+    "text": "Haben Sie Beweise dafür gefunden, dass die Pyramide von Knochenlords gebaut wurde?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.493058Z"
+  },
+  "npc.angus.say_34": {
+    "src_hash": "aafc5affc270f17961b263faf1cebeff",
+    "text": "Es ist allgemein bekannt, dass Orks von Uldereks Rock eine Art Pulver verwenden, um die Wildheit ihrer Kriegswölfe und Berserker zu erhöhen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.500812Z"
+  },
+  "npc.angus.say_35": {
+    "src_hash": "4da05c5cff71811eafc918ece4baf9e0",
+    "text": "Habt Ihr etwas von dem Orkpulver erhalten?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.503499Z"
+  },
+  "npc.angus.say_36": {
+    "src_hash": "d21dd9e4c1f95849b7d472d91b0718db",
+    "text": "Haben Sie eine Kopie von 'Songs of the Forest' für uns erworben?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.507486Z"
+  },
+  "npc.angus.say_37": {
+    "src_hash": "61e73ea9002abf2e5503325e2fba6707",
+    "text": "Konnten Sie einen Erinnerungsstein für unsere Gesellschaft erwerben?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.511652Z"
+  },
+  "npc.angus.say_38": {
+    "src_hash": "b9664a6fed43fe030bbffde8c246b60a",
+    "text": "Haben Sie wie gewünscht eine Kopie der alten Runen erstellt?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.515872Z"
+  },
+  "npc.angus.say_39": {
+    "src_hash": "3c7e67a8006b35c46056046ea55303d4",
+    "text": "Wir werden sehen, ob Sie diese einfache Aufgabe bewältigen können. Holen Sie sich die Spitzhacke von Uzgod in Kazordoon und bringen Sie sie zu einer unserer Stützpunkte. Berichten Sie dort über die Spitzhacke.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.527273Z"
+  },
+  "npc.angus.say_4": {
+    "src_hash": "f83b04a71c18293feb8e8a4d6f716ba6",
+    "text": "Ein ganz neues Land ist in der Tat sehr verlockend. Ich kann mir kaum vorstellen, welche Wunder uns dort erwarten. Ich bezweifle, dass ich unsere Entdecker davon abhalten könnte, dorthin zu gehen, selbst wenn ich es versuchen würde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.539826Z"
+  },
+  "npc.angus.say_40": {
+    "src_hash": "95b026d32f0058017f5e2765d0de290a",
+    "text": "Hervorragend, Sie haben genau das Werkzeug mitgebracht, das wir brauchen! Natürlich war es nur eine einfache Aufgabe. Jedoch ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.547043Z"
+  },
+  "npc.angus.say_41": {
+    "src_hash": "157e99609c7d1a235fee1a026d3e6b58",
+    "text": "Hören Sie also bitte zu: Nehmen Sie diesen Eispickel und verwenden Sie ihn auf einem Eisblock in den Höhlen unter Folda. Holen Sie sich etwas Eis und bringen Sie es so schnell wie möglich hierher ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.557778Z"
+  },
+  "npc.angus.say_42": {
+    "src_hash": "629d910af5dde1cd49ef6668c71f4629",
+    "text": "Gerade noch rechtzeitig. Leider ist nicht mehr viel Eis übrig, aber es reicht. Nochmals vielen Dank.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.563500Z"
+  },
+  "npc.angus.say_43": {
+    "src_hash": "75e23fa5e7ea295bab95f02fcb87da94",
+    "text": "*Seufz* Ich denke, es ist der Zeit, dir noch eine Chance zu geben, das Eis zu bekommen. Beeilen Sie sich dieses Mal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.570439Z"
+  },
+  "npc.angus.say_44": {
+    "src_hash": "9870e97492a2ede96cd9beca3a677cb1",
+    "text": "Mit diesem Vorbereitungsset können Sie einen lila Schmetterling einsammeln, den Sie getötet haben ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.576082Z"
+  },
+  "npc.angus.say_45": {
+    "src_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
+    "text": "Ein bisschen ramponiert, aber es reicht. Danke schön! Wenn Sie denken, dass Sie bereit sind, bitten Sie um eine weitere Schmetterlingsjagd.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.583769Z"
+  },
+  "npc.angus.say_46": {
+    "src_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
+    "text": "Ein bisschen ramponiert, aber es reicht. Danke schön! Wenn Sie denken, dass Sie bereit sind, bitten Sie um eine weitere Schmetterlingsjagd.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.591406Z"
+  },
+  "npc.angus.say_47": {
+    "src_hash": "cf2b7509a49a476394c81bb35b756343",
+    "text": "Das ist eine außergewöhnliche Art, die Sie mitgebracht haben. Danke schön! Das war der letzte Schmetterling, den wir brauchten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:18.598464Z"
+  },
+  "npc.angus.say_48": {
+    "src_hash": "5314393005ceda61c12e558cfde8584b",
+    "text": "Bußgeld! Hier nehmen Sie den Behälter dieses Botanikers. Verwenden Sie es einer Dschungelglockenpflanze, um eine Probe für uns zu sammeln. Berichten Sie über Ihre Pflanzensammlung, wenn Sie erfolgreich waren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:45.455341Z"
+  },
+  "npc.angus.say_49": {
+    "src_hash": "d409060cae1e1afa8ed6fda102390165",
+    "text": "Ich verstehe. Es scheint, als hätten Sie durch reines Glück eine recht nützliche Probe erhalten. Danke schön! Sagen Sie mir einfach, wann Sie bereit sind, mit der Pflanzensammlung fortzufahren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.163972Z"
+  },
+  "npc.angus.say_5": {
+    "src_hash": "54031e27330ec3ebdfe2e52898647638",
+    "text": "Nach allem, was ich gehört habe, ist dies eher eine karge Insel als ein ganz neues Land. Es gibt so viele Orte auf dieser Welt zu erkunden, dass ich unsere besten Entdecker nicht wegen eines Gerüchts entsenden werde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.173640Z"
+  },
+  "npc.angus.say_50": {
+    "src_hash": "64024d3e00566b410b05cad88bba44b8",
+    "text": "Ah, endlich. Ich begann mich zu fragen, warum du so lange gebraucht hast. Aber danke! In der Tat ein weiteres schönes Beispiel. Sagen Sie mir einfach, wann Sie bereit sind, mit der Pflanzensammlung fortzufahren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.182502Z"
+  },
+  "npc.angus.say_51": {
+    "src_hash": "a01623d80f525791fd50f405b01080c3",
+    "text": "Was für eine schöne Probe! Damit haben Sie Ihre Pflanzensammelmissionen abgeschlossen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.186277Z"
+  },
+  "npc.angus.say_52": {
+    "src_hash": "3eff2be74e5f24add41763971c618158",
+    "text": "Du hast tatsächlich den Geist eines Abenteurers! Im Südosten von Tiquanda liegt eine kleine Siedlung des Echsenvolkes ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.191387Z"
+  },
+  "npc.angus.say_53": {
+    "src_hash": "7e9f05215be2c5facc7b1eb4f193fe81",
+    "text": "Ja, das ist das wertvolle Relikt, nach dem wir so lange gesucht haben. Du hast einen tollen Job gemacht, danke.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.196013Z"
+  },
+  "npc.angus.say_54": {
+    "src_hash": "25c3ece525ecca75503019d34ce3d886",
+    "text": "Exzellent! Reisen Sie also in die Stadt Darashia und dann nach Nordosten zur Pyramide ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.199828Z"
+  },
+  "npc.angus.say_55": {
+    "src_hash": "bde80b5801b93e2a562d7032d2a75766",
+    "text": "Du hast es geschafft! Exzellent! Die wissenschaftliche Welt wird von dieser Entdeckung erschüttert sein!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.204068Z"
+  },
+  "npc.angus.say_56": {
+    "src_hash": "5b243a160c986a49e8a4f4d059e56c96",
+    "text": "Du bist eine mutige Seele. Soweit wir wissen, unterhalten die Orks auf einem Hügel im Nordosten ihrer Stadt eine Art Trainingsanlage ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.209795Z"
+  },
+  "npc.angus.say_57": {
+    "src_hash": "5b68986936d2cf2f19e239f5d5271b7c",
+    "text": "Du hast es wirklich verstanden? Toll! Vielen Dank für Ihre Bemühungen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.213065Z"
+  },
+  "npc.angus.say_58": {
+    "src_hash": "5582d4cc8e410855776de910e64d2d99",
+    "text": "Exzellent. Diese Mission ist einfach, aber dennoch lebenswichtig. Reist nach Ab'Dendriel und holt das Buch.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.217528Z"
+  },
+  "npc.angus.say_59": {
+    "src_hash": "3fcee0d6d20b6feacf3d48a381273654",
+    "text": "Lass mich einen Blick darauf werfen! Ja, das wollten wir. Eine Kopie von 'Songs of the Forest'. Ich werde keine Fragen zu diesen Blutflecken stellen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.223756Z"
+  },
+  "npc.angus.say_6": {
+    "src_hash": "f77d26e0e22aafd1aa4b1ec5862c8ebb",
+    "text": "Die für Ihren Rang verfügbaren Missionen sind {butterfly hunt}, {plant collection} und {ice delivery}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.228501Z"
+  },
+  "npc.angus.say_61": {
+    "src_hash": "8c4f1ba35fd944537024447060580139",
+    "text": "Ein makelloser Erinnerungsstein! Unglaublich! Es wird Jahre dauern, überhaupt herauszufinden, wie es funktioniert, aber was für eine Chance für die Wissenschaft, danke!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.235447Z"
+  },
+  "npc.angus.say_62": {
+    "src_hash": "ebcb9e8bd25ae349497b3f6dcebbbe0d",
+    "text": "Exzellent! Hier, nehmen Sie dieses Transparentpapier und verwenden Sie es auf dem Objekt, das Sie dort finden, um eine Kopie der alten Runen zu erstellen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.241665Z"
+  },
+  "npc.angus.say_63": {
+    "src_hash": "5422b9d288accc73fd08f3e84df0b995",
+    "text": "Es ist ein bisschen faltig, aber es reicht. Danke noch einmal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.244420Z"
+  },
+  "npc.angus.say_64": {
+    "src_hash": "76dcfff8b34ee35c2095bc5bd09e09a3",
+    "text": "Gut! Nehmen Sie diesen Behälter und verwenden Sie ihn bei einem Geist, der kürzlich getötet wurde. Kehre mit dem gesammelten Ektoplasma zurück und gib mir den Behälter ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.251271Z"
+  },
+  "npc.angus.say_65": {
+    "src_hash": "fbce7abbb475bf041704b5f202089ded",
+    "text": "Verlieren Sie den Behälter nicht. Sie sind teuer!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.253632Z"
+  },
+  "npc.angus.say_66": {
+    "src_hash": "b9af714075d6eefefd238229b94c4824",
+    "text": "Puh, ich hatte keine Ahnung, dass Ektoplasma so riechen würde ... Oh, das bist du, na ja, tut mir leid. Vielen Dank für das Ektoplasma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:16:46.259344Z"
+  },
+  "npc.angus.say_67": {
+    "src_hash": "925f24bee74365ca1801749b0d322c30",
+    "text": "Gerade noch rechtzeitig! Mit diesem Spektralartikel können wir die letzte Phase unserer Forschung beginnen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.454361Z"
+  },
+  "npc.angus.say_69": {
+    "src_hash": "61aecb7779029ce6572c4444b2f2f841",
+    "text": "Armer Ratha. Vielen Dank, dass Sie diesen Schädel die Gesellschaft zurückgegeben haben. Wir werden für eine ehrenvolle Beerdigung von Ratha sorgen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.460055Z"
+  },
+  "npc.angus.say_7": {
+    "src_hash": "dc148f4328daa6643a2ddefe85239f95",
+    "text": "Die für Ihren Rang verfügbaren Missionen sind {lizard urn}, {bonelord secrets} und {orc powder}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.464181Z"
+  },
+  "npc.angus.say_70": {
+    "src_hash": "e9a092e7ae087d1047467afc9d84f3c2",
+    "text": "Kommen Sie zurück, wenn Sie Informationen finden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.466194Z"
+  },
+  "npc.angus.say_71": {
+    "src_hash": "8cda3e27bec6c10527fa23bdbd4612fe",
+    "text": "Wunderbar! Du hast einen riesigen Schmiedehammer für die Entdeckergesellschaft mitgebracht!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.469477Z"
+  },
+  "npc.angus.say_72": {
+    "src_hash": "89af02e4cca5ae12b761d114e42e3a98",
+    "text": "Nein, das tust du nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.470665Z"
+  },
+  "npc.angus.say_73": {
+    "src_hash": "c1c5b61347fba9287fb8729e61cc9188",
+    "text": "Was für eine seltsame Karte. Ich frage mich, ob einer unserer Entdecker diese Küstenlinien erkennt. Sie haben sich jedoch eine weitere Chance verdient, mich zu überzeugen. Warum glauben Sie, dass Farmine für uns interessant wäre?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.478979Z"
+  },
+  "npc.angus.say_74": {
+    "src_hash": "073a95013e532e6ca91e0398267c9164",
+    "text": "Es ist immer ein trauriger Tag, wenn wir vom Tod eines Mitglieds erfahren. Aber zumindest erfuhren wir von seinem Schicksal. Vielen Dank, hier ist Ihre Belohnung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.485020Z"
+  },
+  "npc.angus.say_76": {
+    "src_hash": "e9a092e7ae087d1047467afc9d84f3c2",
+    "text": "Kommen Sie zurück, wenn Sie Informationen finden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.486975Z"
+  },
+  "npc.angus.say_77": {
+    "src_hash": "e061655e8bc968c46643ac73912515e5",
+    "text": "Kommen Sie zurück, wenn Sie eines finden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.488788Z"
+  },
+  "npc.angus.say_78": {
+    "src_hash": "8bd573b4e39779cb39916aaddf74c18f",
+    "text": "Die Entdeckergesellschaft sucht für unsere Sammlung einen echten Riesenschmiedehammer. Es wird gemunkelt, dass die Zyklopen der Ebenen der Verwüstung einen solchen nutzen könnten. Haben Sie zufällig einen solchen Hammer bekommen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:11.496831Z"
+  },
+  "npc.angus.say_9": {
+    "src_hash": "4a734d935ec4a98c02d45a2bd363a841",
+    "text": "Die Entdeckergesellschaft braucht viel Hilfe bei der Erforschung von Astralreisen. Sind Sie bereit zu helfen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.565799Z"
+  },
+  "npc.angus.say_spectral_1": {
+    "src_hash": "d9b7079a5ca00792e1442b39336d34a6",
+    "text": "Gut, nehmen Sie einfach diese Spektralessenz und verwenden Sie sie für die seltsame Schnitzerei in diesem Gebäude sowie für das entsprechende Plättchen in unserer Basis in Northport ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.573688Z"
+  },
+  "npc.angus.say_spectral_2": {
+    "src_hash": "f616702d57809f7fb69fbcb6bed9e9b5",
+    "text": "Sobald Sie die Portalplättchen auf diese Weise aufgeladen haben, berichten Sie von den Spektralportalen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.578250Z"
+  },
+  "npc.appaloosa.say_1": {
+    "src_hash": "8fee604b551606bd7857cb78ec516aba",
+    "text": "Wir können Sie für 125 Gold mit einem unserer Busse nach Thais bringen. Sind Sie interessiert?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.582154Z"
+  },
+  "npc.appaloosa.say_2": {
+    "src_hash": "074e62f45ae1a69ab94b899355f02edd",
+    "text": "Möchten Sie ein Pferd für einen Tag zum Preis von 500 Gold mieten?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.584803Z"
+  },
+  "npc.appaloosa.say_3": {
+    "src_hash": "f0784f215225463661ae1ba31070c042",
+    "text": "Beseitigen Sie zuerst die Blutflecken!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.586313Z"
+  },
+  "npc.appaloosa.say_6": {
+    "src_hash": "d43f165f7c95c0ba67cbd5a3adee00d4",
+    "text": "Du hast bereits ein Pferd.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.587375Z"
+  },
+  "npc.appaloosa.say_7": {
+    "src_hash": "2084cc8bc49ade730b05b460faf76e7c",
+    "text": "Sie haben nicht genug Geld, um ein Pferd zu mieten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:12.589382Z"
+  },
+  "npc.appaloosa.say_8": {
+    "src_hash": "72d1121f9156271e019454ccefd39ccb",
+    "text": "Ich gebe Ihnen einen unserer erfahrenen. Aufpassen! Achten Sie auf niedrig hängende Äste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:37.790296Z"
+  },
+  "npc.archery.stdmod_1": {
+    "src_hash": "1e6b7fdb3b2a91434ac62d09690d5b44",
+    "text": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:37.794726Z"
+  },
+  "npc.archery.voice_1": {
+    "src_hash": "1e6b7fdb3b2a91434ac62d09690d5b44",
+    "text": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:37.799408Z"
+  },
+  "npc.archery_rook.stdmod_1": {
+    "src_hash": "1e6b7fdb3b2a91434ac62d09690d5b44",
+    "text": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.335161Z"
+  },
+  "npc.archery_rook.voice_1": {
+    "src_hash": "1e6b7fdb3b2a91434ac62d09690d5b44",
+    "text": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.339637Z"
+  },
+  "npc.ariella.multi_1": {
+    "src_hash": "f294942bb26e3eb23ebe65ccadfb0e91",
+    "text": "Die Seeleute erzählen immer Geschichten über das berühmte Bier von Carlin. Sie müssen wissen, dass Alkohol in dieser Stadt verboten ist. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.347336Z"
+  },
+  "npc.ariella.multi_2": {
+    "src_hash": "d0ff07c3e7061dac1c2efcd685031678",
+    "text": "Das Bier wird ohnehin in einer geheimen Flüsterbar ausgeschenkt. Bringen Sie mir eine Probe des Flüsterbiers mit, NICHT das übliche Bier, sondern Flüsterbier. Ich hoffe, Sie hören zu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.357364Z"
+  },
+  "npc.ariella.say_1": {
+    "src_hash": "c13b3f97991494c6ecda7b0a92f731f0",
+    "text": "Du hast also einem Piraten einen Keks gebracht?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.360406Z"
+  },
+  "npc.ariella.say_10": {
+    "src_hash": "c6c9382e0ca001160228f582521f8c4a",
+    "text": "Kommen Sie zurück, wenn Sie alle notwendigen Gegenstände haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.364262Z"
+  },
+  "npc.ariella.say_11": {
+    "src_hash": "1555a292411584f84c534e651e61ef21",
+    "text": "Vielen Dank. Ich werde diese Schönheit privat testen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.367699Z"
+  },
+  "npc.ariella.say_12": {
+    "src_hash": "a2c471c64e39d3e8e72e6744d3ca594a",
+    "text": "Kommen Sie zurück, wenn Sie den benötigten Artikel erhalten haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.371954Z"
+  },
+  "npc.ariella.say_13": {
+    "src_hash": "e70ec2ae5425ad8496866c793b8f6cca",
+    "text": "UNGLAUBLICH! Sie haben alle vier gefunden! |PLAYERNAME|, du hast meinen Respekt. Du hast diesen Hut mehr als verdient. Los geht's.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.379424Z"
+  },
+  "npc.ariella.say_14": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Sie verfügen nicht über alle erforderlichen Artikel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.382627Z"
+  },
+  "npc.ariella.say_16": {
+    "src_hash": "46cf4155ffbb43c125e9df66c0b7617f",
+    "text": "Also gut. Kommen Sie zurück, wenn Sie alle notwendigen Gegenstände haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.387289Z"
+  },
+  "npc.ariella.say_2": {
+    "src_hash": "5bb5ebba1e8f2083bc727edb1fa717fe",
+    "text": "Du meinst meinen Hut? Na ja, vielleicht habe ich einfach so noch eins, aber ich werde es nicht einfach weggeben, selbst wenn Sie unser Vertrauen verdient haben. Du müsstest zuerst eine Aufgabe erfüllen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.398111Z"
+  },
+  "npc.ariella.say_3": {
+    "src_hash": "ab7ad11b59c7878d3686bb2c7930e16c",
+    "text": "Deine Aufgabe ist es, mir das Hemd der Lethal Lissy, den Säbel von Ron the Ripper, den Hut von Brutus Bloodbeard und die Augenklappe von Deadeye Devious zu bringen. War es Ihnen gelungen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.408444Z"
+  },
+  "npc.ariella.say_4": {
+    "src_hash": "1ef803d96b6b31506d12daedcd678a96",
+    "text": "Wissen Sie, wir haben hier reichlich Rum, aber es fehlt uns an Grundnahrungsmitteln. Vor allem Lebensmittel, die leicht schimmeln, stellen ein Problem dar. Bring mir 100 Brote und du wirst mir sehr helfen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.419412Z"
+  },
+  "npc.ariella.say_5": {
+    "src_hash": "ca8ee3207cc25f1a4fc023612f50167d",
+    "text": "Sind Sie hier, um mir die 100 Stück Brot zu bringen, die ich angefordert habe?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.424434Z"
+  },
+  "npc.ariella.say_6": {
+    "src_hash": "360c5de230f4d8ee372245c4104b4eaa",
+    "text": "Hast du eine Probe des Flüsterbiers von Carlin bekommen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:17:39.428165Z"
+  },
+  "npc.ariella.say_7": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Du hast keinen Keks, den ich gerne hätte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.826790Z"
+  },
+  "npc.ariella.say_8": {
+    "src_hash": "2b5c381cc1194e2dc29b25be9889d49d",
+    "text": "Wie süß von dir ... Ähh ... OH NEIN ... Bozo hat es wieder getan. Sagen Sie diesem Witzbold, dass ich es ihm zurückzahlen werde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.834114Z"
+  },
+  "npc.ariella.say_9": {
+    "src_hash": "21e39a729b90263f8f0fbb54894834f8",
+    "text": "Was für eine Freude. Zumindest für einige Tage ist eine ausreichende Versorgung gewährleistet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.839351Z"
+  },
+  "npc.ariella.voice_1": {
+    "src_hash": "c3cacc3ba6228f5b0eec0398d1ab4b7c",
+    "text": "Gönnen Sie sich einen Drink in Merianas einziger Taverne!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.842703Z"
+  },
+  "npc.arito.multi_1": {
+    "src_hash": "e975e2ff684abb35e871269c08508988",
+    "text": "Tausendfach vielen Dank! Nun, ich denke, ich fange an, Ihnen zu sagen, was sie meiner Meinung nach suchen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.848778Z"
+  },
+  "npc.arito.multi_2": {
+    "src_hash": "7343145e7a314f3c434461b11611bb86",
+    "text": "Sie müssen wissen, ich war einer von ihnen, bevor ich diesen Laden hier eröffnet habe. Sicher haben sie Angst, dass ich ihr Versteck preisgeben könnte. Bitte gehen Sie nach Norden, in den Bergen gibt es eine kleine Höhle mit einem Felsen in der Mitte. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.861883Z"
+  },
+  "npc.arito.multi_3": {
+    "src_hash": "ed561743b105aaafb7a64e57cb44e3f1",
+    "text": "Wenn du davor stehst, platziere einen Krummsäbel – die Waffe der Nomaden – links von dir und opfere die Erde, indem du rechts von dir etwas Wasser auf den Boden schüttest. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.871776Z"
+  },
+  "npc.arito.multi_4": {
+    "src_hash": "a55fcccc63fbf1e6b3a5f949347ee364",
+    "text": "Der Eingang zu ihrem Versteck wird vor Ihnen enthüllt. Ich weiß nicht, wer dort gerade das Sagen hat, aber sagen Sie ihm bitte, dass ich ihr Geheimnis nicht verraten werde ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.881002Z"
+  },
+  "npc.arito.multi_5": {
+    "src_hash": "80dd4c0648dbee7b6fc48d628d0a8731",
+    "text": "... nun ja, ich habe es dir gerade gesagt, aber trotzdem ... ich werde es niemand anderem erzählen. Jetzt beeilen Sie sich, bevor sie hier sind!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.888530Z"
+  },
+  "npc.arito.multi_6": {
+    "src_hash": "863d51f01afd71652d27eefc4addf652",
+    "text": "Was?? Mein Name steht auf einer Todesliste, die Sie von einem Nomaden abgeholt haben?? Zeig mir!! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.893991Z"
+  },
+  "npc.arito.multi_7": {
+    "src_hash": "42d03db726666cbf74a84e321c7fe98a",
+    "text": "Oh mein Gott! Sie haben mich gefunden! Du musst mir helfen! Bitte !!!! Sind Sie dazu bereit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.899196Z"
+  },
+  "npc.arito.say_1": {
+    "src_hash": "98e15a62ae19db8ba4c0c728bfca86d5",
+    "text": "Und was haben sie gesagt?? Muss ich hier alles aufgeben? Komm, erzähl es mir!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.903513Z"
+  },
+  "npc.arito.say_2": {
+    "src_hash": "d6659d751429df6721894e6caca54fc0",
+    "text": "Das sind tolle Neuigkeiten!! Ich danke Ihnen für Ihre Hilfe! Ich habe nicht viel, aber ohne dich hätte ich nichts, also nimm das bitte als Belohnung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.911323Z"
+  },
+  "npc.arito.voice_1": {
+    "src_hash": "69b608b72d65de5bfe306e66de9c0078",
+    "text": "Kommen Sie herein, trinken Sie etwas und essen Sie etwas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.914450Z"
+  },
+  "npc.arkulius.greet_msg_1": {
+    "src_hash": "85ba75bc0a81e248f59040c3bbffa617",
+    "text": "...wenn die erwartete Konstante höher ist als... Hmmm, wer bist du?? Was willst du?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.919258Z"
+  },
+  "npc.arkulius.greet_msg_2": {
+    "src_hash": "53eb762f3d4398ff93b9c8fbb81e81b1",
+    "text": "... dann könnte ich einen Zauber in Biegen umwandeln ... Wie kann jemand von mir erwarten, dass ich unter diesen Bedingungen arbeite? Was willst du?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.926749Z"
+  },
+  "npc.arkulius.greet_msg_3": {
+    "src_hash": "609cc5818051e35579145b57665ad077",
+    "text": "...wenn meine Berechnungen stimmen, kann ich wiederbeleben... Arrgghh!! Was willst du?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.931335Z"
+  },
+  "npc.arkulius.multi_1": {
+    "src_hash": "0df54b3a95eba0d430e38a6896e8faa7",
+    "text": "Es tut mir leid, dass diese Aufgabe sehr gefährlich ist und ich dafür erfahrene Leute brauche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.936307Z"
+  },
+  "npc.arkulius.multi_10": {
+    "src_hash": "d651df50367f69687fdb40b0e8007197",
+    "text": "Wie auch immer, es sollte eine Möglichkeit geben, diese Energie zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, werden Sie einen Energie-Overlord erschaffen, der hoffentlich aus einer Art 'concentrated'-Energie besteht. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.949219Z"
+  },
+  "npc.arkulius.multi_11": {
+    "src_hash": "c6221e86d5220d291164339c46385136",
+    "text": "DAS brauchen wir!! Sind Sie dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:07.951288Z"
+  },
+  "npc.arkulius.multi_12": {
+    "src_hash": "76839dc3ed8f2d2138a4a9bbdbc9a355",
+    "text": "Okay, hören Sie genau zu: Zunächst müssen Sie 20 verzauberte Saphire sammeln, um zur Eiskugel zu gelangen. Tief unter der Akademie, eine Etage unter den Elementarschreinen, steht eine Maschine. Legen Sie die Edelsteine ​​hinein und aktivieren Sie es. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:34.922017Z"
+  },
+  "npc.arkulius.multi_13": {
+    "src_hash": "666207a49145097df434c9b59c42dcb1",
+    "text": "Wenn Sie dort angekommen sind, finden Sie einen Weg, elementares Eis in irgendeiner Form zu sammeln. Ihr werdet sicher auf Eiselementare stoßen, aber ich weiß nicht, wie das Eis gelagert wird. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:34.932396Z"
+  },
+  "npc.arkulius.multi_14": {
+    "src_hash": "a78b8c22584fbba860576219e8d7db01",
+    "text": "Wie auch immer, es sollte eine Möglichkeit geben, dieses Elementareis zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, erschaffen Sie einen Ice Overlord, der hoffentlich aus einer Art 'concentrated'-Eis oder etwas Ähnlichem besteht. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:34.946079Z"
+  },
+  "npc.arkulius.multi_15": {
+    "src_hash": "c6221e86d5220d291164339c46385136",
+    "text": "DAS brauchen wir!! Sind Sie dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:34.948117Z"
+  },
+  "npc.arkulius.multi_17": {
+    "src_hash": "587dc35f1af2ec5f980b33d2aadc23c6",
+    "text": "Wenn Sie dort angekommen sind, finden Sie einen Weg, elementare Erde in irgendeiner Form zu sammeln. Ihr werdet mit Sicherheit auf Erdelementare stoßen, aber ich weiß nicht, wie die Erde gelagert wird. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.064312Z"
+  },
+  "npc.arkulius.multi_18": {
+    "src_hash": "f3d18e2fb69064a2bc3336136a4f1340",
+    "text": "Wie auch immer, es sollte eine Möglichkeit geben, dieses Elementar Erde zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, werden Sie einen Erde Overlord erschaffen, der hoffentlich aus einer Art 'concentrated'-Erde oder etwas Ähnlichem besteht. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.074895Z"
+  },
+  "npc.arkulius.multi_19": {
+    "src_hash": "c6221e86d5220d291164339c46385136",
+    "text": "DAS brauchen wir!! Sind Sie dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.076740Z"
+  },
+  "npc.arkulius.multi_2": {
+    "src_hash": "03696c62746cb5c36b1fcea3124ab9d9",
+    "text": "eine EWIGE FLAMME! Jetzt müssen Sie einen Ritter, einen Druiden und einen Paladin finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.082422Z"
+  },
+  "npc.arkulius.multi_20": {
+    "src_hash": "4dc50ec06bc7ecd2505bf3354b4da871",
+    "text": "Okay, hören Sie genau zu: Zunächst müssen Sie 20 verzauberte Rubine sammeln, um in die Feuersphäre zu gelangen. Tief unter der Akademie, eine Etage unter den Elementarschreinen, steht eine Maschine. Legen Sie die Edelsteine ​​hinein und aktivieren Sie es. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.092986Z"
+  },
+  "npc.arkulius.multi_21": {
+    "src_hash": "87c27177db89b0db92bae51433d0c44f",
+    "text": "Sobald Sie dort angekommen sind, finden Sie einen Weg, Elementarfeuer in jeglicher Form zu sammeln. Ihr werdet Feuerelementaren gegenüberstehen, das ist sicher, aber ich weiß nicht, wie das Feuer gespeichert wird. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.101265Z"
+  },
+  "npc.arkulius.multi_22": {
+    "src_hash": "049944f677d81d769043ea6b1527605d",
+    "text": "Wie auch immer, es sollte eine Möglichkeit geben, dieses Elementarfeuer zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, werden Sie einen Feuer-Overlord erschaffen, der hoffentlich aus einer Art 'concentrated'-Feuer oder etwas Ähnlichem besteht. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.111862Z"
+  },
+  "npc.arkulius.multi_23": {
+    "src_hash": "c6221e86d5220d291164339c46385136",
+    "text": "DAS brauchen wir!! Sind Sie dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.113518Z"
+  },
+  "npc.arkulius.multi_24": {
+    "src_hash": "d1599a8b6bcc33715a3e827411c632bd",
+    "text": "Wir kennen vier Sphären: Eis, Feuer, Erde und Energie. ....<murmelt> Hmmm, soll ich fragen oder nicht?....Zum Teufel damit! Jetzt, wo Sie über die Sphären Bescheid wissen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.120554Z"
+  },
+  "npc.arkulius.multi_25": {
+    "src_hash": "726b594e8cbf49e4c0ac5da162a8cd03",
+    "text": "Ich habe einen Weg gefunden, sie zu besuchen. Es ist SEHR gefährlich und es besteht eine gute Chance, dass du nicht zurückkommst, ABER wenn du Erfolg hast, wirst du Geschichte schreiben!!! Fragen Sie mich danach {mission}, wenn Sie interessiert sind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.130124Z"
+  },
+  "npc.arkulius.multi_26": {
+    "src_hash": "b91874726eee096c1ee1af9265d7540c",
+    "text": "Die Erschaffung der Elementarschreine ist eine wirklich komplexe Angelegenheit. Es handelt sich tatsächlich um Knotenpunkte, Orte, denen die entsprechende Elementarsphäre sehr nahe ist. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.137028Z"
+  },
+  "npc.arkulius.multi_27": {
+    "src_hash": "93f1ed89aecb43cda5f4480aec48e69f",
+    "text": "Der Schrein selbst ist wie ein Portal zwischen unserer Welt und dem Elementar {sphere} und ermöglicht es uns, die daraus hervorgehende Elementarenergie zu nutzen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.143394Z"
+  },
+  "npc.arkulius.multi_28": {
+    "src_hash": "e975530072a26d720cef7a47d9c0a53f",
+    "text": "Man muss über den Prozess der Erschaffung eines Elementarschreins Bescheid wissen, um ihn vollständig zu verstehen, aber ich möchte jetzt nicht ins Detail gehen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.149442Z"
+  },
+  "npc.arkulius.multi_29": {
+    "src_hash": "8f1c14682b1f1454aa1631033679a754",
+    "text": "Wie auch immer, sein Zauber hatte ein anderes Ergebnis, als er geplant hatte. Er erschuf versehentlich einen Ice Overlord, reines lebendes Elementar-Eis, das ihn im Handumdrehen einfrierte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.156260Z"
+  },
+  "npc.arkulius.multi_3": {
+    "src_hash": "f3f2900b5b25eab664d64fa336821874",
+    "text": "Mutterboden! Jetzt müssen Sie einen Ritter, einen Paladin und einen Zauberer finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:40.161458Z"
+  },
+  "npc.arkulius.multi_30": {
+    "src_hash": "8f1c14682b1f1454aa1631033679a754",
+    "text": "Wie auch immer, sein Zauber hatte ein anderes Ergebnis, als er geplant hatte. Er erschuf versehentlich einen Ice Overlord, reines lebendes Elementar-Eis, das ihn im Handumdrehen einfrierte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.431614Z"
+  },
+  "npc.arkulius.multi_4": {
+    "src_hash": "bd1292e22c935cd44c295faea27a9d07",
+    "text": "ein makelloser EISkristall! Jetzt müssen Sie einen Ritter, einen Druiden und einen Zauberer finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.437315Z"
+  },
+  "npc.arkulius.multi_5": {
+    "src_hash": "fc0f26ef791e0b7a21ca34aea0a3d953",
+    "text": "PURE ENERGIE! Jetzt müssen Sie einen Druiden, einen Paladin und einen Zauberer finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.442560Z"
+  },
+  "npc.arkulius.multi_6": {
+    "src_hash": "4574517b82a22f9365754966ab8a57be",
+    "text": "Gehe noch einmal in den Keller. Ich habe einen Raum unter der Akademie vorbereitet, in dem es sicher sein sollte. Ihre Aufgabe ist es, die Maschinen mit den elementaren Substanzen aufzuladen und den HERRN DER ELEMENTE zu beschwören. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.451684Z"
+  },
+  "npc.arkulius.multi_7": {
+    "src_hash": "407a3a3413bb870b3f887e335d52add0",
+    "text": "Wenn Sie ein Obsidianmesser auf die Leiche anwenden, erhalten Sie hoffentlich etwas von der wertvollen neutralen Substanz. Nur so kann ich meinen lieben Freund Alverus wiederbeleben!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.458134Z"
+  },
+  "npc.arkulius.multi_8": {
+    "src_hash": "6fadded8e7649dd601373ce66d9192ea",
+    "text": "Okay, hören Sie genau zu: Zunächst müssen Sie 20 verzauberte Amethyste sammeln, um in die Energiesphäre zu gelangen. Tief unter der Akademie, eine Etage unter den Elementarschreinen, steht eine Maschine. Legen Sie die Edelsteine ​​hinein und aktivieren Sie es. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.468443Z"
+  },
+  "npc.arkulius.multi_9": {
+    "src_hash": "ab05ff2fb86d34d5dbe578797cdaa37d",
+    "text": "Sobald Sie dort angekommen sind, finden Sie einen Weg, elementare Energie in jeglicher Form zu sammeln. Ihr werdet sicher mit Energieelementaren konfrontiert werden, aber ich weiß nicht, wie die Energie gespeichert wird. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.476464Z"
+  },
+  "npc.arkulius.say_1": {
+    "src_hash": "c0e5cd10a6b19c7fc9c7c87aded2821c",
+    "text": "Sie benötigen eine Art reine Elementarerde vom Overlord. Kommen Sie zurück, wenn Sie es haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.480059Z"
+  },
+  "npc.arkulius.say_2": {
+    "src_hash": "57610ecb427606d1ce4e6b3eaa25601c",
+    "text": "TOLL!! Ich werde sofort mit der Recherche beginnen. Wenn es so läuft, wie ich es erwarte, wird Alverus bald wiederbelebt!! Nehmen Sie dies als Belohnung und versuchen Sie, mehr von dieser Substanz zu sammeln. Ich mache Ihnen ein gutes Angebot, versprochen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.489320Z"
+  },
+  "npc.arkulius.say_3": {
+    "src_hash": "a2568022025b9db2294c8b2ce077a67c",
+    "text": "Gut, verschwenden Sie keine Zeit! Kommen Sie hierher zurück, wenn Sie das Elementarobjekt haben!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.492917Z"
+  },
+  "npc.arkulius.stdmod_1": {
+    "src_hash": "e8ffd99f543ba19c10e8fc6bc072ff12",
+    "text": "...das arithmetische Paradoxon hat auf metaphysische Weise den gleichen Wert, dann...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.496084Z"
+  },
+  "npc.arkulius.stdmod_2": {
+    "src_hash": "bb7b49ed7bcf25b0a8e994ac6594cce6",
+    "text": "Oh mein Gott! Alverus!! Hast du wirklich...?!?! Ich muss es neu berechnen, um sicherzustellen, dass ich keinen Fehler gemacht habe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.501044Z"
+  },
+  "npc.arkulius.stdmod_4": {
+    "src_hash": "25d73407aac3eb8afdd86cb80d6caf0f",
+    "text": "...die minimale quadratische Abweichung könnte tatsächlich eine Verschiebung verursachen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.504332Z"
+  },
+  "npc.arkulius.stdmod_5": {
+    "src_hash": "b70fead96f5349a9a95dba292463d9f2",
+    "text": "...es könnte möglich sein, die Kugel einen Ort zu bringen, dem...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.507102Z"
+  },
+  "npc.arkulius.stdmod_6": {
+    "src_hash": "8abbb98cf8b74672ee30d58fbec0441c",
+    "text": "Ja, das ist es! Die Elementarteilchen entsprechen dem... dem... UNGLAUBLICH!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.510075Z"
+  },
+  "npc.arkulius.voice_1": {
+    "src_hash": "e8ffd99f543ba19c10e8fc6bc072ff12",
+    "text": "...das arithmetische Paradoxon hat auf metaphysische Weise den gleichen Wert, dann...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.513166Z"
+  },
+  "npc.arkulius.voice_2": {
+    "src_hash": "bb7b49ed7bcf25b0a8e994ac6594cce6",
+    "text": "Oh mein Gott! Alverus!! Hast du wirklich...?!?! Ich muss es neu berechnen, um sicherzustellen, dass ich keinen Fehler gemacht habe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.518095Z"
+  },
+  "npc.arkulius.voice_4": {
+    "src_hash": "25d73407aac3eb8afdd86cb80d6caf0f",
+    "text": "...die minimale quadratische Abweichung könnte tatsächlich eine Verschiebung verursachen ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.521397Z"
+  },
+  "npc.arkulius.voice_5": {
+    "src_hash": "b70fead96f5349a9a95dba292463d9f2",
+    "text": "...es könnte möglich sein, die Kugel einen Ort zu bringen, dem...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.524115Z"
+  },
+  "npc.arkulius.voice_6": {
+    "src_hash": "8abbb98cf8b74672ee30d58fbec0441c",
+    "text": "Ja, das ist es! Die Elementarteilchen entsprechen dem... dem... UNGLAUBLICH!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:18:59.527080Z"
+  },
+  "npc.armenius.say_1": {
+    "src_hash": "b07bd64e975cc87d21ff3c4c3d092563",
+    "text": "Was ist das denn für ein seltsames Angebot? Du bietest mir tatsächlich einen Keks an?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:19:05.737650Z"
+  },
+  "npc.armenius.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Es wäre besser, wenn du jetzt gehst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:19:05.740534Z"
+  },
+  "npc.armenius.say_3": {
+    "src_hash": "ca1cb9230c8ebfe2c7f5b120cca6c871",
+    "text": "Ähm, hust, hust – was zum Teufel hast du da reingesteckt? Geh mir aus den Augen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:19:05.748754Z"
+  },
+  "npc.armenius.say_4": {
+    "src_hash": "bdccc0de202202756f4ca75feca73d22",
+    "text": "Oh, der Nerv. Verpiss dich.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:19:05.752040Z"
   }
 }

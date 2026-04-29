@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-04-29T23:07:01.275883Z",
-  "cycle": 24,
+  "timestamp": "2026-04-29T23:20:24.114978Z",
+  "cycle": 25,
   "context": "normal",
-  "language": "es",
-  "json_file": "items.json",
-  "translated": 64,
+  "language": "de",
+  "json_file": "npc.json",
+  "translated": 289,
   "placeholders": 0,
-  "guard_fail": 0,
+  "guard_fail": 3,
   "guard": {
-    "placeholder": 0,
+    "placeholder": 1,
     "command": 0,
     "pipe": 0
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 2694
+  "strict_skipped_done": 873
 }

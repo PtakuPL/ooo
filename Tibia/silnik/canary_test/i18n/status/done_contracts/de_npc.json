@@ -3,8 +3,8 @@
   "lang": "de",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
+      "ok": false,
+      "guard_placeholder": 1,
       "guard_pipe": 0
     },
     "guard_command_below_threshold": {
@@ -14,9 +14,9 @@
     },
     "coverage_above_95pct": {
       "ok": true,
-      "coverage_pct": 96.5,
+      "coverage_pct": 96.6,
       "total_keys": 14815,
-      "real_translations": 14302
+      "real_translations": 14305
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,6 +24,6 @@
       "quality_entry_written": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-04-29T22:16:48.406215Z"
+  "is_done": false,
+  "timestamp": "2026-04-29T23:20:20.977750Z"
 }

@@ -70958,11 +70958,60 @@
         }
       ],
       "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-04-29T23:18:34.962205Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_16",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Okay, listen closely: First of all, you need to gather 20 enchanted emeralds in order to go to the earth sphere. Deep under the academy, one floor below the elemental shrines, there is a machine. Put the gems in there and activate it. ...",
+      "attempted_translation": "Okay, hören Sie genau zu: Zunächst müssen Sie 20 verzauberte Smaragde sammeln, um in die Erdsphäre zu gelangen. Tief unter der Akademie, eine Etage unter den Elementarschreinen, steht eine Maschine. Legen Sie die Edelsteine ​​hinein und aktivieren Sie es. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.101.name"
+        },
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.1053.name"
+        },
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.2727.name"
+        },
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.2731.name"
+        }
+      ],
+      "source": "google_translate"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3624
+    "total": 3625
   },
-  "updated_at": "2026-04-29T23:14:27.614720Z"
+  "updated_at": "2026-04-29T23:20:19.361532Z"
 }

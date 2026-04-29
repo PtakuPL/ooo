@@ -404,7 +404,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T19:37:16Z",
+  "generated_at_utc": "2026-04-29T19:39:31Z",
   "global": {
     "en_keys_total": 74536,
     "errors_total": 11341,
@@ -829,25 +829,25 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "cs",
-      "detail": "stopping",
+      "category": "-",
+      "detail": "cycle start",
       "eta_seconds": 0,
       "file": "-",
-      "phase": "AUTO_TRANSLATE",
+      "phase": "IDLE",
       "progress": {
         "done": 0,
         "total": 0,
         "unit": "units"
       },
-      "stage": "signal"
+      "stage": "cycle_start"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2026-04-29T19:34:55Z",
+    "heartbeat_at_utc": "2026-04-29T19:39:30Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2548,
-    "status": "interrupted",
+    "pid": 6760,
+    "status": "running",
     "version": "unknown"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:31:26.353825Z",
+  "generated_at_utc": "2026-04-29T19:39:30.564340Z",
   "cycle": 1,
   "open_alarms": [
     {
@@ -10,10 +10,16 @@
       "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5353726.9s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
     },
     {
+      "code": "GUARDIAN_DEGRADED",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "GUARDIAN_DEGRADED: guardian raportuje degraded (src=worker_runtime_heartbeat)"
+    },
+    {
       "code": "GUARD_REPORT_STALE",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 862s"
+      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 1800s"
     },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
@@ -37,24 +43,50 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1145 rate=31.072% window=6.0h top_lang=es:438 per_lang=[es:438(105.036%/warning)] per_domain=[npc.json:267(59.732%/warning),server.json:169(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1103 rate=30.922% window=6.0h top_lang=es:423 per_lang=[es:423(108.184%/warning)] per_domain=[npc.json:254(57.336%/warning),server.json:169(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=54.688% delta=54.688% total=166 source=term_conflicts_latest.json"
+    },
+    {
+      "code": "WORKER_PROCESS_DUPLICATION",
+      "severity": "critical",
+      "source": "statusd_doctor.json",
+      "detail": "WORKER_PROCESS_DUPLICATION: main=2548 roots=0 helpers=0 matching=0 extras=0 desc=0 foreign=0 oldest_desc=0s oldest_foreign=0s status=main_pid_not_alive"
+    },
+    {
+      "code": "WORKER_STUCK_NO_WRITE",
+      "severity": "warning",
+      "source": "doctor_alerts_latest.json",
+      "detail": "Brak świeżych zapisów przy pending=399."
+    },
+    {
+      "code": "WORKER_TRANSLATION_CONTRACT_BROKEN",
+      "severity": "critical",
+      "source": "statusd_doctor.json",
+      "detail": "WORKER_TRANSLATION_CONTRACT_BROKEN: pid=2548 translations_only=0 use_gt=0 no_git=0 priority_gate=0 priority_langs=[-] pending=[-] reason=worker_pid_not_running"
+    },
+    {
+      "code": "ZOMBIE_PID",
+      "severity": "critical",
+      "source": "statusd_doctor.json",
+      "detail": "ZOMBIE_PID: runtime heartbeat PID (2548) nie żyje (src=worker_runtime_heartbeat, reason=worker_pid_not_alive)"
     }
   ],
-  "resolved_this_cycle": [
-    "DEFERRED_RETRY_PIPELINE_WARNING"
-  ],
+  "resolved_this_cycle": [],
   "newly_opened": [
-    "GUARD_REPORT_STALE"
+    "GUARDIAN_DEGRADED",
+    "WORKER_PROCESS_DUPLICATION",
+    "WORKER_STUCK_NO_WRITE",
+    "WORKER_TRANSLATION_CONTRACT_BROKEN",
+    "ZOMBIE_PID"
   ],
   "summary": {
-    "open_count": 7,
-    "resolved_count": 1,
+    "open_count": 12,
+    "resolved_count": 0,
     "tracked_alarms": 32
   },
   "queue_snapshot": {
@@ -66,10 +98,6 @@
     "selected_action": "none",
     "reason": "write_starvation_or_queue_starvation",
     "suppressed_by_cooldown": true,
-    "cooldown_remaining_cycles": 2,
-    "selected_command": "-",
-    "result": "resolved_update",
-    "result_reason": "resolved_count=1",
-    "updated_at_utc": "2026-04-29T19:31:26.353825Z"
+    "cooldown_remaining_cycles": 2
   }
 }

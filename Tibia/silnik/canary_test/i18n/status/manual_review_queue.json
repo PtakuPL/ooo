@@ -59649,11 +59649,173 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:35.460070Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14682.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "No one really knows where it leads to, but the dragon graveyard might reveal the secret - or not",
+      "attempted_translation": "Nikdo vlastně neví, kam to vede, ale dračí hřbitov může tajemství odhalit – nebo ne",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Drak' for EN 'Dragon' from monsters.json:monster.dragon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:35.566737Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.16246.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Another set of strange symbols.",
+      "attempted_translation": "Další sada podivných symbolů.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'podivné symboly' for EN 'strange symbols' from items.json:item.16246.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:38.679712Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.19118.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead wilting leaf golem",
+      "attempted_translation": "mrtvých vadnoucích listů golem",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'mrtvý vadnoucí list golem' for EN 'dead wilting leaf golem', but source key item.19118.name still uses conflicting variant 'mrtvých vadnoucích listů golem'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:38.789728Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.19119.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead wilting leaf golem",
+      "attempted_translation": "mrtvých vadnoucích listů golem",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'mrtvý vadnoucí list golem' for EN 'dead wilting leaf golem', but source key item.19119.name still uses conflicting variant 'mrtvých vadnoucích listů golem'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:41.368346Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.15532.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mushroom sponge",
+      "attempted_translation": "houba houbička",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'houba houbová' for EN 'mushroom sponge', but source key item.15532.name still uses conflicting variant 'houba houbička'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:44.783922Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.15533.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mushroom sponge",
+      "attempted_translation": "houba houbička",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'houba houbová' for EN 'mushroom sponge', but source key item.15533.name still uses conflicting variant 'houba houbička'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:44.887747Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.15534.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mushroom sponge",
+      "attempted_translation": "houba houbička",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'houba houbová' for EN 'mushroom sponge', but source key item.15534.name still uses conflicting variant 'houba houbička'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:47.647584Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11801.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "timber chair",
+      "attempted_translation": "dřevěná židle",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'dřevěné křeslo' for EN 'timber chair', but source key item.11801.name still uses conflicting variant 'dřevěná židle'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:47.784880Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11803.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "timber chair",
+      "attempted_translation": "dřevěná židle",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'dřevěné křeslo' for EN 'timber chair', but source key item.11803.name still uses conflicting variant 'dřevěná židle'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 2988
+    "total": 2997
   },
-  "updated_at": "2026-04-29T19:37:35.086383Z"
+  "updated_at": 1777491570
 }

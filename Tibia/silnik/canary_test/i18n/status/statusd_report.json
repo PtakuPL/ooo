@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T19:36:40.986945Z",
+  "timestamp": "2026-04-29T19:39:21.320180Z",
   "version": "statusd-mvp-1.0",
   "worker": {
-    "pid": 586,
-    "heartbeat_at": "2026-04-29T19:33:32Z",
-    "heartbeat_age_s": 189.0,
+    "pid": 2548,
+    "heartbeat_at": "2026-04-29T19:34:55Z",
+    "heartbeat_age_s": 266.3,
     "cycle": 1,
     "mode": "continuous",
     "category": "?",
@@ -97,7 +97,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T19:36:40.986945Z",
+    "generated_at_utc": "2026-04-29T19:39:21.320180Z",
     "source": "statusd.aggregate_telemetry",
     "status": "critical",
     "reason": "worker_pid_not_alive",
@@ -107,26 +107,26 @@
     "current_lang": "cs",
     "current_file": "items.json",
     "cycle": 1,
-    "heartbeat_at_utc": "2026-04-29T19:33:32Z",
-    "heartbeat_age_s": 188.987,
+    "heartbeat_at_utc": "2026-04-29T19:34:55Z",
+    "heartbeat_age_s": 266.32,
     "worker": {
-      "pid": 586,
+      "pid": 2548,
       "pid_alive": false,
-      "heartbeat_at_utc": "2026-04-29T19:33:32Z",
-      "heartbeat_age_s": 188.987,
+      "heartbeat_at_utc": "2026-04-29T19:34:55Z",
+      "heartbeat_age_s": 266.32,
       "mode": "continuous",
       "category": "",
       "cycle": 1,
       "activity_heartbeat_at_utc": "2026-04-29T19:34:55Z",
-      "activity_heartbeat_age_s": 105.987
+      "activity_heartbeat_age_s": 266.32
     },
     "guardian": {
-      "timestamp": "2026-04-29T19:34:29.871266Z",
+      "timestamp": "2026-04-29T19:37:15.397668Z",
       "state": "degraded",
-      "heartbeat_age_s": 183.9,
+      "heartbeat_age_s": 223.4,
       "pid_alive": true,
-      "worker_log_age_s": 165.9,
-      "guard_last_entry_age_s": 1507.7,
+      "worker_log_age_s": 139.0,
+      "guard_last_entry_age_s": 1673.2,
       "active_log_grace_seconds": 300.0,
       "throughput_per_h": 0.0,
       "guard_fail_rate_pct": 0.0,
@@ -149,8 +149,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T18:34:36.661230Z",
-    "window_end_utc": "2026-04-29T19:34:36.661230Z",
+    "window_start_utc": "2026-04-29T18:37:21.188798Z",
+    "window_end_utc": "2026-04-29T19:37:21.188798Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -167,15 +167,15 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 308,
+    "translated": 239,
     "guard_fail": 0,
     "guard_fail_rate_pct": 0.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 297.3,
+    "throughput_keys_per_h": 230.7,
     "throughput_runtime_hours": 1.0361,
     "throughput_runtime_source": "cycle_duration_ms",
-    "suspicious_total": 479,
+    "suspicious_total": 466,
     "deferred_total": 36,
     "top_deferred_reasons": [
       {
@@ -201,12 +201,6 @@
       }
     ],
     "top_guard_fail_targets": [
-      {
-        "target": "cs/items.json",
-        "translated": 69,
-        "guard_fail": 0,
-        "guard_command": 0
-      },
       {
         "target": "ro/items.json",
         "translated": 47,
@@ -525,7 +519,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T19:36:41.095222Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T19:39:21.449917Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1072,20 +1066,20 @@
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
     "entries": 126,
-    "translated_total": 3502,
-    "suspicious_high_total": 1098,
-    "suspicious_high_rate_pct": 31.354,
+    "translated_total": 3567,
+    "suspicious_high_total": 1103,
+    "suspicious_high_rate_pct": 30.922,
     "status": "observed",
     "severity": "info",
     "worst_severity": "warning",
     "top_langs": [
       {
         "lang": "es",
-        "suspicious_high": 436
+        "suspicious_high": 423
       },
       {
         "lang": "cs",
-        "suspicious_high": 275
+        "suspicious_high": 293
       },
       {
         "lang": "tr",
@@ -1111,11 +1105,11 @@
     "top_categories": [
       {
         "category": "items.json",
-        "suspicious_high": 642
+        "suspicious_high": 660
       },
       {
         "category": "npc.json",
-        "suspicious_high": 267
+        "suspicious_high": 254
       },
       {
         "category": "server.json",
@@ -1129,16 +1123,16 @@
     "per_lang": [
       {
         "lang": "es",
-        "suspicious_high": 436,
-        "translated": 395,
-        "rate_pct": 110.38,
+        "suspicious_high": 423,
+        "translated": 391,
+        "rate_pct": 108.184,
         "severity": "warning"
       },
       {
         "lang": "cs",
-        "suspicious_high": 275,
-        "translated": 739,
-        "rate_pct": 37.212,
+        "suspicious_high": 293,
+        "translated": 808,
+        "rate_pct": 36.262,
         "severity": "info"
       },
       {
@@ -1180,16 +1174,16 @@
     "per_domain": [
       {
         "domain": "items.json",
-        "suspicious_high": 642,
-        "translated": 2788,
-        "rate_pct": 23.027,
+        "suspicious_high": 660,
+        "translated": 2857,
+        "rate_pct": 23.101,
         "severity": "info"
       },
       {
         "domain": "npc.json",
-        "suspicious_high": 267,
-        "translated": 447,
-        "rate_pct": 59.732,
+        "suspicious_high": 254,
+        "translated": 443,
+        "rate_pct": 57.336,
         "severity": "warning"
       },
       {
@@ -1207,22 +1201,22 @@
         "severity": "info"
       }
     ],
-    "latest_timestamp": "2026-04-29T19:20:13.084302Z"
+    "latest_timestamp": "2026-04-29T19:37:48.184840Z"
   },
   "deferred_retry_pipeline": {
     "available": true,
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T19:36:21.327155Z",
-    "latest_age_s": 19.66,
+    "latest_timestamp": "2026-04-29T19:37:54.694809Z",
+    "latest_age_s": 86.625,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 8917,
     "retry_due_now": 5431,
     "manual_review_locked": 2933,
     "cooldown_locked": 0,
-    "manual_review_queue_size": 2948,
+    "manual_review_queue_size": 2997,
     "deferred_backlog_total": 1947,
     "deferred_backlog_total_all_time": 52090,
     "deferred_backlog_window_seconds": 86400,
@@ -1274,9 +1268,9 @@
     "stats": {
       "enqueued": 0,
       "suppressed_cooldown": 0,
-      "suppressed_manual_review": 26,
+      "suppressed_manual_review": 77,
       "deduped_ttl": 0,
-      "manual_review_escalations": 2948
+      "manual_review_escalations": 2997
     },
     "alerts": []
   },
@@ -1291,9 +1285,9 @@
     "cycle_delta": 0,
     "started_at": "",
     "active_minutes": 0.0,
-    "baseline_quality_rate_pct": 31.354,
-    "current_quality_rate_pct": 31.354,
-    "best_quality_rate_pct": 31.354,
+    "baseline_quality_rate_pct": 30.922,
+    "current_quality_rate_pct": 30.922,
+    "best_quality_rate_pct": 30.922,
     "quality_drop_pct": 0.0,
     "best_quality_drop_pct": 0.0,
     "lang_completion": {},
@@ -1418,8 +1412,8 @@
       "baseline_ts_utc": "2026-04-09T17:59:08.154619Z",
       "auto_baseline_on_epoch_change": true,
       "epoch_cooldown_seconds": 600,
-      "runtime_epoch_id": "f1195a3ca976e41f",
-      "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777491089|restart_cause=worker_missing|worker_pid=586",
+      "runtime_epoch_id": "0bc370bf0c3e43b3",
+      "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777491089|restart_cause=worker_missing|worker_pid=2548",
       "baseline_source": "manual_config",
       "auto_baseline_applied": false,
       "auto_baseline_reason": "manual_baseline_active",
@@ -1436,8 +1430,8 @@
     }
   },
   "forced_command_fast_runtime": {
-    "runtime_epoch_id": "f1195a3ca976e41f",
-    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777491089|restart_cause=worker_missing|worker_pid=586",
+    "runtime_epoch_id": "0bc370bf0c3e43b3",
+    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777491089|restart_cause=worker_missing|worker_pid=2548",
     "baseline_ts_utc": "2026-04-09T17:59:08.154619Z",
     "baseline_source": "manual_config",
     "auto_baseline_on_epoch_change": true,

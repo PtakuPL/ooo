@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T19:31:43.101508Z",
-  "cycle_counter": 13282,
-  "last_target_key": "cs:items.json",
-  "last_pending_total": 18036,
-  "last_marker_todo": 18036,
+  "timestamp": "2026-04-29T19:39:31.720618Z",
+  "cycle_counter": 13283,
+  "last_target_key": "ro:items.json",
+  "last_pending_total": 14608,
+  "last_marker_todo": 14608,
   "last_tier": 2,
   "last_cat_priority": 1,
   "candidates_count": 96,
@@ -515,17 +515,8 @@
   "bootstrap_priority": {
     "enabled": false,
     "sequence": [
-      "pl",
       "es",
-      "ru",
-      "ro",
-      "it",
-      "fr",
-      "de",
-      "pt",
-      "nl",
-      "cs",
-      "tr"
+      "pl"
     ],
     "completed": [
       "es",
@@ -557,20 +548,12 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "ro": {
+      "cs": {
         "allowed_domain": null,
         "domain_coverages": {
-          "items.json": 46.06,
-          "npc.json": 69.88,
-          "quests.json": 99.02
-        }
-      },
-      "it": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 52.73,
-          "npc.json": 76.51,
-          "quests.json": 99.18
+          "items.json": 28.03,
+          "npc.json": 39.51,
+          "quests.json": 98.85
         }
       },
       "ru": {
@@ -581,12 +564,20 @@
           "quests.json": 99.51
         }
       },
-      "cs": {
+      "it": {
         "allowed_domain": null,
         "domain_coverages": {
-          "items.json": 27.95,
-          "npc.json": 39.51,
-          "quests.json": 98.85
+          "items.json": 52.73,
+          "npc.json": 76.51,
+          "quests.json": 99.18
+        }
+      },
+      "ro": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 46.06,
+          "npc.json": 69.88,
+          "quests.json": 99.02
         }
       }
     },
@@ -639,21 +630,12 @@
     "forced": false
   },
   "priority_gate": {
-    "enabled": false,
+    "enabled": true,
     "active": false,
     "coverage_target": 100.0,
     "priority_langs": [
-      "pl",
       "es",
-      "ru",
-      "ro",
-      "it",
-      "fr",
-      "de",
-      "pt",
-      "nl",
-      "cs",
-      "tr"
+      "pl"
     ],
     "pending_langs": [],
     "lang_completion": {}

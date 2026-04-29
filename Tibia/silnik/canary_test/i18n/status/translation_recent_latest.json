@@ -1,26 +1,128 @@
 {
-  "timestamp": "2026-04-29T19:20:13.086008Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 3,
+  "timestamp": "2026-04-29T19:37:48.186535Z",
+  "language": "cs",
+  "json_file": "items.json",
+  "translated": 69,
   "entries": [
     {
-      "key": "npc.captain_fearless.stdmod_1",
-      "en": "Passages to Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar and Ankrahmun.",
-      "translated": "Pasajes a Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar y Ankrahmun.",
-      "source": "tm"
+      "key": "item.15576.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "npc.captain_fearless.stdmod_5",
-      "en": "Do you seek a passage to Darashia for |TRAVELCOST|?",
-      "translated": "¿Busca un pasaje a Darashia para |TRAVELCOST|?",
-      "source": "tm"
+      "key": "item.15577.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "npc.captain_fearless.stdmod_10",
-      "en": "Where do you want to go? To {Issavi} {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} or {Ankrahmun}?",
-      "translated": "¿A dónde quieres ir? ¿A {Issavi} {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} o {Ankrahmun}?",
-      "source": "google_translate"
+      "key": "item.15578.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15579.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15580.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15581.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15582.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15583.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15584.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15585.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15586.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15587.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15588.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15589.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15590.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15591.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15592.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15593.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15594.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.15595.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4.1-mini"
     }
   ],
   "filtered_untranslated_marker": 0

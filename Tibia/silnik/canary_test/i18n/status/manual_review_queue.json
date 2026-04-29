@@ -65316,11 +65316,659 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:24:52.454588Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11612.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned magic wall rune",
+      "attempted_translation": "Это украшенная магическая настенная руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'волшебная стена' for EN 'magic wall' from items.json:item.10181.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:23.454943Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11613.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned animate dead rune",
+      "attempted_translation": "Это украшенная ожившая мертвая руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Оживить мертвую руну' for EN 'Animate Dead Rune' from spells.json:spell.animate_dead_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:23.967987Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11614.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned animate dead rune",
+      "attempted_translation": "Это украшенная ожившая мертвая руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Оживить мертвую руну' for EN 'Animate Dead Rune' from spells.json:spell.animate_dead_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:24.077454Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11623.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Это украшенная лавинная руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Лавина' for EN 'Avalanche' from monsters.json:monster.avalanche.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:24.186690Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11624.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Это украшенная лавинная руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Лавина' for EN 'Avalanche' from monsters.json:monster.avalanche.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:24.296025Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11639.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Это украшенная полевая руна разрушения.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Уничтожить полевые руны' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:24.407344Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11640.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Это украшенная полевая руна разрушения.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Уничтожить полевые руны' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:24.517407Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11649.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned fire field rune",
+      "attempted_translation": "Это украшенная руна огненного поля.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'огненное поле' for EN 'fire field' from items.json:item.10069.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:29.486149Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11650.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned fire field rune",
+      "attempted_translation": "Это украшенная руна огненного поля.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'огненное поле' for EN 'fire field' from items.json:item.10069.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:33.193467Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.118.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You swapped it with Bozo's crate of wine flasks",
+      "attempted_translation": "Ты подменил его ящиком Бозо с винными флягами.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'вино' for EN 'wine' from items.json:item.2.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:33.911638Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12077.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This little critter just loves slime fungus",
+      "attempted_translation": "Это маленькое создание просто обожает слизистый грибок",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'слизевый гриб' for EN 'slime fungus' from items.json:item.12059.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:35.374530Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12171.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This ribbon was handcrafted by Rottin Wood and the Married Men of the forest",
+      "attempted_translation": "Эту ленту изготовили вручную Роттин Вуд и лесные женатые мужчины.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'древесина' for EN 'wood' from items.json:item.5901.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:37.219170Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12174.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The wool that was stuffed under the ribbon makes the spoon look and feel like a real rabbit's foot",
+      "attempted_translation": "Шерсть, набитая под ленту, делает ложку похожей на настоящую кроличью лапку.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Кролик' for EN 'Rabbit' from monsters.json:monster.rabbit.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:37.328427Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12175.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Adding some wool here and there would certainly make this look and feel like a real rabbit's foot",
+      "attempted_translation": "Если добавить немного шерсти здесь и там, это, безусловно, сделает эту лапку настоящей кроличьей лапкой.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'кроличья лапка' for EN 'rabbit's foot' from items.json:item.12172.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:38.983000Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12229.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This fruit was gathered from the Screaming Cherry Tree",
+      "attempted_translation": "Этот фрукт был собран с Кричащего вишневого дерева.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'кричащая вишня' for EN 'screaming cherry' from items.json:item.12229.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:40.845270Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12557.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This fish, and rare ingredient, can only be found in the dirtiest, murkiest and muddiest of waters",
+      "attempted_translation": "Эту рыбу и редкий ингредиент можно найти только в самой грязной, мутной и мутной воде.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'рыба' for EN 'fish' from items.json:item.10245.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:46.199568Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12672.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this knife on a dead war wolf to retrieve some leather. Don't lose it and don't leave the cave",
+      "attempted_translation": "Используйте этот нож на мертвом боевом волке, чтобы добыть немного кожи. Не теряй его и не выходи из пещеры.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'мёртвый war волк' for EN 'dead war wolf' from items.json:item.6009.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:50.890910Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12809.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This hat was handcrafted by Uman the Wise and cursed by Zathroth the Destroyer. It is awarded by TibiaWiki.com.br",
+      "attempted_translation": "Эта шляпа была изготовлена ​​вручную Уманом Мудрым и проклята Затротом Разрушителем. Он присуждается Тибиавики.ком.br.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Разрушитель' for EN 'Destroyer' from monsters.json:monster.destroyer.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:52.171817Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12819.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This bucket is specially prepared for magical water, which is known to escape just about any vessel",
+      "attempted_translation": "Это ведро специально подготовлено для волшебной воды, которая, как известно, вытекает практически из любого сосуда.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'вода' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:54.529616Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.133.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains holy water from the white raven monastery.",
+      "attempted_translation": "В нем содержится святая вода из монастыря Белого Ворона.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'белый raven' for EN 'white raven' from items.json:item.30370.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:55.550958Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14010.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "A belt buckle snatched from a deepling guard",
+      "attempted_translation": "Пряжка ремня, вырванная у глубоководного охранника",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Глубинный страж' for EN 'Deepling Guard' from monsters.json:monster.deepling_guard.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:56.077204Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14018.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This formidable gem was hand-cut by |PLAYERNAME|.",
+      "attempted_translation": "Этот грозный драгоценный камень был огранен вручную |PLAYERNAME|.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'рука' for EN 'hand' from items.json:item.33936.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:56.167170Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14037.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "There is a fully grown fairy dancer flower in it. This plant can't wither anymore",
+      "attempted_translation": "В нем находится взрослый цветок волшебной танцовщицы. Это растение больше не может завянуть",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'сказочный' for EN 'fairy' from items.json:item.25747.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:56.338984Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14157.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This continuous stream of water seems strong enough to cut even the hardest of materials.",
+      "attempted_translation": "Этот непрерывный поток воды кажется достаточно сильным, чтобы разрезать даже самые твердые материалы.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'вода' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:56.861991Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14162.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This blood red gem is still rough",
+      "attempted_translation": "Этот кроваво-красный драгоценный камень все еще груб.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'кровь' for EN 'blood' from items.json:item.18620.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:57.854338Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14165.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode",
+      "attempted_translation": "Этот ящик полон окаменелых кораллов. Его необходимо вовремя заблокировать, иначе он подвергнется коррозии.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'окаменелый коралл' for EN 'fossilised coral' from items.json:item.14163.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:58.212364Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14166.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode.",
+      "attempted_translation": "Этот ящик полон окаменелых кораллов. Его необходимо вовремя заблокировать, иначе он подвергнется коррозии.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'окаменелый коралл' for EN 'fossilised coral' from items.json:item.14163.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:58.591619Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14174.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Darkness clutches the creatures of the sea to end all living things. Be watchful of this black void",
+      "attempted_translation": "Тьма сжимает морских существ, чтобы уничтожить все живое. Будьте осторожны с этой черной пустотой",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'пустота' for EN 'void' from items.json:item.100.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:26:59.681202Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15818.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red spores. Gather some GREEN spores",
+      "attempted_translation": "Содержит красные споры. Соберите ЗЕЛЕНЫЕ споры.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'зелёный спорес' for EN 'green spores' from items.json:item.15706.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:00.093554Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15819.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red and green spores. Gather some BLUE spores",
+      "attempted_translation": "Содержит красные и зеленые споры. Соберите немного СИНИХ спор.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'зелёный спорес' for EN 'green spores' from items.json:item.15706.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:00.494598Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15820.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red, green and blue spores. Gather some YELLOW spores",
+      "attempted_translation": "Он содержит красные, зеленые и синие споры. Соберите немного ЖЕЛТЫХ спор.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'жёлтый спорес' for EN 'yellow spores' from items.json:item.15708.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:00.868204Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15821.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains red, green, blue and yellow spores. Deliver it to the gnomes",
+      "attempted_translation": "Он содержит красные, зеленые, синие и желтые споры. Доставьте это гномам",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'жёлтый спорес' for EN 'yellow spores' from items.json:item.15708.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:01.249825Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15828.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "Поросенка необходимо вернуть хозяину в течение часа.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'маленькая свинья' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:01.688465Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15833.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "Поросенка необходимо вернуть хозяину в течение часа.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'маленькая свинья' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:03.846503Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.16161.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Even in the light of day, the stars seem to reflect in each facet of this crystalline axe",
+      "attempted_translation": "Даже при свете дня кажется, что звезды отражаются в каждой грани этого кристального топора.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'кристаллический топор' for EN 'crystalline axe' from items.json:item.16161.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:06.403805Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.16167.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Such crystals are used to charge the long range teleporters to the cities",
+      "attempted_translation": "Такие кристаллы используются для зарядки телепортов дальнего действия в города.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Заряжать' for EN 'Charge' from spells.json:spell.charge.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3303
+    "total": 3339
   },
-  "updated_at": "2026-04-29T20:24:46.303874Z"
+  "updated_at": "2026-04-29T20:27:06.429302Z"
 }

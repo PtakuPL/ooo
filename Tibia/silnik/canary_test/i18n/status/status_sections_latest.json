@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T18:49:01.634807Z",
+  "generated_at_utc": "2026-04-29T18:51:45.914692Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,29 +9,29 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 18:48:54"
+      "last_update": "2026-04-29 18:51:35"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "2min temu",
+      "freshness": "1min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T18:46:27Z"
+      "last_update": "2026-04-29T18:50:30Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "20s temu",
+      "freshness": "1min temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 18:48:54"
+      "last_update": "2026-04-29 18:51:35"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "4min temu",
+      "freshness": "7min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
       "last_update": "2026-04-29T18:44:17.026566Z"
     },
@@ -39,7 +39,7 @@
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "4min temu",
+      "freshness": "7min temu",
       "source": "quality_audit_latest.json",
       "last_update": "2026-04-29T18:44:18.103165Z"
     },
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 18:48:54"
+      "last_update": "2026-04-29 18:51:35"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,7 +57,7 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T18:49:01.632834Z"
+      "last_update": "2026-04-29T18:51:45.912973Z"
     }
   },
   "operator_panels": {
@@ -72,8 +72,8 @@
       "current_scope": "Serwer",
       "detail": "auto translate in progress",
       "current_key": "es:items.json",
-      "heartbeat_at": "2026-04-29T18:46:27Z",
-      "heartbeat_age_s": 134,
+      "heartbeat_at": "2026-04-29T18:50:30Z",
+      "heartbeat_age_s": 68,
       "cycle": 18753
     },
     "recent_writes": {
@@ -551,7 +551,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:48:58.810150Z",
+      "generated_at_utc": "2026-04-29T18:51:43.694281Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -643,8 +643,8 @@
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T18:48:58.810150Z",
-        "oldest_timestamp": "2026-04-28T18:49:55.468972Z",
+        "latest_timestamp": "2026-04-29T18:51:43.694281Z",
+        "oldest_timestamp": "2026-04-28T18:52:10.286786Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2313,12 +2313,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:48:58.846794Z",
+      "generated_at_utc": "2026-04-29T18:51:44.310511Z",
       "window": {
         "trend_hours": 24,
         "samples": 1073,
-        "window_start_utc": "2026-04-28T18:49:55.490664Z",
-        "window_end_utc": "2026-04-29T18:48:58.846794Z"
+        "window_start_utc": "2026-04-28T18:52:10.303389Z",
+        "window_end_utc": "2026-04-29T18:51:44.310511Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2356,8 +2356,8 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z"
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z"
         },
         "website": {
           "label": "Website",
@@ -2384,8 +2384,8 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z"
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2412,8 +2412,8 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z"
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z"
         },
         "installer": {
           "label": "Installer",
@@ -2440,8 +2440,8 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z"
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z"
         }
       },
       "ranking": [
@@ -2471,8 +2471,8 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z",
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z",
           "rank": 1
         },
         {
@@ -2501,8 +2501,8 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z",
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z",
           "rank": 2
         },
         {
@@ -2531,8 +2531,8 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z",
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z",
           "rank": 3
         },
         {
@@ -2561,15 +2561,15 @@
             }
           ],
           "trend_samples": 1073,
-          "window_oldest_utc": "2026-04-28T18:49:55.490664Z",
-          "window_latest_utc": "2026-04-29T18:48:58.846794Z",
+          "window_oldest_utc": "2026-04-28T18:52:10.303389Z",
+          "window_latest_utc": "2026-04-29T18:51:44.310511Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:48:58.873508Z",
+      "generated_at_utc": "2026-04-29T18:51:44.335821Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2627,7 +2627,7 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1646,
+          "wave_history_rows_total": 1647,
           "wave_history_rows_window": 1073,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
@@ -2646,17 +2646,17 @@
         "quality_trend_24h": {
           "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
           "pass": true,
-          "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "detail": "window=24.03h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T18:48:24.045380Z",
-          "window_end_utc": "2026-04-29T18:48:58.873508Z",
-          "window_span_hours": 24.01,
+          "window_start_utc": "2026-04-28T18:49:55.468972Z",
+          "window_end_utc": "2026-04-29T18:51:44.335821Z",
+          "window_span_hours": 24.03,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
               "samples": 1075,
-              "oldest_timestamp": "2026-04-28T18:48:24.045380Z",
-              "latest_timestamp": "2026-04-29T18:48:58.873508Z",
+              "oldest_timestamp": "2026-04-28T18:49:55.468972Z",
+              "latest_timestamp": "2026-04-29T18:51:44.335821Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2667,8 +2667,8 @@
             },
             "otclient_modules.json": {
               "samples": 1075,
-              "oldest_timestamp": "2026-04-28T18:48:24.045380Z",
-              "latest_timestamp": "2026-04-29T18:48:58.873508Z",
+              "oldest_timestamp": "2026-04-28T18:49:55.468972Z",
+              "latest_timestamp": "2026-04-29T18:51:44.335821Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2730,7 +2730,7 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:49:01.140786Z",
+      "generated_at_utc": "2026-04-29T18:51:45.544401Z",
       "active_provider": "TM/simple",
       "active_provider_code": "tm_simple",
       "active_provider_source": "simple",
@@ -2961,10 +2961,10 @@
             "warn_used_pct": 80.0,
             "critical_used_pct": 100.0
           },
-          "used_pct": 47.2,
+          "used_pct": 48.8,
           "monthly_cap": 250.0,
-          "spent": 118.0,
-          "latest_age_s": 1.558543,
+          "spent": 122.0,
+          "latest_age_s": 172.207311,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3010,22 +3010,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:49:01.145180Z",
+      "generated_at_utc": "2026-04-29T18:51:45.547476Z",
       "available": true,
-      "lang": "ro",
+      "lang": "es",
       "json_file": "items.json",
       "surface": "items",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 14333,
+      "registry_terms_total": 16524,
       "keys_scanned": 341,
-      "keys_with_term_usages": 111,
-      "keys_with_conflicts": 44,
-      "term_conflicts_total": 80,
-      "term_conflict_rate_pct": 39.64,
-      "term_conflict_rate_delta_pct": 39.64,
-      "auto_fixed_english_name_leaks": 3,
-      "inflection_suspects_flagged": 3,
-      "manual_review_enqueued": 77,
+      "keys_with_term_usages": 151,
+      "keys_with_conflicts": 29,
+      "term_conflicts_total": 86,
+      "term_conflict_rate_pct": 19.205,
+      "term_conflict_rate_delta_pct": 19.205,
+      "auto_fixed_english_name_leaks": 0,
+      "inflection_suspects_flagged": 1,
+      "manual_review_enqueued": 85,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3034,117 +3034,117 @@
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
       "conflict_type_breakdown": {
-        "canonical_term_missing": 77,
-        "canonical_term_inflection_suspect": 3
+        "canonical_term_missing": 85,
+        "canonical_term_inflection_suspect": 1
       },
       "top_conflicts": [
         {
-          "key": "item.10218.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "peşte",
-          "canonical_en": "fish",
-          "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.10245.name"
+          "source_key": "item.116.name"
         },
         {
-          "key": "item.10218.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "peşte",
-          "canonical_en": "fish",
-          "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.10246.name"
+          "source_key": "item.117.name"
         },
         {
-          "key": "item.10288.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "tronul dragonului",
-          "canonical_en": "dragon throne",
-          "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.10286.name"
+          "source_key": "item.118.name"
         },
         {
-          "key": "item.10288.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "tronul dragonului",
-          "canonical_en": "dragon throne",
-          "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.10287.name"
+          "source_key": "item.14166.name"
         },
         {
-          "key": "item.11473.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Aprinde",
-          "canonical_en": "Light",
-          "translated_text": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
-          "source_file": "spells.json",
-          "source_key": "spell.light.name"
-        },
-        {
-          "key": "item.11609.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "Sudden Death Rune",
-          "canonical_en": "sudden death rune",
-          "translated_text": "Este o rună împodobită a morții subite",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.3155.name"
+          "source_key": "item.19079.name"
         },
         {
-          "key": "item.11610.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Sudden Death Rune",
-          "canonical_en": "sudden death rune",
-          "translated_text": "Este o rună împodobită a morții subite",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.3155.name"
+          "source_key": "item.2471.name"
         },
         {
-          "key": "item.11611.desc",
+          "key": "item.107.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Magic Wall Rune",
-          "canonical_en": "magic wall rune",
-          "translated_text": "Este o rună magică de perete împodobită",
+          "canonical": "Limo",
+          "canonical_en": "slime",
+          "translated_text": "Contiene el olor de una baba recién asesinada.",
           "source_file": "items.json",
-          "source_key": "item.3180.name"
+          "source_key": "item.6.name"
         },
         {
-          "key": "item.11611.desc",
+          "key": "item.107.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Runa peretelui magic",
-          "canonical_en": "Magic Wall Rune",
-          "translated_text": "Este o rună magică de perete împodobită",
-          "source_file": "spells.json",
-          "source_key": "spell.magic_wall_rune.name"
+          "canonical": "Limo",
+          "canonical_en": "Slime",
+          "translated_text": "Contiene el olor de una baba recién asesinada.",
+          "source_file": "monsters.json",
+          "source_key": "monster.slime.name"
         },
         {
-          "key": "item.11612.desc",
+          "key": "item.11328.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Magic Wall Rune",
-          "canonical_en": "magic wall rune",
-          "translated_text": "Este o rună magică de perete împodobită",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
           "source_file": "items.json",
-          "source_key": "item.3180.name"
+          "source_key": "item.116.name"
         },
         {
-          "key": "item.11612.desc",
+          "key": "item.11328.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Runa peretelui magic",
-          "canonical_en": "Magic Wall Rune",
-          "translated_text": "Este o rună magică de perete împodobită",
-          "source_file": "spells.json",
-          "source_key": "spell.magic_wall_rune.name"
-        },
-        {
-          "key": "item.11613.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "anima rune moarte",
-          "canonical_en": "animate dead rune",
-          "translated_text": "Este o rună moartă animată împodobită",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
           "source_file": "items.json",
-          "source_key": "item.3203.name"
+          "source_key": "item.117.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
+          "source_file": "items.json",
+          "source_key": "item.118.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
+          "source_file": "items.json",
+          "source_key": "item.14166.name"
         }
       ]
     },
@@ -3154,7 +3154,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 399,
-      "oldest_visible_pending_age_s": 19709,
+      "oldest_visible_pending_age_s": 19874,
       "top_langs": [
         {
           "lang": "ru",
@@ -3192,12 +3192,12 @@
         }
       ],
       "deferred_state_keys_total": 8881,
-      "deferred_state_updated_at": "2026-04-29T18:44:14.943827Z",
-      "deferred_state_age_s": 281,
+      "deferred_state_updated_at": "2026-04-29T18:51:23.923872Z",
+      "deferred_state_age_s": 18,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 121,
+        "suppressed_manual_review": 58,
         "deduped_ttl": 0,
         "manual_review_escalations": 0,
         "partial_staged": 0,
@@ -3208,7 +3208,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:49:01.632834Z",
+      "generated_at_utc": "2026-04-29T18:51:45.912973Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3223,16 +3223,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 134,
+          "value": 68,
           "threshold": 300,
-          "detail": "Heartbeat świeży (134s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=es:items.json].",
+          "detail": "Heartbeat świeży (68s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=es:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 293,
+          "value": 457,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3252,7 +3252,7 @@
           "severity": "warning",
           "value": {
             "pending": 399,
-            "oldest_s": 19709
+            "oldest_s": 19874
           },
           "threshold": {
             "pending_min": 200,

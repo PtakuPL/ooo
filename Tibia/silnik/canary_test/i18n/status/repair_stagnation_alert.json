@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T18:19:00.067872Z",
+  "timestamp": "2026-04-29T18:49:46.104062Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
@@ -10,12 +10,12 @@
   "top_key": "es:server.json",
   "top_count": 9,
   "old_total": 114185,
-  "new_total": 114167,
+  "new_total": 114165,
   "decrease_pct": 0.02,
-  "old_ts": "2026-04-29T12:11:00.098751Z",
-  "new_ts": "2026-04-29T18:12:52.022007Z",
-  "hours_elapsed": 5.906,
-  "sample_count": 23,
+  "old_ts": "2026-04-29T12:46:28.438550Z",
+  "new_ts": "2026-04-29T18:46:47.972713Z",
+  "hours_elapsed": 5.916,
+  "sample_count": 22,
   "per_lang_trend": {
     "ar": {
       "old": 878,
@@ -61,9 +61,9 @@
     },
     "de": {
       "old": 19865,
-      "new": 19855,
-      "delta": 10,
-      "decrease_pct": 0.05
+      "new": 19853,
+      "delta": 12,
+      "decrease_pct": 0.06
     },
     "el": {
       "old": 638,

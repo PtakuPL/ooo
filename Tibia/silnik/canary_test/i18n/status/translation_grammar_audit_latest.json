@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-04-29T17:47:54.217781Z",
+  "timestamp": "2026-04-29T18:49:15.612232Z",
   "schema_version": "1.0",
   "total_langs": 52,
   "total_domains": 39,
-  "total_genuine_checked": 425371,
+  "total_genuine_checked": 436331,
   "total_issues": 1367,
   "severity_totals": {
     "critical": 65,
-    "warning": 620,
-    "info": 682
+    "warning": 621,
+    "info": 681
   },
   "issue_type_breakdown": {
     "punctuation_missing": 426,
-    "html_tag_mismatch": 347,
+    "html_tag_mismatch": 348,
     "number_drift": 166,
     "length_anomaly": 145,
     "bracket_mismatch": 64,
     "double_spaces": 61,
-    "mixed_language": 50,
+    "mixed_language": 49,
     "artifact_token": 43,
     "placeholder_mismatch": 22,
     "format_token_mismatch": 16,
@@ -147,13 +147,13 @@
     {
       "lang": "pl",
       "total_issues": 50,
-      "domains_affected": 10,
+      "domains_affected": 9,
       "critical": 2,
-      "warning": 28,
-      "info": 20,
+      "warning": 29,
+      "info": 19,
       "top_domains": {
         "books.json": 21,
-        "npc.json": 9,
+        "npc.json": 10,
         "monsters.json": 5,
         "arena.json": 4,
         "achievements.json": 3
@@ -697,14 +697,14 @@
     }
   ],
   "domain_breakdown": {
-    "npc.json": 475,
+    "npc.json": 476,
     "achievements.json": 462,
     "books.json": 139,
     "monsters.json": 60,
     "html.json": 46,
     "scripts.json": 43,
     "cpp.json": 41,
-    "items.json": 40,
+    "items.json": 39,
     "client.json": 18,
     "actions.json": 14,
     "dataroot.json": 8,
@@ -9958,16 +9958,6 @@
       "tr_sample": "Procesor: Pentium 4 1,5 GHz lub odpowiednik z obsługą zestawu instrukcji SSE2"
     },
     {
-      "type": "mixed_language",
-      "severity": "info",
-      "detail": ">=4 consecutive EN words found in translation",
-      "lang": "pl",
-      "domain": "items.json",
-      "key": "item.21375.desc",
-      "en_sample": "There's a note pinned to it: 'Never leave home without a rope!'.",
-      "tr_sample": "Jest do niego przypięta notatka: 'Never leave home without a rope!'."
-    },
-    {
       "type": "html_tag_mismatch",
       "severity": "warning",
       "detail": "en_tags=['<sniff>', '<sniff>', '<sniff>'] tr_tags=['<węszy>', '<węszy>', '<węszy>']",
@@ -10104,6 +10094,16 @@
       "lang": "pl",
       "domain": "npc.json",
       "key": "npc.a_behemoth.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
+      "lang": "pl",
+      "domain": "npc.json",
+      "key": "npc.a_behemoth.greet_msg_2",
       "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
       "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
     },

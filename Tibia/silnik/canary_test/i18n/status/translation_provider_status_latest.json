@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:08:10.055555Z",
+  "generated_at_utc": "2026-04-29T21:10:24.168969Z",
   "active_provider": "Free Google Translate",
   "active_provider_code": "free_google_translate",
   "active_provider_source": "google_translate",
@@ -246,7 +246,7 @@
       "used_pct": 77.6,
       "monthly_cap": 250.0,
       "spent": 194.0,
-      "latest_age_s": 654.028614,
+      "latest_age_s": 800.142282,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

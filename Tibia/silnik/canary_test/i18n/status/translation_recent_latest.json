@@ -1,128 +1,14 @@
 {
-  "timestamp": "2026-04-29T21:01:05.134189Z",
+  "timestamp": "2026-04-29T21:10:24.953168Z",
   "language": "es",
-  "json_file": "items.json",
-  "translated": 159,
+  "json_file": "npc.json",
+  "translated": 2,
   "entries": [
     {
-      "key": "item.12889.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12890.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12891.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12892.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12893.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12894.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12895.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12896.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12897.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12898.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12899.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12900.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12901.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12906.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12907.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12908.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.12909.name",
-      "en": "hive structure",
-      "translated": "estructura de colmena",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.10026.name",
-      "en": "baby rotworm",
-      "translated": "rotworm de bebé",
-      "source": "canonical_name_semantic_autofix"
-    },
-    {
-      "key": "item.10299.name",
-      "en": "badger fur",
-      "translated": "pelaje de badger",
-      "source": "canonical_name_semantic_autofix"
-    },
-    {
-      "key": "item.10194.name",
-      "en": "bamboo drawer",
-      "translated": "drawer de bambú",
-      "source": "canonical_name_semantic_autofix"
+      "key": "npc.captain_gulliver.voice_1",
+      "en": "Passages to Thais and Krailos! Visit the strange lands!",
+      "translated": "Pasajes a Thais y Krailos! ¡Visita las tierras extrañas!",
+      "source": "tm"
     }
   ],
   "filtered_untranslated_marker": 0

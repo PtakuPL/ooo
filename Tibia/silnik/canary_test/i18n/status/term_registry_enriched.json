@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:56:50.542297Z",
+  "generated_at_utc": "2026-04-29T21:03:17.856738Z",
   "lang": "es",
   "source_files": [
     "items.json",
@@ -8,7 +8,7 @@
     "spells.json",
     "quests.json"
   ],
-  "terms_total": 16620,
+  "terms_total": 16737,
   "entries": [
     {
       "term_id": "items.json:item.1.name",
@@ -36224,6 +36224,78 @@
       ]
     },
     {
+      "term_id": "items.json:item.12713.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12713.name",
+      "canonical_form": "pedestal de sapo",
+      "canonical_en": "toad pedestal",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "toad",
+        "pedestal"
+      ],
+      "translated_tokens": [
+        "pedestal",
+        "sapo"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12714.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12714.name",
+      "canonical_form": "pedestal de sapo",
+      "canonical_en": "toad pedestal",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "toad",
+        "pedestal"
+      ],
+      "translated_tokens": [
+        "pedestal",
+        "sapo"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12715.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12715.name",
+      "canonical_form": "pedestal de sapo",
+      "canonical_en": "toad pedestal",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "toad",
+        "pedestal"
+      ],
+      "translated_tokens": [
+        "pedestal",
+        "sapo"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12716.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12716.name",
+      "canonical_form": "pedestal de sapo",
+      "canonical_en": "toad pedestal",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "toad",
+        "pedestal"
+      ],
+      "translated_tokens": [
+        "pedestal",
+        "sapo"
+      ]
+    },
+    {
       "term_id": "items.json:item.12717.name",
       "source_file": "items.json",
       "surface": "items",
@@ -36678,6 +36750,668 @@
       ]
     },
     {
+      "term_id": "items.json:item.12747.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12747.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12748.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12748.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12749.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12749.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12750.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12750.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12751.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12751.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12752.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12752.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12753.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12753.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12754.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12754.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12755.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12755.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12756.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12756.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12757.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12757.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12758.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12758.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12759.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12759.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12760.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12760.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12761.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12761.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12762.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12762.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12763.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12763.name",
+      "canonical_form": "cajón",
+      "canonical_en": "crate",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "crate"
+      ],
+      "translated_tokens": [
+        "cajón"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12764.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12764.name",
+      "canonical_form": "cajón",
+      "canonical_en": "crate",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "crate"
+      ],
+      "translated_tokens": [
+        "cajón"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12765.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12765.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12766.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12766.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12767.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12767.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12768.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12768.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12769.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12769.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12770.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12770.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12771.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12771.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12772.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12772.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12773.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12773.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12774.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12774.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12775.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12775.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12776.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12776.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12777.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12777.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12778.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12778.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12779.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12779.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12780.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12780.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12781.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12781.name",
+      "canonical_form": "telaraña grande",
+      "canonical_en": "large spider web",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "large",
+        "spider"
+      ],
+      "translated_tokens": [
+        "telaraña",
+        "grande"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12782.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12782.name",
+      "canonical_form": "señal de advertencia",
+      "canonical_en": "warning sign",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "warning",
+        "sign"
+      ],
+      "translated_tokens": [
+        "señal",
+        "advertencia"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12783.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12783.name",
+      "canonical_form": "señal de advertencia",
+      "canonical_en": "warning sign",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "warning",
+        "sign"
+      ],
+      "translated_tokens": [
+        "señal",
+        "advertencia"
+      ]
+    },
+    {
       "term_id": "items.json:item.12784.name",
       "source_file": "items.json",
       "surface": "items",
@@ -36756,7 +37490,7 @@
       "source_file": "items.json",
       "surface": "items",
       "source_key": "item.12788.name",
-      "canonical_form": "trampa de tarantula",
+      "canonical_form": "trampa de Tarántula",
       "canonical_en": "tarantula trap",
       "contextual_variants": [],
       "usages": [],
@@ -36766,7 +37500,7 @@
       ],
       "translated_tokens": [
         "trampa",
-        "tarantula"
+        "tarántula"
       ]
     },
     {
@@ -37043,7 +37777,7 @@
       "source_file": "items.json",
       "surface": "items",
       "source_key": "item.12803.name",
-      "canonical_form": "spikes elemental",
+      "canonical_form": "zapatillas con clavos elemental",
       "canonical_en": "elemental spikes",
       "contextual_variants": [],
       "usages": [],
@@ -37052,7 +37786,8 @@
         "spikes"
       ],
       "translated_tokens": [
-        "spikes",
+        "zapatillas",
+        "clavos",
         "elemental"
       ]
     },
@@ -37109,6 +37844,128 @@
       ]
     },
     {
+      "term_id": "items.json:item.12809.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12809.name",
+      "canonical_form": "sabiduría épica",
+      "canonical_en": "epic wisdom",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "epic",
+        "wisdom"
+      ],
+      "translated_tokens": [
+        "sabiduría",
+        "épica"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1281.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1281.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12810.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12810.name",
+      "canonical_form": "sabiduría épica",
+      "canonical_en": "epic wisdom",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "epic",
+        "wisdom"
+      ],
+      "translated_tokens": [
+        "sabiduría",
+        "épica"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12813.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12813.name",
+      "canonical_form": "radio viejo",
+      "canonical_en": "old radio",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "radio"
+      ],
+      "translated_tokens": [
+        "radio",
+        "viejo"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12814.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12814.name",
+      "canonical_form": "radio viejo",
+      "canonical_en": "old radio",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "radio"
+      ],
+      "translated_tokens": [
+        "radio",
+        "viejo"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12815.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12815.name",
+      "canonical_form": "artículo desconocido",
+      "canonical_en": "unknown item",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "unknown"
+      ],
+      "translated_tokens": [
+        "artículo",
+        "desconocido"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12816.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12816.name",
+      "canonical_form": "artículo desconocido",
+      "canonical_en": "unknown item",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "unknown"
+      ],
+      "translated_tokens": [
+        "artículo",
+        "desconocido"
+      ]
+    },
+    {
       "term_id": "items.json:item.12817.name",
       "source_file": "items.json",
       "surface": "items",
@@ -37159,6 +38016,24 @@
       "translated_tokens": [
         "cubo",
         "prepared"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1282.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1282.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
       ]
     },
     {
@@ -37342,6 +38217,24 @@
       ]
     },
     {
+      "term_id": "items.json:item.1283.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1283.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
       "term_id": "items.json:item.12830.name",
       "source_file": "items.json",
       "surface": "items",
@@ -37506,7 +38399,7 @@
       "source_file": "items.json",
       "surface": "items",
       "source_key": "item.12838.name",
-      "canonical_form": "ashes profano",
+      "canonical_form": "cenizas profano",
       "canonical_en": "unholy ashes",
       "contextual_variants": [],
       "usages": [],
@@ -37515,7 +38408,7 @@
         "ashes"
       ],
       "translated_tokens": [
-        "ashes",
+        "cenizas",
         "profano"
       ]
     },
@@ -37540,11 +38433,29 @@
       ]
     },
     {
+      "term_id": "items.json:item.1284.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1284.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
       "term_id": "items.json:item.12840.name",
       "source_file": "items.json",
       "surface": "items",
       "source_key": "item.12840.name",
-      "canonical_form": "ashes profano",
+      "canonical_form": "cenizas profano",
       "canonical_en": "unholy ashes",
       "contextual_variants": [],
       "usages": [],
@@ -37553,7 +38464,7 @@
         "ashes"
       ],
       "translated_tokens": [
-        "ashes",
+        "cenizas",
         "profano"
       ]
     },
@@ -37674,6 +38585,1050 @@
       ]
     },
     {
+      "term_id": "items.json:item.12847.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12847.name",
+      "canonical_form": "ESPRITE RESERVADO",
+      "canonical_en": "RESERVED SPRITE",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "reserved",
+        "sprite"
+      ],
+      "translated_tokens": [
+        "esprite",
+        "reservado"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12848.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12848.name",
+      "canonical_form": "ESPRITE RESERVADO",
+      "canonical_en": "RESERVED SPRITE",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "reserved",
+        "sprite"
+      ],
+      "translated_tokens": [
+        "esprite",
+        "reservado"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12849.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12849.name",
+      "canonical_form": "ESPRITE RESERVADO",
+      "canonical_en": "RESERVED SPRITE",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "reserved",
+        "sprite"
+      ],
+      "translated_tokens": [
+        "esprite",
+        "reservado"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1285.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1285.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12850.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12850.name",
+      "canonical_form": "ESPRITE RESERVADO",
+      "canonical_en": "RESERVED SPRITE",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "reserved",
+        "sprite"
+      ],
+      "translated_tokens": [
+        "esprite",
+        "reservado"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12851.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12851.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12852.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12852.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12853.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12853.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12854.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12854.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12855.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12855.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12856.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12856.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12857.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12857.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12858.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12858.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12859.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12859.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1286.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1286.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12860.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12860.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12861.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12861.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12862.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12862.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12863.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12863.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12864.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12864.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12865.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12865.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12866.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12866.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12867.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12867.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12868.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12868.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12869.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12869.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1287.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1287.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12870.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12870.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12871.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12871.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12872.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12872.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12873.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12873.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12874.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12874.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12875.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12875.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12876.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12876.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12877.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12877.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12878.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12878.name",
+      "canonical_form": "ESPRITE RESERVADO",
+      "canonical_en": "RESERVED SPRITE",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "reserved",
+        "sprite"
+      ],
+      "translated_tokens": [
+        "esprite",
+        "reservado"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12879.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12879.name",
+      "canonical_form": "ESPRITE RESERVADO",
+      "canonical_en": "RESERVED SPRITE",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "reserved",
+        "sprite"
+      ],
+      "translated_tokens": [
+        "esprite",
+        "reservado"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1288.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1288.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12880.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12880.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12881.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12881.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12882.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12882.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12883.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12883.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12884.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12884.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12885.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12885.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12886.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12886.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12887.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12887.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12888.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12888.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12889.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12889.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1289.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1289.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12890.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12890.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12891.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12891.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12892.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12892.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12893.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12893.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12894.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12894.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12895.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12895.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12896.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12896.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12897.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12897.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12898.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12898.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12899.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12899.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
       "term_id": "items.json:item.129.name",
       "source_file": "items.json",
       "surface": "items",
@@ -37687,6 +39642,60 @@
       ],
       "translated_tokens": [
         "contrato"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1290.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1290.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12900.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12900.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12901.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12901.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
       ]
     },
     {
@@ -37756,6 +39765,96 @@
       "translated_tokens": [
         "muñeca",
         "dread"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12906.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12906.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12907.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12907.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12908.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12908.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12909.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12909.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1291.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1291.name",
+      "canonical_form": "muro de framework",
+      "canonical_en": "framework wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "framework",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "framework"
       ]
     },
     {

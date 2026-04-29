@@ -233566,5 +233566,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T20:56:41.968714Z"
+  },
+  "npc.captain_haba.say_2": {
+    "src_hash": "c5961f2ff281419cfa0b4823bf3dfb8c",
+    "text": "¿Quieres unirte a la búsqueda del {Serpiente marina}? ¡Ten en cuenta que puedes pagar con tu vida! ¿Estás involucrado?",
+    "source": "autofix_harmonize_canonical_names_in_braces",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:03:09.273924Z"
   }
 }

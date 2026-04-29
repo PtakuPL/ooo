@@ -1,128 +1,26 @@
 {
-  "timestamp": "2026-04-29T19:52:53.489715Z",
-  "language": "it",
-  "json_file": "items.json",
-  "translated": 31,
+  "timestamp": "2026-04-29T20:03:22.594061Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 3,
   "entries": [
     {
-      "key": "item.14583.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "npc.captain_fearless.voice_1",
+      "en": "Passages to Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar and Ankrahmun.",
+      "translated": "Pasajes a Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar y Ankrahmun.",
+      "source": "tm"
     },
     {
-      "key": "item.14584.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "npc.captain_greyhound.greet_msg_1",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
+      "translated": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
+      "source": "tm"
     },
     {
-      "key": "item.14585.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14586.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14587.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14588.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14589.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.1459.name",
-      "en": "stone wall",
-      "translated": "muro di pietra",
-      "source": "simple"
-    },
-    {
-      "key": "item.14590.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14591.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14592.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14593.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14594.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14595.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14596.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14597.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14598.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14599.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.1460.name",
-      "en": "stone wall",
-      "translated": "muro di pietra",
-      "source": "simple"
-    },
-    {
-      "key": "item.1069.name",
-      "en": "bug tral",
-      "translated": "trappola per insetti",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_fearless.stdmod_9",
+      "en": "Where do you want to go? To {Issavi}, {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} or {Ankrahmun}?",
+      "translated": "¿A dónde quieres ir? ¿A {Issavi}, {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} o {Ankrahmun}?",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

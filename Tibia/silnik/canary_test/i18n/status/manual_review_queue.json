@@ -63286,11 +63286,299 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:51.589508Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_7",
+      "reason": "term_consistency_english_name_leak",
+      "en_text": "The missions available for your rank are {lizard urn}, {bonelord secrets} and {orc powder}.",
+      "attempted_translation": "Las misiones disponibles para tu rango son {lizard urn}, {bonelord secrets} y {orc powder}.",
+      "issues": [
+        {
+          "type": "english_name_leak",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Señor de huesos' for EN 'Bonelord' from monsters.json:monster.bonelord.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:51.917007Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.appaloosa.say_8",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I'll give you one of our experienced ones. Take care! Look out for low hanging branches.",
+      "attempted_translation": "Te daré uno de nuestros experimentados. ¡Cuidarse! Esté atento a las ramas bajas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'sucursales' for EN 'branches' from items.json:item.12650.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:02:04.617679Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.arito.multi_2",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You have to know, I was one of them before I opened that shop here. Sure they fear about their hideout being revealed by me. Please go to the north, there is a small cave in the mountains with a rock in the middle. ...",
+      "attempted_translation": "Tienes que saber que yo era uno de ellos antes de abrir esa tienda aquí. Seguro que temen que yo revele su escondite. Dirígete hacia el norte, hay una pequeña cueva en las montañas con una roca en el medio. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'miedo' for EN 'fear' from spells.json:spell.fear.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:02:11.309189Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.arito.multi_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "If you stand in front of it, place a scimitar - which is the weapon of the nomads - left of you and make a sacrifice to the earth by pouring some water on the floor to your right. ...",
+      "attempted_translation": "Si te paras frente a él, coloca una cimitarra, que es el arma de los nómadas, a tu izquierda y haz un sacrificio a la tierra vertiendo un poco de agua en el suelo a tu derecha. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'soporte' for EN 'stand' from items.json:item.9101.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:02:49.613224Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_16",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Okay, listen closely: First of all, you need to gather 20 enchanted emeralds in order to go to the earth sphere. Deep under the academy, one floor below the elemental shrines, there is a machine. Put the gems in there an",
+      "attempted_translation": "Bien, escucha atentamente: en primer lugar, debes reunir 20 esmeraldas encantadas para poder ir a la esfera terrestre. En lo profundo de la academia, un piso debajo de los santuarios elementales, hay una máquina. Pon las",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tierra' for EN 'earth' from items.json:item.101.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:15.780102Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "MOTHER SOIL! Now you need to find a knight, a paladin, and a sorcerer who also completed this first task. ...",
+      "attempted_translation": "¡MADRE SUELO! Ahora necesitas encontrar un caballero, un paladín y un hechicero que también hayan completado esta primera tarea. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tierra de mother' for EN 'mother soil' from items.json:item.947.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:16.010642Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_5",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "PURE ENERGY! Now you need to find a druid, a paladin, and a sorcerer who also completed this first task. ...",
+      "attempted_translation": "¡PURA ENERGÍA! Ahora necesitas encontrar un druida, un paladín y un hechicero que también haya completado esta primera tarea. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'energy puro' for EN 'pure energy' from items.json:item.948.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:16.193202Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.aruda.say_21",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "He is soooo strong! What muscles! What a body! On the other hand, compared to you he looks quite puny.",
+      "attempted_translation": "¡Él es tan fuerte! ¡Qué músculos! ¡Qué cuerpo! Por otro lado, comparado contigo parece bastante enclenque.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'mano' for EN 'hand' from items.json:item.33936.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:16.284610Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.aruda.say_40",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Oh, I am just a girl and know nothing about magic swords and such things.",
+      "attempted_translation": "Oh, solo soy una niña y no sé nada sobre espadas mágicas y cosas así.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:16.376951Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.aruda.say_5",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Well ... I have met him for a little while .. but this was nothing serious.",
+      "attempted_translation": "Bueno… lo conozco desde hace un tiempito.. pero esto no fue nada tumba.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:17.044869Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.aruda.say_8",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Sorry, I have nothing to sell.",
+      "attempted_translation": "Lo siento, no tengo nada que vender.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:17.180338Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.aruda.say_9",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I do some work now and then. Nothing unusual, though. So I have plenty time to chat. If you are interested in any topic just ask me.",
+      "attempted_translation": "Trabajo algo de vez en cuando. Aunque nada inusual. Entonces tengo mucho tiempo para charlar. Si estás interesado en algún tema solo pregúntame.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:17.267471Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.ashari.greet_msg_1",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Hello, stranger! These caves must seem strange to you. I wonder what brings you here... maybe you are interested in some work? There are several tasks I could need a hand with.",
+      "attempted_translation": "¡Hola, extraño! Estas cuevas deben parecerte extrañas. Me pregunto qué te trae por aquí... ¿quizás te interese algún trabajo? Hay varias tareas en las que podría necesitar ayuda.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'mano' for EN 'hand' from items.json:item.33936.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:17.827690Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.atur.voice_1",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Don't forget to deposit your money here in the Global Bank before you head out for adventure.",
+      "attempted_translation": "No olvides depositar tu dinero aquí en el Global Bank antes de salir a la aventura.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:17.995193Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.aurita.multi_9",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Yes, there is something. I'm in love with Taegen, but he is a faun. As such he's inhabiting the forests, dancing with fairies. And I, being a mermaid, am living in the ocean, swimming with the fish between coral reefs. .",
+      "attempted_translation": "Sí, hay algo. Estoy enamorado de Taegen, pero él es un fauno. Como tal, habita los bosques y baila con las hadas. Y yo, siendo sirena, vivo en el océano, nadando con los peces entre arrecifes de coral. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'pescado' for EN 'fish' from items.json:item.3578.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:03:18.662333Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.avar_tar.multi_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The shield however will only be granted to those adventurers who have finished the demon helmet quest. ...",
+      "attempted_translation": "Sin embargo, el escudo sólo se otorgará a aquellos aventureros que hayan terminado la misión del casco demoníaco. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'demonio' for EN 'demon' from items.json:item.26173.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3190
+    "total": 3206
   },
-  "updated_at": "2026-04-29T20:01:23.431236Z"
+  "updated_at": "2026-04-29T20:03:18.759287Z"
 }

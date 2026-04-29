@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-04-29T18:54:52.858022Z",
+  "updated_at_utc": "2026-04-29T18:58:35.279043Z",
   "current_epoch_id": "c57b403f98d5dd13",
   "current_epoch_raw": "script_mtime=1777486178|script_size=1500385|script_checkpoint=1777486178|restart_ts=1777488389|restart_cause=worker_missing|worker_pid=43136",
   "current_epoch_sources": {
@@ -11,17 +11,17 @@
     "restart_cause": "worker_missing",
     "restart_failure_streak": 0,
     "worker_pid": 43136,
-    "worker_cycle": 1
+    "worker_cycle": 2
   },
   "current_epoch_first_seen_utc": "2026-04-29T18:46:31.218453Z",
-  "current_epoch_last_seen_utc": "2026-04-29T18:54:52.858022Z",
+  "current_epoch_last_seen_utc": "2026-04-29T18:58:35.279043Z",
   "current_epoch_baseline_ts_utc": "2026-04-09T17:59:08.154619Z",
   "last_effective_baseline_ts_utc": "2026-04-09T17:59:08.154619Z",
-  "last_effective_baseline_source": "auto_state",
+  "last_effective_baseline_source": "manual_config",
   "auto_baseline_on_epoch_change": true,
   "epoch_cooldown_seconds": 600,
   "epoch_changed": false,
-  "last_reason": "epoch_stable_reuse",
+  "last_reason": "manual_baseline_active",
   "last_auto_baseline_ts_utc": "2026-04-29T18:10:15.717750Z",
   "last_auto_baseline_epoch_id": "c0395150bbdfd0d0",
   "last_auto_baseline_reason": "epoch_changed",

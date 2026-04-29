@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T18:56:27.718732Z",
-  "active_provider": "OpenAI model pool",
-  "active_provider_code": "openai_model_pool",
-  "active_provider_source": "openai:openai/gpt-4.1-mini",
-  "active_provider_timestamp": "2026-04-29T18:53:29.435445Z",
+  "generated_at_utc": "2026-04-29T18:58:39.900877Z",
+  "active_provider": "Free Google Translate",
+  "active_provider_code": "free_google_translate",
+  "active_provider_source": "google_translate",
+  "active_provider_timestamp": "2026-04-29T18:57:32.220311Z",
   "active_model": "openai/gpt-4.1-mini",
-  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] otclient_modules.json",
+  "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -69,7 +69,7 @@
       "provider_consistency_debt:258"
     ],
     "provider_consistency_debt": 258,
-    "recent_window_writes": 555,
+    "recent_window_writes": 560,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
@@ -79,12 +79,12 @@
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 220
+        "writes": 205
       },
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 79
+        "writes": 99
       },
       {
         "provider": "canonical_name_semantic_autofix",
@@ -97,23 +97,33 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 8,
+    "fallbacks_last_200": 7,
     "fallback_action_breakdown": [
+      {
+        "action": "fallback_to_next_provider_validate_fail",
+        "action_label": "fallback to next provider validate fail",
+        "count": 5
+      },
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
-        "count": 8
+        "count": 1
+      },
+      {
+        "action": "fallback_to_google_translate_validate_fail",
+        "action_label": "fallback to google translate validate fail",
+        "count": 1
       }
     ],
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 220
+        "recent_writes": 205
       },
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 79
+        "recent_writes": 99
       },
       "google_cloud": {
         "status": "disabled",
@@ -235,7 +245,7 @@
       "used_pct": 48.8,
       "monthly_cap": 250.0,
       "spent": 122.0,
-      "latest_age_s": 431.968193,
+      "latest_age_s": 587.84201,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -268,14 +278,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T18:54:32.077396Z",
+    "timestamp": "2026-04-29T18:58:33.392223Z",
     "provider": "tm_simple",
     "provider_label": "TM/simple",
-    "source": "simple",
-    "action": "fallback_to_google_translate_high",
-    "action_label": "fallback to google translate high",
-    "decision_reason": "high_reject_types",
-    "json_file": "otclient_modules.json",
-    "key": "otclient_modules.data_options.tr_10"
+    "source": "tm",
+    "action": "fallback_to_next_provider_validate_fail",
+    "action_label": "fallback to next provider validate fail",
+    "decision_reason": "validate_word_salad",
+    "json_file": "server.json",
+    "key": "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.shulgrax.lever.L16.1956"
   }
 }

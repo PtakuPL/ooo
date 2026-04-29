@@ -61294,5 +61294,597 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T18:18:56.683254Z"
+  },
+  "otclient_modules.game_actionbar.tr_6": {
+    "src_hash": "d32ac3705894c0cf199c6f5abdffd55c",
+    "text": "Objekt zuweisen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.367675Z"
+  },
+  "otclient_modules.game_actionbar.tr_7": {
+    "src_hash": "191bab0c005fc9abb11f6d1a2ee2cfc9",
+    "text": "Zauber zuweisen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.370884Z"
+  },
+  "otclient_modules.game_cyclopedia.tr_4": {
+    "src_hash": "e850f728cac75fd2a96562687c663ebd",
+    "text": "Bosstiary-Dialog öffnen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.380867Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_2": {
+    "src_hash": "b60183f6899f8b04902a4753633bab06",
+    "text": "0 / 0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.388046Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_3": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Kleinere Charme-Echos\nVerdient durch das Freischalten oder Aufrüsten großer Amulette und die Beförderung Ihres Charakters",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.406667Z"
+  },
+  "otclient_modules.game_healthcircle.tr_17": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Magisches Level",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.424500Z"
+  },
+  "otclient_modules.game_questlog_otui.tr_4": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Geben Sie ein, um zu suchen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.466946Z"
+  },
+  "otclient_modules.game_shop_otui.tr_10": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Geben Sie ein, um zu suchen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.629622Z"
+  },
+  "otclient_modules.game_shop_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschreibung",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.632424Z"
+  },
+  "otclient_modules.game_stash_otui.tr_6": {
+    "src_hash": "ea7cda1d559f7a95a9ea0cb5f1255897",
+    "text": "Vorratsvorrat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.638888Z"
+  },
+  "otclient_modules.game_store.tr_13": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschreibung",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.642463Z"
+  },
+  "otclient_modules.game_store_otui.tr_5": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Geben Sie ein, um zu suchen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.658240Z"
+  },
+  "otclient_modules.gameinterface.tr_16": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Zur VIP-Liste hinzufügen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.670331Z"
+  },
+  "otclient_modules.gameinterface.tr_17": {
+    "src_hash": "1c7753dc0964b4189e3afa7b91de27ec",
+    "text": "Vom privaten Chat ausschließen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.673354Z"
+  },
+  "otclient_modules.gameinterface.tr_18": {
+    "src_hash": "94a1053375233c81039946f6dedc06dc",
+    "text": "Zum privaten Chat einladen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:06.676575Z"
+  },
+  "otclient_modules.game_cyclopedia.tr_5": {
+    "src_hash": "6176fc0d8ef3c67b0169899d303e537f",
+    "text": "Öffnen Sie das Dialogfeld „Boss-Slots“.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.506297Z"
+  },
+  "otclient_modules.game_healthcircle.tr_12": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Distanzkampf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.513417Z"
+  },
+  "otclient_modules.game_healthcircle.tr_13": {
+    "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
+    "text": "Axtkampf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.515416Z"
+  },
+  "otclient_modules.game_healthcircle.tr_14": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Schwertkampf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.517739Z"
+  },
+  "otclient_modules.game_healthcircle.tr_15": {
+    "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
+    "text": "Clubkämpfe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.520043Z"
+  },
+  "otclient_modules.game_healthcircle.tr_16": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Faustkampf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.521853Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_12": {
+    "src_hash": "4688df965e44c36c69c8c905142bcd1a",
+    "text": "Welttyp:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.523386Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_16": {
+    "src_hash": "308f0a43030b4ea81bd0d869938f97f1",
+    "text": "Spielwelt:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:17.524963Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_17": {
+    "src_hash": "ecc26e2f6f5608031ce91b035e153a58",
+    "text": "Highscores-Filter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.526574Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_2": {
+    "src_hash": "4ad42be721ed5f8708a530b941dec05e",
+    "text": "Eigenen Rang anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.528517Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_3": {
+    "src_hash": "7317d28477ded1fa71f0f8574470ca2c",
+    "text": "Letzte Aktualisierung: vor 9999999 Sekunden",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.531384Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_4": {
+    "src_hash": "eab1849ef2e0ebfad5f7031fe7fbfb19",
+    "text": "1/50",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.533193Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_7": {
+    "src_hash": "b2d689d2c23f72eac7b5d912716c0182",
+    "text": "Spielwelt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.536096Z"
+  },
+  "otclient_modules.game_questlog.tr_1": {
+    "src_hash": "297330e76c14b8e475d4b2b70dab5f1d",
+    "text": "Öffnen Sie QuestLog Tracker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.538703Z"
+  },
+  "otclient_modules.game_questlog.tr_2": {
+    "src_hash": "b73d7f79893a666d3dd8348fb357cb2b",
+    "text": "Questprotokoll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.540016Z"
+  },
+  "otclient_modules.game_questlog.tr_4": {
+    "src_hash": "69371049388631af8fd0d68b8f86d9d5",
+    "text": "Verfolgen Sie abgeschlossene Quests automatisch",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.542871Z"
+  },
+  "otclient_modules.game_questlog.tr_5": {
+    "src_hash": "554b644d9779db4302692fbc6d13f718",
+    "text": "Verfolgen Sie neue Quests automatisch",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.545214Z"
+  },
+  "otclient_modules.game_questlog.tr_6": {
+    "src_hash": "bf5fd9766d8775223a38110323f2f7e9",
+    "text": "Abgeschlossene Quests entfernen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.548275Z"
+  },
+  "otclient_modules.game_questlog.tr_7": {
+    "src_hash": "d11584276d7bace372f8a26525ac3c25",
+    "text": "Alle Quests entfernen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.550243Z"
+  },
+  "otclient_modules.game_questlog_otui.tr_2": {
+    "src_hash": "b9f825445ee56517cae82f5d75d82dba",
+    "text": "Verfolgte Quest hinzufügen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.552279Z"
+  },
+  "otclient_modules.game_questlog_otui.tr_3": {
+    "src_hash": "e4ba486baba5a53fc43a164eb4922b24",
+    "text": "Quest-Tracker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.555371Z"
+  },
+  "otclient_modules.game_rewardwall.tr_1": {
+    "src_hash": "3e7f8e9c8e17f6297f5f55deb51e6452",
+    "text": "Öffnen Sie die Belohnungswand",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.558404Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_1": {
+    "src_hash": "3f66711102dfa0421f48d76e87229c52",
+    "text": "Öffnen Sie den Ordner „Screenshots“.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:36.560886Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_3": {
+    "src_hash": "3cf23f55c5b30a7105250714112997f6",
+    "text": "Wählen Sie alle Ereignisse aus, die automatisch ausgelöst werden sollen. Screenshots:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:56:53.679903Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_4": {
+    "src_hash": "8a062276a5b345f3706bae97c84cd55f",
+    "text": "Aktivieren Sie diese Option, um Screenshots der wichtigsten zu speichern\nMomente Ihrer Tibia Karriere! Wann immer eines der Ereignisse Sie\nerfolgt, wird ein Screenshot erstellt\nautomatisch.\n\nDie folgenden Ereignisse können ausgewählt werden, um einen automatischen Screenshot auszulösen:\n\n- Levelaufstieg: Dein Charakter hat das nächste Level erreicht\n- Fertigkeitsverbesserung: Du hast eine deiner Fertigkeiten verbessert (z. B. Magiestufe).\noder Schwertkampf)\n- Erfolg: Du hast entweder eine Zeit lang einen Erfolg erzielt\nbeim Spielen oder beim Einloggen\n- Bestiary Eintrag freigeschaltet: Sie haben neue Informationen freigeschaltet\nüber eine Kreatur im Bestiary\n- Bestiary Eintrag abgeschlossen: Sie haben alle Informationen über freigeschaltet\neine Kreatur im Bestiary\n- Treasure Gefunden: Du hast eine Belohnung aus einem Container erhalten\nzum Lösen einer Quest oder eines Rätsels\n- Wertvolle Beute: Du hast gerade Beute gefunden, die du besitzt\nim Drop-Tracker markiert\n- Boss besiegt: Du hast ein Bossmonster besiegt, entweder alleine oder\nzusammen mit anderen Spielern und sind berechtigt, es zu plündern\n- Todes-PvE: Du wurdest gerade von einer Kreatur getötet (PvE)\n- Todes-PvP: Du wurdest gerade von einem anderen Spieler getötet (PvP)\n- Spieler töten: Du hast einen anderen Spieler besiegt\n- Player Killer Assist: Du hast die Tötung eines anderen Spielers unterstützt\n- Spieler greift an: Ein anderer Spieler hat gerade begonnen, dich anzugreifen\n- Höchster verursachter Schaden: Du hast einen neuen Allzeit-Höchstschaden verursacht\nauf einen Feind. Um Ihr aktuelles Allzeithoch anzuzeigen oder zurückzusetzen, überprüfen Sie es\nder Impact-Analysator\n- Höchste durchgeführte Heilung: Du hast jemanden mit einem neuen All- geheilt.\nZeit hoher Heilwert. Um Ihre aktuelle Allzeit anzuzeigen oder zurückzusetzen\nhoch, überprüfen Sie den Impact Analyzer\n- Geringe Gesundheit: Du hast eine tiefrote Schwelle erreicht\nGesundheitskopie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.023734Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_5": {
+    "src_hash": "1de6689b78b08a77df6acb4390687811",
+    "text": "Aktivieren Sie automatische Screenshots",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.027412Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_6": {
+    "src_hash": "5c249cbdc5a768cf239e7618127369ea",
+    "text": "Wenn Sie diese Option aktivieren, erstellt der Client jeden Tag einen Screenshot\nSekunde und speichert die letzten 5 davon im Cache. Immer wenn ein Screenshot ist\nentweder automatisch für ein ausgewähltes Ereignis oder manuell über a übernommen\nHotkey werden auch die Screenshots der letzten 5 Sekunden angezeigt\ngespeichert.\nWenn es zu Bildstottern kommt, sollten Sie über eine Deaktivierung nachdenken\ndiese Option..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.065062Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_7": {
+    "src_hash": "06edcf03000a390558dee32b222bbedb",
+    "text": "Führen Sie ein Blacklog der Screenshots der letzten 5 Sekunden",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.072646Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_8": {
+    "src_hash": "b9db3f8c19d96441e206fc4f3dc902b5",
+    "text": "Wenn Sie diese Option aktivieren, werden die Screenshots nur von erstellt\ndas Spielfenster statt der kompletten Client-Oberfläche. Dies\nkönnte Ihre Spielleistung verbessern, insbesondere wenn Sie dies getan haben\nHabe die Option „Screenshot Backlog“ aktiviert.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.224354Z"
+  },
+  "otclient_modules.game_screenshot_otui.tr_9": {
+    "src_hash": "3a6818130ada976575e1899cdc21f845",
+    "text": "Nur das Capture-Game-Fenster",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.226665Z"
+  },
+  "otclient_modules.game_shop.msg_1": {
+    "src_hash": "a6aadf896fbcc2667ec5a4abfda1a180",
+    "text": "Ihr einstündiger XP-Boost hat begonnen! Beim Jagen erhältst du 50 % zusätzliche Erfahrung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.231730Z"
+  },
+  "otclient_modules.game_shop.tr_1": {
+    "src_hash": "9ad0b02a2543125eee74f295ffe0e4d5",
+    "text": "Zu verschenkender Betrag:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.233595Z"
+  },
+  "otclient_modules.game_shop.tr_12": {
+    "src_hash": "6719800d1f46a1fccf8d020007c50e35",
+    "text": "Möchten Sie kaufen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.234976Z"
+  },
+  "otclient_modules.game_shop.tr_13": {
+    "src_hash": "38f480b53a4e759f0822cf04024e673f",
+    "text": "Kaufbestätigung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.236160Z"
+  },
+  "otclient_modules.game_shop.tr_14": {
+    "src_hash": "dac9d6701bc793f3e6eb0b1e272699f5",
+    "text": "Es ist ein Fehler aufgetreten. Stellen Sie sicher, dass Sie die Kategorie und das Angebot ausgewählt haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:00.241945Z"
+  },
+  "otclient_modules.game_shop.tr_19": {
+    "src_hash": "1a66a3b9fcef214c4f409721ece19c78",
+    "text": "Übertragbare Tibia-Münzen: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:09.220546Z"
+  },
+  "otclient_modules.game_shop.tr_2": {
+    "src_hash": "9ad0b02a2543125eee74f295ffe0e4d5",
+    "text": "Zu verschenkender Betrag:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:09.222729Z"
+  },
+  "otclient_modules.game_shop.tr_20": {
+    "src_hash": "6e74293d29de76fdeaef29be1ab560e4",
+    "text": "Übertragbare Aufgabenpunkte: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:09.224990Z"
+  },
+  "otclient_modules.game_shop.tr_9": {
+    "src_hash": "6719800d1f46a1fccf8d020007c50e35",
+    "text": "Möchten Sie kaufen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.178071Z"
+  },
+  "otclient_modules.game_shop_otui.tr_2": {
+    "src_hash": "d4b6f9185273f54f5b467d6410acf827",
+    "text": "Nächste Seite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.179068Z"
+  },
+  "otclient_modules.game_shop_otui.tr_3": {
+    "src_hash": "721900c7049aad6ed26f55393455cef0",
+    "text": "Vorherige Seite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.180057Z"
+  },
+  "otclient_modules.game_stash_otui.tr_3": {
+    "src_hash": "61fa82b481ca29a357558e3e251271b6",
+    "text": "Stash-Abhebung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.180894Z"
+  },
+  "otclient_modules.game_store.tr_10": {
+    "src_hash": "32a817f8e5c9b582107eec11cf56a6ac",
+    "text": "Keine Daten für die Shop-URL.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.182747Z"
+  },
+  "otclient_modules.game_store.tr_3": {
+    "src_hash": "691766f23b1a4318d154147d21676bf2",
+    "text": "Kaufbestätigung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.183644Z"
+  },
+  "otclient_modules.game_store.tr_4": {
+    "src_hash": "4be7816e081405c89801a049ed38d923",
+    "text": "Sie haben nicht genug Münzen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.185405Z"
+  },
+  "otclient_modules.game_store.tr_6": {
+    "src_hash": "ab922cc40753a159cac88d3ccc541fbe",
+    "text": "Ihr Kauf wird bearbeitet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.187021Z"
+  },
+  "otclient_modules.game_store.tr_7": {
+    "src_hash": "17a9f3e019ddff6fe3bbf7db386ec2ff",
+    "text": "Kaufabwicklung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.188020Z"
+  },
+  "otclient_modules.game_store.tr_8": {
+    "src_hash": "1df876dc16c0decf35e837dc56087b13",
+    "text": "Konfigurierbar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.188813Z"
+  },
+  "otclient_modules.game_store_otui.tr_1": {
+    "src_hash": "e1a444c57a59c310dfd913b8fbbcaa70",
+    "text": "Kürzlich hinzugefügt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.189905Z"
+  },
+  "otclient_modules.game_store_otui.tr_2": {
+    "src_hash": "721900c7049aad6ed26f55393455cef0",
+    "text": "Vorherige Seite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.190739Z"
+  },
+  "otclient_modules.game_store_otui.tr_3": {
+    "src_hash": "6f3465e58160f06913bfb1d932b4bd55",
+    "text": "Seite 1 / 4",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.191490Z"
+  },
+  "otclient_modules.game_store_otui.tr_4": {
+    "src_hash": "d4b6f9185273f54f5b467d6410acf827",
+    "text": "Nächste Seite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.192321Z"
+  },
+  "otclient_modules.game_store_otui.tr_6": {
+    "src_hash": "29b5d009ba1eacd396f067f7103b4e28",
+    "text": "Richten Sie eine Auktion ein, um Ihre aktuellen Charaktere zu verkaufen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:24.195809Z"
+  },
+  "otclient_modules.game_store_otui.tr_7": {
+    "src_hash": "5b1c582dc76027bb4f7f649a4466b7a0",
+    "text": "Münzen übertragen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:30.396610Z"
+  },
+  "otclient_modules.game_store_otui.tr_9": {
+    "src_hash": "e5c1d1c786053d226c389d23f7632ae7",
+    "text": "Holen Sie sich Tibia Münzen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:30.398335Z"
+  },
+  "otclient_modules.gameinterface.tr_10": {
+    "src_hash": "e983be8f0a4f84ebca3cd199ab087f59",
+    "text": "Widerrufen Sie die Einladung von %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:30.400098Z"
+  },
+  "otclient_modules.gameinterface.tr_11": {
+    "src_hash": "e983be8f0a4f84ebca3cd199ab087f59",
+    "text": "Widerrufen Sie die Einladung von %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:30.401886Z"
+  },
+  "otclient_modules.gameinterface.tr_12": {
+    "src_hash": "96c46cc8518fb5aede01e092b0f717c0",
+    "text": "Einladen zu Party",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:30.402937Z"
+  },
+  "otclient_modules.gameinterface.tr_13": {
+    "src_hash": "73ddb1b4e3a9d809464c6418dc2e458a",
+    "text": "Treten Sie %ss Party bei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T18:57:30.404328Z"
   }
 }

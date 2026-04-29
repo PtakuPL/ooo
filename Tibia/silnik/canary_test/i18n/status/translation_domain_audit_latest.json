@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T18:55:40.665338Z",
+  "timestamp": "2026-04-29T18:58:44.833400Z",
   "total_langs": 52,
   "total_domains": 39,
   "entries": [
@@ -3285,10 +3285,10 @@
       "lang": "de",
       "domain": "otclient_modules.json",
       "total_keys": 2031,
-      "genuine": 727,
-      "genuine_pct": 35.8,
-      "en_copy": 589,
-      "en_prefix": 715,
+      "genuine": 800,
+      "genuine_pct": 39.39,
+      "en_copy": 584,
+      "en_prefix": 647,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -22466,7 +22466,7 @@
     "otclient_modules.json": {
       "total_keys": 2031,
       "langs": 52,
-      "avg_genuine_pct": 14.16,
+      "avg_genuine_pct": 14.23,
       "total_placeholder_mismatch": 9
     },
     "otclient_src.json": {

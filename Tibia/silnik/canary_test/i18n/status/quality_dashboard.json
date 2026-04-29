@@ -308,13 +308,13 @@
     "issues_count": 1424
   },
   "de": {
-    "last_cycle": "2026-04-29T18:24:41.243302Z",
-    "last_translated": 30,
-    "total_suspicious": 13938,
+    "last_cycle": "2026-04-29T18:57:32.218625Z",
+    "last_translated": 74,
+    "total_suspicious": 13951,
     "total_rejected": 576,
     "total_gt_guard_fail": 684,
-    "cycles": 637,
-    "quality_score": 60.1,
+    "cycles": 638,
+    "quality_score": 60.2,
     "last_audit": "2026-04-29T18:53:41.977745Z",
     "issues_count": 130085
   },

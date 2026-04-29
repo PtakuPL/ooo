@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T18:53:29.435445Z",
-  "language": "es",
-  "json_file": "items.json",
-  "translated": 55,
+  "timestamp": "2026-04-29T18:57:32.220311Z",
+  "language": "de",
+  "json_file": "otclient_modules.json",
+  "translated": 74,
   "entries": [
     {
-      "key": "item.12444.name",
-      "en": "hieroglyphs",
-      "translated": "jeroglíficos",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_shop_otui.tr_2",
+      "en": "Next Page",
+      "translated": "Nächste Seite",
+      "source": "google_translate"
     },
     {
-      "key": "item.12447.name",
-      "en": "carving of a scorpion",
-      "translated": "talla de un escorpión",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_shop_otui.tr_3",
+      "en": "Prev Page",
+      "translated": "Vorherige Seite",
+      "source": "google_translate"
     },
     {
-      "key": "item.12448.name",
-      "en": "carving of a scorpion",
-      "translated": "talla de un escorpión",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_stash_otui.tr_3",
+      "en": "Stash Withdraw",
+      "translated": "Stash-Abhebung",
+      "source": "google_translate"
     },
     {
-      "key": "item.12449.name",
-      "en": "carving of a scorpion",
-      "translated": "talla de un escorpión",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store.tr_10",
+      "en": "No data for store URL.",
+      "translated": "Keine Daten für die Shop-URL.",
+      "source": "google_translate"
     },
     {
-      "key": "item.12450.name",
-      "en": "carving of a scorpion",
-      "translated": "talla de un escorpión",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store.tr_3",
+      "en": "Confirmation of Purchase",
+      "translated": "Kaufbestätigung",
+      "source": "google_translate"
     },
     {
-      "key": "item.12453.name",
-      "en": "carving of a battle",
-      "translated": "talla de una batalla",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store.tr_4",
+      "en": "You don't have enough coins",
+      "translated": "Sie haben nicht genug Münzen",
+      "source": "google_translate"
     },
     {
-      "key": "item.12454.name",
-      "en": "carving of a battle",
-      "translated": "talla de una batalla",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store.tr_6",
+      "en": "Your purchase is being processed",
+      "translated": "Ihr Kauf wird bearbeitet",
+      "source": "google_translate"
     },
     {
-      "key": "item.12455.name",
-      "en": "carving of a battle",
-      "translated": "talla de una batalla",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store.tr_7",
+      "en": "Processing purchase.",
+      "translated": "Kaufabwicklung.",
+      "source": "google_translate"
     },
     {
-      "key": "item.12458.name",
-      "en": "carving of a battle",
-      "translated": "talla de una batalla",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store.tr_8",
+      "en": "Configurable",
+      "translated": "Konfigurierbar",
+      "source": "google_translate"
     },
     {
-      "key": "item.12459.name",
-      "en": "carving of a battle",
-      "translated": "talla de una batalla",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store_otui.tr_1",
+      "en": "Recently Added",
+      "translated": "Kürzlich hinzugefügt",
+      "source": "google_translate"
     },
     {
-      "key": "item.12460.name",
-      "en": "carving of a battle",
-      "translated": "talla de una batalla",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store_otui.tr_2",
+      "en": "Prev Page",
+      "translated": "Vorherige Seite",
+      "source": "google_translate"
     },
     {
-      "key": "item.12465.name",
-      "en": "hyaena statue",
-      "translated": "estatua de hiena",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store_otui.tr_3",
+      "en": "Page 1 / 4",
+      "translated": "Seite 1 / 4",
+      "source": "google_translate"
     },
     {
-      "key": "item.12466.name",
-      "en": "hyaena statue",
-      "translated": "estatua de hiena",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store_otui.tr_4",
+      "en": "Next Page",
+      "translated": "Nächste Seite",
+      "source": "google_translate"
     },
     {
-      "key": "item.12467.name",
-      "en": "golden scorpion",
-      "translated": "escorpión dorado",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store_otui.tr_6",
+      "en": "Setup up an auction to sell you currents characters.",
+      "translated": "Richten Sie eine Auktion ein, um Ihre aktuellen Charaktere zu verkaufen.",
+      "source": "google_translate"
     },
     {
-      "key": "item.12468.name",
-      "en": "golden scorpion",
-      "translated": "escorpión dorado",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store_otui.tr_7",
+      "en": "Transfer Coins",
+      "translated": "Münzen übertragen",
+      "source": "google_translate"
     },
     {
-      "key": "item.12470.name",
-      "en": "small golden scorpion",
-      "translated": "pequeño escorpión dorado",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.game_store_otui.tr_9",
+      "en": "Get Tibia Coins",
+      "translated": "Holen Sie sich Tibia Münzen",
+      "source": "google_translate"
     },
     {
-      "key": "item.12471.name",
-      "en": "small golden scorpion",
-      "translated": "pequeño escorpión dorado",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.gameinterface.tr_10",
+      "en": "Revoke %s's Invitation",
+      "translated": "Widerrufen Sie die Einladung von %s",
+      "source": "google_translate"
     },
     {
-      "key": "item.10026.name",
-      "en": "baby rotworm",
-      "translated": "rotworm de bebé",
-      "source": "canonical_name_semantic_autofix"
+      "key": "otclient_modules.gameinterface.tr_11",
+      "en": "Revoke %s's Invitation",
+      "translated": "Widerrufen Sie die Einladung von %s",
+      "source": "google_translate"
     },
     {
-      "key": "item.10299.name",
-      "en": "badger fur",
-      "translated": "pelaje de badger",
-      "source": "canonical_name_semantic_autofix"
+      "key": "otclient_modules.gameinterface.tr_12",
+      "en": "Invite to Party",
+      "translated": "Einladen zu Party",
+      "source": "google_translate"
     },
     {
-      "key": "item.10194.name",
-      "en": "bamboo drawer",
-      "translated": "drawer de bambú",
-      "source": "canonical_name_semantic_autofix"
+      "key": "otclient_modules.gameinterface.tr_13",
+      "en": "Join %s's Party",
+      "translated": "Treten Sie %ss Party bei",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

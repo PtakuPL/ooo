@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-29T18:56:24.468870Z",
+  "timestamp": "2026-04-29T18:58:36.293602Z",
   "global": {
     "total_reference_keys": 3875872,
-    "translated_keys": 710801,
-    "real_translated_keys": 437516,
-    "english_copy_keys": 409371,
-    "placeholder_keys": 2174863,
+    "translated_keys": 710875,
+    "real_translated_keys": 437589,
+    "english_copy_keys": 409366,
+    "placeholder_keys": 2174795,
     "reference_keys": 7969,
     "missing_keys": 856235,
     "missing_files": 11,
@@ -54,18 +54,18 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 5044,
-    "guard_reports_blocked": 4896,
+    "guard_reports_total": 5045,
+    "guard_reports_blocked": 4897,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 4896
+    "cannot_translate_reports_visible": 4897
   },
   "cache": {
-    "lang_stats_hits": 52,
-    "lang_stats_misses": 0,
-    "lang_stats_hit_pct": 100.0,
-    "lang_stats_mode": "warm-cache",
-    "lang_file_hits": 2028,
-    "lang_file_misses": 0,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
+    "lang_stats_mode": "mixed",
+    "lang_file_hits": 2027,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T17:56:23.111861Z",
-    "window_end_utc": "2026-04-29T18:56:23.111861Z",
+    "window_start_utc": "2026-04-29T17:58:34.975162Z",
+    "window_end_utc": "2026-04-29T18:58:34.975162Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -97,42 +97,42 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 570,
+    "translated": 644,
     "guard_fail": 4,
-    "guard_fail_rate_pct": 0.7,
+    "guard_fail_rate_pct": 0.6,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 570.0,
+    "throughput_keys_per_h": 644.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 754,
-    "deferred_total": 70,
+    "suspicious_total": 700,
+    "deferred_total": 38,
     "top_deferred_reasons": [
       {
         "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-        "count": 46,
-        "share_pct": 65.7,
-        "top_target": "ru/items.json",
-        "top_target_count": 46
-      },
-      {
-        "reason": "existing_canonical_name_quality_mixed_scripts",
         "count": 18,
-        "share_pct": 25.7,
+        "share_pct": 47.4,
         "top_target": "ru/items.json",
         "top_target_count": 18
       },
       {
+        "reason": "existing_canonical_name_quality_mixed_scripts",
+        "count": 14,
+        "share_pct": 36.8,
+        "top_target": "ru/items.json",
+        "top_target_count": 14
+      },
+      {
         "reason": "gt_identity_retry_identical_to_en",
         "count": 5,
-        "share_pct": 7.1,
+        "share_pct": 13.2,
         "top_target": "de/otclient_modules.json",
         "top_target_count": 5
       },
       {
         "reason": "gt_partial_translation_mix",
         "count": 1,
-        "share_pct": 1.4,
+        "share_pct": 2.6,
         "top_target": "de/otclient_modules.json",
         "top_target_count": 1
       }
@@ -164,7 +164,7 @@
       },
       {
         "target": "de/otclient_modules.json",
-        "translated": 45,
+        "translated": 119,
         "guard_fail": 0,
         "guard_command": 0
       },
@@ -514,13 +514,13 @@
         "issues_count": 1424
       },
       "de": {
-        "last_cycle": "2026-04-29T18:24:41.243302Z",
-        "last_translated": 30,
-        "total_suspicious": 13938,
+        "last_cycle": "2026-04-29T18:57:32.218625Z",
+        "last_translated": 74,
+        "total_suspicious": 13951,
         "total_rejected": 576,
         "total_gt_guard_fail": 684,
-        "cycles": 637,
-        "quality_score": 60.1,
+        "cycles": 638,
+        "quality_score": 60.2,
         "last_audit": "2026-04-29T18:53:41.977745Z",
         "issues_count": 130085
       },
@@ -1589,27 +1589,27 @@
       "language_name": "Niemiecki",
       "scope": "global",
       "total_reference_keys": 74536,
-      "translated_keys": 50596,
-      "nominal_translated_keys": 50596,
-      "real_translated_keys": 8162,
-      "english_copy_keys": 64864,
-      "placeholder_keys": 1535,
+      "translated_keys": 50670,
+      "nominal_translated_keys": 50670,
+      "real_translated_keys": 8235,
+      "english_copy_keys": 64859,
+      "placeholder_keys": 1467,
       "reference_keys": 163,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 67.88,
-      "nominal_completion_pct": 67.88,
-      "real_completion_pct": 10.95,
+      "completion_pct": 67.98,
+      "nominal_completion_pct": 67.98,
+      "real_completion_pct": 11.05,
       "server_keys": 70637,
       "server_translated": 48927,
       "server_real_translated": 6612,
       "server_pct": 69.27,
       "server_real_pct": 9.36,
       "client_keys": 3899,
-      "client_translated": 1669,
-      "client_real_translated": 1550,
-      "client_pct": 42.81,
-      "client_real_pct": 39.75,
+      "client_translated": 1743,
+      "client_real_translated": 1623,
+      "client_pct": 44.7,
+      "client_real_pct": 41.63,
       "launcher_www_breakdown": {
         "client.json": {
           "total_reference_keys": 242,
@@ -1635,14 +1635,14 @@
         },
         "otclient_modules.json": {
           "total_reference_keys": 2031,
-          "nominal_translated_keys": 829,
-          "real_translated_keys": 727,
-          "english_copy_keys": 589,
-          "placeholder_keys": 718,
+          "nominal_translated_keys": 903,
+          "real_translated_keys": 800,
+          "english_copy_keys": 584,
+          "placeholder_keys": 650,
           "reference_keys": 0,
           "missing_keys": 0,
-          "nominal_pct": 40.82,
-          "real_pct": 35.8
+          "nominal_pct": 44.46,
+          "real_pct": 39.39
         },
         "php.json": {
           "total_reference_keys": 59,

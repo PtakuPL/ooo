@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T18:56:26.484142Z",
+  "generated_at_utc": "2026-04-29T18:58:38.509581Z",
   "window": {
     "trend_hours": 24,
-    "samples": 1074,
-    "window_start_utc": "2026-04-28T18:56:57.810058Z",
-    "window_end_utc": "2026-04-29T18:56:26.484142Z"
+    "samples": 1075,
+    "window_start_utc": "2026-04-28T18:59:12.831729Z",
+    "window_end_utc": "2026-04-29T18:58:38.509581Z"
   },
   "summary": {
     "surface_count": 4,
@@ -42,9 +42,9 @@
           "missing_keys": 70031
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z"
     },
     "website": {
       "label": "Website",
@@ -70,9 +70,9 @@
           "missing_keys": 1554
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z"
     },
     "launcher": {
       "label": "Launcher",
@@ -98,17 +98,17 @@
           "missing_keys": 242
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z"
     },
     "installer": {
       "label": "Installer",
       "total_reference_keys": 103581,
-      "real_translated_keys": 14959,
-      "coverage_real_pct": 14.44,
+      "real_translated_keys": 15032,
+      "coverage_real_pct": 14.51,
       "langs_count": 51,
-      "delta_24h_pp": 0.03,
+      "delta_24h_pp": 0.1,
       "lagging_langs": [
         {
           "lang": "ar",
@@ -126,9 +126,9 @@
           "missing_keys": 2031
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z"
     }
   },
   "ranking": [
@@ -157,19 +157,19 @@
           "missing_keys": 242
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z",
       "rank": 1
     },
     {
       "surface": "installer",
       "label": "Installer",
       "total_reference_keys": 103581,
-      "real_translated_keys": 14959,
-      "coverage_real_pct": 14.44,
+      "real_translated_keys": 15032,
+      "coverage_real_pct": 14.51,
       "langs_count": 51,
-      "delta_24h_pp": 0.03,
+      "delta_24h_pp": 0.1,
       "lagging_langs": [
         {
           "lang": "ar",
@@ -187,9 +187,9 @@
           "missing_keys": 2031
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z",
       "rank": 2
     },
     {
@@ -217,9 +217,9 @@
           "missing_keys": 70031
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z",
       "rank": 3
     },
     {
@@ -247,9 +247,9 @@
           "missing_keys": 1554
         }
       ],
-      "trend_samples": 1074,
-      "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
-      "window_latest_utc": "2026-04-29T18:56:26.484142Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:59:12.831729Z",
+      "window_latest_utc": "2026-04-29T18:58:38.509581Z",
       "rank": 4
     }
   ]

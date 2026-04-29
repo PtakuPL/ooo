@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "timestamp": "2026-04-29T18:56:22.956014Z",
+  "timestamp": "2026-04-29T18:58:34.864869Z",
   "scope": "all",
   "en_total_keys": 74536,
   "en_signature": [
@@ -239,10 +239,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 2028,
-  "file_cache_misses": 0,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 2027,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7504,8 +7504,8 @@
         [
           "otclient_modules.json",
           1,
-          1777486737851715993,
-          139238
+          1777489051981607544,
+          139833
         ],
         [
           "otclient_src.json",
@@ -7591,27 +7591,27 @@
         "language_name": "Niemiecki",
         "scope": "global",
         "total_reference_keys": 74536,
-        "translated_keys": 50596,
-        "nominal_translated_keys": 50596,
-        "real_translated_keys": 8162,
-        "english_copy_keys": 64864,
-        "placeholder_keys": 1535,
+        "translated_keys": 50670,
+        "nominal_translated_keys": 50670,
+        "real_translated_keys": 8235,
+        "english_copy_keys": 64859,
+        "placeholder_keys": 1467,
         "reference_keys": 163,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 67.88,
-        "nominal_completion_pct": 67.88,
-        "real_completion_pct": 10.95,
+        "completion_pct": 67.98,
+        "nominal_completion_pct": 67.98,
+        "real_completion_pct": 11.05,
         "server_keys": 70637,
         "server_translated": 48927,
         "server_real_translated": 6612,
         "server_pct": 69.27,
         "server_real_pct": 9.36,
         "client_keys": 3899,
-        "client_translated": 1669,
-        "client_real_translated": 1550,
-        "client_pct": 42.81,
-        "client_real_pct": 39.75,
+        "client_translated": 1743,
+        "client_real_translated": 1623,
+        "client_pct": 44.7,
+        "client_real_pct": 41.63,
         "launcher_www_breakdown": {
           "client.json": {
             "total_reference_keys": 242,
@@ -7637,14 +7637,14 @@
           },
           "otclient_modules.json": {
             "total_reference_keys": 2031,
-            "nominal_translated_keys": 829,
-            "real_translated_keys": 727,
-            "english_copy_keys": 589,
-            "placeholder_keys": 718,
+            "nominal_translated_keys": 903,
+            "real_translated_keys": 800,
+            "english_copy_keys": 584,
+            "placeholder_keys": 650,
             "reference_keys": 0,
             "missing_keys": 0,
-            "nominal_pct": 40.82,
-            "real_pct": 35.8
+            "nominal_pct": 44.46,
+            "real_pct": 39.39
           },
           "php.json": {
             "total_reference_keys": 59,
@@ -8113,16 +8113,16 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1777486737851715993,
-            139238
+            1777489051981607544,
+            139833
           ],
           "row": {
             "total_reference_keys": 2031,
-            "translated_keys": 829,
-            "nominal_translated_keys": 829,
-            "real_translated_keys": 727,
-            "english_copy_keys": 589,
-            "placeholder_keys": 718,
+            "translated_keys": 903,
+            "nominal_translated_keys": 903,
+            "real_translated_keys": 800,
+            "english_copy_keys": 584,
+            "placeholder_keys": 650,
             "reference_keys": 0,
             "missing_keys": 0,
             "missing_files": 0

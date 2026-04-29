@@ -1,489 +1,192 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:36:59.078048Z",
-  "lang": "ru",
+  "generated_at_utc": "2026-04-29T23:41:27.880465Z",
+  "lang": "cs",
   "source_files": [
     "items.json",
     "monsters.json",
     "spells.json"
   ],
-  "canonical_terms_total": 6689,
-  "total_conflicted_terms": 43,
-  "case_only_conflicts": 2,
-  "semantic_conflicts": 41,
-  "conflict_rate_pct": 0.64,
+  "canonical_terms_total": 4741,
+  "total_conflicted_terms": 6,
+  "case_only_conflicts": 1,
+  "semantic_conflicts": 5,
+  "conflict_rate_pct": 0.13,
   "examples": [
     {
-      "en_name": "basalt crystal wall",
-      "selected_translation": "кристальная стена из базальта",
+      "en_name": "broken stone wall",
+      "selected_translation": "poškozená kamenná zeď",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "кристальная стена из базальта",
-          "count": 30,
+          "translated": "poškozená kamenná zeď",
+          "count": 6,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.15424.name",
-            "item.15425.name",
-            "item.15426.name",
-            "item.15427.name"
+            "item.1573.name",
+            "item.1574.name",
+            "item.1575.name",
+            "item.1582.name"
           ]
         },
         {
-          "translated": "базальтовая кристальная стена",
-          "count": 4,
+          "translated": "zlomená kamenná zeď",
+          "count": 6,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.15420.name",
-            "item.15421.name",
-            "item.15422.name",
-            "item.15423.name"
+            "item.1576.name",
+            "item.1577.name",
+            "item.1578.name",
+            "item.1579.name"
           ]
         }
       ]
     },
     {
-      "en_name": "brain head",
-      "selected_translation": "Мозговая голова",
+      "en_name": "dead wilting leaf golem",
+      "selected_translation": "mrtvý vadnoucí list golem",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Мозговая голова",
+          "translated": "mrtvý vadnoucí list golem",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.19117.name",
+            "item.19120.name"
+          ]
+        },
+        {
+          "translated": "mrtvých vadnoucích listů golem",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.19118.name",
+            "item.19119.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "eshtaba the conjurer",
+      "selected_translation": "Eshtaba Zaklínač",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Eshtaba Zaklínač",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.brain_head.name"
+            "monster.eshtaba_the_conjurer_stop.name"
           ]
         },
         {
-          "translated": "голова мозга",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.32418.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "calamary",
-      "selected_translation": "Кальмары",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Кальмары",
+          "translated": "Eshtaba kouzelník",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.calamary.name"
+            "monster.eshtaba_the_conjurer.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "lightest missile rune",
+      "selected_translation": "nejlehčí raketová runa",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "nejlehčí raketová runa",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.21352.name",
+            "item.21432.name"
           ]
         },
         {
-          "translated": "кальмар",
+          "translated": "Nejlehčí raketová runa",
           "count": 1,
           "source_files": [
-            "items.json"
+            "spells.json"
           ],
           "sample_keys": [
-            "item.31486.name"
+            "spell.lightest_missile_rune.name"
           ]
         }
       ]
     },
     {
-      "en_name": "canopic jar",
-      "selected_translation": "Канопик Джар",
+      "en_name": "mushroom sponge",
+      "selected_translation": "houba houbová",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Канопик Джар",
-          "count": 1,
+          "translated": "houba houbová",
+          "count": 12,
           "source_files": [
-            "monsters.json"
+            "items.json"
           ],
           "sample_keys": [
-            "monster.canopic_jar.name"
+            "item.15584.name",
+            "item.15585.name",
+            "item.15586.name",
+            "item.15587.name"
           ]
         },
         {
-          "translated": "caНетpic jar",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.4995.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "cot",
-      "selected_translation": "раскладушка",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "раскладушка",
-          "count": 8,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.2489.name",
-            "item.2490.name",
-            "item.2491.name",
-            "item.2492.name"
-          ]
-        },
-        {
-          "translated": "походная койка",
-          "count": 4,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.698.name",
-            "item.699.name",
-            "item.700.name",
-            "item.701.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "dead cyclops",
-      "selected_translation": "мёртвый cyclops",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "мёртвый cyclops",
-          "count": 8,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.3989.name",
-            "item.4251.name",
-            "item.4299.name",
-            "item.4300.name"
-          ]
-        },
-        {
-          "translated": "мёртвый циклоп",
-          "count": 4,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.656.name",
-            "item.657.name",
-            "item.658.name",
-            "item.659.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "dead dragon hatchling",
-      "selected_translation": "мёртвый дракончик",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "мёртвый дракончик",
-          "count": 7,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.269.name",
-            "item.270.name",
-            "item.271.name",
-            "item.272.name"
-          ]
-        },
-        {
-          "translated": "мёртвый дракон hatchling",
+          "translated": "houba houbička",
           "count": 3,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.909.name",
-            "item.910.name",
-            "item.911.name"
+            "item.15532.name",
+            "item.15533.name",
+            "item.15534.name"
           ]
         }
       ]
     },
     {
-      "en_name": "druid familiar",
-      "selected_translation": "Друид знакомый",
+      "en_name": "timber chair",
+      "selected_translation": "dřevěné křeslo",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Друид знакомый",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.druid_familiar.name"
-          ]
-        },
-        {
-          "translated": "Друид фамилиар",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.druid_familiar.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "earth ground",
-      "selected_translation": "земляной грунт",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "земляной грунт",
+          "translated": "dřevěné křeslo",
           "count": 2,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.280.name",
-            "item.368.name"
+            "item.11800.name",
+            "item.11802.name"
           ]
         },
         {
-          "translated": "земля ground",
+          "translated": "dřevěná židle",
           "count": 2,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.30225.name",
-            "item.918.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "flower bouquet",
-      "selected_translation": "букет цветов",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "букет цветов",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.649.name"
-          ]
-        },
-        {
-          "translated": "цветок bouquet",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.9230.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "flower pot",
-      "selected_translation": "цветочный горшок",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "цветочный горшок",
-          "count": 30,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.14029.name",
-            "item.14030.name",
-            "item.14031.name",
-            "item.14033.name"
-          ]
-        },
-        {
-          "translated": "цветок pot",
-          "count": 8,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.9069.name",
-            "item.9070.name",
-            "item.9073.name",
-            "item.9074.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "fossilised spine",
-      "selected_translation": "ископаемый позвоночник",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "ископаемый позвоночник",
-          "count": 8,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.14979.name",
-            "item.14980.name",
-            "item.14981.name",
-            "item.14982.name"
-          ]
-        },
-        {
-          "translated": "ископаемый шип",
-          "count": 4,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.14975.name",
-            "item.14976.name",
-            "item.14977.name",
-            "item.14978.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "gate of expertise",
-      "selected_translation": "ворота expertise",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "ворота expertise",
-          "count": 52,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.5102.name",
-            "item.5103.name",
-            "item.5111.name",
-            "item.5112.name"
-          ]
-        },
-        {
-          "translated": "ворота экспертизы",
-          "count": 8,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.11139.name",
-            "item.11140.name",
-            "item.11146.name",
-            "item.11147.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "generator",
-      "selected_translation": "Генератор",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "Генератор",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.generator.name"
-          ]
-        },
-        {
-          "translated": "генератор",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.generator.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "gore horn",
-      "selected_translation": "Гор Хорн",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Гор Хорн",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.gore_horn.name"
-          ]
-        },
-        {
-          "translated": "кровавый рог",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.39377.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "helmet of the deep",
-      "selected_translation": "шлем глубин",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "шлем глубин",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.11585.name"
-          ]
-        },
-        {
-          "translated": "шлем the deep",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.5460.name"
+            "item.11801.name",
+            "item.11803.name"
           ]
         }
       ]
@@ -493,39 +196,22 @@
   "case_only_autofixed_keys": [],
   "semantic_autofixed": 0,
   "semantic_autofixed_keys": [],
-  "semantic_quality_blocked": 2,
-  "semantic_quality_blocked_keys": [
-    "item.13678.name",
-    "item.11250.name"
-  ],
-  "existing_quality_sanitized": 32,
-  "existing_quality_sanitized_keys": [
-    "item.30145.name",
-    "item.30148.name",
-    "item.30149.name",
-    "item.30150.name",
-    "item.30151.name",
-    "item.30152.name",
-    "item.30153.name",
-    "item.30154.name",
-    "item.30155.name",
-    "item.3016.name",
-    "item.30160.name",
-    "item.30161.name"
-  ],
-  "review_candidates_total": 64,
+  "semantic_quality_blocked": 0,
+  "semantic_quality_blocked_keys": [],
+  "existing_quality_sanitized": 0,
+  "existing_quality_sanitized_keys": [],
+  "review_candidates_total": 11,
   "review_keys": [
-    "item.15420.name",
-    "item.15421.name",
-    "item.15422.name",
-    "item.15423.name",
-    "item.32418.name",
-    "item.31486.name",
-    "item.4995.name",
-    "item.698.name",
-    "item.699.name",
-    "item.700.name",
-    "item.701.name",
-    "item.656.name"
+    "item.1576.name",
+    "item.1577.name",
+    "item.1578.name",
+    "item.1579.name",
+    "item.19118.name",
+    "item.19119.name",
+    "item.15532.name",
+    "item.15533.name",
+    "item.15534.name",
+    "item.11801.name",
+    "item.11803.name"
   ]
 }

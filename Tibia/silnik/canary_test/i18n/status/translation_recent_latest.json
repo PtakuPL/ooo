@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-04-29T23:36:55.745276Z",
-  "language": "ru",
+  "timestamp": "2026-04-29T23:41:20.147058Z",
+  "language": "cs",
   "json_file": "items.json",
-  "translated": 112,
+  "translated": 73,
   "entries": [
     {
-      "key": "item.15434.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15526.name",
+      "en": "cave painting",
+      "translated": "jeskynní malba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15435.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15527.name",
+      "en": "cave painting",
+      "translated": "jeskynní malba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15436.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15528.name",
+      "en": "lightsource",
+      "translated": "zdroj světla",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15437.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15529.name",
+      "en": "lightsource",
+      "translated": "zdroj světla",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15438.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15530.name",
+      "en": "lightsource",
+      "translated": "zdroj světla",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15439.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15531.name",
+      "en": "lightsource",
+      "translated": "zdroj světla",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15440.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15536.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15441.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15537.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15442.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15538.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15443.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15539.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15444.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15540.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15445.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15541.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15446.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15542.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15447.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15543.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15448.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15544.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15449.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15545.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15450.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15991.name",
+      "en": "dead magma crawler",
+      "translated": "mrtvý magma crawler",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15451.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15992.name",
+      "en": "dead magma crawler",
+      "translated": "mrtvý magma crawler",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15452.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15993.name",
+      "en": "dead magma crawler",
+      "translated": "mrtvý magma crawler",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15453.name",
-      "en": "basalt crystal wall",
-      "translated": "кристальная стена из базальта",
+      "key": "item.15994.name",
+      "en": "dead magma crawler",
+      "translated": "mrtvý magma crawler",
       "source": "openai:openai/gpt-4o-mini"
     }
   ],

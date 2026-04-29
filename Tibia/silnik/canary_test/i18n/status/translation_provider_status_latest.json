@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:15:02.901105Z",
+  "generated_at_utc": "2026-04-29T21:17:04.810618Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "tm",
   "active_provider_timestamp": "2026-04-29T21:10:24.953168Z",
   "active_model": "openai/gpt-4o-mini",
-  "fallback_reason": "OpenAI model pool → fallback chain exhausted all models blocked [all_models_blocked] items.json",
+  "fallback_reason": "-",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -96,14 +96,8 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 11,
-    "fallback_action_breakdown": [
-      {
-        "action": "fallback_chain_exhausted_all_models_blocked",
-        "action_label": "fallback chain exhausted all models blocked",
-        "count": 11
-      }
-    ],
+    "fallbacks_last_200": 0,
+    "fallback_action_breakdown": [],
     "providers": {
       "tm_simple": {
         "status": "active",
@@ -230,7 +224,7 @@
       "used_pct": 77.6,
       "monthly_cap": 250.0,
       "spent": 194.0,
-      "latest_age_s": 1079.375815,
+      "latest_age_s": 1219.282465,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -262,15 +256,5 @@
       "window_seconds": 86400
     }
   },
-  "latest_fallback": {
-    "timestamp": "2026-04-29T20:56:31.102976Z",
-    "provider": "openai_model_pool",
-    "provider_label": "OpenAI model pool",
-    "source": "openai_model_pool",
-    "action": "fallback_chain_exhausted_all_models_blocked",
-    "action_label": "fallback chain exhausted all models blocked",
-    "decision_reason": "all_models_blocked",
-    "json_file": "items.json",
-    "key": "item.12909.name"
-  }
+  "latest_fallback": null
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:54:21.104855Z",
+  "timestamp": "2026-04-29T20:56:28.839794Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711395,
@@ -70,18 +70,17 @@
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-04-29T20:54:13.940333Z",
-    "cycle": 9,
+    "timestamp": "2026-04-29T20:54:32.728243Z",
+    "cycle": 10,
     "mode": "AUTO_TRANSLATE",
-    "category": "it",
+    "category": "es",
     "events": {
-      "dispatch": 10576,
-      "mode_run": 163058
+      "dispatch": 4580
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T19:54:19.844653Z",
-    "window_end_utc": "2026-04-29T20:54:19.844653Z",
+    "window_start_utc": "2026-04-29T19:56:27.639848Z",
+    "window_end_utc": "2026-04-29T20:56:27.639848Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -89,11 +88,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 29,
+    "total_cycles": 32,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 29
+      "AUTO_TRANSLATE": 32
     },
-    "auto_translate_cycles": 29,
+    "auto_translate_cycles": 32,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -106,7 +105,7 @@
     "throughput_keys_per_h": 622.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 433,
+    "suspicious_total": 485,
     "deferred_total": 34,
     "top_deferred_reasons": [
       {

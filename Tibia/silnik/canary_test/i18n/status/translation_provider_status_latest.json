@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:59:14.112552Z",
-  "active_provider": "TM/simple",
-  "active_provider_code": "tm_simple",
-  "active_provider_source": "simple",
-  "active_provider_timestamp": "2026-04-29T20:54:05.626992Z",
+  "generated_at_utc": "2026-04-29T21:01:20.297912Z",
+  "active_provider": "Free Google Translate",
+  "active_provider_code": "free_google_translate",
+  "active_provider_source": "google_translate",
+  "active_provider_timestamp": "2026-04-29T21:01:05.134189Z",
   "active_model": "openai/gpt-4o-mini",
   "fallback_reason": "OpenAI model pool → fallback chain exhausted all models blocked [all_models_blocked] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -66,10 +66,10 @@
     "overall_status": "degraded",
     "signals": [
       "recent_fallback",
-      "provider_consistency_debt:349"
+      "provider_consistency_debt:409"
     ],
-    "provider_consistency_debt": 349,
-    "recent_window_writes": 566,
+    "provider_consistency_debt": 409,
+    "recent_window_writes": 585,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
@@ -84,12 +84,12 @@
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 96
+        "writes": 112
       },
       {
         "provider": "canonical_name_semantic_autofix",
         "provider_label": "canonical_name_semantic_autofix",
-        "writes": 22
+        "writes": 25
       },
       {
         "provider": "term_consistency_autofix",
@@ -128,7 +128,7 @@
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 96
+        "recent_writes": 112
       },
       "google_cloud": {
         "status": "disabled",
@@ -246,7 +246,7 @@
       "used_pct": 77.6,
       "monthly_cap": 250.0,
       "spent": 194.0,
-      "latest_age_s": 128.483361,
+      "latest_age_s": 248.845892,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

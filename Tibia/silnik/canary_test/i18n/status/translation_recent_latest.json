@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T20:54:05.626992Z",
-  "language": "it",
+  "timestamp": "2026-04-29T21:01:05.134189Z",
+  "language": "es",
   "json_file": "items.json",
-  "translated": 31,
+  "translated": 159,
   "entries": [
     {
-      "key": "item.14610.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12889.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14611.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12890.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14612.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12891.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14613.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12892.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14614.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12893.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14615.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12894.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14616.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12895.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14617.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12896.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14618.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12897.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14619.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12898.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.1462.name",
-      "en": "stone wall",
-      "translated": "muro di pietra",
-      "source": "simple"
+      "key": "item.12899.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14620.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12900.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14621.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12901.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14622.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12906.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14623.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12907.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14624.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12908.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14625.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.12909.name",
+      "en": "hive structure",
+      "translated": "estructura de colmena",
+      "source": "google_translate"
     },
     {
-      "key": "item.14626.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.10026.name",
+      "en": "baby rotworm",
+      "translated": "rotworm de bebé",
+      "source": "canonical_name_semantic_autofix"
     },
     {
-      "key": "item.14627.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
+      "key": "item.10299.name",
+      "en": "badger fur",
+      "translated": "pelaje de badger",
+      "source": "canonical_name_semantic_autofix"
     },
     {
-      "key": "item.1069.name",
-      "en": "bug tral",
-      "translated": "trappola per insetti",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "item.10194.name",
+      "en": "bamboo drawer",
+      "translated": "drawer de bambú",
+      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

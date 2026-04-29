@@ -192290,10 +192290,10 @@
   "item.11695.name": {
     "src_hash": "00e4afdc5609ceae258e378361bc4d11",
     "text": "cobra de jade negro",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:04:25.159553Z"
+    "updated_at": "2026-04-29T20:55:58.895846Z"
   },
   "npc.anerui.greet_1": {
     "src_hash": "afb8a66bbd457858c305533b93f273bb",
@@ -222965,7 +222965,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T20:08:27.478968Z"
+    "updated_at": "2026-04-29T21:00:53.939514Z"
   },
   "item.10028.name": {
     "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
@@ -224005,7 +224005,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T20:08:27.479899Z"
+    "updated_at": "2026-04-29T21:00:53.940479Z"
   },
   "item.1022.name": {
     "src_hash": "85d85c148d5415a351e4b5d8beae6a1a",
@@ -224125,7 +224125,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T20:08:27.479448Z"
+    "updated_at": "2026-04-29T21:00:53.940030Z"
   },
   "item.1031.name": {
     "src_hash": "852488ddd9570bc877783bf4397563e0",
@@ -231162,34 +231162,34 @@
   "item.12253.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
     "text": "bayas invernales prensadas",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:04:25.169089Z"
+    "updated_at": "2026-04-29T20:55:58.904174Z"
   },
   "item.12254.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
     "text": "bayas invernales prensadas",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:04:25.177564Z"
+    "updated_at": "2026-04-29T20:55:58.912278Z"
   },
   "item.12255.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
     "text": "bayas invernales prensadas",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:04:25.186098Z"
+    "updated_at": "2026-04-29T20:55:58.920475Z"
   },
   "item.12256.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
     "text": "bayas invernales prensadas",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:04:25.194631Z"
+    "updated_at": "2026-04-29T20:55:58.928405Z"
   },
   "item.12257.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231434,26 +231434,26 @@
   "item.12361.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "text": "suelo rocoso",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:41.206779Z"
+    "updated_at": "2026-04-29T20:55:58.932250Z"
   },
   "item.12362.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "text": "suelo rocoso",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:41.217058Z"
+    "updated_at": "2026-04-29T20:56:01.566619Z"
   },
   "item.12363.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "text": "suelo rocoso",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:41.224187Z"
+    "updated_at": "2026-04-29T20:56:01.571295Z"
   },
   "item.12364.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231778,178 +231778,178 @@
   "item.12439.name": {
     "src_hash": "8ba6bc76d5b7e048f654f096401e80ba",
     "text": "adorno dorado",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:41.235844Z"
+    "updated_at": "2026-04-29T20:56:01.575961Z"
   },
   "item.12440.name": {
     "src_hash": "8ba6bc76d5b7e048f654f096401e80ba",
     "text": "adorno dorado",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:41.245020Z"
+    "updated_at": "2026-04-29T20:56:01.580640Z"
   },
   "item.12441.name": {
     "src_hash": "195eac776afc0a6c9e91df1af343ce2c",
     "text": "adorno de escorpión",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:41.255495Z"
+    "updated_at": "2026-04-29T20:56:01.587079Z"
   },
   "item.12442.name": {
     "src_hash": "195eac776afc0a6c9e91df1af343ce2c",
     "text": "adorno de escorpión",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:43.548457Z"
+    "updated_at": "2026-04-29T20:56:01.593447Z"
   },
   "item.12443.name": {
     "src_hash": "d786aaeff706af6b7c986fbf102e0c8a",
     "text": "jeroglíficos",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:43.558676Z"
+    "updated_at": "2026-04-29T20:56:03.874422Z"
   },
   "item.12444.name": {
     "src_hash": "d786aaeff706af6b7c986fbf102e0c8a",
     "text": "jeroglíficos",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:43.566093Z"
+    "updated_at": "2026-04-29T20:56:03.878812Z"
   },
   "item.12447.name": {
     "src_hash": "be8bf2032062cfe16fa6aac116e23341",
     "text": "talla de un escorpión",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:43.578057Z"
+    "updated_at": "2026-04-29T20:56:03.885487Z"
   },
   "item.12448.name": {
     "src_hash": "be8bf2032062cfe16fa6aac116e23341",
     "text": "talla de un escorpión",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:43.587396Z"
+    "updated_at": "2026-04-29T20:56:03.892437Z"
   },
   "item.12449.name": {
     "src_hash": "be8bf2032062cfe16fa6aac116e23341",
     "text": "talla de un escorpión",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:43.596960Z"
+    "updated_at": "2026-04-29T20:56:03.899338Z"
   },
   "item.12450.name": {
     "src_hash": "be8bf2032062cfe16fa6aac116e23341",
     "text": "talla de un escorpión",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:45.655491Z"
+    "updated_at": "2026-04-29T20:56:03.905330Z"
   },
   "item.12453.name": {
     "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
     "text": "talla de una batalla",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:45.667562Z"
+    "updated_at": "2026-04-29T20:56:06.225573Z"
   },
   "item.12454.name": {
     "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
     "text": "talla de una batalla",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:45.676314Z"
+    "updated_at": "2026-04-29T20:56:06.232259Z"
   },
   "item.12455.name": {
     "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
     "text": "talla de una batalla",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:45.685282Z"
+    "updated_at": "2026-04-29T20:56:06.238802Z"
   },
   "item.12458.name": {
     "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
     "text": "talla de una batalla",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:45.695320Z"
+    "updated_at": "2026-04-29T20:56:06.245273Z"
   },
   "item.12459.name": {
     "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
     "text": "talla de una batalla",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:45.705168Z"
+    "updated_at": "2026-04-29T20:56:06.250972Z"
   },
   "item.12460.name": {
     "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
     "text": "talla de una batalla",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:47.992109Z"
+    "updated_at": "2026-04-29T20:56:06.256802Z"
   },
   "item.12465.name": {
     "src_hash": "982fc628df968b93260be5f1146d4030",
     "text": "estatua de hiena",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:47.999456Z"
+    "updated_at": "2026-04-29T20:56:09.345760Z"
   },
   "item.12466.name": {
     "src_hash": "982fc628df968b93260be5f1146d4030",
     "text": "estatua de hiena",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:48.010465Z"
+    "updated_at": "2026-04-29T20:56:09.351352Z"
   },
   "item.12467.name": {
     "src_hash": "af0739dc9597d25caf9a474dae14e792",
     "text": "escorpión dorado",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:48.018020Z"
+    "updated_at": "2026-04-29T20:56:09.356656Z"
   },
   "item.12468.name": {
     "src_hash": "af0739dc9597d25caf9a474dae14e792",
     "text": "escorpión dorado",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:48.025968Z"
+    "updated_at": "2026-04-29T20:56:09.362127Z"
   },
   "item.12470.name": {
     "src_hash": "223f718c7ebbbf6070264a45e8963bab",
     "text": "pequeño escorpión dorado",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:48.036367Z"
+    "updated_at": "2026-04-29T20:56:09.369060Z"
   },
   "item.12471.name": {
     "src_hash": "223f718c7ebbbf6070264a45e8963bab",
     "text": "pequeño escorpión dorado",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:48:49.028128Z"
+    "updated_at": "2026-04-29T20:56:09.375987Z"
   },
   "npc.captain_fearless.stdmod_10": {
     "src_hash": "fb01f4c8d8043db60f0ae48ebefde29d",
@@ -232582,5 +232582,989 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T20:31:08.555674Z"
+  },
+  "item.12763.name": {
+    "src_hash": "dd4827af87b26de9ed92e6fb08efc5ab",
+    "text": "cajón",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.017644Z"
+  },
+  "item.12764.name": {
+    "src_hash": "dd4827af87b26de9ed92e6fb08efc5ab",
+    "text": "cajón",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.026396Z"
+  },
+  "item.12788.name": {
+    "src_hash": "423b62b60112d40266e4f0499fc05676",
+    "text": "trampa de Tarántula",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.230675Z"
+  },
+  "item.12803.name": {
+    "src_hash": "fcc33f3d747c7802cf0e4cc67d9ee899",
+    "text": "zapatillas con clavos elemental",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.346911Z"
+  },
+  "item.1281.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.386627Z"
+  },
+  "item.12813.name": {
+    "src_hash": "9e61dc85b3949dd394b6c2ccfbac38de",
+    "text": "radio viejo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.408960Z"
+  },
+  "item.12814.name": {
+    "src_hash": "9e61dc85b3949dd394b6c2ccfbac38de",
+    "text": "radio viejo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.415031Z"
+  },
+  "item.12815.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "artículo desconocido",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.427927Z"
+  },
+  "item.12816.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "artículo desconocido",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.440603Z"
+  },
+  "item.1282.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.474924Z"
+  },
+  "item.1283.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.567002Z"
+  },
+  "item.12838.name": {
+    "src_hash": "9be1d8366f02e83f1749f94284146173",
+    "text": "cenizas profano",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.641238Z"
+  },
+  "item.1284.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.665939Z"
+  },
+  "item.12840.name": {
+    "src_hash": "9be1d8366f02e83f1749f94284146173",
+    "text": "cenizas profano",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.671193Z"
+  },
+  "item.12847.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "ESPRITE RESERVADO",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.727968Z"
+  },
+  "item.12848.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "ESPRITE RESERVADO",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.741854Z"
+  },
+  "item.12849.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "ESPRITE RESERVADO",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.755736Z"
+  },
+  "item.1285.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.770340Z"
+  },
+  "item.12850.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "ESPRITE RESERVADO",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.784289Z"
+  },
+  "item.1286.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.861943Z"
+  },
+  "item.1287.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:22.945340Z"
+  },
+  "item.12878.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "ESPRITE RESERVADO",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:23.013820Z"
+  },
+  "item.12879.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "ESPRITE RESERVADO",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:23.027733Z"
+  },
+  "item.1288.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:23.042238Z"
+  },
+  "item.1289.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:23.127030Z"
+  },
+  "item.1290.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:23.215651Z"
+  },
+  "item.1291.name": {
+    "src_hash": "02f7552c7ee7af7643efcc87cca46c63",
+    "text": "muro de framework",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:55:23.302163Z"
+  },
+  "item.12713.name": {
+    "src_hash": "338800676161294469abb3eae7c2d3c1",
+    "text": "pedestal de sapo",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:11.414930Z"
+  },
+  "item.12714.name": {
+    "src_hash": "338800676161294469abb3eae7c2d3c1",
+    "text": "pedestal de sapo",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:11.420756Z"
+  },
+  "item.12715.name": {
+    "src_hash": "338800676161294469abb3eae7c2d3c1",
+    "text": "pedestal de sapo",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:11.426131Z"
+  },
+  "item.12716.name": {
+    "src_hash": "338800676161294469abb3eae7c2d3c1",
+    "text": "pedestal de sapo",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:11.431410Z"
+  },
+  "item.12747.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:11.436462Z"
+  },
+  "item.12748.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:11.441496Z"
+  },
+  "item.12749.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:13.872876Z"
+  },
+  "item.12750.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:13.878654Z"
+  },
+  "item.12751.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:13.883910Z"
+  },
+  "item.12752.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:13.889329Z"
+  },
+  "item.12753.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:13.894729Z"
+  },
+  "item.12754.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:13.899991Z"
+  },
+  "item.12755.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:15.655126Z"
+  },
+  "item.12756.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:15.661145Z"
+  },
+  "item.12757.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:15.666838Z"
+  },
+  "item.12758.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:15.672533Z"
+  },
+  "item.12759.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:15.678075Z"
+  },
+  "item.12760.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:15.683402Z"
+  },
+  "item.12761.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:17.317053Z"
+  },
+  "item.12762.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:17.323224Z"
+  },
+  "item.12765.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:17.329303Z"
+  },
+  "item.12766.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:17.335894Z"
+  },
+  "item.12767.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:17.343386Z"
+  },
+  "item.12768.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:17.350388Z"
+  },
+  "item.12769.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:19.610250Z"
+  },
+  "item.12770.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:19.617357Z"
+  },
+  "item.12771.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:19.624060Z"
+  },
+  "item.12772.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:19.630854Z"
+  },
+  "item.12773.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:19.637377Z"
+  },
+  "item.12774.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:19.643906Z"
+  },
+  "item.12775.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:21.752025Z"
+  },
+  "item.12776.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:21.760019Z"
+  },
+  "item.12777.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:21.768300Z"
+  },
+  "item.12778.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:21.776202Z"
+  },
+  "item.12779.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:21.784015Z"
+  },
+  "item.12780.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:21.791691Z"
+  },
+  "item.12781.name": {
+    "src_hash": "50d29fc83ecb861266491c07e7277895",
+    "text": "telaraña grande",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:23.959665Z"
+  },
+  "item.12782.name": {
+    "src_hash": "b8a06cdd8b6a72b8b6b0d084c886d8e1",
+    "text": "señal de advertencia",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:23.969169Z"
+  },
+  "item.12783.name": {
+    "src_hash": "b8a06cdd8b6a72b8b6b0d084c886d8e1",
+    "text": "señal de advertencia",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:23.978602Z"
+  },
+  "item.12809.name": {
+    "src_hash": "472c074c4491ae04b047059b68754764",
+    "text": "sabiduría épica",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:23.986024Z"
+  },
+  "item.12810.name": {
+    "src_hash": "472c074c4491ae04b047059b68754764",
+    "text": "sabiduría épica",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:23.993683Z"
+  },
+  "item.12811.name": {
+    "src_hash": "89f9334bbd3e7508b982676fabeaf455",
+    "text": "imortus",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:23.999647Z"
+  },
+  "item.12812.name": {
+    "src_hash": "89f9334bbd3e7508b982676fabeaf455",
+    "text": "imortus",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:26.195238Z"
+  },
+  "item.12851.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:26.204100Z"
+  },
+  "item.12852.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:26.213036Z"
+  },
+  "item.12853.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:26.222423Z"
+  },
+  "item.12854.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:26.231529Z"
+  },
+  "item.12855.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:26.240653Z"
+  },
+  "item.12856.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:28.163644Z"
+  },
+  "item.12857.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:28.172211Z"
+  },
+  "item.12858.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:28.180603Z"
+  },
+  "item.12859.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:28.188973Z"
+  },
+  "item.12860.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:28.197305Z"
+  },
+  "item.12861.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:28.205540Z"
+  },
+  "item.12862.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:30.303459Z"
+  },
+  "item.12863.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:30.312795Z"
+  },
+  "item.12864.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:30.321803Z"
+  },
+  "item.12865.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:30.330906Z"
+  },
+  "item.12866.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:30.339908Z"
+  },
+  "item.12867.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:30.348878Z"
+  },
+  "item.12868.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.346646Z"
+  },
+  "item.12869.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.355818Z"
+  },
+  "item.12870.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.365079Z"
+  },
+  "item.12871.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.374158Z"
+  },
+  "item.12872.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.383470Z"
+  },
+  "item.12873.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.392699Z"
+  },
+  "item.12874.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.401760Z"
+  },
+  "item.12875.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.410895Z"
+  },
+  "item.12876.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.419937Z"
+  },
+  "item.12877.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.429168Z"
+  },
+  "item.12880.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.438217Z"
+  },
+  "item.12881.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.447491Z"
+  },
+  "item.12882.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.456640Z"
+  },
+  "item.12883.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.465849Z"
+  },
+  "item.12884.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.474946Z"
+  },
+  "item.12885.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.484064Z"
+  },
+  "item.12886.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.493476Z"
+  },
+  "item.12887.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.502531Z"
+  },
+  "item.12888.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.511660Z"
+  },
+  "item.12889.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:36.520746Z"
+  },
+  "item.12890.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.853697Z"
+  },
+  "item.12891.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.861512Z"
+  },
+  "item.12892.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.869357Z"
+  },
+  "item.12893.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.877243Z"
+  },
+  "item.12894.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.884789Z"
+  },
+  "item.12895.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.892882Z"
+  },
+  "item.12896.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.900936Z"
+  },
+  "item.12897.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.908907Z"
+  },
+  "item.12898.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.916593Z"
+  },
+  "item.12899.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.924321Z"
+  },
+  "item.12900.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.931857Z"
+  },
+  "item.12901.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.939382Z"
+  },
+  "item.12906.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.946809Z"
+  },
+  "item.12907.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.954106Z"
+  },
+  "item.12908.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.961452Z"
+  },
+  "item.12909.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:56:41.968714Z"
   }
 }

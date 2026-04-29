@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:59:14.566953Z",
+  "generated_at_utc": "2026-04-29T21:01:20.725808Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,15 +9,15 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 20:59:07"
+      "last_update": "2026-04-29 21:01:15"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "3min temu",
+      "freshness": "2min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T20:56:06Z"
+      "last_update": "2026-04-29T20:58:39Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
@@ -25,21 +25,21 @@
       "reason": "worker w trybie AUTO_TRANSLATE",
       "freshness": "1min temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 20:59:07"
+      "last_update": "2026-04-29 21:01:15"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "5min temu",
+      "freshness": "8s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-04-29T20:54:12.999574Z"
+      "last_update": "2026-04-29T21:01:12.600513Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "5min temu",
+      "freshness": "7min temu",
       "source": "quality_audit_latest.json",
       "last_update": "2026-04-29T20:54:13.888238Z"
     },
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 20:59:07"
+      "last_update": "2026-04-29 21:01:15"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,14 +57,14 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T20:59:14.565455Z"
+      "last_update": "2026-04-29T21:01:20.724260Z"
     }
   },
   "operator_panels": {
     "worker_live": {
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
-      "stage": "heartbeat_tick",
+      "stage": "auto_done",
       "category": "es",
       "json_file": "items.json",
       "current_lang": "es",
@@ -72,13 +72,24 @@
       "current_scope": "Serwer",
       "detail": "auto translate in progress",
       "current_key": "es:items.json",
-      "heartbeat_at": "2026-04-29T20:56:06Z",
-      "heartbeat_age_s": 82,
+      "heartbeat_at": "2026-04-29T20:58:39Z",
+      "heartbeat_age_s": 120,
       "cycle": 18804
     },
     "recent_writes": {
       "count": 17,
       "items": [
+        {
+          "timestamp": "2026-04-29T21:01:05.134189Z",
+          "lang": "es",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 159,
+          "sample_source": "google_translate",
+          "sample_key": "item.12889.name",
+          "sample_text": "estructura de colmena",
+          "physical_verified": true
+        },
         {
           "timestamp": "2026-04-29T20:54:05.626992Z",
           "lang": "it",
@@ -253,17 +264,6 @@
           "sample_source": "google_translate",
           "sample_key": "otclient_modules.game_shop_otui.tr_2",
           "sample_text": "Nächste Seite",
-          "physical_verified": true
-        },
-        {
-          "timestamp": "2026-04-29T18:53:29.435445Z",
-          "lang": "es",
-          "json_file": "items.json",
-          "surface": "Serwer",
-          "translated": 55,
-          "sample_source": "openai:openai/gpt-4.1-mini",
-          "sample_key": "item.12444.name",
-          "sample_text": "jeroglíficos",
           "physical_verified": true
         }
       ],
@@ -540,7 +540,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:59:11.889480Z",
+      "generated_at_utc": "2026-04-29T21:01:19.242038Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -625,15 +625,15 @@
       },
       "trend_24h": {
         "window_hours": 24,
-        "samples": 1042,
-        "pass_samples": 1042,
+        "samples": 1041,
+        "pass_samples": 1041,
         "fail_samples": 0,
         "pass_rate_pct": 100.0,
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T20:59:11.889480Z",
-        "oldest_timestamp": "2026-04-28T21:00:39.005140Z",
+        "latest_timestamp": "2026-04-29T21:01:19.242038Z",
+        "oldest_timestamp": "2026-04-28T21:03:18.306882Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2302,12 +2302,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:59:12.327277Z",
+      "generated_at_utc": "2026-04-29T21:01:19.266695Z",
       "window": {
         "trend_hours": 24,
-        "samples": 1042,
-        "window_start_utc": "2026-04-28T21:00:39.024106Z",
-        "window_end_utc": "2026-04-29T20:59:12.327277Z"
+        "samples": 1041,
+        "window_start_utc": "2026-04-28T21:03:18.327771Z",
+        "window_end_utc": "2026-04-29T21:01:19.266695Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2323,10 +2323,10 @@
         "server": {
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 410708,
+          "real_translated_keys": 410825,
           "coverage_real_pct": 11.4,
           "langs_count": 51,
-          "delta_24h_pp": 0.56,
+          "delta_24h_pp": 0.55,
           "lagging_langs": [
             {
               "lang": "zh",
@@ -2344,9 +2344,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z"
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z"
         },
         "website": {
           "label": "Website",
@@ -2372,9 +2372,9 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z"
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2400,9 +2400,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z"
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z"
         },
         "installer": {
           "label": "Installer",
@@ -2428,9 +2428,9 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z"
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z"
         }
       },
       "ranking": [
@@ -2459,9 +2459,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z",
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z",
           "rank": 1
         },
         {
@@ -2489,19 +2489,19 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z",
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z",
           "rank": 2
         },
         {
           "surface": "server",
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 410708,
+          "real_translated_keys": 410825,
           "coverage_real_pct": 11.4,
           "langs_count": 51,
-          "delta_24h_pp": 0.56,
+          "delta_24h_pp": 0.55,
           "lagging_langs": [
             {
               "lang": "zh",
@@ -2519,9 +2519,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z",
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z",
           "rank": 3
         },
         {
@@ -2549,16 +2549,16 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1042,
-          "window_oldest_utc": "2026-04-28T21:00:39.024106Z",
-          "window_latest_utc": "2026-04-29T20:59:12.327277Z",
+          "trend_samples": 1041,
+          "window_oldest_utc": "2026-04-28T21:03:18.327771Z",
+          "window_latest_utc": "2026-04-29T21:01:19.266695Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:59:12.353460Z",
+      "generated_at_utc": "2026-04-29T21:01:19.290888Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2616,8 +2616,8 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1717,
-          "wave_history_rows_window": 1042,
+          "wave_history_rows_total": 1718,
+          "wave_history_rows_window": 1041,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
             "DLQ_GROWTH",
@@ -2635,17 +2635,17 @@
         "quality_trend_24h": {
           "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
           "pass": true,
-          "detail": "window=24.00h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T20:59:05.933636Z",
-          "window_end_utc": "2026-04-29T20:59:12.353460Z",
-          "window_span_hours": 24.0,
+          "window_start_utc": "2026-04-28T21:00:51.144682Z",
+          "window_end_utc": "2026-04-29T21:01:19.290888Z",
+          "window_span_hours": 24.01,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
-              "samples": 1044,
-              "oldest_timestamp": "2026-04-28T20:59:05.933636Z",
-              "latest_timestamp": "2026-04-29T20:59:12.353460Z",
+              "samples": 1043,
+              "oldest_timestamp": "2026-04-28T21:00:51.144682Z",
+              "latest_timestamp": "2026-04-29T21:01:19.290888Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2655,9 +2655,9 @@
               "trend_pass": true
             },
             "otclient_modules.json": {
-              "samples": 1044,
-              "oldest_timestamp": "2026-04-28T20:59:05.933636Z",
-              "latest_timestamp": "2026-04-29T20:59:12.353460Z",
+              "samples": 1043,
+              "oldest_timestamp": "2026-04-28T21:00:51.144682Z",
+              "latest_timestamp": "2026-04-29T21:01:19.290888Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2719,11 +2719,11 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:59:14.112552Z",
-      "active_provider": "TM/simple",
-      "active_provider_code": "tm_simple",
-      "active_provider_source": "simple",
-      "active_provider_timestamp": "2026-04-29T20:54:05.626992Z",
+      "generated_at_utc": "2026-04-29T21:01:20.297912Z",
+      "active_provider": "Free Google Translate",
+      "active_provider_code": "free_google_translate",
+      "active_provider_source": "google_translate",
+      "active_provider_timestamp": "2026-04-29T21:01:05.134189Z",
       "active_model": "openai/gpt-4o-mini",
       "fallback_reason": "OpenAI model pool → fallback chain exhausted all models blocked [all_models_blocked] items.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -2785,10 +2785,10 @@
         "overall_status": "degraded",
         "signals": [
           "recent_fallback",
-          "provider_consistency_debt:349"
+          "provider_consistency_debt:409"
         ],
-        "provider_consistency_debt": 349,
-        "recent_window_writes": 566,
+        "provider_consistency_debt": 409,
+        "recent_window_writes": 585,
         "recent_write_breakdown": [
           {
             "provider": "openai_model_pool",
@@ -2803,12 +2803,12 @@
           {
             "provider": "free_google_translate",
             "provider_label": "Free Google Translate",
-            "writes": 96
+            "writes": 112
           },
           {
             "provider": "canonical_name_semantic_autofix",
             "provider_label": "canonical_name_semantic_autofix",
-            "writes": 22
+            "writes": 25
           },
           {
             "provider": "term_consistency_autofix",
@@ -2847,7 +2847,7 @@
           "free_google_translate": {
             "status": "active",
             "enabled": true,
-            "recent_writes": 96
+            "recent_writes": 112
           },
           "google_cloud": {
             "status": "disabled",
@@ -2965,7 +2965,7 @@
           "used_pct": 77.6,
           "monthly_cap": 250.0,
           "spent": 194.0,
-          "latest_age_s": 128.483361,
+          "latest_age_s": 248.845892,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3011,22 +3011,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:59:14.223423Z",
+      "generated_at_utc": "2026-04-29T21:01:20.302078Z",
       "available": true,
-      "lang": "it",
+      "lang": "es",
       "json_file": "items.json",
       "surface": "items",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 18047,
+      "registry_terms_total": 16620,
       "keys_scanned": 341,
-      "keys_with_term_usages": 137,
-      "keys_with_conflicts": 22,
-      "term_conflicts_total": 54,
-      "term_conflict_rate_pct": 16.058,
-      "term_conflict_rate_delta_pct": 16.058,
+      "keys_with_term_usages": 151,
+      "keys_with_conflicts": 29,
+      "term_conflicts_total": 86,
+      "term_conflict_rate_pct": 19.205,
+      "term_conflict_rate_delta_pct": 19.205,
       "auto_fixed_english_name_leaks": 0,
-      "inflection_suspects_flagged": 11,
-      "manual_review_enqueued": 43,
+      "inflection_suspects_flagged": 1,
+      "manual_review_enqueued": 85,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3035,117 +3035,117 @@
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
       "conflict_type_breakdown": {
-        "canonical_term_missing": 43,
-        "canonical_term_inflection_suspect": 11
+        "canonical_term_missing": 85,
+        "canonical_term_inflection_suspect": 1
       },
       "top_conflicts": [
         {
-          "key": "item.10028.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "contrarre",
-          "canonical_en": "contract",
-          "translated_text": "Un contratto in cui qualche disperato ha venduto la sua anima",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.129.name"
+          "source_key": "item.116.name"
         },
         {
-          "key": "item.10218.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Pescare",
-          "canonical_en": "fish",
-          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.10245.name"
+          "source_key": "item.117.name"
         },
         {
-          "key": "item.10218.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Pescare",
-          "canonical_en": "fish",
-          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.10246.name"
+          "source_key": "item.118.name"
         },
         {
-          "key": "item.10218.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Pescare",
-          "canonical_en": "fish",
-          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.3578.name"
+          "source_key": "item.14166.name"
         },
         {
-          "key": "item.10218.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Pescare",
-          "canonical_en": "fish",
-          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
           "source_file": "items.json",
-          "source_key": "item.7885.name"
+          "source_key": "item.19079.name"
         },
         {
-          "key": "item.10218.desc",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Pescare",
-          "canonical_en": "Fish",
-          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja contiene a conjunto de armas",
+          "source_file": "items.json",
+          "source_key": "item.2471.name"
+        },
+        {
+          "key": "item.107.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Limo",
+          "canonical_en": "slime",
+          "translated_text": "Contiene el olor de una baba recién asesinada.",
+          "source_file": "items.json",
+          "source_key": "item.6.name"
+        },
+        {
+          "key": "item.107.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Limo",
+          "canonical_en": "Slime",
+          "translated_text": "Contiene el olor de una baba recién asesinada.",
           "source_file": "monsters.json",
-          "source_key": "monster.fish.name"
+          "source_key": "monster.slime.name"
         },
         {
-          "key": "item.11341.desc",
+          "key": "item.11328.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "terra",
-          "canonical_en": "ground",
-          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
           "source_file": "items.json",
-          "source_key": "item.10548.name"
+          "source_key": "item.116.name"
         },
         {
-          "key": "item.11341.desc",
+          "key": "item.11328.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "terra",
-          "canonical_en": "ground",
-          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
           "source_file": "items.json",
-          "source_key": "item.10549.name"
+          "source_key": "item.117.name"
         },
         {
-          "key": "item.11341.desc",
+          "key": "item.11328.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "terra",
-          "canonical_en": "ground",
-          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
           "source_file": "items.json",
-          "source_key": "item.10550.name"
+          "source_key": "item.118.name"
         },
         {
-          "key": "item.11341.desc",
+          "key": "item.11328.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "terra",
-          "canonical_en": "ground",
-          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+          "canonical": "cajón",
+          "canonical_en": "crate",
+          "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
           "source_file": "items.json",
-          "source_key": "item.10551.name"
-        },
-        {
-          "key": "item.11341.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "terra",
-          "canonical_en": "ground",
-          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-          "source_file": "items.json",
-          "source_key": "item.10552.name"
-        },
-        {
-          "key": "item.11341.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "terra",
-          "canonical_en": "ground",
-          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-          "source_file": "items.json",
-          "source_key": "item.10553.name"
+          "source_key": "item.14166.name"
         }
       ]
     },
@@ -3155,7 +3155,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 398,
-      "oldest_visible_pending_age_s": 24664,
+      "oldest_visible_pending_age_s": 24790,
       "top_langs": [
         {
           "lang": "ru",
@@ -3193,12 +3193,12 @@
         }
       ],
       "deferred_state_keys_total": 8918,
-      "deferred_state_updated_at": "2026-04-29T20:59:00.400941Z",
-      "deferred_state_age_s": 10,
+      "deferred_state_updated_at": "2026-04-29T21:01:11.074019Z",
+      "deferred_state_age_s": 6,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 11,
+        "suppressed_manual_review": 99,
         "deduped_ttl": 0,
         "manual_review_escalations": 0,
         "partial_staged": 0,
@@ -3209,7 +3209,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T20:59:14.565455Z",
+      "generated_at_utc": "2026-04-29T21:01:20.724260Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3224,16 +3224,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 82,
+          "value": 120,
           "threshold": 300,
-          "detail": "Heartbeat świeży (82s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=es:items.json].",
+          "detail": "Heartbeat świeży (120s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=es:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 308,
+          "value": 15,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3253,7 +3253,7 @@
           "severity": "warning",
           "value": {
             "pending": 398,
-            "oldest_s": 24664
+            "oldest_s": 24790
           },
           "threshold": {
             "pending_min": 200,

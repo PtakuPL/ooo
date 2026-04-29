@@ -1,141 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:53:55.661720Z",
-  "lang": "it",
+  "generated_at_utc": "2026-04-29T21:00:49.776008Z",
+  "lang": "es",
   "json_file": "items.json",
   "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 54,
+  "term_conflicts_total": 86,
   "keys_visited": 2000,
   "keys_scanned": 341,
   "visit_limit_hit": true,
-  "keys_with_term_usages": 137,
-  "keys_with_conflicts": 22,
-  "term_conflict_rate_pct": 16.058,
-  "term_conflict_rate_delta_pct": 16.058,
-  "registry_terms_total": 18047,
+  "keys_with_term_usages": 151,
+  "keys_with_conflicts": 29,
+  "term_conflict_rate_pct": 19.205,
+  "term_conflict_rate_delta_pct": 19.205,
+  "registry_terms_total": 16620,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 11,
-  "manual_review_enqueued": 43,
+  "inflection_suspects_flagged": 1,
+  "manual_review_enqueued": 85,
   "conflict_type_breakdown": {
-    "canonical_term_missing": 43,
-    "canonical_term_inflection_suspect": 11
+    "canonical_term_missing": 85,
+    "canonical_term_inflection_suspect": 1
   },
   "surface_breakdown": {
     "items": {
-      "keys_with_term_usages": 137,
-      "keys_with_conflicts": 22,
-      "term_conflicts_total": 54
+      "keys_with_term_usages": 151,
+      "keys_with_conflicts": 29,
+      "term_conflicts_total": 86
     }
   },
   "top_conflicts": [
     {
-      "key": "item.10028.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "contrarre",
-      "canonical_en": "contract",
-      "translated_text": "Un contratto in cui qualche disperato ha venduto la sua anima",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja contiene a conjunto de armas",
       "source_file": "items.json",
-      "source_key": "item.129.name"
+      "source_key": "item.116.name"
     },
     {
-      "key": "item.10218.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja contiene a conjunto de armas",
       "source_file": "items.json",
-      "source_key": "item.10245.name"
+      "source_key": "item.117.name"
     },
     {
-      "key": "item.10218.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja contiene a conjunto de armas",
       "source_file": "items.json",
-      "source_key": "item.10246.name"
+      "source_key": "item.118.name"
     },
     {
-      "key": "item.10218.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja contiene a conjunto de armas",
       "source_file": "items.json",
-      "source_key": "item.3578.name"
+      "source_key": "item.14166.name"
     },
     {
-      "key": "item.10218.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja contiene a conjunto de armas",
       "source_file": "items.json",
-      "source_key": "item.7885.name"
+      "source_key": "item.19079.name"
     },
     {
-      "key": "item.10218.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "Fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja contiene a conjunto de armas",
+      "source_file": "items.json",
+      "source_key": "item.2471.name"
+    },
+    {
+      "key": "item.107.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Limo",
+      "canonical_en": "slime",
+      "translated_text": "Contiene el olor de una baba recién asesinada.",
+      "source_file": "items.json",
+      "source_key": "item.6.name"
+    },
+    {
+      "key": "item.107.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Limo",
+      "canonical_en": "Slime",
+      "translated_text": "Contiene el olor de una baba recién asesinada.",
       "source_file": "monsters.json",
-      "source_key": "monster.fish.name"
+      "source_key": "monster.slime.name"
     },
     {
-      "key": "item.11341.desc",
+      "key": "item.11328.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
       "source_file": "items.json",
-      "source_key": "item.10548.name"
+      "source_key": "item.116.name"
     },
     {
-      "key": "item.11341.desc",
+      "key": "item.11328.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
       "source_file": "items.json",
-      "source_key": "item.10549.name"
+      "source_key": "item.117.name"
     },
     {
-      "key": "item.11341.desc",
+      "key": "item.11328.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
       "source_file": "items.json",
-      "source_key": "item.10550.name"
+      "source_key": "item.118.name"
     },
     {
-      "key": "item.11341.desc",
+      "key": "item.11328.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+      "canonical": "cajón",
+      "canonical_en": "crate",
+      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
       "source_file": "items.json",
-      "source_key": "item.10551.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10552.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10553.name"
+      "source_key": "item.14166.name"
     }
   ]
 }

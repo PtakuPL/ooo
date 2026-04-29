@@ -1,133 +1,452 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:54:10.141537Z",
-  "lang": "it",
+  "generated_at_utc": "2026-04-29T21:01:09.720218Z",
+  "lang": "es",
   "source_files": [
     "items.json",
     "monsters.json",
     "spells.json"
   ],
-  "canonical_terms_total": 9263,
-  "total_conflicted_terms": 22,
-  "case_only_conflicts": 5,
-  "semantic_conflicts": 17,
-  "conflict_rate_pct": 0.24,
+  "canonical_terms_total": 9513,
+  "total_conflicted_terms": 43,
+  "case_only_conflicts": 15,
+  "semantic_conflicts": 28,
+  "conflict_rate_pct": 0.45,
   "examples": [
     {
-      "en_name": "animate dead rune",
-      "selected_translation": "Anima la runa morta",
+      "en_name": "an observer eye",
+      "selected_translation": "Un observer ojo (imune)",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Anima la runa morta",
+          "translated": "Un observer ojo (imune)",
           "count": 1,
           "source_files": [
-            "spells.json"
+            "monsters.json"
           ],
           "sample_keys": [
-            "spell.animate_dead_rune.name"
+            "monster.an_observer_eye_(imune).name"
           ]
         },
         {
-          "translated": "animare la runa morta",
+          "translated": "Un ojo de observer",
           "count": 1,
           "source_files": [
-            "items.json"
+            "monsters.json"
           ],
           "sample_keys": [
-            "item.3203.name"
+            "monster.an_observer_eye.name"
           ]
         }
       ]
     },
     {
-      "en_name": "convince creature rune",
-      "selected_translation": "Runa Convinci la Creatura",
-      "conflict_type": "semantic",
+      "en_name": "baby dragon",
+      "selected_translation": "dragón de bebé",
+      "conflict_type": "case_only",
       "variants": [
         {
-          "translated": "Runa Convinci la Creatura",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.convince_creature_rune.name"
-          ]
-        },
-        {
-          "translated": "convincere la runa della creatura",
-          "count": 1,
+          "translated": "dragón de bebé",
+          "count": 2,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.3177.name"
+            "item.23442.name",
+            "item.23443.name"
+          ]
+        },
+        {
+          "translated": "Dragón de bebé",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.baby_dragon.name"
           ]
         }
       ]
     },
     {
-      "en_name": "cure poison rune",
-      "selected_translation": "Runa curativa del veleno",
-      "conflict_type": "semantic",
+      "en_name": "bat",
+      "selected_translation": "murciélago",
+      "conflict_type": "case_only",
       "variants": [
         {
-          "translated": "Runa curativa del veleno",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.cure_poison_rune.name"
-          ]
-        },
-        {
-          "translated": "cura la runa del veleno",
-          "count": 1,
+          "translated": "murciélago",
+          "count": 4,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.3153.name"
+            "item.31487.name",
+            "item.33040.name",
+            "item.33041.name",
+            "item.33042.name"
+          ]
+        },
+        {
+          "translated": "Murciélago",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.bat.name"
           ]
         }
       ]
     },
     {
-      "en_name": "destroy field rune",
-      "selected_translation": "Distruggi la runa del campo",
+      "en_name": "butterfly",
+      "selected_translation": "Mariposa roja",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Distruggi la runa del campo",
+          "translated": "Mariposa roja",
           "count": 1,
           "source_files": [
-            "spells.json"
+            "monsters.json"
           ],
           "sample_keys": [
-            "spell.destroy_field_rune.name"
+            "monster.red_butterfly.name"
           ]
         },
         {
-          "translated": "distruggere la runa del campo",
+          "translated": "Mariposa azul",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.blue_butterfly.name"
+          ]
+        },
+        {
+          "translated": "Mariposa rosa",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.pink_butterfly.name"
+          ]
+        },
+        {
+          "translated": "Mariposa púrpura",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.purple_butterfly.name"
+          ]
+        },
+        {
+          "translated": "Mariposa amarilla",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.yellow_butterfly.name"
+          ]
+        },
+        {
+          "translated": "Mariposa",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.butterfly.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "carrion worm",
+      "selected_translation": "Gusano carroñero",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Gusano carroñero",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.carrion_worm.name"
+          ]
+        },
+        {
+          "translated": "gusano de carrion",
           "count": 1,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.3148.name"
+            "item.9197.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "cosmic energy prism a",
+      "selected_translation": "Cosmic energía prisma invu",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Cosmic energía prisma invu",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_a_invu.name"
+          ]
+        },
+        {
+          "translated": "Cosmic energía prisma",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_a.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "cosmic energy prism b",
+      "selected_translation": "Cosmic energía prisma b",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Cosmic energía prisma b",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_b.name"
+          ]
+        },
+        {
+          "translated": "Cosmic energía prisma b invu",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_b_invu.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "cosmic energy prism c",
+      "selected_translation": "Cosmic energía prisma c",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Cosmic energía prisma c",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_c.name"
+          ]
+        },
+        {
+          "translated": "Cosmic energía prisma c invu",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_c_invu.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "cosmic energy prism d",
+      "selected_translation": "Cosmic energía prisma d invu",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Cosmic energía prisma d invu",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_d_invu.name"
+          ]
+        },
+        {
+          "translated": "Cosmic energía prisma d",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.cosmic_energy_prism_d.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "demon",
+      "selected_translation": "demonio",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "demonio",
+          "count": 6,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.26173.name",
+            "item.26174.name",
+            "item.26175.name",
+            "item.26176.name"
+          ]
+        },
+        {
+          "translated": "Demonio",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.demon.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "dorokoll the mystic",
+      "selected_translation": "Dorokoll místico",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Dorokoll místico",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.dorokoll_the_mystic.name"
+          ]
+        },
+        {
+          "translated": "Dorokoll místico stop",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.dorokoll_the_mystic_stop.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "egg",
+      "selected_translation": "huevo",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "huevo",
+          "count": 3,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.25077.name",
+            "item.25087.name",
+            "item.3606.name"
+          ]
+        },
+        {
+          "translated": "Huevo",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.egg_the_welter.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "eliz the unyielding",
+      "selected_translation": "Eliz unyielding stop",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Eliz unyielding stop",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.eliz_the_unyielding_stop.name"
+          ]
+        },
+        {
+          "translated": "Eliz la Inquebrantable",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.eliz_the_unyielding.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "eradicator",
+      "selected_translation": "Erradicador",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Erradicador",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.eradicator.name"
+          ]
+        },
+        {
+          "translated": "Eradicator2",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.eradicator2.name"
           ]
         }
       ]
     },
     {
       "en_name": "eshtaba the conjurer",
-      "selected_translation": "Estaba il prestigiatore",
+      "selected_translation": "Eshtaba conjurador stop",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Estaba il prestigiatore",
+          "translated": "Eshtaba conjurador stop",
           "count": 1,
           "source_files": [
             "monsters.json"
@@ -137,7 +456,7 @@
           ]
         },
         {
-          "translated": "Estaba l'Evocatore",
+          "translated": "Eshtaba conjurador",
           "count": 1,
           "source_files": [
             "monsters.json"
@@ -149,303 +468,49 @@
       ]
     },
     {
-      "en_name": "fire bomb rune",
-      "selected_translation": "Runa della bomba di fuoco",
+      "en_name": "feroxa",
+      "selected_translation": "Feroxa2",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Runa della bomba di fuoco",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.fire_bomb_rune.name"
-          ]
-        },
-        {
-          "translated": "runa della bomba incendiaria",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.3192.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "fly agaric",
-      "selected_translation": "agarico di mosca",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "agarico di mosca",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.25631.name"
-          ]
-        },
-        {
-          "translated": "agarico volante",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.30321.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "hive pore",
-      "selected_translation": "poro dell'alveare",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "poro dell'alveare",
+          "translated": "Feroxa2",
           "count": 2,
           "source_files": [
-            "items.json"
+            "monsters.json"
           ],
           "sample_keys": [
-            "item.14064.name",
-            "item.14171.name"
+            "monster.feroxa.name",
+            "monster.feroxa2.name"
           ]
         },
         {
-          "translated": "Poro dell'alveare",
+          "translated": "Feroxa4",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.hive_pore.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "intense healing rune",
-      "selected_translation": "Runa curativa intensa",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Runa curativa intensa",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.intense_healing_rune.name"
+            "monster.feroxa4.name"
           ]
         },
         {
-          "translated": "intensa runa curativa",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.3152.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "lightest missile rune",
-      "selected_translation": "runa missilistica più leggera",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "runa missilistica più leggera",
-          "count": 2,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.21352.name",
-            "item.21432.name"
-          ]
-        },
-        {
-          "translated": "Runa missilistica più leggera",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.lightest_missile_rune.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "lost time",
-      "selected_translation": "Tempo perduto",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Tempo perduto",
+          "translated": "Feroxa3",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.lost_time.name"
+            "monster.feroxa3.name"
           ]
         },
         {
-          "translated": "tempo perso",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.23729.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "magic wall rune",
-      "selected_translation": "Runa del muro magico",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Runa del muro magico",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.magic_wall_rune.name"
-          ]
-        },
-        {
-          "translated": "runa magica del muro",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.3180.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "mezlon the defiler",
-      "selected_translation": "Mezlon il Contaminatore",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "Mezlon il Contaminatore",
+          "translated": "Feroxa5",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.mezlon_the_defiler.name"
-          ]
-        },
-        {
-          "translated": "Mezlon Il Contaminatore",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.mezlon_the_defiler_stop.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "opticorder rectifier",
-      "selected_translation": "raddrizzatore dell'ordine ottico",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "raddrizzatore dell'ordine ottico",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.27547.name"
-          ]
-        },
-        {
-          "translated": "raddrizzatore ottico",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.27588.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "pillar",
-      "selected_translation": "pilastro",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "pilastro",
-          "count": 18,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.10954.name",
-            "item.11047.name",
-            "item.11053.name",
-            "item.11057.name"
-          ]
-        },
-        {
-          "translated": "Pilastro",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.pillar.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "poison bomb rune",
-      "selected_translation": "Runa della bomba velenosa",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Runa della bomba velenosa",
-          "count": 1,
-          "source_files": [
-            "spells.json"
-          ],
-          "sample_keys": [
-            "spell.poison_bomb_rune.name"
-          ]
-        },
-        {
-          "translated": "runa della bomba avvelenata",
-          "count": 1,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.3173.name"
+            "monster.feroxa5.name"
           ]
         }
       ]
@@ -453,25 +518,31 @@
   ],
   "case_only_autofixed": 0,
   "case_only_autofixed_keys": [],
-  "semantic_autofixed": 0,
-  "semantic_autofixed_keys": [],
-  "semantic_quality_blocked": 0,
-  "semantic_quality_blocked_keys": [],
+  "semantic_autofixed": 3,
+  "semantic_autofixed_keys": [
+    "item.10026.name",
+    "item.10299.name",
+    "item.10194.name"
+  ],
+  "semantic_quality_blocked": 1,
+  "semantic_quality_blocked_keys": [
+    "item.19150.name"
+  ],
   "existing_quality_sanitized": 0,
   "existing_quality_sanitized_keys": [],
   "review_candidates_total": 14,
   "review_keys": [
-    "item.3203.name",
-    "item.3177.name",
-    "item.3153.name",
-    "item.3148.name",
-    "item.3192.name",
-    "item.30321.name",
-    "item.3152.name",
-    "item.23729.name",
-    "item.3180.name",
-    "item.27588.name",
-    "item.3173.name",
-    "item.31306.name"
+    "item.9197.name",
+    "item.32227.name",
+    "item.19150.name",
+    "item.31926.name",
+    "item.31928.name",
+    "item.31930.name",
+    "item.31960.name",
+    "item.9613.name",
+    "item.10797.name",
+    "item.11256.name",
+    "item.11310.name",
+    "item.11338.name"
   ]
 }

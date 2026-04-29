@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T21:29:42.385020Z",
+  "timestamp": "2026-04-29T21:47:48.236420Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -9,7 +9,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 152438,
+    "total_marker_todo": 152404,
     "top_candidates": [
       {
         "lang": "tr",
@@ -26,8 +26,8 @@
       {
         "lang": "cs",
         "json_file": "items.json",
-        "marker_todo": 17953,
-        "pending_total": 17953
+        "marker_todo": 17919,
+        "pending_total": 17919
       },
       {
         "lang": "fr",
@@ -99,9 +99,9 @@
     "tr"
   ],
   "json_files": 39,
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 14,
+  "cache_cycle": 15,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {
@@ -275,12 +275,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 15967,
+        "name_pending_total": 15933,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 15967,
-            "name_coverage_pct": 52.23
+            "name_pending": 15933,
+            "name_coverage_pct": 52.33
           },
           "monsters.json": {
             "name_total": 1637,

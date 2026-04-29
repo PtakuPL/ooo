@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:45:58.377418Z",
+  "generated_at_utc": "2026-04-29T21:48:34.692402Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,15 +9,15 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 21:45:52"
+      "last_update": "2026-04-29 21:48:30"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "4min temu",
+      "freshness": "2min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T21:41:47Z"
+      "last_update": "2026-04-29T21:46:10Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
@@ -25,13 +25,13 @@
       "reason": "worker w trybie AUTO_TRANSLATE",
       "freshness": "2min temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 21:45:52"
+      "last_update": "2026-04-29 21:48:30"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "7min temu",
+      "freshness": "10min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
       "last_update": "2026-04-29T21:38:30.056895Z"
     },
@@ -39,9 +39,9 @@
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "16min temu",
+      "freshness": "2min temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-04-29T21:29:24.993909Z"
+      "last_update": "2026-04-29T21:46:09.607563Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 21:45:52"
+      "last_update": "2026-04-29 21:48:30"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,7 +57,7 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T21:45:58.375717Z"
+      "last_update": "2026-04-29T21:48:34.690939Z"
     }
   },
   "operator_panels": {
@@ -65,20 +65,31 @@
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
       "stage": "heartbeat_tick",
-      "category": "es",
-      "json_file": "npc.json",
-      "current_lang": "es",
-      "current_lang_name": "Hiszpański",
+      "category": "ro",
+      "json_file": "items.json",
+      "current_lang": "ro",
+      "current_lang_name": "Rumuński",
       "current_scope": "Serwer",
       "detail": "auto translate in progress",
-      "current_key": "es:npc.json",
-      "heartbeat_at": "2026-04-29T21:41:47Z",
-      "heartbeat_age_s": 102,
-      "cycle": 18820
+      "current_key": "ro:items.json",
+      "heartbeat_at": "2026-04-29T21:46:10Z",
+      "heartbeat_age_s": 16,
+      "cycle": 18824
     },
     "recent_writes": {
       "count": 17,
       "items": [
+        {
+          "timestamp": "2026-04-29T21:46:03.531814Z",
+          "lang": "es",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 3,
+          "sample_source": "tm",
+          "sample_key": "npc.captain_haba_open_sea.larboard_1",
+          "sample_text": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+          "physical_verified": true
+        },
         {
           "timestamp": "2026-04-29T21:38:23.968734Z",
           "lang": "cs",
@@ -253,17 +264,6 @@
           "sample_source": "simple",
           "sample_key": "item.14583.name",
           "sample_text": "SPRITE RISERVATO",
-          "physical_verified": true
-        },
-        {
-          "timestamp": "2026-04-29T19:44:21.232338Z",
-          "lang": "ro",
-          "json_file": "items.json",
-          "surface": "Serwer",
-          "translated": 50,
-          "sample_source": "openai:openai/gpt-4.1-mini",
-          "sample_key": "item.10190.name",
-          "sample_text": "războinic draken mort",
           "physical_verified": true
         }
       ],
@@ -540,7 +540,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:45:56.353600Z",
+      "generated_at_utc": "2026-04-29T21:48:33.303154Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -632,8 +632,8 @@
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T21:45:56.353600Z",
-        "oldest_timestamp": "2026-04-28T21:46:20.816118Z",
+        "latest_timestamp": "2026-04-29T21:48:33.303154Z",
+        "oldest_timestamp": "2026-04-28T21:50:04.379258Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2302,12 +2302,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:45:56.752642Z",
+      "generated_at_utc": "2026-04-29T21:48:33.331103Z",
       "window": {
         "trend_hours": 24,
         "samples": 1030,
-        "window_start_utc": "2026-04-28T21:46:20.835091Z",
-        "window_end_utc": "2026-04-29T21:45:56.752642Z"
+        "window_start_utc": "2026-04-28T21:50:04.400094Z",
+        "window_end_utc": "2026-04-29T21:48:33.331103Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2323,7 +2323,7 @@
         "server": {
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411203,
+          "real_translated_keys": 411205,
           "coverage_real_pct": 11.41,
           "langs_count": 51,
           "delta_24h_pp": 0.55,
@@ -2345,8 +2345,8 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z"
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z"
         },
         "website": {
           "label": "Website",
@@ -2373,8 +2373,8 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z"
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2401,8 +2401,8 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z"
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z"
         },
         "installer": {
           "label": "Installer",
@@ -2429,8 +2429,8 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z"
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z"
         }
       },
       "ranking": [
@@ -2460,8 +2460,8 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z",
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z",
           "rank": 1
         },
         {
@@ -2490,15 +2490,15 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z",
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z",
           "rank": 2
         },
         {
           "surface": "server",
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411203,
+          "real_translated_keys": 411205,
           "coverage_real_pct": 11.41,
           "langs_count": 51,
           "delta_24h_pp": 0.55,
@@ -2520,8 +2520,8 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z",
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z",
           "rank": 3
         },
         {
@@ -2550,15 +2550,15 @@
             }
           ],
           "trend_samples": 1030,
-          "window_oldest_utc": "2026-04-28T21:46:20.835091Z",
-          "window_latest_utc": "2026-04-29T21:45:56.752642Z",
+          "window_oldest_utc": "2026-04-28T21:50:04.400094Z",
+          "window_latest_utc": "2026-04-29T21:48:33.331103Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:45:56.781624Z",
+      "generated_at_utc": "2026-04-29T21:48:33.356839Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2616,7 +2616,7 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1741,
+          "wave_history_rows_total": 1743,
           "wave_history_rows_window": 1030,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
@@ -2637,15 +2637,15 @@
           "pass": true,
           "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T21:45:30.290741Z",
-          "window_end_utc": "2026-04-29T21:45:56.781624Z",
+          "window_start_utc": "2026-04-28T21:47:49.314028Z",
+          "window_end_utc": "2026-04-29T21:48:33.356839Z",
           "window_span_hours": 24.01,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
               "samples": 1032,
-              "oldest_timestamp": "2026-04-28T21:45:30.290741Z",
-              "latest_timestamp": "2026-04-29T21:45:56.781624Z",
+              "oldest_timestamp": "2026-04-28T21:47:49.314028Z",
+              "latest_timestamp": "2026-04-29T21:48:33.356839Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2656,8 +2656,8 @@
             },
             "otclient_modules.json": {
               "samples": 1032,
-              "oldest_timestamp": "2026-04-28T21:45:30.290741Z",
-              "latest_timestamp": "2026-04-29T21:45:56.781624Z",
+              "oldest_timestamp": "2026-04-28T21:47:49.314028Z",
+              "latest_timestamp": "2026-04-29T21:48:33.356839Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2719,11 +2719,11 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:45:57.975801Z",
-      "active_provider": "OpenAI model pool",
-      "active_provider_code": "openai_model_pool",
-      "active_provider_source": "openai:openai/gpt-4o-mini",
-      "active_provider_timestamp": "2026-04-29T21:38:23.968734Z",
+      "generated_at_utc": "2026-04-29T21:48:34.349784Z",
+      "active_provider": "TM/simple",
+      "active_provider_code": "tm_simple",
+      "active_provider_source": "tm",
+      "active_provider_timestamp": "2026-04-29T21:46:03.531814Z",
       "active_model": "openai/gpt-4o-mini",
       "fallback_reason": "TM/simple → fallback to google translate validate fail [validate_word_salad] npc.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -2789,27 +2789,27 @@
           "provider_limit_telemetry:provider_budget_high"
         ],
         "provider_consistency_debt": 439,
-        "recent_window_writes": 579,
+        "recent_window_writes": 565,
         "recent_write_breakdown": [
           {
             "provider": "openai_model_pool",
             "provider_label": "OpenAI model pool",
-            "writes": 243
+            "writes": 231
           },
           {
             "provider": "tm_simple",
             "provider_label": "TM/simple",
-            "writes": 191
+            "writes": 190
           },
           {
             "provider": "free_google_translate",
             "provider_label": "Free Google Translate",
-            "writes": 119
+            "writes": 120
           },
           {
             "provider": "canonical_name_semantic_autofix",
             "provider_label": "canonical_name_semantic_autofix",
-            "writes": 23
+            "writes": 21
           },
           {
             "provider": "term_consistency_autofix",
@@ -2817,17 +2817,12 @@
             "writes": 3
           }
         ],
-        "fallbacks_last_200": 20,
+        "fallbacks_last_200": 13,
         "fallback_action_breakdown": [
           {
             "action": "fallback_to_google_translate_high",
             "action_label": "fallback to google translate high",
-            "count": 11
-          },
-          {
-            "action": "fallback_to_next_provider_validate_fail",
-            "action_label": "fallback to next provider validate fail",
-            "count": 5
+            "count": 10
           },
           {
             "action": "fallback_chain_exhausted_high_reject_types",
@@ -2837,18 +2832,18 @@
           {
             "action": "fallback_to_google_translate_validate_fail",
             "action_label": "fallback to google translate validate fail",
-            "count": 2
+            "count": 1
           }
         ],
         "providers": {
           "tm_simple": {
             "status": "active",
-            "recent_writes": 191
+            "recent_writes": 190
           },
           "free_google_translate": {
             "status": "active",
             "enabled": true,
-            "recent_writes": 119
+            "recent_writes": 120
           },
           "google_cloud": {
             "status": "disabled",
@@ -2859,8 +2854,8 @@
           "openai_model_pool": {
             "status": "active",
             "active_model": "openai/gpt-4o-mini",
-            "recent_writes": 243,
-            "requests_today": 212
+            "recent_writes": 231,
+            "requests_today": 217
           }
         },
         "openai_model_pool": {
@@ -2903,19 +2898,19 @@
           ],
           "request_budget_cap": 250,
           "request_budget_policy": "telemetry_only",
-          "requests_today": 212,
+          "requests_today": 217,
           "selected_model": "openai/gpt-4o-mini",
           "pool_latest": {
             "schema_version": "1.0",
-            "generated_at_utc": "2026-04-29T21:31:52.535139Z",
+            "generated_at_utc": "2026-04-29T21:48:20.446204Z",
             "status": "active",
             "reason": "ok",
             "active": true,
             "selected_model": "openai/gpt-4o-mini",
-            "response_ms": 2019,
+            "response_ms": 1846,
             "rate_limited": false,
-            "requests_total_today": 212,
-            "translated_total_today": 1106,
+            "requests_total_today": 217,
+            "translated_total_today": 1131,
             "request_budget_cap": 250,
             "request_budget_policy": "telemetry_only",
             "models": [
@@ -2932,12 +2927,12 @@
               {
                 "model": "openai/gpt-4o-mini",
                 "priority": 1,
-                "requests_today": 50,
-                "translated_today": 261,
+                "requests_today": 55,
+                "translated_today": 286,
                 "blocked_until_utc": "",
                 "last_status": "ok",
                 "last_error_reason": "",
-                "last_response_ms": 2019
+                "last_response_ms": 1846
               },
               {
                 "model": "openai/gpt-5",
@@ -2969,7 +2964,7 @@
           "used_pct": 84.8,
           "monthly_cap": 250.0,
           "spent": 212.0,
-          "latest_age_s": 710.137817,
+          "latest_age_s": 877.740451,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3015,22 +3010,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:45:57.981368Z",
+      "generated_at_utc": "2026-04-29T21:48:34.353221Z",
       "available": true,
-      "lang": "cs",
-      "json_file": "items.json",
-      "surface": "items",
+      "lang": "es",
+      "json_file": "npc.json",
+      "surface": "npc",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 10342,
-      "keys_scanned": 340,
-      "keys_with_term_usages": 128,
-      "keys_with_conflicts": 70,
-      "term_conflicts_total": 166,
-      "term_conflict_rate_pct": 54.688,
-      "term_conflict_rate_delta_pct": 54.688,
+      "registry_terms_total": 16737,
+      "keys_scanned": 1247,
+      "keys_with_term_usages": 340,
+      "keys_with_conflicts": 96,
+      "term_conflicts_total": 200,
+      "term_conflict_rate_pct": 28.235,
+      "term_conflict_rate_delta_pct": 28.235,
       "auto_fixed_english_name_leaks": 0,
-      "inflection_suspects_flagged": 32,
-      "manual_review_enqueued": 134,
+      "inflection_suspects_flagged": 5,
+      "manual_review_enqueued": 195,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3039,117 +3034,118 @@
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
       "conflict_type_breakdown": {
-        "canonical_term_missing": 134,
-        "canonical_term_inflection_suspect": 32
+        "canonical_term_missing": 188,
+        "canonical_term_inflection_suspect": 5,
+        "english_name_leak": 7
       },
       "top_conflicts": [
         {
-          "key": "item.10216.desc",
+          "key": "npc.a_beggar.say_4",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-          "source_file": "items.json",
-          "source_key": "item.10029.name"
+          "canonical": "Alimento",
+          "canonical_en": "Food",
+          "translated_text": "Entonces, ¿por qué no muestras tu dedicación a los pobres? Ve y ayuda a Chavis en la casa de pobres. Está recolectando comida para gente como nosotros. ...",
+          "source_file": "spells.json",
+          "source_key": "spell.food.name"
         },
         {
-          "key": "item.10216.desc",
+          "key": "npc.a_prisoner.say_1",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+          "canonical": "manzanas",
+          "canonical_en": "apples",
+          "translated_text": "Gran acertijo, ¿no? Si puedes decirme la respuesta correcta, \\z te daré algo. ¡Jejeje!",
           "source_file": "items.json",
-          "source_key": "item.10030.name"
+          "source_key": "item.24490.name"
         },
         {
-          "key": "item.10216.desc",
+          "key": "npc.a_prisoner.say_2",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+          "canonical": "manzanas",
+          "canonical_en": "apples",
+          "translated_text": "Mis números surrealistas se basan en hechos sorprendentes. \\z ¿Estás interesado en aprender el secreto de las matemáticas?",
           "source_file": "items.json",
-          "source_key": "item.10031.name"
+          "source_key": "item.24490.name"
         },
         {
-          "key": "item.10216.desc",
+          "key": "npc.a_sleeping_dragon.multi_17",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+          "canonical": "Nothing",
+          "canonical_en": "nothing",
+          "translated_text": "Te lanzas y arrojas el modelo al agua. Como no pasa nada, le das la espalda al océano. ...",
           "source_file": "items.json",
-          "source_key": "item.10032.name"
+          "source_key": "item.31381.name"
         },
         {
-          "key": "item.10216.desc",
+          "key": "npc.a_sleeping_dragon.multi_20",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+          "canonical": "elegir",
+          "canonical_en": "pick",
+          "translated_text": "Coges el espejo del suelo.",
           "source_file": "items.json",
-          "source_key": "item.10172.name"
+          "source_key": "item.31613.name"
         },
         {
-          "key": "item.10216.desc",
+          "key": "npc.a_sleeping_dragon.multi_20",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+          "canonical": "elegir",
+          "canonical_en": "pick",
+          "translated_text": "Coges el espejo del suelo.",
           "source_file": "items.json",
-          "source_key": "item.10173.name"
+          "source_key": "item.31615.name"
         },
         {
-          "key": "item.10217.desc",
+          "key": "npc.a_sleeping_dragon.multi_20",
           "conflict_type": "canonical_term_missing",
-          "canonical": "rezervovat",
-          "canonical_en": "book",
-          "translated_text": "Přineste tuto zašifrovanou knihu mudrci v Farmine, abyste získali moudrost nebo odemkli další Zaovu kulturu",
+          "canonical": "elegir",
+          "canonical_en": "pick",
+          "translated_text": "Coges el espejo del suelo.",
           "source_file": "items.json",
-          "source_key": "item.12276.name"
+          "source_key": "item.3456.name"
         },
         {
-          "key": "item.10288.desc",
+          "key": "npc.a_sleeping_dragon.multi_21",
           "conflict_type": "canonical_term_missing",
-          "canonical": "dračí trůn",
-          "canonical_en": "dragon throne",
-          "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
-          "source_file": "items.json",
-          "source_key": "item.10286.name"
-        },
-        {
-          "key": "item.10288.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "dračí trůn",
-          "canonical_en": "dragon throne",
-          "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
-          "source_file": "items.json",
-          "source_key": "item.10287.name"
-        },
-        {
-          "key": "item.10288.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "Drak",
+          "canonical": "Dragón",
           "canonical_en": "Dragon",
-          "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
+          "translated_text": "Los sueños de dragones son dorados. ...",
           "source_file": "monsters.json",
           "source_key": "monster.dragon.name"
         },
         {
-          "key": "item.10422.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "socha",
-          "canonical_en": "statue",
-          "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
-          "source_file": "items.json",
-          "source_key": "item.10322.name"
+          "key": "npc.a_sleeping_dragon.multi_32",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Dragón",
+          "canonical_en": "Dragon",
+          "translated_text": "Los sueños de dragones son dorados. ...",
+          "source_file": "monsters.json",
+          "source_key": "monster.dragon.name"
         },
         {
-          "key": "item.10422.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "socha",
-          "canonical_en": "statue",
-          "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
+          "key": "npc.a_sleeping_dragon.say_11",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cabeza",
+          "canonical_en": "head",
+          "translated_text": "Regresas al norte hasta la meseta.",
           "source_file": "items.json",
-          "source_key": "item.2025.name"
+          "source_key": "item.33932.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.say_11",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cabeza",
+          "canonical_en": "head",
+          "translated_text": "Regresas al norte hasta la meseta.",
+          "source_file": "items.json",
+          "source_key": "item.33937.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.say_14",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cabeza",
+          "canonical_en": "head",
+          "translated_text": "Te diriges hacia el norte pasando innumerables piedras en el mar carmesí de piedras bajo tus pies.",
+          "source_file": "items.json",
+          "source_key": "item.33932.name"
         }
       ]
     },
@@ -3159,7 +3155,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 397,
-      "oldest_visible_pending_age_s": 26047,
+      "oldest_visible_pending_age_s": 26203,
       "top_langs": [
         {
           "lang": "ru",
@@ -3197,12 +3193,12 @@
         }
       ],
       "deferred_state_keys_total": 8950,
-      "deferred_state_updated_at": "2026-04-29T21:45:51.655497Z",
-      "deferred_state_age_s": 3,
+      "deferred_state_updated_at": "2026-04-29T21:46:05.083127Z",
+      "deferred_state_age_s": 146,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 170,
+        "suppressed_manual_review": 197,
         "deduped_ttl": 0,
         "manual_review_escalations": 0,
         "partial_staged": 2,
@@ -3213,7 +3209,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:45:58.375717Z",
+      "generated_at_utc": "2026-04-29T21:48:34.690939Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3228,16 +3224,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 102,
+          "value": 16,
           "threshold": 300,
-          "detail": "Heartbeat świeży (102s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=cs:items.json].",
+          "detail": "Heartbeat świeży (16s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=cs:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 454,
+          "value": 151,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3257,7 +3253,7 @@
           "severity": "warning",
           "value": {
             "pending": 397,
-            "oldest_s": 26047
+            "oldest_s": 26203
           },
           "threshold": {
             "pending_min": 200,
@@ -3294,9 +3290,15 @@
     },
     "doctor_remediation": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:29:40.094243Z",
+      "generated_at_utc": "2026-04-29T21:47:41.352193Z",
       "status": "ok",
       "open_alarms": [
+        {
+          "code": "DISPATCH_STALE",
+          "severity": "warning",
+          "source": "statusd_doctor.json",
+          "detail": "DISPATCH_STALE: dispatch state sprzed 1009s"
+        },
         {
           "code": "NATIVE_READINESS_BELOW_THRESHOLD",
           "severity": "warning",
@@ -3307,7 +3309,7 @@
           "code": "PROVIDER_BUDGET_80PCT",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "PROVIDER_BUDGET_80PCT: used=80.0% cap=250.0 spent=200.0 source=provider_budget_latest.json"
+          "detail": "PROVIDER_BUDGET_80PCT: used=84.8% cap=250.0 spent=212.0 source=provider_budget_latest.json"
         },
         {
           "code": "QUEUE_STARVATION_DETECTED",
@@ -3325,32 +3327,30 @@
           "code": "SUSPICIOUS_HIGH_ELEVATED",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=567 rate=16.608% window=6.0h top_lang=es:205 per_domain=[server.json:52(1300.0%/warning)]"
+          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=501 rate=14.836% window=6.0h top_lang=es:174 per_domain=[server.json:39(1300.0%/warning)]"
         },
         {
           "code": "TERM_CONSISTENCY_REGRESSION",
           "severity": "critical",
           "source": "statusd_doctor.json",
-          "detail": "TERM_CONSISTENCY_REGRESSION: rate=46.711% delta=46.711% total=200 source=term_conflicts_latest.json"
+          "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
         }
       ],
-      "resolved_this_cycle": [
-        "GUARD_REPORT_STALE"
-      ],
+      "resolved_this_cycle": [],
       "newly_opened": [
-        "PROVIDER_BUDGET_80PCT"
+        "DISPATCH_STALE"
       ],
       "summary": {
-        "open_count": 6,
-        "resolved_count": 1,
+        "open_count": 7,
+        "resolved_count": 0,
         "tracked_alarms": 32
       },
       "action_plan": {
         "recommended_action": "force_auto",
         "selected_action": "none",
         "selected_command": "-",
-        "result": "resolved_update",
-        "reason": "resolved_count=1",
+        "result": "pending",
+        "reason": "write_starvation_or_queue_starvation",
         "suppressed_by_cooldown": true,
         "cooldown_remaining_cycles": 2
       }

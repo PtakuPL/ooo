@@ -1,128 +1,26 @@
 {
-  "timestamp": "2026-04-29T21:38:23.968734Z",
-  "language": "cs",
-  "json_file": "items.json",
-  "translated": 97,
+  "timestamp": "2026-04-29T21:46:03.531814Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 3,
   "entries": [
     {
-      "key": "item.15854.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "item.15855.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "npc.captain_haba_open_sea.say_2",
+      "en": "Harharhar, landlubber, ya got it all wrong!! The correct command would be LARBOARD side. Don't forget that, 'kay? Last one, what you gonna say to me when ya see somethin' to the right?",
+      "translated": "¡¡Harharhar, marinero de agua dulce, lo entendiste todo mal!! El comando correcto sería BABOR. No lo olvides, ¿'kay? Last one, what you gonna say to me when ya see somethin' a la derecha?",
+      "source": "tm"
     },
     {
-      "key": "item.15856.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15857.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15858.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15859.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15860.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15861.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15862.name",
-      "en": "scattered crystals",
-      "translated": "rozptýlené krystaly",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15895.name",
-      "en": "broken idol",
-      "translated": "zlomený idol",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15896.name",
-      "en": "broken idol",
-      "translated": "zlomený idol",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15898.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15899.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15900.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15901.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15902.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15903.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15904.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.15905.name",
-      "en": "strange pedestal",
-      "translated": "podivný podstavec",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.1593.name",
-      "en": "grass archway",
-      "translated": "oblouk z trávy",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "npc.captain_haba_open_sea.greet_msg_1",
+      "en": "Wha'd ya want? Ask me 'bout the {instructions} if you don't know what to do! If you wanna head back to {Svargrond}, let me know.",
+      "translated": "¿Qué quieres? Pregúntame 'bout the {instructions} if you don'¡No sé qué hacer! Si quieres regresar a {Svargrond}, házmelo saber.",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

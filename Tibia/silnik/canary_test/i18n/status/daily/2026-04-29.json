@@ -4,7 +4,7 @@
   "errors": {
     "count": 626
   },
-  "generated_at_utc": "2026-04-29T21:45:49Z",
+  "generated_at_utc": "2026-04-29T21:48:26Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -22,7 +22,7 @@
         },
         "ES": {
           "skipped": 0,
-          "translated": 1792
+          "translated": 1795
         },
         "IT": {
           "skipped": 0,

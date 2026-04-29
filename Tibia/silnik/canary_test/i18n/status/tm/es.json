@@ -233574,5 +233574,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T21:03:09.273924Z"
+  },
+  "npc.captain_haba_open_sea.greet_msg_1": {
+    "src_hash": "d4494f7d071d3c001fc51dcfe7a0494e",
+    "text": "¿Qué quieres? Pregúntame 'bout the {instructions} if you don'¡No sé qué hacer! Si quieres regresar a {Svargrond}, házmelo saber.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:40:35.633718Z"
   }
 }

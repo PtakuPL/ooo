@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "timestamp": "2026-04-29T21:45:52.814238Z",
+  "timestamp": "2026-04-29T21:48:30.194982Z",
   "scope": "all",
   "en_total_keys": 74536,
   "en_signature": [
@@ -9510,8 +9510,8 @@
         [
           "npc.json",
           1,
-          1777497024616228599,
-          2012109
+          1777499163072228481,
+          2012113
         ],
         [
           "npclib.json",
@@ -9621,11 +9621,11 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 74536,
-        "translated_keys": 59336,
-        "nominal_translated_keys": 59336,
-        "real_translated_keys": 51213,
+        "translated_keys": 59338,
+        "nominal_translated_keys": 59338,
+        "real_translated_keys": 51215,
         "english_copy_keys": 9512,
-        "placeholder_keys": 13835,
+        "placeholder_keys": 13833,
         "reference_keys": 110,
         "missing_keys": 0,
         "missing_files": 0,
@@ -9633,8 +9633,8 @@
         "nominal_completion_pct": 79.61,
         "real_completion_pct": 68.71,
         "server_keys": 70637,
-        "server_translated": 56176,
-        "server_real_translated": 48126,
+        "server_translated": 56178,
+        "server_real_translated": 48128,
         "server_pct": 79.53,
         "server_real_pct": 68.13,
         "client_keys": 3899,
@@ -10071,16 +10071,16 @@
         "npc.json": {
           "sig": [
             1,
-            1777497024616228599,
-            2012109
+            1777499163072228481,
+            2012113
           ],
           "row": {
             "total_reference_keys": 14815,
-            "translated_keys": 13921,
-            "nominal_translated_keys": 13921,
-            "real_translated_keys": 13859,
+            "translated_keys": 13923,
+            "nominal_translated_keys": 13923,
+            "real_translated_keys": 13861,
             "english_copy_keys": 68,
-            "placeholder_keys": 890,
+            "placeholder_keys": 888,
             "reference_keys": 0,
             "missing_keys": 0,
             "missing_files": 0

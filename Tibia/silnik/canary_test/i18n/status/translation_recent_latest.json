@@ -1,128 +1,56 @@
 {
-  "timestamp": "2026-04-29T20:29:06.474346Z",
-  "language": "ru",
-  "json_file": "items.json",
-  "translated": 63,
+  "timestamp": "2026-04-29T20:36:12.737475Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 8,
   "entries": [
     {
-      "key": "item.14884.name",
-      "en": "basalt wall",
-      "translated": "басалт стена",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_greyhound.stdmod_4",
+      "en": "My name is Captain Greyhound from the Royal Tibia Line.",
+      "translated": "Mi nombre es Capitán Greyhound de la línea Royal Tibia.",
+      "source": "tm"
     },
     {
-      "key": "item.14885.name",
-      "en": "basalt wall",
-      "translated": "басалт стена",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_gulliver.greet_msg_1",
+      "en": "Welcome on board, Sir |PLAYERNAME|. Where can I {sail} you today?",
+      "translated": "Bienvenido a bordo, señor |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
+      "source": "tm"
     },
     {
-      "key": "item.14913.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_greyhound.stdmod_14",
+      "en": "Where do you want to go? To {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} or {Edron?}",
+      "translated": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+      "source": "google_translate"
     },
     {
-      "key": "item.14914.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_greyhound.stdmod_15",
+      "en": "Where do you want to go? To {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} or {Edron?}",
+      "translated": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+      "source": "google_translate"
     },
     {
-      "key": "item.14915.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_greyhound.stdmod_16",
+      "en": "Where do you want to go? To {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} or {Edron?}",
+      "translated": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+      "source": "google_translate"
     },
     {
-      "key": "item.14916.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_greyhound.stdmod_17",
+      "en": "Where do you want to go? To {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} or {Edron?}",
+      "translated": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+      "source": "google_translate"
     },
     {
-      "key": "item.14917.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "npc.captain_greyhound.stdmod_18",
+      "en": "Where do you want to go? To {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} or {Edron?}",
+      "translated": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+      "source": "google_translate"
     },
     {
-      "key": "item.14918.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14919.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14920.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14921.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14922.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14923.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14924.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14925.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14931.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.150.name",
-      "en": "ice shrine",
-      "translated": "ледяная святыня",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.15156.name",
-      "en": "large decorative mushroom",
-      "translated": "большой декоративный гриб",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.15157.name",
-      "en": "large decorative mushroom",
-      "translated": "большой декоративный гриб",
-      "source": "openai:openai/gpt-4.1-mini"
-    },
-    {
-      "key": "item.14930.name",
-      "en": "small stream",
-      "translated": "маленький ручей",
-      "source": "canonical_name_semantic_autofix"
+      "key": "npc.captain_greyhound.stdmod_19",
+      "en": "Where do you want to go? To {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} or {Edron?}",
+      "translated": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

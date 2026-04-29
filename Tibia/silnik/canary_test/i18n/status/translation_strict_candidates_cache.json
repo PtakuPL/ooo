@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "timestamp": "2026-04-29T20:18:07.415747Z",
-  "built_cycle": 5,
+  "timestamp": "2026-04-29T20:37:13.844042Z",
+  "built_cycle": 7,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -467,10 +467,10 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 901,
-      "todo": 901,
+      "pending_total": 893,
+      "todo": 893,
       "simple_todo": 87,
-      "marker_todo": 897,
+      "marker_todo": 889,
       "missing_in_lang": 0,
       "name_total": 0,
       "name_pending": 0,
@@ -3431,15 +3431,15 @@
     {
       "lang": "tr",
       "json_file": "items.json",
-      "pending_total": 28691,
-      "todo": 28691,
-      "simple_todo": 26730,
-      "marker_todo": 28691,
+      "pending_total": 28661,
+      "todo": 28661,
+      "simple_todo": 26700,
+      "marker_todo": 28661,
       "missing_in_lang": 0,
       "name_total": 33425,
-      "name_pending": 26243,
+      "name_pending": 26213,
       "name_missing_in_lang": 0,
-      "name_coverage_pct": 21.49
+      "name_coverage_pct": 21.58
     },
     {
       "lang": "tr",

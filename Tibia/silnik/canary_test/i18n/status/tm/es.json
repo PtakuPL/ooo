@@ -232534,5 +232534,53 @@
     "confidence": 0.96,
     "verified": false,
     "updated_at": "2026-04-29T20:05:45.013714Z"
+  },
+  "npc.captain_greyhound.stdmod_14": {
+    "src_hash": "bfffd16550920aa392e2f2385a581878",
+    "text": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:31:04.454895Z"
+  },
+  "npc.captain_greyhound.stdmod_15": {
+    "src_hash": "bfffd16550920aa392e2f2385a581878",
+    "text": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:31:04.485008Z"
+  },
+  "npc.captain_greyhound.stdmod_16": {
+    "src_hash": "bfffd16550920aa392e2f2385a581878",
+    "text": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:31:06.484232Z"
+  },
+  "npc.captain_greyhound.stdmod_17": {
+    "src_hash": "bfffd16550920aa392e2f2385a581878",
+    "text": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:31:06.513666Z"
+  },
+  "npc.captain_greyhound.stdmod_18": {
+    "src_hash": "bfffd16550920aa392e2f2385a581878",
+    "text": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:31:08.525398Z"
+  },
+  "npc.captain_greyhound.stdmod_19": {
+    "src_hash": "bfffd16550920aa392e2f2385a581878",
+    "text": "¿A dónde quieres ir? A {Thais}, {Ab'Dendriel}, {Venore}, {Svargrond}, {Yalahar} o {Edron?}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:31:08.555674Z"
   }
 }

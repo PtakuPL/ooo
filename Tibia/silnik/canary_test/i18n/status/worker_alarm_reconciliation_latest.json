@@ -1,24 +1,29 @@
 {
   "version": 1,
-  "generated_at_utc": "2026-04-29T20:22:11.938715Z",
-  "cycle": 6,
+  "generated_at_utc": "2026-04-29T20:36:39.498351Z",
+  "cycle": 7,
   "doctor": {
     "available": true,
-    "overall": "warning",
-    "issues_count": 0,
-    "warnings_count": 4
+    "overall": "critical",
+    "issues_count": 1,
+    "warnings_count": 5
   },
   "alarm_summary": {
-    "active_count": 4,
-    "opened_count": 0,
+    "active_count": 6,
+    "opened_count": 2,
     "resolved_count": 0,
     "active_tokens": [
+      "DISPATCH_STALE",
       "NATIVE_READINESS_BELOW_THRESHOLD",
       "QUEUE_STARVATION_DETECTED",
       "SURFACE_COVERAGE_IMBALANCE",
-      "SUSPICIOUS_HIGH_ELEVATED"
+      "SUSPICIOUS_HIGH_ELEVATED",
+      "TERM_CONSISTENCY_REGRESSION"
     ],
-    "opened_tokens": [],
+    "opened_tokens": [
+      "DISPATCH_STALE",
+      "TERM_CONSISTENCY_REGRESSION"
+    ],
     "resolved_tokens": []
   },
   "reaction": {
@@ -32,7 +37,7 @@
     "translate_limit_cap_reasons": [],
     "ignored_reaction_tokens": [],
     "ignored_reaction_details": [],
-    "force_status_update": false,
+    "force_status_update": true,
     "overnight_safe_mode": true,
     "overnight_budget_guard": {
       "active": false,
@@ -42,33 +47,23 @@
       "today_utc": "2026-04-29",
       "budget_stale_day": false,
       "ignored_alarm_tokens": [],
-      "used_pct": 60.8,
-      "remaining": 98,
+      "used_pct": 63.2,
+      "remaining": 92,
       "disable_openai_at_pct": 80,
       "min_openai_remaining": 40,
       "translate_limit_cap": 15
     }
   },
   "progress_snapshot": {
-    "statusd_report_timestamp": "2026-04-29T20:21:39.126093Z",
+    "statusd_report_timestamp": "2026-04-29T20:36:31.698494Z",
     "deferred_backlog_total": 0,
     "deferred_backlog_recent_1h": 0,
     "translation_kpi": {
       "window_entries": 200,
-      "total_translated": 7766,
-      "total_guard_fail": 326,
-      "guard_fail_rate_pct": 4.03,
+      "total_translated": 7779,
+      "total_guard_fail": 316,
+      "guard_fail_rate_pct": 3.9,
       "per_lang": {
-        "cs": {
-          "translated": 1335,
-          "guard_fail": 159,
-          "cycles": 25
-        },
-        "ro": {
-          "translated": 1030,
-          "guard_fail": 76,
-          "cycles": 25
-        },
         "it": {
           "translated": 975,
           "guard_fail": 19,
@@ -85,20 +80,30 @@
           "cycles": 52
         },
         "tr": {
-          "translated": 1181,
+          "translated": 1211,
           "guard_fail": 0,
-          "cycles": 25
+          "cycles": 26
         },
         "ru": {
-          "translated": 1094,
-          "guard_fail": 32,
-          "cycles": 25
+          "translated": 1157,
+          "guard_fail": 34,
+          "cycles": 26
+        },
+        "cs": {
+          "translated": 1294,
+          "guard_fail": 151,
+          "cycles": 24
+        },
+        "ro": {
+          "translated": 991,
+          "guard_fail": 72,
+          "cycles": 24
         }
       }
     },
     "strict_hourly_window": {
-      "window_start_utc": "2026-04-29T19:19:56.242823Z",
-      "window_end_utc": "2026-04-29T20:19:56.242823Z",
+      "window_start_utc": "2026-04-29T19:36:26.172313Z",
+      "window_end_utc": "2026-04-29T20:36:26.172313Z",
       "window_hours": 1.0,
       "sources": [
         "i18n/status/worker_cycle_perf.jsonl",
@@ -106,42 +111,62 @@
         "i18n/status/suspicious_log.jsonl",
         "i18n/status/deferred_translation_queue.jsonl"
       ],
-      "total_cycles": 18,
+      "total_cycles": 22,
       "mode_distribution": {
-        "AUTO_TRANSLATE": 18
+        "AUTO_TRANSLATE": 22
       },
-      "auto_translate_cycles": 18,
+      "auto_translate_cycles": 22,
       "migration_cycles": 0,
       "pending_skip_count": 0,
       "pending_skip_share_pct": 0.0,
       "pending_skip_share_migration_pct": 0.0,
-      "translated": 416,
-      "guard_fail": 0,
-      "guard_fail_rate_pct": 0.0,
+      "translated": 509,
+      "guard_fail": 2,
+      "guard_fail_rate_pct": 0.4,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0,
-      "throughput_keys_per_h": 334.3,
-      "throughput_runtime_hours": 1.2444,
-      "throughput_runtime_source": "cycle_duration_ms",
-      "suspicious_total": 309,
-      "deferred_total": 2,
+      "throughput_keys_per_h": 509.0,
+      "throughput_runtime_hours": 1.0,
+      "throughput_runtime_source": "window_hours_long_runtime_fallback",
+      "suspicious_total": 344,
+      "deferred_total": 34,
       "top_deferred_reasons": [
+        {
+          "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+          "count": 27,
+          "share_pct": 79.4,
+          "top_target": "ru/items.json",
+          "top_target_count": 27
+        },
+        {
+          "reason": "existing_canonical_name_quality_mixed_scripts",
+          "count": 5,
+          "share_pct": 14.7,
+          "top_target": "ru/items.json",
+          "top_target_count": 5
+        },
         {
           "reason": "retry_loop_cooldown_default",
           "count": 1,
-          "share_pct": 50.0,
+          "share_pct": 2.9,
           "top_target": "de/otclient_modules.json",
           "top_target_count": 1
         },
         {
           "reason": "gt_partial_validate_quality",
           "count": 1,
-          "share_pct": 50.0,
+          "share_pct": 2.9,
           "top_target": "de/otclient_modules.json",
           "top_target_count": 1
         }
       ],
       "top_guard_fail_targets": [
+        {
+          "target": "ru/items.json",
+          "translated": 63,
+          "guard_fail": 2,
+          "guard_command": 0
+        },
         {
           "target": "ro/items.json",
           "translated": 50,
@@ -165,6 +190,12 @@
           "translated": 228,
           "guard_fail": 0,
           "guard_command": 0
+        },
+        {
+          "target": "tr/items.json",
+          "translated": 30,
+          "guard_fail": 0,
+          "guard_command": 0
         }
       ]
     }
@@ -172,22 +203,22 @@
   "translation_data_freshness": {
     "translation_key_state.json": {
       "exists": true,
-      "age_s": 17,
+      "age_s": 27,
       "stale": false
     },
     "translation_guard_latest.json": {
       "exists": true,
-      "age_s": 14,
+      "age_s": 445,
       "stale": false
     },
     "translation_recent_report.jsonl": {
       "exists": true,
-      "age_s": 18,
+      "age_s": 27,
       "stale": false
     },
     "translation_global_overview.json": {
       "exists": true,
-      "age_s": 7,
+      "age_s": 12,
       "stale": false
     }
   }

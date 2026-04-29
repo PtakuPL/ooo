@@ -1,13 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:22:12.448573Z",
-  "cycle": 6,
+  "generated_at_utc": "2026-04-29T20:36:43.197781Z",
+  "cycle": 7,
   "open_alarms": [
+    {
+      "code": "DISPATCH_STALE",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "DISPATCH_STALE: dispatch state sprzed 859s"
+    },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.75<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
+      "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.79<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
     },
     {
       "code": "QUEUE_STARVATION_DETECTED",
@@ -25,16 +31,23 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=907 rate=26.071% window=6.0h top_lang=es:348 per_lang=[es:348(78.027%/warning)] per_domain=[npc.json:217(58.333%/warning),server.json:130(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=819 rate=24.382% window=6.0h top_lang=es:310 per_lang=[es:310(69.196%/warning)] per_domain=[npc.json:203(58.671%/warning),server.json:104(1300.0%/warning)]"
+    },
+    {
+      "code": "TERM_CONSISTENCY_REGRESSION",
+      "severity": "critical",
+      "source": "statusd_doctor.json",
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
     }
   ],
-  "resolved_this_cycle": [
+  "resolved_this_cycle": [],
+  "newly_opened": [
+    "DISPATCH_STALE",
     "TERM_CONSISTENCY_REGRESSION"
   ],
-  "newly_opened": [],
   "summary": {
-    "open_count": 4,
-    "resolved_count": 1,
+    "open_count": 6,
+    "resolved_count": 0,
     "tracked_alarms": 32
   },
   "queue_snapshot": {
@@ -46,10 +59,6 @@
     "selected_action": "none",
     "reason": "write_starvation_or_queue_starvation",
     "suppressed_by_cooldown": true,
-    "cooldown_remaining_cycles": 2,
-    "selected_command": "-",
-    "result": "resolved_update",
-    "result_reason": "resolved_count=1",
-    "updated_at_utc": "2026-04-29T20:22:12.448573Z"
+    "cooldown_remaining_cycles": 2
   }
 }

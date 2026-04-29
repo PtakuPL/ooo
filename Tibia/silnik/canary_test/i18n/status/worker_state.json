@@ -404,7 +404,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T23:43:26Z",
+  "generated_at_utc": "2026-04-29T23:45:40Z",
   "global": {
     "en_keys_total": 74536,
     "errors_total": 11374,
@@ -414,137 +414,16 @@
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 2,
+        "guard_fail": 0,
         "json_file": "items.json",
-        "keys_to_translate": 24070,
-        "language": "ru",
-        "recent_examples": [
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15434.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15435.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15436.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15437.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15438.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15439.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15440.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15441.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15442.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15443.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15444.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15445.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15446.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15447.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15448.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15449.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15450.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15451.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15452.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          },
-          {
-            "en": "basalt crystal wall",
-            "key": "item.15453.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "кристальная стена из базальта"
-          }
-        ],
-        "recent_translated": 112,
+        "keys_to_translate": 17913,
+        "language": "cs",
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "ru",
+      "category": "cs",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -587,7 +466,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-30T01:37:03.441927",
+      "last_update": "2026-04-30T01:43:45.933477",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -811,7 +690,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 27,
+      "total_cycles": 28,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -829,20 +708,20 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "es",
+      "category": "ro",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
-      "file": "server.json",
+      "file": "items.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
-        "total": 9,
+        "total": 30,
         "unit": "keys"
       },
       "stage": "heartbeat_tick"
     },
-    "cycle": 28,
-    "heartbeat_at_utc": "2026-04-29T23:42:26Z",
+    "cycle": 29,
+    "heartbeat_at_utc": "2026-04-29T23:45:12Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

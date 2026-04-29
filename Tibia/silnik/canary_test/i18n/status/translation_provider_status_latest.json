@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:43:35.373408Z",
+  "generated_at_utc": "2026-04-29T23:45:48.478609Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
@@ -70,17 +70,17 @@
       "provider_limit_telemetry:provider_budget_exhausted"
     ],
     "provider_consistency_debt": 518,
-    "recent_window_writes": 557,
+    "recent_window_writes": 537,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 264
+        "writes": 263
       },
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 157
+        "writes": 138
       },
       {
         "provider": "free_google_translate",
@@ -98,12 +98,12 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 23,
+    "fallbacks_last_200": 21,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
-        "count": 15
+        "count": 13
       },
       {
         "action": "fallback_to_next_provider_validate_fail",
@@ -124,7 +124,7 @@
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 157
+        "recent_writes": 138
       },
       "free_google_translate": {
         "status": "active",
@@ -140,8 +140,8 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4o-mini",
-        "recent_writes": 264,
-        "requests_today": 274
+        "recent_writes": 263,
+        "requests_today": 279
       }
     },
     "openai_model_pool": {
@@ -184,19 +184,19 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 274,
+      "requests_today": 279,
       "selected_model": "openai/gpt-4o-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-29T23:38:32.148838Z",
+        "generated_at_utc": "2026-04-29T23:45:43.169268Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4o-mini",
-        "response_ms": 1504,
+        "response_ms": 1757,
         "rate_limited": false,
-        "requests_total_today": 274,
-        "translated_total_today": 1437,
+        "requests_total_today": 279,
+        "translated_total_today": 1462,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
@@ -213,12 +213,12 @@
           {
             "model": "openai/gpt-4o-mini",
             "priority": 1,
-            "requests_today": 112,
-            "translated_today": 592,
+            "requests_today": 117,
+            "translated_today": 617,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 1504
+            "last_response_ms": 1757
           },
           {
             "model": "openai/gpt-5",
@@ -250,7 +250,7 @@
       "used_pct": 109.6,
       "monthly_cap": 250.0,
       "spent": 274.0,
-      "latest_age_s": 234.957967,
+      "latest_age_s": 400.057991,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

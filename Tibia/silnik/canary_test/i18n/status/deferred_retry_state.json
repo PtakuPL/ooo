@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T23:12:53.983077Z",
+  "updated_at": "2026-04-29T23:15:25.692395Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -226597,14 +226597,64 @@
       "partial_completed": false,
       "last_status": "pending",
       "cooldown": false
+    },
+    "b289d13c9722d10fae09cc7c": {
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angelo.say_14",
+      "attempts_total": 1,
+      "attempts_by_bucket": {
+        "default": 1
+      },
+      "last_reason": "gt_rejected_multi_issues",
+      "last_bucket": "default",
+      "last_attempt_epoch": 1777504468,
+      "last_seen_epoch": 1777504468,
+      "next_retry_not_before_epoch": 1777526068,
+      "next_retry_not_before_utc": "2026-04-30T05:14:28Z",
+      "manual_review": true,
+      "first_seen_epoch": 1777504468,
+      "first_seen_utc": "2026-04-29T23:14:28Z",
+      "partial_events": 0,
+      "partial_stage_max": 0,
+      "partial_last_stage_utc": "",
+      "partial_active": false,
+      "partial_completed": false,
+      "last_status": "pending",
+      "cooldown": false
+    },
+    "692696c0291150fc9591d482": {
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_10",
+      "attempts_total": 1,
+      "attempts_by_bucket": {
+        "default": 1
+      },
+      "last_reason": "gt_identity_retry_identical_to_en",
+      "last_bucket": "default",
+      "last_attempt_epoch": 1777504524,
+      "last_seen_epoch": 1777504524,
+      "next_retry_not_before_epoch": 1777526124,
+      "next_retry_not_before_utc": "2026-04-30T05:15:24Z",
+      "manual_review": false,
+      "first_seen_epoch": 1777504524,
+      "first_seen_utc": "2026-04-29T23:15:24Z",
+      "partial_events": 0,
+      "partial_stage_max": 0,
+      "partial_last_stage_utc": "",
+      "partial_active": false,
+      "partial_completed": false,
+      "last_status": "pending",
+      "cooldown": false
     }
   },
   "stats": {
-    "enqueued": 0,
+    "enqueued": 2,
     "suppressed_cooldown": 0,
     "suppressed_manual_review": 0,
     "deduped_ttl": 0,
-    "manual_review_escalations": 71,
+    "manual_review_escalations": 89,
     "partial_staged": 0,
     "partial_completed": 0,
     "retry_loop_cooldown": 0,

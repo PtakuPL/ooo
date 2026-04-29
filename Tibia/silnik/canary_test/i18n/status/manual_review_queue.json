@@ -70909,11 +70909,60 @@
       ],
       "previous_state_source": "google_translate",
       "previous_state_updated_at": "2026-04-29T22:15:43.032732Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:14:27.592996Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angelo.say_14",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "We don't know exactly why this cave has now exposed an entry via the {dark pyramid}. It seems that the cave already existed for a long time, however, without a connection to our world. Maybe some smaller earth movements have changed the situation.",
+      "attempted_translation": "Wir wissen nicht genau, warum diese Höhle nun über den {dark pyramid} einen Eingang freigelegt hat. Es scheint, dass die Höhle schon seit langer Zeit existierte, jedoch ohne Verbindung zu unserer Welt. Vielleicht haben einige kleinere Erdbewegungen die Situation verändert.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.101.name"
+        },
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.1053.name"
+        },
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.2727.name"
+        },
+        {
+          "type": "canonical_term_missing",
+          "severity": "HIGH",
+          "message": "Canonical glossary term 'Erde' is missing from provider result",
+          "canonical": "Erde",
+          "canonical_en": "earth",
+          "source_file": "items.json",
+          "source_key": "item.2731.name"
+        }
+      ],
+      "source": "google_translate"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3623
+    "total": 3624
   },
-  "updated_at": "2026-04-29T23:13:02.070919Z"
+  "updated_at": "2026-04-29T23:14:27.614720Z"
 }

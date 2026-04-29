@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:19:24.633845Z",
+  "generated_at_utc": "2026-04-29T21:21:51.386763Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,37 +9,37 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 21:19:19"
+      "last_update": "2026-04-29 21:21:45"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "3min temu",
+      "freshness": "18s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T21:15:26Z"
+      "last_update": "2026-04-29T21:21:33Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "1min temu",
+      "freshness": "2min temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 21:19:19"
+      "last_update": "2026-04-29 21:21:45"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "39s temu",
+      "freshness": "17s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-04-29T21:18:45.335583Z"
+      "last_update": "2026-04-29T21:21:33.661151Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "38s temu",
+      "freshness": "3min temu",
       "source": "quality_audit_latest.json",
       "last_update": "2026-04-29T21:18:46.217994Z"
     },
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 21:19:19"
+      "last_update": "2026-04-29 21:21:45"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,28 +57,39 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T21:19:24.632140Z"
+      "last_update": "2026-04-29T21:21:51.385043Z"
     }
   },
   "operator_panels": {
     "worker_live": {
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
-      "stage": "heartbeat_tick",
+      "stage": "auto_done",
       "category": "tr",
       "json_file": "items.json",
       "current_lang": "tr",
       "current_lang_name": "Turecki",
       "current_scope": "Serwer",
-      "detail": "auto translate in progress",
+      "detail": "translated=30 guard_fail=0 strict_missing_key=0 strict_skipped_done=4089",
       "current_key": "tr:items.json",
-      "heartbeat_at": "2026-04-29T21:15:26Z",
-      "heartbeat_age_s": 181,
+      "heartbeat_at": "2026-04-29T21:21:33Z",
+      "heartbeat_age_s": 10,
       "cycle": 18812
     },
     "recent_writes": {
       "count": 18,
       "items": [
+        {
+          "timestamp": "2026-04-29T21:21:28.607420Z",
+          "lang": "tr",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 30,
+          "sample_source": "simple",
+          "sample_key": "item.14400.name",
+          "sample_text": "AYRILMIŞ SPRİTE",
+          "physical_verified": true
+        },
         {
           "timestamp": "2026-04-29T21:18:43.229239Z",
           "lang": "de",
@@ -264,17 +275,6 @@
           "sample_source": "simple",
           "sample_key": "item.14346.name",
           "sample_text": "AYRILMIŞ SPRİTE",
-          "physical_verified": true
-        },
-        {
-          "timestamp": "2026-04-29T19:05:33.500592Z",
-          "lang": "de",
-          "json_file": "npc.json",
-          "surface": "Serwer",
-          "translated": 33,
-          "sample_source": "tm",
-          "sample_key": "npc.a_sleeping_dragon.say_30",
-          "sample_text": "Wenn der Smaragd in die Kerbe gleitet, intensiviert sich das leuchtende Grün des Stei...",
           "physical_verified": true
         }
       ],
@@ -551,7 +551,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:19:23.249106Z",
+      "generated_at_utc": "2026-04-29T21:21:49.868922Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -643,8 +643,8 @@
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T21:19:23.249106Z",
-        "oldest_timestamp": "2026-04-28T21:21:40.914120Z",
+        "latest_timestamp": "2026-04-29T21:21:49.868922Z",
+        "oldest_timestamp": "2026-04-28T21:22:14.984891Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2313,12 +2313,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:19:23.278097Z",
+      "generated_at_utc": "2026-04-29T21:21:49.898814Z",
       "window": {
         "trend_hours": 24,
         "samples": 1037,
-        "window_start_utc": "2026-04-28T21:21:40.944027Z",
-        "window_end_utc": "2026-04-29T21:19:23.278097Z"
+        "window_start_utc": "2026-04-28T21:22:15.002296Z",
+        "window_end_utc": "2026-04-29T21:21:49.898814Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2334,7 +2334,7 @@
         "server": {
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411115,
+          "real_translated_keys": 411145,
           "coverage_real_pct": 11.41,
           "langs_count": 51,
           "delta_24h_pp": 0.56,
@@ -2356,8 +2356,8 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z"
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z"
         },
         "website": {
           "label": "Website",
@@ -2384,8 +2384,8 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z"
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2412,8 +2412,8 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z"
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z"
         },
         "installer": {
           "label": "Installer",
@@ -2440,8 +2440,8 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z"
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z"
         }
       },
       "ranking": [
@@ -2471,8 +2471,8 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z",
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z",
           "rank": 1
         },
         {
@@ -2501,15 +2501,15 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z",
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z",
           "rank": 2
         },
         {
           "surface": "server",
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411115,
+          "real_translated_keys": 411145,
           "coverage_real_pct": 11.41,
           "langs_count": 51,
           "delta_24h_pp": 0.56,
@@ -2531,8 +2531,8 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z",
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z",
           "rank": 3
         },
         {
@@ -2561,15 +2561,15 @@
             }
           ],
           "trend_samples": 1037,
-          "window_oldest_utc": "2026-04-28T21:21:40.944027Z",
-          "window_latest_utc": "2026-04-29T21:19:23.278097Z",
+          "window_oldest_utc": "2026-04-28T21:22:15.002296Z",
+          "window_latest_utc": "2026-04-29T21:21:49.898814Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:19:23.303512Z",
+      "generated_at_utc": "2026-04-29T21:21:49.926343Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2627,7 +2627,7 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1728,
+          "wave_history_rows_total": 1729,
           "wave_history_rows_window": 1037,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
@@ -2648,15 +2648,15 @@
           "pass": true,
           "detail": "window=24.00h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T21:19:21.450271Z",
-          "window_end_utc": "2026-04-29T21:19:23.303512Z",
+          "window_start_utc": "2026-04-28T21:21:40.914120Z",
+          "window_end_utc": "2026-04-29T21:21:49.926343Z",
           "window_span_hours": 24.0,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
               "samples": 1039,
-              "oldest_timestamp": "2026-04-28T21:19:21.450271Z",
-              "latest_timestamp": "2026-04-29T21:19:23.303512Z",
+              "oldest_timestamp": "2026-04-28T21:21:40.914120Z",
+              "latest_timestamp": "2026-04-29T21:21:49.926343Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2667,8 +2667,8 @@
             },
             "otclient_modules.json": {
               "samples": 1039,
-              "oldest_timestamp": "2026-04-28T21:19:21.450271Z",
-              "latest_timestamp": "2026-04-29T21:19:23.303512Z",
+              "oldest_timestamp": "2026-04-28T21:21:40.914120Z",
+              "latest_timestamp": "2026-04-29T21:21:49.926343Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2730,11 +2730,11 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:19:24.289836Z",
-      "active_provider": "Free Google Translate",
-      "active_provider_code": "free_google_translate",
-      "active_provider_source": "google_translate",
-      "active_provider_timestamp": "2026-04-29T21:18:43.229239Z",
+      "generated_at_utc": "2026-04-29T21:21:51.011237Z",
+      "active_provider": "TM/simple",
+      "active_provider_code": "tm_simple",
+      "active_provider_source": "simple",
+      "active_provider_timestamp": "2026-04-29T21:21:28.607420Z",
       "active_model": "openai/gpt-4o-mini",
       "fallback_reason": "-",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -2798,7 +2798,7 @@
           "provider_consistency_debt:409"
         ],
         "provider_consistency_debt": 409,
-        "recent_window_writes": 566,
+        "recent_window_writes": 582,
         "recent_write_breakdown": [
           {
             "provider": "openai_model_pool",
@@ -2808,12 +2808,12 @@
           {
             "provider": "tm_simple",
             "provider_label": "TM/simple",
-            "writes": 175
+            "writes": 193
           },
           {
             "provider": "free_google_translate",
             "provider_label": "Free Google Translate",
-            "writes": 123
+            "writes": 121
           },
           {
             "provider": "canonical_name_semantic_autofix",
@@ -2831,12 +2831,12 @@
         "providers": {
           "tm_simple": {
             "status": "active",
-            "recent_writes": 175
+            "recent_writes": 193
           },
           "free_google_translate": {
             "status": "active",
             "enabled": true,
-            "recent_writes": 123
+            "recent_writes": 121
           },
           "google_cloud": {
             "status": "disabled",
@@ -2954,7 +2954,7 @@
           "used_pct": 77.6,
           "monthly_cap": 250.0,
           "spent": 194.0,
-          "latest_age_s": 1316.944608,
+          "latest_age_s": 1513.64352,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -2982,7 +2982,7 @@
           "pipeline_status": "active",
           "pipeline_severity": "ok",
           "pipeline_reason": "ok",
-          "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1523",
+          "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1491",
           "window_seconds": 86400
         }
       },
@@ -2990,22 +2990,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:19:24.291873Z",
+      "generated_at_utc": "2026-04-29T21:21:51.015143Z",
       "available": true,
-      "lang": "de",
-      "json_file": "npc.json",
-      "surface": "npc",
+      "lang": "tr",
+      "json_file": "items.json",
+      "surface": "items",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 1980,
-      "keys_scanned": 711,
-      "keys_with_term_usages": 43,
-      "keys_with_conflicts": 7,
-      "term_conflicts_total": 13,
-      "term_conflict_rate_pct": 16.279,
-      "term_conflict_rate_delta_pct": 16.279,
+      "registry_terms_total": 9009,
+      "keys_scanned": 337,
+      "keys_with_term_usages": 125,
+      "keys_with_conflicts": 32,
+      "term_conflicts_total": 71,
+      "term_conflict_rate_pct": 25.6,
+      "term_conflict_rate_delta_pct": 25.6,
       "auto_fixed_english_name_leaks": 0,
-      "inflection_suspects_flagged": 0,
-      "manual_review_enqueued": 13,
+      "inflection_suspects_flagged": 1,
+      "manual_review_enqueued": 70,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3014,117 +3014,117 @@
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
       "conflict_type_breakdown": {
-        "canonical_term_missing": 7,
-        "english_name_leak": 6
+        "canonical_term_inflection_suspect": 1,
+        "canonical_term_missing": 70
       },
       "top_conflicts": [
         {
-          "key": "npc.a_majestic_warwolf.say_male",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "Tragen",
-          "canonical_en": "bear",
-          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "key": "item.10217.desc",
+          "conflict_type": "canonical_term_inflection_suspect",
+          "canonical": "kitap",
+          "canonical_en": "book",
+          "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
           "source_file": "items.json",
-          "source_key": "item.7174.name"
+          "source_key": "item.12276.name"
         },
         {
-          "key": "npc.a_majestic_warwolf.say_male",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Tragen",
-          "canonical_en": "bear",
-          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
           "source_file": "items.json",
-          "source_key": "item.7175.name"
+          "source_key": "item.116.name"
         },
         {
-          "key": "npc.a_majestic_warwolf.say_male",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Tragen",
-          "canonical_en": "Bear",
-          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
-          "source_file": "monsters.json",
-          "source_key": "monster.bear.name"
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.117.name"
         },
         {
-          "key": "npc.a_majestic_warwolf.say_male",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Tragen",
-          "canonical_en": "Bear",
-          "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
-          "source_file": "monsters.json",
-          "source_key": "monster.old_bear.name"
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.118.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.multi_30",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Drachen",
-          "canonical_en": "Dragon",
-          "translated_text": "Ein majestätischer Drache ist im Schlaf von der Wärme und Energie von tausend Sonnen umgeben. Die Ruhe seines Anblicks lässt Sie sanft lächeln. ...",
-          "source_file": "monsters.json",
-          "source_key": "monster.dragon.name"
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
+          "source_file": "items.json",
+          "source_key": "item.12763.name"
         },
         {
-          "key": "npc.al_dee.stdmod_37",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Stangen",
-          "canonical_en": "rods",
-          "translated_text": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
           "source_file": "items.json",
-          "source_key": "item.11825.name"
+          "source_key": "item.12764.name"
         },
         {
-          "key": "npc.al_dee.stdmod_37",
+          "key": "item.10247.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Stangen",
-          "canonical_en": "rods",
-          "translated_text": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandıkta bir dizi silah var",
           "source_file": "items.json",
-          "source_key": "item.11827.name"
+          "source_key": "item.14166.name"
         },
         {
-          "key": "npc.angus.say_60",
-          "conflict_type": "english_name_leak",
-          "canonical": "stein",
-          "canonical_en": "stone",
-          "translated_text": "In the ruins of north-western Edron you should be able to find a memory stone. Good luck.",
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
           "source_file": "items.json",
-          "source_key": "item.12007.name"
+          "source_key": "item.116.name"
         },
         {
-          "key": "npc.broken_servant_sentry.say_1",
-          "conflict_type": "english_name_leak",
-          "canonical": "Schleim",
-          "canonical_en": "slime",
-          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
           "source_file": "items.json",
-          "source_key": "item.6.name"
+          "source_key": "item.117.name"
         },
         {
-          "key": "npc.broken_servant_sentry.say_1",
-          "conflict_type": "english_name_leak",
-          "canonical": "Schleim",
-          "canonical_en": "Slime",
-          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
-          "source_file": "monsters.json",
-          "source_key": "monster.slime.name"
-        },
-        {
-          "key": "npc.broken_servant_sentry.say_2",
-          "conflict_type": "english_name_leak",
-          "canonical": "Schleim",
-          "canonical_en": "slime",
-          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
           "source_file": "items.json",
-          "source_key": "item.6.name"
+          "source_key": "item.118.name"
         },
         {
-          "key": "npc.broken_servant_sentry.say_2",
-          "conflict_type": "english_name_leak",
-          "canonical": "Schleim",
-          "canonical_en": "Slime",
-          "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
-          "source_file": "monsters.json",
-          "source_key": "monster.slime.name"
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+          "source_file": "items.json",
+          "source_key": "item.12763.name"
+        },
+        {
+          "key": "item.11328.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "kasa",
+          "canonical_en": "crate",
+          "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+          "source_file": "items.json",
+          "source_key": "item.12764.name"
         }
       ]
     },
@@ -3134,7 +3134,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 398,
-      "oldest_visible_pending_age_s": 25874,
+      "oldest_visible_pending_age_s": 26020,
       "top_langs": [
         {
           "lang": "ru",
@@ -3172,14 +3172,14 @@
         }
       ],
       "deferred_state_keys_total": 8918,
-      "deferred_state_updated_at": "2026-04-29T21:18:44.158871Z",
-      "deferred_state_age_s": 37,
+      "deferred_state_updated_at": "2026-04-29T21:21:31.525421Z",
+      "deferred_state_age_s": 16,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 6,
+        "suppressed_manual_review": 72,
         "deduped_ttl": 0,
-        "manual_review_escalations": 39,
+        "manual_review_escalations": 0,
         "partial_staged": 0,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
@@ -3188,7 +3188,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T21:19:24.632140Z",
+      "generated_at_utc": "2026-04-29T21:21:51.385043Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3203,16 +3203,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 181,
+          "value": 10,
           "threshold": 300,
-          "detail": "Heartbeat świeży (181s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=de:npc.json].",
+          "detail": "Heartbeat świeży (10s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=tr:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 41,
+          "value": 22,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3232,7 +3232,7 @@
           "severity": "warning",
           "value": {
             "pending": 398,
-            "oldest_s": 25874
+            "oldest_s": 26020
           },
           "threshold": {
             "pending_min": 200,

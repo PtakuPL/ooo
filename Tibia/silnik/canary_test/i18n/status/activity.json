@@ -1,17 +1,47 @@
 {
-  "category": "tr",
+  "category": "es",
   "cycle": 12,
   "eta_seconds": 0,
-  "file": "items.json",
-  "generated_at_utc": "2026-04-29T21:19:01Z",
+  "file": "server.json",
+  "generated_at_utc": "2026-04-29T21:21:48Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
-    "total": 30,
+    "total": 9,
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 12,
+      "file": "server.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:21:48Z"
+    },
+    {
+      "action": "update",
+      "category": "tr",
+      "cycle": 12,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T21:21:33Z"
+    },
+    {
+      "action": "update",
+      "category": "tr",
+      "cycle": 12,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:20:43Z"
+    },
     {
       "action": "update",
       "category": "tr",
@@ -81,36 +111,6 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T21:13:56Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 11,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:12:26Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 11,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-04-29T21:12:12Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 10,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:10:12Z"
     }
   ],
   "stage": "heartbeat_tick",

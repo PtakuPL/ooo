@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-04-29T21:19:21.054828Z",
+  "timestamp": "2026-04-29T21:21:47.486987Z",
   "global": {
     "total_reference_keys": 3875872,
-    "translated_keys": 711792,
-    "real_translated_keys": 438547,
+    "translated_keys": 711822,
+    "real_translated_keys": 438577,
     "english_copy_keys": 409037,
-    "placeholder_keys": 2174166,
+    "placeholder_keys": 2174136,
     "reference_keys": 7969,
     "missing_keys": 856235,
     "missing_files": 11,
-    "completion_pct": 18.36,
-    "nominal_completion_pct": 18.36,
-    "real_completion_pct": 11.31
+    "completion_pct": 18.37,
+    "nominal_completion_pct": 18.37,
+    "real_completion_pct": 11.32
   },
   "migration": {
     "files_total": 15,
@@ -54,18 +54,18 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 5058,
-    "guard_reports_blocked": 4910,
+    "guard_reports_total": 5059,
+    "guard_reports_blocked": 4911,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 4910
+    "cannot_translate_reports_visible": 4911
   },
   "cache": {
-    "lang_stats_hits": 52,
-    "lang_stats_misses": 0,
-    "lang_stats_hit_pct": 100.0,
-    "lang_stats_mode": "warm-cache",
-    "lang_file_hits": 2028,
-    "lang_file_misses": 0,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
+    "lang_stats_mode": "mixed",
+    "lang_file_hits": 2027,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T20:19:19.718154Z",
-    "window_end_utc": "2026-04-29T21:19:19.718154Z",
+    "window_start_utc": "2026-04-29T20:21:45.742195Z",
+    "window_end_utc": "2026-04-29T21:21:45.742195Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -97,12 +97,12 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 745,
+    "translated": 775,
     "guard_fail": 2,
     "guard_fail_rate_pct": 0.3,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 745.0,
+    "throughput_keys_per_h": 775.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
     "suspicious_total": 648,
@@ -132,7 +132,7 @@
       },
       {
         "target": "tr/items.json",
-        "translated": 30,
+        "translated": 60,
         "guard_fail": 0,
         "guard_command": 0
       },
@@ -186,15 +186,15 @@
     },
     "dashboard": {
       "tr": {
-        "last_cycle": "2026-04-29T20:21:53.177865Z",
+        "last_cycle": "2026-04-29T21:21:28.606174Z",
         "last_translated": 30,
         "total_suspicious": 7745,
         "total_rejected": 4720,
         "total_gt_guard_fail": 7501,
-        "cycles": 350,
+        "cycles": 351,
         "last_audit": "2026-04-29T20:44:23.154409Z",
         "issues_count": 59871,
-        "quality_score": 62.6
+        "quality_score": 62.7
       },
       "pl": {
         "last_cycle": "2026-04-23T19:17:22.090384Z",
@@ -1350,22 +1350,22 @@
       "language_name": "Turecki",
       "scope": "global",
       "total_reference_keys": 74536,
-      "translated_keys": 26679,
-      "nominal_translated_keys": 26679,
-      "real_translated_keys": 24076,
+      "translated_keys": 26709,
+      "nominal_translated_keys": 26709,
+      "real_translated_keys": 24106,
       "english_copy_keys": 3838,
-      "placeholder_keys": 46636,
+      "placeholder_keys": 46606,
       "reference_keys": 163,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 35.79,
-      "nominal_completion_pct": 35.79,
-      "real_completion_pct": 32.3,
+      "completion_pct": 35.83,
+      "nominal_completion_pct": 35.83,
+      "real_completion_pct": 32.34,
       "server_keys": 70637,
-      "server_translated": 24720,
-      "server_real_translated": 22177,
-      "server_pct": 35.0,
-      "server_real_pct": 31.4,
+      "server_translated": 24750,
+      "server_real_translated": 22207,
+      "server_pct": 35.04,
+      "server_real_pct": 31.44,
       "client_keys": 3899,
       "client_translated": 1959,
       "client_real_translated": 1899,

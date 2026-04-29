@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:45:48.478609Z",
+  "generated_at_utc": "2026-04-29T23:48:07.275055Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
@@ -247,10 +247,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 109.6,
+      "used_pct": 111.6,
       "monthly_cap": 250.0,
-      "spent": 274.0,
-      "latest_age_s": 400.057991,
+      "spent": 279.0,
+      "latest_age_s": 48.612745,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

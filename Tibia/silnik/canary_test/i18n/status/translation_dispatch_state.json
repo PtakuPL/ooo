@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T19:13:56.518701Z",
-  "cycle_counter": 13281,
-  "last_target_key": "ru:items.json",
-  "last_pending_total": 24068,
-  "last_marker_todo": 24068,
+  "timestamp": "2026-04-29T19:31:43.101508Z",
+  "cycle_counter": 13282,
+  "last_target_key": "cs:items.json",
+  "last_pending_total": 18036,
+  "last_marker_todo": 18036,
   "last_tier": 2,
   "last_cat_priority": 1,
   "candidates_count": 96,
@@ -864,7 +864,5 @@
         }
       }
     }
-  },
-  "last_phase": "PRE_MIGRATION",
-  "last_phase_ts": "2026-04-29T21:14:20"
+  }
 }

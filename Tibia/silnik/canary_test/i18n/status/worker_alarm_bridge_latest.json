@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:13:55.656251Z",
+  "generated_at_utc": "2026-04-29T19:31:26.353825Z",
   "cycle": 1,
   "open_alarms": [
-    {
-      "code": "DEFERRED_RETRY_PIPELINE_WARNING",
-      "severity": "warning",
-      "source": "statusd_doctor.json",
-      "detail": "DEFERRED_RETRY_PIPELINE_WARNING: status=deferred_backlog_pressure tracked_keys=8885 retry_due_now=5396 manual_locked=2939 cooldown_locked=0 manual_queue=3514 deferred_backlog=52058 deferred_recent_1h=38 latest_age=23.403"
-    },
     {
       "code": "FIXTURE_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5353115.5s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
+      "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5353726.9s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
+    },
+    {
+      "code": "GUARD_REPORT_STALE",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 862s"
     },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
@@ -37,22 +37,24 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1175 rate=31.292% window=6.0h top_lang=es:448 per_lang=[es:448(107.952%/warning)] per_domain=[npc.json:264(59.459%/warning),server.json:182(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1145 rate=31.072% window=6.0h top_lang=es:438 per_lang=[es:438(105.036%/warning)] per_domain=[npc.json:267(59.732%/warning),server.json:169(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=25.6% delta=25.6% total=71 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
     }
   ],
-  "resolved_this_cycle": [],
+  "resolved_this_cycle": [
+    "DEFERRED_RETRY_PIPELINE_WARNING"
+  ],
   "newly_opened": [
-    "TERM_CONSISTENCY_REGRESSION"
+    "GUARD_REPORT_STALE"
   ],
   "summary": {
     "open_count": 7,
-    "resolved_count": 0,
+    "resolved_count": 1,
     "tracked_alarms": 32
   },
   "queue_snapshot": {
@@ -64,6 +66,10 @@
     "selected_action": "none",
     "reason": "write_starvation_or_queue_starvation",
     "suppressed_by_cooldown": true,
-    "cooldown_remaining_cycles": 2
+    "cooldown_remaining_cycles": 2,
+    "selected_command": "-",
+    "result": "resolved_update",
+    "result_reason": "resolved_count=1",
+    "updated_at_utc": "2026-04-29T19:31:26.353825Z"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T20:10:43.071519Z",
+  "updated_at": "2026-04-29T20:11:05.046935Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -35653,18 +35653,18 @@
       "lang": "de",
       "json_file": "otclient_modules.json",
       "key": "otclient_modules.charms.tr_34",
-      "attempts_total": 7,
+      "attempts_total": 8,
       "attempts_by_bucket": {
         "critical": 2,
         "default": 3,
-        "retry_loop_cooldown": 2
+        "retry_loop_cooldown": 3
       },
-      "last_reason": "gt_identity_retry_identical_to_en",
-      "last_bucket": "default",
-      "last_attempt_epoch": 1777479602,
-      "last_seen_epoch": 1777479602,
-      "next_retry_not_before_epoch": 1777501202,
-      "next_retry_not_before_utc": "2026-04-29T22:20:02Z",
+      "last_reason": "retry_loop_cooldown_default",
+      "last_bucket": "retry_loop_cooldown",
+      "last_attempt_epoch": 1777493463,
+      "last_seen_epoch": 1777493463,
+      "next_retry_not_before_epoch": 1777579863,
+      "next_retry_not_before_utc": "2026-04-30T20:11:03Z",
       "manual_review": false,
       "first_seen_epoch": 1774249497,
       "first_seen_utc": "2026-03-23T07:04:57Z",
@@ -35673,8 +35673,8 @@
       "partial_last_stage_utc": "",
       "partial_active": false,
       "partial_completed": false,
-      "last_status": "pending",
-      "cooldown": false
+      "last_status": "cooldown",
+      "cooldown": true
     },
     "bc7e323ddb737ebc300f8744": {
       "lang": "pt",
@@ -224949,14 +224949,14 @@
     }
   },
   "stats": {
-    "enqueued": 0,
+    "enqueued": 1,
     "suppressed_cooldown": 0,
     "suppressed_manual_review": 0,
-    "deduped_ttl": 0,
-    "manual_review_escalations": 1,
-    "partial_staged": 0,
+    "deduped_ttl": 1,
+    "manual_review_escalations": 5,
+    "partial_staged": 1,
     "partial_completed": 0,
-    "retry_loop_cooldown": 0,
+    "retry_loop_cooldown": 1,
     "retry_loop_manual_review": 0
   }
 }

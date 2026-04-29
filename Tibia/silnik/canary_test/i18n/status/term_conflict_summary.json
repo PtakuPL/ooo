@@ -1,141 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:20:19.538439Z",
-  "lang": "de",
-  "json_file": "npc.json",
-  "surface": "npc",
+  "generated_at_utc": "2026-04-29T23:22:18.653538Z",
+  "lang": "tr",
+  "json_file": "items.json",
+  "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 13,
+  "term_conflicts_total": 71,
   "keys_visited": 2000,
-  "keys_scanned": 1246,
+  "keys_scanned": 337,
   "visit_limit_hit": true,
-  "keys_with_term_usages": 90,
-  "keys_with_conflicts": 7,
-  "term_conflict_rate_pct": 7.778,
-  "term_conflict_rate_delta_pct": 7.778,
-  "registry_terms_total": 1980,
+  "keys_with_term_usages": 125,
+  "keys_with_conflicts": 32,
+  "term_conflict_rate_pct": 25.6,
+  "term_conflict_rate_delta_pct": 25.6,
+  "registry_terms_total": 9069,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 0,
-  "manual_review_enqueued": 13,
+  "inflection_suspects_flagged": 1,
+  "manual_review_enqueued": 70,
   "conflict_type_breakdown": {
-    "canonical_term_missing": 7,
-    "english_name_leak": 6
+    "canonical_term_inflection_suspect": 1,
+    "canonical_term_missing": 70
   },
   "surface_breakdown": {
-    "npc": {
-      "keys_with_term_usages": 90,
-      "keys_with_conflicts": 7,
-      "term_conflicts_total": 13
+    "items": {
+      "keys_with_term_usages": 125,
+      "keys_with_conflicts": 32,
+      "term_conflicts_total": 71
     }
   },
   "top_conflicts": [
     {
-      "key": "npc.a_majestic_warwolf.say_male",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Tragen",
-      "canonical_en": "bear",
-      "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "kitap",
+      "canonical_en": "book",
+      "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
       "source_file": "items.json",
-      "source_key": "item.7174.name"
+      "source_key": "item.12276.name"
     },
     {
-      "key": "npc.a_majestic_warwolf.say_male",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Tragen",
-      "canonical_en": "bear",
-      "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.7175.name"
+      "source_key": "item.116.name"
     },
     {
-      "key": "npc.a_majestic_warwolf.say_male",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Tragen",
-      "canonical_en": "Bear",
-      "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
-      "source_file": "monsters.json",
-      "source_key": "monster.bear.name"
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
+      "source_file": "items.json",
+      "source_key": "item.117.name"
     },
     {
-      "key": "npc.a_majestic_warwolf.say_male",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Tragen",
-      "canonical_en": "Bear",
-      "translated_text": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
-      "source_file": "monsters.json",
-      "source_key": "monster.old_bear.name"
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
+      "source_file": "items.json",
+      "source_key": "item.118.name"
     },
     {
-      "key": "npc.a_sleeping_dragon.multi_30",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Drachen",
-      "canonical_en": "Dragon",
-      "translated_text": "Ein majestätischer Drache ist im Schlaf von der Wärme und Energie von tausend Sonnen umgeben. Die Ruhe seines Anblicks lässt Sie sanft lächeln. ...",
-      "source_file": "monsters.json",
-      "source_key": "monster.dragon.name"
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
+      "source_file": "items.json",
+      "source_key": "item.12763.name"
     },
     {
-      "key": "npc.al_dee.stdmod_37",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Stangen",
-      "canonical_en": "rods",
-      "translated_text": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.11825.name"
+      "source_key": "item.12764.name"
     },
     {
-      "key": "npc.al_dee.stdmod_37",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Stangen",
-      "canonical_en": "rods",
-      "translated_text": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.11827.name"
+      "source_key": "item.14166.name"
     },
     {
-      "key": "npc.angus.say_60",
-      "conflict_type": "english_name_leak",
-      "canonical": "stein",
-      "canonical_en": "stone",
-      "translated_text": "In the ruins of north-western Edron you should be able to find a memory stone. Good luck.",
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
       "source_file": "items.json",
-      "source_key": "item.12007.name"
+      "source_key": "item.116.name"
     },
     {
-      "key": "npc.broken_servant_sentry.say_1",
-      "conflict_type": "english_name_leak",
-      "canonical": "Schleim",
-      "canonical_en": "slime",
-      "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
       "source_file": "items.json",
-      "source_key": "item.6.name"
+      "source_key": "item.117.name"
     },
     {
-      "key": "npc.broken_servant_sentry.say_1",
-      "conflict_type": "english_name_leak",
-      "canonical": "Schleim",
-      "canonical_en": "Slime",
-      "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
-      "source_file": "monsters.json",
-      "source_key": "monster.slime.name"
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_2",
-      "conflict_type": "english_name_leak",
-      "canonical": "Schleim",
-      "canonical_en": "slime",
-      "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
       "source_file": "items.json",
-      "source_key": "item.6.name"
+      "source_key": "item.118.name"
     },
     {
-      "key": "npc.broken_servant_sentry.say_2",
-      "conflict_type": "english_name_leak",
-      "canonical": "Schleim",
-      "canonical_en": "Slime",
-      "translated_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
-      "source_file": "monsters.json",
-      "source_key": "monster.slime.name"
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "source_file": "items.json",
+      "source_key": "item.12763.name"
+    },
+    {
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "source_file": "items.json",
+      "source_key": "item.12764.name"
     }
   ]
 }

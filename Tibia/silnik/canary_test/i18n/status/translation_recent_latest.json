@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T23:20:20.555725Z",
-  "language": "de",
-  "json_file": "npc.json",
-  "translated": 289,
+  "timestamp": "2026-04-29T23:22:22.216825Z",
+  "language": "tr",
+  "json_file": "items.json",
+  "translated": 30,
   "entries": [
     {
-      "key": "npc.arkulius.multi_7",
-      "en": "When you use an obsidian knife on it's corpse you hopefully get some of the precious neutral matter. It's the only way to revive my dear friend Alverus!!",
-      "translated": "Wenn Sie ein Obsidianmesser auf die Leiche anwenden, erhalten Sie hoffentlich etwas von der wertvollen neutralen Substanz. Nur so kann ich meinen lieben Freund Alverus wiederbeleben!!",
-      "source": "google_translate"
+      "key": "item.14455.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.multi_8",
-      "en": "Okay, listen closely: First of all, you need to gather 20 enchanted amethysts in order to go to the energy sphere. Deep under the academy, one floor below the elemental shrines, there is a machine. Put the gems in there and activate it. ...",
-      "translated": "Okay, hören Sie genau zu: Zunächst müssen Sie 20 verzauberte Amethyste sammeln, um in die Energiesphäre zu gelangen. Tief unter der Akademie, eine Etage unter den Elementarschreinen, steht eine Maschine. Legen Sie die Edelsteine ​​hinein und aktivieren Sie es. ...",
-      "source": "google_translate"
+      "key": "item.14456.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.multi_9",
-      "en": "Once you got there, find a way to gather elemental energy in any form. You will face energy elementals, that's for sure, but I don't know how the energy is stored. ...",
-      "translated": "Sobald Sie dort angekommen sind, finden Sie einen Weg, elementare Energie in jeglicher Form zu sammeln. Ihr werdet sicher mit Energieelementaren konfrontiert werden, aber ich weiß nicht, wie die Energie gespeichert wird. ...",
-      "source": "google_translate"
+      "key": "item.14457.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.say_1",
-      "en": "You need some kind of pure elemental soil from the Overlord. Come back when you've got it.",
-      "translated": "Sie benötigen eine Art reine Elementarerde vom Overlord. Kommen Sie zurück, wenn Sie es haben.",
-      "source": "google_translate"
+      "key": "item.14458.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.say_2",
-      "en": "AMAZING!! I'm going to start immediately with the research. If it turns out the way I expect it, Alverus will be revived soon!! Here, take this as a reward and try to collect more of this substance. I'll make you a good offer, I promise.",
-      "translated": "TOLL!! Ich werde sofort mit der Recherche beginnen. Wenn es so läuft, wie ich es erwarte, wird Alverus bald wiederbelebt!! Nehmen Sie dies als Belohnung und versuchen Sie, mehr von dieser Substanz zu sammeln. Ich mache Ihnen ein gutes Angebot, versprochen.",
-      "source": "google_translate"
+      "key": "item.14459.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.say_3",
-      "en": "Good, don't waste time! Come back here when you have the elemental object!",
-      "translated": "Gut, verschwenden Sie keine Zeit! Kommen Sie hierher zurück, wenn Sie das Elementarobjekt haben!",
-      "source": "google_translate"
+      "key": "item.1446.name",
+      "en": "lava wall",
+      "translated": "lav duvar",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_1",
-      "en": "...the arithmetical paradox has the same value in a metaphysical way, then...",
-      "translated": "...das arithmetische Paradoxon hat auf metaphysische Weise den gleichen Wert, dann...",
-      "source": "google_translate"
+      "key": "item.14460.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_2",
-      "en": "Oh my! Alverus!! Did you really...?!?! I have to recalculate it to make sure that I made no mistake.",
-      "translated": "Oh mein Gott! Alverus!! Hast du wirklich...?!?! Ich muss es neu berechnen, um sicherzustellen, dass ich keinen Fehler gemacht habe.",
-      "source": "google_translate"
+      "key": "item.14461.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_4",
-      "en": "...the minimum square deviation could cause a dislocation, in a matter of fact...",
-      "translated": "...die minimale quadratische Abweichung könnte tatsächlich eine Verschiebung verursachen ...",
-      "source": "google_translate"
+      "key": "item.14462.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_5",
-      "en": "...it could be possible to bring the sphere to a destination where...",
-      "translated": "...es könnte möglich sein, die Kugel einen Ort zu bringen, dem...",
-      "source": "google_translate"
+      "key": "item.14463.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_6",
-      "en": "Yes, that's it! The elementary particle are corresponding to the... the ... UNBELIEVEABLE!!!",
-      "translated": "Ja, das ist es! Die Elementarteilchen entsprechen dem... dem... UNGLAUBLICH!!!",
-      "source": "google_translate"
+      "key": "item.14464.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_1",
-      "en": "...the arithmetical paradox has the same value in a metaphysical way, then...",
-      "translated": "...das arithmetische Paradoxon hat auf metaphysische Weise den gleichen Wert, dann...",
-      "source": "google_translate"
+      "key": "item.14465.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_2",
-      "en": "Oh my! Alverus!! Did you really...?!?! I have to recalculate it to make sure that I made no mistake.",
-      "translated": "Oh mein Gott! Alverus!! Hast du wirklich...?!?! Ich muss es neu berechnen, um sicherzustellen, dass ich keinen Fehler gemacht habe.",
-      "source": "google_translate"
+      "key": "item.14466.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_4",
-      "en": "...the minimum square deviation could cause a dislocation, in a matter of fact...",
-      "translated": "...die minimale quadratische Abweichung könnte tatsächlich eine Verschiebung verursachen ...",
-      "source": "google_translate"
+      "key": "item.14467.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_5",
-      "en": "...it could be possible to bring the sphere to a destination where...",
-      "translated": "...es könnte möglich sein, die Kugel einen Ort zu bringen, dem...",
-      "source": "google_translate"
+      "key": "item.14468.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_6",
-      "en": "Yes, that's it! The elementary particle are corresponding to the... the ... UNBELIEVEABLE!!!",
-      "translated": "Ja, das ist es! Die Elementarteilchen entsprechen dem... dem... UNGLAUBLICH!!!",
-      "source": "google_translate"
+      "key": "item.14469.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.armenius.say_1",
-      "en": "What kind of strange offer is this? You're actually offering me a cookie?",
-      "translated": "Was ist das denn für ein seltsames Angebot? Du bietest mir tatsächlich einen Keks an?",
-      "source": "google_translate"
+      "key": "item.1447.name",
+      "en": "lava wall",
+      "translated": "lav duvar",
+      "source": "simple"
     },
     {
-      "key": "npc.armenius.say_2",
-      "en": "It'd be better for you to leave now.",
-      "translated": "Es wäre besser, wenn du jetzt gehst.",
-      "source": "google_translate"
+      "key": "item.14470.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.armenius.say_3",
-      "en": "Errrkss - coughcough - what the - heck did you put in there? Get out of my sight!",
-      "translated": "Ähm, hust, hust – was zum Teufel hast du da reingesteckt? Geh mir aus den Augen!",
-      "source": "google_translate"
+      "key": "item.14471.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.armenius.say_4",
-      "en": "Oh, the nerve. Sod off.",
-      "translated": "Oh, der Nerv. Verpiss dich.",
-      "source": "google_translate"
+      "key": "item.14472.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     }
   ],
   "filtered_untranslated_marker": 0

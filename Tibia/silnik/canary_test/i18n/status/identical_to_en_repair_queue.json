@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:17:37.031645Z",
+  "timestamp": "2026-04-29T23:22:40.127631Z",
   "priority_langs": [
     "es",
     "pl",
@@ -70,7 +70,7 @@
     "es": 704,
     "pl": 767,
     "cs": 15153,
-    "de": 19343,
+    "de": 19073,
     "fr": 13129,
     "hu": 638,
     "it": 2993,
@@ -505,7 +505,7 @@
     {
       "lang": "de",
       "json_file": "npc.json",
-      "identical_to_en": 11483,
+      "identical_to_en": 11213,
       "domain_priority": 0
     },
     {

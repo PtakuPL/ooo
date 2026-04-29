@@ -1,14 +1,14 @@
 {
   "tr": {
-    "last_cycle": "2026-04-29T22:26:29.423927Z",
+    "last_cycle": "2026-04-29T23:22:22.215601Z",
     "last_translated": 30,
     "total_suspicious": 7745,
     "total_rejected": 4720,
     "total_gt_guard_fail": 7501,
-    "cycles": 352,
+    "cycles": 353,
     "last_audit": "2026-04-29T22:59:35.791356Z",
     "issues_count": 60115,
-    "quality_score": 71.6
+    "quality_score": 71.7
   },
   "pl": {
     "last_cycle": "2026-04-23T19:17:22.090384Z",

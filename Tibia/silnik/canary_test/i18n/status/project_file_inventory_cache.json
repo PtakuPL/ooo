@@ -1,7 +1,7 @@
 {
-  "timestamp": 1777504269,
+  "timestamp": 1777504963,
   "ttl_sec": 600,
-  "all_project_files": 25565,
+  "all_project_files": 25564,
   "files_by_type": {
     ".yml": 20,
     ".txt": 84,
@@ -11,6 +11,7 @@
     ".pid": 5,
     ".identifier": 28,
     ".log": 78,
+    ".tmp": 1,
     ".bat": 7,
     ".bak": 3090,
     ".faza2": 1,
@@ -42,8 +43,6 @@
     ".jsonl": 41,
     ".tsv": 3,
     ".prev": 1,
-    ".tmp": 1,
-    ".w": 1,
     ".bak_20260225_2331": 4,
     ".20260214_132041": 1,
     ".20260214_132040": 1,

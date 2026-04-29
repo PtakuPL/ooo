@@ -1,18 +1,106 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:20:20.564189Z",
-  "lang": "de",
+  "generated_at_utc": "2026-04-29T23:22:23.900634Z",
+  "lang": "tr",
   "source_files": [
     "items.json",
     "monsters.json",
     "spells.json"
   ],
-  "canonical_terms_total": 1471,
-  "total_conflicted_terms": 0,
-  "case_only_conflicts": 0,
-  "semantic_conflicts": 0,
-  "conflict_rate_pct": 0.0,
-  "examples": [],
+  "canonical_terms_total": 4592,
+  "total_conflicted_terms": 3,
+  "case_only_conflicts": 2,
+  "semantic_conflicts": 1,
+  "conflict_rate_pct": 0.07,
+  "examples": [
+    {
+      "en_name": "dead renegade knight",
+      "selected_translation": "ölü hain şövalye",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "ölü hain şövalye",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.22015.name",
+            "item.22020.name"
+          ]
+        },
+        {
+          "translated": "ölü dönek şövalye",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.22021.name",
+            "item.22022.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "hive pore",
+      "selected_translation": "kovan gözeneği",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "kovan gözeneği",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.14064.name",
+            "item.14171.name"
+          ]
+        },
+        {
+          "translated": "Kovan gözeneği",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.hive_pore.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "pillar",
+      "selected_translation": "sütun",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "sütun",
+          "count": 17,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.10954.name",
+            "item.11047.name",
+            "item.11053.name",
+            "item.11057.name"
+          ]
+        },
+        {
+          "translated": "Sütun",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.pillar.name"
+          ]
+        }
+      ]
+    }
+  ],
   "case_only_autofixed": 0,
   "case_only_autofixed_keys": [],
   "semantic_autofixed": 0,
@@ -21,6 +109,9 @@
   "semantic_quality_blocked_keys": [],
   "existing_quality_sanitized": 0,
   "existing_quality_sanitized_keys": [],
-  "review_candidates_total": 0,
-  "review_keys": []
+  "review_candidates_total": 2,
+  "review_keys": [
+    "item.22021.name",
+    "item.22022.name"
+  ]
 }

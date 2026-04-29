@@ -61539,11 +61539,335 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:24.451773Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.15822.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "As long as it is immersed that deep you won't be able to get a whetstone.",
+      "attempted_translation": "Finché è immerso così in profondità non sarai in grado di ottenere una pietra per affilare.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cote' for EN 'whetstone' from items.json:item.15826.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:24.558141Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.15823.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "As long as it is immersed that deep you won't be able to get a whetstone.",
+      "attempted_translation": "Finché è immerso così in profondità non sarai in grado di ottenere una pietra per affilare.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cote' for EN 'whetstone' from items.json:item.15826.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:24.746159Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.15824.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "As long as it is immersed that deep you won't be able to get a whetstone.",
+      "attempted_translation": "Finché è immerso così in profondità non sarai in grado di ottenere una pietra per affilare.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cote' for EN 'whetstone' from items.json:item.15826.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:25.137982Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.15826.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You have to deliver the Whetstone while it is still hot. It will crumble within one hour",
+      "attempted_translation": "Devi consegnare la pietra per affilare mentre è ancora calda. Si sbriciolerà entro un'ora",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cote' for EN 'whetstone' from items.json:item.15826.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:25.356784Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.15828.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "Il porcellino deve essere restituito al suo custode entro un'ora",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'piccolo maiale' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:26.603702Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.15833.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little pig needs to be returned to its keeper within an hour",
+      "attempted_translation": "Il porcellino deve essere restituito al suo custode entro un'ora",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'piccolo maiale' for EN 'little pig' from items.json:item.15828.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:27.842228Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.16161.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Even in the light of day, the stars seem to reflect in each facet of this crystalline axe",
+      "attempted_translation": "Anche alla luce del giorno, le stelle sembrano riflettersi in ogni sfaccettatura di quest'ascia cristallina",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Leggero' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:34.489088Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3203.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "animate dead rune",
+      "attempted_translation": "animare la runa morta",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Anima la runa morta' for EN 'animate dead rune', but source key item.3203.name still uses conflicting variant 'animare la runa morta'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:34.615176Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3177.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "convince creature rune",
+      "attempted_translation": "convincere la runa della creatura",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa Convinci la Creatura' for EN 'convince creature rune', but source key item.3177.name still uses conflicting variant 'convincere la runa della creatura'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:35.742109Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3153.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "cure poison rune",
+      "attempted_translation": "cura la runa del veleno",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa curativa del veleno' for EN 'cure poison rune', but source key item.3153.name still uses conflicting variant 'cura la runa del veleno'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:35.987512Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3148.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "destroy field rune",
+      "attempted_translation": "distruggere la runa del campo",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Distruggi la runa del campo' for EN 'destroy field rune', but source key item.3148.name still uses conflicting variant 'distruggere la runa del campo'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:41.043987Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3192.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fire bomb rune",
+      "attempted_translation": "runa della bomba incendiaria",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa della bomba di fuoco' for EN 'fire bomb rune', but source key item.3192.name still uses conflicting variant 'runa della bomba incendiaria'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:50:41.634959Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.30321.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fly agaric",
+      "attempted_translation": "agarico volante",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'agarico di mosca' for EN 'fly agaric', but source key item.30321.name still uses conflicting variant 'agarico volante'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:51:00.569610Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3152.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "intense healing rune",
+      "attempted_translation": "intensa runa curativa",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa curativa intensa' for EN 'intense healing rune', but source key item.3152.name still uses conflicting variant 'intensa runa curativa'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:51:00.684664Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.23729.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "lost time",
+      "attempted_translation": "tempo perso",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Tempo perduto' for EN 'lost time', but source key item.23729.name still uses conflicting variant 'tempo perso'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:51:37.826429Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3180.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "magic wall rune",
+      "attempted_translation": "runa magica del muro",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa del muro magico' for EN 'magic wall rune', but source key item.3180.name still uses conflicting variant 'runa magica del muro'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:51:37.929485Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.27588.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "opticorder rectifier",
+      "attempted_translation": "raddrizzatore ottico",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'raddrizzatore dell'ordine ottico' for EN 'opticorder rectifier', but source key item.27588.name still uses conflicting variant 'raddrizzatore ottico'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:51:56.124949Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3173.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "poison bomb rune",
+      "attempted_translation": "runa della bomba avvelenata",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa della bomba velenosa' for EN 'poison bomb rune', but source key item.3173.name still uses conflicting variant 'runa della bomba avvelenata'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3093
+    "total": 3111
   },
-  "updated_at": "2026-04-29T19:50:23.966435Z"
+  "updated_at": "2026-04-29T19:51:56.156589Z"
 }

@@ -1639,22 +1639,22 @@
   },
   {
     "date": "2026-04-29",
-    "hours_covered": 24,
+    "hours_covered": 25,
     "threshold": 24,
     "is_final": true,
     "ts_first": "2026-04-29T00:32:55Z",
-    "ts_last": "2026-04-29T19:46:16Z",
-    "translated": 15834,
+    "ts_last": "2026-04-29T19:50:43Z",
+    "translated": 16076,
     "guard_fail": 626,
-    "suspicious_high": 7394,
+    "suspicious_high": 7465,
     "identical_to_en": 0,
     "repair_start": 114185,
     "repair_end": 114156,
-    "cycles": 381,
+    "cycles": 385,
     "coverage_start": 17.91,
     "coverage_end": 18.34,
-    "guard_fail_pct": 3.8,
-    "throughput_per_h": 659.8,
+    "guard_fail_pct": 3.75,
+    "throughput_per_h": 643.0,
     "per_lang": {
       "cs": {
         "t": 3065,
@@ -1667,17 +1667,17 @@
         "cov": 46.3
       },
       "de": {
-        "t": 2556,
+        "t": 2663,
         "gf": 84,
         "cov": 67.98
       },
       "tr": {
-        "t": 2292,
+        "t": 2322,
         "gf": 0,
         "cov": 35.75
       },
       "ro": {
-        "t": 1998,
+        "t": 2048,
         "gf": 156,
         "cov": 69.83
       },
@@ -1687,27 +1687,27 @@
         "cov": 71.66
       },
       "es": {
-        "t": 1266,
+        "t": 1321,
         "gf": 0,
         "cov": 79.38
       }
     },
     "per_cat": {
       "items.json": {
-        "t": 13278,
+        "t": 13413,
         "gf": 542
       },
       "npc.json": {
-        "t": 1539,
+        "t": 1572,
         "gf": 42
       },
       "otclient_modules.json": {
-        "t": 1017,
+        "t": 1091,
         "gf": 42
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 1562
+      "AUTO_TRANSLATE": 1581
     },
     "migration_completed": 15,
     "migration_total": 15

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T18:49:15.612232Z",
+  "timestamp": "2026-04-29T19:50:38.277972Z",
   "schema_version": "1.0",
   "total_langs": 52,
   "total_domains": 39,
-  "total_genuine_checked": 436331,
+  "total_genuine_checked": 436516,
   "total_issues": 1367,
   "severity_totals": {
     "critical": 65,
@@ -13,9 +13,9 @@
   "issue_type_breakdown": {
     "punctuation_missing": 426,
     "html_tag_mismatch": 348,
-    "number_drift": 166,
+    "number_drift": 165,
     "length_anomaly": 145,
-    "bracket_mismatch": 64,
+    "bracket_mismatch": 65,
     "double_spaces": 61,
     "mixed_language": 49,
     "artifact_token": 43,
@@ -204,7 +204,7 @@
     {
       "lang": "de",
       "total_issues": 50,
-      "domains_affected": 8,
+      "domains_affected": 7,
       "critical": 1,
       "warning": 40,
       "info": 9,
@@ -212,8 +212,8 @@
         "npc.json": 29,
         "books.json": 10,
         "html.json": 4,
-        "client.json": 2,
-        "otclient_modules.json": 2
+        "otclient_modules.json": 3,
+        "client.json": 2
       }
     },
     {
@@ -710,10 +710,9 @@
     "dataroot.json": 8,
     "globalevents.json": 8,
     "arena.json": 6,
-    "otclient_modules.json": 2,
+    "otclient_modules.json": 3,
     "messages.json": 2,
     "php.json": 1,
-    "questlog.json": 1,
     "quests.json": 1
   },
   "issues": [
@@ -3318,6 +3317,16 @@
       "tr_sample": "Die Animus-Meisterschaft für diese Kreatur ist freigeschaltet.\nEs bringt %s%% Bonus-Erfahrungspunkte plus zusätzlich 0,1"
     },
     {
+      "type": "bracket_mismatch",
+      "severity": "warning",
+      "detail": "')': en=3 tr=4",
+      "lang": "de",
+      "domain": "otclient_modules.json",
+      "key": "otclient_modules.game_screenshot_otui.tr_4",
+      "en_sample": "Enable this option to save screenshots of the most important\nmoments of your Tibia career! Whenever one of the events yo",
+      "tr_sample": "Aktivieren Sie diese Option, um Screenshots der wichtigsten zu speichern\nMomente Ihrer Tibia Karriere! Wann immer eines "
+    },
+    {
       "type": "mixed_language",
       "severity": "info",
       "detail": ">=4 consecutive EN words found in translation",
@@ -3326,16 +3335,6 @@
       "key": "php.mailer.text2",
       "en_sample": "Error while sending mail to <strong>$mail_to</strong>. More info can be found in system/logs/mailer-error.log",
       "tr_sample": "Fehler beim Senden einer E-Mail an <strong>$mail_to</strong>. Weitere Informationen finden Sie in system/logs/mailer-err"
-    },
-    {
-      "type": "number_drift",
-      "severity": "warning",
-      "detail": "missing=['4']",
-      "lang": "de",
-      "domain": "questlog.json",
-      "key": "questlog.quest_10.mission_1.state_3",
-      "en_sample": "You cleaned 2 pipes of 4 from the garbage.",
-      "tr_sample": "Du hast 2 4er-Rohre vom Müll befreit."
     },
     {
       "type": "html_tag_mismatch",

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:33:54.310887Z",
+  "timestamp": "2026-04-29T20:35:57.385122Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711284,
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T19:33:51.475105Z",
-    "window_end_utc": "2026-04-29T20:33:51.475105Z",
+    "window_start_utc": "2026-04-29T19:35:55.280314Z",
+    "window_end_utc": "2026-04-29T20:35:55.280314Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -105,7 +105,7 @@
     "throughput_keys_per_h": 369.9,
     "throughput_runtime_hours": 1.3761,
     "throughput_runtime_source": "cycle_duration_ms",
-    "suspicious_total": 353,
+    "suspicious_total": 344,
     "deferred_total": 34,
     "top_deferred_reasons": [
       {

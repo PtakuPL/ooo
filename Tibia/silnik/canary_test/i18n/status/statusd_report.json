@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T20:33:58.852023Z",
+  "timestamp": "2026-04-29T20:35:17.140729Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 6760,
     "heartbeat_at": "2026-04-29T20:32:29Z",
-    "heartbeat_age_s": 89.9,
+    "heartbeat_age_s": 168.1,
     "cycle": 6,
     "mode": "continuous",
     "category": "?",
@@ -86,7 +86,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T20:33:58.852023Z",
+    "generated_at_utc": "2026-04-29T20:35:17.140729Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
@@ -97,17 +97,17 @@
     "current_file": "items.json",
     "cycle": 6,
     "heartbeat_at_utc": "2026-04-29T20:32:29Z",
-    "heartbeat_age_s": 89.852,
+    "heartbeat_age_s": 168.141,
     "worker": {
       "pid": 6760,
       "pid_alive": true,
       "heartbeat_at_utc": "2026-04-29T20:32:29Z",
-      "heartbeat_age_s": 89.852,
+      "heartbeat_age_s": 168.141,
       "mode": "continuous",
       "category": "",
       "cycle": 6,
-      "activity_heartbeat_at_utc": "2026-04-29T20:32:29Z",
-      "activity_heartbeat_age_s": 89.852
+      "activity_heartbeat_at_utc": "2026-04-29T20:34:00Z",
+      "activity_heartbeat_age_s": 77.141
     },
     "guardian": {
       "timestamp": "2026-04-29T20:33:47.036563Z",
@@ -127,7 +127,7 @@
       "pid": 9567,
       "owner_pid": 9567,
       "owner_pid_alive": true,
-      "lock_age_s": 12.0
+      "lock_age_s": 11.0
     },
     "thresholds": {
       "heartbeat_aging_seconds": 300.0,
@@ -519,7 +519,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T20:33:58.989703Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T20:35:17.214397Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1065,10 +1065,10 @@
     "critical_count": 15000,
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
-    "entries": 107,
-    "translated_total": 3449,
-    "suspicious_high_total": 861,
-    "suspicious_high_rate_pct": 24.964,
+    "entries": 106,
+    "translated_total": 3352,
+    "suspicious_high_total": 830,
+    "suspicious_high_rate_pct": 24.761,
     "status": "observed",
     "severity": "info",
     "worst_severity": "warning",
@@ -1079,7 +1079,7 @@
       },
       {
         "lang": "cs",
-        "suspicious_high": 231
+        "suspicious_high": 200
       },
       {
         "lang": "ro",
@@ -1105,7 +1105,7 @@
     "top_categories": [
       {
         "category": "items.json",
-        "suspicious_high": 517
+        "suspicious_high": 486
       },
       {
         "category": "npc.json",
@@ -1130,9 +1130,9 @@
       },
       {
         "lang": "cs",
-        "suspicious_high": 231,
-        "translated": 723,
-        "rate_pct": 31.95,
+        "suspicious_high": 200,
+        "translated": 626,
+        "rate_pct": 31.949,
         "severity": "info"
       },
       {
@@ -1174,9 +1174,9 @@
     "per_domain": [
       {
         "domain": "items.json",
-        "suspicious_high": 517,
-        "translated": 2650,
-        "rate_pct": 19.509,
+        "suspicious_high": 486,
+        "translated": 2553,
+        "rate_pct": 19.036,
         "severity": "info"
       },
       {
@@ -1208,8 +1208,8 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T20:33:42.554070Z",
-    "latest_age_s": 16.298,
+    "latest_timestamp": "2026-04-29T20:34:50.023856Z",
+    "latest_age_s": 27.117,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 8918,
@@ -1217,14 +1217,14 @@
     "manual_review_locked": 2936,
     "cooldown_locked": 1,
     "manual_review_queue_size": 3404,
-    "deferred_backlog_total": 1911,
+    "deferred_backlog_total": 1879,
     "deferred_backlog_total_all_time": 52124,
     "deferred_backlog_window_seconds": 86400,
     "deferred_recent_1h": 34,
     "top_reasons": [
       {
         "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-        "count": 1587
+        "count": 1555
       },
       {
         "reason": "existing_canonical_name_quality_mixed_scripts",
@@ -1268,7 +1268,7 @@
     "stats": {
       "enqueued": 0,
       "suppressed_cooldown": 0,
-      "suppressed_manual_review": 62,
+      "suppressed_manual_review": 108,
       "deduped_ttl": 0,
       "manual_review_escalations": 1
     },
@@ -1285,9 +1285,9 @@
     "cycle_delta": 0,
     "started_at": "",
     "active_minutes": 0.0,
-    "baseline_quality_rate_pct": 24.964,
-    "current_quality_rate_pct": 24.964,
-    "best_quality_rate_pct": 24.964,
+    "baseline_quality_rate_pct": 24.761,
+    "current_quality_rate_pct": 24.761,
+    "best_quality_rate_pct": 24.761,
     "quality_drop_pct": 0.0,
     "best_quality_drop_pct": 0.0,
     "lang_completion": {},

@@ -7728,7 +7728,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:55:23.738634Z",
+    "updated_at": "2026-04-29T23:00:14.333757Z",
     "en_hash": "a29bac723ca2d59ed78a2d715e17e92f",
     "attempted_preview": "sai",
     "attempted_hash": "a29bac723ca2d59ed78a2d715e17e92f"
@@ -7740,7 +7740,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:55:37.120349Z",
+    "updated_at": "2026-04-29T23:00:29.552921Z",
     "en_hash": "6845b7dc0f2f049ef0bd30a83292a969",
     "attempted_preview": "rum",
     "attempted_hash": "6845b7dc0f2f049ef0bd30a83292a969"
@@ -8082,7 +8082,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:55:49.241504Z",
+    "updated_at": "2026-04-29T23:00:53.194777Z",
     "en_hash": "5410d1752d6d66d5aef6dcd437b8056a",
     "attempted_preview": "trappola per insetti",
     "extra": {
@@ -8091,7 +8091,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:55:49Z"
+        "retry_not_before_utc": "2026-04-29T23:00:53Z"
       }
     },
     "attempted_hash": "3c1028d124610ba257a9e005f9aee85b"
@@ -8103,7 +8103,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:05.927659Z",
+    "updated_at": "2026-04-29T23:01:13.060012Z",
     "en_hash": "0020afc44d9d284397e941e6386940db",
     "attempted_preview": "Un contratto in cui qualche disperato ha venduto la sua anima",
     "extra": {
@@ -8125,7 +8125,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:06.906494Z",
+    "updated_at": "2026-04-29T23:01:43.596385Z",
     "en_hash": "4277fbe6c944de4097a47b4cc39005bc",
     "attempted_preview": "Questo pesce è stato salato e già preparato come provvista per i soldati",
     "extra": {
@@ -8147,7 +8147,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:10.440944Z",
+    "updated_at": "2026-04-29T23:01:46.531593Z",
     "en_hash": "719cdb3fd7a35cc7e24b9aa373f20a96",
     "attempted_preview": "Questa argilla è stata scavata da un terreno sacro",
     "extra": {
@@ -8169,7 +8169,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:10.618384Z",
+    "updated_at": "2026-04-29T23:01:46.648342Z",
     "en_hash": "96d91350b79f099110fa17a2e283ea10",
     "attempted_preview": "È una runa da muro energetico adornata",
     "extra": {
@@ -8191,7 +8191,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:10.794871Z",
+    "updated_at": "2026-04-29T23:01:46.764936Z",
     "en_hash": "96d91350b79f099110fa17a2e283ea10",
     "attempted_preview": "È una runa da muro energetico adornata",
     "extra": {
@@ -8213,7 +8213,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:12.933595Z",
+    "updated_at": "2026-04-29T23:01:47.748701Z",
     "en_hash": "95e68430b7fcf60c186f452198fba715",
     "attempted_preview": "Questo pesce, un ingrediente raro, può essere trovato solo nelle acque più sporche, torbide e fangose",
     "extra": {
@@ -8235,7 +8235,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:13.290275Z",
+    "updated_at": "2026-04-29T23:01:47.976260Z",
     "en_hash": "2ad4d54729d4a18de4f9fb5fef449c3c",
     "attempted_preview": "Questo è il vecchio elmo da minatore di Budrik.",
     "extra": {
@@ -8257,7 +8257,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:13.638129Z",
+    "updated_at": "2026-04-29T23:01:48.090007Z",
     "en_hash": "aa2ab6ed1566c584b962506b18482c20",
     "attempted_preview": "La strana forma di questa chiave brilla dolcemente alla luce",
     "extra": {
@@ -8279,7 +8279,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:16.753404Z",
+    "updated_at": "2026-04-29T23:01:50.823983Z",
     "en_hash": "502aa3f6387a8aa8f6aef4c3fa1cb124",
     "attempted_preview": "Usalo a casa tua per costruire un mobile per dolci",
     "extra": {
@@ -8301,7 +8301,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:19.048749Z",
+    "updated_at": "2026-04-29T23:01:53.585566Z",
     "en_hash": "55ce058c7a749973063cc5fdd638a4be",
     "attempted_preview": "Vedi un teschio di medusa. I serpenti dei suoi capelli sono ancora vivi. Premiato solo su TibiaPic.com",
     "extra": {
@@ -8323,7 +8323,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:19.742460Z",
+    "updated_at": "2026-04-29T23:01:53.790843Z",
     "en_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
     "attempted_preview": "Finché è immerso così in profondità non sarai in grado di ottenere una pietra per affilare.",
     "extra": {
@@ -8345,7 +8345,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:20.513143Z",
+    "updated_at": "2026-04-29T23:01:53.981491Z",
     "en_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
     "attempted_preview": "Finché è immerso così in profondità non sarai in grado di ottenere una pietra per affilare.",
     "extra": {
@@ -8367,7 +8367,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:56:34.660188Z",
+    "updated_at": "2026-04-29T23:01:54.174990Z",
     "en_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
     "attempted_preview": "Finché è immerso così in profondità non sarai in grado di ottenere una pietra per affilare.",
     "extra": {
@@ -8389,7 +8389,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:57:41.161094Z",
+    "updated_at": "2026-04-29T23:01:54.371609Z",
     "en_hash": "51467f4961cd9a8f78fdeff6dfa5aee6",
     "attempted_preview": "Devi consegnare la pietra per affilare mentre è ancora calda. Si sbriciolerà entro un'ora",
     "extra": {
@@ -8411,7 +8411,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:58:21.719092Z",
+    "updated_at": "2026-04-29T23:01:54.766316Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "Il porcellino deve essere restituito al suo custode entro un'ora",
     "extra": {
@@ -8433,7 +8433,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:58:25.167741Z",
+    "updated_at": "2026-04-29T23:01:55.754229Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "Il porcellino deve essere restituito al suo custode entro un'ora",
     "extra": {
@@ -8455,7 +8455,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:58:26.399008Z",
+    "updated_at": "2026-04-29T23:01:56.453818Z",
     "en_hash": "0f8b98d30e2ded148860fce1e059e14a",
     "attempted_preview": "Anche alla luce del giorno, le stelle sembrano riflettersi in ogni sfaccettatura di quest'ascia cristallina",
     "extra": {
@@ -8477,7 +8477,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:31.340056Z",
+    "updated_at": "2026-04-29T23:02:02.920109Z",
     "en_hash": "69c97276273d5b7f4faf11b058c37266",
     "attempted_preview": "animare la runa morta",
     "extra": {
@@ -8497,7 +8497,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:33.605280Z",
+    "updated_at": "2026-04-29T23:02:03.045459Z",
     "en_hash": "961fd74b70425c951d4cbbb14b6479e3",
     "attempted_preview": "convincere la runa della creatura",
     "extra": {
@@ -8517,7 +8517,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:33.693434Z",
+    "updated_at": "2026-04-29T23:02:07.336556Z",
     "en_hash": "e9b8ea43be6033af680c3a1498536208",
     "attempted_preview": "cura la runa del veleno",
     "extra": {
@@ -8537,7 +8537,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:35.288409Z",
+    "updated_at": "2026-04-29T23:02:07.455380Z",
     "en_hash": "108014137d9b1b568bc5809b2ae08993",
     "attempted_preview": "distruggere la runa del campo",
     "extra": {
@@ -8557,7 +8557,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:36.585741Z",
+    "updated_at": "2026-04-29T23:02:08.100481Z",
     "en_hash": "533a42d998f407c9860eda103d41854c",
     "attempted_preview": "runa della bomba incendiaria",
     "extra": {
@@ -8577,7 +8577,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:38.130210Z",
+    "updated_at": "2026-04-29T23:02:09.218420Z",
     "en_hash": "f024a064a6cb7b03ca6d448738b05001",
     "attempted_preview": "agarico volante",
     "extra": {
@@ -8597,7 +8597,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:39.636248Z",
+    "updated_at": "2026-04-29T23:02:11.679677Z",
     "en_hash": "33956e826a4ef3b5c532347fc58fc51a",
     "attempted_preview": "intensa runa curativa",
     "extra": {
@@ -8617,7 +8617,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:41.727952Z",
+    "updated_at": "2026-04-29T23:02:11.798906Z",
     "en_hash": "60424674619e1854ad52c971286b8685",
     "attempted_preview": "tempo perso",
     "extra": {
@@ -8637,7 +8637,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:41.815680Z",
+    "updated_at": "2026-04-29T23:02:12.476605Z",
     "en_hash": "130859064dcec73dfefffb635fd5b0c6",
     "attempted_preview": "runa magica del muro",
     "extra": {
@@ -8657,7 +8657,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:42.480334Z",
+    "updated_at": "2026-04-29T23:02:13.081941Z",
     "en_hash": "c42d30af9c250e39f2cffc86eeb8cdcf",
     "attempted_preview": "raddrizzatore ottico",
     "extra": {
@@ -8677,7 +8677,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:42.863751Z",
+    "updated_at": "2026-04-29T23:02:14.455248Z",
     "en_hash": "858721d74877cf4710ed54517d35713d",
     "attempted_preview": "runa della bomba avvelenata",
     "extra": {
@@ -8697,7 +8697,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:42.955169Z",
+    "updated_at": "2026-04-29T23:02:14.575298Z",
     "en_hash": "375968507f84e6225f328f297c2e542c",
     "attempted_preview": "anello di pensieri segreti",
     "extra": {
@@ -8717,7 +8717,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:43.318989Z",
+    "updated_at": "2026-04-29T23:02:15.102959Z",
     "en_hash": "65e2d3cf81a82a1a97cb080fbfc9ba9e",
     "attempted_preview": "poltrona",
     "extra": {
@@ -8737,7 +8737,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:58:44.715464Z",
+    "updated_at": "2026-04-29T23:02:15.903922Z",
     "en_hash": "25854a690aad0b2f569b5c34e1691b91",
     "attempted_preview": "runa della doccia in pietra",
     "extra": {
@@ -84679,5 +84679,617 @@
     "en_hash": "a2de94a1c60adb5a20ceea78c3997d81",
     "attempted_hash": "3bc21d9c9040baf8c371f01cbab3f541",
     "attempted_preview": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+  },
+  "it::items.json::item.14656.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14656.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.051597Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14657.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14657.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.065815Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14658.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14658.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.079493Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14659.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14659.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.092382Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.1466.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.1466.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.103418Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "f559a89cb6e4261439bf8c76f1e1d07f",
+    "attempted_preview": "muro di pietra"
+  },
+  "it::items.json::item.14660.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14660.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.116207Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14661.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14661.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.128696Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14662.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14662.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.141180Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14663.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14663.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.153495Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14664.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14664.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.165821Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14665.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14665.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.177955Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14666.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14666.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.190160Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14667.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14667.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.202376Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14668.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14668.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.214741Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14669.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14669.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.227333Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.1467.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.1467.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.237667Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "f559a89cb6e4261439bf8c76f1e1d07f",
+    "attempted_preview": "muro di pietra"
+  },
+  "it::items.json::item.14675.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14675.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.295100Z",
+    "en_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "attempted_hash": "95d8dd9697395c0fa3e79f7e0569f422",
+    "attempted_preview": "arazzo d'onore"
+  },
+  "it::items.json::item.14676.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14676.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.306940Z",
+    "en_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "attempted_hash": "95d8dd9697395c0fa3e79f7e0569f422",
+    "attempted_preview": "arazzo d'onore"
+  },
+  "it::items.json::item.14677.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14677.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.318917Z",
+    "en_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "attempted_hash": "95d8dd9697395c0fa3e79f7e0569f422",
+    "attempted_preview": "arazzo d'onore"
+  },
+  "it::items.json::item.14678.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14678.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.330867Z",
+    "en_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "attempted_hash": "95d8dd9697395c0fa3e79f7e0569f422",
+    "attempted_preview": "arazzo d'onore"
+  },
+  "it::items.json::item.14679.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14679.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.343034Z",
+    "en_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "attempted_hash": "95d8dd9697395c0fa3e79f7e0569f422",
+    "attempted_preview": "arazzo d'onore"
+  },
+  "it::items.json::item.1468.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.1468.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.353434Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "f559a89cb6e4261439bf8c76f1e1d07f",
+    "attempted_preview": "muro di pietra"
+  },
+  "it::items.json::item.14680.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14680.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.365740Z",
+    "en_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "attempted_hash": "95d8dd9697395c0fa3e79f7e0569f422",
+    "attempted_preview": "arazzo d'onore"
+  },
+  "it::items.json::item.1469.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.1469.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.439049Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "f559a89cb6e4261439bf8c76f1e1d07f",
+    "attempted_preview": "muro di pietra"
+  },
+  "it::items.json::item.14699.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14699.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.523762Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.1470.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.1470.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.540669Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "f559a89cb6e4261439bf8c76f1e1d07f",
+    "attempted_preview": "muro di pietra"
+  },
+  "it::items.json::item.14700.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14700.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.553197Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14701.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14701.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.565833Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14702.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14702.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.578827Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14703.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14703.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:00:49.591670Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "f0c30a07e56080e1bb02e189239df784",
+    "attempted_preview": "SPRITE RISERVATO"
+  },
+  "it::items.json::item.14687.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14687.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:53.203391Z",
+    "en_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "attempted_hash": "44df5737ba9c852b803d32ab530883dd",
+    "attempted_preview": "cavalletto dell'artista",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:53Z"
+      }
+    }
+  },
+  "it::items.json::item.14688.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14688.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:53.211954Z",
+    "en_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "attempted_hash": "44df5737ba9c852b803d32ab530883dd",
+    "attempted_preview": "cavalletto dell'artista",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:53Z"
+      }
+    }
+  },
+  "it::items.json::item.14689.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14689.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:53.220530Z",
+    "en_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "attempted_hash": "44df5737ba9c852b803d32ab530883dd",
+    "attempted_preview": "cavalletto dell'artista",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:53Z"
+      }
+    }
+  },
+  "it::items.json::item.14690.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14690.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:53.228904Z",
+    "en_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "attempted_hash": "44df5737ba9c852b803d32ab530883dd",
+    "attempted_preview": "cavalletto dell'artista",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:53Z"
+      }
+    }
+  },
+  "it::items.json::item.14691.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14691.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:53.236410Z",
+    "en_hash": "700b912b4f0742e21b3f90ca8e9001f7",
+    "attempted_hash": "e6b6184ccbe5d70a6a7dbd5d2950fb2b",
+    "attempted_preview": "capolavoro di una musa",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:53Z"
+      }
+    }
+  },
+  "it::items.json::item.14692.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14692.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:55.350062Z",
+    "en_hash": "700b912b4f0742e21b3f90ca8e9001f7",
+    "attempted_hash": "e6b6184ccbe5d70a6a7dbd5d2950fb2b",
+    "attempted_preview": "capolavoro di una musa",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:55Z"
+      }
+    }
+  },
+  "it::items.json::item.14693.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14693.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:55.356381Z",
+    "en_hash": "42b54b20914c65b451354780ed219489",
+    "attempted_hash": "fa033b166615757b1cfb62d1a69750e9",
+    "attempted_preview": "dipinto di una musa",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:55Z"
+      }
+    }
+  },
+  "it::items.json::item.14694.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14694.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:55.362522Z",
+    "en_hash": "42b54b20914c65b451354780ed219489",
+    "attempted_hash": "fa033b166615757b1cfb62d1a69750e9",
+    "attempted_preview": "dipinto di una musa",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:55Z"
+      }
+    }
+  },
+  "it::items.json::item.14695.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14695.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:55.369901Z",
+    "en_hash": "0f54018b9c671878380c290ab95b0755",
+    "attempted_hash": "f424e236c57683f6c6a05408a32da511",
+    "attempted_preview": "capolavoro di un gozzler",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:55Z"
+      }
+    }
+  },
+  "it::items.json::item.14696.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14696.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:55.377478Z",
+    "en_hash": "0f54018b9c671878380c290ab95b0755",
+    "attempted_hash": "f424e236c57683f6c6a05408a32da511",
+    "attempted_preview": "capolavoro di un gozzler",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:55Z"
+      }
+    }
+  },
+  "it::items.json::item.14697.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14697.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:55.383815Z",
+    "en_hash": "ac01c435a05fb04e5f13fb052a942a3c",
+    "attempted_hash": "e0b759db9f8a5f438cc780824c920d4c",
+    "attempted_preview": "dipinto di un gozzler",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:55Z"
+      }
+    }
+  },
+  "it::items.json::item.14698.name": {
+    "lang": "it",
+    "json_file": "items.json",
+    "key": "item.14698.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:00:57.028628Z",
+    "en_hash": "ac01c435a05fb04e5f13fb052a942a3c",
+    "attempted_hash": "e0b759db9f8a5f438cc780824c920d4c",
+    "attempted_preview": "dipinto di un gozzler",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:00:57Z"
+      }
+    }
   }
 }

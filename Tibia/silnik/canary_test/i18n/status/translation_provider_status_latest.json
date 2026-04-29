@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:00:04.766384Z",
+  "generated_at_utc": "2026-04-29T23:02:37.586819Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
-  "active_provider_source": "tm",
-  "active_provider_timestamp": "2026-04-29T22:59:31.594451Z",
+  "active_provider_source": "simple",
+  "active_provider_timestamp": "2026-04-29T23:02:16.317717Z",
   "active_model": "openai/gpt-4o-mini",
   "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -65,21 +65,21 @@
   "provider_pool_health": {
     "overall_status": "degraded",
     "signals": [
-      "provider_consistency_debt:450",
+      "provider_consistency_debt:462",
       "provider_limit_telemetry:provider_budget_high"
     ],
-    "provider_consistency_debt": 450,
+    "provider_consistency_debt": 462,
     "recent_window_writes": 546,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 243
+        "writes": 239
       },
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 167
+        "writes": 174
       },
       {
         "provider": "free_google_translate",
@@ -89,7 +89,7 @@
       {
         "provider": "canonical_name_semantic_autofix",
         "provider_label": "canonical_name_semantic_autofix",
-        "writes": 24
+        "writes": 21
       },
       {
         "provider": "term_consistency_autofix",
@@ -97,12 +97,12 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 19,
+    "fallbacks_last_200": 17,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
-        "count": 11
+        "count": 9
       },
       {
         "action": "fallback_to_next_provider_validate_fail",
@@ -123,7 +123,7 @@
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 167
+        "recent_writes": 174
       },
       "free_google_translate": {
         "status": "active",
@@ -139,8 +139,8 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4o-mini",
-        "recent_writes": 243,
-        "requests_today": 243
+        "recent_writes": 239,
+        "requests_today": 246
       }
     },
     "openai_model_pool": {
@@ -183,19 +183,19 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 243,
+      "requests_today": 246,
       "selected_model": "openai/gpt-4o-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-29T22:42:37.794245Z",
+        "generated_at_utc": "2026-04-29T23:00:57.010235Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4o-mini",
-        "response_ms": 1669,
+        "response_ms": 1179,
         "rate_limited": false,
-        "requests_total_today": 243,
-        "translated_total_today": 1266,
+        "requests_total_today": 246,
+        "translated_total_today": 1279,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
@@ -212,12 +212,12 @@
           {
             "model": "openai/gpt-4o-mini",
             "priority": 1,
-            "requests_today": 81,
-            "translated_today": 421,
+            "requests_today": 84,
+            "translated_today": 434,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 1669
+            "last_response_ms": 1179
           },
           {
             "model": "openai/gpt-5",
@@ -246,10 +246,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 97.2,
+      "used_pct": 98.4,
       "monthly_cap": 250.0,
-      "spent": 243.0,
-      "latest_age_s": 999.341695,
+      "spent": 246.0,
+      "latest_age_s": 44.440922,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

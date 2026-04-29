@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:00:05.129537Z",
+  "generated_at_utc": "2026-04-29T23:02:37.926863Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,7 +9,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 23:00:00"
+      "last_update": "2026-04-29 23:02:32"
     },
     "LIVE": {
       "state": "active",
@@ -17,31 +17,31 @@
       "reason": "",
       "freshness": "2min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T22:57:09Z"
+      "last_update": "2026-04-29T22:59:49Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "49s temu",
+      "freshness": "59s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 23:00:00"
+      "last_update": "2026-04-29 23:02:32"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "12min temu",
+      "freshness": "13s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-04-29T22:47:22.022467Z"
+      "last_update": "2026-04-29T23:02:24.236895Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "29s temu",
+      "freshness": "12s temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-04-29T22:59:35.791356Z"
+      "last_update": "2026-04-29T23:02:25.126106Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 23:00:00"
+      "last_update": "2026-04-29 23:02:32"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,28 +57,39 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T23:00:05.127966Z"
+      "last_update": "2026-04-29T23:02:37.924975Z"
     }
   },
   "operator_panels": {
     "worker_live": {
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
-      "stage": "heartbeat_tick",
+      "stage": "cycle_end",
       "category": "it",
       "json_file": "items.json",
       "current_lang": "it",
       "current_lang_name": "Włoski",
       "current_scope": "Serwer",
-      "detail": "cycle start",
+      "detail": "cycle end",
       "current_key": "it:items.json",
-      "heartbeat_at": "2026-04-29T22:57:09Z",
-      "heartbeat_age_s": 127,
-      "cycle": 18855
+      "heartbeat_at": "2026-04-29T22:59:49Z",
+      "heartbeat_age_s": 111,
+      "cycle": 18857
     },
     "recent_writes": {
       "count": 17,
       "items": [
+        {
+          "timestamp": "2026-04-29T23:02:16.317717Z",
+          "lang": "it",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 43,
+          "sample_source": "simple",
+          "sample_key": "item.1469.name",
+          "sample_text": "muro di pietra",
+          "physical_verified": true
+        },
         {
           "timestamp": "2026-04-29T22:59:31.594451Z",
           "lang": "es",
@@ -253,17 +264,6 @@
           "sample_source": "tm",
           "sample_key": "npc.captain_gulliver.voice_1",
           "sample_text": "Pasajes a Thais y Krailos! ¡Visita las tierras extrañas!",
-          "physical_verified": true
-        },
-        {
-          "timestamp": "2026-04-29T21:01:05.134189Z",
-          "lang": "es",
-          "json_file": "items.json",
-          "surface": "Serwer",
-          "translated": 159,
-          "sample_source": "google_translate",
-          "sample_key": "item.12889.name",
-          "sample_text": "estructura de colmena",
           "physical_verified": true
         }
       ],
@@ -540,7 +540,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:00:03.708917Z",
+      "generated_at_utc": "2026-04-29T23:02:36.551406Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -632,8 +632,8 @@
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T23:00:03.708917Z",
-        "oldest_timestamp": "2026-04-28T23:00:19.132962Z",
+        "latest_timestamp": "2026-04-29T23:02:36.551406Z",
+        "oldest_timestamp": "2026-04-28T23:02:37.265307Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2302,12 +2302,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:00:03.738121Z",
+      "generated_at_utc": "2026-04-29T23:02:36.580179Z",
       "window": {
         "trend_hours": 24,
         "samples": 1012,
-        "window_start_utc": "2026-04-28T23:00:19.178918Z",
-        "window_end_utc": "2026-04-29T23:00:03.738121Z"
+        "window_start_utc": "2026-04-28T23:02:37.285448Z",
+        "window_end_utc": "2026-04-29T23:02:36.580179Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2323,7 +2323,7 @@
         "server": {
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411602,
+          "real_translated_keys": 411644,
           "coverage_real_pct": 11.43,
           "langs_count": 51,
           "delta_24h_pp": 0.56,
@@ -2345,8 +2345,8 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z"
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z"
         },
         "website": {
           "label": "Website",
@@ -2373,8 +2373,8 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z"
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2401,8 +2401,8 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z"
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z"
         },
         "installer": {
           "label": "Installer",
@@ -2429,8 +2429,8 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z"
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z"
         }
       },
       "ranking": [
@@ -2460,8 +2460,8 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z",
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z",
           "rank": 1
         },
         {
@@ -2490,15 +2490,15 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z",
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z",
           "rank": 2
         },
         {
           "surface": "server",
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411602,
+          "real_translated_keys": 411644,
           "coverage_real_pct": 11.43,
           "langs_count": 51,
           "delta_24h_pp": 0.56,
@@ -2520,8 +2520,8 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z",
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z",
           "rank": 3
         },
         {
@@ -2550,15 +2550,15 @@
             }
           ],
           "trend_samples": 1012,
-          "window_oldest_utc": "2026-04-28T23:00:19.178918Z",
-          "window_latest_utc": "2026-04-29T23:00:03.738121Z",
+          "window_oldest_utc": "2026-04-28T23:02:37.285448Z",
+          "window_latest_utc": "2026-04-29T23:02:36.580179Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:00:03.763568Z",
+      "generated_at_utc": "2026-04-29T23:02:36.605023Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2616,7 +2616,7 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1780,
+          "wave_history_rows_total": 1782,
           "wave_history_rows_window": 1012,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
@@ -2635,17 +2635,17 @@
         "quality_trend_24h": {
           "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
           "pass": true,
-          "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "detail": "window=24.03h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T22:58:46.390819Z",
-          "window_end_utc": "2026-04-29T23:00:03.763568Z",
-          "window_span_hours": 24.02,
+          "window_start_utc": "2026-04-28T23:00:43.102520Z",
+          "window_end_utc": "2026-04-29T23:02:36.605023Z",
+          "window_span_hours": 24.03,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
               "samples": 1014,
-              "oldest_timestamp": "2026-04-28T22:58:46.390819Z",
-              "latest_timestamp": "2026-04-29T23:00:03.763568Z",
+              "oldest_timestamp": "2026-04-28T23:00:43.102520Z",
+              "latest_timestamp": "2026-04-29T23:02:36.605023Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2656,8 +2656,8 @@
             },
             "otclient_modules.json": {
               "samples": 1014,
-              "oldest_timestamp": "2026-04-28T22:58:46.390819Z",
-              "latest_timestamp": "2026-04-29T23:00:03.763568Z",
+              "oldest_timestamp": "2026-04-28T23:00:43.102520Z",
+              "latest_timestamp": "2026-04-29T23:02:36.605023Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2719,11 +2719,11 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:00:04.766384Z",
+      "generated_at_utc": "2026-04-29T23:02:37.586819Z",
       "active_provider": "TM/simple",
       "active_provider_code": "tm_simple",
-      "active_provider_source": "tm",
-      "active_provider_timestamp": "2026-04-29T22:59:31.594451Z",
+      "active_provider_source": "simple",
+      "active_provider_timestamp": "2026-04-29T23:02:16.317717Z",
       "active_model": "openai/gpt-4o-mini",
       "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -2784,21 +2784,21 @@
       "provider_pool_health": {
         "overall_status": "degraded",
         "signals": [
-          "provider_consistency_debt:450",
+          "provider_consistency_debt:462",
           "provider_limit_telemetry:provider_budget_high"
         ],
-        "provider_consistency_debt": 450,
+        "provider_consistency_debt": 462,
         "recent_window_writes": 546,
         "recent_write_breakdown": [
           {
             "provider": "openai_model_pool",
             "provider_label": "OpenAI model pool",
-            "writes": 243
+            "writes": 239
           },
           {
             "provider": "tm_simple",
             "provider_label": "TM/simple",
-            "writes": 167
+            "writes": 174
           },
           {
             "provider": "free_google_translate",
@@ -2808,7 +2808,7 @@
           {
             "provider": "canonical_name_semantic_autofix",
             "provider_label": "canonical_name_semantic_autofix",
-            "writes": 24
+            "writes": 21
           },
           {
             "provider": "term_consistency_autofix",
@@ -2816,12 +2816,12 @@
             "writes": 3
           }
         ],
-        "fallbacks_last_200": 19,
+        "fallbacks_last_200": 17,
         "fallback_action_breakdown": [
           {
             "action": "fallback_to_google_translate_high",
             "action_label": "fallback to google translate high",
-            "count": 11
+            "count": 9
           },
           {
             "action": "fallback_to_next_provider_validate_fail",
@@ -2842,7 +2842,7 @@
         "providers": {
           "tm_simple": {
             "status": "active",
-            "recent_writes": 167
+            "recent_writes": 174
           },
           "free_google_translate": {
             "status": "active",
@@ -2858,8 +2858,8 @@
           "openai_model_pool": {
             "status": "active",
             "active_model": "openai/gpt-4o-mini",
-            "recent_writes": 243,
-            "requests_today": 243
+            "recent_writes": 239,
+            "requests_today": 246
           }
         },
         "openai_model_pool": {
@@ -2902,19 +2902,19 @@
           ],
           "request_budget_cap": 250,
           "request_budget_policy": "telemetry_only",
-          "requests_today": 243,
+          "requests_today": 246,
           "selected_model": "openai/gpt-4o-mini",
           "pool_latest": {
             "schema_version": "1.0",
-            "generated_at_utc": "2026-04-29T22:42:37.794245Z",
+            "generated_at_utc": "2026-04-29T23:00:57.010235Z",
             "status": "active",
             "reason": "ok",
             "active": true,
             "selected_model": "openai/gpt-4o-mini",
-            "response_ms": 1669,
+            "response_ms": 1179,
             "rate_limited": false,
-            "requests_total_today": 243,
-            "translated_total_today": 1266,
+            "requests_total_today": 246,
+            "translated_total_today": 1279,
             "request_budget_cap": 250,
             "request_budget_policy": "telemetry_only",
             "models": [
@@ -2931,12 +2931,12 @@
               {
                 "model": "openai/gpt-4o-mini",
                 "priority": 1,
-                "requests_today": 81,
-                "translated_today": 421,
+                "requests_today": 84,
+                "translated_today": 434,
                 "blocked_until_utc": "",
                 "last_status": "ok",
                 "last_error_reason": "",
-                "last_response_ms": 1669
+                "last_response_ms": 1179
               },
               {
                 "model": "openai/gpt-5",
@@ -2965,10 +2965,10 @@
             "warn_used_pct": 80.0,
             "critical_used_pct": 100.0
           },
-          "used_pct": 97.2,
+          "used_pct": 98.4,
           "monthly_cap": 250.0,
-          "spent": 243.0,
-          "latest_age_s": 999.341695,
+          "spent": 246.0,
+          "latest_age_s": 44.440922,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3014,22 +3014,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:00:04.789109Z",
+      "generated_at_utc": "2026-04-29T23:02:37.589090Z",
       "available": true,
-      "lang": "es",
-      "json_file": "npc.json",
-      "surface": "npc",
+      "lang": "it",
+      "json_file": "items.json",
+      "surface": "items",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 16771,
-      "keys_scanned": 1247,
-      "keys_with_term_usages": 340,
-      "keys_with_conflicts": 96,
-      "term_conflicts_total": 200,
-      "term_conflict_rate_pct": 28.235,
-      "term_conflict_rate_delta_pct": 28.235,
+      "registry_terms_total": 18107,
+      "keys_scanned": 341,
+      "keys_with_term_usages": 137,
+      "keys_with_conflicts": 22,
+      "term_conflicts_total": 54,
+      "term_conflict_rate_pct": 16.058,
+      "term_conflict_rate_delta_pct": 16.058,
       "auto_fixed_english_name_leaks": 0,
-      "inflection_suspects_flagged": 5,
-      "manual_review_enqueued": 195,
+      "inflection_suspects_flagged": 11,
+      "manual_review_enqueued": 43,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3038,118 +3038,117 @@
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
       "conflict_type_breakdown": {
-        "canonical_term_missing": 188,
-        "canonical_term_inflection_suspect": 5,
-        "english_name_leak": 7
+        "canonical_term_missing": 43,
+        "canonical_term_inflection_suspect": 11
       },
       "top_conflicts": [
         {
-          "key": "npc.a_beggar.say_4",
+          "key": "item.10028.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Alimento",
-          "canonical_en": "Food",
-          "translated_text": "Entonces, ¿por qué no muestras tu dedicación a los pobres? Ve y ayuda a Chavis en la casa de pobres. Está recolectando comida para gente como nosotros. ...",
-          "source_file": "spells.json",
-          "source_key": "spell.food.name"
-        },
-        {
-          "key": "npc.a_prisoner.say_1",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "manzanas",
-          "canonical_en": "apples",
-          "translated_text": "Gran acertijo, ¿no? Si puedes decirme la respuesta correcta, \\z te daré algo. ¡Jejeje!",
+          "canonical": "contrarre",
+          "canonical_en": "contract",
+          "translated_text": "Un contratto in cui qualche disperato ha venduto la sua anima",
           "source_file": "items.json",
-          "source_key": "item.24490.name"
+          "source_key": "item.129.name"
         },
         {
-          "key": "npc.a_prisoner.say_2",
+          "key": "item.10218.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "manzanas",
-          "canonical_en": "apples",
-          "translated_text": "Mis números surrealistas se basan en hechos sorprendentes. \\z ¿Estás interesado en aprender el secreto de las matemáticas?",
+          "canonical": "Pescare",
+          "canonical_en": "fish",
+          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
           "source_file": "items.json",
-          "source_key": "item.24490.name"
+          "source_key": "item.10245.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.multi_17",
+          "key": "item.10218.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Nothing",
-          "canonical_en": "nothing",
-          "translated_text": "Te lanzas y arrojas el modelo al agua. Como no pasa nada, le das la espalda al océano. ...",
+          "canonical": "Pescare",
+          "canonical_en": "fish",
+          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
           "source_file": "items.json",
-          "source_key": "item.31381.name"
+          "source_key": "item.10246.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.multi_20",
+          "key": "item.10218.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "elegir",
-          "canonical_en": "pick",
-          "translated_text": "Coges el espejo del suelo.",
+          "canonical": "Pescare",
+          "canonical_en": "fish",
+          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
           "source_file": "items.json",
-          "source_key": "item.31613.name"
+          "source_key": "item.3578.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.multi_20",
+          "key": "item.10218.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "elegir",
-          "canonical_en": "pick",
-          "translated_text": "Coges el espejo del suelo.",
+          "canonical": "Pescare",
+          "canonical_en": "fish",
+          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
           "source_file": "items.json",
-          "source_key": "item.31615.name"
+          "source_key": "item.7885.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.multi_20",
+          "key": "item.10218.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "elegir",
-          "canonical_en": "pick",
-          "translated_text": "Coges el espejo del suelo.",
-          "source_file": "items.json",
-          "source_key": "item.3456.name"
-        },
-        {
-          "key": "npc.a_sleeping_dragon.multi_21",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "Dragón",
-          "canonical_en": "Dragon",
-          "translated_text": "Los sueños de dragones son dorados. ...",
+          "canonical": "Pescare",
+          "canonical_en": "Fish",
+          "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
           "source_file": "monsters.json",
-          "source_key": "monster.dragon.name"
+          "source_key": "monster.fish.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.multi_32",
+          "key": "item.11341.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Dragón",
-          "canonical_en": "Dragon",
-          "translated_text": "Los sueños de dragones son dorados. ...",
-          "source_file": "monsters.json",
-          "source_key": "monster.dragon.name"
-        },
-        {
-          "key": "npc.a_sleeping_dragon.say_11",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "cabeza",
-          "canonical_en": "head",
-          "translated_text": "Regresas al norte hasta la meseta.",
+          "canonical": "terra",
+          "canonical_en": "ground",
+          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
           "source_file": "items.json",
-          "source_key": "item.33932.name"
+          "source_key": "item.10548.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.say_11",
+          "key": "item.11341.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "cabeza",
-          "canonical_en": "head",
-          "translated_text": "Regresas al norte hasta la meseta.",
+          "canonical": "terra",
+          "canonical_en": "ground",
+          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
           "source_file": "items.json",
-          "source_key": "item.33937.name"
+          "source_key": "item.10549.name"
         },
         {
-          "key": "npc.a_sleeping_dragon.say_14",
+          "key": "item.11341.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "cabeza",
-          "canonical_en": "head",
-          "translated_text": "Te diriges hacia el norte pasando innumerables piedras en el mar carmesí de piedras bajo tus pies.",
+          "canonical": "terra",
+          "canonical_en": "ground",
+          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
           "source_file": "items.json",
-          "source_key": "item.33932.name"
+          "source_key": "item.10550.name"
+        },
+        {
+          "key": "item.11341.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "terra",
+          "canonical_en": "ground",
+          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+          "source_file": "items.json",
+          "source_key": "item.10551.name"
+        },
+        {
+          "key": "item.11341.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "terra",
+          "canonical_en": "ground",
+          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+          "source_file": "items.json",
+          "source_key": "item.10552.name"
+        },
+        {
+          "key": "item.11341.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "terra",
+          "canonical_en": "ground",
+          "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+          "source_file": "items.json",
+          "source_key": "item.10553.name"
         }
       ]
     },
@@ -3159,7 +3158,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 397,
-      "oldest_visible_pending_age_s": 29064,
+      "oldest_visible_pending_age_s": 29217,
       "top_langs": [
         {
           "lang": "ru",
@@ -3197,23 +3196,23 @@
         }
       ],
       "deferred_state_keys_total": 8983,
-      "deferred_state_updated_at": "2026-04-29T22:59:32.948482Z",
-      "deferred_state_age_s": 29,
+      "deferred_state_updated_at": "2026-04-29T23:02:22.191100Z",
+      "deferred_state_age_s": 13,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 197,
+        "suppressed_manual_review": 57,
         "deduped_ttl": 0,
-        "manual_review_escalations": 2,
-        "partial_staged": 2,
+        "manual_review_escalations": 0,
+        "partial_staged": 0,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
-        "retry_loop_manual_review": 2
+        "retry_loop_manual_review": 0
       }
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T23:00:05.127966Z",
+      "generated_at_utc": "2026-04-29T23:02:37.924975Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3228,16 +3227,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 127,
+          "value": 111,
           "threshold": 300,
-          "detail": "Heartbeat świeży (127s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ro:items.json].",
+          "detail": "Heartbeat świeży (111s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=it:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 33,
+          "value": 21,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3257,7 +3256,7 @@
           "severity": "warning",
           "value": {
             "pending": 397,
-            "oldest_s": 29064
+            "oldest_s": 29217
           },
           "threshold": {
             "pending_min": 200,

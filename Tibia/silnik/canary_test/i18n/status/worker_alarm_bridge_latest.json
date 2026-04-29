@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:59:49.988837Z",
-  "cycle": 23,
+  "generated_at_utc": "2026-04-29T23:02:39.711372Z",
+  "cycle": 24,
   "open_alarms": [
     {
       "code": "DISPATCH_STALE",
@@ -13,7 +13,7 @@
       "code": "GUARD_REPORT_STALE",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 715s"
+      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 859s"
     },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
@@ -25,7 +25,7 @@
       "code": "PROVIDER_BUDGET_80PCT",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "PROVIDER_BUDGET_80PCT: used=97.2% cap=250.0 spent=243.0 source=provider_budget_latest.json"
+      "detail": "PROVIDER_BUDGET_80PCT: used=98.4% cap=250.0 spent=246.0 source=provider_budget_latest.json"
     },
     {
       "code": "QUEUE_STARVATION_DETECTED",
@@ -43,20 +43,17 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=278 rate=8.655% window=6.0h top_lang=cs:109 per_domain=[server.json:26(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=282 rate=8.774% window=6.0h top_lang=cs:109 per_domain=[server.json:26(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=39.64% delta=39.64% total=80 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
     }
   ],
   "resolved_this_cycle": [],
-  "newly_opened": [
-    "DISPATCH_STALE",
-    "GUARD_REPORT_STALE"
-  ],
+  "newly_opened": [],
   "summary": {
     "open_count": 8,
     "resolved_count": 0,

@@ -254437,7 +254437,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:55:49.241652Z"
+    "updated_at": "2026-04-29T23:00:53.194969Z"
   },
   "item.14519.name": {
     "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
@@ -255638,5 +255638,341 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-04-29T21:55:46.312501Z"
+  },
+  "item.14656.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.051551Z"
+  },
+  "item.14657.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.065781Z"
+  },
+  "item.14658.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.079463Z"
+  },
+  "item.14659.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.092351Z"
+  },
+  "item.1466.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.103388Z"
+  },
+  "item.14660.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.116178Z"
+  },
+  "item.14661.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.128651Z"
+  },
+  "item.14662.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.141150Z"
+  },
+  "item.14663.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.153466Z"
+  },
+  "item.14664.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.165792Z"
+  },
+  "item.14665.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.177926Z"
+  },
+  "item.14666.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.190131Z"
+  },
+  "item.14667.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.202347Z"
+  },
+  "item.14668.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.214708Z"
+  },
+  "item.14669.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.227305Z"
+  },
+  "item.1467.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.237637Z"
+  },
+  "item.14675.name": {
+    "src_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "text": "arazzo d'onore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.295067Z"
+  },
+  "item.14676.name": {
+    "src_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "text": "arazzo d'onore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.306909Z"
+  },
+  "item.14677.name": {
+    "src_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "text": "arazzo d'onore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.318888Z"
+  },
+  "item.14678.name": {
+    "src_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "text": "arazzo d'onore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.330837Z"
+  },
+  "item.14679.name": {
+    "src_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "text": "arazzo d'onore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.343004Z"
+  },
+  "item.1468.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.353406Z"
+  },
+  "item.14680.name": {
+    "src_hash": "51c269b25899ecb7ac2f959a8d487322",
+    "text": "arazzo d'onore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.365711Z"
+  },
+  "item.1469.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.439018Z"
+  },
+  "item.14699.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.523730Z"
+  },
+  "item.1470.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.540638Z"
+  },
+  "item.14700.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.553167Z"
+  },
+  "item.14701.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.565803Z"
+  },
+  "item.14702.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.578798Z"
+  },
+  "item.14703.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:49.591642Z"
+  },
+  "item.14687.name": {
+    "src_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "text": "cavalletto dell'artista",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:53.203556Z"
+  },
+  "item.14688.name": {
+    "src_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "text": "cavalletto dell'artista",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:53.212110Z"
+  },
+  "item.14689.name": {
+    "src_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "text": "cavalletto dell'artista",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:53.220729Z"
+  },
+  "item.14690.name": {
+    "src_hash": "c88178dc5a8292b61c65a63ae228bda4",
+    "text": "cavalletto dell'artista",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:53.229034Z"
+  },
+  "item.14691.name": {
+    "src_hash": "700b912b4f0742e21b3f90ca8e9001f7",
+    "text": "capolavoro di una musa",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:53.236553Z"
+  },
+  "item.14692.name": {
+    "src_hash": "700b912b4f0742e21b3f90ca8e9001f7",
+    "text": "capolavoro di una musa",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:55.350202Z"
+  },
+  "item.14693.name": {
+    "src_hash": "42b54b20914c65b451354780ed219489",
+    "text": "dipinto di una musa",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:55.356513Z"
+  },
+  "item.14694.name": {
+    "src_hash": "42b54b20914c65b451354780ed219489",
+    "text": "dipinto di una musa",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:55.362651Z"
+  },
+  "item.14695.name": {
+    "src_hash": "0f54018b9c671878380c290ab95b0755",
+    "text": "capolavoro di un gozzler",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:55.370038Z"
+  },
+  "item.14696.name": {
+    "src_hash": "0f54018b9c671878380c290ab95b0755",
+    "text": "capolavoro di un gozzler",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:55.377616Z"
+  },
+  "item.14697.name": {
+    "src_hash": "ac01c435a05fb04e5f13fb052a942a3c",
+    "text": "dipinto di un gozzler",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:55.383930Z"
+  },
+  "item.14698.name": {
+    "src_hash": "ac01c435a05fb04e5f13fb052a942a3c",
+    "text": "dipinto di un gozzler",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:00:57.028784Z"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-29T21:07:57.410430Z",
-  "window_end_utc": "2026-04-29T22:07:57.410430Z",
+  "window_start_utc": "2026-04-29T21:10:26.565222Z",
+  "window_end_utc": "2026-04-29T22:10:26.565222Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -25,7 +25,7 @@
   "throughput_keys_per_h": 651.0,
   "throughput_runtime_hours": 1.0,
   "throughput_runtime_source": "window_hours_long_runtime_fallback",
-  "suspicious_total": 572,
+  "suspicious_total": 761,
   "deferred_total": 33,
   "top_deferred_reasons": [
     {

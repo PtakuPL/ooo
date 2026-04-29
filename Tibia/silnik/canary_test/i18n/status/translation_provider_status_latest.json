@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:08:01.741704Z",
+  "generated_at_utc": "2026-04-29T22:10:30.604180Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
   "active_provider_timestamp": "2026-04-29T22:07:28.846623Z",
   "active_model": "openai/gpt-4o-mini",
-  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+  "fallback_reason": "-",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -65,7 +65,6 @@
   "provider_pool_health": {
     "overall_status": "degraded",
     "signals": [
-      "recent_fallback",
       "provider_consistency_debt:450",
       "provider_limit_telemetry:provider_budget_high"
     ],
@@ -98,24 +97,8 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 10,
-    "fallback_action_breakdown": [
-      {
-        "action": "fallback_to_next_provider_validate_fail",
-        "action_label": "fallback to next provider validate fail",
-        "count": 5
-      },
-      {
-        "action": "fallback_to_google_translate_high",
-        "action_label": "fallback to google translate high",
-        "count": 3
-      },
-      {
-        "action": "fallback_to_google_translate_validate_fail",
-        "action_label": "fallback to google translate validate fail",
-        "count": 2
-      }
-    ],
+    "fallbacks_last_200": 0,
+    "fallback_action_breakdown": [],
     "providers": {
       "tm_simple": {
         "status": "active",
@@ -245,7 +228,7 @@
       "used_pct": 90.0,
       "monthly_cap": 250.0,
       "spent": 225.0,
-      "latest_age_s": 185.188023,
+      "latest_age_s": 387.103354,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -277,15 +260,5 @@
       "window_seconds": 86400
     }
   },
-  "latest_fallback": {
-    "timestamp": "2026-04-29T22:02:15.918193Z",
-    "provider": "tm_simple",
-    "provider_label": "TM/simple",
-    "source": "tm",
-    "action": "fallback_to_google_translate_high",
-    "action_label": "fallback to google translate high",
-    "decision_reason": "high_reject_types",
-    "json_file": "items.json",
-    "key": "item.11695.name"
-  }
+  "latest_fallback": null
 }

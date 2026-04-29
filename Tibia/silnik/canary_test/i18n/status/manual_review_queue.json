@@ -67983,11 +67983,1347 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T21:12:54.078830Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:06.740407Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_swan.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Thank you, human being! I guess the thieving troll headed to the mountains east of here. As far as I know you can only reach these mountain tops by diving into a small cave. ...",
+      "attempted_translation": "Danke, Mensch! Ich schätze, der diebische Troll ist in die Berge östlich von hier gegangen. Soweit ich weiß, kann man diese Berggipfel nur erreichen, indem man in eine kleine Höhle eintaucht. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.107734Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:06.902009Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_swan.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This is everything that remained of my cloak? That's terrible! However, I guess I can put the feathers together again. Yes, that should be enough feathers. ...",
+      "attempted_translation": "Das ist alles, was von meinem Umhang übrig geblieben ist? Das ist schrecklich! Ich denke jedoch, dass ich die Federn wieder zusammensetzen kann. Ja, das sollten genug Federn sein. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.135987Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:07.454327Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_swan.multi_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Please give them to me so I can restore my cloak. But don't watch me! Swan maidens don't like to be observed. Nature's blessings, human being. I will tell Ikassis that you have been of great assistance.",
+      "attempted_translation": "Bitte gebt sie mir, damit ich meinen Umhang wiederherstellen kann. Aber schau mir nicht zu! Schwanenmädchen mögen es nicht, beobachtet zu werden. Der Segen der Natur, Mensch. Ich werde Ikassis sagen, dass Sie eine große Hilfe waren.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.159637Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:11.626346Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_swan.multi_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "But other than many of my siblings I did not take over a swan's body. I'm a swan maiden and this is one of my two aspects. I can take the shape of a swan as well as that of a young maiden. ...",
+      "attempted_translation": "Aber anders als viele meiner Geschwister habe ich nicht den Körper eines Schwans übernommen. Ich bin eine Schwanenjungfrau und das ist einer meiner beiden Aspekte. Ich kann sowohl die Gestalt eines Schwans als auch die eines jungen Mädchens annehmen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.198364Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:56.880465Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_swan.multi_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "But to do so I need a magical artefact: a cloak made of swan feathers. If I lose this cloak - or someone steals it from me - I'm stuck to the form of a swan and can't change shape anymore. And this is exactly what happened: ...",
+      "attempted_translation": "Dafür brauche ich aber ein magisches Artefakt: einen Umhang aus Schwanenfedern. Wenn ich diesen Umhang verliere – oder jemand ihn mir stiehlt – bleibe ich in der Gestalt eines Schwans stecken und kann meine Gestalt nicht mehr ändern. Und genau das ist passiert: ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.226065Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:57.010384Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.say_17",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Hellsteel is. Cursed and evil. Dangerous to work with. Me can make from evil helmet. Lil' one want to trade?",
+      "attempted_translation": "Hellsteel ist. Verflucht und böse. Es ist gefährlich, damit zu arbeiten. Ich kann aus einem bösen Helm einen machen. Möchte jemand handeln?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:11.129259Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:51.763298Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.say_21",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Uh. Me can make some nasty lil' bolt from soul orbs. Lil' one want to trade all?",
+      "attempted_translation": "Äh. Ich kann aus Seelenkugeln einen fiesen kleinen Blitz machen. Möchte der Kleine alles tauschen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:11.145745Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:51.892215Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.say_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Me need gift for woman. We dance, so me want to give her bast skirt. But she big is. So I need many to make big one. Bring three okay? Me wait.",
+      "attempted_translation": "Ich brauche ein Geschenk für eine Frau. Wir tanzen, deshalb möchte ich ihr einen Bastrock geben. Aber sie ist groß. Ich brauche also viele, um ein großes zu machen. Bring drei mit, okay? Ich warte.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:11.160644Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:55.798779Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.say_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Me need gift for woman. We dance, so me want to give her bast skirt. But she big is. So I need many to make big one. Bring three okay? Me wait.",
+      "attempted_translation": "Ich brauche ein Geschenk für eine Frau. Wir tanzen, deshalb möchte ich ihr einen Bastrock geben. Aber sie ist groß. Ich brauche also viele, um ein großes zu machen. Bring drei mit, okay? Ich warte.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:11.191581Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:56.308426Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.stdmod_12",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Heartiron from heart of big old mountain, found very deep. Lil' lil ones fiercely defend. Not wanting to have it used for stuff but holy stuff.",
+      "attempted_translation": "Herzeisen aus dem Herzen eines großen alten Berges, sehr tief gefunden. Die Kleinen verteidigen sich heftig. Ich möchte nicht, dass es für Dinge verwendet wird, sondern für heilige Dinge.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:36.582707Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:56.790921Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.stdmod_14",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Lil' lil' ones are so fun. We often chat.",
+      "attempted_translation": "Die kleinen machen so viel Spaß. Wir chatten oft.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:36.590671Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:57.341114Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.stdmod_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Most ancients use dream silver for different stuff. Now ancients most gone. Most not know about.",
+      "attempted_translation": "Die meisten Menschen der Antike verwendeten Traumsilber für verschiedene Zwecke. Jetzt sind die Alten größtenteils verschwunden. Die meisten wissen es nicht.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:36.643515Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:57.469366Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.stdmod_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Steel that is singing when forged. No one knows where find today.",
+      "attempted_translation": "Stahl, der singt, wenn er geschmiedet wird. Niemand weiß, wo es heute zu finden ist.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:13:36.659519Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:57.593711Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_vulcongra.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.263563Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:57.714052Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_vulcongra.greet_msg_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.269173Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:58.226197Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_vulcongra.greet_msg_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.274648Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:58.740342Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I greet you, human. This is a time of distress, more than ever are we in need of guardians to protect us and our world.",
+      "attempted_translation": "Ich grüße dich, Mensch. Dies ist eine Zeit der Not, mehr denn je brauchen wir Wächter, die uns und unsere Welt schützen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.281637Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:58.884299Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Indeed, you will. Take one of these cages, which have been crafted generations ago to rob a creature of its freedom for that it may earn it again truthfully. Return the birds back to their home in the glade. ...",
+      "attempted_translation": "In der Tat, das wirst du. Nehmen Sie einen dieser Käfige, die vor Generationen gebaut wurden, um einem Geschöpf seine Freiheit zu rauben, damit es sie wahrhaftig wiedererlangen kann. Bringen Sie die Vögel zurück in ihr Zuhause auf der Lichtung. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:04.452893Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:09:59.379739Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.multi_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "My pride is great but not greater than reason. I am not too proud to ask for help as this is a dark hour. ...",
+      "attempted_translation": "Mein Stolz ist groß, aber nicht größer als die Vernunft. Ich bin nicht zu stolz, um Hilfe zu bitten, da dies eine dunkle Stunde ist. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:04.467908Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:01.423226Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The purest {water} from the purest well needs to be brought there and poured and {birds} that give life need to be brought back to the inner sanctum of the glade. ...",
+      "attempted_translation": "Das reinste {Wasser} aus dem reinsten Brunnen muss dorthin gebracht und gegossen werden und {birds}, das Leben gibt, muss zurück in das innere Heiligtum der Lichtung gebracht werden. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:04.491906Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:01.542838Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Seeds to give life to strong trees, blooming and proud. The {intruders} robbed us from them.",
+      "attempted_translation": "Samen, die starken, blühenden und stolzen Bäumen Leben einhauchen. Die {intruders} haben uns ihnen beraubt.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:04.496163Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:01.686525Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.say_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Phials for the purest water from our sacred well. They are finely crafted and very fragile. We keep a small supply up here around the well. Probably the only thing the intruders did not care for.",
+      "attempted_translation": "Fläschchen für reinstes Wasser aus unserem heiligen Brunnen. Sie sind fein gearbeitet und sehr zerbrechlich. Wir haben hier oben rund um den Brunnen einen kleinen Vorrat. Wahrscheinlich das Einzige, was den Eindringlingen egal war.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:04.518122Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:01.807481Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.say_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I already handed a cage to you. If you are in need of another one, you will have to return to me later.",
+      "attempted_translation": "Ich habe dir bereits einen Käfig gegeben. Wenn Sie ein weiteres benötigen, müssen Sie später zu mir zurückkehren.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:04.522586Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:01.942186Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.stdmod_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Cruel beings. Large and monstrous, with a single eye, staring at their prey. ",
+      "attempted_translation": "Grausame Wesen. Groß und monströs, mit einem einzigen Auge, das seine Beute anstarrt. ",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:04.536346Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:02.067187Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wrinkled_bonelord.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!",
+      "attempted_translation": "Was ist das? Eine optisch behinderte Entität namens |PLAYERNAME|. Wie faszinierend!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.330542Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:02.216284Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wrinkled_bonelord.stdmod_16",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The language of my kind. Superior to any other language and only to be spoken by entities with enough eyes to blink it.",
+      "attempted_translation": "Die Sprache meiner Art. Jeder anderen Sprache überlegen und nur von Wesen gesprochen, die genug Augen haben, um mit der Sprache zu blinzeln.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:33.510026Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:02.726126Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wrinkled_bonelord.stdmod_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "They will mourn the day they abandoned us.",
+      "attempted_translation": "Sie werden den Tag betrauern, dem sie uns verlassen haben.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:33.529680Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:02.848619Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wrinkled_bonelord.stdmod_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I am the great librarian.",
+      "attempted_translation": "Ich bin der große Bibliothekar.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:33.532246Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:02.967106Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wrinkled_bonelord.stdmod_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "It's a fine library, isn't it?",
+      "attempted_translation": "Es ist eine schöne Bibliothek, nicht wahr?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:33.535373Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:03.480875Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wrinkled_bonelord.stdmod_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Uglyness incarnate. One eye! Imagine that! Horrible!",
+      "attempted_translation": "Inkarnierte Hässlichkeit. Ein Auge! Stellen Sie sich das vor! Schrecklich!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:33.547713Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:03.608063Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wyrm.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.347595Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:03.728616Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wyrm.greet_msg_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.353185Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:04.326353Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_wyrm.greet_msg_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.358782Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:04.519956Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Be mourned pilgrim in flesh. I'm selling general goods. Just ask me for a {trade}.",
+      "attempted_translation": "Sei ein betrauerter Pilger im Fleisch. Ich verkaufe allgemeine Waren. Fragen Sie mich einfach nach einem {trade}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.365058Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:04.900982Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Of course you do! Go hunt down the thieves and bring back the stuff they have stolen from me. ...",
+      "attempted_translation": "Natürlich tust du das! Geht auf die Jagd nach den Dieben und bringt die Sachen zurück, die sie mir gestohlen haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:14:33.579952Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:05.251959Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.multi_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The nomads at the northern oasis killed someone dear to me. Go and kill at least one of them, then we talk about your document.",
+      "attempted_translation": "Die Nomaden in der nördlichen Oase haben jemanden getötet, der mir lieb war. Gehen Sie und töten Sie mindestens einen von ihnen, dann reden wir über Ihr Dokument.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:02.068199Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:05.608000Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The slayer of my enemies is my friend! For a mere 1000 gold I will create the documents you need. Are you interested?",
+      "attempted_translation": "Der Vernichter meiner Feinde ist mein Freund! Für nur 1000 Gold erstelle ich die von Ihnen benötigten Dokumente. Sind Sie interessiert?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:02.075709Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:06.115372Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.say_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I see: You want me to add an additional story to this book. A legend about how it brings ill luck to kill a white deer. I could do that, yes. It costs 5000 gold, however. Are you still interested?",
+      "attempted_translation": "Ich verstehe: Sie möchten, dass ich diesem Buch eine zusätzliche Geschichte hinzufüge. Eine Legende darüber, wie es Unglück bringt, ein weißes Reh zu töten. Das könnte ich tun, ja. Es kostet allerdings 5000 Gold. Sind Sie immer noch interessiert?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:02.090965Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:06.333859Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.say_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "GREAT! If you ever need a job as my personal security guard, let me know. Here is the reward I promised you.",
+      "attempted_translation": "GROSSARTIG! Wenn Sie jemals einen Job als mein persönlicher Sicherheitsbeamter benötigen, lassen Sie es mich wissen. Hier ist die Belohnung, die ich dir versprochen habe.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:02.105532Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:06.706953Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ajax.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Good! Me make shiny weapon. If you help me, I make one for you too. Like axe I wear. I need stuff. Listen. ...",
+      "attempted_translation": "Gut! Ich mache glänzende Waffen. Wenn du mir hilfst, mache ich auch eins für dich. Wie eine Axt, die ich trage. Ich brauche Sachen. Hören. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:02.118338Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:07.652606Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.sendtrade_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Take a look in the trade window to your left.",
+      "attempted_translation": "Werfen Sie einen Blick in das Handelsfenster auf der linken Seite.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.394911Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:07.771193Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Are you looking for the best trades? Come to my shop!",
+      "attempted_translation": "Sind Sie auf der Suche nach den besten Trades? Kommen Sie in meinen Shop!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:29.916618Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:07.974058Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_14",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "If you want to explore the dungeons such as the {sewers}, you have to {equip} yourself with the vital stuff I am selling. It's {vital} in the deepest sense of the word.",
+      "attempted_translation": "Wenn Sie Dungeons wie {sewers} erkunden möchten, müssen Sie sich mit den lebenswichtigen Dingen, die ich verkaufe, selbst {equip} besorgen. Es ist {vital} im tiefsten Sinne des Wortes.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:58.252884Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:08.119733Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_15",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Oh, our sewer system is very primitive - it's so primitive that it's overrun by {rats}. But the stuff I sell is safe from them. Just ask me for a {trade} to see it!",
+      "attempted_translation": "Oh, unser Abwassersystem ist sehr primitiv – es ist so primitiv, dass es von {rats} überschwemmt wird. Aber die Sachen, die ich verkaufe, sind vor ihnen sicher. Bitten Sie mich einfach um ein {trade}, um es zu sehen!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:58.262778Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:08.310907Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_19",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Thais is a crowded town.",
+      "attempted_translation": "Thais ist eine überfüllte Stadt.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:58.275360Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:08.514994Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_21",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Oh, I'm sorry, but I don't deal with weapons. That's {Obi's} or {Lee'Delle's} business. I could offer you a {pick} in exchange for a {small axe} if you should happen to own one.",
+      "attempted_translation": "Oh, es tut mir leid, aber ich beschäftige mich nicht mit Waffen. Das ist eine Angelegenheit von {Obi's} oder {Lee'Delle's}. Ich könnte Ihnen einen {pick} im Austausch gegen einen {small axe} anbieten, falls Sie zufällig einen besitzen sollten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:58.296455Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:09.300124Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_27",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Hmm, the best address to look for food might be {Willie} or {Billy}. {Norma} also has some snacks for sale.",
+      "attempted_translation": "Hmm, die beste Adresse, um nach Essen zu suchen, könnte {Willie} oder {Billy} sein. {Norma} hat auch einige Snacks zum Verkauf.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:58.323790Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:09.431479Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_29",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The big building in the centre of Rookgaard. They have a library, a training centre, a {bank} and the room of the {oracle}. {Seymour} is the teacher there.",
+      "attempted_translation": "Das große Gebäude im Zentrum von Rookgaard. Sie verfügen über eine Bibliothek, ein Schulungszentrum, ein {bank} und den Raum des {oracle}. {Seymour} ist dort der Lehrer.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:15:58.337341Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:09.614654Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_33",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "To view the offers of a merchant, simply talk to him or her and ask for a {trade}. They will gladly show you their offers and also the things they buy from you.",
+      "attempted_translation": "Um die Angebote eines Händlers einzusehen, sprechen Sie einfach mit ihm oder ihr und fragen Sie nach einem {trade}. Sie zeigen Ihnen gerne ihre Angebote und auch die Dinge, die sie bei Ihnen kaufen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:26.609779Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:09.816579Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_38",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Yes, I am selling that. Simply ask me for a {trade} to view all my offers.",
+      "attempted_translation": "Ja, das verkaufe ich. Fragen Sie mich einfach nach einem {trade}, um alle meine Angebote anzuzeigen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:26.629734Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:09.987231Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_39",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "He is just an old monk. However, he can heal you if you are badly injured or poisoned.",
+      "attempted_translation": "Er ist nur ein alter Mönch. Allerdings kann er dich heilen, wenn du schwer verletzt oder vergiftet bist.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:26.633747Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:10.184600Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_42",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "No idea who that is.",
+      "attempted_translation": "Keine Ahnung, wer das ist.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:26.642913Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:10.369287Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_43",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Yep, that's me. Smart of you to notice that!",
+      "attempted_translation": "Ja, das bin ich. Klug von dir, das zu bemerken!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:26.644842Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:12.010230Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_49",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "He's the local tanner. You could try selling fresh corpses or leather to him.",
+      "attempted_translation": "Er ist der örtliche Gerber. Sie könnten versuchen, ihm frische Leichen oder Leder zu verkaufen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:26.663871Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:12.140233Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_52",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Seymour is a teacher running the {academy}. He has many important {information} about Tibia.",
+      "attempted_translation": "Seymour ist ein Lehrer, der die {academy} leitet. Er hat viele wichtige {information} über Tibia.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:26.676884Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:13.307626Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_54",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This is a local farmer. If you need fresh {food} to regain your health, it's a good place to go. However, many monsters also carry food such as meat or cheese. Or you could simply pick {blueberries}.",
+      "attempted_translation": "Dies ist ein lokaler Bauer. Wenn Sie frisches {food} benötigen, um wieder gesund zu werden, ist dies eine gute Anlaufstelle. Viele Monster tragen jedoch auch Lebensmittel wie Fleisch oder Käse bei sich. Oder Sie können einfach {blueberries} auswählen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:45.518648Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:13.508616Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_55",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This is a local farmer. If you need fresh {food} to regain your health, it's a good place to go. He's only trading with {premium} adventurers though.",
+      "attempted_translation": "Dies ist ein lokaler Bauer. Wenn Sie frisches {food} benötigen, um wieder gesund zu werden, ist dies eine gute Anlaufstelle. Allerdings handelt er nur mit {premium} Abenteurern.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:45.525643Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:13.701836Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_56",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "She used to sell equipment, but I think she has opened a small bar now. Talks about changing her name to 'Mary' and such, strange girl.",
+      "attempted_translation": "Früher hat sie Ausrüstung verkauft, aber ich glaube, sie hat jetzt eine kleine Bar eröffnet. Spricht davon, ihren Namen in 'Mary' zu ändern und so ein seltsames Mädchen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:45.532483Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:15.120779Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.voice_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Are you looking for the best trades? Come to my shop!",
+      "attempted_translation": "Sind Sie auf der Suche nach den besten Trades? Kommen Sie in meinen Shop!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:45.556784Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:15.221002Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.albinius.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Greetings, pilgrim. Welcome to the halls of hope. We are the keepers of this {temple} and welcome everyone willing to contribute.",
+      "attempted_translation": "Sei gegrüßt, Pilger. Willkommen in den Hallen der Hoffnung. Wir sind die Hüter dieses {temple} und heißen alle willkommen, die bereit sind, einen Beitrag zu leisten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T21:12:54.427958Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:15.392841Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.albinius.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The {Shapers} were an advanced civilisation, well versed in art, construction, language and exploration of our world in their time. ...",
+      "attempted_translation": "Die {Shapers} waren eine fortgeschrittene Zivilisation, die sich zu ihrer Zeit gut mit Kunst, Bauwesen, Sprache und der Erforschung unserer Welt auskannte. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:16:45.575057Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:15.708210Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.albinius.say_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "If you have some old shaper tomes I would {buy} them.",
+      "attempted_translation": "Wenn Sie ein paar alte Shaper-Bücher haben, würde ich sie {buy}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:28.782478Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:15.800977Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.albinius.say_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I'm sorry but you lack the needed rune parts.",
+      "attempted_translation": "Es tut mir leid, aber dir fehlen die benötigten Runenteile.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:28.794755Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:15.969884Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_11",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "To my knowledge there is only one place where you can find these gemstones - I know for a fact that the Marid have at least one of them. ...",
+      "attempted_translation": "Meines Wissens gibt es nur einen Ort, dem man diese Edelsteine ​​finden kann – ich weiß mit Sicherheit, dass die Marid mindestens einen davon haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:28.835079Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:16.077840Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_15",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I think he is getting old, entrusting human scum such as you are with an important mission like that. ...",
+      "attempted_translation": "Ich glaube, er wird alt, wenn er einem menschlichen Abschaum wie Ihnen eine so wichtige Mission anvertraut. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:54.119195Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:16.169356Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_17",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway. Are you prepared to embark on a dangerous mission for us?",
+      "attempted_translation": "Ohnehin. Sind Sie bereit, sich für uns auf eine gefährliche Mission einzulassen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:54.125995Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:16.267878Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_19",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
+      "attempted_translation": "|PLAYERNAME|, das klang fast wie ein Grußwort. Menschen – süß sind sie!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:54.129152Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:16.400071Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Baa'leal, wants you to talk to Malor concerning some new mission. ...",
+      "attempted_translation": "Baa'leal möchte, dass du mit Malor über eine neue Mission sprichst. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:54.143161Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:17.107394Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Looks like you have managed to extended your life expectancy - for just a bit longer.",
+      "attempted_translation": "Sieht so aus, als hätten Sie es geschafft, Ihre Lebenserwartung zu verlängern – und zwar um ein kleines bisschen länger.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:54.147946Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:17.643686Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "They are precious gemstones made of some unknown blue mineral and possess enormous magical power. ...",
+      "attempted_translation": "Es handelt sich um kostbare Edelsteine, die aus einem unbekannten blauen Mineral bestehen und eine enorme magische Kraft besitzen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:54.156134Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:17.769745Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, one of them is enough to create thousands of our mighty djinn blades. ...",
+      "attempted_translation": "Wie auch immer, eine davon reicht aus, um Tausende unserer mächtigen Dschinn-Klingen herzustellen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:17:54.164452Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:17.930738Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_11",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "To my knowledge there is only one place where you can find these gemstones - I know for a fact that the Marid have at least one of them. ...",
+      "attempted_translation": "Meines Wissens gibt es nur einen Ort, dem man diese Edelsteine ​​finden kann – ich weiß mit Sicherheit, dass die Marid mindestens einen davon haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:18:27.233212Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:18.414894Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_15",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I think he is getting old, entrusting human scum such as you are with an important mission like that. ...",
+      "attempted_translation": "Ich glaube, er wird alt, wenn er einem menschlichen Abschaum wie Ihnen eine so wichtige Mission anvertraut. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:18:27.254310Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:18.906907Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_17",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway. Are you prepared to embark on a dangerous mission for us?",
+      "attempted_translation": "Ohnehin. Sind Sie bereit, sich für uns auf eine gefährliche Mission einzulassen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:18:27.262064Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:19.042121Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Baa'leal, wants you to talk to Malor concerning some new mission. ...",
+      "attempted_translation": "Baa'leal möchte, dass du mit Malor über eine neue Mission sprichst. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:18:27.278113Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:19.164166Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Looks like you have managed to extended your life expectancy - for just a bit longer.",
+      "attempted_translation": "Sieht so aus, als hätten Sie es geschafft, Ihre Lebenserwartung zu verlängern – und zwar um ein kleines bisschen länger.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:18:27.283698Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:19.290078Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "They are precious gemstones made of some unknown blue mineral and possess enormous magical power. ...",
+      "attempted_translation": "Es handelt sich um kostbare Edelsteine, die aus einem unbekannten blauen Mineral bestehen und eine enorme magische Kraft besitzen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:18:27.292882Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:10:19.416239Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, one of them is enough to create thousands of our mighty djinn blades. ...",
+      "attempted_translation": "Wie auch immer, eine davon reicht aus, um Tausende unserer mächtigen Dschinn-Klingen herzustellen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T21:18:27.302395Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3453
+    "total": 3531
   },
-  "updated_at": "2026-04-29T22:08:06.599673Z"
+  "updated_at": "2026-04-29T22:10:19.441938Z"
 }

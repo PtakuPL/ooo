@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T19:36:16.135476Z",
+  "timestamp": "2026-04-29T19:41:23.905375Z",
   "week_number": 18,
   "global_pct": 18.34,
   "total_ref": 3875872,
-  "total_translated": 710911,
+  "total_translated": 710937,
   "languages": [
     {
       "lang": "pl",
@@ -37,8 +37,8 @@
       "total": 74536,
       "en_copy": 9530,
       "missing": 0,
-      "delta_pct": 0.01,
-      "delta_keys": 3,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T1"
     },
     {
@@ -85,8 +85,8 @@
       "total": 74536,
       "en_copy": 64856,
       "missing": 0,
-      "delta_pct": 0.1,
-      "delta_keys": 77,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T2"
     },
     {
@@ -104,13 +104,13 @@
     {
       "lang": "cs",
       "name": "Czeski",
-      "pct": 51.8,
-      "translated": 38611,
+      "pct": 51.84,
+      "translated": 38637,
       "total": 74536,
-      "en_copy": 29739,
+      "en_copy": 29735,
       "missing": 0,
-      "delta_pct": 0.0,
-      "delta_keys": 0,
+      "delta_pct": 0.04,
+      "delta_keys": 26,
       "tier": "T2"
     },
     {
@@ -133,8 +133,8 @@
       "total": 74536,
       "en_copy": 3838,
       "missing": 0,
-      "delta_pct": 0.04,
-      "delta_keys": 30,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T2"
     },
     {
@@ -635,13 +635,13 @@
       "count": 2,
       "avg_pct": 81.78,
       "total_translated": 121916,
-      "total_delta_keys": 3
+      "total_delta_keys": 0
     },
     "T2": {
       "count": 10,
-      "avg_pct": 49.79,
-      "total_translated": 371134,
-      "total_delta_keys": 107
+      "avg_pct": 49.8,
+      "total_translated": 371160,
+      "total_delta_keys": 26
     },
     "T3": {
       "count": 40,
@@ -651,28 +651,28 @@
     }
   },
   "fastest": {
-    "lang": "de",
-    "name": "Niemiecki",
-    "pct": 67.98,
-    "translated": 50673,
+    "lang": "cs",
+    "name": "Czeski",
+    "pct": 51.84,
+    "translated": 38637,
     "total": 74536,
-    "en_copy": 64856,
+    "en_copy": 29735,
     "missing": 0,
-    "delta_pct": 0.1,
-    "delta_keys": 77,
+    "delta_pct": 0.04,
+    "delta_keys": 26,
     "tier": "T2"
   },
   "slowest": {
-    "lang": "es",
-    "name": "Hiszpański",
-    "pct": 79.38,
-    "translated": 59163,
+    "lang": "cs",
+    "name": "Czeski",
+    "pct": 51.84,
+    "translated": 38637,
     "total": 74536,
-    "en_copy": 9530,
+    "en_copy": 29735,
     "missing": 0,
-    "delta_pct": 0.01,
-    "delta_keys": 3,
-    "tier": "T1"
+    "delta_pct": 0.04,
+    "delta_keys": 26,
+    "tier": "T2"
   },
   "eta_global": null
 }

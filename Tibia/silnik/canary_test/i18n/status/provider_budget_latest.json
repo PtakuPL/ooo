@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:34:21.694523Z",
+  "generated_at_utc": "2026-04-29T19:40:46.990375Z",
   "provider": "openai_model_pool",
   "monthly_cap": 250.0,
-  "spent": 135.0,
-  "used_pct": 54.0,
+  "spent": 138.0,
+  "used_pct": 55.2,
   "unit": "requests_per_day",
   "day_utc": "2026-04-29"
 }

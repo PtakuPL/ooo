@@ -1639,27 +1639,27 @@
   },
   {
     "date": "2026-04-29",
-    "hours_covered": 22,
+    "hours_covered": 23,
     "threshold": 20,
     "is_final": false,
     "ts_first": "2026-04-29T00:32:55Z",
-    "ts_last": "2026-04-29T19:35:07Z",
-    "translated": 15353,
+    "ts_last": "2026-04-29T19:41:23Z",
+    "translated": 15592,
     "guard_fail": 626,
-    "suspicious_high": 7252,
+    "suspicious_high": 7323,
     "identical_to_en": 0,
     "repair_start": 114185,
     "repair_end": 114156,
-    "cycles": 371,
+    "cycles": 377,
     "coverage_start": 17.91,
     "coverage_end": 18.34,
-    "guard_fail_pct": 3.92,
-    "throughput_per_h": 697.9,
+    "guard_fail_pct": 3.86,
+    "throughput_per_h": 677.9,
     "per_lang": {
       "cs": {
         "t": 3065,
         "gf": 283,
-        "cov": 51.8
+        "cov": 51.84
       },
       "ru": {
         "t": 2738,
@@ -1667,47 +1667,47 @@
         "cov": 46.3
       },
       "de": {
-        "t": 2342,
+        "t": 2449,
         "gf": 84,
         "cov": 67.98
       },
       "tr": {
-        "t": 2232,
+        "t": 2262,
         "gf": 0,
         "cov": 35.75
+      },
+      "ro": {
+        "t": 1948,
+        "gf": 156,
+        "cov": 69.81
       },
       "it": {
         "t": 1919,
         "gf": 40,
         "cov": 71.66
       },
-      "ro": {
-        "t": 1901,
-        "gf": 156,
-        "cov": 69.81
-      },
       "es": {
-        "t": 1156,
+        "t": 1211,
         "gf": 0,
         "cov": 79.38
       }
     },
     "per_cat": {
       "items.json": {
-        "t": 13011,
+        "t": 13143,
         "gf": 542
       },
       "npc.json": {
-        "t": 1473,
+        "t": 1506,
         "gf": 42
       },
       "otclient_modules.json": {
-        "t": 869,
+        "t": 943,
         "gf": 42
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 1523
+      "AUTO_TRANSLATE": 1543
     },
     "migration_completed": 15,
     "migration_total": 15

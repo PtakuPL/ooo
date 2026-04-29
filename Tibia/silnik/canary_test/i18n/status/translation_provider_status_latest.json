@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:39:40.836659Z",
+  "generated_at_utc": "2026-04-29T19:41:55.764618Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4.1-mini",
@@ -130,7 +130,7 @@
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
         "recent_writes": 220,
-        "requests_today": 135
+        "requests_today": 138
       }
     },
     "openai_model_pool": {
@@ -173,31 +173,31 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 135,
+      "requests_today": 138,
       "selected_model": "openai/gpt-4.1-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-29T19:34:21.694149Z",
+        "generated_at_utc": "2026-04-29T19:40:46.989827Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4.1-mini",
-        "response_ms": 1371,
+        "response_ms": 1407,
         "rate_limited": false,
-        "requests_total_today": 135,
-        "translated_total_today": 694,
+        "requests_total_today": 138,
+        "translated_total_today": 709,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
           {
             "model": "openai/gpt-4.1-mini",
             "priority": 0,
-            "requests_today": 117,
-            "translated_today": 624,
+            "requests_today": 120,
+            "translated_today": 639,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 1371
+            "last_response_ms": 1407
           },
           {
             "model": "openai/gpt-4o-mini",
@@ -237,10 +237,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 54.0,
+      "used_pct": 55.2,
       "monthly_cap": 250.0,
-      "spent": 135.0,
-      "latest_age_s": 301.080511,
+      "spent": 138.0,
+      "latest_age_s": 32.344343,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

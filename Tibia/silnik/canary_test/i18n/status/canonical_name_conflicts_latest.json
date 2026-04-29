@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:06:57.457042Z",
+  "generated_at_utc": "2026-04-29T23:08:46.698968Z",
   "lang": "es",
   "source_files": [
     "items.json",
@@ -518,31 +518,12 @@
   ],
   "case_only_autofixed": 0,
   "case_only_autofixed_keys": [],
-  "semantic_autofixed": 3,
-  "semantic_autofixed_keys": [
-    "item.10026.name",
-    "item.10299.name",
-    "item.10194.name"
-  ],
-  "semantic_quality_blocked": 1,
-  "semantic_quality_blocked_keys": [
-    "item.19150.name"
-  ],
+  "semantic_autofixed": 0,
+  "semantic_autofixed_keys": [],
+  "semantic_quality_blocked": 0,
+  "semantic_quality_blocked_keys": [],
   "existing_quality_sanitized": 0,
   "existing_quality_sanitized_keys": [],
-  "review_candidates_total": 14,
-  "review_keys": [
-    "item.9197.name",
-    "item.32227.name",
-    "item.19150.name",
-    "item.31926.name",
-    "item.31928.name",
-    "item.31930.name",
-    "item.31960.name",
-    "item.9613.name",
-    "item.10797.name",
-    "item.11256.name",
-    "item.11310.name",
-    "item.11338.name"
-  ]
+  "review_candidates_total": 0,
+  "review_keys": []
 }

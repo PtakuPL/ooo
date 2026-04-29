@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:04:18.675503Z",
+  "generated_at_utc": "2026-04-29T23:08:41.982563Z",
   "lang": "es",
   "source_files": [
     "items.json",
@@ -8,7 +8,7 @@
     "spells.json",
     "quests.json"
   ],
-  "terms_total": 16771,
+  "terms_total": 16798,
   "entries": [
     {
       "term_id": "items.json:item.1.name",
@@ -40470,6 +40470,366 @@
       ]
     },
     {
+      "term_id": "items.json:item.12943.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12943.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12944.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12944.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12945.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12945.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12946.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12946.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12947.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12947.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12948.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12948.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12949.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12949.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1295.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1295.name",
+      "canonical_form": "muro de piedra",
+      "canonical_en": "stone wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "stone",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "piedra"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12950.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12950.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12951.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12951.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12952.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12952.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12953.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12953.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12954.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12954.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12955.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12955.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12956.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12956.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12957.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12957.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12958.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12958.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12959.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12959.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.1296.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.1296.name",
+      "canonical_form": "muro de piedra",
+      "canonical_en": "stone wall",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "stone",
+        "wall"
+      ],
+      "translated_tokens": [
+        "muro",
+        "piedra"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12960.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12960.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
       "term_id": "items.json:item.12961.name",
       "source_file": "items.json",
       "surface": "items",
@@ -40485,6 +40845,132 @@
       "translated_tokens": [
         "colmena",
         "insectoid"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12962.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12962.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12963.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12963.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12964.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12964.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12965.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12965.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12966.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12966.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12967.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12967.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
+      ]
+    },
+    {
+      "term_id": "items.json:item.12968.name",
+      "source_file": "items.json",
+      "surface": "items",
+      "source_key": "item.12968.name",
+      "canonical_form": "estructura de colmena",
+      "canonical_en": "hive structure",
+      "contextual_variants": [],
+      "usages": [],
+      "english_tokens": [
+        "hive",
+        "structure"
+      ],
+      "translated_tokens": [
+        "estructura",
+        "colmena"
       ]
     },
     {

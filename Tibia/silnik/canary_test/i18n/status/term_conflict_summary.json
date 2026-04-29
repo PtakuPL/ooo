@@ -1,141 +1,29 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:06:35.592100Z",
+  "generated_at_utc": "2026-04-29T23:08:41.984812Z",
   "lang": "es",
-  "json_file": "items.json",
-  "surface": "items",
+  "json_file": "server.json",
+  "surface": "server",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 86,
-  "keys_visited": 2000,
-  "keys_scanned": 341,
-  "visit_limit_hit": true,
-  "keys_with_term_usages": 151,
-  "keys_with_conflicts": 29,
-  "term_conflict_rate_pct": 19.205,
-  "term_conflict_rate_delta_pct": 19.205,
-  "registry_terms_total": 16771,
+  "term_conflicts_total": 0,
+  "keys_visited": 0,
+  "keys_scanned": 0,
+  "visit_limit_hit": false,
+  "keys_with_term_usages": 0,
+  "keys_with_conflicts": 0,
+  "term_conflict_rate_pct": 0.0,
+  "term_conflict_rate_delta_pct": 0.0,
+  "registry_terms_total": 16798,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 1,
-  "manual_review_enqueued": 85,
-  "conflict_type_breakdown": {
-    "canonical_term_missing": 85,
-    "canonical_term_inflection_suspect": 1
-  },
+  "inflection_suspects_flagged": 0,
+  "manual_review_enqueued": 0,
+  "conflict_type_breakdown": {},
   "surface_breakdown": {
-    "items": {
-      "keys_with_term_usages": 151,
-      "keys_with_conflicts": 29,
-      "term_conflicts_total": 86
+    "server": {
+      "keys_with_term_usages": 0,
+      "keys_with_conflicts": 0,
+      "term_conflicts_total": 0
     }
   },
-  "top_conflicts": [
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja contiene a conjunto de armas",
-      "source_file": "items.json",
-      "source_key": "item.116.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja contiene a conjunto de armas",
-      "source_file": "items.json",
-      "source_key": "item.117.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja contiene a conjunto de armas",
-      "source_file": "items.json",
-      "source_key": "item.118.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja contiene a conjunto de armas",
-      "source_file": "items.json",
-      "source_key": "item.12763.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja contiene a conjunto de armas",
-      "source_file": "items.json",
-      "source_key": "item.12764.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja contiene a conjunto de armas",
-      "source_file": "items.json",
-      "source_key": "item.14166.name"
-    },
-    {
-      "key": "item.107.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Limo",
-      "canonical_en": "slime",
-      "translated_text": "Contiene el olor de una baba recién asesinada.",
-      "source_file": "items.json",
-      "source_key": "item.6.name"
-    },
-    {
-      "key": "item.107.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Limo",
-      "canonical_en": "Slime",
-      "translated_text": "Contiene el olor de una baba recién asesinada.",
-      "source_file": "monsters.json",
-      "source_key": "monster.slime.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
-      "source_file": "items.json",
-      "source_key": "item.116.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
-      "source_file": "items.json",
-      "source_key": "item.117.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
-      "source_file": "items.json",
-      "source_key": "item.118.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "cajón",
-      "canonical_en": "crate",
-      "translated_text": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
-      "source_file": "items.json",
-      "source_key": "item.12763.name"
-    }
-  ]
+  "top_conflicts": []
 }

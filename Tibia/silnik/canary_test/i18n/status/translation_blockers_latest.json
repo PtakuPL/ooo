@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:02:40.495618Z",
+  "timestamp": "2026-04-29T23:09:15.370607Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -9,7 +9,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 152294,
+    "total_marker_todo": 152227,
     "top_candidates": [
       {
         "lang": "tr",
@@ -44,14 +44,14 @@
       {
         "lang": "it",
         "json_file": "items.json",
-        "marker_todo": 13534,
-        "pending_total": 13534
+        "marker_todo": 13492,
+        "pending_total": 13492
       },
       {
         "lang": "es",
         "json_file": "items.json",
-        "marker_todo": 12783,
-        "pending_total": 12783
+        "marker_todo": 12758,
+        "pending_total": 12758
       },
       {
         "lang": "ru",
@@ -99,9 +99,9 @@
     "tr"
   ],
   "json_files": 39,
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 24,
+  "cache_cycle": 25,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {
@@ -154,12 +154,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 12672,
+        "name_pending_total": 12647,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 12672,
-            "name_coverage_pct": 62.09
+            "name_pending": 12647,
+            "name_coverage_pct": 62.16
           },
           "monsters.json": {
             "name_total": 1637,
@@ -227,12 +227,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 13533,
+        "name_pending_total": 13491,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 13533,
-            "name_coverage_pct": 59.51
+            "name_pending": 13491,
+            "name_coverage_pct": 59.64
           },
           "monsters.json": {
             "name_total": 1637,

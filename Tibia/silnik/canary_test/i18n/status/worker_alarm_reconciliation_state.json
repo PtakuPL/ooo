@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at_utc": "2026-04-29T23:02:39.397624Z",
-  "cycle": 24,
+  "updated_at_utc": "2026-04-29T23:09:04.212127Z",
+  "cycle": 25,
   "doctor_available": true,
   "doctor_overall": "critical",
   "alarms": {
@@ -88,12 +88,12 @@
     "GUARD_REPORT_STALE": {
       "first_seen_utc": "2026-04-22T16:14:44.259527Z",
       "activations": 11,
-      "status": "active",
-      "last_seen_utc": "2026-04-29T23:02:39.397624Z",
+      "status": "resolved",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "warning",
       "last_message": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 859s",
-      "last_resolved_utc": "2026-04-29T22:01:16.401306Z",
-      "resolutions": 10
+      "last_resolved_utc": "2026-04-29T23:09:04.212127Z",
+      "resolutions": 11
     },
     "REPAIR_TUNING_NO_SAMPLES": {
       "first_seen_utc": "2026-04-22T16:14:44.259527Z",
@@ -109,9 +109,9 @@
       "first_seen_utc": "2026-04-22T16:20:20.340230Z",
       "activations": 3,
       "status": "active",
-      "last_seen_utc": "2026-04-29T23:02:39.397624Z",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "warning",
-      "last_message": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=282 rate=8.774% window=6.0h top_lang=cs:109 per_domain=[server.json:26(1300.0%/warning)]",
+      "last_message": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=284 rate=8.552% window=6.0h top_lang=cs:109 per_domain=[server.json:26(1300.0%/warning)]",
       "last_resolved_utc": "2026-04-23T18:51:32.536689Z",
       "resolutions": 2
     },
@@ -129,7 +129,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 2,
       "status": "active",
-      "last_seen_utc": "2026-04-29T23:02:39.397624Z",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "warning",
       "last_message": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.87<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0,...] source=statusd_report.json",
       "last_resolved_utc": "2026-04-23T19:26:23.569214Z",
@@ -149,7 +149,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 1,
       "status": "active",
-      "last_seen_utc": "2026-04-29T23:02:39.397624Z",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "warning",
       "last_message": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.24pp top=[ru:36.24pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:19.46pp] source=statusd_report.json"
     },
@@ -167,7 +167,7 @@
       "first_seen_utc": "2026-04-22T18:42:28.846541Z",
       "activations": 6,
       "status": "active",
-      "last_seen_utc": "2026-04-29T23:02:39.397624Z",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "warning",
       "last_message": "QUEUE_STARVATION_DETECTED: source=deferred_translation_queue.jsonl detail=Duży pending i stara kolejka sugerują głodzenie queue.",
       "last_resolved_utc": "2026-04-23T17:11:02.275660Z",
@@ -206,12 +206,12 @@
     "PROVIDER_BUDGET_80PCT": {
       "first_seen_utc": "2026-04-23T19:11:41.812430Z",
       "activations": 4,
-      "status": "active",
-      "last_seen_utc": "2026-04-29T23:02:39.397624Z",
+      "status": "resolved",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "warning",
       "last_message": "PROVIDER_BUDGET_80PCT: used=98.4% cap=250.0 spent=246.0 source=provider_budget_latest.json",
-      "last_resolved_utc": "2026-04-29T00:04:55.674626Z",
-      "resolutions": 3
+      "last_resolved_utc": "2026-04-29T23:09:04.212127Z",
+      "resolutions": 4
     },
     "PROVIDER_CIRCUIT_OPEN": {
       "first_seen_utc": "2026-04-23T19:16:54.956800Z",
@@ -225,11 +225,11 @@
     },
     "PROVIDER_BUDGET_EXHAUSTED": {
       "first_seen_utc": "2026-04-23T19:18:50.983563Z",
-      "activations": 2,
-      "status": "resolved",
-      "last_seen_utc": "2026-04-28T14:28:53.038013Z",
+      "activations": 3,
+      "status": "active",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "critical",
-      "last_message": "PROVIDER_BUDGET_EXHAUSTED: used=100.0% cap=250.0 spent=250.0 source=provider_budget_latest.json",
+      "last_message": "PROVIDER_BUDGET_EXHAUSTED: used=100.8% cap=250.0 spent=252.0 source=provider_budget_latest.json",
       "last_resolved_utc": "2026-04-28T14:28:53.038013Z",
       "resolutions": 2
     },
@@ -386,25 +386,27 @@
     "TERM_CONSISTENCY_REGRESSION": {
       "first_seen_utc": "2026-04-27T15:23:48.252528Z",
       "activations": 117,
-      "status": "active",
-      "last_seen_utc": "2026-04-29T23:02:39.397624Z",
+      "status": "resolved",
+      "last_seen_utc": "2026-04-29T23:09:04.212127Z",
       "last_severity": "critical",
       "last_message": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json",
-      "last_resolved_utc": "2026-04-29T22:01:16.401306Z",
-      "resolutions": 116
+      "last_resolved_utc": "2026-04-29T23:09:04.212127Z",
+      "resolutions": 117
     }
   },
   "active_alarm_tokens": [
-    "GUARD_REPORT_STALE",
     "NATIVE_READINESS_BELOW_THRESHOLD",
-    "PROVIDER_BUDGET_80PCT",
+    "PROVIDER_BUDGET_EXHAUSTED",
     "QUEUE_STARVATION_DETECTED",
     "SURFACE_COVERAGE_IMBALANCE",
-    "SUSPICIOUS_HIGH_ELEVATED",
-    "TERM_CONSISTENCY_REGRESSION"
+    "SUSPICIOUS_HIGH_ELEVATED"
   ],
-  "last_opened_tokens": [],
+  "last_opened_tokens": [
+    "PROVIDER_BUDGET_EXHAUSTED"
+  ],
   "last_resolved_tokens": [
-    "DISPATCH_STALE"
+    "GUARD_REPORT_STALE",
+    "PROVIDER_BUDGET_80PCT",
+    "TERM_CONSISTENCY_REGRESSION"
   ]
 }

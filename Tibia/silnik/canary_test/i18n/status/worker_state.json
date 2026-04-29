@@ -404,10 +404,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T23:06:50Z",
+  "generated_at_utc": "2026-04-29T23:09:05Z",
   "global": {
     "en_keys_total": 74536,
-    "errors_total": 11367,
+    "errors_total": 11368,
     "files_processed_total": 6443,
     "languages_total": 56
   },
@@ -416,135 +416,14 @@
       "auto_translate": {
         "guard_fail": 0,
         "json_file": "items.json",
-        "keys_to_translate": 13534,
-        "language": "it",
-        "recent_examples": [
-          {
-            "en": "stone wall",
-            "key": "item.1469.name",
-            "source": "simple",
-            "translated": "muro di pietra"
-          },
-          {
-            "en": "RESERVED SPRITE",
-            "key": "item.14699.name",
-            "source": "simple",
-            "translated": "SPRITE RISERVATO"
-          },
-          {
-            "en": "stone wall",
-            "key": "item.1470.name",
-            "source": "simple",
-            "translated": "muro di pietra"
-          },
-          {
-            "en": "RESERVED SPRITE",
-            "key": "item.14700.name",
-            "source": "simple",
-            "translated": "SPRITE RISERVATO"
-          },
-          {
-            "en": "RESERVED SPRITE",
-            "key": "item.14701.name",
-            "source": "simple",
-            "translated": "SPRITE RISERVATO"
-          },
-          {
-            "en": "RESERVED SPRITE",
-            "key": "item.14702.name",
-            "source": "simple",
-            "translated": "SPRITE RISERVATO"
-          },
-          {
-            "en": "RESERVED SPRITE",
-            "key": "item.14703.name",
-            "source": "simple",
-            "translated": "SPRITE RISERVATO"
-          },
-          {
-            "en": "bug tral",
-            "key": "item.1069.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "trappola per insetti"
-          },
-          {
-            "en": "artist's easel",
-            "key": "item.14687.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "cavalletto dell'artista"
-          },
-          {
-            "en": "artist's easel",
-            "key": "item.14688.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "cavalletto dell'artista"
-          },
-          {
-            "en": "artist's easel",
-            "key": "item.14689.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "cavalletto dell'artista"
-          },
-          {
-            "en": "artist's easel",
-            "key": "item.14690.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "cavalletto dell'artista"
-          },
-          {
-            "en": "masterpiece of a muse",
-            "key": "item.14691.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "capolavoro di una musa"
-          },
-          {
-            "en": "masterpiece of a muse",
-            "key": "item.14692.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "capolavoro di una musa"
-          },
-          {
-            "en": "painting of a muse",
-            "key": "item.14693.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "dipinto di una musa"
-          },
-          {
-            "en": "painting of a muse",
-            "key": "item.14694.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "dipinto di una musa"
-          },
-          {
-            "en": "masterpiece of a gozzler",
-            "key": "item.14695.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "capolavoro di un gozzler"
-          },
-          {
-            "en": "masterpiece of a gozzler",
-            "key": "item.14696.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "capolavoro di un gozzler"
-          },
-          {
-            "en": "painting of a gozzler",
-            "key": "item.14697.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "dipinto di un gozzler"
-          },
-          {
-            "en": "painting of a gozzler",
-            "key": "item.14698.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "dipinto di un gozzler"
-          }
-        ],
-        "recent_translated": 43,
+        "keys_to_translate": 12783,
+        "language": "es",
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "it",
+      "category": "es",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -587,7 +466,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-30T01:02:25.265600",
+      "last_update": "2026-04-30T01:08:50.223025",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -811,7 +690,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 23,
+      "total_cycles": 24,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -829,20 +708,20 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "es",
-      "detail": "auto translate in progress",
+      "category": "-",
+      "detail": "cycle start",
       "eta_seconds": 0,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
+      "file": "-",
+      "phase": "IDLE",
       "progress": {
         "done": 0,
-        "total": 30,
-        "unit": "keys"
+        "total": 0,
+        "unit": "units"
       },
-      "stage": "heartbeat_tick"
+      "stage": "cycle_start"
     },
-    "cycle": 24,
-    "heartbeat_at_utc": "2026-04-29T23:06:18Z",
+    "cycle": 25,
+    "heartbeat_at_utc": "2026-04-29T23:09:04Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

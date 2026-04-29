@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:06:57.786991Z",
+  "generated_at_utc": "2026-04-29T23:09:13.678066Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
   "active_provider_timestamp": "2026-04-29T23:06:52.780748Z",
   "active_model": "openai/gpt-4o-mini",
-  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+  "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -98,7 +98,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 16,
+    "fallbacks_last_200": 22,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_google_translate_high",
@@ -108,12 +108,12 @@
       {
         "action": "fallback_to_next_provider_validate_fail",
         "action_label": "fallback to next provider validate fail",
-        "count": 5
+        "count": 10
       },
       {
         "action": "fallback_to_google_translate_validate_fail",
         "action_label": "fallback to google translate validate fail",
-        "count": 1
+        "count": 2
       }
     ],
     "providers": {
@@ -245,7 +245,7 @@
       "used_pct": 100.8,
       "monthly_cap": 250.0,
       "spent": 252.0,
-      "latest_age_s": 82.472524,
+      "latest_age_s": 278.718047,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -278,14 +278,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T23:03:04.603601Z",
+    "timestamp": "2026-04-29T23:07:38.521128Z",
     "provider": "tm_simple",
     "provider_label": "TM/simple",
     "source": "tm",
-    "action": "fallback_to_google_translate_high",
-    "action_label": "fallback to google translate high",
-    "decision_reason": "high_reject_types",
-    "json_file": "items.json",
-    "key": "item.11695.name"
+    "action": "fallback_to_next_provider_validate_fail",
+    "action_label": "fallback to next provider validate fail",
+    "decision_reason": "validate_word_salad",
+    "json_file": "server.json",
+    "key": "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.shulgrax.lever.L16.1956"
   }
 }

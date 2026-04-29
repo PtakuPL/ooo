@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T23:38:54.898003Z",
+  "timestamp": "2026-04-29T23:40:28.457672Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 6760,
     "heartbeat_at": "2026-04-29T23:37:49Z",
-    "heartbeat_age_s": 65.9,
+    "heartbeat_age_s": 159.5,
     "cycle": 28,
     "mode": "continuous",
     "category": "?",
@@ -86,7 +86,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T23:38:54.898003Z",
+    "generated_at_utc": "2026-04-29T23:40:28.457672Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
@@ -97,17 +97,17 @@
     "current_file": "items.json",
     "cycle": 28,
     "heartbeat_at_utc": "2026-04-29T23:37:49Z",
-    "heartbeat_age_s": 65.898,
+    "heartbeat_age_s": 159.458,
     "worker": {
       "pid": 6760,
       "pid_alive": true,
       "heartbeat_at_utc": "2026-04-29T23:37:49Z",
-      "heartbeat_age_s": 65.898,
+      "heartbeat_age_s": 159.458,
       "mode": "continuous",
       "category": "",
       "cycle": 28,
-      "activity_heartbeat_at_utc": "2026-04-29T23:37:49Z",
-      "activity_heartbeat_age_s": 65.898
+      "activity_heartbeat_at_utc": "2026-04-29T23:39:36Z",
+      "activity_heartbeat_age_s": 52.458
     },
     "guardian": {
       "timestamp": "2026-04-29T23:38:48.475254Z",
@@ -127,7 +127,7 @@
       "pid": 9567,
       "owner_pid": 9567,
       "owner_pid_alive": true,
-      "lock_age_s": 6.0
+      "lock_age_s": 0.0
     },
     "thresholds": {
       "heartbeat_aging_seconds": 300.0,
@@ -532,7 +532,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T23:38:54.998292Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T23:40:28.531865Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1210,8 +1210,8 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T23:38:42.092023Z",
-    "latest_age_s": 12.806,
+    "latest_timestamp": "2026-04-29T23:39:37.986639Z",
+    "latest_age_s": 50.471,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 9020,
@@ -1270,7 +1270,7 @@
     "stats": {
       "enqueued": 0,
       "suppressed_cooldown": 0,
-      "suppressed_manual_review": 1,
+      "suppressed_manual_review": 49,
       "deduped_ttl": 0,
       "manual_review_escalations": 0
     },

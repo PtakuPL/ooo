@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T23:15:25.692395Z",
+  "updated_at": "2026-04-29T23:17:39.024081Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -226647,15 +226647,65 @@
       "partial_completed": false,
       "last_status": "pending",
       "cooldown": false
+    },
+    "8597b9daf7be69b5ec0fb82c": {
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_8",
+      "attempts_total": 1,
+      "attempts_by_bucket": {
+        "placeholder": 1
+      },
+      "last_reason": "gt_structure_retry_placeholder",
+      "last_bucket": "placeholder",
+      "last_attempt_epoch": 1777504631,
+      "last_seen_epoch": 1777504631,
+      "next_retry_not_before_epoch": 1777519031,
+      "next_retry_not_before_utc": "2026-04-30T03:17:11Z",
+      "manual_review": false,
+      "first_seen_epoch": 1777504631,
+      "first_seen_utc": "2026-04-29T23:17:11Z",
+      "partial_events": 0,
+      "partial_stage_max": 0,
+      "partial_last_stage_utc": "",
+      "partial_active": false,
+      "partial_completed": false,
+      "last_status": "pending",
+      "cooldown": false
+    },
+    "980a66de50743cbcda080e2c": {
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.archery_rook.greet_msg_1",
+      "attempts_total": 1,
+      "attempts_by_bucket": {
+        "word_salad": 1
+      },
+      "last_reason": "gt_partial_validate_word_salad",
+      "last_bucket": "word_salad",
+      "last_attempt_epoch": 1777504657,
+      "last_seen_epoch": 1777504657,
+      "next_retry_not_before_epoch": 1777569457,
+      "next_retry_not_before_utc": "2026-04-30T17:17:37Z",
+      "manual_review": false,
+      "first_seen_epoch": 1777504657,
+      "first_seen_utc": "2026-04-29T23:17:37Z",
+      "partial_events": 1,
+      "partial_stage_max": 1,
+      "partial_last_stage_utc": "2026-04-29T23:17:37.801793Z",
+      "partial_active": true,
+      "partial_completed": false,
+      "last_status": "pending",
+      "cooldown": false
     }
   },
   "stats": {
-    "enqueued": 2,
+    "enqueued": 4,
     "suppressed_cooldown": 0,
     "suppressed_manual_review": 0,
     "deduped_ttl": 0,
     "manual_review_escalations": 89,
-    "partial_staged": 0,
+    "partial_staged": 1,
     "partial_completed": 0,
     "retry_loop_cooldown": 0,
     "retry_loop_manual_review": 0

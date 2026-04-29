@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:07:15.599553Z",
+  "timestamp": "2026-04-29T23:17:37.031645Z",
   "priority_langs": [
     "es",
     "pl",
@@ -122,7 +122,7 @@
   },
   "cooldown_state_file": "i18n/status/repair_target_cooldown_state.json",
   "cooldown_filtered_entries": 0,
-  "last_selected_target": "es:npc.json",
+  "last_selected_target": "es:server.json",
   "top_entries": [
     {
       "lang": "es",
@@ -1327,8 +1327,8 @@
   ],
   "selected": {
     "lang": "es",
-    "json_file": "server.json",
-    "identical_to_en": 9,
-    "domain_priority": 1
+    "json_file": "npc.json",
+    "identical_to_en": 2,
+    "domain_priority": 0
   }
 }

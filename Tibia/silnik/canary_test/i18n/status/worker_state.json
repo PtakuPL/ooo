@@ -404,10 +404,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T20:08:22Z",
+  "generated_at_utc": "2026-04-29T20:10:51Z",
   "global": {
     "en_keys_total": 74536,
-    "errors_total": 11343,
+    "errors_total": 11344,
     "files_processed_total": 6443,
     "languages_total": 56
   },
@@ -416,14 +416,135 @@
       "auto_translate": {
         "guard_fail": 0,
         "json_file": "items.json",
-        "keys_to_translate": 13624,
-        "language": "it",
-        "recent_examples": [],
-        "recent_translated": 0,
+        "keys_to_translate": 12977,
+        "language": "es",
+        "recent_examples": [
+          {
+            "en": "small shed",
+            "key": "item.12627.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "pequeño cobertizo"
+          },
+          {
+            "en": "small shed",
+            "key": "item.12628.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "pequeño cobertizo"
+          },
+          {
+            "en": "small shed",
+            "key": "item.12629.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "pequeño cobertizo"
+          },
+          {
+            "en": "tic-tac-toe board",
+            "key": "item.1263.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "tablero de tres en raya"
+          },
+          {
+            "en": "small shed",
+            "key": "item.12630.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "pequeño cobertizo"
+          },
+          {
+            "en": "small shed",
+            "key": "item.12631.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "pequeño cobertizo"
+          },
+          {
+            "en": "tic-tac-toe board",
+            "key": "item.1264.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "tablero de tres en raya"
+          },
+          {
+            "en": "tic-tac-toe board",
+            "key": "item.1265.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "tablero de tres en raya"
+          },
+          {
+            "en": "tic-tac-toe board",
+            "key": "item.1266.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "tablero de tres en raya"
+          },
+          {
+            "en": "water pump",
+            "key": "item.12666.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "bomba de agua"
+          },
+          {
+            "en": "water pump",
+            "key": "item.12667.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "bomba de agua"
+          },
+          {
+            "en": "water pump",
+            "key": "item.12668.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "bomba de agua"
+          },
+          {
+            "en": "tic-tac-toe board",
+            "key": "item.1267.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "tablero de tres en raya"
+          },
+          {
+            "en": "bird's nest",
+            "key": "item.12676.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "nido de pájaro"
+          },
+          {
+            "en": "bird's nest",
+            "key": "item.12677.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "nido de pájaro"
+          },
+          {
+            "en": "tic-tac-toe board",
+            "key": "item.1268.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "tablero de tres en raya"
+          },
+          {
+            "en": "tic-tac-toe board",
+            "key": "item.1269.name",
+            "source": "openai:openai/gpt-4.1-mini",
+            "translated": "tablero de tres en raya"
+          },
+          {
+            "en": "baby rotworm",
+            "key": "item.10026.name",
+            "source": "canonical_name_semantic_autofix",
+            "translated": "rotworm de bebé"
+          },
+          {
+            "en": "badger fur",
+            "key": "item.10299.name",
+            "source": "canonical_name_semantic_autofix",
+            "translated": "pelaje de badger"
+          },
+          {
+            "en": "bamboo drawer",
+            "key": "item.10194.name",
+            "source": "canonical_name_semantic_autofix",
+            "translated": "drawer de bambú"
+          }
+        ],
+        "recent_translated": 107,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "it",
+      "category": "es",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -466,7 +587,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-29T22:03:35.269593",
+      "last_update": "2026-04-29T22:09:18.427089",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -690,7 +811,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 2,
+      "total_cycles": 3,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -708,10 +829,10 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "es",
+      "category": "de",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
-      "file": "items.json",
+      "file": "otclient_modules.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
@@ -720,8 +841,8 @@
       },
       "stage": "heartbeat_tick"
     },
-    "cycle": 3,
-    "heartbeat_at_utc": "2026-04-29T20:06:58Z",
+    "cycle": 4,
+    "heartbeat_at_utc": "2026-04-29T20:10:31Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

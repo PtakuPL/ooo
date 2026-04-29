@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-29T20:03:56.393618Z",
-  "cycle_counter": 13285,
-  "last_target_key": "es:items.json",
-  "last_pending_total": 12977,
-  "last_marker_todo": 12977,
-  "last_tier": 1,
-  "last_cat_priority": 0,
+  "timestamp": "2026-04-29T20:10:30.504007Z",
+  "cycle_counter": 13286,
+  "last_target_key": "de:otclient_modules.json",
+  "last_pending_total": 1128,
+  "last_marker_todo": 647,
+  "last_tier": 2,
+  "last_cat_priority": 8,
   "candidates_count": 96,
   "active_candidates_count": 89,
   "skipped_backoff": 7,
@@ -182,9 +182,9 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": false,
+  "cache_hit": true,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 3,
+  "cache_cycle": 4,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -548,14 +548,6 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "ro": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 46.09,
-          "npc.json": 69.88,
-          "quests.json": 99.02
-        }
-      },
       "ru": {
         "allowed_domain": "npc.json",
         "domain_coverages": {
@@ -564,20 +556,28 @@
           "quests.json": 99.51
         }
       },
-      "cs": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 28.03,
-          "npc.json": 39.51,
-          "quests.json": 98.85
-        }
-      },
       "it": {
         "allowed_domain": null,
         "domain_coverages": {
           "items.json": 52.81,
           "npc.json": 76.51,
           "quests.json": 99.18
+        }
+      },
+      "ro": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 46.09,
+          "npc.json": 69.88,
+          "quests.json": 99.02
+        }
+      },
+      "cs": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 28.03,
+          "npc.json": 39.51,
+          "quests.json": 98.85
         }
       }
     },

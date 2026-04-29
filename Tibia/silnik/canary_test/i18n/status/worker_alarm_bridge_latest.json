@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:03:49.413957Z",
-  "cycle": 3,
+  "generated_at_utc": "2026-04-29T20:10:29.643231Z",
+  "cycle": 4,
   "open_alarms": [
     {
       "code": "DISPATCH_STALE",
@@ -37,28 +37,20 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1000 rate=29.815% window=6.0h top_lang=es:385 per_lang=[es:385(105.769%/warning)] per_domain=[npc.json:240(63.66%/warning),server.json:143(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=971 rate=28.643% window=6.0h top_lang=es:376 per_lang=[es:376(80.0%/warning)] per_domain=[npc.json:230(61.17%/warning),server.json:143(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=16.058% delta=16.058% total=54 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=19.205% delta=19.205% total=86 source=term_conflicts_latest.json"
     }
   ],
-  "resolved_this_cycle": [
-    "GUARDIAN_DEGRADED",
-    "WORKER_PROCESS_DUPLICATION",
-    "WORKER_STUCK_NO_WRITE",
-    "WORKER_TRANSLATION_CONTRACT_BROKEN",
-    "ZOMBIE_PID"
-  ],
-  "newly_opened": [
-    "DISPATCH_STALE"
-  ],
+  "resolved_this_cycle": [],
+  "newly_opened": [],
   "summary": {
     "open_count": 7,
-    "resolved_count": 5,
+    "resolved_count": 0,
     "tracked_alarms": 32
   },
   "queue_snapshot": {
@@ -70,10 +62,6 @@
     "selected_action": "none",
     "reason": "write_starvation_or_queue_starvation",
     "suppressed_by_cooldown": true,
-    "cooldown_remaining_cycles": 2,
-    "selected_command": "-",
-    "result": "resolved_update",
-    "result_reason": "resolved_count=5",
-    "updated_at_utc": "2026-04-29T20:03:49.413957Z"
+    "cooldown_remaining_cycles": 2
   }
 }

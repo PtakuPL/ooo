@@ -1,26 +1,128 @@
 {
-  "timestamp": "2026-04-29T20:03:22.594061Z",
+  "timestamp": "2026-04-29T20:09:07.905631Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 3,
+  "json_file": "items.json",
+  "translated": 107,
   "entries": [
     {
-      "key": "npc.captain_fearless.voice_1",
-      "en": "Passages to Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar and Ankrahmun.",
-      "translated": "Pasajes a Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar y Ankrahmun.",
-      "source": "tm"
+      "key": "item.12627.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "npc.captain_greyhound.greet_msg_1",
-      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
-      "translated": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
-      "source": "tm"
+      "key": "item.12628.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "npc.captain_fearless.stdmod_9",
-      "en": "Where do you want to go? To {Issavi}, {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} or {Ankrahmun}?",
-      "translated": "¿A dónde quieres ir? ¿A {Issavi}, {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} o {Ankrahmun}?",
-      "source": "google_translate"
+      "key": "item.12629.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.1263.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12630.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12631.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.1264.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.1265.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.1266.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12666.name",
+      "en": "water pump",
+      "translated": "bomba de agua",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12667.name",
+      "en": "water pump",
+      "translated": "bomba de agua",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12668.name",
+      "en": "water pump",
+      "translated": "bomba de agua",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.1267.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12676.name",
+      "en": "bird's nest",
+      "translated": "nido de pájaro",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12677.name",
+      "en": "bird's nest",
+      "translated": "nido de pájaro",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.1268.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.1269.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.10026.name",
+      "en": "baby rotworm",
+      "translated": "rotworm de bebé",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10299.name",
+      "en": "badger fur",
+      "translated": "pelaje de badger",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10194.name",
+      "en": "bamboo drawer",
+      "translated": "drawer de bambú",
+      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

@@ -64240,11 +64240,205 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:08:41.187427Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.10797.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "unknown item",
+      "attempted_translation": "elemento desconocido",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'artículo desconocido' for EN 'unknown item', but source key item.10797.name still uses conflicting variant 'elemento desconocido'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:09:04.304839Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11256.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "unknown item",
+      "attempted_translation": "elemento desconocido",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'artículo desconocido' for EN 'unknown item', but source key item.11256.name still uses conflicting variant 'elemento desconocido'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:09:04.417828Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11310.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "unknown item",
+      "attempted_translation": "elemento desconocido",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'artículo desconocido' for EN 'unknown item', but source key item.11310.name still uses conflicting variant 'elemento desconocido'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:09:06.687200Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11338.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "unknown item",
+      "attempted_translation": "elemento desconocido",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'artículo desconocido' for EN 'unknown item', but source key item.11338.name still uses conflicting variant 'elemento desconocido'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:09:07.061034Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.9117.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "unknown item",
+      "attempted_translation": "unkNown item",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'artículo desconocido' for EN 'unknown item', but source key item.9117.name still uses conflicting variant 'unkNown item'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:09:07.238978Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.9695.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "unknown item",
+      "attempted_translation": "unkNown item",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'artículo desconocido' for EN 'unknown item', but source key item.9695.name still uses conflicting variant 'unkNown item'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:10:41.826484Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.game_screenshot_otui.tr_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Select all events that sould trigger auto Screenshots:",
+      "attempted_translation": "Wählen Sie alle Ereignisse aus, die automatisch ausgelöst werden sollen. Screenshots:",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T18:56:53.679813Z"
+    },
+    {
+      "timestamp": "2026-04-29T20:10:43.457812Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.game_screenshot_otui.tr_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Enable this option to save screenshots of the most important\nmoments of your Tibia career! Whenever one of the events you\nhave selected takes place, a screenshot will be taken\nautomatically.\n\nThe following events can be selected to trigger an auto screenshot:\n\n- Level Up: Your character has reached the next level\n- Skill Up: You advanced in one of your skills (e.g. Magic Level\nor Sword Fighting)\n- Achievement: You earned an achievement, either while\nplaying or upon login\n- Bestiary Entry Unlocked: You unlocked new information\nabout a creature in the Bestiary\n- Bestiary Entry Completed: You unlocked all information about\na creature in the Bestiary\n- Treasure Found: You received some reward from a container\nfor solving a quest or a riddle\n- Valuable Loot: You just found some loot which you have\nmarked in the Drop Tracker\n- Boss Defeated: You defeated a boss monster, either alone or\ntogether with other players, and are entitled to loot it\n- Death PvE: You were just killed by some creature (PvE)\n- Death PvP: You were just killed by another player (PvP)\n- Player Kill: You defeated another player\n- Player Killer Assist: You assisted the killing of another player\n- Player Attacking: Another player just started to attack you\n- Highest Damage Dealt: You dealt a new all-time high damage\non a foe. To see or reset your current all-time high, check\nthe Impact Analyser\n- Highest Healing Done: You healed someone with a new all-\ntime high healing value. To see or reset your current all-time\nhigh, check the Impact Analyser\n- Low Health: You have reached a threshold of deep red\nhealth Copy",
+      "attempted_translation": "Aktivieren Sie diese Option, um Screenshots der wichtigsten zu speichern\nMomente Ihrer Tibia Karriere! Wann immer eines der Ereignisse Sie\nerfolgt, wird ein Screenshot erstellt\nautomatisch.\n\nDie folgenden Ereignisse können ausgewählt werden, um einen automatischen Screenshot auszulösen:\n\n- Levelaufstieg: Dein Charakter hat das nächste Level erreicht\n- Fertigkeitsverbesserung: Du hast eine deiner Fertigkeiten verbessert (z. B. Magiestufe).\noder Schwertkampf)\n- Erfolg: Du hast entweder eine Zeit lang einen Erfolg erzielt\nbeim Spielen oder beim Einloggen\n- Bestiary Eintrag freigeschaltet: Sie haben neue Informationen freigeschaltet\nüber eine Kreatur im Bestiary\n- Bestiary Eintrag abgeschlossen: Sie haben alle Informationen über freigeschaltet\neine Kreatur im Bestiary\n- Treasure Gefunden: Du hast eine Belohnung aus einem Container erhalten\nzum Lösen einer Quest oder eines Rätsels\n- Wertvolle Beute: Du hast gerade Beute gefunden, die du besitzt\nim Drop-Tracker markiert\n- Boss besiegt: Du hast ein Bossmonster besiegt, entweder alleine oder\nzusammen mit anderen Spielern und sind berechtigt, es zu plündern\n- Todes-PvE: Du wurdest gerade von einer Kreatur getötet (PvE)\n- Todes-PvP: Du wurdest gerade von einem anderen Spieler getötet (PvP)\n- Spieler töten: Du hast einen anderen Spieler besiegt\n- Player Killer Assist: Du hast die Tötung eines anderen Spielers unterstützt\n- Spieler greift an: Ein anderer Spieler hat gerade begonnen, dich anzugreifen\n- Höchster verursachter Schaden: Du hast einen neuen Allzeit-Höchstschaden verursacht\nauf einen Feind. Um Ihr aktuelles Allzeithoch anzuzeigen oder zurückzusetzen, überprüfen Sie es\nder Impact-Analysator\n- Höchste durchgeführte Heilung: Du hast jemanden mit einem neuen All- geheilt.\nZeit hoher Heilwert. Um Ihre aktuelle Allzeit anzuzeigen oder zurückzusetzen\nhoch, überprüfen Sie den Impact Analyzer\n- Geringe Gesundheit: Du hast eine tiefrote Schwelle erreicht\nGesundheitskopie",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T18:57:00.023644Z"
+    },
+    {
+      "timestamp": "2026-04-29T20:10:43.583712Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.game_screenshot_otui.tr_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "If you check this option, the client takes a screenshot every\nsecond and caches the last 5 of them. Whenever a screenshot is\ntaken either automatically for a selected event or manually using a\nhotkey, also the screenshots of the previous 5 seconds will be\nsaved.\nIf you experience frame stuttering, you should consider disabling\nthis option..",
+      "attempted_translation": "Wenn Sie diese Option aktivieren, erstellt der Client jeden Tag einen Screenshot\nSekunde und speichert die letzten 5 davon im Cache. Immer wenn ein Screenshot ist\nentweder automatisch für ein ausgewähltes Ereignis oder manuell über a übernommen\nHotkey werden auch die Screenshots der letzten 5 Sekunden angezeigt\ngespeichert.\nWenn es zu Bildstottern kommt, sollten Sie über eine Deaktivierung nachdenken\ndiese Option..",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T18:57:00.064946Z"
+    },
+    {
+      "timestamp": "2026-04-29T20:10:43.898042Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.game_screenshot_otui.tr_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Keep Blacklog of the Screenshots of the Last 5 Seconds",
+      "attempted_translation": "Führen Sie ein Blacklog der Screenshots der letzten 5 Sekunden",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T18:57:00.072578Z"
+    },
+    {
+      "timestamp": "2026-04-29T20:10:45.543695Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.game_screenshot_otui.tr_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "If you check this option, the screenshots will only be taken from\nthe game window instead of the complete client interface. This\nmight improve your game performance, particularly if you have\nticked the Screenshot Backlog option.",
+      "attempted_translation": "Wenn Sie diese Option aktivieren, werden die Screenshots nur von erstellt\ndas Spielfenster statt der kompletten Client-Oberfläche. Dies\nkönnte Ihre Spielleistung verbessern, insbesondere wenn Sie dies getan haben\nHabe die Option „Screenshot Backlog“ aktiviert.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T18:57:00.224288Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3243
+    "total": 3254
   },
-  "updated_at": "2026-04-29T20:08:40.821378Z"
+  "updated_at": "2026-04-29T20:10:45.567282Z"
 }

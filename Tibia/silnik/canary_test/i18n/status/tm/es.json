@@ -192293,7 +192293,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:44.897242Z"
+    "updated_at": "2026-04-29T20:04:25.159553Z"
   },
   "npc.anerui.greet_1": {
     "src_hash": "afb8a66bbd457858c305533b93f273bb",
@@ -222965,7 +222965,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T18:51:45.180818Z"
+    "updated_at": "2026-04-29T20:08:27.478968Z"
   },
   "item.10028.name": {
     "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
@@ -224005,7 +224005,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T18:51:45.181833Z"
+    "updated_at": "2026-04-29T20:08:27.479899Z"
   },
   "item.1022.name": {
     "src_hash": "85d85c148d5415a351e4b5d8beae6a1a",
@@ -224125,7 +224125,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T18:51:45.181354Z"
+    "updated_at": "2026-04-29T20:08:27.479448Z"
   },
   "item.1031.name": {
     "src_hash": "852488ddd9570bc877783bf4397563e0",
@@ -231165,7 +231165,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:44.909284Z"
+    "updated_at": "2026-04-29T20:04:25.169089Z"
   },
   "item.12254.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231173,7 +231173,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:44.923909Z"
+    "updated_at": "2026-04-29T20:04:25.177564Z"
   },
   "item.12255.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231181,7 +231181,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:44.939522Z"
+    "updated_at": "2026-04-29T20:04:25.186098Z"
   },
   "item.12256.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231189,7 +231189,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:44.951616Z"
+    "updated_at": "2026-04-29T20:04:25.194631Z"
   },
   "item.12257.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231197,7 +231197,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:44.963199Z"
+    "updated_at": "2026-04-29T20:04:25.203267Z"
   },
   "item.12258.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231205,7 +231205,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:49.050755Z"
+    "updated_at": "2026-04-29T20:04:30.372220Z"
   },
   "item.12330.name": {
     "src_hash": "ceb185d06c0e157abe4c7255bc1aad2d",
@@ -231397,7 +231397,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:49.056975Z"
+    "updated_at": "2026-04-29T20:04:30.377646Z"
   },
   "item.12357.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231405,7 +231405,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:49.063208Z"
+    "updated_at": "2026-04-29T20:04:30.382719Z"
   },
   "item.12358.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231413,7 +231413,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:49.069665Z"
+    "updated_at": "2026-04-29T20:04:30.388120Z"
   },
   "item.12359.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231421,7 +231421,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:49.078783Z"
+    "updated_at": "2026-04-29T20:04:30.393349Z"
   },
   "item.12360.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231429,7 +231429,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:47:49.084789Z"
+    "updated_at": "2026-04-29T20:04:30.398631Z"
   },
   "item.12361.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231461,7 +231461,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:59.700452Z"
+    "updated_at": "2026-04-29T20:05:24.062777Z"
   },
   "item.12365.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231469,7 +231469,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:59.705794Z"
+    "updated_at": "2026-04-29T20:05:24.068592Z"
   },
   "item.12366.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231477,7 +231477,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:59.713017Z"
+    "updated_at": "2026-04-29T20:05:24.074475Z"
   },
   "item.12367.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231485,7 +231485,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:01.349165Z"
+    "updated_at": "2026-04-29T20:05:24.080284Z"
   },
   "item.12379.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231493,7 +231493,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:01.354519Z"
+    "updated_at": "2026-04-29T20:05:24.086181Z"
   },
   "item.12380.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231501,7 +231501,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:01.360144Z"
+    "updated_at": "2026-04-29T20:05:24.092325Z"
   },
   "item.12381.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231509,7 +231509,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:01.365740Z"
+    "updated_at": "2026-04-29T20:05:26.531932Z"
   },
   "item.12382.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231517,7 +231517,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:01.370926Z"
+    "updated_at": "2026-04-29T20:05:26.536751Z"
   },
   "item.12383.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231525,7 +231525,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:01.376251Z"
+    "updated_at": "2026-04-29T20:05:26.541317Z"
   },
   "item.12384.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231533,7 +231533,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:03.439603Z"
+    "updated_at": "2026-04-29T20:05:26.545657Z"
   },
   "item.12385.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231541,7 +231541,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:03.447934Z"
+    "updated_at": "2026-04-29T20:05:26.549121Z"
   },
   "item.12386.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231549,7 +231549,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:03.453533Z"
+    "updated_at": "2026-04-29T20:05:26.552617Z"
   },
   "item.12406.name": {
     "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
@@ -231557,7 +231557,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:03.458941Z"
+    "updated_at": "2026-04-29T20:05:28.481405Z"
   },
   "item.12407.name": {
     "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
@@ -231565,7 +231565,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:03.464331Z"
+    "updated_at": "2026-04-29T20:05:28.486213Z"
   },
   "item.12408.name": {
     "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
@@ -231573,7 +231573,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:03.469387Z"
+    "updated_at": "2026-04-29T20:05:28.490733Z"
   },
   "item.12409.name": {
     "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
@@ -231581,7 +231581,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:05.001770Z"
+    "updated_at": "2026-04-29T20:05:28.495137Z"
   },
   "item.12410.name": {
     "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
@@ -231589,7 +231589,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:05.006891Z"
+    "updated_at": "2026-04-29T20:05:28.499528Z"
   },
   "item.12411.name": {
     "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
@@ -231597,7 +231597,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:05.012056Z"
+    "updated_at": "2026-04-29T20:05:28.503704Z"
   },
   "npc.captain_bluebear.stdmod_14": {
     "src_hash": "0bde0cad07ffc0631bb6a1404aed69c3",
@@ -231966,5 +231966,573 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T19:56:17.836301Z"
+  },
+  "item.12473.name": {
+    "src_hash": "02273b08a246cd73a1c0d0d6b3e7a3c6",
+    "text": "mesa de escorpión de ornamented",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.209492Z"
+  },
+  "item.1248.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.260083Z"
+  },
+  "item.12485.name": {
+    "src_hash": "594bc0a5dae274c529dfd7f369cfabcb",
+    "text": "rocoso arco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.282420Z"
+  },
+  "item.12486.name": {
+    "src_hash": "594bc0a5dae274c529dfd7f369cfabcb",
+    "text": "rocoso arco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.292427Z"
+  },
+  "item.12487.name": {
+    "src_hash": "ed99057bb4fe4fbad34e2d4c7d059a47",
+    "text": "rocoso pilar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.302833Z"
+  },
+  "item.12488.name": {
+    "src_hash": "ed99057bb4fe4fbad34e2d4c7d059a47",
+    "text": "rocoso pilar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.313624Z"
+  },
+  "item.1249.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.320115Z"
+  },
+  "item.1250.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.397504Z"
+  },
+  "item.1251.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.470860Z"
+  },
+  "item.1252.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.536084Z"
+  },
+  "item.1253.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.596545Z"
+  },
+  "item.12530.name": {
+    "src_hash": "83e5dc1c9370ebeb25151c40cdd465da",
+    "text": "Dromedario muerto",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.602468Z"
+  },
+  "item.12531.name": {
+    "src_hash": "83e5dc1c9370ebeb25151c40cdd465da",
+    "text": "Dromedario muerto",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.608461Z"
+  },
+  "item.12532.name": {
+    "src_hash": "83e5dc1c9370ebeb25151c40cdd465da",
+    "text": "Dromedario muerto",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.614051Z"
+  },
+  "item.12539.name": {
+    "src_hash": "83e5dc1c9370ebeb25151c40cdd465da",
+    "text": "Dromedario muerto",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.648157Z"
+  },
+  "item.1254.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.654566Z"
+  },
+  "item.12544.name": {
+    "src_hash": "5e442cf790a53a6477858870b9ec8f13",
+    "text": "blanco ciervo cornamenta",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.686563Z"
+  },
+  "item.12549.name": {
+    "src_hash": "5aba229f118f3773afe1bb2106c72da4",
+    "text": "hojas de bambú",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.712662Z"
+  },
+  "item.1255.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.719007Z"
+  },
+  "item.12550.name": {
+    "src_hash": "7e16d4729a1c2ede5fb2814d1df84b0f",
+    "text": "Oroen cone de abeto",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.723305Z"
+  },
+  "item.1256.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.795993Z"
+  },
+  "item.1257.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.826969Z"
+  },
+  "item.1258.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.884962Z"
+  },
+  "item.1259.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.938683Z"
+  },
+  "item.1260.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:15.998073Z"
+  },
+  "item.12618.name": {
+    "src_hash": "6317a9ab6a2ffd1cf6028ab5234f6d9e",
+    "text": "cerca abierta de rama",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:16.036413Z"
+  },
+  "item.127.name": {
+    "src_hash": "cf231c97e135ed9fb74dd597bd861a0e",
+    "text": "tintero mágico",
+    "source": "autofix_existing_normalization",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:04:16.320772Z"
+  },
+  "item.12474.name": {
+    "src_hash": "1b3ec22f2527387d3aa44b061e6154a0",
+    "text": "altar de escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:30.536016Z"
+  },
+  "item.12475.name": {
+    "src_hash": "1b3ec22f2527387d3aa44b061e6154a0",
+    "text": "altar de escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:30.543049Z"
+  },
+  "item.12491.name": {
+    "src_hash": "1b3ec22f2527387d3aa44b061e6154a0",
+    "text": "altar de escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:30.549804Z"
+  },
+  "item.12492.name": {
+    "src_hash": "1b3ec22f2527387d3aa44b061e6154a0",
+    "text": "altar de escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:30.556342Z"
+  },
+  "item.12558.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:30.559942Z"
+  },
+  "item.12559.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:30.563640Z"
+  },
+  "item.12560.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:32.956227Z"
+  },
+  "item.12561.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:32.961342Z"
+  },
+  "item.12562.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:32.966789Z"
+  },
+  "item.12563.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:32.972219Z"
+  },
+  "item.12583.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:32.977479Z"
+  },
+  "item.12584.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:32.982312Z"
+  },
+  "item.12585.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:34.954328Z"
+  },
+  "item.12586.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:34.959359Z"
+  },
+  "item.12587.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:34.964476Z"
+  },
+  "item.12588.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:34.969475Z"
+  },
+  "item.12589.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:34.974350Z"
+  },
+  "item.12590.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:34.979189Z"
+  },
+  "item.12591.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:36.789026Z"
+  },
+  "item.12592.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:36.794226Z"
+  },
+  "item.12593.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:36.798413Z"
+  },
+  "item.12594.name": {
+    "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
+    "text": "agua sucia",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:36.803461Z"
+  },
+  "item.1261.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:36.811649Z"
+  },
+  "item.1262.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:36.819763Z"
+  },
+  "item.12624.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:38.759649Z"
+  },
+  "item.12625.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:38.765808Z"
+  },
+  "item.12626.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:38.771539Z"
+  },
+  "item.12627.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:38.777154Z"
+  },
+  "item.12628.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:38.781805Z"
+  },
+  "item.12629.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:38.786535Z"
+  },
+  "item.1263.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:41.175151Z"
+  },
+  "item.12630.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:41.181374Z"
+  },
+  "item.12631.name": {
+    "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
+    "text": "pequeño cobertizo",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:41.187291Z"
+  },
+  "item.1264.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:41.195202Z"
+  },
+  "item.1265.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:41.202669Z"
+  },
+  "item.1266.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:41.209689Z"
+  },
+  "item.12666.name": {
+    "src_hash": "b17bf040f2649c15a07eee76959bcaa4",
+    "text": "bomba de agua",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:43.317376Z"
+  },
+  "item.12667.name": {
+    "src_hash": "b17bf040f2649c15a07eee76959bcaa4",
+    "text": "bomba de agua",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:43.322586Z"
+  },
+  "item.12668.name": {
+    "src_hash": "b17bf040f2649c15a07eee76959bcaa4",
+    "text": "bomba de agua",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:43.327273Z"
+  },
+  "item.1267.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:43.334574Z"
+  },
+  "item.12676.name": {
+    "src_hash": "97f961d2a6c66006e2bbf4ad4001e292",
+    "text": "nido de pájaro",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:43.340075Z"
+  },
+  "item.12677.name": {
+    "src_hash": "97f961d2a6c66006e2bbf4ad4001e292",
+    "text": "nido de pájaro",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:43.346568Z"
+  },
+  "item.1268.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:45.005485Z"
+  },
+  "item.1269.name": {
+    "src_hash": "4b2eef524ee371e73b293e0987babf23",
+    "text": "tablero de tres en raya",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:05:45.013714Z"
   }
 }

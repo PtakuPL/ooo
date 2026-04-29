@@ -1,8 +1,129 @@
 {
-  "timestamp": "2026-04-29T23:43:42.256740Z",
-  "language": "es",
-  "json_file": "server.json",
-  "translated": 0,
-  "entries": [],
+  "timestamp": "2026-04-29T23:49:35.418680Z",
+  "language": "ro",
+  "json_file": "items.json",
+  "translated": 60,
+  "entries": [
+    {
+      "key": "item.11669.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11670.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.1177.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.1178.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.1179.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11809.name",
+      "en": "wooden trunk",
+      "translated": "trunchi de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11810.name",
+      "en": "wooden trunk",
+      "translated": "trunchi de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11815.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11816.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11817.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11818.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11823.name",
+      "en": "wolf hide",
+      "translated": "ascunzătoare de lup",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11824.name",
+      "en": "wolf hide",
+      "translated": "ascunzătoare de lup",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11835.name",
+      "en": "hanging fur",
+      "translated": "blană atârnată",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11836.name",
+      "en": "hanging fur",
+      "translated": "blană atârnată",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.13656.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.13658.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.14760.desc",
+      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
+      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.10507.name",
+      "en": "lamp",
+      "translated": "lampă",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.11365.name",
+      "en": "ramp",
+      "translated": "rampă",
+      "source": "canonical_name_semantic_autofix"
+    }
+  ],
   "filtered_untranslated_marker": 0
 }

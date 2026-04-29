@@ -1,14 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:44:17.185457Z",
-  "cycle": 29,
+  "generated_at_utc": "2026-04-29T23:49:58.643475Z",
+  "cycle": 30,
   "open_alarms": [
-    {
-      "code": "GUARD_REPORT_STALE",
-      "severity": "warning",
-      "source": "statusd_doctor.json",
-      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 796s"
-    },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
       "severity": "warning",
@@ -19,7 +13,7 @@
       "code": "PROVIDER_BUDGET_EXHAUSTED",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "PROVIDER_BUDGET_EXHAUSTED: used=109.6% cap=250.0 spent=274.0 source=provider_budget_latest.json"
+      "detail": "PROVIDER_BUDGET_EXHAUSTED: used=111.6% cap=250.0 spent=279.0 source=provider_budget_latest.json"
     },
     {
       "code": "QUEUE_STARVATION_DETECTED",
@@ -37,20 +31,22 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=280 rate=7.878% window=6.0h top_lang=cs:125 per_domain=[server.json:13(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=279 rate=7.884% window=6.0h top_lang=cs:125 per_domain=[server.json:13(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=54.688% delta=54.688% total=166 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=39.64% delta=39.64% total=80 source=term_conflicts_latest.json"
     }
   ],
-  "resolved_this_cycle": [],
+  "resolved_this_cycle": [
+    "GUARD_REPORT_STALE"
+  ],
   "newly_opened": [],
   "summary": {
-    "open_count": 7,
-    "resolved_count": 0,
+    "open_count": 6,
+    "resolved_count": 1,
     "tracked_alarms": 32
   },
   "queue_snapshot": {
@@ -62,6 +58,10 @@
     "selected_action": "none",
     "reason": "write_starvation_or_queue_starvation",
     "suppressed_by_cooldown": true,
-    "cooldown_remaining_cycles": 2
+    "cooldown_remaining_cycles": 2,
+    "selected_command": "-",
+    "result": "resolved_update",
+    "result_reason": "resolved_count=1",
+    "updated_at_utc": "2026-04-29T23:49:58.643475Z"
   }
 }

@@ -71149,11 +71149,83 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:49:27.549064Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.15611.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone pillar",
+      "attempted_translation": "piatră pillar",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'piatră stâlp' for EN 'stone pillar', but source key item.15611.name still uses conflicting variant 'piatră pillar'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:49:27.767058Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.2152.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone pillar",
+      "attempted_translation": "piatră pillar",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'piatră stâlp' for EN 'stone pillar', but source key item.2152.name still uses conflicting variant 'piatră pillar'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:49:27.970022Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.2263.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone pillar",
+      "attempted_translation": "piatră pillar",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'piatră stâlp' for EN 'stone pillar', but source key item.2263.name still uses conflicting variant 'piatră pillar'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:49:28.179918Z",
+      "status": "pending",
+      "lang": "ro",
+      "json_file": "items.json",
+      "key": "item.2289.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone pillar",
+      "attempted_translation": "piatră pillar",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'piatră stâlp' for EN 'stone pillar', but source key item.2289.name still uses conflicting variant 'piatră pillar'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3633
+    "total": 3637
   },
-  "updated_at": "2026-04-29T23:48:20.117960Z"
+  "updated_at": 1777506598
 }

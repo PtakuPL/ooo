@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:09:10.666313Z",
+  "timestamp": "2026-04-29T23:11:15.463270Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 712266,
@@ -20,8 +20,8 @@
     "scanned_files_live": 15,
     "scanned_files_history_pct": 46.7,
     "scanned_files_live_pct": 0.1,
-    "files_not_scanned_history": 7357,
-    "files_not_scanned_live": 13785,
+    "files_not_scanned_history": 7358,
+    "files_not_scanned_live": 13786,
     "scanned_files_history_minus_live": 6428,
     "files_migrated": 7,
     "files_in_progress": 0,
@@ -70,20 +70,17 @@
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-04-29T23:09:00.104965Z",
-    "cycle": 24,
+    "timestamp": "2026-04-29T23:09:15.578518Z",
+    "cycle": 25,
     "mode": "AUTO_TRANSLATE",
-    "category": "es",
+    "category": "de",
     "events": {
-      "dispatch": 1835,
-      "mode_run": 368413,
-      "status_update": 9226,
-      "cycle_total": 380754
+      "dispatch": 11004
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T22:09:09.387864Z",
-    "window_end_utc": "2026-04-29T23:09:09.387864Z",
+    "window_start_utc": "2026-04-29T22:11:13.213610Z",
+    "window_end_utc": "2026-04-29T23:11:13.213610Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -91,11 +88,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 27,
+    "total_cycles": 28,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 27
+      "AUTO_TRANSLATE": 28
     },
-    "auto_translate_cycles": 27,
+    "auto_translate_cycles": 28,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -108,7 +105,7 @@
     "throughput_keys_per_h": 575.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 527,
+    "suspicious_total": 663,
     "deferred_total": 33,
     "top_deferred_reasons": [
       {

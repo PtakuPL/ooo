@@ -69388,11 +69388,1183 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T22:18:56.414031Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:28.742842Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alia.stdmod_13",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",
+      "attempted_translation": "Immer wenn Sie eine tödliche Wunde erleiden, wird Ihre Lebenskraft geschädigt und es besteht die Möglichkeit, dass Sie einen Teil Ihrer Ausrüstung verlieren. Mit jedem einzelnen der fünf {blessings}, die Sie haben, werden dieser Schaden und die Verlustwahrscheinlichkeit verringert.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:10:43.551463Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:30.337272Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alia.stdmod_15",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I see you received the spiritual shielding in the whiteflower temple south of Thais.",
+      "attempted_translation": "Wie ich sehe, hast du den spirituellen Schutz im Weißblumentempel südlich von Thais erhalten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:10:43.566194Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:30.461100Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alia.stdmod_17",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.",
+      "attempted_translation": "Ich kann sehen, dass du im Sonnenturm in der Nähe von Ab'Dendriel den Segen der beiden Sonnen erhalten hast.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:10:43.574275Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:30.594632Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alia.stdmod_20",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.",
+      "attempted_translation": "Sie können im Whiteflower-Tempel südlich von Thais um den Segen des spirituellen Schutzes bitten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:10:43.589474Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:30.717613Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alia.stdmod_22",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.",
+      "attempted_translation": "Sie können im Sonnenturm in der Nähe von Ab'Dendriel um den Segen der beiden Sonnen bitten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:10:43.596104Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:30.837039Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alia.stdmod_23",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.",
+      "attempted_translation": "Der Funke des Phönix wird von den zwergischen Priestern der Erde und des Feuers in Kazordoon gegeben.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:10:43.600076Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:30.985918Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alia.stdmod_25",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "attempted_translation": "Dies ist ein besonderer Segen, den ich Ihnen schenken kann, sobald Sie mindestens einen der anderen Segen erhalten haben und der etwas anders funktioniert. ... \\z\n\tEs funktioniert nur, wenn Sie von anderen Abenteurern getötet werden. Das bedeutet, dass mindestens die Hälfte des Schadens, der zu Ihrem Tod geführt hat, von anderen verursacht wurde und nicht von Monstern oder der Umwelt. ... \\z\n\tDer {twist of fate} verringert nicht wie die anderen Segnungen die Todesstrafe, sondern verhindert stattdessen, dass Sie Ihre anderen Segnungen sowie das Verlustamulett verlieren, falls Sie eines tragen. Es kostet das gleiche wie die anderen Segnungen. ... \\z\n\tMöchtest du diesen Schutz für ein Opfer von |PVPBLESSCOST| Gold erhalten, Kind?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:10:43.626235Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:31.130103Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Nature's blessing, traveller! May you not be affected by any sinister force.",
+      "attempted_translation": "Ein Segen der Natur, Reisender! Mögen Sie nicht von einer finsteren Macht beeinflusst werden.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T22:10:19.720335Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:41.490773Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I heard there is a problem with a wolf mother and her whelps. However, I don't know more about it. One of my sisters, Ikassis, has taken over the body of a snake. ...",
+      "attempted_translation": "Ich habe gehört, dass es ein Problem mit einer Wolfsmutter und ihren Welpen gibt. Allerdings weiß ich nicht mehr darüber. Eine meiner Schwestern, Ikassis, hat den Körper einer Schlange übernommen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.177415Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:09:50.698257Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_10",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You succeeded! It seems the poachers have read your little faked story about killing white deer and the ensuing doom. They stopped chasing me. Thank you! ...",
+      "attempted_translation": "Es ist dir gelungen! Es scheint, dass die Wilderer Ihre kleine gefälschte Geschichte über das Töten von weißen Hirschen und den daraus resultierenden Untergang gelesen haben. Sie hörten auf, mich zu verfolgen. Danke schön! ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.189416Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:45.816396Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_11",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You proved yourself trustworthy - at least as far as I am concerned. But as I told you I'm actually not a real animal. If you want to enter our hidden island, you must prove that you are also willing to help real animals. Would you do that?",
+      "attempted_translation": "Sie haben sich – zumindest für mich – als vertrauenswürdig erwiesen. Aber wie gesagt, ich bin eigentlich kein echtes Tier. Wenn Sie unsere versteckte Insel betreten möchten, müssen Sie nachweisen, dass Sie auch bereit sind, echten Tieren zu helfen. Würdest du das tun?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.204192Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:45.918869Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Your decision honours you. However, if you consider killing the poachers in question I ask you to halt. We, the fae, are rather peaceful beings and abhor bloodshed. Therefore, we must find another way to solve this problem. ...",
+      "attempted_translation": "Ihre Entscheidung ehrt Sie. Wenn Sie jedoch erwägen, die betreffenden Wilderer zu töten, bitte ich Sie, damit aufzuhören. Wir, die Feen, sind eher friedliche Wesen und verabscheuen Blutvergießen. Deshalb müssen wir einen anderen Weg finden, dieses Problem zu lösen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.225068Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:46.719868Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I already have an idea: Some birds told me that poachers are a superstitious lot. Perhaps we can get them with their own misbelief. I know that the poachers have a kind of camp north of the Green Claw Swamps. ...",
+      "attempted_translation": "Ich habe schon eine Idee: Einige Vögel sagten mir, dass Wilderer ein abergläubischer Haufen seien. Vielleicht können wir sie mit ihrem eigenen Irrglauben erwischen. Ich weiß, dass die Wilderer nördlich der Green Claw Swamps eine Art Lager haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.238320Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:50.778728Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I indeed have some troubles since I'm travelling this part of the world. When I took over the body of a white deer I wasn't aware that such an animal is a sought after quarry for hunters and poachers. ...",
+      "attempted_translation": "Ich habe tatsächlich einige Probleme, da ich diesen Teil der Welt bereise. Als ich den Körper eines weißen Hirsches übernahm, war mir nicht bewusst, dass ein solches Tier eine begehrte Beute für Jäger und Wilderer ist. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.259128Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:50.877958Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Now I'm living in the constant danger of being caught and killed. Of course, I could just take over another animal but this deer has really grown on me. I'd like to help this beautiful stag but I need your assistance. Are you willing to help me?",
+      "attempted_translation": "Jetzt lebe ich in der ständigen Gefahr, erwischt und getötet zu werden. Natürlich könnte ich auch einfach ein anderes Tier übernehmen, aber dieses Reh ist mir wirklich ans Herz gewachsen. Ich würde diesem wunderschönen Hirsch gerne helfen, aber ich brauche deine Hilfe. Sind Sie bereit, mir zu helfen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.274675Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:53.597615Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I'm very happy that you could help fae and animals alike. You earned our trust and may now visit our secret realm. I marked you with an arcane fae seal. Hereby you will be able to use the elemental shrines strewn about Tibia. ...",
+      "attempted_translation": "Ich freue mich sehr, dass Sie Feen und Tieren gleichermaßen helfen konnten. Sie haben unser Vertrauen gewonnen und dürfen nun unser geheimes Reich besuchen. Ich habe dich mit einem arkanen Feensiegel markiert. Hiermit können Sie die über Tibia verstreuten Elementarschreine nutzen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.289118Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:53.739246Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "There are fire, ice, energy and earth shrines. If you don't know their locations you can also reach them by most temples in this world. The elemental shrines will transport you to Feyrist now that you bear the magical seal.",
+      "attempted_translation": "Es gibt Feuer-, Eis-, Energie- und Erdschreine. Wenn Sie ihre Standorte nicht kennen, können Sie sie auch über die meisten Tempel dieser Welt erreichen. Die Elementarschreine werden Sie nach Feyrist transportieren, sobald Sie das magische Siegel tragen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.302954Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:54.277707Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.stdmod_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "We call it Feyrist and it is a secret, hidden place. Just few mortals get permission to enter it. A long time ago, we learned how to hide our realm from the outside world. Only if you gain our trust I will tell you how to reach it.",
+      "attempted_translation": "Wir nennen es Feyrist und es ist ein geheimer, versteckter Ort. Nur wenige Sterbliche erhalten die Erlaubnis, es zu betreten. Vor langer Zeit haben wir gelernt, unser Reich vor der Außenwelt zu verbergen. Nur wenn Sie unser Vertrauen gewinnen, verrate ich Ihnen, wie Sie es erreichen können.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.346846Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:54.764605Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.stdmod_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "We call ourselves the fae. Some name us nature spirits or peri but we prefer the former term. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to {protect} our home. ...",
+      "attempted_translation": "Wir nennen uns die Feen. Manche nennen uns Naturgeister oder Peri, wir bevorzugen jedoch den ersteren Begriff. Die meisten von uns sind eher zurückgezogen und führen ein friedliches Leben in unserem geheimen Reich. Wir verlassen es nur, um zu {protect} unser Zuhause zu bringen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:19.361520Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:54.895344Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.stdmod_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "We call ourselves the fae. Some name us nature spirits or peri but we prefer the former term. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to {protect} our home. ...",
+      "attempted_translation": "Wir nennen uns die Feen. Manche nennen uns Naturgeister oder Peri, wir bevorzugen jedoch den ersteren Begriff. Die meisten von uns sind eher zurückgezogen und führen ein friedliches Leben in unserem geheimen Reich. Wir verlassen es nur, um zu {protect} unser Zuhause zu bringen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:45.916735Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:55.031417Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.stdmod_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "It is rather subversive, so most creatures won't sense it ... yet. But its corrosive power has already begun to affect my kind and our hidden realm in unpleasant ways.",
+      "attempted_translation": "Es ist ziemlich subversiv, daher werden die meisten Kreaturen es noch nicht spüren. Aber seine zersetzende Kraft hat bereits begonnen, meine Art und unser verborgenes Reich auf unangenehme Weise zu beeinträchtigen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:45.931705Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:55.172553Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.stdmod_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Some call us nature spirits or peri but we prefer the term fae. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to protect our home. ... \\z\n\tWe tend to be secretive about our true nature, but I guess there was once an elven sage who visited our realm and put his experiences down on paper. There might be a book about the fae in the library of Ab'Dendriel.",
+      "attempted_translation": "Manche nennen uns Naturgeister oder Peri, wir bevorzugen jedoch den Begriff Feen. Die meisten von uns sind eher zurückgezogen und führen ein friedliches Leben in unserem geheimen Reich. Wir verlassen es nur, um unser Zuhause zu schützen. ... \\z\n\tWir neigen dazu, unsere wahre Natur geheim zu halten, aber ich vermute, dass es einmal einen elfischen Weisen gab, der unser Reich besuchte und seine Erfahrungen zu Papier brachte. In der Bibliothek von Ab'Dendriel könnte es ein Buch über das Feenwesen geben.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:45.949799Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:55.671914Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.altar.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Kneel before the all-devouring power of blooded decay.",
+      "attempted_translation": "Knie nieder vor der alles verschlingenden Macht des blutigen Verfalls.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T22:10:19.741328Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:55.801044Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.altar.say_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Five tainted hearts and five darklight hearts drowned in a worldly wealth of 50000000 gold pieces for the righteous. Are you prepared?",
+      "attempted_translation": "Fünf befleckte Herzen und fünf Herzen des dunklen Lichts ertranken in einem weltlichen Reichtum von 50000000 Goldstücken für die Gerechten. Sind Sie vorbereitet?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:45.958827Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:55.950026Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_16",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Did you manage to find Small Tortoise?",
+      "attempted_translation": "Konnten Sie die kleine Schildkröte finden?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:45.978074Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:56.067354Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_17",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Thanks. I was looking for Small Tortoise.",
+      "attempted_translation": "Danke. Ich war auf der Suche nach einer kleinen Schildkröte.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:45.980527Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:56.184154Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_19",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Do you want me to stone a small tortoise?",
+      "attempted_translation": "Soll ich eine kleine Schildkröte steinigen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:11:45.982475Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:56.706875Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_22",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Did you finish the 3 jobs I gave you?",
+      "attempted_translation": "Hast du die 3 Jobs, die ich dir gegeben habe, erledigt?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:10.600846Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:56.825180Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_23",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Congratulations, you have completed the 3 jobs I gave you.",
+      "attempted_translation": "Herzlichen Glückwunsch, Sie haben die 3 Aufträge, die ich Ihnen gegeben habe, abgeschlossen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:10.604468Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:56.998713Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_16",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "So receive my prayer: 'Wicked curses shall be broken'. Now, bring your stake to Kasmir in Darashia for the next line of the prayer. I will inform him what to do.",
+      "attempted_translation": "Nehmen Sie also mein Gebet an: 'Wicked curses shall be broken'. Bringen Sie nun Ihren Pfahl für die nächste Gebetszeile nach Kasmir in Darashia. Ich werde ihm sagen, was zu tun ist.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:10.642039Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:57.136270Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_20",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A blessed stake? That's a strange request. Maybe Quentin knows more, he is one of the oldest monks after all.",
+      "attempted_translation": "Ein gesegneter Pfahl? Das ist eine seltsame Bitte. Vielleicht weiß Quentin mehr, schließlich ist er einer der ältesten Mönche.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.888808Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:57.279501Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_23",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",
+      "attempted_translation": "Immer wenn Sie eine tödliche Wunde erleiden, wird Ihre Lebenskraft geschädigt und es besteht die Möglichkeit, dass Sie einen Teil Ihrer Ausrüstung verlieren. Mit jedem einzelnen der fünf {blessings}, die Sie haben, werden dieser Schaden und die Verlustwahrscheinlichkeit verringert.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.910667Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:57.779431Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_25",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I see you received the spiritual shielding in the whiteflower temple south of Thais.",
+      "attempted_translation": "Wie ich sehe, hast du den spirituellen Schutz im Weißblumentempel südlich von Thais erhalten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.923885Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:57.905786Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_27",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.",
+      "attempted_translation": "Ich kann sehen, dass du im Sonnenturm in der Nähe von Ab'Dendriel den Segen der beiden Sonnen erhalten hast.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.932013Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:59.587467Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "It's your decision. I will ask the next believing mind that visits the temple of Banor's blood.",
+      "attempted_translation": "Es ist deine Entscheidung. Ich werde den nächsten gläubigen Geist fragen, der den Tempel von Banors Blut besucht.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.946406Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:10:59.989320Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_30",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.",
+      "attempted_translation": "Sie können im Whiteflower-Tempel südlich von Thais um den Segen des spirituellen Schutzes bitten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.950052Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:00.356229Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_32",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.",
+      "attempted_translation": "Sie können im Sonnenturm in der Nähe von Ab'Dendriel um den Segen der beiden Sonnen bitten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.956621Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:00.909435Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_33",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.",
+      "attempted_translation": "Der Funke des Phönix wird von den zwergischen Priestern der Erde und des Feuers in Kazordoon gegeben.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.961131Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:01.793183Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_35",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "attempted_translation": "Dies ist ein besonderer Segen, den ich Ihnen schenken kann, sobald Sie mindestens einen der anderen Segen erhalten haben und der etwas anders funktioniert. ... \\z\n\tEs funktioniert nur, wenn Sie von anderen Abenteurern getötet werden. Das bedeutet, dass mindestens die Hälfte des Schadens, der zu Ihrem Tod geführt hat, von anderen verursacht wurde und nicht von Monstern oder der Umwelt. ... \\z\n\tDer {twist of fate} verringert nicht wie die anderen Segnungen die Todesstrafe, sondern verhindert stattdessen, dass Sie Ihre anderen Segnungen sowie das Verlustamulett verlieren, falls Sie eines tragen. Es kostet das gleiche wie die anderen Segnungen. ... \\z\n\tMöchtest du diesen Schutz für ein Opfer von |PVPBLESSCOST| Gold erhalten, Kind?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.987165Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:02.151211Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amanda.stdmod_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Your mission here on Tibia is to be polite and friendly. The gods will reward you, I promise!",
+      "attempted_translation": "Ihre Aufgabe hier auf Tibia ist es, höflich und freundlich zu sein. Die Götter werden dich belohnen, das verspreche ich!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:19.991862Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:02.556110Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ambassador_of_rathleton.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This is a very beautiful ring. Thank you for this generous present!",
+      "attempted_translation": "Dies ist ein sehr schöner Ring. Vielen Dank für dieses großzügige Geschenk!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:45.542403Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:02.925965Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ambassador_of_rathleton.voice_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What a beautiful palace. The Kilmareshians are highly skilful architects.",
+      "attempted_translation": "Was für ein wunderschöner Palast. Die Kilmareshianer sind äußerst begabte Architekten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:45.549401Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:03.123822Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ambassador_of_rathleton.voice_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The new treaty of amity and commerce with Kilmaresh is of utmost importance.",
+      "attempted_translation": "Der neue Freundschafts- und Handelsvertrag mit Kilmaresh ist von größter Bedeutung.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:45.552529Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:03.495743Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ambassador_of_rathleton.voice_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The pending freight from the saffron coasts is overdue.",
+      "attempted_translation": "Die ausstehende Fracht von den Safranküsten ist überfällig.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:45.555016Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:03.910070Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.say_11",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I know, it's quite some work... don't lose heart, just keep killing minotaurs and you'll eventually get lucky. Would you rather like to buy a normal backpack for 10 gold?",
+      "attempted_translation": "Ich weiß, es ist ziemlich viel Arbeit ... verliere nicht den Mut, töte einfach weiter Minotauren und irgendwann wirst du Glück haben. Möchten Sie lieber einen normalen Rucksack für 10 Gold kaufen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:45.571667Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:04.116643Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.say_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Well, if you really like this backpack, I could make one for you, but minotaur leather is hard to come by these days. Are you willing to put some work into this?",
+      "attempted_translation": "Nun, wenn Ihnen dieser Rucksack wirklich gefällt, könnte ich einen für Sie anfertigen, aber Minotaurus-Leder ist heutzutage schwer zu bekommen. Sind Sie bereit, etwas Arbeit in diese Sache zu stecken?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:45.597116Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:06.508535Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.say_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Sorry, but that's not enough leather yet to make one of these backpacks. Would you rather like to buy a normal backpack for 10 gold?",
+      "attempted_translation": "Tut mir leid, aber das ist noch nicht genug Leder, um einen dieser Rucksäcke herzustellen. Möchten Sie lieber einen normalen Rucksack für 10 Gold kaufen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:12:45.613228Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:08.589276Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_10",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "My voyage on the sea was exhausting. The weather was bad, the waves high and my raft quite simple. There's a certain excitement to it, though.",
+      "attempted_translation": "Meine Reise auf dem Meer war anstrengend. Das Wetter war schlecht, die Wellen hoch und mein Floß recht einfach. Es gibt jedoch eine gewisse Aufregung.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.055152Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:09.071882Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_12",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Well, I can give you general {hints} or tell you about my {adventures} and many other topics. Oh, and if you are bored, I might have a small {quest} for you.",
+      "attempted_translation": "Nun, ich kann Ihnen allgemeine {hints} geben oder Ihnen etwas über meine {adventures} und viele andere Themen erzählen. Oh, und wenn Ihnen langweilig ist, habe ich vielleicht ein kleines {quest} für Sie.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.069834Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:09.169295Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_13",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Well, I can give you general {hints} or tell you about my {adventures} and many other topics. Oh, and if you are bored, I might have a small {quest} for you.",
+      "attempted_translation": "Nun, ich kann Ihnen allgemeine {hints} geben oder Ihnen etwas über meine {adventures} und viele andere Themen erzählen. Oh, und wenn Ihnen langweilig ist, habe ich vielleicht ein kleines {quest} für Sie.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.080446Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:09.389730Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_15",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I like sewers. I made my very first battle experience in the sewers below {Thais}. The small sewer system of {Rookgaard} has some nasty rats to fight.",
+      "attempted_translation": "Ich mag Abwasserkanäle. Meine allerersten Kampferfahrungen habe ich in den Abwasserkanälen unterhalb von {Thais} gemacht. Das kleine Abwassersystem von {Rookgaard} hat einige fiese Ratten zu bekämpfen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.100821Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:10.894587Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_22",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I think this poor guy was a bad choice as head of the {academy}.",
+      "attempted_translation": "Ich denke, dieser arme Kerl war eine schlechte Wahl als Leiter der {academy}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.151363Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:10.989122Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_23",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A fine institution, but it needs definitely more funds from the {king}.",
+      "attempted_translation": "Eine gute Institution, aber sie braucht definitiv mehr Mittel von der {king}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.155589Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:13.124455Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_25",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A fine city, but the {king} has some problems enforcing the law.",
+      "attempted_translation": "Eine schöne Stadt, aber die {king} hat einige Probleme, das Gesetz durchzusetzen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.165236Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:15.471559Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_26",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The best weapons on this isle are just toothpicks compared with the weapons warriors wield on the {mainland}.",
+      "attempted_translation": "Die besten Waffen auf dieser Insel sind im Vergleich zu den Waffen, die die Krieger auf {mainland} führen, nur Zahnstocher.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:13:10.171793Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:17.493833Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_29",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "If you travel to Thais, you really should visit the marvelous castle there.",
+      "attempted_translation": "Wenn Sie nach Thais reisen, sollten Sie unbedingt das wunderbare Schloss dort besuchen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.198613Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:18.793216Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What was that word again in Orcish language... hmm.",
+      "attempted_translation": "Wie war das nochmal für ein Wort in der orkischen Sprache... hmm.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.202282Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:20.871828Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_31",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The most important tools you need are a {rope}, a {shovel} and maybe a {torch}.",
+      "attempted_translation": "Die wichtigsten Werkzeuge, die Sie benötigen, sind ein {rope}, ein {shovel} und möglicherweise ein {Fackel}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.212044Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:21.848573Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_33",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Sometimes I have the strong urge to use it to knock someone out.",
+      "attempted_translation": "Manchmal verspüre ich den starken Drang, damit jemanden bewusstlos zu machen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.223479Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:23.156342Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_37",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A fine institution, but it needs definitely more funds from the {king}.",
+      "attempted_translation": "Eine gute Institution, aber sie braucht definitiv mehr Mittel von der {king}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.240863Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:23.263419Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_42",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "She seriously asked me if she could have the remains of my {raft} as fire wood! Can you imagine that??",
+      "attempted_translation": "Sie fragte mich ernsthaft, ob sie die Überreste meines {raft} als Feuerholz haben könnte! Kannst du dir das vorstellen??",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.256836Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:23.363758Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_45",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "To me he seems a bit rude, but maybe that's just my impression.",
+      "attempted_translation": "Auf mich kommt er etwas unhöflich vor, aber vielleicht ist das nur mein Eindruck.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.265993Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:23.463639Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_48",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "She has changed a lot since I last saw her.",
+      "attempted_translation": "Sie hat sich sehr verändert, seit ich sie das letzte Mal gesehen habe.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:24.275968Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:23.975297Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_49",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I think this poor guy was a bad choice as head of the {academy}.",
+      "attempted_translation": "Ich denke, dieser arme Kerl war eine schlechte Wahl als Leiter der {academy}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.019997Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:24.509492Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_54",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A gentle person. You should visit him if you have questions or need healing.",
+      "attempted_translation": "Eine sanfte Person. Sie sollten ihn aufsuchen, wenn Sie Fragen haben oder Heilung benötigen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.037817Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:24.993078Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_55",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Hyacinth is a great healer. He lives somewhere hidden on this isle.",
+      "attempted_translation": "Hyazinthe ist ein großartiger Heiler. Er lebt irgendwo versteckt auf dieser Insel.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.040978Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:25.502337Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_56",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "He's a funny little man.",
+      "attempted_translation": "Er ist ein lustiger kleiner Mann.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.042496Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:25.630456Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_57",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I don't really know her, but she seems to be a nice girl.",
+      "attempted_translation": "Ich kenne sie nicht wirklich, aber sie scheint ein nettes Mädchen zu sein.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.045349Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3535
+    "total": 3603
   },
-  "updated_at": 1777504144
+  "updated_at": "2026-04-29T23:11:25.659385Z"
 }

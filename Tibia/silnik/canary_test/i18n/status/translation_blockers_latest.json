@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:10:30.506005Z",
+  "timestamp": "2026-04-29T20:18:07.830803Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -9,7 +9,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 152983,
+    "total_marker_todo": 152740,
     "top_candidates": [
       {
         "lang": "tr",
@@ -50,8 +50,8 @@
       {
         "lang": "es",
         "json_file": "items.json",
-        "marker_todo": 12977,
-        "pending_total": 12977
+        "marker_todo": 12933,
+        "pending_total": 12933
       },
       {
         "lang": "ru",
@@ -67,12 +67,6 @@
       },
       {
         "lang": "de",
-        "json_file": "otclient_modules.json",
-        "marker_todo": 647,
-        "pending_total": 1128
-      },
-      {
-        "lang": "de",
         "json_file": "npc.json",
         "marker_todo": 537,
         "pending_total": 13022
@@ -82,6 +76,12 @@
         "json_file": "npc.json",
         "marker_todo": 458,
         "pending_total": 9213
+      },
+      {
+        "lang": "nl",
+        "json_file": "otclient_modules.json",
+        "marker_todo": 454,
+        "pending_total": 905
       }
     ]
   },
@@ -99,9 +99,9 @@
     "tr"
   ],
   "json_files": 39,
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 4,
+  "cache_cycle": 5,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {
@@ -154,12 +154,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 12866,
+        "name_pending_total": 12822,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 12866,
-            "name_coverage_pct": 61.51
+            "name_pending": 12822,
+            "name_coverage_pct": 61.64
           },
           "monsters.json": {
             "name_total": 1637,

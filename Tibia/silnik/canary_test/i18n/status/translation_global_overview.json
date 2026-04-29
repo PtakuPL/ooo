@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:17:54.849189Z",
+  "timestamp": "2026-04-29T20:19:57.489462Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711254,
@@ -20,8 +20,8 @@
     "scanned_files_live": 15,
     "scanned_files_history_pct": 46.7,
     "scanned_files_live_pct": 0.1,
-    "files_not_scanned_history": 7358,
-    "files_not_scanned_live": 13786,
+    "files_not_scanned_history": 7357,
+    "files_not_scanned_live": 13785,
     "scanned_files_history_minus_live": 6428,
     "files_migrated": 7,
     "files_in_progress": 0,
@@ -70,20 +70,17 @@
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-04-29T20:17:52.770748Z",
-    "cycle": 4,
+    "timestamp": "2026-04-29T20:18:08.031846Z",
+    "cycle": 5,
     "mode": "AUTO_TRANSLATE",
-    "category": "de",
+    "category": "tr",
     "events": {
-      "dispatch": 1428,
-      "mode_run": 431909,
-      "status_update": 8865,
-      "cycle_total": 443484
+      "dispatch": 10799
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T19:17:53.650503Z",
-    "window_end_utc": "2026-04-29T20:17:53.650503Z",
+    "window_start_utc": "2026-04-29T19:19:56.242823Z",
+    "window_end_utc": "2026-04-29T20:19:56.242823Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -91,11 +88,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 17,
+    "total_cycles": 18,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 17
+      "AUTO_TRANSLATE": 18
     },
-    "auto_translate_cycles": 17,
+    "auto_translate_cycles": 18,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -105,37 +102,23 @@
     "guard_fail_rate_pct": 0.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 335.1,
-    "throughput_runtime_hours": 1.2414,
+    "throughput_keys_per_h": 334.3,
+    "throughput_runtime_hours": 1.2444,
     "throughput_runtime_source": "cycle_duration_ms",
-    "suspicious_total": 302,
-    "deferred_total": 34,
+    "suspicious_total": 309,
+    "deferred_total": 2,
     "top_deferred_reasons": [
-      {
-        "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-        "count": 27,
-        "share_pct": 79.4,
-        "top_target": "ru/items.json",
-        "top_target_count": 27
-      },
-      {
-        "reason": "existing_canonical_name_quality_mixed_scripts",
-        "count": 5,
-        "share_pct": 14.7,
-        "top_target": "ru/items.json",
-        "top_target_count": 5
-      },
       {
         "reason": "retry_loop_cooldown_default",
         "count": 1,
-        "share_pct": 2.9,
+        "share_pct": 50.0,
         "top_target": "de/otclient_modules.json",
         "top_target_count": 1
       },
       {
         "reason": "gt_partial_validate_quality",
         "count": 1,
-        "share_pct": 2.9,
+        "share_pct": 50.0,
         "top_target": "de/otclient_modules.json",
         "top_target_count": 1
       }

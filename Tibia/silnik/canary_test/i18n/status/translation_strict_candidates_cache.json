@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "timestamp": "2026-04-29T20:03:56.083079Z",
-  "built_cycle": 3,
+  "timestamp": "2026-04-29T20:18:07.415747Z",
+  "built_cycle": 5,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -415,15 +415,15 @@
     {
       "lang": "es",
       "json_file": "items.json",
-      "pending_total": 12977,
-      "todo": 12977,
-      "simple_todo": 12888,
-      "marker_todo": 12977,
+      "pending_total": 12933,
+      "todo": 12933,
+      "simple_todo": 12844,
+      "marker_todo": 12933,
       "missing_in_lang": 0,
       "name_total": 33425,
-      "name_pending": 12866,
+      "name_pending": 12822,
       "name_missing_in_lang": 0,
-      "name_coverage_pct": 61.51
+      "name_coverage_pct": 61.64
     },
     {
       "lang": "es",
@@ -2066,10 +2066,10 @@
     {
       "lang": "de",
       "json_file": "otclient_modules.json",
-      "pending_total": 1128,
-      "todo": 1128,
-      "simple_todo": 1008,
-      "marker_todo": 647,
+      "pending_total": 900,
+      "todo": 900,
+      "simple_todo": 821,
+      "marker_todo": 448,
       "missing_in_lang": 0,
       "name_total": 0,
       "name_pending": 0,

@@ -64434,11 +64434,479 @@
       ],
       "previous_state_source": "google_translate",
       "previous_state_updated_at": "2026-04-29T18:57:00.224288Z"
+    },
+    {
+      "timestamp": "2026-04-29T20:18:36.457044Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.10247.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate contains a set of weapons",
+      "attempted_translation": "Bu sandıkta bir dizi silah var",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:42.939297Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11328.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate has been marked with lizard symbols. It is large enough for a grown person to fit in",
+      "attempted_translation": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:43.853539Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11341.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This clay has been dug from sacred ground",
+      "attempted_translation": "Bu kil kutsal topraktan çıkarıldı",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'zemin' for EN 'ground' from items.json:item.10548.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:46.236202Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11364.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This plant poison is meant to destroy the growths near the Keeper's lair deep beneath the gardens",
+      "attempted_translation": "Bu bitki zehiri, Gardiyan'ın bahçelerin derinliklerindeki ininin yakınındaki bitkileri yok etmek içindir.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Kaleci' for EN 'The Keeper' from monsters.json:monster.the_keeper.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:48.869383Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11473.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's too large to be worn by humans, but rather light",
+      "attempted_translation": "İnsanlar tarafından giyilemeyecek kadar büyük ama oldukça hafif",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:48.947473Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11623.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Bu süslenmiş bir çığ runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Çığ Rünü' for EN 'Avalanche Rune' from spells.json:spell.avalanche_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:49.447787Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11624.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Bu süslenmiş bir çığ runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Çığ Rünü' for EN 'Avalanche Rune' from spells.json:spell.avalanche_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:51.762231Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11631.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned disintegrate rune",
+      "attempted_translation": "Bu süslü bir parçalanma runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Rün Parçalama' for EN 'Disintegrate Rune' from spells.json:spell.disintegrate_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:51.962363Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11632.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned disintegrate rune",
+      "attempted_translation": "Bu süslü bir parçalanma runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Rün Parçalama' for EN 'Disintegrate Rune' from spells.json:spell.disintegrate_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:52.298135Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11639.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Bu süslü bir yok etme alanı runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Saha Rünü'nü yok et' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:52.745686Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11640.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Bu süslü bir yok etme alanı runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Saha Rünü'nü yok et' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:52.828649Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11647.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned light magic missile rune",
+      "attempted_translation": "Bu süslü bir ışık büyüsü füze rünü",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:53.017180Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11648.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned light magic missile rune",
+      "attempted_translation": "Bu süslü bir ışık büyüsü füze rünü",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:53.922088Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11699.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The title of this heavy book reads: 'Rabaz' Unabridged Almanach Of Botany'",
+      "attempted_translation": "Bu ağır kitabın başlığı şöyle: 'Rabaz' Kısaltılmamış Botanik Almanağı'",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kitap' for EN 'book' from items.json:item.12276.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:54.286886Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.118.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You swapped it with Bozo's crate of wine flasks",
+      "attempted_translation": "Onu Bozo'nun şarap şişeleriyle dolu sandığıyla değiştirdin",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:59.726202Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12178.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon is awake",
+      "attempted_translation": "Küçük şeytan uyandı",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:19:59.835639Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12180.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon is sleeping",
+      "attempted_translation": "Küçük şeytan uyuyor",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:00.002160Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12181.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon is pleased",
+      "attempted_translation": "Küçük şeytan memnun",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:00.174846Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12182.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon wants to kiss",
+      "attempted_translation": "Küçük şeytan öpmek istiyor",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:00.349695Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12369.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The trap has imobilized and shrunken the wolf",
+      "attempted_translation": "Tuzak kurdu hareketsiz kıldı ve küçülttü",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Kurt' for EN 'Wolf' from monsters.json:monster.old_wolf.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:01.422189Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12672.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this knife on a dead war wolf to retrieve some leather. Don't lose it and don't leave the cave",
+      "attempted_translation": "Biraz deri almak için bu bıçağı ölü bir savaş kurdunun üzerinde kullanın. Onu kaybetmeyin ve mağarayı terk etmeyin",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Kurt' for EN 'Wolf' from monsters.json:monster.old_wolf.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:01.641123Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14009.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The strange shape of this key glistens softly in the light",
+      "attempted_translation": "Bu anahtarın tuhaf şekli ışıkta usulca parlıyor",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:01.749958Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14010.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "A belt buckle snatched from a deepling guard",
+      "attempted_translation": "Derin bir muhafızdan çalınan bir kemer tokası",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Deepling Muhafızı' for EN 'Deepling Guard' from monsters.json:monster.deepling_guard.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:01.861330Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14165.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode",
+      "attempted_translation": "Bu sandık fosilleşmiş mercanlarla dolu. Zamanında engellenmesi gerekiyor yoksa paslanır",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:02.506022Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14166.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode.",
+      "attempted_translation": "Bu sandık fosilleşmiş mercanlarla dolu. Zamanında engellenmesi gerekiyor yoksa paslanır.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:20:05.725170Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14174.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Darkness clutches the creatures of the sea to end all living things. Be watchful of this black void",
+      "attempted_translation": "Karanlık, denizdeki canlıları yakalayarak tüm canlıları yok eder. Bu siyah boşluğa dikkat edin",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Geçersiz' for EN 'void' from items.json:item.100.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3254
+    "total": 3280
   },
-  "updated_at": 1777493877
+  "updated_at": "2026-04-29T20:20:06.350484Z"
 }

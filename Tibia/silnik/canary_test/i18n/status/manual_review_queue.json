@@ -63574,11 +63574,281 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:05:56.173745Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.10247.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate contains a set of weapons",
+      "attempted_translation": "Esta caja contiene a conjunto de armas",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cajón' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:05:59.241426Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.107.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains the smell of a freshly slain slime.",
+      "attempted_translation": "Contiene el olor de una baba recién asesinada.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Limo' for EN 'slime' from items.json:item.6.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:05:59.400345Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11328.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate has been marked with lizard symbols. It is large enough for a grown person to fit in",
+      "attempted_translation": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cajón' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:01.447678Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11331.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This bowl was made from sacred wood and is currently untreated",
+      "attempted_translation": "Este cuenco fue hecho de madera sagrada y actualmente no está tratado.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tazón' for EN 'bowl' from items.json:item.2902.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:01.725309Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11347.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This bowl was coated with sacred clay and can be used to purify small amounts of corrupted water",
+      "attempted_translation": "Este cuenco fue recubierto con arcilla sagrada y puede usarse para purificar pequeñas cantidades de agua corrupta.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tazón' for EN 'bowl' from items.json:item.2902.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:01.948635Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11603.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned ultimate healing rune",
+      "attempted_translation": "Es una runa curativa suprema adornada.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Supremo Curación' for EN 'Ultimate Healing' from spells.json:spell.ultimate_healing.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:03.778738Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11604.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned ultimate healing rune",
+      "attempted_translation": "Es una runa curativa suprema adornada.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Supremo Curación' for EN 'Ultimate Healing' from spells.json:spell.ultimate_healing.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:04.075504Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11611.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned magic wall rune",
+      "attempted_translation": "Es una runa de pared mágica adornada.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'muro mágico' for EN 'magic wall' from items.json:item.10181.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:06.027220Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11612.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned magic wall rune",
+      "attempted_translation": "Es una runa de pared mágica adornada.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'muro mágico' for EN 'magic wall' from items.json:item.10181.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:08.551013Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11635.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned energy wall rune",
+      "attempted_translation": "Es una runa de pared de energía adornada.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'muro' for EN 'wall' from items.json:item.20579.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:10.176179Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.11636.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned energy wall rune",
+      "attempted_translation": "Es una runa de pared de energía adornada.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'muro' for EN 'wall' from items.json:item.20579.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:11.479758Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.118.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You swapped it with Bozo's crate of wine flasks",
+      "attempted_translation": "Lo intercambiaste con la caja de frascos de vino de Bozo",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cajón' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:12.617846Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.12229.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This fruit was gathered from the Screaming Cherry Tree",
+      "attempted_translation": "Esta fruta fue recolectada del Cerezo Gritón.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'screaming cereza' for EN 'screaming cherry' from items.json:item.12229.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:13.145784Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.140.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It is the parcel for the watchtower on the Femor Hills",
+      "attempted_translation": "Es la parcela de la torre de vigilancia de la Femor Hills",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'paquete' for EN 'parcel' from items.json:item.140.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:06:13.891002Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "items.json",
+      "key": "item.14165.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode",
+      "attempted_translation": "Esta caja está llena de coral fosilizado. Necesita ser obstruida a tiempo o se corroerá",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cajón' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3206
+    "total": 3221
   },
-  "updated_at": "2026-04-29T20:03:18.759287Z"
+  "updated_at": "2026-04-29T20:06:13.913057Z"
 }

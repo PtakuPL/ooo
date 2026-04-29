@@ -1,12 +1,9 @@
 {
-  "timestamp": "2026-04-29T20:03:42.727073Z",
-  "cycle": 2,
+  "timestamp": "2026-04-29T20:03:56.551780Z",
+  "cycle": 3,
   "mode": "AUTO_TRANSLATE",
-  "category": "it",
+  "category": "es",
   "events": {
-    "dispatch": 1763,
-    "mode_run": 1036554,
-    "status_update": 6934,
-    "cycle_total": 1046380
+    "dispatch": 7210
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:03:17.524507Z",
+  "timestamp": "2026-04-29T20:05:36.393320Z",
   "total_langs": 52,
   "total_domains": 39,
   "entries": [
@@ -4099,10 +4099,10 @@
       "lang": "es",
       "domain": "npc.json",
       "total_keys": 14815,
-      "genuine": 13847,
-      "genuine_pct": 93.47,
+      "genuine": 13850,
+      "genuine_pct": 93.49,
       "en_copy": 68,
-      "en_prefix": 900,
+      "en_prefix": 897,
       "missing": 0,
       "placeholder_mismatch": 169
     },

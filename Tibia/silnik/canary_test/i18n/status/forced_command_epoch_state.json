@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-04-29T18:58:35.279043Z",
+  "updated_at_utc": "2026-04-29T18:59:50.640472Z",
   "current_epoch_id": "c57b403f98d5dd13",
   "current_epoch_raw": "script_mtime=1777486178|script_size=1500385|script_checkpoint=1777486178|restart_ts=1777488389|restart_cause=worker_missing|worker_pid=43136",
   "current_epoch_sources": {
@@ -14,7 +14,7 @@
     "worker_cycle": 2
   },
   "current_epoch_first_seen_utc": "2026-04-29T18:46:31.218453Z",
-  "current_epoch_last_seen_utc": "2026-04-29T18:58:35.279043Z",
+  "current_epoch_last_seen_utc": "2026-04-29T18:59:50.640472Z",
   "current_epoch_baseline_ts_utc": "2026-04-09T17:59:08.154619Z",
   "last_effective_baseline_ts_utc": "2026-04-09T17:59:08.154619Z",
   "last_effective_baseline_source": "manual_config",

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T18:58:36.293602Z",
+  "timestamp": "2026-04-29T19:01:18.240223Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 710875,
@@ -60,12 +60,12 @@
     "cannot_translate_reports_visible": 4897
   },
   "cache": {
-    "lang_stats_hits": 51,
-    "lang_stats_misses": 1,
-    "lang_stats_hit_pct": 98.1,
-    "lang_stats_mode": "mixed",
-    "lang_file_hits": 2027,
-    "lang_file_misses": 1,
+    "lang_stats_hits": 52,
+    "lang_stats_misses": 0,
+    "lang_stats_hit_pct": 100.0,
+    "lang_stats_mode": "warm-cache",
+    "lang_file_hits": 2028,
+    "lang_file_misses": 0,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T17:58:34.975162Z",
-    "window_end_utc": "2026-04-29T18:58:34.975162Z",
+    "window_start_utc": "2026-04-29T18:01:16.293066Z",
+    "window_end_utc": "2026-04-29T19:01:16.293066Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -88,24 +88,24 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 46,
+    "total_cycles": 42,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 46
+      "AUTO_TRANSLATE": 42
     },
-    "auto_translate_cycles": 46,
+    "auto_translate_cycles": 42,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 644,
-    "guard_fail": 4,
-    "guard_fail_rate_pct": 0.6,
+    "translated": 581,
+    "guard_fail": 2,
+    "guard_fail_rate_pct": 0.3,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 644.0,
+    "throughput_keys_per_h": 581.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 700,
+    "suspicious_total": 668,
     "deferred_total": 38,
     "top_deferred_reasons": [
       {
@@ -140,8 +140,8 @@
     "top_guard_fail_targets": [
       {
         "target": "ru/items.json",
-        "translated": 152,
-        "guard_fail": 4,
+        "translated": 89,
+        "guard_fail": 2,
         "guard_command": 0
       },
       {

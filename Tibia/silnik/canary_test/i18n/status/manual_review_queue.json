@@ -61863,11 +61863,84 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:51:59.028403Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.31306.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "ring of secret thoughts",
+      "attempted_translation": "anello di pensieri segreti",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Anello dei pensieri segreti' for EN 'ring of secret thoughts', but source key item.31306.name still uses conflicting variant 'anello di pensieri segreti'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:51:59.134886Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.2369.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "sofa chair",
+      "attempted_translation": "poltrona",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poltrona divano' for EN 'sofa chair', but source key item.2369.name still uses conflicting variant 'poltrona'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:52:53.052330Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.3175.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "stone shower rune",
+      "attempted_translation": "runa della doccia in pietra",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Runa della Doccia di Pietra' for EN 'stone shower rune', but source key item.3175.name still uses conflicting variant 'runa della doccia in pietra'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:54:26.997371Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.captain_fearless.stdmod_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Passages to Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar and Ankrahmun.",
+      "attempted_translation": "Pasajes a Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar y Ankrahmun.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "HIGH",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "diacritics_missing",
+        "partial_translation_mix"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:12:27.646899Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3111
+    "total": 3115
   },
-  "updated_at": "2026-04-29T19:51:56.156589Z"
+  "updated_at": "2026-04-29T19:54:27.016534Z"
 }

@@ -1,95 +1,95 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:44:25.914750Z",
-  "lang": "ro",
+  "generated_at_utc": "2026-04-29T19:52:57.042393Z",
+  "lang": "it",
   "json_file": "items.json",
   "name_total": 33425,
-  "name_pending": 16083,
-  "name_suspicious": 178,
-  "name_coverage_pct": 51.88,
+  "name_pending": 14532,
+  "name_suspicious": 34,
+  "name_coverage_pct": 56.52,
   "pending_examples": [
-    "item.14167.name",
-    "item.14250.name",
-    "item.16075.name",
-    "item.16076.name",
-    "item.16077.name",
-    "item.16078.name",
-    "item.16104.name",
     "item.17372.name",
-    "item.18222.name",
-    "item.18223.name",
-    "item.18224.name",
-    "item.18225.name"
+    "item.21952.name",
+    "item.24394.name",
+    "item.280.name",
+    "item.30225.name",
+    "item.31582.name",
+    "item.31583.name",
+    "item.32758.name",
+    "item.32759.name",
+    "item.32760.name",
+    "item.32761.name",
+    "item.32908.name"
   ],
   "suspicious_examples": [
     {
-      "key": "item.10216.name",
+      "key": "item.20228.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.10334.name",
+      "key": "item.20229.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.10335.name",
+      "key": "item.20230.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.10337.name",
+      "key": "item.20231.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12341.name",
+      "key": "item.23514.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12342.name",
+      "key": "item.25078.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12343.name",
+      "key": "item.25080.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12344.name",
+      "key": "item.25081.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12658.name",
+      "key": "item.29412.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12659.name",
+      "key": "item.30141.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12663.name",
+      "key": "item.30142.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.12664.name",
+      "key": "item.30143.name",
       "issues": [
         "mixed_language"
       ]

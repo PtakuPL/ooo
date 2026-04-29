@@ -66,12 +66,12 @@
     "issues_count": 60621
   },
   "it": {
-    "last_cycle": "2026-04-29T18:12:24.537457Z",
+    "last_cycle": "2026-04-29T19:52:53.488571Z",
     "last_translated": 31,
     "total_suspicious": 23989,
     "total_rejected": 7831,
     "total_gt_guard_fail": 15309,
-    "cycles": 1128,
+    "cycles": 1129,
     "quality_score": 77.1,
     "last_audit": "2026-04-29T19:45:04.623970Z",
     "issues_count": 180516

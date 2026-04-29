@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "last_updated_utc": "2026-04-29T23:08:49.406538Z",
-  "last_selected_target": "es:server.json",
+  "last_updated_utc": "2026-04-29T23:28:04.122406Z",
+  "last_selected_target": "es:npc.json",
   "targets": {
     "es:npc.json": {
       "target_key": "es:npc.json",
       "lang": "es",
       "json_file": "npc.json",
-      "last_cycle": 22,
+      "last_cycle": 26,
       "last_result": {
-        "translated": 2,
+        "translated": 8,
         "guard_fail": 0,
         "fail_rate_pct": 0.0,
         "high_fail": false
       },
-      "last_updated_utc": "2026-04-29T22:59:34.813129Z",
+      "last_updated_utc": "2026-04-29T23:28:04.122406Z",
       "consecutive_high_fail": 0,
       "cooldown_until_epoch": 0,
       "cooldown_until_utc": ""

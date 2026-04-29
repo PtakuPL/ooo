@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "timestamp": "2026-04-29T23:09:14.954108Z",
-  "built_cycle": 25,
+  "timestamp": "2026-04-29T23:29:43.177651Z",
+  "built_cycle": 27,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -467,10 +467,10 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 890,
-      "todo": 890,
+      "pending_total": 882,
+      "todo": 882,
       "simple_todo": 87,
-      "marker_todo": 886,
+      "marker_todo": 878,
       "missing_in_lang": 0,
       "name_total": 0,
       "name_pending": 0,
@@ -2027,10 +2027,10 @@
     {
       "lang": "de",
       "json_file": "npc.json",
-      "pending_total": 12510,
-      "todo": 12510,
-      "simple_todo": 823,
-      "marker_todo": 513,
+      "pending_total": 12228,
+      "todo": 12228,
+      "simple_todo": 815,
+      "marker_todo": 510,
       "missing_in_lang": 0,
       "name_total": 0,
       "name_pending": 0,
@@ -3431,15 +3431,15 @@
     {
       "lang": "tr",
       "json_file": "items.json",
-      "pending_total": 28601,
-      "todo": 28601,
-      "simple_todo": 26640,
-      "marker_todo": 28601,
+      "pending_total": 28571,
+      "todo": 28571,
+      "simple_todo": 26610,
+      "marker_todo": 28571,
       "missing_in_lang": 0,
       "name_total": 33425,
-      "name_pending": 26153,
+      "name_pending": 26123,
       "name_missing_in_lang": 0,
-      "name_coverage_pct": 21.76
+      "name_coverage_pct": 21.85
     },
     {
       "lang": "tr",

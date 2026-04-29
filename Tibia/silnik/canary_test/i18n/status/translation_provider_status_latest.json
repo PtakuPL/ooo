@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:27:41.832345Z",
+  "generated_at_utc": "2026-04-29T23:30:03.722651Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
-  "active_provider_source": "simple",
-  "active_provider_timestamp": "2026-04-29T23:22:22.216825Z",
+  "active_provider_source": "tm",
+  "active_provider_timestamp": "2026-04-29T23:28:01.679749Z",
   "active_model": "openai/gpt-4o-mini",
-  "fallback_reason": "-",
+  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -65,11 +65,12 @@
   "provider_pool_health": {
     "overall_status": "degraded",
     "signals": [
+      "recent_fallback",
       "provider_consistency_debt:462",
       "provider_limit_telemetry:provider_budget_exhausted"
     ],
     "provider_consistency_debt": 462,
-    "recent_window_writes": 546,
+    "recent_window_writes": 551,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
@@ -84,7 +85,7 @@
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 106
+        "writes": 111
       },
       {
         "provider": "canonical_name_semantic_autofix",
@@ -97,8 +98,14 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 0,
-    "fallback_action_breakdown": [],
+    "fallbacks_last_200": 1,
+    "fallback_action_breakdown": [
+      {
+        "action": "fallback_to_google_translate_high",
+        "action_label": "fallback to google translate high",
+        "count": 1
+      }
+    ],
     "providers": {
       "tm_simple": {
         "status": "active",
@@ -107,7 +114,7 @@
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 106
+        "recent_writes": 111
       },
       "google_cloud": {
         "status": "disabled",
@@ -228,7 +235,7 @@
       "used_pct": 100.8,
       "monthly_cap": 250.0,
       "spent": 252.0,
-      "latest_age_s": 1405.026944,
+      "latest_age_s": 1516.205851,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -260,5 +267,15 @@
       "window_seconds": 86400
     }
   },
-  "latest_fallback": null
+  "latest_fallback": {
+    "timestamp": "2026-04-29T23:29:59.763791Z",
+    "provider": "tm_simple",
+    "provider_label": "TM/simple",
+    "source": "tm",
+    "action": "fallback_to_google_translate_high",
+    "action_label": "fallback to google translate high",
+    "decision_reason": "high_reject_types",
+    "json_file": "items.json",
+    "key": "item.11541.name"
+  }
 }

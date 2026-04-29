@@ -1,128 +1,56 @@
 {
-  "timestamp": "2026-04-29T23:22:22.216825Z",
-  "language": "tr",
-  "json_file": "items.json",
-  "translated": 30,
+  "timestamp": "2026-04-29T23:28:01.679749Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 8,
   "entries": [
     {
-      "key": "item.14455.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_pelagia.greet_msg_1",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
+      "translated": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
+      "source": "tm"
     },
     {
-      "key": "item.14456.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_pelagia.stdmod_4",
+      "en": "Do you seek a passage to Darashia for |TRAVELCOST|?",
+      "translated": "¿Busca un pasaje a Darashia para |TRAVELCOST|?",
+      "source": "tm"
     },
     {
-      "key": "item.14457.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_harava.stdmod_10",
+      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
+      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+      "source": "google_translate"
     },
     {
-      "key": "item.14458.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_harava.stdmod_5",
+      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
+      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+      "source": "google_translate"
     },
     {
-      "key": "item.14459.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_harava.stdmod_6",
+      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
+      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+      "source": "google_translate"
     },
     {
-      "key": "item.1446.name",
-      "en": "lava wall",
-      "translated": "lav duvar",
-      "source": "simple"
+      "key": "npc.captain_harava.stdmod_7",
+      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
+      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+      "source": "google_translate"
     },
     {
-      "key": "item.14460.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_harava.stdmod_8",
+      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
+      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+      "source": "google_translate"
     },
     {
-      "key": "item.14461.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14462.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14463.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14464.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14465.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14466.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14467.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14468.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14469.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.1447.name",
-      "en": "lava wall",
-      "translated": "lav duvar",
-      "source": "simple"
-    },
-    {
-      "key": "item.14470.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14471.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14472.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_harava.stdmod_9",
+      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
+      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

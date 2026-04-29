@@ -234070,5 +234070,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-04-29T23:03:13.753251Z"
+  },
+  "npc.captain_harava.stdmod_10": {
+    "src_hash": "51242c3311b41e9d8180d5965355b5c2",
+    "text": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:24:34.327693Z"
+  },
+  "npc.captain_harava.stdmod_5": {
+    "src_hash": "51242c3311b41e9d8180d5965355b5c2",
+    "text": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:24:34.352091Z"
+  },
+  "npc.captain_harava.stdmod_6": {
+    "src_hash": "51242c3311b41e9d8180d5965355b5c2",
+    "text": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:24:36.313633Z"
+  },
+  "npc.captain_harava.stdmod_7": {
+    "src_hash": "51242c3311b41e9d8180d5965355b5c2",
+    "text": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:24:36.337978Z"
+  },
+  "npc.captain_harava.stdmod_8": {
+    "src_hash": "51242c3311b41e9d8180d5965355b5c2",
+    "text": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:24:38.302798Z"
+  },
+  "npc.captain_harava.stdmod_9": {
+    "src_hash": "51242c3311b41e9d8180d5965355b5c2",
+    "text": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T23:24:38.327063Z"
   }
 }

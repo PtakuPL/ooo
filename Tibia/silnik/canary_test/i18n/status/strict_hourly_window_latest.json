@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-29T22:27:35.101253Z",
-  "window_end_utc": "2026-04-29T23:27:35.101253Z",
+  "window_start_utc": "2026-04-29T22:29:59.165716Z",
+  "window_end_utc": "2026-04-29T23:29:59.165716Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,11 +8,11 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/deferred_translation_queue.jsonl"
   ],
-  "total_cycles": 24,
+  "total_cycles": 28,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 24
+    "AUTO_TRANSLATE": 28
   },
-  "auto_translate_cycles": 24,
+  "auto_translate_cycles": 28,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
@@ -25,41 +25,34 @@
   "throughput_keys_per_h": 615.0,
   "throughput_runtime_hours": 1.0,
   "throughput_runtime_source": "window_hours_long_runtime_fallback",
-  "suspicious_total": 775,
-  "deferred_total": 37,
+  "suspicious_total": 709,
+  "deferred_total": 5,
   "top_deferred_reasons": [
-    {
-      "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-      "count": 29,
-      "share_pct": 78.4,
-      "top_target": "ru/items.json",
-      "top_target_count": 29
-    },
-    {
-      "reason": "existing_canonical_name_quality_mixed_scripts",
-      "count": 3,
-      "share_pct": 8.1,
-      "top_target": "ru/items.json",
-      "top_target_count": 3
-    },
     {
       "reason": "gt_rejected_multi_issues",
       "count": 2,
-      "share_pct": 5.4,
+      "share_pct": 40.0,
       "top_target": "de/npc.json",
       "top_target_count": 2
     },
     {
       "reason": "gt_identity_retry_identical_to_en",
       "count": 1,
-      "share_pct": 2.7,
+      "share_pct": 20.0,
       "top_target": "de/npc.json",
       "top_target_count": 1
     },
     {
       "reason": "gt_structure_retry_placeholder",
       "count": 1,
-      "share_pct": 2.7,
+      "share_pct": 20.0,
+      "top_target": "de/npc.json",
+      "top_target_count": 1
+    },
+    {
+      "reason": "gt_partial_validate_word_salad",
+      "count": 1,
+      "share_pct": 20.0,
       "top_target": "de/npc.json",
       "top_target_count": 1
     }

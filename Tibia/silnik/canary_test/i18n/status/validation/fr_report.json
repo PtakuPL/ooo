@@ -1,49 +1,25 @@
 {
   "lang": "fr",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 18477,
-  "identical_to_en": 3922,
-  "placeholder_keys": 35109,
-  "coverage_pct": 34.5,
-  "issues_total": 111,
+  "total_keys": 74536,
+  "translated": 57354,
+  "identical_to_en": 26147,
+  "placeholder_keys": 17182,
+  "coverage_pct": 76.9,
+  "issues_total": 93,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 99,
-    "V6_newline_mismatch": 8,
-    "V4_artifact": 4
+    "V1_placeholder_mismatch": 66,
+    "V6_newline_mismatch": 21,
+    "V4_artifact": 6
   },
   "issues_by_severity": {
-    "CRITICAL": 99,
-    "HIGH": 4,
-    "MEDIUM": 8,
+    "CRITICAL": 66,
+    "HIGH": 6,
+    "MEDIUM": 21,
     "LOW": 0
   },
-  "score": 98.3,
+  "score": 99.6,
   "worst_keys": [
-    {
-      "key": "html.admin.changelog.form.html.text5",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.profiling_chart.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.no_results_returned.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.query.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "html.header.text1",
       "category": "html",
@@ -51,103 +27,127 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "html.column_definitions_form.text2",
-      "category": "html",
+      "key": "npc.a_dragon_mother.multi_7",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.partitions.text1",
-      "category": "html",
+      "key": "npc.a_weakened_forest_fury.multi_8",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.partitions.text3",
-      "category": "html",
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.partitions.text4",
-      "category": "html",
+      "key": "npc.al_dee.stdmod_13",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.select_all.text1",
-      "category": "html",
+      "key": "npc.al_dee.stdmod_21",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.select_all.text2",
-      "category": "html",
+      "key": "npc.al_dee.stdmod_8",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.template_options.text1",
-      "category": "html",
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.unhide_nav_item.text1",
-      "category": "html",
+      "key": "npc.andrew_lyze.greet_msg_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.create_view.text1",
-      "category": "html",
+      "key": "npc.andrew_lyze.multi_4",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.table.text2",
-      "category": "html",
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.table.text3",
-      "category": "html",
+      "key": "npc.billy.stdmod_20",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.table.text5",
-      "category": "html",
+      "key": "npc.captain_haba.say_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.view_create.text2",
-      "category": "html",
+      "key": "npc.captain_haba.say_5",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.tables.text4",
-      "category": "html",
+      "key": "npc.carlos.greet_msg_5",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.page_selector.text1",
-      "category": "html",
+      "key": "npc.carlos.greet_msg_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.carlos.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.chavis.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.chief_grarkharok.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cipfried.stdmod_48",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 477,
-    "consistency": 54,
+    "issues_total": 490,
+    "consistency": 62,
     "pl_reference": 400,
-    "length_ratio": 23,
+    "length_ratio": 28,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:43.464300Z"
+  "validated_at": "2026-04-29T18:14:42.312788Z"
 }

@@ -1,7 +1,7 @@
 {
   "otclient_data.30_minimap_otui.tr_1": "Anuluj",
   "otclient_data.30_minimap_otui.tr_2": "Ok",
-  "otclient_data.30_minimap_otui.tr_3": "Description",
+  "otclient_data.30_minimap_otui.tr_3": "Opis",
   "otclient_data.30_minimap_otui.tr_4": "Pozycja",
   "otclient_data.30_minimap_otui.tr_5": "Utwórz znak mapy",
   "otclient_data.30_minimap_otui.tr_6": "Centrum",
@@ -21,7 +21,7 @@
   "otclient_data.40_minimap_otui.tr_1": "Przytrzymaj lewy przycisk myszy, aby nawigować\nPrzewiń środkowy przycisk myszy, aby powiększyć\nPrawy przycisk myszy, aby utworzyć znaczniki mapy\nNaciśnij Ctrl+Shift+M, aby wyświetlić całą mapę gry",
   "otclient_data.40_minimap_otui.tr_2": "Anuluj",
   "otclient_data.40_minimap_otui.tr_3": "Ok",
-  "otclient_data.40_minimap_otui.tr_4": "Description",
+  "otclient_data.40_minimap_otui.tr_4": "Opis",
   "otclient_data.40_minimap_otui.tr_5": "Pozycja",
   "otclient_data.40_minimap_otui.tr_6": "Utwórz znak mapy",
   "otclient_data.40_minimap_otui.tr_7": "Centrum",

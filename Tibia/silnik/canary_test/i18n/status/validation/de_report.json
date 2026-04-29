@@ -1,24 +1,31 @@
 {
   "lang": "de",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 5018,
-  "identical_to_en": 2863,
-  "placeholder_keys": 48568,
-  "coverage_pct": 9.4,
-  "issues_total": 5,
+  "total_keys": 74536,
+  "translated": 72997,
+  "identical_to_en": 64855,
+  "placeholder_keys": 1539,
+  "coverage_pct": 97.9,
+  "issues_total": 10,
   "issues_by_type": {
     "V4_artifact": 4,
-    "V1_placeholder_mismatch": 1
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 2
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
+    "CRITICAL": 2,
     "HIGH": 4,
-    "MEDIUM": 0,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 99.8,
+  "score": 100.0,
   "worst_keys": [
+    {
+      "key": "npc.jean_pierre.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
@@ -48,15 +55,39 @@
       "category": "quests",
       "type": "V4_artifact",
       "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 411,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 413,
+    "consistency": 3,
     "pl_reference": 400,
-    "length_ratio": 11,
+    "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:01.060211Z"
+  "validated_at": "2026-04-29T18:14:40.305872Z"
 }

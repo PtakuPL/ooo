@@ -1,24 +1,198 @@
 {
-  "timestamp": "2026-02-26T20:14:57.414401Z",
-  "window_start_utc": "2026-02-26T19:14:56.573073Z",
-  "window_end_utc": "2026-02-26T20:14:56.573073Z",
+  "schema_version": 2,
+  "timestamp": "2026-04-19T18:54:45+00:00",
+  "window_start_utc": "2026-04-19T17:54:45+00:00",
+  "window_end_utc": "2026-04-19T18:54:45+00:00",
   "window_hours": 1.0,
   "sources": {
-    "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
+    "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 0,
-  "rejected_entries_raw": 0,
-  "suspicious_entries": 606,
-  "suspicious_entries_raw": 1629,
-  "guard_fail_entries": 92,
-  "guard_fail_sum": 114,
-  "by_type": {},
-  "by_source": {},
-  "by_language": {},
-  "by_category": {},
-  "by_severity": {},
-  "top_types": [],
-  "top_keys": []
+  "rejected_entries": 60,
+  "rejected_entries_raw": 60,
+  "suspicious_entries": 769,
+  "suspicious_entries_raw": 769,
+  "guard_fail_entries": 7,
+  "guard_fail_sum": 457,
+  "translated_window": 573,
+  "guard_fail_rate_pct": 79.76,
+  "guard_components": {
+    "placeholder": 179,
+    "command": 0,
+    "pipe": 0
+  },
+  "by_type": {
+    "mixed_language": 414,
+    "contains_tibia_proper_noun": 142,
+    "partial_translation_mix": 107,
+    "garble_en_chunk": 92,
+    "de_noun_lowercase": 60,
+    "game_term_missing": 50,
+    "word_repetition": 35,
+    "diacritics_missing": 31,
+    "artifact_tokens": 18,
+    "autofix_existing_skipped": 12,
+    "harmonize_item_names_skipped": 1
+  },
+  "by_source": {
+    "google_translate": 217,
+    "simple": 34,
+    "existing_value": 299,
+    "tm": 279
+  },
+  "by_language": {
+    "cs": 281,
+    "es": 139,
+    "ro": 91,
+    "it": 90,
+    "pt": 61,
+    "de": 60,
+    "fr": 55,
+    "nl": 52
+  },
+  "by_category": {
+    "npc.json": 470,
+    "items.json": 220,
+    "monsters.json": 135,
+    "quests.json": 4
+  },
+  "by_severity": {
+    "issue:HIGH": 574,
+    "HIGH": 543,
+    "issue:LOW": 186,
+    "MEDIUM": 110,
+    "issue:MEDIUM": 110,
+    "CRITICAL": 92,
+    "issue:CRITICAL": 92,
+    "LOW": 84
+  },
+  "top_types": [
+    {
+      "type": "mixed_language",
+      "count": 414
+    },
+    {
+      "type": "contains_tibia_proper_noun",
+      "count": 142
+    },
+    {
+      "type": "partial_translation_mix",
+      "count": 107
+    },
+    {
+      "type": "garble_en_chunk",
+      "count": 92
+    },
+    {
+      "type": "de_noun_lowercase",
+      "count": 60
+    },
+    {
+      "type": "game_term_missing",
+      "count": 50
+    },
+    {
+      "type": "word_repetition",
+      "count": 35
+    },
+    {
+      "type": "diacritics_missing",
+      "count": 31
+    },
+    {
+      "type": "artifact_tokens",
+      "count": 18
+    },
+    {
+      "type": "autofix_existing_skipped",
+      "count": 12
+    },
+    {
+      "type": "harmonize_item_names_skipped",
+      "count": 1
+    }
+  ],
+  "top_keys": [
+    {
+      "key": "es:quests.oramond.sewer_fix_2",
+      "count": 4
+    },
+    {
+      "key": "cs:npc.eruaran.say_1",
+      "count": 3
+    },
+    {
+      "key": "cs:npc.eroth.stdmod_7",
+      "count": 3
+    },
+    {
+      "key": "cs:npc.cranky_lizard_crone.stdmod_4",
+      "count": 3
+    },
+    {
+      "key": "cs:npc.cranky_lizard_crone.stdmod_3",
+      "count": 3
+    },
+    {
+      "key": "cs:npc.cranky_lizard_crone.stdmod_2",
+      "count": 3
+    },
+    {
+      "key": "cs:npc.cledwyn.multi_1",
+      "count": 3
+    },
+    {
+      "key": "nl:npc.cranky_lizard_crone.stdmod_4",
+      "count": 3
+    },
+    {
+      "key": "nl:npc.cranky_lizard_crone.stdmod_3",
+      "count": 3
+    },
+    {
+      "key": "nl:npc.cranky_lizard_crone.stdmod_2",
+      "count": 3
+    },
+    {
+      "key": "nl:npc.a_fluffy_squirrel.stdmod_1",
+      "count": 3
+    },
+    {
+      "key": "pt:npc.erayo.multi_3",
+      "count": 3
+    },
+    {
+      "key": "pt:npc.cranky_lizard_crone.stdmod_4",
+      "count": 3
+    },
+    {
+      "key": "pt:npc.cranky_lizard_crone.stdmod_3",
+      "count": 3
+    },
+    {
+      "key": "pt:npc.cranky_lizard_crone.stdmod_2",
+      "count": 3
+    },
+    {
+      "key": "pt:npc.cledwyn.multi_1",
+      "count": 3
+    },
+    {
+      "key": "fr:npc.grizzly_adams.multi_29",
+      "count": 3
+    },
+    {
+      "key": "fr:npc.grizzly_adams.multi_28",
+      "count": 3
+    },
+    {
+      "key": "fr:npc.eroth.stdmod_7",
+      "count": 3
+    },
+    {
+      "key": "fr:npc.amber.stdmod_6",
+      "count": 3
+    }
+  ]
 }

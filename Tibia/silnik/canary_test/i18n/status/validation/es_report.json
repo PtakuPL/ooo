@@ -1,152 +1,153 @@
 {
   "lang": "es",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 45725,
-  "identical_to_en": 2621,
-  "placeholder_keys": 7861,
-  "coverage_pct": 85.3,
-  "issues_total": 43,
+  "total_keys": 74536,
+  "translated": 60491,
+  "identical_to_en": 9540,
+  "placeholder_keys": 14045,
+  "coverage_pct": 81.2,
+  "issues_total": 252,
   "issues_by_type": {
-    "V4_artifact": 42,
-    "V6_newline_mismatch": 1
+    "V1_placeholder_mismatch": 194,
+    "V4_artifact": 51,
+    "V6_newline_mismatch": 7
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 42,
-    "MEDIUM": 1,
+    "CRITICAL": 194,
+    "HIGH": 51,
+    "MEDIUM": 7,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 98.9,
   "worst_keys": [
     {
-      "key": "achievement.317.description",
-      "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.the_pit_lord.voice_2",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.deathbringer.voice_2",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.dracola.voice_2",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.shulgrax.voice_3",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.ferumbras_mortal_shell.voice_4",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_4",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_8",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_9",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_15",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.ghazbaran.voice_3",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.the_abomination.voice_14",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.bazir.voice_1",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.bazir.voice_5",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
+      "key": "npc.a_dragon_mother.multi_7",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
+      "key": "npc.a_weakened_forest_fury.multi_8",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
+      "key": "npc.a_weakened_forest_fury.multi_9",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_13",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_21",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_54",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_55",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_42",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_43",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_61",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_62",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_63",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_4",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.angus.say_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_15",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 509,
-    "consistency": 68,
+    "issues_total": 537,
+    "consistency": 91,
     "pl_reference": 400,
-    "length_ratio": 41,
-    "auto_fix_applied": 2
+    "length_ratio": 46,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:22.489125Z"
+  "validated_at": "2026-04-29T18:14:41.286334Z"
 }

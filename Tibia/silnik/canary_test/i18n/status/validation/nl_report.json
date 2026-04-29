@@ -1,27 +1,118 @@
 {
   "lang": "nl",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 3877,
-  "identical_to_en": 2865,
-  "placeholder_keys": 49709,
-  "coverage_pct": 7.2,
-  "issues_total": 4,
+  "total_keys": 74536,
+  "translated": 73293,
+  "identical_to_en": 49469,
+  "placeholder_keys": 1243,
+  "coverage_pct": 98.3,
+  "issues_total": 26,
   "issues_by_type": {
-    "V4_artifact": 3,
-    "V1_placeholder_mismatch": 1
+    "V1_placeholder_mismatch": 16,
+    "V4_artifact": 6,
+    "V2_length_ratio": 4
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
-    "HIGH": 3,
-    "MEDIUM": 0,
+    "CRITICAL": 16,
+    "HIGH": 6,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 99.8,
+  "score": 99.9,
   "worst_keys": [
     {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
+      "key": "npc.a_dragon_mother.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_20",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cael.say_12",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cipfried.stdmod_54",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cipfried.stdmod_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.multi_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dallheim.stdmod_35",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dixi.stdmod_18",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.frosty.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.jean_pierre.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "data.otservbr.global.npc.frosty.L148.1121",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "data.otservbr.global.npc.julius.L58.637",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "data.otservbr.global.npc.loui.L107.1167",
+      "category": "server",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -42,15 +133,21 @@
       "category": "books",
       "type": "V4_artifact",
       "severity": "HIGH"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_15",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 410,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 428,
+    "consistency": 15,
     "pl_reference": 400,
-    "length_ratio": 10,
+    "length_ratio": 13,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:46.196351Z"
+  "validated_at": "2026-04-29T18:14:46.105778Z"
 }

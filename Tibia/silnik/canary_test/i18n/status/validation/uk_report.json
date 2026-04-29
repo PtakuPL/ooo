@@ -1,23 +1,31 @@
 {
   "lang": "uk",
   "script_group": "cyrillic",
-  "total_keys": 53586,
+  "total_keys": 74352,
   "translated": 3533,
-  "identical_to_en": 2791,
-  "placeholder_keys": 50053,
-  "coverage_pct": 6.6,
-  "issues_total": 16,
+  "identical_to_en": 2787,
+  "placeholder_keys": 50046,
+  "coverage_pct": 4.8,
+  "issues_total": 25,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 16
+    "script_cyrillic_latin_mix": 20,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 16,
-    "MEDIUM": 0,
+    "CRITICAL": 1,
+    "HIGH": 20,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 99.3,
+  "score": 99.0,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.22.name",
       "category": "achievements",
@@ -113,15 +121,33 @@
       "category": "npc",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 405,
+    "issues_total": 403,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 5,
+    "length_ratio": 3,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:57.170829Z"
+  "validated_at": "2026-04-29T18:14:52.808352Z"
 }

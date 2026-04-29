@@ -1,0 +1,105 @@
+{
+  "cycles": 417,
+  "date": "2026-03-29",
+  "errors": {
+    "count": 758
+  },
+  "generated_at_utc": "2026-03-29T20:17:04Z",
+  "work": {
+    "auto_translate": {
+      "langs": {
+        "?": {
+          "skipped": 0,
+          "translated": 0
+        },
+        "CS": {
+          "skipped": 0,
+          "translated": 5354
+        },
+        "DE": {
+          "skipped": 0,
+          "translated": 802
+        },
+        "ES": {
+          "skipped": 0,
+          "translated": 3618
+        },
+        "FR": {
+          "skipped": 0,
+          "translated": 4671
+        },
+        "IT": {
+          "skipped": 0,
+          "translated": 6965
+        },
+        "NL": {
+          "skipped": 0,
+          "translated": 4607
+        },
+        "PL": {
+          "skipped": 0,
+          "translated": 1448
+        },
+        "PT": {
+          "skipped": 0,
+          "translated": 2084
+        },
+        "RO": {
+          "skipped": 0,
+          "translated": 4916
+        },
+        "RU": {
+          "skipped": 0,
+          "translated": 1445
+        },
+        "TR": {
+          "skipped": 0,
+          "translated": 3712
+        }
+      }
+    },
+    "compact_keys": {
+      "exported_langs": [],
+      "mapped_new": 0
+    },
+    "migration": {
+      "categories_touched": [],
+      "files_changed": 0,
+      "keys_added": 0
+    },
+    "translation_sync": {
+      "langs": {
+        "CS": {
+          "keys_added": 23605
+        },
+        "DE": {
+          "keys_added": 855
+        },
+        "ES": {
+          "keys_added": 16863
+        },
+        "FR": {
+          "keys_added": 19499
+        },
+        "IT": {
+          "keys_added": 26349
+        },
+        "NL": {
+          "keys_added": 964
+        },
+        "PT": {
+          "keys_added": 904
+        },
+        "RO": {
+          "keys_added": 29097
+        },
+        "RU": {
+          "keys_added": 39051
+        },
+        "TR": {
+          "keys_added": 21124
+        }
+      }
+    }
+  }
+}

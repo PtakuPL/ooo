@@ -1,18 +1,216 @@
 {
   "lang": "th",
-  "coverage_pct": 8.9,
+  "coverage_pct": 6.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T13:50:56.592148Z",
-  "issues_total": 410,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-04-29T18:14:52.034311Z",
+  "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 10
+    "length_ratio_crosscheck": 8
   },
   "consistency_issues": [],
   "pl_reference_issues": [
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.50.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razing!",
+      "pl": "Niszczenie!",
+      "lang": "Razing!"
+    },
+    {
+      "key": "achievement.53.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper",
+      "pl": "Skrobaczka",
+      "lang": "Scrapper"
+    },
+    {
+      "key": "achievement.54.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn",
+      "pl": "Żółtodziób",
+      "lang": "Greenhorn"
+    },
+    {
+      "key": "achievement.56.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbicide",
+      "pl": "Herbicyd",
+      "lang": "Herbicide"
+    },
+    {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
+    },
+    {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
+    },
+    {
+      "key": "achievement.110.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bluebarian",
+      "pl": "Bluebarista",
+      "lang": "Bluebarian"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
+      "key": "achievement.132.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Homebrewed",
+      "pl": "Domowe",
+      "lang": "Homebrewed"
+    },
+    {
+      "key": "achievement.142.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Godslayer",
+      "pl": "Zabójca Bogów",
+      "lang": "Godslayer"
+    },
+    {
+      "key": "achievement.152.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Demonbane",
+      "pl": "Zguba Demonów",
+      "lang": "Demonbane"
+    },
+    {
+      "key": "achievement.162.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ritualist",
+      "pl": "Rytualista",
+      "lang": "Ritualist"
+    },
+    {
+      "key": "achievement.169.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Alumni",
+      "pl": "Absolwenci",
+      "lang": "Alumni"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
+    },
+    {
+      "key": "achievement.187.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pyromaniac",
+      "pl": "Piroman",
+      "lang": "Pyromaniac"
+    },
     {
       "key": "achievement.366.name",
       "category": "achievements",
@@ -64,7 +262,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Ogre Chef",
-      "pl": "Ogr, potwór Szef kuchni, kucharz",
+      "pl": "Ogrowy Szef Kuchni",
       "lang": "Ogre Chef"
     },
     {
@@ -1409,6 +1607,15 @@
       "lang": "protection "
     },
     {
+      "key": "cpp.look.range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Range:",
+      "pl": "Zakres:",
+      "lang": "Range:"
+    },
+    {
       "key": "cpp.look.second_one",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2197,7 +2404,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2368,7 +2575,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Words",
-      "pl": "słowa",
+      "pl": "Słowa",
       "lang": "Words"
     },
     {
@@ -2377,7 +2584,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2404,7 +2611,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Words",
-      "pl": "słowa",
+      "pl": "Słowa",
       "lang": "Words"
     },
     {
@@ -2413,7 +2620,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2467,7 +2674,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2620,7 +2827,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -3061,7 +3268,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -3405,213 +3612,6 @@
       "en": "Characters",
       "pl": "Pismo",
       "lang": "Characters"
-    },
-    {
-      "key": "web.tpl.houses.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.houses.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Size",
-      "pl": "Rozmiar",
-      "lang": "Size"
-    },
-    {
-      "key": "web.tpl.houses.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rent",
-      "pl": "Wynajem",
-      "lang": "Rent"
-    },
-    {
-      "key": "web.tpl.houses.b_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Town",
-      "pl": "Miasto",
-      "lang": "Town"
-    },
-    {
-      "key": "web.tpl.houses.b_9",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Order",
-      "pl": "Zamówienie",
-      "lang": "Order"
-    },
-    {
-      "key": "web.tpl.admin.plugins.th_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enabled",
-      "pl": "Włączony",
-      "lang": "Enabled"
-    },
-    {
-      "key": "web.tpl.admin.plugins.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.admin.plugins.th_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Version",
-      "pl": "Wersja",
-      "lang": "Version"
-    },
-    {
-      "key": "web.tpl.admin.plugins.th_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Author",
-      "pl": "Autor",
-      "lang": "Author"
-    },
-    {
-      "key": "web.tpl.admin.plugins.th_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Filename",
-      "pl": "Nazwa pliku",
-      "lang": "Filename"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Boards",
-      "pl": "Deski",
-      "lang": "Boards"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Board",
-      "pl": "Tablica",
-      "lang": "Board"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Posts",
-      "pl": "Posty",
-      "lang": "Posts"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Threads",
-      "pl": "Wątki",
-      "lang": "Threads"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last Post",
-      "pl": "Ostatni post",
-      "lang": "Last Post"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Options",
-      "pl": "Opcje",
-      "lang": "Options"
-    },
-    {
-      "key": "web.tpl.news.back_button.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Back",
-      "pl": "Z powrotem",
-      "lang": "Back"
-    },
-    {
-      "key": "web.tpl.forum.show_thread.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Author",
-      "pl": "Autor",
-      "lang": "Author"
-    },
-    {
-      "key": "web.tpl.admin.pages.th_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.admin.pages.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Title",
-      "pl": "Tytuł",
-      "lang": "Title"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Edit Post",
-      "pl": "Edytuj post",
-      "lang": "Edit Post"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Character:",
-      "pl": "Charakter:",
-      "lang": "Character:"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Topic:",
-      "pl": "Temat:",
-      "lang": "Topic:"
     }
   ],
   "length_ratio_issues": [
@@ -3643,15 +3643,6 @@
       "pl_ratio": 3.417
     },
     {
-      "key": "achievement.128.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 10,
-      "lang_ratio": 1.1,
-      "pl_ratio": 4.5
-    },
-    {
       "key": "achievement.266.name",
       "category": "achievements",
       "type": "crossref_length_ratio_diff",
@@ -3659,15 +3650,6 @@
       "en_len": 8,
       "lang_ratio": 1.125,
       "pl_ratio": 3.0
-    },
-    {
-      "key": "achievement.274.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 1.8,
-      "pl_ratio": 4.2
     },
     {
       "key": "achievement.286.name",

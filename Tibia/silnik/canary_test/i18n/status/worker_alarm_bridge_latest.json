@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-29T18:40:48.264665Z",
+  "cycle": 8,
+  "open_alarms": [
+    {
+      "code": "DEFERRED_RETRY_PIPELINE_WARNING",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "DEFERRED_RETRY_PIPELINE_WARNING: status=deferred_backlog_pressure tracked_keys=8881 retry_due_now=5364 manual_locked=2939 cooldown_locked=0 manual_queue=3475 deferred_backlog=52054 deferred_recent_1h=66 latest_age=9.858s"
+    },
+    {
+      "code": "FIXTURE_REGRESSION",
+      "severity": "critical",
+      "source": "statusd_doctor.json",
+      "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5351141.4s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
+    },
+    {
+      "code": "LANG_PARITY_WARN",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "LANG_PARITY_WARN: tr has 46685 [EN]-backlog after 143h (should be ≤5000)"
+    },
+    {
+      "code": "NATIVE_READINESS_BELOW_THRESHOLD",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.71<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
+    },
+    {
+      "code": "PROVIDER_CIRCUIT_OPEN",
+      "severity": "critical",
+      "source": "statusd_doctor.json",
+      "detail": "PROVIDER_CIRCUIT_OPEN: provider_error_total=394 provider_error_keys=349 pipeline=deferred_backlog_pressure:warning top_reason=gt_validate_fail_placeholder:17291"
+    },
+    {
+      "code": "QUEUE_STARVATION_DETECTED",
+      "severity": "warning",
+      "source": "doctor_alerts_latest.json",
+      "detail": "Duży pending i stara kolejka sugerują głodzenie queue."
+    },
+    {
+      "code": "SURFACE_COVERAGE_IMBALANCE",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.23pp top=[ru:36.23pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:26.46pp] source=statusd_report.json"
+    },
+    {
+      "code": "SUSPICIOUS_HIGH_ELEVATED",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1304 rate=33.487% window=6.0h top_lang=es:520 per_lang=[es:520(125.908%/warning)] per_domain=[npc.json:296(61.284%/warning),server.json:221(1300.0%/warning)]"
+    },
+    {
+      "code": "TERM_CONSISTENCY_REGRESSION",
+      "severity": "critical",
+      "source": "statusd_doctor.json",
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
+    }
+  ],
+  "resolved_this_cycle": [],
+  "newly_opened": [],
+  "summary": {
+    "open_count": 9,
+    "resolved_count": 0,
+    "tracked_alarms": 32
+  },
+  "queue_snapshot": {
+    "blockers_state": "active",
+    "missing_keys_total": 0
+  },
+  "action_plan": {
+    "recommended_action": "force_auto",
+    "selected_action": "none",
+    "reason": "write_starvation_or_queue_starvation",
+    "suppressed_by_cooldown": true,
+    "cooldown_remaining_cycles": 2
+  }
+}

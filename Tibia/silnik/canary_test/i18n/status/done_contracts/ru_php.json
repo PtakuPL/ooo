@@ -9,14 +9,14 @@
     },
     "guard_command_below_threshold": {
       "ok": true,
-      "guard_command": 0,
+      "guard_command": 1,
       "threshold": 5
     },
     "coverage_above_95pct": {
       "ok": true,
-      "coverage_pct": 96.6,
+      "coverage_pct": 100.0,
       "total_keys": 59,
-      "real_translations": 57
+      "real_translations": 59
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-21T00:21:06.773377Z"
+  "timestamp": "2026-03-23T17:46:27.491778Z"
 }

@@ -3,19 +3,14 @@
   "lang": "nl",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
-      "guard_pipe": 0,
-      "batch_guard_placeholder": 0,
-      "batch_guard_pipe": 0,
-      "source": "file_state_audit"
+      "ok": false,
+      "guard_placeholder": 6,
+      "guard_pipe": 0
     },
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
-      "threshold": 5,
-      "batch_guard_command": 0,
-      "source": "file_state_audit"
+      "threshold": 5
     },
     "coverage_above_95pct": {
       "ok": true,
@@ -25,9 +20,10 @@
     },
     "quality_entry_present": {
       "ok": true,
-      "has_quality_data": true
+      "has_quality_data": true,
+      "quality_entry_written": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-26T00:13:04.589546Z"
+  "is_done": false,
+  "timestamp": "2026-04-27T16:52:00.515300Z"
 }

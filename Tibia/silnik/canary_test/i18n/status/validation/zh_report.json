@@ -1,21 +1,73 @@
 {
   "lang": "zh",
   "script_group": "cjk",
-  "total_keys": 53586,
+  "total_keys": 74352,
   "translated": 4019,
-  "identical_to_en": 3883,
-  "placeholder_keys": 49567,
-  "coverage_pct": 7.5,
-  "issues_total": 0,
-  "issues_by_type": {},
+  "identical_to_en": 3879,
+  "placeholder_keys": 49560,
+  "coverage_pct": 5.4,
+  "issues_total": 8,
+  "issues_by_type": {
+    "V2_length_ratio": 4,
+    "script_cjk_ratio": 4
+  },
   "issues_by_severity": {
     "CRITICAL": 0,
     "HIGH": 0,
-    "MEDIUM": 0,
+    "MEDIUM": 8,
     "LOW": 0
   },
-  "score": 100,
-  "worst_keys": [],
+  "score": 99.9,
+  "worst_keys": [
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    }
+  ],
   "crossref": {
     "enabled": false,
     "issues_total": 401,
@@ -24,5 +76,5 @@
     "length_ratio": 1,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:57.598861Z"
+  "validated_at": "2026-04-29T18:14:53.230216Z"
 }

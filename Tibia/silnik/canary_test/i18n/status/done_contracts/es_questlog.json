@@ -3,31 +3,26 @@
   "lang": "es",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
-      "guard_pipe": 0,
-      "batch_guard_placeholder": 0,
-      "batch_guard_pipe": 0,
-      "source": "file_state_audit"
+      "ok": false,
+      "guard_placeholder": 6,
+      "guard_pipe": 0
     },
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
-      "threshold": 5,
-      "batch_guard_command": 0,
-      "source": "file_state_audit"
+      "threshold": 5
     },
     "coverage_above_95pct": {
       "ok": true,
-      "coverage_pct": 99.0,
+      "coverage_pct": 100.0,
       "total_keys": 1918,
-      "real_translations": 1899
+      "real_translations": 1918
     },
     "quality_entry_present": {
-      "ok": true,
-      "has_quality_data": true
+      "ok": false,
+      "has_quality_data": false
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-21T21:16:13.480606Z"
+  "is_done": false,
+  "timestamp": "2026-04-02T18:36:07.995040Z"
 }

@@ -1,36 +1,45 @@
 {
-  "timestamp": "2026-02-26T20:08:17.612243Z",
+  "timestamp": "2026-04-29T18:40:25.947836Z",
   "language": "es",
   "json_file": "npc.json",
-  "translated": 4,
-  "recent_include_high_critical": false,
-  "recent_hidden_high_critical": 0,
-  "recent_hidden_alert_threshold": 5,
-  "recent_hidden_alert": false,
+  "translated": 6,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "npc.captain_chelop.stdmod_2",
+      "en": "Do you seek a passage to Thais for |TRAVELCOST|?",
+      "translated": "¿Busca un pasaje a Thais para |TRAVELCOST|?",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "npc.captain_fearless.greet_msg_1",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
+      "translated": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "npc.captain_breezelda.stdmod_3",
+      "en": "Where do you want to go? To {Carlin}, {Venore} or {Thais}?",
+      "translated": "¿A dónde quieres ir? ¿A {Carlin}, {Venore} o {Thais}?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "npc.captain_breezelda.stdmod_4",
+      "en": "Where do you want to go? To {Carlin}, {Venore} or {Thais}?",
+      "translated": "¿A dónde quieres ir? ¿A {Carlin}, {Venore} o {Thais}?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.captain_chelop.stdmod_4",
+      "en": "I can bring you back to {Thais} if you are weary or you can stay and fight. What shall it be?",
+      "translated": "Puedo traerte de regreso a {Thais} si estás cansado o puedes quedarte y luchar. ¿Qué será?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.captain_dreadnought.say_8",
+      "en": "{} What do you say, {yes} or {no}?",
+      "translated": "{} ¿Qué dices, {yes} o {no}?",
+      "source": "google_translate"
     }
-  ]
+  ],
+  "filtered_untranslated_marker": 0
 }

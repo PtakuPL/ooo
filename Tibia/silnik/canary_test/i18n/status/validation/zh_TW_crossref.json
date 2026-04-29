@@ -1,18 +1,423 @@
 {
   "lang": "zh_TW",
-  "coverage_pct": 18.3,
+  "coverage_pct": 13.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T13:50:57.740753Z",
-  "issues_total": 422,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-04-29T18:14:53.364472Z",
+  "issues_total": 420,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 22
+    "length_ratio_crosscheck": 20
   },
   "consistency_issues": [],
   "pl_reference_issues": [
+    {
+      "key": "achievement.9.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lord Protector",
+      "pl": "Lord Protektor",
+      "lang": "Lord Protector"
+    },
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.32.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Efreet Ally",
+      "pl": "Sojusznik Efreeta",
+      "lang": "Efreet Ally"
+    },
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.38.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ghostwhisperer",
+      "pl": "Zaklinacz duchów",
+      "lang": "Ghostwhisperer"
+    },
+    {
+      "key": "achievement.45.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Perfect Fool",
+      "pl": "Idealny głupiec",
+      "lang": "Perfect Fool"
+    },
+    {
+      "key": "achievement.46.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mathemagician",
+      "pl": "Matematyk",
+      "lang": "Mathemagician"
+    },
+    {
+      "key": "achievement.47.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Archpostman",
+      "pl": "Arcypoczta",
+      "lang": "Archpostman"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.50.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razing!",
+      "pl": "Niszczenie!",
+      "lang": "Razing!"
+    },
+    {
+      "key": "achievement.53.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper",
+      "pl": "Skrobaczka",
+      "lang": "Scrapper"
+    },
+    {
+      "key": "achievement.54.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn",
+      "pl": "Żółtodziób",
+      "lang": "Greenhorn"
+    },
+    {
+      "key": "achievement.56.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbicide",
+      "pl": "Herbicyd",
+      "lang": "Herbicide"
+    },
+    {
+      "key": "achievement.57.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Annihilator",
+      "pl": "Niszczyciel",
+      "lang": "Annihilator"
+    },
+    {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
+      "key": "achievement.69.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Masquerader",
+      "pl": "Maskarada",
+      "lang": "Masquerader"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.85.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Steampunked",
+      "pl": "Steampunkowy",
+      "lang": "Steampunked"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
+    },
+    {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
+    },
+    {
+      "key": "achievement.104.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Devovorga's Nemesis",
+      "pl": "Nemezis Devovorgi",
+      "lang": "Devovorga's Nemesis"
+    },
+    {
+      "key": "achievement.110.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bluebarian",
+      "pl": "Bluebarista",
+      "lang": "Bluebarian"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
+      "key": "achievement.121.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rollercoaster",
+      "pl": "Kolejka górska",
+      "lang": "Rollercoaster"
+    },
+    {
+      "key": "achievement.125.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sharpshooter",
+      "pl": "Strzelec wyborowy",
+      "lang": "Sharpshooter"
+    },
+    {
+      "key": "achievement.132.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Homebrewed",
+      "pl": "Domowe",
+      "lang": "Homebrewed"
+    },
+    {
+      "key": "achievement.139.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mutated Presents",
+      "pl": "Zmutowane prezenty",
+      "lang": "Mutated Presents"
+    },
+    {
+      "key": "achievement.142.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Godslayer",
+      "pl": "Zabójca Bogów",
+      "lang": "Godslayer"
+    },
+    {
+      "key": "achievement.152.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Demonbane",
+      "pl": "Zguba Demonów",
+      "lang": "Demonbane"
+    },
+    {
+      "key": "achievement.160.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Swashbuckler",
+      "pl": "Awanturnik",
+      "lang": "Swashbuckler"
+    },
+    {
+      "key": "achievement.162.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ritualist",
+      "pl": "Rytualista",
+      "lang": "Ritualist"
+    },
+    {
+      "key": "achievement.164.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wild Warrior",
+      "pl": "Dziki Wojownik",
+      "lang": "Wild Warrior"
+    },
+    {
+      "key": "achievement.165.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Peazzekeeper",
+      "pl": "Peazekeeper",
+      "lang": "Peazzekeeper"
+    },
+    {
+      "key": "achievement.169.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Alumni",
+      "pl": "Absolwenci",
+      "lang": "Alumni"
+    },
+    {
+      "key": "achievement.175.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Extreme Degustation",
+      "pl": "Ekstremalna degustacja",
+      "lang": "Extreme Degustation"
+    },
+    {
+      "key": "achievement.185.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Banebringers' Bane",
+      "pl": "Zguba Banebringerów",
+      "lang": "Banebringers' Bane"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
+    },
+    {
+      "key": "achievement.187.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pyromaniac",
+      "pl": "Piroman",
+      "lang": "Pyromaniac"
+    },
+    {
+      "key": "achievement.190.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Petrologist",
+      "pl": "Petrolog",
+      "lang": "Petrologist"
+    },
+    {
+      "key": "achievement.271.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Exterminator",
+      "pl": "Tępiciel",
+      "lang": "Exterminator"
+    },
+    {
+      "key": "achievement.316.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death from Below",
+      "pl": "Śmierć z dołu",
+      "lang": "Death from Below"
+    },
+    {
+      "key": "achievement.326.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gravedigger",
+      "pl": "Grabarz",
+      "lang": "Gravedigger"
+    },
+    {
+      "key": "achievement.367.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snake Charmer",
+      "pl": "Zaklinacz Węży",
+      "lang": "Snake Charmer"
+    },
     {
       "key": "achievement.395.name",
       "category": "achievements",
@@ -30,6 +435,15 @@
       "en": "Lucky Horseshoe",
       "pl": "Szczęśliwy Podkowa",
       "lang": "Lucky Horseshoe"
+    },
+    {
+      "key": "achievement.401.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Swamp Beast",
+      "pl": "Bagno Bestia",
+      "lang": "Swamp Beast"
     },
     {
       "key": "achievement.402.name",
@@ -64,7 +478,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Ogre Chef",
-      "pl": "Ogr, potwór Szef kuchni, kucharz",
+      "pl": "Ogrowy Szef Kuchni",
       "lang": "Ogre Chef"
     },
     {
@@ -84,6 +498,15 @@
       "en": "Rhino Rider",
       "pl": "RhiNie Jeździec",
       "lang": "Rhino Rider"
+    },
+    {
+      "key": "achievement.416.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Forbidden Fruit",
+      "pl": "Zakazany owoc",
+      "lang": "Forbidden Fruit"
     },
     {
       "key": "achievement.417.name",
@@ -273,6 +696,15 @@
       "en": "Tied the Knot",
       "pl": "Tied the KNiet",
       "lang": "Tied the Knot"
+    },
+    {
+      "key": "achievement.482.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dream Catcher",
+      "pl": "Łapacz snów",
+      "lang": "Dream Catcher"
     },
     {
       "key": "achievement.486.name",
@@ -550,7 +982,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Allen Richardson's Warehouse",
-      "pl": "Allen Richardson's Waredom",
+      "pl": "Magazyn Allena Richardsona",
       "lang": "Allen Richardson's Warehouse"
     },
     {
@@ -586,7 +1018,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Galuna's Fletcher Workshop",
-      "pl": "Galuna's Fletcher Warsztat",
+      "pl": "Warsztat Fletchera Galuny",
       "lang": "Galuna's Fletcher Workshop"
     },
     {
@@ -1252,7 +1684,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Auto-Sort \nPurchases",
-      "pl": "Automatyczne sortowanie \nZakupy",
+      "pl": "Automatyczne sortowanie\nZakupy",
       "lang": "Auto-Sort \nPurchases"
     },
     {
@@ -1567,7 +1999,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Balance: <value> gold",
-      "pl": "Balance: <value> Złoto",
+      "pl": "Saldo: <wartość> złota",
       "lang": "Balance: <value> gold"
     },
     {
@@ -2390,6 +2822,15 @@
       "lang": "Found Guild"
     },
     {
+      "key": "web.tpl.guilds.list.b_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Description",
+      "pl": "Opis",
+      "lang": "Description"
+    },
+    {
       "key": "web.tpl.guilds.list.b_4",
       "category": "html",
       "type": "pl_reference_missing_translation",
@@ -2656,7 +3097,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2721,6 +3162,15 @@
       "en": "Option",
       "pl": "Opcja",
       "lang": "Option"
+    },
+    {
+      "key": "web.tpl.guilds.manager.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Description",
+      "pl": "Opis",
+      "lang": "Description"
     },
     {
       "key": "web.tpl.guilds.manager.b_9",
@@ -2971,7 +3421,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Words",
-      "pl": "słowa",
+      "pl": "Słowa",
       "lang": "Words"
     },
     {
@@ -2980,7 +3430,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -3007,7 +3457,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Words",
-      "pl": "słowa",
+      "pl": "Słowa",
       "lang": "Words"
     },
     {
@@ -3016,7 +3466,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -3070,7 +3520,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -3162,456 +3612,6 @@
       "en": "Convinceable Mana",
       "pl": "Przekonująca mana",
       "lang": "Convinceable Mana"
-    },
-    {
-      "key": "web.tpl.monsters.th_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Race",
-      "pl": "Wyścig",
-      "lang": "Race"
-    },
-    {
-      "key": "web.tpl.monsters.th_8",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Monsters",
-      "pl": "Potwórs",
-      "lang": "Monsters"
-    },
-    {
-      "key": "web.tpl.account.management.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Register Account",
-      "pl": "Zarejestruj konto",
-      "lang": "Register Account"
-    },
-    {
-      "key": "web.tpl.account.management.set_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Edit",
-      "pl": "Redagować",
-      "lang": "Edit"
-    },
-    {
-      "key": "web.tpl.account.management.set_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change Email",
-      "pl": "Zmień adres e-mail",
-      "lang": "Change Email"
-    },
-    {
-      "key": "web.tpl.account.management.set_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change Info",
-      "pl": "Zmień informacje",
-      "lang": "Change Info"
-    },
-    {
-      "key": "web.tpl.account.management.set_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Create Character",
-      "pl": "Stwórz postać",
-      "lang": "Create Character"
-    },
-    {
-      "key": "web.tpl.account.management.set_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change Name",
-      "pl": "Zmień nazwę",
-      "lang": "Change Name"
-    },
-    {
-      "key": "web.tpl.account.management.set_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change Sex",
-      "pl": "Zmień płeć",
-      "lang": "Change Sex"
-    },
-    {
-      "key": "web.tpl.account.management.set_8",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Delete Character",
-      "pl": "Usuń znak",
-      "lang": "Delete Character"
-    },
-    {
-      "key": "web.tpl.account.management.h1_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "My account",
-      "pl": "Moje konto",
-      "lang": "My account"
-    },
-    {
-      "key": "web.tpl.account.management.h2_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "General Information",
-      "pl": "Informacje ogólne",
-      "lang": "General Information"
-    },
-    {
-      "key": "web.tpl.account.management.td_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Created:",
-      "pl": "Stworzony:",
-      "lang": "Created:"
-    },
-    {
-      "key": "web.tpl.account.management.td_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last Login:",
-      "pl": "Ostatnie logowanie:",
-      "lang": "Last Login:"
-    },
-    {
-      "key": "web.tpl.account.management.td_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Account Status:",
-      "pl": "Twojego Vip:",
-      "lang": "Account Status:"
-    },
-    {
-      "key": "web.tpl.account.management.td_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Registered:",
-      "pl": "Zarejestrowany:",
-      "lang": "Registered:"
-    },
-    {
-      "key": "web.tpl.account.management.h2_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Public Information",
-      "pl": "Informacje publiczne",
-      "lang": "Public Information"
-    },
-    {
-      "key": "web.tpl.account.management.h2_8",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Account Logs",
-      "pl": "Dzienniki konta",
-      "lang": "Account Logs"
-    },
-    {
-      "key": "web.tpl.account.management.th_9",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Action",
-      "pl": "Działanie",
-      "lang": "Action"
-    },
-    {
-      "key": "web.tpl.account.management.th_10",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Date",
-      "pl": "Data",
-      "lang": "Date"
-    },
-    {
-      "key": "web.tpl.account.management.th_12",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.account.management.th_13",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "poziom",
-      "lang": "Level"
-    },
-    {
-      "key": "web.tpl.account.management.th_14",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vocation",
-      "pl": "Profesja",
-      "lang": "Vocation"
-    },
-    {
-      "key": "web.tpl.account.management.th_15",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Town",
-      "pl": "Miasto",
-      "lang": "Town"
-    },
-    {
-      "key": "web.tpl.account.management.th_16",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last login",
-      "pl": "Ostatnie logowanie",
-      "lang": "Last login"
-    },
-    {
-      "key": "web.tpl.account.management.th_18",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hide",
-      "pl": "Ukryj",
-      "lang": "Hide"
-    },
-    {
-      "key": "web.tpl.account.management.th_19",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Edit",
-      "pl": "Redagować",
-      "lang": "Edit"
-    },
-    {
-      "key": "web.tpl.buttons.account_lost.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Account lost?",
-      "pl": "Konto utracone?",
-      "lang": "Account lost?"
-    },
-    {
-      "key": "web.tpl.characters.form.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Search Character",
-      "pl": "Szukaj znaku",
-      "lang": "Search Character"
-    },
-    {
-      "key": "web.tpl.characters.form.set_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Table1",
-      "pl": "Stół1",
-      "lang": "Table1"
-    },
-    {
-      "key": "web.tpl.characters.form.set_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Submit",
-      "pl": "Składać",
-      "lang": "Submit"
-    },
-    {
-      "key": "web.tpl.changelog.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Type",
-      "pl": "Typ",
-      "lang": "Type"
-    },
-    {
-      "key": "web.tpl.changelog.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Where",
-      "pl": "Gdzie",
-      "lang": "Where"
-    },
-    {
-      "key": "web.tpl.changelog.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Date",
-      "pl": "Data",
-      "lang": "Date"
-    },
-    {
-      "key": "web.tpl.account.redirect.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Login Successful",
-      "pl": "Logowanie powiodło się",
-      "lang": "Login Successful"
-    },
-    {
-      "key": "web.tpl.account.characters.change_name.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change Name",
-      "pl": "Zmień nazwę",
-      "lang": "Change Name"
-    },
-    {
-      "key": "web.tpl.account.characters.change_name.span_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Character:",
-      "pl": "Charakter:",
-      "lang": "Character:"
-    },
-    {
-      "key": "web.tpl.account.characters.change_name.span_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "New Name:",
-      "pl": "Nowy Nazwa:",
-      "lang": "New Name:"
-    },
-    {
-      "key": "web.tpl.buttons.submit.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Submit",
-      "pl": "Składać",
-      "lang": "Submit"
-    },
-    {
-      "key": "web.tpl.guilds.change_logo.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change guild logo",
-      "pl": "Zmień logo gildii",
-      "lang": "Change guild logo"
-    },
-    {
-      "key": "web.tpl.forum.new_thread.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Post New Reply",
-      "pl": "Opublikuj nową odpowiedź",
-      "lang": "Post New Reply"
-    },
-    {
-      "key": "web.tpl.forum.new_thread.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Character:",
-      "pl": "Charakter:",
-      "lang": "Character:"
-    },
-    {
-      "key": "web.tpl.forum.new_thread.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Topic:",
-      "pl": "Temat:",
-      "lang": "Topic:"
-    },
-    {
-      "key": "web.tpl.forum.new_thread.b_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Message:",
-      "pl": "Wiadomość:",
-      "lang": "Message:"
-    },
-    {
-      "key": "web.tpl.forum.new_thread.b_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Text",
-      "pl": "Tekst",
-      "lang": "Text"
-    },
-    {
-      "key": "web.tpl.buttons.back.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Back",
-      "pl": "Z powrotem",
-      "lang": "Back"
-    },
-    {
-      "key": "web.tpl.admin.news.table.th_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Title",
-      "pl": "Tytuł",
-      "lang": "Title"
-    },
-    {
-      "key": "web.tpl.admin.news.table.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Date",
-      "pl": "Data",
-      "lang": "Date"
-    },
-    {
-      "key": "web.tpl.admin.news.table.th_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Player",
-      "pl": "Gracz",
-      "lang": "Player"
-    },
-    {
-      "key": "web.tpl.exception.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Backtrace:",
-      "pl": "Ślad wsteczny:",
-      "lang": "Backtrace:"
     }
   ],
   "length_ratio_issues": [
@@ -3670,15 +3670,6 @@
       "pl_ratio": 3.417
     },
     {
-      "key": "achievement.128.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 10,
-      "lang_ratio": 0.4,
-      "pl_ratio": 4.5
-    },
-    {
       "key": "achievement.130.name",
       "category": "achievements",
       "type": "crossref_length_ratio_diff",
@@ -3713,15 +3704,6 @@
       "en_len": 8,
       "lang_ratio": 0.375,
       "pl_ratio": 3.0
-    },
-    {
-      "key": "achievement.274.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.4,
-      "pl_ratio": 4.2
     },
     {
       "key": "achievement.281.name",

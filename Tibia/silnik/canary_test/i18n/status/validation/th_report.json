@@ -1,24 +1,44 @@
 {
   "lang": "th",
   "script_group": "exotic",
-  "total_keys": 53586,
-  "translated": 4768,
-  "identical_to_en": 3842,
-  "placeholder_keys": 48818,
-  "coverage_pct": 8.9,
-  "issues_total": 79,
+  "total_keys": 74352,
+  "translated": 4737,
+  "identical_to_en": 3806,
+  "placeholder_keys": 48842,
+  "coverage_pct": 6.4,
+  "issues_total": 90,
   "issues_by_type": {
-    "script_wrong_script": 78,
+    "script_wrong_script": 82,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 3,
     "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 79,
-    "MEDIUM": 0,
+    "CRITICAL": 3,
+    "HIGH": 83,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 97.5,
+  "score": 97.2,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.42.name",
       "category": "achievements",
@@ -120,33 +140,15 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.23442.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.23443.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.24227.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 410,
+    "issues_total": 408,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 10,
+    "length_ratio": 8,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:56.599799Z"
+  "validated_at": "2026-04-29T18:14:52.040269Z"
 }

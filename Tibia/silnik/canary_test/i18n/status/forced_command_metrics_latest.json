@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-02-26T07:10:02.813769Z",
+  "timestamp": "2026-04-27T18:12:20.527364Z",
   "stage": "completed",
-  "command": "restart",
-  "pending_age_s": 19,
-  "mid_cycle_command_pickup_s": 19,
-  "roundtrip_s": 33,
-  "forced_command_pending_age_s": 19,
-  "forced_command_mid_cycle_pickup_s": 19,
-  "forced_command_roundtrip_s": 33,
+  "command": "RESTART",
+  "pending_age_s": 30,
+  "mid_cycle_command_pickup_s": 30,
+  "roundtrip_s": 205,
+  "forced_command_pending_age_s": 30,
+  "forced_command_mid_cycle_pickup_s": 30,
+  "forced_command_roundtrip_s": 205,
   "mode_type": "AUTO_TRANSLATE",
-  "mode_cat": "de",
-  "mode_count": "npc.json"
+  "mode_cat": "tr",
+  "mode_count": "monsters.json"
 }

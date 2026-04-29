@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-29T18:40:40.907335Z",
+  "summary": {
+    "state": "in_progress",
+    "state_label": "🟡 IN_PROGRESS",
+    "verified_100": false,
+    "checks_total": 4,
+    "checks_passed": 1,
+    "required_waves": 3,
+    "window_hours": 24,
+    "production_langs": [
+      "pl",
+      "de",
+      "ar"
+    ],
+    "failed_checks": [
+      "tasks_closed_claim_table",
+      "doctor_alerts_clean_3_waves",
+      "bridge_consistency_prod_langs"
+    ],
+    "recommendation": "Domknij check: tasks_closed_claim_table"
+  },
+  "checks": {
+    "tasks_closed_claim_table": {
+      "label": "B23-02..B23-07 zamkniete w claim table (B23-08 = kontrakt biezacy)",
+      "pass": false,
+      "detail": "open dependencies: B23-02; contract B23-08=🟢 in_progress (2026-04-23, 90%)",
+      "tasks_required": [
+        "B23-02",
+        "B23-03",
+        "B23-04",
+        "B23-05",
+        "B23-06",
+        "B23-07"
+      ],
+      "tasks_open": [
+        "B23-02"
+      ],
+      "tasks_status": {
+        "B23-02": "🟢 in_progress (2026-04-23, 94%)",
+        "B23-03": "🔵 implemented (2026-04-22)",
+        "B23-04": "🔵 implemented (2026-04-22)",
+        "B23-05": "🔵 implemented (2026-04-22)",
+        "B23-06": "🔵 implemented (2026-04-23)",
+        "B23-07": "🔵 implemented (2026-04-23)",
+        "B23-08": "🟢 in_progress (2026-04-23, 90%)"
+      },
+      "contract_task": "B23-08",
+      "contract_task_status": "🟢 in_progress (2026-04-23, 90%)",
+      "contract_task_closed": false,
+      "plan_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/../Dokumentacja/I18N_PLAN_NAPRAW_2026-04-09.md"
+    },
+    "doctor_alerts_clean_3_waves": {
+      "label": "Brak stale alarmow (HEARTBEAT_STALE/QUEUE_STARVATION/DLQ_GROWTH) podczas 3 fal",
+      "pass": false,
+      "detail": "insufficient/dirty waves (0/3); recent=-",
+      "required_waves": 3,
+      "waves_observed": 0,
+      "waves_considered": [],
+      "wave_history_rows_total": 1637,
+      "wave_history_rows_window": 1071,
+      "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
+      "stale_alerts_monitored": [
+        "DLQ_GROWTH",
+        "HEARTBEAT_STALE",
+        "QUEUE_STARVATION"
+      ],
+      "current_wave": {
+        "active": false,
+        "wave": "",
+        "open_alerts": [
+          "QUEUE_STARVATION"
+        ]
+      }
+    },
+    "quality_trend_24h": {
+      "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
+      "pass": true,
+      "detail": "window=24.00h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+      "window_hours": 24,
+      "window_start_utc": "2026-04-28T18:40:29.679198Z",
+      "window_end_utc": "2026-04-29T18:40:40.907335Z",
+      "window_span_hours": 24.0,
+      "has_min_24h_window": true,
+      "files": {
+        "client.json": {
+          "samples": 1073,
+          "oldest_timestamp": "2026-04-28T18:40:29.679198Z",
+          "latest_timestamp": "2026-04-29T18:40:40.907335Z",
+          "oldest_identical_to_en_pct": 31.4,
+          "latest_identical_to_en_pct": 31.4,
+          "delta_identical_to_en_pct": 0.0,
+          "oldest_word_salad_rejects": 0,
+          "latest_word_salad_rejects": 0,
+          "delta_word_salad_rejects": 0,
+          "trend_pass": true
+        },
+        "otclient_modules.json": {
+          "samples": 1073,
+          "oldest_timestamp": "2026-04-28T18:40:29.679198Z",
+          "latest_timestamp": "2026-04-29T18:40:40.907335Z",
+          "oldest_identical_to_en_pct": 29.79,
+          "latest_identical_to_en_pct": 29.79,
+          "delta_identical_to_en_pct": 0.0,
+          "oldest_word_salad_rejects": 0,
+          "latest_word_salad_rejects": 0,
+          "delta_word_salad_rejects": 0,
+          "trend_pass": true
+        }
+      }
+    },
+    "bridge_consistency_prod_langs": {
+      "label": "Launcher-rust bridge missing=0 i extra=0 dla aktywnych jezykow produkcyjnych",
+      "pass": false,
+      "detail": "failed langs: AR",
+      "production_langs": [
+        "pl",
+        "de",
+        "ar"
+      ],
+      "source_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+      "source_path_apply": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+      "source_path_audit": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_audit_latest.json",
+      "per_lang": {
+        "pl": {
+          "source": "audit",
+          "present": true,
+          "missing": 0,
+          "extra": 0,
+          "pass": true
+        },
+        "de": {
+          "source": "apply",
+          "present": true,
+          "missing": 0,
+          "extra": 0,
+          "pass": true
+        },
+        "ar": {
+          "source": "audit",
+          "present": true,
+          "missing": 38,
+          "extra": 0,
+          "pass": false
+        }
+      }
+    }
+  },
+  "evidence": {
+    "history_path": "i18n/status/launcher_readiness_report.jsonl",
+    "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
+    "quality_gate_path": "i18n/status/launcher_quality_gate_latest.json",
+    "dispatch_state_path": "i18n/status/translation_dispatch_state.json",
+    "doctor_alerts_path": "i18n/status/doctor_alerts_latest.json",
+    "bridge_source_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+    "bridge_source_path_apply": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+    "bridge_source_path_audit": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_audit_latest.json",
+    "plan_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/../Dokumentacja/I18N_PLAN_NAPRAW_2026-04-09.md"
+  }
+}

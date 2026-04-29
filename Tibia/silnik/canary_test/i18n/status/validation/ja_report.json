@@ -1,23 +1,23 @@
 {
   "lang": "ja",
   "script_group": "cjk",
-  "total_keys": 53586,
-  "translated": 5138,
-  "identical_to_en": 3836,
-  "placeholder_keys": 48448,
-  "coverage_pct": 9.6,
-  "issues_total": 8,
+  "total_keys": 74536,
+  "translated": 5222,
+  "identical_to_en": 3913,
+  "placeholder_keys": 48521,
+  "coverage_pct": 7.0,
+  "issues_total": 16,
   "issues_by_type": {
-    "V2_length_ratio": 7,
-    "script_cjk_ratio": 1
+    "V2_length_ratio": 11,
+    "script_cjk_ratio": 5
   },
   "issues_by_severity": {
     "CRITICAL": 0,
     "HIGH": 0,
-    "MEDIUM": 8,
+    "MEDIUM": 16,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "achievement.30.name",
@@ -66,15 +66,63 @@
       "category": "achievements",
       "type": "V2_length_ratio",
       "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 419,
+    "issues_total": 416,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 19,
+    "length_ratio": 16,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:44.757786Z"
+  "validated_at": "2026-04-29T18:14:44.218564Z"
 }

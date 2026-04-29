@@ -1,25 +1,31 @@
 {
   "lang": "zh_TW",
   "script_group": "cjk",
-  "total_keys": 53586,
+  "total_keys": 74352,
   "translated": 9789,
-  "identical_to_en": 9185,
-  "placeholder_keys": 41879,
-  "coverage_pct": 18.3,
-  "issues_total": 14,
+  "identical_to_en": 9180,
+  "placeholder_keys": 41872,
+  "coverage_pct": 13.2,
+  "issues_total": 23,
   "issues_by_type": {
-    "V2_length_ratio": 11,
-    "script_cjk_ratio": 2,
-    "V1_placeholder_mismatch": 1
+    "V2_length_ratio": 15,
+    "script_cjk_ratio": 6,
+    "V1_placeholder_mismatch": 2
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
+    "CRITICAL": 2,
     "HIGH": 0,
-    "MEDIUM": 13,
+    "MEDIUM": 21,
     "LOW": 0
   },
   "score": 99.9,
   "worst_keys": [
+    {
+      "key": "npc.maeryn.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
@@ -103,15 +109,45 @@
       "category": "achievements",
       "type": "script_cjk_ratio",
       "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 422,
+    "issues_total": 420,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 22,
+    "length_ratio": 20,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:57.748652Z"
+  "validated_at": "2026-04-29T18:14:53.370022Z"
 }

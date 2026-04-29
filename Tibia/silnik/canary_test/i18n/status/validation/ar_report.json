@@ -1,25 +1,45 @@
 {
   "lang": "ar",
   "script_group": "rtl",
-  "total_keys": 53586,
-  "translated": 5657,
-  "identical_to_en": 3881,
-  "placeholder_keys": 47929,
-  "coverage_pct": 10.6,
-  "issues_total": 75,
+  "total_keys": 74536,
+  "translated": 5759,
+  "identical_to_en": 3955,
+  "placeholder_keys": 47984,
+  "coverage_pct": 7.7,
+  "issues_total": 86,
   "issues_by_type": {
-    "script_rtl_insufficient": 72,
+    "script_rtl_insufficient": 76,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 3,
     "V4_artifact": 2,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 74,
-    "MEDIUM": 1,
+    "CRITICAL": 3,
+    "HIGH": 78,
+    "MEDIUM": 5,
     "LOW": 0
   },
-  "score": 98.0,
+  "score": 97.8,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "book.otbm.battletactics_for_mages_ii",
       "category": "books",
@@ -121,33 +141,15 @@
       "category": "items",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.24227.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.24966.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.2521.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 414,
+    "issues_total": 411,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 14,
+    "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:49:59.646860Z"
+  "validated_at": "2026-04-29T18:14:36.280516Z"
 }

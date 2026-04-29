@@ -1,152 +1,152 @@
 {
   "lang": "pt",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 4847,
-  "identical_to_en": 2776,
-  "placeholder_keys": 48739,
-  "coverage_pct": 9.0,
-  "issues_total": 41,
+  "total_keys": 74536,
+  "translated": 73367,
+  "identical_to_en": 48833,
+  "placeholder_keys": 1169,
+  "coverage_pct": 98.4,
+  "issues_total": 57,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 39,
-    "V4_artifact": 2
+    "V1_placeholder_mismatch": 33,
+    "V4_artifact": 24
   },
   "issues_by_severity": {
-    "CRITICAL": 39,
-    "HIGH": 2,
+    "CRITICAL": 33,
+    "HIGH": 24,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 97.5,
+  "score": 99.8,
   "worst_keys": [
     {
-      "key": "html.statistics.html.text2",
+      "key": "html.header.text1",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.statistics.html.text3",
-      "category": "html",
+      "key": "npc.a_dragon_mother.multi_7",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.admin.news.form.html.text3",
-      "category": "html",
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.admin.news.form.html.text5",
-      "category": "html",
+      "key": "npc.al_dee.stdmod_8",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.highscores.html.text3",
-      "category": "html",
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.highscores.html.text4",
-      "category": "html",
+      "key": "npc.andrew_lyze.greet_msg_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.monster.html.text1",
-      "category": "html",
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.monster.html.text3",
-      "category": "html",
+      "key": "npc.billy.stdmod_20",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.account.characters.change_sex.html.text2",
-      "category": "html",
+      "key": "npc.cael.say_12",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.account.characters.change_name.html.text2",
-      "category": "html",
+      "key": "npc.chief_grarkharok.greet_msg_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.admin.news.table.html.text2",
-      "category": "html",
+      "key": "npc.cipfried.stdmod_6",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.faq.html.text1",
-      "category": "html",
+      "key": "npc.dixi.stdmod_18",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.online.html.text5",
-      "category": "html",
+      "key": "npc.duria.stdmod_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.guilds.view.html.text4",
-      "category": "html",
+      "key": "npc.duria.stdmod_2",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.guilds.view.html.text5",
-      "category": "html",
+      "key": "npc.falonzo.stdmod_2",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.bans.html.text1",
-      "category": "html",
+      "key": "npc.frosty.greet_msg_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.account.characters.change_comment.html.text3",
-      "category": "html",
+      "key": "npc.frosty.stdmod_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.admin.changelog.form.html.text2",
-      "category": "html",
+      "key": "npc.garamond.stdmod_2",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.characters.html.text2",
-      "category": "html",
+      "key": "npc.garamond.stdmod_3",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.characters.html.text4",
-      "category": "html",
+      "key": "npc.ghost_of_a_priest.stdmod_10",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 409,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 435,
+    "consistency": 19,
     "pl_reference": 400,
-    "length_ratio": 9,
+    "length_ratio": 16,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:47.006413Z"
+  "validated_at": "2026-04-29T18:14:47.587174Z"
 }

@@ -4,30 +4,25 @@
   "conditions": {
     "no_critical_token_errors": {
       "ok": false,
-      "guard_placeholder": 286,
-      "guard_pipe": 6,
-      "batch_guard_placeholder": 0,
-      "batch_guard_pipe": 0,
-      "source": "file_state_audit"
+      "guard_placeholder": 83,
+      "guard_pipe": 0
     },
     "guard_command_below_threshold": {
       "ok": true,
-      "guard_command": 1,
-      "threshold": 5,
-      "batch_guard_command": 0,
-      "source": "file_state_audit"
+      "guard_command": 0,
+      "threshold": 5
     },
     "coverage_above_95pct": {
       "ok": false,
-      "coverage_pct": 70.7,
+      "coverage_pct": 77.5,
       "total_keys": 14815,
-      "real_translations": 10473
+      "real_translations": 11486
     },
     "quality_entry_present": {
-      "ok": true,
-      "has_quality_data": true
+      "ok": false,
+      "has_quality_data": false
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-26T19:11:21.063742Z"
+  "timestamp": "2026-04-23T17:10:37.349426Z"
 }

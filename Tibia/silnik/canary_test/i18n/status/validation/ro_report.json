@@ -1,37 +1,154 @@
 {
   "lang": "ro",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 9452,
-  "identical_to_en": 2832,
-  "placeholder_keys": 44134,
-  "coverage_pct": 17.6,
-  "issues_total": 1,
+  "total_keys": 74536,
+  "translated": 55305,
+  "identical_to_en": 12989,
+  "placeholder_keys": 19231,
+  "coverage_pct": 74.2,
+  "issues_total": 140,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 1
+    "V1_placeholder_mismatch": 116,
+    "V6_newline_mismatch": 14,
+    "V4_artifact": 5,
+    "V2_length_ratio": 5
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
-    "HIGH": 0,
-    "MEDIUM": 0,
+    "CRITICAL": 116,
+    "HIGH": 5,
+    "MEDIUM": 19,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.3,
   "worst_keys": [
     {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
+      "key": "npc.a_weakened_forest_fury.multi_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_13",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_21",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.angus.say_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_20",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.chief_grarkharok.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cipfried.stdmod_48",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cipfried.stdmod_58",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.multi_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.multi_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cornelia.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dallheim.stdmod_21",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dixi.stdmod_18",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dixi.stdmod_26",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 406,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 493,
+    "consistency": 31,
     "pl_reference": 400,
-    "length_ratio": 6,
+    "length_ratio": 62,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:47.182344Z"
+  "validated_at": "2026-04-29T18:14:48.497616Z"
 }

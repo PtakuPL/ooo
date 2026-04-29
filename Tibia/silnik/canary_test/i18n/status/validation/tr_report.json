@@ -1,37 +1,152 @@
 {
   "lang": "tr",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 5016,
-  "identical_to_en": 2888,
-  "placeholder_keys": 48570,
-  "coverage_pct": 9.4,
-  "issues_total": 1,
+  "total_keys": 74536,
+  "translated": 27822,
+  "identical_to_en": 3835,
+  "placeholder_keys": 46714,
+  "coverage_pct": 37.3,
+  "issues_total": 38,
   "issues_by_type": {
-    "V4_artifact": 1
+    "V1_placeholder_mismatch": 34,
+    "V4_artifact": 4
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 1,
+    "CRITICAL": 34,
+    "HIGH": 4,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.6,
   "worst_keys": [
     {
-      "key": "achievement.317.description",
-      "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.al_dee.stdmod_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_20",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cipfried.stdmod_48",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cipfried.stdmod_58",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cornelia.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dallheim.stdmod_21",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dixi.stdmod_18",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.emperor_kruzak.multi_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.emperor_kruzak.say_10",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.say_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.say_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.say_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.stdmod_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 415,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 442,
+    "consistency": 22,
     "pl_reference": 400,
-    "length_ratio": 15,
+    "length_ratio": 20,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:56.958663Z"
+  "validated_at": "2026-04-29T18:14:52.632078Z"
 }

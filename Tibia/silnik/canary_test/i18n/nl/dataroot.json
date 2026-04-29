@@ -1,5 +1,5 @@
 {
-  "dataroot.global.msg_1": "{} minute{} of stamina has been refilled.",
-  "dataroot.global.msg_2": "You are no longer refilling stamina, \\z\n                                                         because your stamina is already full.",
-  "dataroot.global.msg_3": "{} of stamina has been refilled."
+  "dataroot.global.msg_1": "{} minuut{} uithoudingsvermogen is bijgevuld.",
+  "dataroot.global.msg_2": "Je vult niet langer je uithoudingsvermogen aan, \\z\n                                                         omdat je uithoudingsvermogen al vol is.",
+  "dataroot.global.msg_3": "{} uithoudingsvermogen is bijgevuld."
 }

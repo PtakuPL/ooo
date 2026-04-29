@@ -3,31 +3,27 @@
   "lang": "pt",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": false,
-      "guard_placeholder": 263,
-      "guard_pipe": 6,
-      "batch_guard_placeholder": 0,
-      "batch_guard_pipe": 0,
-      "source": "file_state_audit"
+      "ok": true,
+      "guard_placeholder": 0,
+      "guard_pipe": 0
     },
     "guard_command_below_threshold": {
       "ok": true,
-      "guard_command": 1,
-      "threshold": 5,
-      "batch_guard_command": 0,
-      "source": "file_state_audit"
+      "guard_command": 0,
+      "threshold": 5
     },
     "coverage_above_95pct": {
-      "ok": false,
-      "coverage_pct": 10.9,
+      "ok": true,
+      "coverage_pct": 97.3,
       "total_keys": 14815,
-      "real_translations": 1613
+      "real_translations": 14422
     },
     "quality_entry_present": {
       "ok": true,
-      "has_quality_data": true
+      "has_quality_data": true,
+      "quality_entry_written": true
     }
   },
-  "is_done": false,
-  "timestamp": "2026-02-26T19:13:59.756476Z"
+  "is_done": true,
+  "timestamp": "2026-04-28T15:37:26.035091Z"
 }

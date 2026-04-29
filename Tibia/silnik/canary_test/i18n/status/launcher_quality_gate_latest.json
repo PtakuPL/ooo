@@ -1,0 +1,1762 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-29T18:40:40.843130Z",
+  "enabled": true,
+  "files": [
+    "client.json",
+    "otclient_modules.json"
+  ],
+  "langs": [
+    "ar",
+    "az",
+    "bg",
+    "bn",
+    "bs",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "es",
+    "et",
+    "fa",
+    "fi",
+    "fr",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "it",
+    "ja",
+    "ka",
+    "kk",
+    "ko",
+    "lt",
+    "lv",
+    "mk",
+    "ml",
+    "ms",
+    "nl",
+    "no",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "uk",
+    "uz",
+    "vi",
+    "zh"
+  ],
+  "thresholds": {
+    "identical_to_en_max_pct": 35.0,
+    "word_salad_rejects_max": 5,
+    "placeholder_rejects_max": 3
+  },
+  "window": {
+    "suspicious_rejected_tail_entries": 1200
+  },
+  "summary": {
+    "state": "pass",
+    "overall_pass": true,
+    "files_total": 2,
+    "files_with_data": 2,
+    "langs_total": 51,
+    "langs_evaluated": 51,
+    "langs_failing": 0,
+    "checks_failed": 0,
+    "word_salad_rejects_total": 0,
+    "placeholder_rejects_total": 0,
+    "trend_24h_pass_rate_pct": 100.0,
+    "trend_24h_fail_samples": 0,
+    "trend_24h_checks_failed_delta": 0,
+    "recommendation": "Launcher quality gate PASS: brak naruszeń progów dla client/otclient_modules."
+  },
+  "trend_24h": {
+    "window_hours": 24,
+    "samples": 1071,
+    "pass_samples": 1071,
+    "fail_samples": 0,
+    "pass_rate_pct": 100.0,
+    "state_changes": 0,
+    "latest_state": "pass",
+    "oldest_state": "pass",
+    "latest_timestamp": "2026-04-29T18:40:40.843130Z",
+    "oldest_timestamp": "2026-04-28T18:42:22.230107Z",
+    "checks_failed_delta": 0,
+    "word_salad_rejects_delta": 0,
+    "placeholder_rejects_delta": 0,
+    "direction": "stable"
+  },
+  "by_file": {
+    "client.json": {
+      "langs_total": 51,
+      "langs_passing": 51,
+      "langs_failing": 0,
+      "max_identical_to_en_pct": 31.4,
+      "word_salad_rejects": 0,
+      "placeholder_rejects": 0,
+      "total_rejects": 8,
+      "gate_pass": true,
+      "failing_langs": [],
+      "pass_rate_pct": 100.0
+    },
+    "otclient_modules.json": {
+      "langs_total": 51,
+      "langs_passing": 51,
+      "langs_failing": 0,
+      "max_identical_to_en_pct": 29.79,
+      "word_salad_rejects": 0,
+      "placeholder_rejects": 0,
+      "total_rejects": 73,
+      "gate_pass": true,
+      "failing_langs": [],
+      "pass_rate_pct": 100.0
+    }
+  },
+  "by_lang_file": {
+    "ar": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "az": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "bg": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "bn": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "bs": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "cs": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 65,
+        "identical_to_en_pct": 26.86,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 597,
+        "identical_to_en_pct": 29.39,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "da": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "de": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 59,
+        "identical_to_en_pct": 24.38,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 8,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 589,
+        "identical_to_en_pct": 29.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 60,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "el": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "es": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 20,
+        "identical_to_en_pct": 8.26,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 105,
+        "identical_to_en_pct": 5.17,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "et": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "fa": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "fi": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "fr": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 48,
+        "identical_to_en_pct": 19.83,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 87,
+        "identical_to_en_pct": 4.28,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "he": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "hi": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "hr": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "hu": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "hy": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "id": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "it": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 28,
+        "identical_to_en_pct": 11.57,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 181,
+        "identical_to_en_pct": 8.91,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ja": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ka": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "kk": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ko": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "lt": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "lv": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "mk": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ml": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ms": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "nl": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 53,
+        "identical_to_en_pct": 21.9,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 605,
+        "identical_to_en_pct": 29.79,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 12,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "no": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "pl": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 24,
+        "identical_to_en_pct": 9.92,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 103,
+        "identical_to_en_pct": 5.07,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "pt": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 76,
+        "identical_to_en_pct": 31.4,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 494,
+        "identical_to_en_pct": 24.32,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 1,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ro": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 42,
+        "identical_to_en_pct": 17.36,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 228,
+        "identical_to_en_pct": 11.23,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ru": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 8,
+        "identical_to_en_pct": 3.31,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 45,
+        "identical_to_en_pct": 2.22,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "sk": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "sl": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "sq": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "sr": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 4,
+        "identical_to_en_pct": 1.65,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 9,
+        "identical_to_en_pct": 0.44,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "sv": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "sw": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "ta": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "te": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "th": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "tl": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "tr": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 20,
+        "identical_to_en_pct": 8.26,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 51,
+        "identical_to_en_pct": 2.51,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "uk": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "uz": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 1,
+        "identical_to_en_pct": 0.41,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "vi": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    },
+    "zh": {
+      "client.json": {
+        "total_reference_keys": 242,
+        "english_copy_keys": 41,
+        "identical_to_en_pct": 16.94,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      },
+      "otclient_modules.json": {
+        "total_reference_keys": 2031,
+        "english_copy_keys": 0,
+        "identical_to_en_pct": 0.0,
+        "word_salad_rejects": 0,
+        "placeholder_rejects": 0,
+        "total_rejects": 0,
+        "checks": {
+          "identical_to_en": true,
+          "word_salad": true,
+          "placeholder_integrity": true
+        },
+        "failed_checks": [],
+        "gate_pass": true
+      }
+    }
+  }
+}

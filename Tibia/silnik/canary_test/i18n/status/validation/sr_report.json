@@ -1,37 +1,155 @@
 {
   "lang": "sr",
   "script_group": "cyrillic",
-  "total_keys": 53586,
-  "translated": 3614,
-  "identical_to_en": 2779,
-  "placeholder_keys": 49972,
-  "coverage_pct": 6.7,
-  "issues_total": 1,
+  "total_keys": 74536,
+  "translated": 25084,
+  "identical_to_en": 1199,
+  "placeholder_keys": 28659,
+  "coverage_pct": 33.7,
+  "issues_total": 312,
   "issues_by_type": {
-    "V4_artifact": 1
+    "V1_placeholder_mismatch": 264,
+    "V2_length_ratio": 31,
+    "V4_artifact": 11,
+    "V5_pipe_mismatch": 5,
+    "V7_command_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 1,
-    "MEDIUM": 0,
+    "CRITICAL": 269,
+    "HIGH": 11,
+    "MEDIUM": 32,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 96.7,
   "worst_keys": [
     {
-      "key": "achievement.317.description",
-      "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_weakened_forest_fury.multi_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.albinius.multi_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.alesar.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.alesar_functions.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.alexander.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.arkulius.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.asima.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cassino.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.chavis.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 411,
-    "consistency": 0,
-    "pl_reference": 400,
-    "length_ratio": 11,
+    "enabled": true,
+    "issues_total": 319,
+    "consistency": 54,
+    "pl_reference": 215,
+    "length_ratio": 50,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:55.775535Z"
+  "validated_at": "2026-04-29T18:14:51.156035Z"
 }

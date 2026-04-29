@@ -1,50 +1,153 @@
 {
   "lang": "cs",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 4055,
-  "identical_to_en": 2726,
-  "placeholder_keys": 49531,
-  "coverage_pct": 7.6,
-  "issues_total": 3,
+  "total_keys": 74536,
+  "translated": 55186,
+  "identical_to_en": 29732,
+  "placeholder_keys": 19350,
+  "coverage_pct": 74.0,
+  "issues_total": 34,
   "issues_by_type": {
-    "V4_artifact": 2,
-    "V1_placeholder_mismatch": 1
+    "V1_placeholder_mismatch": 20,
+    "V6_newline_mismatch": 10,
+    "V4_artifact": 4
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
-    "HIGH": 2,
-    "MEDIUM": 0,
+    "CRITICAL": 20,
+    "HIGH": 4,
+    "MEDIUM": 10,
     "LOW": 0
   },
   "score": 99.9,
   "worst_keys": [
     {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "achievement.317.description",
-      "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "key": "npc.al_dee.stdmod_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "quests.bigfoot_burden.gnomedix_msg4",
-      "category": "quests",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_20",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.multi_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dixi.stdmod_18",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.eruaran.stdmod_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.frosty.greet_msg_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.gnomally.multi_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.gnomally.multi_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.gnomally.multi_4",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.hireling.goods_trader",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.hireling.say_10",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.hireling.say_4",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.hireling.say_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.jean_pierre.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "data.otservbr.global.npc.andrew.lyze.L101.514",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "data.otservbr.global.npc.frosty.L148.1121",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 410,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 431,
+    "consistency": 13,
     "pl_reference": 400,
-    "length_ratio": 10,
+    "length_ratio": 18,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:00.740848Z"
+  "validated_at": "2026-04-29T18:14:37.488467Z"
 }

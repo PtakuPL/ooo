@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-26T20:14:50.999888Z",
-  "state": "stopped",
+  "timestamp": "2026-04-29T17:46:27.740784Z",
+  "state": "running",
   "source": "service",
-  "pid": 2497444,
-  "reason": "daemon_exit",
-  "owner_pid": 2497444,
-  "owner_source": "service",
+  "pid": 441,
+  "reason": "lock_acquired",
+  "owner_pid": 0,
+  "owner_source": "",
   "lock_age_sec": 0
 }

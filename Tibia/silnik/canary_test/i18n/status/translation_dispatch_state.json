@@ -1,17 +1,165 @@
 {
-  "timestamp": "2026-02-26T20:14:45.109595Z",
-  "cycle_counter": 10765,
-  "last_target_key": "it:monsters.json",
-  "last_pending_total": 53,
+  "timestamp": "2026-04-29T18:41:01.376580Z",
+  "cycle_counter": 13275,
+  "last_target_key": "ro:items.json",
+  "last_pending_total": 14618,
+  "last_marker_todo": 14618,
   "last_tier": 2,
-  "last_cat_priority": 2,
-  "candidates_count": 285,
-  "active_candidates_count": 285,
-  "skipped_backoff": 0,
+  "last_cat_priority": 1,
+  "candidates_count": 96,
+  "active_candidates_count": 89,
+  "skipped_backoff": 7,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
-  "guard_fail_blocked_count": 0,
-  "guard_fail_blocked_preview": [],
+  "marker_debt": {
+    "priority_enabled": true,
+    "priority_min_keys": 25,
+    "total_marker_todo": 153187,
+    "top_candidates": [
+      {
+        "lang": "tr",
+        "json_file": "items.json",
+        "marker_todo": 28721,
+        "pending_total": 28721
+      },
+      {
+        "lang": "ru",
+        "json_file": "items.json",
+        "marker_todo": 24068,
+        "pending_total": 24068
+      },
+      {
+        "lang": "cs",
+        "json_file": "items.json",
+        "marker_todo": 18036,
+        "pending_total": 18036
+      },
+      {
+        "lang": "fr",
+        "json_file": "items.json",
+        "marker_todo": 16569,
+        "pending_total": 16569
+      },
+      {
+        "lang": "ro",
+        "json_file": "items.json",
+        "marker_todo": 14618,
+        "pending_total": 14618
+      },
+      {
+        "lang": "it",
+        "json_file": "items.json",
+        "marker_todo": 13624,
+        "pending_total": 13624
+      },
+      {
+        "lang": "es",
+        "json_file": "items.json",
+        "marker_todo": 13004,
+        "pending_total": 13004
+      },
+      {
+        "lang": "ru",
+        "json_file": "npc.json",
+        "marker_todo": 11971,
+        "pending_total": 11985
+      },
+      {
+        "lang": "pl",
+        "json_file": "items.json",
+        "marker_todo": 8571,
+        "pending_total": 8571
+      },
+      {
+        "lang": "de",
+        "json_file": "otclient_modules.json",
+        "marker_todo": 715,
+        "pending_total": 1202
+      },
+      {
+        "lang": "de",
+        "json_file": "npc.json",
+        "marker_todo": 537,
+        "pending_total": 13025
+      },
+      {
+        "lang": "nl",
+        "json_file": "npc.json",
+        "marker_todo": 458,
+        "pending_total": 9213
+      }
+    ]
+  },
+  "marker_debt_wave": {
+    "enabled": true,
+    "active": true,
+    "forced": true,
+    "selected_from_front": true,
+    "min_keys": 500,
+    "max_candidates": 24,
+    "front_count": 8,
+    "front_keys": [
+      "tr:items.json",
+      "ru:items.json",
+      "cs:items.json",
+      "ro:items.json",
+      "it:items.json",
+      "es:items.json",
+      "de:otclient_modules.json",
+      "de:npc.json"
+    ],
+    "top_candidates": [
+      {
+        "lang": "tr",
+        "json_file": "items.json",
+        "marker_todo": 28721,
+        "pending_total": 28721
+      },
+      {
+        "lang": "ru",
+        "json_file": "items.json",
+        "marker_todo": 24068,
+        "pending_total": 24068
+      },
+      {
+        "lang": "cs",
+        "json_file": "items.json",
+        "marker_todo": 18036,
+        "pending_total": 18036
+      },
+      {
+        "lang": "ro",
+        "json_file": "items.json",
+        "marker_todo": 14618,
+        "pending_total": 14618
+      },
+      {
+        "lang": "it",
+        "json_file": "items.json",
+        "marker_todo": 13624,
+        "pending_total": 13624
+      },
+      {
+        "lang": "es",
+        "json_file": "items.json",
+        "marker_todo": 13004,
+        "pending_total": 13004
+      },
+      {
+        "lang": "de",
+        "json_file": "otclient_modules.json",
+        "marker_todo": 715,
+        "pending_total": 1202
+      },
+      {
+        "lang": "de",
+        "json_file": "npc.json",
+        "marker_todo": 537,
+        "pending_total": 13025
+      }
+    ],
+    "reason": "marker_todo>=500"
+  },
   "tier_config": {
     "tier1": [
       "es",
@@ -34,27 +182,27 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 1,
+  "cache_cycle": 8,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
-    "pl:items.json": 0,
+    "pl:items.json": 3,
     "es:items.json": 0,
     "pl:npc.json": 0,
-    "es:npc.json": 1,
-    "es:monsters.json": 1,
-    "pl:server.json": 1,
-    "it:npc.json": 1,
-    "ru:npc.json": 0,
-    "ro:npc.json": 1,
-    "it:items.json": 1,
-    "ru:items.json": 1,
-    "ro:items.json": 1,
+    "es:npc.json": 3,
+    "es:monsters.json": 0,
+    "pl:server.json": 3,
+    "it:npc.json": 2,
+    "ru:npc.json": 3,
+    "ro:npc.json": 0,
+    "it:items.json": 0,
+    "ru:items.json": 0,
+    "ro:items.json": 0,
     "it:monsters.json": 0,
-    "ru:monsters.json": 1,
-    "ro:monsters.json": 0,
+    "ru:monsters.json": 0,
+    "ro:monsters.json": 1,
     "sv:npc.json": 0,
     "sr:npc.json": 0,
     "pl:spells.json": 0,
@@ -63,9 +211,9 @@
     "pl:scripts.json": 0,
     "pl:raids.json": 0,
     "es:raids.json": 0,
-    "it:server.json": 0,
+    "it:server.json": 1,
     "ru:server.json": 0,
-    "ro:server.json": 0,
+    "ro:server.json": 3,
     "it:spells.json": 0,
     "ru:spells.json": 0,
     "ro:spells.json": 0,
@@ -91,13 +239,13 @@
     "ro:otclient_modules.json": 0,
     "sv:monsters.json": 0,
     "sr:monsters.json": 0,
-    "pl:otclient_modules.json": 0,
+    "pl:otclient_modules.json": 3,
     "es:npclib.json": 0,
     "pl:cpp.json": 0,
-    "pl:client.json": 0,
+    "pl:client.json": 3,
     "es:achievements.json": 0,
     "es:cpp.json": 0,
-    "it:otclient_modules.json": 0,
+    "it:otclient_modules.json": 1,
     "ru:books.json": 0,
     "ro:questlog.json": 0,
     "it:questlog.json": 0,
@@ -108,9 +256,9 @@
     "ro:books.json": 0,
     "sv:items.json": 0,
     "sr:items.json": 0,
-    "pl:php.json": 0,
+    "pl:php.json": 1,
     "es:modules.json": 0,
-    "es:otclient_data.json": 0,
+    "es:otclient_data.json": 3,
     "pl:startup.json": 0,
     "pl:modules.json": 0,
     "es:php.json": 0,
@@ -118,11 +266,11 @@
     "ru:otclient_modules.json": 0,
     "ro:cpp.json": 0,
     "it:cpp.json": 0,
-    "ru:client.json": 0,
+    "ru:client.json": 3,
     "ro:achievements.json": 0,
     "it:talkactions.json": 0,
     "ru:talkactions.json": 0,
-    "ro:otclient_data.json": 0,
+    "ro:otclient_data.json": 1,
     "sv:spells.json": 0,
     "sr:spells.json": 0,
     "pl:example_merchant.json": 0,
@@ -130,26 +278,26 @@
     "pl:libs.json": 0,
     "es:libs.json": 0,
     "es:startup.json": 0,
-    "it:client.json": 0,
+    "it:client.json": 3,
     "it:achievements.json": 1,
     "ru:achievements.json": 0,
     "ro:libs.json": 1,
     "it:globalevents.json": 0,
     "pl:quests.json": 0,
     "pl:html.json": 0,
-    "es:otclient_modules.json": 0,
+    "es:otclient_modules.json": 3,
     "pl:talkactions.json": 0,
     "es:talkactions.json": 0,
     "ro:talkactions.json": 0,
     "it:npclib.json": 1,
     "ru:movements.json": 0,
-    "pl:monsters.json": 1,
-    "es:server.json": 1,
+    "pl:monsters.json": 0,
+    "es:server.json": 0,
     "es:scripts.json": 0,
-    "es:client.json": 0,
-    "pl:otclient_data.json": 0,
+    "es:client.json": 3,
+    "pl:otclient_data.json": 3,
     "ru:libs.json": 0,
-    "ro:client.json": 0,
+    "ro:client.json": 3,
     "ro:npclib.json": 0,
     "it:php.json": 0,
     "ru:modules.json": 0,
@@ -169,7 +317,7 @@
     "sr:quests.json": 0,
     "it:messages.json": 0,
     "nl:monsters.json": 0,
-    "cs:monsters.json": 0,
+    "cs:monsters.json": 1,
     "hu:monsters.json": 0,
     "sk:monsters.json": 0,
     "tr:monsters.json": 0,
@@ -197,7 +345,7 @@
     "it:arena.json": 0,
     "es:arena.json": 0,
     "pl:arena.json": 0,
-    "it:otclient_data.json": 0,
+    "it:otclient_data.json": 3,
     "sr:scripts.json": 0,
     "sv:scripts.json": 0,
     "ru:npclib.json": 0,
@@ -215,7 +363,7 @@
     "pt:actions.json": 0,
     "cs:actions.json": 0,
     "tr:actions.json": 0,
-    "fr:questlog.json": 0,
+    "fr:questlog.json": 1,
     "de:raids.json": 0,
     "pt:raids.json": 0,
     "cs:raids.json": 0,
@@ -245,18 +393,18 @@
     "tr:cpp.json": 0,
     "de:client.json": 0,
     "pt:books.json": 0,
-    "nl:client.json": 0,
+    "nl:client.json": 3,
     "cs:books.json": 0,
     "tr:books.json": 0,
-    "fr:client.json": 0,
+    "fr:client.json": 3,
     "de:books.json": 0,
-    "pt:client.json": 0,
-    "nl:otclient_data.json": 0,
-    "cs:client.json": 0,
-    "tr:client.json": 0,
+    "pt:client.json": 3,
+    "nl:otclient_data.json": 2,
+    "cs:client.json": 3,
+    "tr:client.json": 3,
     "fr:talkactions.json": 0,
     "de:otclient_data.json": 0,
-    "pt:otclient_data.json": 0,
+    "pt:otclient_data.json": 3,
     "nl:arena.json": 0,
     "cs:otclient_data.json": 0,
     "tr:arena.json": 0,
@@ -265,7 +413,7 @@
     "pt:arena.json": 0,
     "nl:talkactions.json": 0,
     "cs:talkactions.json": 0,
-    "tr:otclient_data.json": 0,
+    "tr:otclient_data.json": 1,
     "fr:php.json": 0,
     "de:talkactions.json": 0,
     "pt:talkactions.json": 0,
@@ -284,24 +432,24 @@
     "nl:php.json": 0,
     "cs:npclib.json": 0,
     "tr:npclib.json": 0,
-    "fr:otclient_data.json": 1,
+    "fr:otclient_data.json": 0,
     "de:modules.json": 0,
     "pt:modules.json": 1,
     "nl:chatchannels.json": 1,
     "cs:modules.json": 0,
     "tr:startup.json": 1,
-    "fr:npc.json": 1,
-    "cs:items.json": 1,
-    "de:npc.json": 1,
-    "pt:npc.json": 1,
-    "nl:npc.json": 1,
-    "cs:npc.json": 1,
-    "tr:npc.json": 1,
-    "fr:items.json": 1,
-    "de:items.json": 1,
-    "pt:items.json": 1,
-    "nl:items.json": 1,
-    "tr:items.json": 1,
+    "fr:npc.json": 0,
+    "cs:items.json": 0,
+    "de:npc.json": 0,
+    "pt:npc.json": 0,
+    "nl:npc.json": 0,
+    "cs:npc.json": 0,
+    "tr:npc.json": 0,
+    "fr:items.json": 3,
+    "de:items.json": 0,
+    "pt:items.json": 3,
+    "nl:items.json": 0,
+    "tr:items.json": 0,
     "fr:monsters.json": 0,
     "de:monsters.json": 0,
     "pt:monsters.json": 0,
@@ -311,10 +459,10 @@
     "nl:server.json": 0,
     "cs:server.json": 0,
     "tr:server.json": 0,
-    "fr:quests.json": 1,
+    "fr:quests.json": 0,
     "de:quests.json": 0,
-    "pt:quests.json": 1,
-    "nl:quests.json": 0,
+    "pt:quests.json": 0,
+    "nl:quests.json": 1,
     "cs:quests.json": 0,
     "tr:quests.json": 0,
     "nl:raids.json": 0,
@@ -334,13 +482,13 @@
     "fr:example_merchant.json": 1,
     "de:chatchannels.json": 0,
     "pt:chatchannels.json": 0,
-    "nl:startup.json": 1,
+    "nl:startup.json": 0,
     "cs:chatchannels.json": 0,
     "tr:chatchannels.json": 1,
     "ru:globalevents.json": 0,
     "fr:chatchannels.json": 1,
-    "de:startup.json": 1,
-    "pt:startup.json": 1,
+    "de:startup.json": 0,
+    "pt:startup.json": 0,
     "nl:example_merchant.json": 1,
     "cs:startup.json": 1,
     "tr:modules.json": 0,
@@ -358,7 +506,11 @@
     "tr:movements.json": 0,
     "fr:events.json": 0,
     "de:movements.json": 0,
-    "pt:events.json": 0
+    "pt:events.json": 0,
+    "cs:achievements.json": 1,
+    "de:dataroot.json": 0,
+    "tr:spells.json": 0,
+    "nl:dataroot.json": 0
   },
   "bootstrap_priority": {
     "enabled": false,
@@ -405,40 +557,86 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "ro": {
-        "allowed_domain": "items.json",
-        "domain_coverages": {
-          "items.json": 22.51,
-          "npc.json": 41.84,
-          "quests.json": 98.52
-        }
-      },
       "it": {
-        "allowed_domain": "items.json",
+        "allowed_domain": null,
         "domain_coverages": {
-          "items.json": 13.26,
-          "npc.json": 67.15,
-          "quests.json": 98.52
+          "items.json": 52.73,
+          "npc.json": 76.51,
+          "quests.json": 99.18
         }
       },
       "cs": {
-        "allowed_domain": "items.json",
+        "allowed_domain": null,
         "domain_coverages": {
-          "items.json": 9.12,
-          "npc.json": 8.9,
-          "quests.json": 98.69
+          "items.json": 27.95,
+          "npc.json": 39.51,
+          "quests.json": 98.85
         }
       },
       "ru": {
         "allowed_domain": "npc.json",
         "domain_coverages": {
-          "items.json": 29.14,
-          "npc.json": 5.8,
+          "items.json": 34.48,
+          "npc.json": 19.1,
           "quests.json": 99.51
+        }
+      },
+      "ro": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 46.03,
+          "npc.json": 69.88,
+          "quests.json": 99.02
         }
       }
     },
-    "wave_candidates_count": 4
+    "wave_candidates_count": 1
+  },
+  "launcher_wave": {
+    "enabled": true,
+    "active": false,
+    "active_wave": "",
+    "previous_wave": "",
+    "order": [
+      "t1",
+      "t2",
+      "rtl_cjk"
+    ],
+    "files": [
+      "client.json",
+      "otclient_modules.json"
+    ],
+    "waves": {
+      "t1": [
+        "pl",
+        "es",
+        "de"
+      ],
+      "t2": [
+        "fr",
+        "it",
+        "pt",
+        "nl",
+        "cs",
+        "ro",
+        "tr"
+      ],
+      "rtl_cjk": []
+    },
+    "limits": {
+      "t1": 24,
+      "t2": 18,
+      "rtl_cjk": 12
+    },
+    "stop": false,
+    "stop_reasons": [
+      "disabled_for_explicit_target_langs"
+    ],
+    "open_alerts": [],
+    "guard_fail_rate_pct": 0.0,
+    "guard_fail_stop_pct": 45.0,
+    "wave_candidates_count": 0,
+    "forced": false
   },
   "priority_gate": {
     "enabled": false,
@@ -460,16 +658,211 @@
     "pending_langs": [],
     "lang_completion": {}
   },
-  "toxic_cycle_cooldown": {
+  "name_first": {
     "enabled": true,
-    "applied": false,
-    "config": {
-      "min_guard_fail": 180,
-      "max_translated": 25,
-      "min_attempts": 220,
-      "min_gf_rate": 0.88,
-      "cooldown_cycles": 30
-    },
-    "last_block": {}
+    "active": true,
+    "canonical_files": [
+      "items.json",
+      "monsters.json",
+      "spells.json"
+    ],
+    "blocked_candidates_count": 183,
+    "gated_langs": {
+      "pl": {
+        "allowed_files": [
+          "items.json"
+        ],
+        "name_total": 35062,
+        "name_pending_total": 7756,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 7756,
+            "name_coverage_pct": 76.8
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          },
+          "spells.json": {
+            "name_total": 0,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          }
+        }
+      },
+      "es": {
+        "allowed_files": [
+          "items.json"
+        ],
+        "name_total": 35062,
+        "name_pending_total": 12893,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 12893,
+            "name_coverage_pct": 61.43
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          },
+          "spells.json": {
+            "name_total": 0,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          }
+        }
+      },
+      "ru": {
+        "allowed_files": [
+          "items.json",
+          "monsters.json"
+        ],
+        "name_total": 35826,
+        "name_pending_total": 21268,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 21236,
+            "name_coverage_pct": 36.47
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 32,
+            "name_coverage_pct": 98.05
+          },
+          "spells.json": {
+            "name_total": 764,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          }
+        }
+      },
+      "ro": {
+        "allowed_files": [
+          "items.json"
+        ],
+        "name_total": 35062,
+        "name_pending_total": 14582,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 14582,
+            "name_coverage_pct": 56.37
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          },
+          "spells.json": {
+            "name_total": 0,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          }
+        }
+      },
+      "it": {
+        "allowed_files": [
+          "items.json"
+        ],
+        "name_total": 35062,
+        "name_pending_total": 13623,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 13623,
+            "name_coverage_pct": 59.24
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          },
+          "spells.json": {
+            "name_total": 0,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          }
+        }
+      },
+      "fr": {
+        "allowed_files": [
+          "items.json"
+        ],
+        "name_total": 35062,
+        "name_pending_total": 14962,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 14962,
+            "name_coverage_pct": 55.24
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          },
+          "spells.json": {
+            "name_total": 0,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          }
+        }
+      },
+      "cs": {
+        "allowed_files": [
+          "items.json"
+        ],
+        "name_total": 35062,
+        "name_pending_total": 16050,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 16050,
+            "name_coverage_pct": 51.98
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          },
+          "spells.json": {
+            "name_total": 0,
+            "name_pending": 0,
+            "name_coverage_pct": 100.0
+          }
+        }
+      },
+      "tr": {
+        "allowed_files": [
+          "items.json",
+          "monsters.json",
+          "spells.json"
+        ],
+        "name_total": 35826,
+        "name_pending_total": 26278,
+        "pending_by_file": {
+          "items.json": {
+            "name_total": 33425,
+            "name_pending": 26273,
+            "name_coverage_pct": 21.4
+          },
+          "monsters.json": {
+            "name_total": 1637,
+            "name_pending": 3,
+            "name_coverage_pct": 99.82
+          },
+          "spells.json": {
+            "name_total": 764,
+            "name_pending": 2,
+            "name_coverage_pct": 99.74
+          }
+        }
+      }
+    }
   }
 }

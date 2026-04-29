@@ -1,25 +1,45 @@
 {
   "lang": "bn",
   "script_group": "exotic",
-  "total_keys": 53586,
-  "translated": 5719,
-  "identical_to_en": 3837,
-  "placeholder_keys": 47867,
-  "coverage_pct": 10.7,
-  "issues_total": 100,
+  "total_keys": 74536,
+  "translated": 5884,
+  "identical_to_en": 3972,
+  "placeholder_keys": 47859,
+  "coverage_pct": 7.9,
+  "issues_total": 111,
   "issues_by_type": {
-    "script_wrong_script": 95,
+    "script_wrong_script": 99,
     "V4_artifact": 4,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 3,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 99,
-    "MEDIUM": 1,
+    "CRITICAL": 3,
+    "HIGH": 103,
+    "MEDIUM": 5,
     "LOW": 0
   },
-  "score": 97.4,
+  "score": 97.2,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.235.name",
       "category": "achievements",
@@ -121,33 +141,15 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.10193.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.10217.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.10272.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 411,
+    "issues_total": 408,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 11,
+    "length_ratio": 8,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:00.141272Z"
+  "validated_at": "2026-04-29T18:14:36.809494Z"
 }

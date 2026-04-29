@@ -1,25 +1,44 @@
 {
   "lang": "ko",
   "script_group": "cjk",
-  "total_keys": 53586,
-  "translated": 5150,
-  "identical_to_en": 3837,
-  "placeholder_keys": 48436,
-  "coverage_pct": 9.6,
-  "issues_total": 5,
+  "total_keys": 74536,
+  "translated": 5256,
+  "identical_to_en": 3908,
+  "placeholder_keys": 48487,
+  "coverage_pct": 7.1,
+  "issues_total": 16,
   "issues_by_type": {
-    "V2_length_ratio": 3,
-    "script_cjk_ratio": 1,
+    "V2_length_ratio": 7,
+    "script_cjk_ratio": 5,
+    "V1_placeholder_mismatch": 3,
     "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
+    "CRITICAL": 3,
     "HIGH": 1,
-    "MEDIUM": 4,
+    "MEDIUM": 12,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 99.7,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.317.description",
       "category": "achievements",
@@ -49,15 +68,63 @@
       "category": "achievements",
       "type": "V2_length_ratio",
       "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 421,
+    "issues_total": 418,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 21,
+    "length_ratio": 18,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:45.282546Z"
+  "validated_at": "2026-04-29T18:14:44.702838Z"
 }

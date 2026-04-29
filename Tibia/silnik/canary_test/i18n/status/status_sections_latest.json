@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-26T20:14:57.871820Z",
+  "generated_at_utc": "2026-04-29T18:40:42.677889Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,39 +9,39 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-26 20:14:55"
+      "last_update": "2026-04-29 18:40:36"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "6s temu",
+      "freshness": "11s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-26T20:14:51Z"
+      "last_update": "2026-04-29T18:40:31Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "19h temu",
+      "freshness": "1min temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-26 20:14:55"
+      "last_update": "2026-04-29 18:40:36"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "9s temu",
+      "freshness": "5min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-26T20:14:48.728076Z"
+      "last_update": "2026-04-29T18:34:52.567384Z"
     },
     "QUALITY": {
-      "state": "active",
-      "state_label": "🟢 AKTYWNY",
-      "reason": "",
-      "freshness": "0s temu",
-      "source": "quality_audit_latest.json + guard_fail_breakdown_latest.json",
-      "last_update": "2026-02-26T20:14:57.414401Z"
+      "state": "inactive",
+      "state_label": "🔒 NIEAKTYWNY",
+      "reason": "worker w trybie AUTO_TRANSLATE",
+      "freshness": "11s temu",
+      "source": "quality_audit_latest.json",
+      "last_update": "2026-04-29T18:40:31.020512Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,3337 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-26 20:14:55"
+      "last_update": "2026-04-29 18:40:36"
+    },
+    "DOCTOR": {
+      "state": "active",
+      "state_label": "🟠 AKTYWNY",
+      "reason": "1 alarmów",
+      "freshness": "0s temu",
+      "source": "doctor_alerts_latest.json",
+      "last_update": "2026-04-29T18:40:42.675561Z"
+    }
+  },
+  "operator_panels": {
+    "worker_live": {
+      "effective_state": "🟢 DZIAŁA",
+      "phase": "AUTO_TRANSLATE",
+      "stage": "cycle_end",
+      "category": "cs",
+      "json_file": "items.json",
+      "current_lang": "cs",
+      "current_lang_name": "Czeski",
+      "current_scope": "Serwer",
+      "detail": "cycle end",
+      "current_key": "cs:items.json",
+      "heartbeat_at": "2026-04-29T18:40:31Z",
+      "heartbeat_age_s": 6,
+      "cycle": 18745
+    },
+    "recent_writes": {
+      "count": 18,
+      "items": [
+        {
+          "timestamp": "2026-04-29T18:40:25.947836Z",
+          "lang": "es",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 6,
+          "sample_source": "tm",
+          "sample_key": "npc.captain_chelop.stdmod_2",
+          "sample_text": "¿Busca un pasaje a Thais para \\|TRAVELCOST\\|?",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:34:44.692490Z",
+          "lang": "cs",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 69,
+          "sample_source": "openai:openai/gpt-4.1-mini",
+          "sample_key": "item.15547.name",
+          "sample_text": "titanická houba",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:32:05.587257Z",
+          "lang": "ru",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 89,
+          "sample_source": "openai:openai/gpt-4.1-mini",
+          "sample_key": "item.15049.name",
+          "sample_text": "мшистый пол",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:26:01.961977Z",
+          "lang": "tr",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 30,
+          "sample_source": "simple",
+          "sample_key": "item.14319.name",
+          "sample_text": "AYRILMIŞ SPRİTE",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:24:41.245473Z",
+          "lang": "de",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 30,
+          "sample_source": "tm",
+          "sample_key": "npc.a_majestic_warwolf.say_2",
+          "sample_text": "Ich kann in deinen Augen sehen, dass du ein ehrlicher und freundlicher Mensch bist, \\...",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:23:17.782362Z",
+          "lang": "es",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 9,
+          "sample_source": "tm",
+          "sample_key": "npc.captain_bluebear.voice_1",
+          "sample_text": "Pasajes a Carlin, Ab'Dendriel, Edron, Venore, Port Hope, Liberty Bay, Yalahar, Rosham...",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:18:57.952499Z",
+          "lang": "de",
+          "json_file": "otclient_modules.json",
+          "surface": "Klient",
+          "translated": 45,
+          "sample_source": "google_translate",
+          "sample_key": "otclient_modules.data_options.tr_9",
+          "sample_text": "Intensität des Schattenbodens: %s%%",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:17:11.139838Z",
+          "lang": "es",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 51,
+          "sample_source": "openai:openai/gpt-4.1-mini",
+          "sample_key": "item.12365.name",
+          "sample_text": "suelo rocoso",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:12:24.538805Z",
+          "lang": "it",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 31,
+          "sample_source": "simple",
+          "sample_key": "item.14556.name",
+          "sample_text": "SPRITE RISERVATO",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:11:23.106024Z",
+          "lang": "ro",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 47,
+          "sample_source": "simple",
+          "sample_key": "item.11753.name",
+          "sample_text": "podea din lemn",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:08:39.690297Z",
+          "lang": "es",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 4,
+          "sample_source": "tm",
+          "sample_key": "npc.barnabas_dee.say_5",
+          "sample_text": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dos...",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T18:02:23.753188Z",
+          "lang": "cs",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 60,
+          "sample_source": "openai:openai/gpt-4.1-mini",
+          "sample_key": "item.1269.name",
+          "sample_text": "tic-tac-toe deska",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T17:59:25.772888Z",
+          "lang": "ru",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 63,
+          "sample_source": "openai:openai/gpt-4.1-mini",
+          "sample_key": "item.14868.name",
+          "sample_text": "маленькая басалт стена",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T17:55:27.496483Z",
+          "lang": "es",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 4,
+          "sample_source": "tm",
+          "sample_key": "npc.barnabas_dee.say_5",
+          "sample_text": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dos...",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T17:52:08.582344Z",
+          "lang": "tr",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 39,
+          "sample_source": "simple",
+          "sample_key": "item.1430.name",
+          "sample_text": "süslü duvar",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T17:51:04.719096Z",
+          "lang": "de",
+          "json_file": "npc.json",
+          "surface": "Serwer",
+          "translated": 30,
+          "sample_source": "tm",
+          "sample_key": "npc.a_dead_bureaucrat1.say_1",
+          "sample_text": "Klar, wo sonst. Jeder trifft gerne meinen Meister, er ist ein großer Dämon, nicht wah...",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T17:49:44.909540Z",
+          "lang": "es",
+          "json_file": "server.json",
+          "surface": "Serwer",
+          "translated": 1,
+          "sample_source": "google_translate",
+          "sample_key": "data.otservbr.global.npc.noodles.L105.679",
+          "sample_text": "<sniff> ¡Guau! <sniff>",
+          "physical_verified": true
+        },
+        {
+          "timestamp": "2026-04-29T17:47:35.092338Z",
+          "lang": "de",
+          "json_file": "otclient_modules.json",
+          "surface": "Klient",
+          "translated": 15,
+          "sample_source": "tm",
+          "sample_key": "otclient_modules.blessing.tr_11",
+          "sample_text": "- Abhängig von den Regeln des fairen Kampfes verlierst du zwischendurch",
+          "physical_verified": true
+        }
+      ],
+      "mode": "live",
+      "note": "",
+      "physical_verified": true,
+      "skipped_stale_physical_samples": 0,
+      "skipped_stale_reasons": {}
+    },
+    "recent_rejects": {
+      "count": 20,
+      "items": [
+        {
+          "timestamp": "2026-04-29T18:30:02.046142Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.14670.name"
+        },
+        {
+          "timestamp": "2026-04-29T18:29:59.926557Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.11541.name"
+        },
+        {
+          "timestamp": "2026-04-29T17:57:33.128293Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.14670.name"
+        },
+        {
+          "timestamp": "2026-04-29T17:57:30.415177Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.11541.name"
+        },
+        {
+          "timestamp": "2026-04-29T17:14:57.308151Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.14670.name"
+        },
+        {
+          "timestamp": "2026-04-29T17:14:55.429246Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.11541.name"
+        },
+        {
+          "timestamp": "2026-04-29T16:27:16.620755Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.14670.name"
+        },
+        {
+          "timestamp": "2026-04-29T16:27:14.680677Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.11541.name"
+        },
+        {
+          "timestamp": "2026-04-29T16:03:59.227176Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.14670.name"
+        },
+        {
+          "timestamp": "2026-04-29T16:03:57.134642Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.11541.name"
+        },
+        {
+          "timestamp": "2026-04-29T15:59:53.102933Z",
+          "lang": "es",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "critical_issue",
+          "reject_types": [
+            "garble_en_chunk"
+          ],
+          "key": "npc.broken_servant_sentry.say_1"
+        },
+        {
+          "timestamp": "2026-04-29T15:59:50.684237Z",
+          "lang": "es",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "critical_issue",
+          "reject_types": [
+            "garble_en_chunk"
+          ],
+          "key": "npc.broken_servant_sentry.multi_1"
+        },
+        {
+          "timestamp": "2026-04-29T15:54:05.385262Z",
+          "lang": "es",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "critical_issue",
+          "reject_types": [
+            "garble_en_chunk"
+          ],
+          "key": "npc.broken_servant_sentry.say_1"
+        },
+        {
+          "timestamp": "2026-04-29T15:54:01.623554Z",
+          "lang": "es",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "critical_issue",
+          "reject_types": [
+            "garble_en_chunk"
+          ],
+          "key": "npc.broken_servant_sentry.multi_1"
+        },
+        {
+          "timestamp": "2026-04-29T15:48:18.976125Z",
+          "lang": "es",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "critical_issue",
+          "reject_types": [
+            "garble_en_chunk"
+          ],
+          "key": "npc.broken_servant_sentry.say_2"
+        },
+        {
+          "timestamp": "2026-04-29T15:42:53.140996Z",
+          "lang": "es",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "critical_issue",
+          "reject_types": [
+            "garble_en_chunk"
+          ],
+          "key": "npc.broken_servant_sentry.say_2"
+        },
+        {
+          "timestamp": "2026-04-29T15:42:08.049424Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.14670.name"
+        },
+        {
+          "timestamp": "2026-04-29T15:42:05.173371Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.11541.name"
+        },
+        {
+          "timestamp": "2026-04-29T15:37:59.738692Z",
+          "lang": "de",
+          "category": "npc.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "validate_identical_to_en",
+          "reject_types": [
+            "identical_to_en"
+          ],
+          "key": "npc.a_fluffy_squirrel.stdmod_1"
+        },
+        {
+          "timestamp": "2026-04-29T15:34:21.694919Z",
+          "lang": "de",
+          "category": "otclient_modules.json",
+          "surface": "Klient",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "validate_identical_to_en",
+          "reject_types": [
+            "identical_to_en"
+          ],
+          "key": "otclient_modules.charms.tr_34"
+        }
+      ]
+    },
+    "launcher_quality_gate": {
+      "schema_version": "1.0",
+      "generated_at_utc": "2026-04-29T18:40:40.843130Z",
+      "enabled": true,
+      "files": [
+        "client.json",
+        "otclient_modules.json"
+      ],
+      "langs": [
+        "ar",
+        "az",
+        "bg",
+        "bn",
+        "bs",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "es",
+        "et",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "hy",
+        "id",
+        "it",
+        "ja",
+        "ka",
+        "kk",
+        "ko",
+        "lt",
+        "lv",
+        "mk",
+        "ml",
+        "ms",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sq",
+        "sr",
+        "sv",
+        "sw",
+        "ta",
+        "te",
+        "th",
+        "tl",
+        "tr",
+        "uk",
+        "uz",
+        "vi",
+        "zh"
+      ],
+      "thresholds": {
+        "identical_to_en_max_pct": 35.0,
+        "word_salad_rejects_max": 5,
+        "placeholder_rejects_max": 3
+      },
+      "window": {
+        "suspicious_rejected_tail_entries": 1200
+      },
+      "summary": {
+        "state": "pass",
+        "overall_pass": true,
+        "files_total": 2,
+        "files_with_data": 2,
+        "langs_total": 51,
+        "langs_evaluated": 51,
+        "langs_failing": 0,
+        "checks_failed": 0,
+        "word_salad_rejects_total": 0,
+        "placeholder_rejects_total": 0,
+        "trend_24h_pass_rate_pct": 100.0,
+        "trend_24h_fail_samples": 0,
+        "trend_24h_checks_failed_delta": 0,
+        "recommendation": "Launcher quality gate PASS: brak naruszeń progów dla client/otclient_modules."
+      },
+      "trend_24h": {
+        "window_hours": 24,
+        "samples": 1071,
+        "pass_samples": 1071,
+        "fail_samples": 0,
+        "pass_rate_pct": 100.0,
+        "state_changes": 0,
+        "latest_state": "pass",
+        "oldest_state": "pass",
+        "latest_timestamp": "2026-04-29T18:40:40.843130Z",
+        "oldest_timestamp": "2026-04-28T18:42:22.230107Z",
+        "checks_failed_delta": 0,
+        "word_salad_rejects_delta": 0,
+        "placeholder_rejects_delta": 0,
+        "direction": "stable"
+      },
+      "by_file": {
+        "client.json": {
+          "langs_total": 51,
+          "langs_passing": 51,
+          "langs_failing": 0,
+          "max_identical_to_en_pct": 31.4,
+          "word_salad_rejects": 0,
+          "placeholder_rejects": 0,
+          "total_rejects": 8,
+          "gate_pass": true,
+          "failing_langs": [],
+          "pass_rate_pct": 100.0
+        },
+        "otclient_modules.json": {
+          "langs_total": 51,
+          "langs_passing": 51,
+          "langs_failing": 0,
+          "max_identical_to_en_pct": 29.79,
+          "word_salad_rejects": 0,
+          "placeholder_rejects": 0,
+          "total_rejects": 73,
+          "gate_pass": true,
+          "failing_langs": [],
+          "pass_rate_pct": 100.0
+        }
+      },
+      "by_lang_file": {
+        "ar": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "az": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "bg": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "bn": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "bs": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "cs": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 65,
+            "identical_to_en_pct": 26.86,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 597,
+            "identical_to_en_pct": 29.39,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "da": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "de": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 59,
+            "identical_to_en_pct": 24.38,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 8,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 589,
+            "identical_to_en_pct": 29.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 60,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "el": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "es": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 20,
+            "identical_to_en_pct": 8.26,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 105,
+            "identical_to_en_pct": 5.17,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "et": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "fa": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "fi": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "fr": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 48,
+            "identical_to_en_pct": 19.83,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 87,
+            "identical_to_en_pct": 4.28,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "he": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "hi": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "hr": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "hu": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "hy": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "id": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "it": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 28,
+            "identical_to_en_pct": 11.57,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 181,
+            "identical_to_en_pct": 8.91,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ja": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ka": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "kk": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ko": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "lt": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "lv": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "mk": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ml": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ms": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "nl": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 53,
+            "identical_to_en_pct": 21.9,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 605,
+            "identical_to_en_pct": 29.79,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 12,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "no": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "pl": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 24,
+            "identical_to_en_pct": 9.92,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 103,
+            "identical_to_en_pct": 5.07,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "pt": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 76,
+            "identical_to_en_pct": 31.4,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 494,
+            "identical_to_en_pct": 24.32,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 1,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ro": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 42,
+            "identical_to_en_pct": 17.36,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 228,
+            "identical_to_en_pct": 11.23,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ru": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 8,
+            "identical_to_en_pct": 3.31,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 45,
+            "identical_to_en_pct": 2.22,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "sk": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "sl": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "sq": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "sr": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 4,
+            "identical_to_en_pct": 1.65,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 9,
+            "identical_to_en_pct": 0.44,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "sv": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "sw": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "ta": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "te": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "th": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "tl": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "tr": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 20,
+            "identical_to_en_pct": 8.26,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 51,
+            "identical_to_en_pct": 2.51,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "uk": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "uz": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 1,
+            "identical_to_en_pct": 0.41,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "vi": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        },
+        "zh": {
+          "client.json": {
+            "total_reference_keys": 242,
+            "english_copy_keys": 41,
+            "identical_to_en_pct": 16.94,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          },
+          "otclient_modules.json": {
+            "total_reference_keys": 2031,
+            "english_copy_keys": 0,
+            "identical_to_en_pct": 0.0,
+            "word_salad_rejects": 0,
+            "placeholder_rejects": 0,
+            "total_rejects": 0,
+            "checks": {
+              "identical_to_en": true,
+              "word_salad": true,
+              "placeholder_integrity": true
+            },
+            "failed_checks": [],
+            "gate_pass": true
+          }
+        }
+      }
+    },
+    "surface_parity": {
+      "schema_version": "1.0",
+      "generated_at_utc": "2026-04-29T18:40:40.876311Z",
+      "window": {
+        "trend_hours": 24,
+        "samples": 1071,
+        "window_start_utc": "2026-04-28T18:42:22.247013Z",
+        "window_end_utc": "2026-04-29T18:40:40.876311Z"
+      },
+      "summary": {
+        "surface_count": 4,
+        "best_surface": "launcher",
+        "best_surface_coverage_real_pct": 18.31,
+        "worst_surface": "website",
+        "worst_surface_coverage_real_pct": 10.85,
+        "spread_pp": 7.46,
+        "largest_regression_surface": "launcher",
+        "largest_regression_delta_pp": 0.0
+      },
+      "surfaces": {
+        "server": {
+          "label": "Server",
+          "total_reference_keys": 3602487,
+          "real_translated_keys": 410340,
+          "coverage_real_pct": 11.39,
+          "langs_count": 51,
+          "delta_24h_pp": 0.59,
+          "lagging_langs": [
+            {
+              "lang": "zh",
+              "coverage_real_pct": 0.2,
+              "missing_keys": 70497
+            },
+            {
+              "lang": "tl",
+              "coverage_real_pct": 0.78,
+              "missing_keys": 70083
+            },
+            {
+              "lang": "bs",
+              "coverage_real_pct": 0.86,
+              "missing_keys": 70031
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+        },
+        "website": {
+          "label": "Website",
+          "total_reference_keys": 79254,
+          "real_translated_keys": 8597,
+          "coverage_real_pct": 10.85,
+          "langs_count": 51,
+          "delta_24h_pp": 0.0,
+          "lagging_langs": [
+            {
+              "lang": "ar",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 1554
+            },
+            {
+              "lang": "az",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 1554
+            },
+            {
+              "lang": "bg",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 1554
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+        },
+        "launcher": {
+          "label": "Launcher",
+          "total_reference_keys": 12342,
+          "real_translated_keys": 2260,
+          "coverage_real_pct": 18.31,
+          "langs_count": 51,
+          "delta_24h_pp": 0.0,
+          "lagging_langs": [
+            {
+              "lang": "ar",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 242
+            },
+            {
+              "lang": "az",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 242
+            },
+            {
+              "lang": "bg",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 242
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+        },
+        "installer": {
+          "label": "Installer",
+          "total_reference_keys": 103581,
+          "real_translated_keys": 14959,
+          "coverage_real_pct": 14.44,
+          "langs_count": 51,
+          "delta_24h_pp": 0.03,
+          "lagging_langs": [
+            {
+              "lang": "ar",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 2031
+            },
+            {
+              "lang": "az",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 2031
+            },
+            {
+              "lang": "bg",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 2031
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+        }
+      },
+      "ranking": [
+        {
+          "surface": "launcher",
+          "label": "Launcher",
+          "total_reference_keys": 12342,
+          "real_translated_keys": 2260,
+          "coverage_real_pct": 18.31,
+          "langs_count": 51,
+          "delta_24h_pp": 0.0,
+          "lagging_langs": [
+            {
+              "lang": "ar",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 242
+            },
+            {
+              "lang": "az",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 242
+            },
+            {
+              "lang": "bg",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 242
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+          "rank": 1
+        },
+        {
+          "surface": "installer",
+          "label": "Installer",
+          "total_reference_keys": 103581,
+          "real_translated_keys": 14959,
+          "coverage_real_pct": 14.44,
+          "langs_count": 51,
+          "delta_24h_pp": 0.03,
+          "lagging_langs": [
+            {
+              "lang": "ar",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 2031
+            },
+            {
+              "lang": "az",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 2031
+            },
+            {
+              "lang": "bg",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 2031
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+          "rank": 2
+        },
+        {
+          "surface": "server",
+          "label": "Server",
+          "total_reference_keys": 3602487,
+          "real_translated_keys": 410340,
+          "coverage_real_pct": 11.39,
+          "langs_count": 51,
+          "delta_24h_pp": 0.59,
+          "lagging_langs": [
+            {
+              "lang": "zh",
+              "coverage_real_pct": 0.2,
+              "missing_keys": 70497
+            },
+            {
+              "lang": "tl",
+              "coverage_real_pct": 0.78,
+              "missing_keys": 70083
+            },
+            {
+              "lang": "bs",
+              "coverage_real_pct": 0.86,
+              "missing_keys": 70031
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+          "rank": 3
+        },
+        {
+          "surface": "website",
+          "label": "Website",
+          "total_reference_keys": 79254,
+          "real_translated_keys": 8597,
+          "coverage_real_pct": 10.85,
+          "langs_count": 51,
+          "delta_24h_pp": 0.0,
+          "lagging_langs": [
+            {
+              "lang": "ar",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 1554
+            },
+            {
+              "lang": "az",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 1554
+            },
+            {
+              "lang": "bg",
+              "coverage_real_pct": 0.0,
+              "missing_keys": 1554
+            }
+          ],
+          "trend_samples": 1071,
+          "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
+          "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+          "rank": 4
+        }
+      ]
+    },
+    "launcher_readiness": {
+      "schema_version": "1.0",
+      "generated_at_utc": "2026-04-29T18:40:40.907335Z",
+      "summary": {
+        "state": "in_progress",
+        "state_label": "🟡 IN_PROGRESS",
+        "verified_100": false,
+        "checks_total": 4,
+        "checks_passed": 1,
+        "required_waves": 3,
+        "window_hours": 24,
+        "production_langs": [
+          "pl",
+          "de",
+          "ar"
+        ],
+        "failed_checks": [
+          "tasks_closed_claim_table",
+          "doctor_alerts_clean_3_waves",
+          "bridge_consistency_prod_langs"
+        ],
+        "recommendation": "Domknij check: tasks_closed_claim_table"
+      },
+      "checks": {
+        "tasks_closed_claim_table": {
+          "label": "B23-02..B23-07 zamkniete w claim table (B23-08 = kontrakt biezacy)",
+          "pass": false,
+          "detail": "open dependencies: B23-02; contract B23-08=🟢 in_progress (2026-04-23, 90%)",
+          "tasks_required": [
+            "B23-02",
+            "B23-03",
+            "B23-04",
+            "B23-05",
+            "B23-06",
+            "B23-07"
+          ],
+          "tasks_open": [
+            "B23-02"
+          ],
+          "tasks_status": {
+            "B23-02": "🟢 in_progress (2026-04-23, 94%)",
+            "B23-03": "🔵 implemented (2026-04-22)",
+            "B23-04": "🔵 implemented (2026-04-22)",
+            "B23-05": "🔵 implemented (2026-04-22)",
+            "B23-06": "🔵 implemented (2026-04-23)",
+            "B23-07": "🔵 implemented (2026-04-23)",
+            "B23-08": "🟢 in_progress (2026-04-23, 90%)"
+          },
+          "contract_task": "B23-08",
+          "contract_task_status": "🟢 in_progress (2026-04-23, 90%)",
+          "contract_task_closed": false,
+          "plan_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/../Dokumentacja/I18N_PLAN_NAPRAW_2026-04-09.md"
+        },
+        "doctor_alerts_clean_3_waves": {
+          "label": "Brak stale alarmow (HEARTBEAT_STALE/QUEUE_STARVATION/DLQ_GROWTH) podczas 3 fal",
+          "pass": false,
+          "detail": "insufficient/dirty waves (0/3); recent=-",
+          "required_waves": 3,
+          "waves_observed": 0,
+          "waves_considered": [],
+          "wave_history_rows_total": 1637,
+          "wave_history_rows_window": 1071,
+          "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
+          "stale_alerts_monitored": [
+            "DLQ_GROWTH",
+            "HEARTBEAT_STALE",
+            "QUEUE_STARVATION"
+          ],
+          "current_wave": {
+            "active": false,
+            "wave": "",
+            "open_alerts": [
+              "QUEUE_STARVATION"
+            ]
+          }
+        },
+        "quality_trend_24h": {
+          "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
+          "pass": true,
+          "detail": "window=24.00h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "window_hours": 24,
+          "window_start_utc": "2026-04-28T18:40:29.679198Z",
+          "window_end_utc": "2026-04-29T18:40:40.907335Z",
+          "window_span_hours": 24.0,
+          "has_min_24h_window": true,
+          "files": {
+            "client.json": {
+              "samples": 1073,
+              "oldest_timestamp": "2026-04-28T18:40:29.679198Z",
+              "latest_timestamp": "2026-04-29T18:40:40.907335Z",
+              "oldest_identical_to_en_pct": 31.4,
+              "latest_identical_to_en_pct": 31.4,
+              "delta_identical_to_en_pct": 0.0,
+              "oldest_word_salad_rejects": 0,
+              "latest_word_salad_rejects": 0,
+              "delta_word_salad_rejects": 0,
+              "trend_pass": true
+            },
+            "otclient_modules.json": {
+              "samples": 1073,
+              "oldest_timestamp": "2026-04-28T18:40:29.679198Z",
+              "latest_timestamp": "2026-04-29T18:40:40.907335Z",
+              "oldest_identical_to_en_pct": 29.79,
+              "latest_identical_to_en_pct": 29.79,
+              "delta_identical_to_en_pct": 0.0,
+              "oldest_word_salad_rejects": 0,
+              "latest_word_salad_rejects": 0,
+              "delta_word_salad_rejects": 0,
+              "trend_pass": true
+            }
+          }
+        },
+        "bridge_consistency_prod_langs": {
+          "label": "Launcher-rust bridge missing=0 i extra=0 dla aktywnych jezykow produkcyjnych",
+          "pass": false,
+          "detail": "failed langs: AR",
+          "production_langs": [
+            "pl",
+            "de",
+            "ar"
+          ],
+          "source_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+          "source_path_apply": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+          "source_path_audit": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_audit_latest.json",
+          "per_lang": {
+            "pl": {
+              "source": "audit",
+              "present": true,
+              "missing": 0,
+              "extra": 0,
+              "pass": true
+            },
+            "de": {
+              "source": "apply",
+              "present": true,
+              "missing": 0,
+              "extra": 0,
+              "pass": true
+            },
+            "ar": {
+              "source": "audit",
+              "present": true,
+              "missing": 38,
+              "extra": 0,
+              "pass": false
+            }
+          }
+        }
+      },
+      "evidence": {
+        "history_path": "i18n/status/launcher_readiness_report.jsonl",
+        "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
+        "quality_gate_path": "i18n/status/launcher_quality_gate_latest.json",
+        "dispatch_state_path": "i18n/status/translation_dispatch_state.json",
+        "doctor_alerts_path": "i18n/status/doctor_alerts_latest.json",
+        "bridge_source_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+        "bridge_source_path_apply": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_apply_latest.json",
+        "bridge_source_path_audit": "/home/ptaku/serweryt/Tibia/silnik/canary_test/docs/i18n/launcher_rust_bridge_audit_latest.json",
+        "plan_path": "/home/ptaku/serweryt/Tibia/silnik/canary_test/../Dokumentacja/I18N_PLAN_NAPRAW_2026-04-09.md"
+      }
+    },
+    "provider_routing": {
+      "schema_version": "1.0",
+      "generated_at_utc": "2026-04-29T18:40:42.203970Z",
+      "active_provider": "TM/simple",
+      "active_provider_code": "tm_simple",
+      "active_provider_source": "tm",
+      "active_provider_timestamp": "2026-04-29T18:40:25.947836Z",
+      "active_model": "openai/gpt-4.1-mini",
+      "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+      "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
+      "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
+      "router_registry_path": "provider_router_registry.json",
+      "router_registry": {
+        "policy_version": "2026-04-22",
+        "routing_order": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_langs": [
+          "de",
+          "pl",
+          "es",
+          "pt",
+          "fr",
+          "it",
+          "ru",
+          "ro",
+          "nl",
+          "sv",
+          "da",
+          "no",
+          "fi",
+          "cs"
+        ],
+        "openai_surfaces": [
+          "items",
+          "npc",
+          "monsters",
+          "books",
+          "quests",
+          "ui",
+          "world"
+        ],
+        "switch_reasons": [
+          "quota_exhausted",
+          "rate_limit",
+          "model_unavailable"
+        ],
+        "style_authority": "free_google_translate"
+      },
+      "policy": {
+        "use_free_google_translate": true,
+        "google_cloud_requested": false,
+        "allow_paid_providers": false,
+        "google_cloud_effective": false,
+        "openai_pool_requested": true,
+        "openai_pool_requested_by_config": true,
+        "openai_pool_disabled": false,
+        "openai_pool_disabled_by_doctor": false,
+        "openai_pool_implemented": true,
+        "translation_style_authority": "free_google_translate"
+      },
+      "provider_pool_health": {
+        "overall_status": "degraded",
+        "signals": [
+          "recent_fallback",
+          "provider_consistency_debt:236"
+        ],
+        "provider_consistency_debt": 236,
+        "recent_window_writes": 537,
+        "recent_write_breakdown": [
+          {
+            "provider": "tm_simple",
+            "provider_label": "TM/simple",
+            "writes": 225
+          },
+          {
+            "provider": "openai_model_pool",
+            "provider_label": "OpenAI model pool",
+            "writes": 208
+          },
+          {
+            "provider": "free_google_translate",
+            "provider_label": "Free Google Translate",
+            "writes": 80
+          },
+          {
+            "provider": "canonical_name_semantic_autofix",
+            "provider_label": "canonical_name_semantic_autofix",
+            "writes": 21
+          },
+          {
+            "provider": "term_consistency_autofix",
+            "provider_label": "term_consistency_autofix",
+            "writes": 3
+          }
+        ],
+        "fallbacks_last_200": 19,
+        "fallback_action_breakdown": [
+          {
+            "action": "fallback_to_google_translate_high",
+            "action_label": "fallback to google translate high",
+            "count": 11
+          },
+          {
+            "action": "fallback_to_next_provider_validate_fail",
+            "action_label": "fallback to next provider validate fail",
+            "count": 5
+          },
+          {
+            "action": "fallback_chain_exhausted_high_reject_types",
+            "action_label": "fallback chain exhausted high reject types",
+            "count": 2
+          },
+          {
+            "action": "fallback_to_google_translate_validate_fail",
+            "action_label": "fallback to google translate validate fail",
+            "count": 1
+          }
+        ],
+        "providers": {
+          "tm_simple": {
+            "status": "active",
+            "recent_writes": 225
+          },
+          "free_google_translate": {
+            "status": "active",
+            "enabled": true,
+            "recent_writes": 80
+          },
+          "google_cloud": {
+            "status": "disabled",
+            "requested": false,
+            "allow_paid_providers": false,
+            "recent_writes": 0
+          },
+          "openai_model_pool": {
+            "status": "active",
+            "active_model": "openai/gpt-4.1-mini",
+            "recent_writes": 208,
+            "requests_today": 113
+          }
+        },
+        "openai_model_pool": {
+          "status": "active",
+          "active_model": "openai/gpt-4.1-mini",
+          "configured_models": [
+            "openai/gpt-4.1-mini",
+            "openai/gpt-4o-mini",
+            "openai/gpt-5"
+          ],
+          "eligible_langs": [
+            "de",
+            "pl",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru",
+            "ro",
+            "nl",
+            "sv",
+            "da",
+            "no",
+            "fi",
+            "cs"
+          ],
+          "eligible_surfaces": [
+            "items",
+            "npc",
+            "monsters",
+            "books",
+            "quests",
+            "ui",
+            "world"
+          ],
+          "switch_reasons": [
+            "quota_exhausted",
+            "rate_limit",
+            "model_unavailable"
+          ],
+          "request_budget_cap": 250,
+          "request_budget_policy": "telemetry_only",
+          "requests_today": 113,
+          "selected_model": "openai/gpt-4.1-mini",
+          "pool_latest": {
+            "schema_version": "1.0",
+            "generated_at_utc": "2026-04-29T18:33:32.371215Z",
+            "status": "active",
+            "reason": "ok",
+            "active": true,
+            "selected_model": "openai/gpt-4.1-mini",
+            "response_ms": 1673,
+            "rate_limited": false,
+            "requests_total_today": 113,
+            "translated_total_today": 572,
+            "request_budget_cap": 250,
+            "request_budget_policy": "telemetry_only",
+            "models": [
+              {
+                "model": "openai/gpt-4.1-mini",
+                "priority": 0,
+                "requests_today": 95,
+                "translated_today": 502,
+                "blocked_until_utc": "",
+                "last_status": "ok",
+                "last_error_reason": "",
+                "last_response_ms": 1673
+              },
+              {
+                "model": "openai/gpt-4o-mini",
+                "priority": 1,
+                "requests_today": 16,
+                "translated_today": 70,
+                "blocked_until_utc": "",
+                "last_status": "ok",
+                "last_error_reason": "",
+                "last_response_ms": 2070
+              },
+              {
+                "model": "openai/gpt-5",
+                "priority": 2,
+                "requests_today": 2,
+                "translated_today": 0,
+                "blocked_until_utc": "",
+                "last_status": "idle",
+                "last_error_reason": "model_unavailable",
+                "last_response_ms": 0
+              }
+            ],
+            "available_models": [
+              "openai/gpt-4.1-mini",
+              "openai/gpt-4o-mini",
+              "openai/gpt-5"
+            ]
+          }
+        },
+        "provider_budget": {
+          "available": true,
+          "status": "budget_ok",
+          "severity": "ok",
+          "reason": "provider_budget_ok",
+          "source_artifact": "provider_budget_latest.json",
+          "thresholds": {
+            "warn_used_pct": 80.0,
+            "critical_used_pct": 100.0
+          },
+          "used_pct": 45.2,
+          "monthly_cap": 250.0,
+          "spent": 113.0,
+          "latest_age_s": 426.650327,
+          "day_utc": "2026-04-29",
+          "unit": "requests_per_day",
+          "stale": false
+        },
+        "provider_circuit": {
+          "available": true,
+          "status": "closed",
+          "severity": "ok",
+          "reason": "provider_error_below_threshold",
+          "source_artifacts": [
+            "deferred_retry_state.json",
+            "statusd_report.json"
+          ],
+          "thresholds": {
+            "warn_provider_error_total": 50,
+            "critical_provider_error_total": 200,
+            "warn_provider_error_keys": 20,
+            "critical_provider_error_keys": 80,
+            "window_seconds": 86400
+          },
+          "provider_error_total": 0,
+          "provider_error_keys": 0,
+          "provider_error_total_all_time": 394,
+          "provider_error_keys_all_time": 349,
+          "pipeline_status": "deferred_backlog_pressure",
+          "pipeline_severity": "warning",
+          "pipeline_reason": "deferred_backlog_warning",
+          "top_reason": "gt_validate_fail_placeholder:17291",
+          "window_seconds": 86400
+        }
+      },
+      "latest_fallback": {
+        "timestamp": "2026-04-29T18:33:01.148287Z",
+        "provider": "tm_simple",
+        "provider_label": "TM/simple",
+        "source": "tm",
+        "action": "fallback_to_google_translate_high",
+        "action_label": "fallback to google translate high",
+        "decision_reason": "high_reject_types",
+        "json_file": "items.json",
+        "key": "item.1269.name"
+      }
+    },
+    "term_consistency": {
+      "schema_version": "1.0",
+      "generated_at_utc": "2026-04-29T18:40:42.209704Z",
+      "available": true,
+      "lang": "es",
+      "json_file": "npc.json",
+      "surface": "npc",
+      "registry_path": "term_registry_enriched.json",
+      "registry_terms_total": 16524,
+      "keys_scanned": 1247,
+      "keys_with_term_usages": 340,
+      "keys_with_conflicts": 96,
+      "term_conflicts_total": 200,
+      "term_conflict_rate_pct": 28.235,
+      "term_conflict_rate_delta_pct": 28.235,
+      "auto_fixed_english_name_leaks": 0,
+      "inflection_suspects_flagged": 5,
+      "manual_review_enqueued": 195,
+      "canonical_name_review_candidates": 0,
+      "canonical_name_case_only_autofixed": 0,
+      "canonical_name_semantic_autofixed": 0,
+      "canonical_name_semantic_quality_blocked": 0,
+      "canonical_name_existing_quality_sanitized": 0,
+      "canonical_name_existing_quality_sanitized_keys": [],
+      "canonical_name_semantic_quality_blocked_keys": [],
+      "conflict_type_breakdown": {
+        "canonical_term_missing": 188,
+        "canonical_term_inflection_suspect": 5,
+        "english_name_leak": 7
+      },
+      "top_conflicts": [
+        {
+          "key": "npc.a_beggar.say_4",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Alimento",
+          "canonical_en": "Food",
+          "translated_text": "Entonces, ¿por qué no muestras tu dedicación a los pobres? Ve y ayuda a Chavis en la casa de pobres. Está recolectando comida para gente como nosotros. ...",
+          "source_file": "spells.json",
+          "source_key": "spell.food.name"
+        },
+        {
+          "key": "npc.a_prisoner.say_1",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "manzanas",
+          "canonical_en": "apples",
+          "translated_text": "Gran acertijo, ¿no? Si puedes decirme la respuesta correcta, \\z te daré algo. ¡Jejeje!",
+          "source_file": "items.json",
+          "source_key": "item.24490.name"
+        },
+        {
+          "key": "npc.a_prisoner.say_2",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "manzanas",
+          "canonical_en": "apples",
+          "translated_text": "Mis números surrealistas se basan en hechos sorprendentes. \\z ¿Estás interesado en aprender el secreto de las matemáticas?",
+          "source_file": "items.json",
+          "source_key": "item.24490.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_17",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Nothing",
+          "canonical_en": "nothing",
+          "translated_text": "Te lanzas y arrojas el modelo al agua. Como no pasa nada, le das la espalda al océano. ...",
+          "source_file": "items.json",
+          "source_key": "item.31381.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_20",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "elegir",
+          "canonical_en": "pick",
+          "translated_text": "Coges el espejo del suelo.",
+          "source_file": "items.json",
+          "source_key": "item.31613.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_20",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "elegir",
+          "canonical_en": "pick",
+          "translated_text": "Coges el espejo del suelo.",
+          "source_file": "items.json",
+          "source_key": "item.31615.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_20",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "elegir",
+          "canonical_en": "pick",
+          "translated_text": "Coges el espejo del suelo.",
+          "source_file": "items.json",
+          "source_key": "item.3456.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_21",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Dragón",
+          "canonical_en": "Dragon",
+          "translated_text": "Los sueños de dragones son dorados. ...",
+          "source_file": "monsters.json",
+          "source_key": "monster.dragon.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.multi_32",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Dragón",
+          "canonical_en": "Dragon",
+          "translated_text": "Los sueños de dragones son dorados. ...",
+          "source_file": "monsters.json",
+          "source_key": "monster.dragon.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.say_11",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cabeza",
+          "canonical_en": "head",
+          "translated_text": "Regresas al norte hasta la meseta.",
+          "source_file": "items.json",
+          "source_key": "item.33932.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.say_11",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cabeza",
+          "canonical_en": "head",
+          "translated_text": "Regresas al norte hasta la meseta.",
+          "source_file": "items.json",
+          "source_key": "item.33937.name"
+        },
+        {
+          "key": "npc.a_sleeping_dragon.say_14",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "cabeza",
+          "canonical_en": "head",
+          "translated_text": "Te diriges hacia el norte pasando innumerables piedras en el mar carmesí de piedras bajo tus pies.",
+          "source_file": "items.json",
+          "source_key": "item.33932.name"
+        }
+      ]
+    },
+    "queue_health": {
+      "blockers_state": "active",
+      "blockers_candidates_count": 96,
+      "blockers_missing_keys_total": 0,
+      "blockers_missing_lang_files": 0,
+      "visible_pending_tail": 399,
+      "oldest_visible_pending_age_s": 19210,
+      "top_langs": [
+        {
+          "lang": "ru",
+          "count": 378
+        },
+        {
+          "lang": "cs",
+          "count": 9
+        },
+        {
+          "lang": "es",
+          "count": 8
+        },
+        {
+          "lang": "de",
+          "count": 4
+        }
+      ],
+      "top_reason_buckets": [
+        {
+          "reason_bucket": "quality",
+          "count": 376
+        },
+        {
+          "reason_bucket": "default",
+          "count": 15
+        },
+        {
+          "reason_bucket": "word_salad",
+          "count": 7
+        },
+        {
+          "reason_bucket": "partial_translation_mix",
+          "count": 1
+        }
+      ],
+      "deferred_state_keys_total": 8881,
+      "deferred_state_updated_at": "2026-04-29T18:40:27.952645Z",
+      "deferred_state_age_s": 11,
+      "deferred_state_stats": {
+        "enqueued": 0,
+        "suppressed_cooldown": 0,
+        "suppressed_manual_review": 197,
+        "deduped_ttl": 0,
+        "manual_review_escalations": 1,
+        "partial_staged": 2,
+        "partial_completed": 0,
+        "retry_loop_cooldown": 0,
+        "retry_loop_manual_review": 2
+      }
+    },
+    "doctor_alerts": {
+      "schema_version": "1.0",
+      "generated_at_utc": "2026-04-29T18:40:42.675561Z",
+      "overall": "warning",
+      "thresholds": {
+        "heartbeat_stale_s": 300,
+        "no_write_s": 900,
+        "lease_conflict_window_s": 1800,
+        "queue_starvation_pending_min": 200,
+        "queue_starvation_oldest_s": 3600,
+        "dlq_growth_step": 25
+      },
+      "checks": [
+        {
+          "name": "HEARTBEAT_STALE",
+          "status": "ok",
+          "severity": "ok",
+          "value": 6,
+          "threshold": 300,
+          "detail": "Heartbeat świeży (6s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=cs:items.json].",
+          "source": "worker_runtime_heartbeat.json"
+        },
+        {
+          "name": "NO_WRITE",
+          "status": "ok",
+          "severity": "ok",
+          "value": 16,
+          "threshold": 900,
+          "detail": "Recent writes wyglądają zdrowo.",
+          "source": "translation_recent_report.jsonl"
+        },
+        {
+          "name": "LEASE_CONFLICT",
+          "status": "ok",
+          "severity": "ok",
+          "value": 0,
+          "threshold": 0,
+          "detail": "Brak konfliktów lease/lock w oknie 1800s.",
+          "source": "errors.jsonl"
+        },
+        {
+          "name": "QUEUE_STARVATION",
+          "status": "alert",
+          "severity": "warning",
+          "value": {
+            "pending": 399,
+            "oldest_s": 19210
+          },
+          "threshold": {
+            "pending_min": 200,
+            "oldest_s": 3600
+          },
+          "detail": "Duży pending i stara kolejka sugerują głodzenie queue.",
+          "source": "deferred_translation_queue.jsonl"
+        },
+        {
+          "name": "DLQ_GROWTH",
+          "status": "ok",
+          "severity": "ok",
+          "value": {
+            "count": 0,
+            "delta": 0
+          },
+          "threshold": {
+            "growth_step": 25
+          },
+          "detail": "DLQ precursor bez niepokojącego wzrostu.",
+          "source": "pending_skip_24h_latest.json"
+        }
+      ],
+      "summary": {
+        "state_label": "🟠 WARNING",
+        "alert_count": 1,
+        "critical_count": 0,
+        "warning_count": 1,
+        "alert_names": [
+          "QUEUE_STARVATION"
+        ],
+        "dlq_count": 0
+      }
+    },
+    "doctor_remediation": {
+      "schema_version": "1.0",
+      "generated_at_utc": "2026-04-29T18:32:35.258999Z",
+      "status": "ok",
+      "open_alarms": [
+        {
+          "code": "DEFERRED_RETRY_PIPELINE_WARNING",
+          "severity": "warning",
+          "source": "statusd_doctor.json",
+          "detail": "DEFERRED_RETRY_PIPELINE_WARNING: status=deferred_backlog_pressure tracked_keys=8881 retry_due_now=5332 manual_locked=2939 cooldown_locked=0 manual_queue=3472 deferred_backlog=52054 deferred_recent_1h=66 latest_age=19.855"
+        },
+        {
+          "code": "FIXTURE_REGRESSION",
+          "severity": "critical",
+          "source": "statusd_doctor.json",
+          "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5350608.8s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
+        },
+        {
+          "code": "LANG_PARITY_WARN",
+          "severity": "warning",
+          "source": "statusd_doctor.json",
+          "detail": "LANG_PARITY_WARN: tr has 46685 [EN]-backlog after 143h (should be ≤5000)"
+        },
+        {
+          "code": "NATIVE_READINESS_BELOW_THRESHOLD",
+          "severity": "warning",
+          "source": "statusd_doctor.json",
+          "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.71<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
+        },
+        {
+          "code": "PROVIDER_CIRCUIT_OPEN",
+          "severity": "critical",
+          "source": "statusd_doctor.json",
+          "detail": "PROVIDER_CIRCUIT_OPEN: provider_error_total=394 provider_error_keys=349 pipeline=deferred_backlog_pressure:warning top_reason=gt_validate_fail_placeholder:17291"
+        },
+        {
+          "code": "QUEUE_STARVATION_DETECTED",
+          "severity": "warning",
+          "source": "doctor_alerts_latest.json",
+          "detail": "Duży pending i stara kolejka sugerują głodzenie queue."
+        },
+        {
+          "code": "SURFACE_COVERAGE_IMBALANCE",
+          "severity": "warning",
+          "source": "statusd_doctor.json",
+          "detail": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.27pp top=[ru:36.27pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:26.46pp] source=statusd_report.json"
+        },
+        {
+          "code": "SUSPICIOUS_HIGH_ELEVATED",
+          "severity": "warning",
+          "source": "statusd_doctor.json",
+          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1335 rate=34.568% window=6.0h top_lang=es:528 per_lang=[es:528(128.467%/warning),cs:350(41.322%/warning)] per_domain=[npc.json:304(63.202%/warning),server.json:221(1300.0%/warnin"
+        },
+        {
+          "code": "TERM_CONSISTENCY_REGRESSION",
+          "severity": "critical",
+          "source": "statusd_doctor.json",
+          "detail": "TERM_CONSISTENCY_REGRESSION: rate=46.711% delta=46.711% total=200 source=term_conflicts_latest.json"
+        }
+      ],
+      "resolved_this_cycle": [],
+      "newly_opened": [],
+      "summary": {
+        "open_count": 9,
+        "resolved_count": 0,
+        "tracked_alarms": 32
+      },
+      "action_plan": {
+        "recommended_action": "force_auto",
+        "selected_action": "none",
+        "selected_command": "-",
+        "result": "pending",
+        "reason": "write_starvation_or_queue_starvation",
+        "suppressed_by_cooldown": true,
+        "cooldown_remaining_cycles": 2
+      }
     }
   }
 }

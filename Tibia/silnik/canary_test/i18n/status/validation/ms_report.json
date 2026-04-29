@@ -1,25 +1,32 @@
 {
   "lang": "ms",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 4883,
-  "identical_to_en": 3862,
-  "placeholder_keys": 48703,
-  "coverage_pct": 9.1,
-  "issues_total": 4,
+  "total_keys": 74536,
+  "translated": 5028,
+  "identical_to_en": 4003,
+  "placeholder_keys": 48715,
+  "coverage_pct": 6.7,
+  "issues_total": 9,
   "issues_by_type": {
+    "V2_length_ratio": 4,
     "V4_artifact": 2,
-    "V6_newline_mismatch": 1,
-    "V1_placeholder_mismatch": 1
+    "V1_placeholder_mismatch": 2,
+    "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
+    "CRITICAL": 2,
     "HIGH": 2,
-    "MEDIUM": 1,
+    "MEDIUM": 5,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 99.8,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
@@ -43,15 +50,39 @@
       "category": "books",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 404,
+    "issues_total": 403,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 4,
+    "length_ratio": 3,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:46.066397Z"
+  "validated_at": "2026-04-29T18:14:45.551464Z"
 }

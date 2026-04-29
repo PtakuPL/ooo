@@ -31,7 +31,7 @@
   "actions.premium_scroll.msg_max_days": "No puedes comprar más de {max} días de cuenta premium.",
   "actions.quests.msg_1": "Está vacío.",
   "actions.quests.msg_2": "Está vacío.",
-  "actions.random_items.say_1": "You found",
+  "actions.random_items.say_1": "Encontraste ",
   "actions.random_items.say_2": "No encontraste nada útil.",
   "actions.random_items.say_3": "No encontraste nada útil."
 }

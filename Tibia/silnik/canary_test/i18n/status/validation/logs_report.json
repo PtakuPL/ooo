@@ -1,11 +1,11 @@
 {
   "lang": "logs",
   "script_group": "latin",
-  "total_keys": 0,
-  "translated": 0,
-  "identical_to_en": 0,
-  "placeholder_keys": 0,
-  "coverage_pct": 0.0,
+  "total_keys": 184,
+  "translated": 145,
+  "identical_to_en": 145,
+  "placeholder_keys": 19,
+  "coverage_pct": 78.8,
   "issues_total": 0,
   "issues_by_type": {},
   "issues_by_severity": {
@@ -17,12 +17,12 @@
   "score": 100,
   "worst_keys": [],
   "crossref": {
-    "enabled": false,
-    "issues_total": 0,
+    "enabled": true,
+    "issues_total": 131,
     "consistency": 0,
-    "pl_reference": 0,
+    "pl_reference": 131,
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:45.288161Z"
+  "validated_at": "2026-04-29T18:14:44.709130Z"
 }

@@ -1,10 +1,10 @@
 {
   "lang": "zh",
-  "coverage_pct": 7.5,
+  "coverage_pct": 5.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T13:50:57.586156Z",
+  "auto_fix_limit": 30,
+  "checked_at": "2026-04-29T18:14:53.224628Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -23,6 +23,15 @@
       "lang": "Chorister"
     },
     {
+      "key": "achievement.8.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dread Lord",
+      "pl": "Straszny Panie",
+      "lang": "Dread Lord"
+    },
+    {
       "key": "achievement.12.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -30,6 +39,15 @@
       "en": "Blessed!",
       "pl": "Błogosławiony!",
       "lang": "Blessed!"
+    },
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
     },
     {
       "key": "achievement.28.name",
@@ -50,6 +68,69 @@
       "lang": "Explorer"
     },
     {
+      "key": "achievement.35.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sea Scout",
+      "pl": "Skaut morski",
+      "lang": "Sea Scout"
+    },
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.50.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razing!",
+      "pl": "Niszczenie!",
+      "lang": "Razing!"
+    },
+    {
+      "key": "achievement.53.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper",
+      "pl": "Skrobaczka",
+      "lang": "Scrapper"
+    },
+    {
+      "key": "achievement.54.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn",
+      "pl": "Żółtodziób",
+      "lang": "Greenhorn"
+    },
+    {
+      "key": "achievement.56.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbicide",
+      "pl": "Herbicyd",
+      "lang": "Herbicide"
+    },
+    {
       "key": "achievement.61.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -59,6 +140,24 @@
       "lang": "Ruthless"
     },
     {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
       "key": "achievement.67.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -66,6 +165,69 @@
       "en": "High-Flyer",
       "pl": "I.-Lotnik",
       "lang": "High-Flyer"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jinx",
+      "pl": "Pech",
+      "lang": "Jinx"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.83.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Polisher",
+      "pl": "Polerka",
+      "lang": "Polisher"
+    },
+    {
+      "key": "achievement.86.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Vanity",
+      "pl": "Próżność",
+      "lang": "Vanity"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
+    },
+    {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
     },
     {
       "key": "achievement.96.name",
@@ -86,6 +248,24 @@
       "lang": "Oops"
     },
     {
+      "key": "achievement.110.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bluebarian",
+      "pl": "Bluebarista",
+      "lang": "Bluebarian"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
       "key": "achievement.123.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -95,13 +275,49 @@
       "lang": "Berserker"
     },
     {
+      "key": "achievement.124.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mastermind",
+      "pl": "Kierować z ukrycia",
+      "lang": "Mastermind"
+    },
+    {
       "key": "achievement.128.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Bad Timing",
-      "pl": "Zły, niedobry Poczucie czasu, wyczucie chwili",
+      "pl": "Zły moment",
       "lang": "Bad Timing"
+    },
+    {
+      "key": "achievement.132.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Homebrewed",
+      "pl": "Domowe",
+      "lang": "Homebrewed"
+    },
+    {
+      "key": "achievement.142.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Godslayer",
+      "pl": "Zabójca Bogów",
+      "lang": "Godslayer"
+    },
+    {
+      "key": "achievement.152.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Demonbane",
+      "pl": "Zguba Demonów",
+      "lang": "Demonbane"
     },
     {
       "key": "achievement.157.name",
@@ -111,6 +327,69 @@
       "en": "Aristocrat",
       "pl": "Arystokrata",
       "lang": "Aristocrat"
+    },
+    {
+      "key": "achievement.162.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ritualist",
+      "pl": "Rytualista",
+      "lang": "Ritualist"
+    },
+    {
+      "key": "achievement.169.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Alumni",
+      "pl": "Absolwenci",
+      "lang": "Alumni"
+    },
+    {
+      "key": "achievement.172.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guinea Pig",
+      "pl": "Świnka morska",
+      "lang": "Guinea Pig"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
+    },
+    {
+      "key": "achievement.187.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pyromaniac",
+      "pl": "Piroman",
+      "lang": "Pyromaniac"
+    },
+    {
+      "key": "achievement.193.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Skin-Deep",
+      "pl": "Głęboko po skórze",
+      "lang": "Skin-Deep"
+    },
+    {
+      "key": "achievement.198.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Silent Pet",
+      "pl": "Cichy zwierzak",
+      "lang": "Silent Pet"
     },
     {
       "key": "achievement.199.name",
@@ -226,7 +505,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Manic",
-      "pl": "Maniakalny, szaleńczy",
+      "pl": "Maniakalny",
       "lang": "Manic"
     },
     {
@@ -307,7 +586,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Ogre Chef",
-      "pl": "Ogr, potwór Szef kuchni, kucharz",
+      "pl": "Ogrowy Szef Kuchni",
       "lang": "Ogre Chef"
     },
     {
@@ -1652,6 +1931,15 @@
       "lang": "protection "
     },
     {
+      "key": "cpp.look.range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Range:",
+      "pl": "Zakres:",
+      "lang": "Range:"
+    },
+    {
       "key": "cpp.look.second_one",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2440,7 +2728,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2611,7 +2899,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Words",
-      "pl": "słowa",
+      "pl": "Słowa",
       "lang": "Words"
     },
     {
@@ -2620,7 +2908,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2647,7 +2935,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Words",
-      "pl": "słowa",
+      "pl": "Słowa",
       "lang": "Words"
     },
     {
@@ -2656,7 +2944,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2710,7 +2998,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -2863,7 +3151,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -3304,7 +3592,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Level",
-      "pl": "poziom",
+      "pl": "Poziom",
       "lang": "Level"
     },
     {
@@ -3324,294 +3612,6 @@
       "en": "Character:",
       "pl": "Charakter:",
       "lang": "Character:"
-    },
-    {
-      "key": "web.tpl.forum.new_post.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Topic:",
-      "pl": "Temat:",
-      "lang": "Topic:"
-    },
-    {
-      "key": "web.tpl.forum.new_post.b_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Message:",
-      "pl": "Wiadomość:",
-      "lang": "Message:"
-    },
-    {
-      "key": "web.tpl.forum.new_post.b_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Text",
-      "pl": "Tekst",
-      "lang": "Text"
-    },
-    {
-      "key": "web.tpl.admin.visitors.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last visit",
-      "pl": "Ostatnia wizyta",
-      "lang": "Last visit"
-    },
-    {
-      "key": "web.tpl.admin.visitors.th_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Page",
-      "pl": "Strona",
-      "lang": "Page"
-    },
-    {
-      "key": "web.tpl.admin.visitors.th_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Browser",
-      "pl": "Przeglądarka",
-      "lang": "Browser"
-    },
-    {
-      "key": "web.tpl.admin.menus.js.label_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name:",
-      "pl": "Nazwa:",
-      "lang": "Name:"
-    },
-    {
-      "key": "web.tpl.admin.menus.js.label_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Link:",
-      "pl": "Połączyć:",
-      "lang": "Link:"
-    },
-    {
-      "key": "web.tpl.bans.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nick",
-      "pl": "Nacięcie",
-      "lang": "Nick"
-    },
-    {
-      "key": "web.tpl.bans.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Type",
-      "pl": "Typ",
-      "lang": "Type"
-    },
-    {
-      "key": "web.tpl.bans.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Expires",
-      "pl": "Wygasa",
-      "lang": "Expires"
-    },
-    {
-      "key": "web.tpl.bans.b_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Reason",
-      "pl": "Powód",
-      "lang": "Reason"
-    },
-    {
-      "key": "web.tpl.bans.b_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Comment",
-      "pl": "Komentarz",
-      "lang": "Comment"
-    },
-    {
-      "key": "web.tpl.bans.b_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Added by:",
-      "pl": "Dodane przez:",
-      "lang": "Added by:"
-    },
-    {
-      "key": "web.tpl.buttons.edit.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Edit",
-      "pl": "Redagować",
-      "lang": "Edit"
-    },
-    {
-      "key": "web.tpl.account.characters.change_comment.span_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Comment:",
-      "pl": "Komentarz:",
-      "lang": "Comment:"
-    },
-    {
-      "key": "web.tpl.admin.tools.teleport.label_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Town",
-      "pl": "Miasto",
-      "lang": "Town"
-    },
-    {
-      "key": "web.tpl.admin.tools.teleport.label_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Position X",
-      "pl": "Pozycja X",
-      "lang": "Position X"
-    },
-    {
-      "key": "web.tpl.admin.tools.teleport.label_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Position Y",
-      "pl": "Pozycja Y",
-      "lang": "Position Y"
-    },
-    {
-      "key": "web.tpl.admin.tools.teleport.label_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Position Z",
-      "pl": "Stanowisko Z",
-      "lang": "Position Z"
-    },
-    {
-      "key": "web.tpl.faq.form.td_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Question:",
-      "pl": "Zadanieion:",
-      "lang": "Question:"
-    },
-    {
-      "key": "web.tpl.faq.form.td_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Answer:",
-      "pl": "Odpowiedz:",
-      "lang": "Answer:"
-    },
-    {
-      "key": "web.tpl.characters.td_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sex:",
-      "pl": "Seks:",
-      "lang": "Sex:"
-    },
-    {
-      "key": "web.tpl.characters.td_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level:",
-      "pl": "Poziom:",
-      "lang": "Level:"
-    },
-    {
-      "key": "web.tpl.characters.td_8",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Frags:",
-      "pl": "Fragi:",
-      "lang": "Frags:"
-    },
-    {
-      "key": "web.tpl.characters.td_9",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Residence:",
-      "pl": "Rezydencja:",
-      "lang": "Residence:"
-    },
-    {
-      "key": "web.tpl.characters.td_10",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Balance:",
-      "pl": "Balansować:",
-      "lang": "Balance:"
-    },
-    {
-      "key": "web.tpl.characters.td_11",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "House:",
-      "pl": "Dom:",
-      "lang": "House:"
-    },
-    {
-      "key": "web.tpl.characters.td_14",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Created:",
-      "pl": "Stworzony:",
-      "lang": "Created:"
-    },
-    {
-      "key": "web.tpl.characters.b_16",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Quests",
-      "pl": "Zadanies",
-      "lang": "Quests"
-    },
-    {
-      "key": "web.tpl.characters.b_17",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Equipment",
-      "pl": "Sprzęt",
-      "lang": "Equipment"
-    },
-    {
-      "key": "web.tpl.characters.b_19",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Victims",
-      "pl": "Ofiary",
-      "lang": "Victims"
     }
   ],
   "length_ratio_issues": [

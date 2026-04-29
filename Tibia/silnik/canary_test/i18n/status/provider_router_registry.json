@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-29T18:40:42.203906Z",
+  "policy_version": "2026-04-22",
+  "routing_order": [
+    "tm_simple",
+    "free_google_translate",
+    "openai_model_pool",
+    "google_cloud"
+  ],
+  "runtime_chain": [
+    "tm_simple",
+    "free_google_translate",
+    "openai_model_pool"
+  ],
+  "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
+  "policy": {
+    "use_free_google_translate": true,
+    "google_cloud_requested": false,
+    "allow_paid_providers": false,
+    "google_cloud_effective": false,
+    "openai_pool_requested": true,
+    "openai_pool_requested_by_config": true,
+    "openai_pool_disabled": false,
+    "openai_pool_disabled_by_doctor": false,
+    "openai_pool_implemented": true,
+    "switch_reasons": [
+      "quota_exhausted",
+      "rate_limit",
+      "model_unavailable"
+    ],
+    "paid_opt_in_providers": [
+      "google_cloud"
+    ]
+  },
+  "surface_policy": {
+    "default": {
+      "providers": [
+        "tm_simple",
+        "free_google_translate",
+        "openai_model_pool",
+        "google_cloud"
+      ],
+      "paid_allowed": false
+    },
+    "overrides": {
+      "books": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "items": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "monsters": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "npc": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "otclient_modules": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate"
+        ],
+        "openai_pool_enabled": false,
+        "paid_allowed": false
+      },
+      "quests": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "ui": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "world": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      }
+    }
+  },
+  "language_policy": {
+    "default": {
+      "providers": [
+        "tm_simple",
+        "free_google_translate",
+        "openai_model_pool",
+        "google_cloud"
+      ],
+      "paid_allowed": false
+    },
+    "eligible_openai_langs": [
+      "de",
+      "pl",
+      "es",
+      "pt",
+      "fr",
+      "it",
+      "ru",
+      "ro",
+      "nl",
+      "sv",
+      "da",
+      "no",
+      "fi",
+      "cs"
+    ],
+    "entries": {
+      "de": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "pl": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "es": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "pt": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "fr": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "it": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "ru": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "ro": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "nl": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "sv": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "da": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "no": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "fi": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      },
+      "cs": {
+        "providers": [
+          "tm_simple",
+          "free_google_translate",
+          "openai_model_pool",
+          "google_cloud"
+        ],
+        "openai_pool_enabled": true,
+        "paid_allowed": false
+      }
+    }
+  },
+  "providers": {
+    "tm_simple": {
+      "type": "local",
+      "enabled": true
+    },
+    "openai_model_pool": {
+      "type": "llm_pool",
+      "enabled": true,
+      "disabled": false,
+      "disabled_by_doctor": false,
+      "implemented": true,
+      "status": "active",
+      "active_model": "openai/gpt-4.1-mini",
+      "request_budget_cap": 250,
+      "request_budget_policy": "telemetry_only",
+      "requests_today": 113,
+      "models": [
+        {
+          "name": "openai/gpt-4.1-mini",
+          "priority": 1,
+          "switch_on": [
+            "quota_exhausted",
+            "rate_limit",
+            "model_unavailable"
+          ]
+        },
+        {
+          "name": "openai/gpt-4o-mini",
+          "priority": 2,
+          "switch_on": [
+            "quota_exhausted",
+            "rate_limit",
+            "model_unavailable"
+          ]
+        },
+        {
+          "name": "openai/gpt-5",
+          "priority": 3,
+          "switch_on": [
+            "quota_exhausted",
+            "rate_limit",
+            "model_unavailable"
+          ]
+        }
+      ]
+    },
+    "free_google_translate": {
+      "type": "free_fallback",
+      "enabled": true
+    },
+    "google_cloud": {
+      "type": "paid_opt_in",
+      "requested": false,
+      "enabled": false,
+      "paid_allowed": false
+    }
+  }
+}

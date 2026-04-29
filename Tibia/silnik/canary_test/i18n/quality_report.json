@@ -1,11 +1,12 @@
 {
-  "timestamp": "2026-02-15T11:51:03.147431",
-  "total_issues": 6017,
+  "timestamp": "2026-04-19T19:19:29.292085",
+  "total_issues": 23118,
   "by_type": {
-    "LENGTH_SUSPICIOUS": 5273,
-    "COMMAND_CHANGED": 189,
-    "MISSING_PLACEHOLDER": 284,
-    "EXTRA_PLACEHOLDER": 271
+    "LENGTH_SUSPICIOUS": 9083,
+    "COMMAND_CHANGED": 485,
+    "PIPE_FORMAT_CHANGED": 329,
+    "MISSING_PLACEHOLDER": 7836,
+    "EXTRA_PLACEHOLDER": 5385
   },
   "issues": [
     {
@@ -118,7 +119,7 @@
       "key": "achievement.22.description",
       "lang": "zh_TW",
       "file": "i18n/zh_TW/achievements.json",
-      "details": "EN: {\"'family'\", \"'uncle'\"}, zh_TW: set()"
+      "details": "EN: {\"'uncle'\", \"'family'\"}, zh_TW: set()"
     },
     {
       "type": "LENGTH_SUSPICIOUS",

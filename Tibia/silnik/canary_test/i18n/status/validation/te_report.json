@@ -1,24 +1,44 @@
 {
   "lang": "te",
   "script_group": "exotic",
-  "total_keys": 53586,
+  "total_keys": 74352,
   "translated": 4793,
-  "identical_to_en": 3842,
-  "placeholder_keys": 48793,
-  "coverage_pct": 8.9,
-  "issues_total": 81,
+  "identical_to_en": 3838,
+  "placeholder_keys": 48786,
+  "coverage_pct": 6.4,
+  "issues_total": 92,
   "issues_by_type": {
-    "script_wrong_script": 80,
+    "script_wrong_script": 84,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 3,
     "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 81,
-    "MEDIUM": 0,
+    "CRITICAL": 3,
+    "HIGH": 85,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 97.5,
+  "score": 97.1,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.26.name",
       "category": "achievements",
@@ -120,33 +140,15 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.23443.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.24227.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.24966.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 409,
+    "issues_total": 407,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 9,
+    "length_ratio": 7,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:56.401766Z"
+  "validated_at": "2026-04-29T18:14:51.837607Z"
 }

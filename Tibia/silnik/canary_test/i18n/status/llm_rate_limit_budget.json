@@ -1,0 +1,85 @@
+{
+  "day_utc": "2026-04-29",
+  "requests_total_today": 113,
+  "translated_total_today": 572,
+  "models": {
+    "gpt-5": {
+      "requests_today": 0,
+      "success_today": 0,
+      "translated_today": 0,
+      "rate_limit_hits_today": 0,
+      "quota_hits_today": 0,
+      "unavailable_hits_today": 0,
+      "blocked_until_utc": "",
+      "last_error_reason": "",
+      "last_status": "idle",
+      "last_used_at_utc": "2026-04-23T17:44:20.338880Z",
+      "last_response_ms": 0
+    },
+    "gpt-4.1-mini": {
+      "requests_today": 0,
+      "success_today": 0,
+      "translated_today": 0,
+      "rate_limit_hits_today": 0,
+      "quota_hits_today": 0,
+      "unavailable_hits_today": 0,
+      "blocked_until_utc": "",
+      "last_error_reason": "",
+      "last_status": "idle",
+      "last_used_at_utc": "2026-04-23T17:44:20.592276Z",
+      "last_response_ms": 0
+    },
+    "gpt-4o-mini": {
+      "requests_today": 0,
+      "success_today": 0,
+      "translated_today": 0,
+      "rate_limit_hits_today": 0,
+      "quota_hits_today": 0,
+      "unavailable_hits_today": 0,
+      "blocked_until_utc": "",
+      "last_error_reason": "",
+      "last_status": "idle",
+      "last_used_at_utc": "2026-04-23T17:44:21.465794Z",
+      "last_response_ms": 0
+    },
+    "openai/gpt-4.1-mini": {
+      "requests_today": 95,
+      "success_today": 93,
+      "translated_today": 502,
+      "rate_limit_hits_today": 2,
+      "quota_hits_today": 0,
+      "unavailable_hits_today": 0,
+      "blocked_until_utc": "",
+      "last_error_reason": "",
+      "last_status": "ok",
+      "last_used_at_utc": "2026-04-29T18:33:32.369807Z",
+      "last_response_ms": 1673
+    },
+    "openai/gpt-4o-mini": {
+      "requests_today": 16,
+      "success_today": 15,
+      "translated_today": 70,
+      "rate_limit_hits_today": 1,
+      "quota_hits_today": 0,
+      "unavailable_hits_today": 0,
+      "blocked_until_utc": "",
+      "last_error_reason": "",
+      "last_status": "ok",
+      "last_used_at_utc": "2026-04-29T17:16:47.774412Z",
+      "last_response_ms": 2070
+    },
+    "openai/gpt-5": {
+      "requests_today": 2,
+      "success_today": 0,
+      "translated_today": 0,
+      "rate_limit_hits_today": 0,
+      "quota_hits_today": 0,
+      "unavailable_hits_today": 2,
+      "blocked_until_utc": "",
+      "last_error_reason": "model_unavailable",
+      "last_status": "idle",
+      "last_used_at_utc": "2026-04-29T17:14:52.932493Z",
+      "last_response_ms": 0
+    }
+  }
+}

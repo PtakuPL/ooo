@@ -1,25 +1,27 @@
 {
   "lang": "ru",
   "script_group": "cyrillic",
-  "total_keys": 53586,
-  "translated": 18234,
-  "identical_to_en": 1755,
-  "placeholder_keys": 35352,
-  "coverage_pct": 34.0,
-  "issues_total": 6640,
+  "total_keys": 74536,
+  "translated": 38093,
+  "identical_to_en": 4772,
+  "placeholder_keys": 36443,
+  "coverage_pct": 51.1,
+  "issues_total": 4034,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 6482,
-    "V1_placeholder_mismatch": 148,
-    "V6_newline_mismatch": 8,
-    "V4_artifact": 2
+    "script_cyrillic_latin_mix": 3760,
+    "V1_placeholder_mismatch": 232,
+    "V6_newline_mismatch": 21,
+    "V5_pipe_mismatch": 11,
+    "V4_artifact": 7,
+    "V2_length_ratio": 3
   },
   "issues_by_severity": {
-    "CRITICAL": 148,
-    "HIGH": 6484,
-    "MEDIUM": 8,
+    "CRITICAL": 243,
+    "HIGH": 3767,
+    "MEDIUM": 24,
     "LOW": 0
   },
-  "score": 44.2,
+  "score": 83.2,
   "worst_keys": [
     {
       "key": "html.statistics.html.text2",
@@ -29,6 +31,18 @@
     },
     {
       "key": "html.statistics.html.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.statistics.html.text4",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.statistics.html.text5",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -70,7 +84,37 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "html.news.archive.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.install.config.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.install.config.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.install.config.html.text5",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
       "key": "html.account.characters.change_sex.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.spells.html.text2",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -82,61 +126,19 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "html.account.characters.change_name.html.text2",
+      "key": "html.account.management.html.text5",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.admin.news.table.html.text2",
+      "key": "html.install.admin.html.text1",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "html.faq.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.online.html.text5",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.guilds.view.html.text4",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.guilds.view.html.text5",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.bans.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.admin.links.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.account.characters.change_comment.html.text3",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.admin.changelog.form.html.text2",
+      "key": "html.install.admin.html.text2",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -144,11 +146,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 118,
-    "consistency": 57,
-    "pl_reference": 29,
-    "length_ratio": 32,
+    "issues_total": 524,
+    "consistency": 89,
+    "pl_reference": 400,
+    "length_ratio": 35,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:55.181572Z"
+  "validated_at": "2026-04-29T18:14:49.705330Z"
 }

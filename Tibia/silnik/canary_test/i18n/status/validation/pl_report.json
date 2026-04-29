@@ -1,143 +1,146 @@
 {
   "lang": "pl",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 47269,
-  "identical_to_en": 2329,
-  "placeholder_keys": 6317,
-  "coverage_pct": 88.2,
-  "issues_total": 55,
+  "total_keys": 74536,
+  "translated": 64229,
+  "identical_to_en": 5017,
+  "placeholder_keys": 10307,
+  "coverage_pct": 86.2,
+  "issues_total": 289,
   "issues_by_type": {
-    "V6_newline_mismatch": 42,
-    "V4_artifact": 13
+    "V1_placeholder_mismatch": 230,
+    "V6_newline_mismatch": 41,
+    "V4_artifact": 14,
+    "V2_length_ratio": 3,
+    "V7_command_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 13,
-    "MEDIUM": 42,
+    "CRITICAL": 230,
+    "HIGH": 14,
+    "MEDIUM": 45,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 98.9,
   "worst_keys": [
     {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_15",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.carina.say_2",
+      "key": "npc.a_dragon_mother.multi_7",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.markwin.say_3",
+      "key": "npc.a_weakened_forest_fury.multi_8",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.oswald.stdmod_32",
+      "key": "npc.a_weakened_forest_fury.multi_9",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.riddler.say_12",
+      "key": "npc.al_dee.stdmod_13",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.riddler.say_4",
+      "key": "npc.al_dee.stdmod_21",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.the_orc_king.say_3",
+      "key": "npc.al_dee.stdmod_8",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.theodore_loveless.multi_2",
+      "key": "npc.amber.stdmod_31",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.wyda.say_4",
+      "key": "npc.amber.stdmod_42",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "quests.bigfoot_burden.gnomedix_msg4",
-      "category": "quests",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.a_bearded_woman.stdmod_1",
+      "key": "npc.amber.stdmod_43",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_bearded_woman.stdmod_2",
+      "key": "npc.amber.stdmod_63",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_bearded_woman.stdmod_3",
+      "key": "npc.amber.stdmod_9",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_bearded_woman.stdmod_6",
+      "key": "npc.andrew_lyze.greet_msg_1",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.alia.stdmod_25",
+      "key": "npc.andrew_lyze.multi_4",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.alkestios.stdmod_7",
+      "key": "npc.andrew_lyze.multi_7",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.amanda.stdmod_35",
+      "key": "npc.angus.say_8",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_20",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_31",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.billy.stdmod_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.captain_haba.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.captain_haba.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
@@ -148,5 +151,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:46.841299Z"
+  "validated_at": "2026-04-29T18:14:46.923783Z"
 }

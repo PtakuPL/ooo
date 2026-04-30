@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-04-30T02:57:47.405460Z",
+  "timestamp": "2026-04-30T03:04:13.061576Z",
   "state": "running",
   "source": "service",
-  "pid": 429,
+  "pid": 395,
   "reason": "stale_lock_recovered",
   "owner_pid": 0,
   "owner_source": "",

@@ -1,8 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T02:57:50.402964Z",
+  "generated_at_utc": "2026-04-30T03:04:16.780761Z",
   "cycle": 1,
   "open_alarms": [
+    {
+      "code": "GUARD_REPORT_STALE",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 11535s"
+    },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
       "severity": "warning",
@@ -22,29 +28,41 @@
       "detail": "Duży pending i stara kolejka sugerują głodzenie queue."
     },
     {
+      "code": "REPAIR_TUNING_NO_SAMPLES",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "REPAIR_TUNING_NO_SAMPLES: backlog=733 ale samples_2h=0 (repair tuning nie generuje próbek mimo aktywnej kolejki)"
+    },
+    {
       "code": "SURFACE_COVERAGE_IMBALANCE",
       "severity": "warning",
       "source": "statusd_doctor.json",
       "detail": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.17pp top=[ru:36.17pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:19.86pp] source=statusd_report.json"
     },
     {
-      "code": "SUSPICIOUS_HIGH_ELEVATED",
-      "severity": "warning",
-      "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=279 rate=7.884% window=6.0h top_lang=cs:125 per_domain=[server.json:13(1300.0%/warning)]"
-    },
-    {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
       "detail": "TERM_CONSISTENCY_REGRESSION: rate=39.64% delta=39.64% total=80 source=term_conflicts_latest.json"
+    },
+    {
+      "code": "WORKER_STUCK_NO_WRITE",
+      "severity": "warning",
+      "source": "doctor_alerts_latest.json",
+      "detail": "Brak świeżych zapisów przy pending=398."
     }
   ],
-  "resolved_this_cycle": [],
-  "newly_opened": [],
+  "resolved_this_cycle": [
+    "SUSPICIOUS_HIGH_ELEVATED"
+  ],
+  "newly_opened": [
+    "GUARD_REPORT_STALE",
+    "REPAIR_TUNING_NO_SAMPLES",
+    "WORKER_STUCK_NO_WRITE"
+  ],
   "summary": {
-    "open_count": 6,
-    "resolved_count": 0,
+    "open_count": 8,
+    "resolved_count": 1,
     "tracked_alarms": 32
   },
   "queue_snapshot": {
@@ -56,6 +74,10 @@
     "selected_action": "none",
     "reason": "write_starvation_or_queue_starvation",
     "suppressed_by_cooldown": true,
-    "cooldown_remaining_cycles": 2
+    "cooldown_remaining_cycles": 2,
+    "selected_command": "-",
+    "result": "resolved_update",
+    "result_reason": "resolved_count=1",
+    "updated_at_utc": "2026-04-30T03:04:16.780761Z"
   }
 }

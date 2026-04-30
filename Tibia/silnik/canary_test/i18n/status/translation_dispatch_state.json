@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-29T23:50:00.058053Z",
-  "cycle_counter": 13312,
-  "last_target_key": "it:items.json",
-  "last_pending_total": 13492,
-  "last_marker_todo": 13492,
-  "last_tier": 2,
-  "last_cat_priority": 1,
+  "timestamp": "2026-04-30T02:57:59.210903Z",
+  "cycle_counter": 13313,
+  "last_target_key": "es:items.json",
+  "last_pending_total": 12758,
+  "last_marker_todo": 12758,
+  "last_tier": 1,
+  "last_cat_priority": 0,
   "candidates_count": 96,
   "active_candidates_count": 89,
   "skipped_backoff": 7,
@@ -177,7 +177,7 @@
   },
   "cache_hit": true,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 30,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -508,8 +508,17 @@
   "bootstrap_priority": {
     "enabled": false,
     "sequence": [
+      "pl",
       "es",
-      "pl"
+      "ru",
+      "ro",
+      "it",
+      "fr",
+      "de",
+      "pt",
+      "nl",
+      "cs",
+      "tr"
     ],
     "completed": [
       "es",
@@ -541,14 +550,6 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "it": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 53.09,
-          "npc.json": 76.51,
-          "quests.json": 99.18
-        }
-      },
       "ro": {
         "allowed_domain": null,
         "domain_coverages": {
@@ -571,6 +572,14 @@
           "items.json": 28.53,
           "npc.json": 39.51,
           "quests.json": 98.85
+        }
+      },
+      "it": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 53.09,
+          "npc.json": 76.51,
+          "quests.json": 99.18
         }
       }
     },
@@ -623,12 +632,21 @@
     "forced": false
   },
   "priority_gate": {
-    "enabled": true,
+    "enabled": false,
     "active": false,
     "coverage_target": 100.0,
     "priority_langs": [
+      "pl",
       "es",
-      "pl"
+      "ru",
+      "ro",
+      "it",
+      "fr",
+      "de",
+      "pt",
+      "nl",
+      "cs",
+      "tr"
     ],
     "pending_langs": [],
     "lang_completion": {}

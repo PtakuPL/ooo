@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:50:34.179432Z",
+  "generated_at_utc": "2026-04-30T02:58:43.650613Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
@@ -65,9 +65,7 @@
   "provider_pool_health": {
     "overall_status": "degraded",
     "signals": [
-      "recent_fallback",
-      "provider_consistency_debt:518",
-      "provider_limit_telemetry:provider_budget_exhausted"
+      "provider_consistency_debt:518"
     ],
     "provider_consistency_debt": 518,
     "recent_window_writes": 551,
@@ -141,7 +139,7 @@
         "status": "active",
         "active_model": "openai/gpt-4o-mini",
         "recent_writes": 278,
-        "requests_today": 279
+        "requests_today": 282
       }
     },
     "openai_model_pool": {
@@ -184,19 +182,19 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 279,
+      "requests_today": 282,
       "selected_model": "openai/gpt-4o-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-29T23:45:43.169268Z",
+        "generated_at_utc": "2026-04-29T23:50:49.287134Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4o-mini",
-        "response_ms": 1757,
+        "response_ms": 1269,
         "rate_limited": false,
-        "requests_total_today": 279,
-        "translated_total_today": 1462,
+        "requests_total_today": 282,
+        "translated_total_today": 1475,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
@@ -213,12 +211,12 @@
           {
             "model": "openai/gpt-4o-mini",
             "priority": 1,
-            "requests_today": 117,
-            "translated_today": 617,
+            "requests_today": 120,
+            "translated_today": 630,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 1757
+            "last_response_ms": 1269
           },
           {
             "model": "openai/gpt-5",
@@ -247,10 +245,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 111.6,
+      "used_pct": 112.8,
       "monthly_cap": 250.0,
-      "spent": 279.0,
-      "latest_age_s": 277.638037,
+      "spent": 282.0,
+      "latest_age_s": 65.743589,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

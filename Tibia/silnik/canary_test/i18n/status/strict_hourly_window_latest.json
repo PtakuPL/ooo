@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-29T22:50:29.724483Z",
-  "window_end_utc": "2026-04-29T23:50:29.724483Z",
+  "window_start_utc": "2026-04-30T01:58:27.977594Z",
+  "window_end_utc": "2026-04-30T02:58:27.977594Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,104 +8,25 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/deferred_translation_queue.jsonl"
   ],
-  "total_cycles": 32,
+  "total_cycles": 1,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 32
+    "AUTO_TRANSLATE": 1
   },
-  "auto_translate_cycles": 32,
+  "auto_translate_cycles": 1,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 671,
-  "guard_fail": 5,
-  "guard_fail_rate_pct": 0.7,
+  "translated": 0,
+  "guard_fail": 0,
+  "guard_fail_rate_pct": 0.0,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 671.0,
-  "throughput_runtime_hours": 1.0,
-  "throughput_runtime_source": "window_hours_long_runtime_fallback",
-  "suspicious_total": 823,
-  "deferred_total": 37,
-  "top_deferred_reasons": [
-    {
-      "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-      "count": 32,
-      "share_pct": 86.5,
-      "top_target": "ru/items.json",
-      "top_target_count": 32
-    },
-    {
-      "reason": "gt_rejected_multi_issues",
-      "count": 2,
-      "share_pct": 5.4,
-      "top_target": "de/npc.json",
-      "top_target_count": 2
-    },
-    {
-      "reason": "gt_identity_retry_identical_to_en",
-      "count": 1,
-      "share_pct": 2.7,
-      "top_target": "de/npc.json",
-      "top_target_count": 1
-    },
-    {
-      "reason": "gt_structure_retry_placeholder",
-      "count": 1,
-      "share_pct": 2.7,
-      "top_target": "de/npc.json",
-      "top_target_count": 1
-    },
-    {
-      "reason": "gt_partial_validate_word_salad",
-      "count": 1,
-      "share_pct": 2.7,
-      "top_target": "de/npc.json",
-      "top_target_count": 1
-    }
-  ],
-  "top_guard_fail_targets": [
-    {
-      "target": "de/npc.json",
-      "translated": 289,
-      "guard_fail": 3,
-      "guard_command": 0
-    },
-    {
-      "target": "ru/items.json",
-      "translated": 112,
-      "guard_fail": 2,
-      "guard_command": 0
-    },
-    {
-      "target": "it/items.json",
-      "translated": 43,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "es/items.json",
-      "translated": 64,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "tr/items.json",
-      "translated": 30,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "cs/items.json",
-      "translated": 73,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "ro/items.json",
-      "translated": 60,
-      "guard_fail": 0,
-      "guard_command": 0
-    }
-  ]
+  "throughput_keys_per_h": 0.0,
+  "throughput_runtime_hours": 0.0025,
+  "throughput_runtime_source": "cycle_duration_ms",
+  "suspicious_total": 0,
+  "deferred_total": 0,
+  "top_deferred_reasons": [],
+  "top_guard_fail_targets": []
 }

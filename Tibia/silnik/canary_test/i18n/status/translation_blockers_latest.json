@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:50:00.059741Z",
+  "timestamp": "2026-04-30T02:57:59.214390Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -101,16 +101,25 @@
   "json_files": 39,
   "cache_hit": true,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 30,
+  "cache_cycle": 1,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {
-    "enabled": true,
+    "enabled": false,
     "active": false,
     "coverage_target": 100.0,
     "priority_langs": [
+      "pl",
       "es",
-      "pl"
+      "ru",
+      "ro",
+      "it",
+      "fr",
+      "de",
+      "pt",
+      "nl",
+      "cs",
+      "tr"
     ],
     "pending_langs": [],
     "lang_completion": {}

@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-04-29T23:50:00.122820Z",
-  "cycle": 30,
+  "generated_at_utc": "2026-04-30T02:57:59.331572Z",
+  "cycle": 1,
   "desired_state": "running",
   "effective_state": "running",
   "reason": "alarm_pressure:NATIVE_READINESS_BELOW_THRESHOLD",
@@ -15,43 +15,37 @@
   },
   "current_workstream": "AUTO_TRANSLATE",
   "current_phase": "AUTO_TRANSLATE",
-  "current_lang": "it",
+  "current_lang": "es",
   "current_json_file": "items.json",
-  "current_pending": 13492,
+  "current_pending": 12758,
   "doctor": {
     "overall": "critical",
     "action": "degrade",
-    "active_alarm_count": 6,
+    "active_alarm_count": 5,
     "opened_alarm_count": 0,
-    "resolved_alarm_count": 0,
+    "resolved_alarm_count": 1,
     "active_alarm_tokens": [
       "NATIVE_READINESS_BELOW_THRESHOLD",
       "PROVIDER_BUDGET_EXHAUSTED",
       "QUEUE_STARVATION_DETECTED",
       "SURFACE_COVERAGE_IMBALANCE",
-      "SUSPICIOUS_HIGH_ELEVATED",
       "TERM_CONSISTENCY_REGRESSION"
     ]
   },
   "progress": {
-    "statusd_report_timestamp": "2026-04-29T23:48:52.437566Z",
+    "statusd_report_timestamp": "2026-04-29T23:51:39.359973Z",
     "deferred_backlog_total": 0,
     "deferred_backlog_recent_1h": 0,
     "translation_kpi": {
       "window_entries": 200,
-      "total_translated": 8922,
-      "total_guard_fail": 289,
-      "guard_fail_rate_pct": 3.14,
+      "total_translated": 8938,
+      "total_guard_fail": 281,
+      "guard_fail_rate_pct": 3.05,
       "per_lang": {
-        "cs": {
-          "translated": 1558,
-          "guard_fail": 135,
-          "cycles": 26
-        },
         "ro": {
-          "translated": 1090,
+          "translated": 1150,
           "guard_fail": 64,
-          "cycles": 25
+          "cycles": 26
         },
         "it": {
           "translated": 833,
@@ -77,12 +71,17 @@
           "translated": 1188,
           "guard_fail": 37,
           "cycles": 26
+        },
+        "cs": {
+          "translated": 1514,
+          "guard_fail": 127,
+          "cycles": 25
         }
       }
     },
     "strict_hourly_window": {
-      "window_start_utc": "2026-04-29T22:48:03.123031Z",
-      "window_end_utc": "2026-04-29T23:48:03.123031Z",
+      "window_start_utc": "2026-04-29T22:50:29.724483Z",
+      "window_end_utc": "2026-04-29T23:50:29.724483Z",
       "window_hours": 1.0,
       "sources": [
         "i18n/status/worker_cycle_perf.jsonl",
@@ -90,24 +89,24 @@
         "i18n/status/suspicious_log.jsonl",
         "i18n/status/deferred_translation_queue.jsonl"
       ],
-      "total_cycles": 28,
+      "total_cycles": 32,
       "mode_distribution": {
-        "AUTO_TRANSLATE": 28
+        "AUTO_TRANSLATE": 32
       },
-      "auto_translate_cycles": 28,
+      "auto_translate_cycles": 32,
       "migration_cycles": 0,
       "pending_skip_count": 0,
       "pending_skip_share_pct": 0.0,
       "pending_skip_share_migration_pct": 0.0,
-      "translated": 611,
+      "translated": 671,
       "guard_fail": 5,
-      "guard_fail_rate_pct": 0.8,
+      "guard_fail_rate_pct": 0.7,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0,
-      "throughput_keys_per_h": 611.0,
+      "throughput_keys_per_h": 671.0,
       "throughput_runtime_hours": 1.0,
       "throughput_runtime_source": "window_hours_long_runtime_fallback",
-      "suspicious_total": 847,
+      "suspicious_total": 823,
       "deferred_total": 37,
       "top_deferred_reasons": [
         {
@@ -182,6 +181,12 @@
           "translated": 73,
           "guard_fail": 0,
           "guard_command": 0
+        },
+        {
+          "target": "ro/items.json",
+          "translated": 60,
+          "guard_fail": 0,
+          "guard_command": 0
         }
       ]
     }
@@ -189,23 +194,23 @@
   "translation_data_freshness": {
     "translation_key_state.json": {
       "exists": true,
-      "age_s": 19,
-      "stale": false
+      "age_s": 11290,
+      "stale": true
     },
     "translation_guard_latest.json": {
       "exists": true,
-      "age_s": 16,
-      "stale": false
+      "age_s": 11287,
+      "stale": true
     },
     "translation_recent_report.jsonl": {
       "exists": true,
-      "age_s": 23,
-      "stale": false
+      "age_s": 11294,
+      "stale": true
     },
     "translation_global_overview.json": {
       "exists": true,
-      "age_s": 8,
-      "stale": false
+      "age_s": 11238,
+      "stale": true
     }
   }
 }

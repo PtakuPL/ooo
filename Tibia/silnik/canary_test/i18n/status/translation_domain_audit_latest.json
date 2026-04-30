@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-30T15:38:17.267651Z",
+  "timestamp": "2026-04-30T15:41:01.678105Z",
   "total_langs": 52,
   "total_domains": 39,
   "entries": [
@@ -19895,10 +19895,10 @@
       "lang": "tr",
       "domain": "items.json",
       "total_keys": 36733,
-      "genuine": 8138,
-      "genuine_pct": 22.15,
+      "genuine": 8168,
+      "genuine_pct": 22.24,
       "en_copy": 24,
-      "en_prefix": 28571,
+      "en_prefix": 28541,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -22400,7 +22400,7 @@
     "items.json": {
       "total_keys": 36733,
       "langs": 52,
-      "avg_genuine_pct": 7.77,
+      "avg_genuine_pct": 7.78,
       "total_placeholder_mismatch": 0
     },
     "libs.json": {

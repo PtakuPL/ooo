@@ -62061,11 +62061,191 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:29.612635Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14165.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode",
+      "attempted_translation": "Bu sandık fosilleşmiş mercanlarla dolu. Zamanında engellenmesi gerekiyor yoksa paslanır",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:32.956098Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14166.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode.",
+      "attempted_translation": "Bu sandık fosilleşmiş mercanlarla dolu. Zamanında engellenmesi gerekiyor yoksa paslanır.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:37.437488Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14174.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Darkness clutches the creatures of the sea to end all living things. Be watchful of this black void",
+      "attempted_translation": "Karanlık, denizdeki canlıları yakalayarak tüm canlıları yok eder. Bu siyah boşluğa dikkat edin",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Geçersiz' for EN 'void' from items.json:item.100.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:38.517176Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14237.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The chair is tied to this strange machine. You could use this if you had appropriate instructions.",
+      "attempted_translation": "Sandalye bu garip makineye bağlı. Uygun talimatlarınız varsa bunu kullanabilirsiniz.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tuhaf makinesi' for EN 'strange machine' from items.json:item.21743.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:39.079759Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14756.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use it in your house to construct a cake cabinet",
+      "attempted_translation": "Evinizde pasta dolabı yapmak için kullanın",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kabine' for EN 'cabinet' from items.json:item.11812.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:40.850211Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.15817.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's empty. Gather some RED spores",
+      "attempted_translation": "Boş. Biraz KIRMIZI spor topla",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kırmızı sporlar' for EN 'red spores' from items.json:item.15705.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:41.019103Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.16161.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Even in the light of day, the stars seem to reflect in each facet of this crystalline axe",
+      "attempted_translation": "Gün ışığında bile yıldızlar bu kristal baltanın her yönünde yansıyor gibi görünüyor",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:41.708258Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.16200.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this statue to train your club fighting and shielding skill offline.",
+      "attempted_translation": "Kulübünüzün dövüş ve koruma becerilerini çevrimdışı olarak geliştirmek için bu heykeli kullanın.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'topuz' for EN 'club' from items.json:item.3270.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:45.786265Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.22021.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead renegade knight",
+      "attempted_translation": "ölü dönek şövalye",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ölü hain şövalye' for EN 'dead renegade knight', but source key item.22021.name still uses conflicting variant 'ölü dönek şövalye'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:46.012030Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.22022.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead renegade knight",
+      "attempted_translation": "ölü dönek şövalye",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ölü hain şövalye' for EN 'dead renegade knight', but source key item.22022.name still uses conflicting variant 'ölü dönek şövalye'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3128
+    "total": 3138
   },
-  "updated_at": "2026-04-30T15:38:28.060387Z"
+  "updated_at": 1777563671
 }

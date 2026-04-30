@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T15:35:57.648007Z",
-  "cycle": 1,
+  "generated_at_utc": "2026-04-30T15:41:11.565358Z",
+  "cycle": 2,
   "open_alarms": [
     {
       "code": "GUARD_REPORT_STALE",
@@ -37,22 +37,20 @@
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=39.64% delta=39.64% total=80 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=25.6% delta=25.6% total=71 source=term_conflicts_latest.json"
     },
     {
       "code": "WORKER_STUCK_NO_WRITE",
       "severity": "warning",
-      "source": "doctor_alerts_latest.json",
-      "detail": "Brak świeżych zapisów przy pending=398."
+      "source": "statusd_doctor.json",
+      "detail": "WORKER_STUCK_NO_WRITE: source=translation_recent_report.jsonl detail=Brak świeżych zapisów przy pending=398."
     }
   ],
-  "resolved_this_cycle": [
-    "PROVIDER_BUDGET_EXHAUSTED"
-  ],
+  "resolved_this_cycle": [],
   "newly_opened": [],
   "summary": {
     "open_count": 7,
-    "resolved_count": 1,
+    "resolved_count": 0,
     "tracked_alarms": 32
   },
   "queue_snapshot": {
@@ -64,10 +62,6 @@
     "selected_action": "none",
     "reason": "write_starvation_or_queue_starvation",
     "suppressed_by_cooldown": true,
-    "cooldown_remaining_cycles": 2,
-    "selected_command": "-",
-    "result": "resolved_update",
-    "result_reason": "resolved_count=1",
-    "updated_at_utc": "2026-04-30T15:35:57.648007Z"
+    "cooldown_remaining_cycles": 2
   }
 }

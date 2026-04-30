@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T23:49:42.621497Z",
-  "cycle": 29,
+  "timestamp": "2026-04-30T15:38:57.474263Z",
+  "cycle": 1,
   "context": "normal",
-  "language": "ro",
+  "language": "tr",
   "json_file": "items.json",
-  "translated": 60,
+  "translated": 30,
   "placeholders": 0,
   "guard_fail": 0,
   "guard": {
@@ -14,5 +14,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 1665
+  "strict_skipped_done": 4180
 }

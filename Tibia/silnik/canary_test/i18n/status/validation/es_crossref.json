@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 81.3,
+  "coverage_pct": 81.6,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-04-29T19:44:36.727913Z",
+  "checked_at": "2026-04-30T15:39:50.199476Z",
   "issues_total": 537,
   "issues_by_type": {
     "consistency_in_language": 91,
@@ -3243,33 +3243,6 @@
       "lang": "stone"
     },
     {
-      "key": "item.1294.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "stone wall",
-      "pl": "kamienna ściana",
-      "lang": "stone wall"
-    },
-    {
-      "key": "item.1295.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "stone wall",
-      "pl": "kamienna ściana",
-      "lang": "stone wall"
-    },
-    {
-      "key": "item.1296.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "stone wall",
-      "pl": "kamienna ściana",
-      "lang": "stone wall"
-    },
-    {
       "key": "item.1297.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -4963,6 +4936,33 @@
     },
     {
       "key": "item.3162.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "spell rune",
+      "pl": "Zaklęcie rune",
+      "lang": "spell rune"
+    },
+    {
+      "key": "item.3163.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "spell rune",
+      "pl": "Zaklęcie rune",
+      "lang": "spell rune"
+    },
+    {
+      "key": "item.3167.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "spell rune",
+      "pl": "Zaklęcie rune",
+      "lang": "spell rune"
+    },
+    {
+      "key": "item.3168.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",

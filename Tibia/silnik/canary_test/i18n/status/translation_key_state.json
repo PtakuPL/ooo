@@ -17429,7 +17429,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T23:21:02.375936Z",
+    "updated_at": "2026-04-30T15:37:22.014704Z",
     "en_hash": "a29bac723ca2d59ed78a2d715e17e92f",
     "attempted_preview": "sai",
     "attempted_hash": "a29bac723ca2d59ed78a2d715e17e92f"
@@ -17879,7 +17879,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:40.617289Z",
+    "updated_at": "2026-04-30T15:38:05.119972Z",
     "en_hash": "79a4b5069fcbc4556ba7782cd0240de7",
     "attempted_preview": "Bu sandıkta bir dizi silah var",
     "extra": {
@@ -17901,7 +17901,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:45.641145Z",
+    "updated_at": "2026-04-30T15:38:07.788679Z",
     "en_hash": "a15684d18ef485ef77dd0b8b218583a5",
     "attempted_preview": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
     "extra": {
@@ -17923,7 +17923,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:46.898932Z",
+    "updated_at": "2026-04-30T15:38:09.463214Z",
     "en_hash": "719cdb3fd7a35cc7e24b9aa373f20a96",
     "attempted_preview": "Bu kil kutsal topraktan çıkarıldı",
     "extra": {
@@ -17945,7 +17945,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:47.037596Z",
+    "updated_at": "2026-04-30T15:38:09.818363Z",
     "en_hash": "5ae9f693ac227ebabbd1f69e11d11fb0",
     "attempted_preview": "Bu bitki zehiri, Gardiyan'ın bahçelerin derinliklerindeki ininin yakınındaki bitkileri yok etmek içindir.",
     "extra": {
@@ -17967,7 +17967,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:49.306307Z",
+    "updated_at": "2026-04-30T15:38:11.070236Z",
     "en_hash": "dae0b5d5321efbca600ef5014f1d45bf",
     "attempted_preview": "İnsanlar tarafından giyilemeyecek kadar büyük ama oldukça hafif",
     "extra": {
@@ -17989,7 +17989,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:52.488402Z",
+    "updated_at": "2026-04-30T15:38:11.307377Z",
     "en_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
     "attempted_preview": "Bu süslenmiş bir çığ runesi",
     "extra": {
@@ -18011,7 +18011,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:54.500228Z",
+    "updated_at": "2026-04-30T15:38:13.119818Z",
     "en_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
     "attempted_preview": "Bu süslenmiş bir çığ runesi",
     "extra": {
@@ -18033,7 +18033,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:56.687853Z",
+    "updated_at": "2026-04-30T15:38:13.264474Z",
     "en_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
     "attempted_preview": "Bu süslü bir parçalanma runesi",
     "extra": {
@@ -18055,7 +18055,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:21:56.781217Z",
+    "updated_at": "2026-04-30T15:38:13.467694Z",
     "en_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
     "attempted_preview": "Bu süslü bir parçalanma runesi",
     "extra": {
@@ -18077,7 +18077,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:00.570193Z",
+    "updated_at": "2026-04-30T15:38:13.925135Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Bu süslü bir yok etme alanı runesi",
     "extra": {
@@ -18099,7 +18099,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:00.660224Z",
+    "updated_at": "2026-04-30T15:38:17.118423Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Bu süslü bir yok etme alanı runesi",
     "extra": {
@@ -18121,7 +18121,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:01.379288Z",
+    "updated_at": "2026-04-30T15:38:17.295044Z",
     "en_hash": "afdf2f07d4f14040fff552146ae6390d",
     "attempted_preview": "Bu süslü bir ışık büyüsü füze rünü",
     "extra": {
@@ -18143,7 +18143,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:01.530627Z",
+    "updated_at": "2026-04-30T15:38:19.774989Z",
     "en_hash": "afdf2f07d4f14040fff552146ae6390d",
     "attempted_preview": "Bu süslü bir ışık büyüsü füze rünü",
     "extra": {
@@ -18165,7 +18165,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:01.621143Z",
+    "updated_at": "2026-04-30T15:38:19.993643Z",
     "en_hash": "a3941ffba3cca1b52d1610c6b29884fc",
     "attempted_preview": "Bu ağır kitabın başlığı şöyle: 'Rabaz' Kısaltılmamış Botanik Almanağı'",
     "extra": {
@@ -18187,7 +18187,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:04.476294Z",
+    "updated_at": "2026-04-30T15:38:24.377113Z",
     "en_hash": "7353cd27d0e075e4188fe27bf8194a41",
     "attempted_preview": "Onu Bozo'nun şarap şişeleriyle dolu sandığıyla değiştirdin",
     "extra": {
@@ -18209,7 +18209,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:04.986416Z",
+    "updated_at": "2026-04-30T15:38:24.550901Z",
     "en_hash": "c80943353ada3b6b9a2eee6b969c8334",
     "attempted_preview": "Küçük şeytan uyandı",
     "extra": {
@@ -18231,7 +18231,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:05.106256Z",
+    "updated_at": "2026-04-30T15:38:25.095439Z",
     "en_hash": "7df3f22d5951df2c00ec8733bb0bc9aa",
     "attempted_preview": "Küçük şeytan uyuyor",
     "extra": {
@@ -18253,7 +18253,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:05.224654Z",
+    "updated_at": "2026-04-30T15:38:25.431268Z",
     "en_hash": "7798c9db985c9a8b58cc43c5ec490000",
     "attempted_preview": "Küçük şeytan memnun",
     "extra": {
@@ -18275,7 +18275,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:06.723949Z",
+    "updated_at": "2026-04-30T15:38:25.880683Z",
     "en_hash": "c36f16bff6c91f7f473e7340449bb173",
     "attempted_preview": "Küçük şeytan öpmek istiyor",
     "extra": {
@@ -18297,7 +18297,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:06.961316Z",
+    "updated_at": "2026-04-30T15:38:26.612837Z",
     "en_hash": "63235bbda9574445e9496dab2a6ca937",
     "attempted_preview": "Tuzak kurdu hareketsiz kıldı ve küçülttü",
     "extra": {
@@ -18319,7 +18319,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:07.198888Z",
+    "updated_at": "2026-04-30T15:38:27.119030Z",
     "en_hash": "1f5dbb781e453bd540fbe20a5c7c45fe",
     "attempted_preview": "Biraz deri almak için bu bıçağı ölü bir savaş kurdunun üzerinde kullanın. Onu kaybetmeyin ve mağarayı terk etmeyin",
     "extra": {
@@ -18341,7 +18341,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:07.380377Z",
+    "updated_at": "2026-04-30T15:38:28.006638Z",
     "en_hash": "aa2ab6ed1566c584b962506b18482c20",
     "attempted_preview": "Bu anahtarın tuhaf şekli ışıkta usulca parlıyor",
     "extra": {
@@ -18363,7 +18363,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:07.680554Z",
+    "updated_at": "2026-04-30T15:38:29.612531Z",
     "en_hash": "e8f275431dd2a4c0cf9cef90e2684128",
     "attempted_preview": "Derin bir muhafızdan çalınan bir kemer tokası",
     "extra": {
@@ -18385,7 +18385,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:09.862521Z",
+    "updated_at": "2026-04-30T15:38:32.956011Z",
     "en_hash": "fd3552c39886db2debf3933f425d3433",
     "attempted_preview": "Bu sandık fosilleşmiş mercanlarla dolu. Zamanında engellenmesi gerekiyor yoksa paslanır",
     "extra": {
@@ -18407,7 +18407,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:13.286089Z",
+    "updated_at": "2026-04-30T15:38:37.437403Z",
     "en_hash": "d09d43bde11ada7b26331f3beb99fa62",
     "attempted_preview": "Bu sandık fosilleşmiş mercanlarla dolu. Zamanında engellenmesi gerekiyor yoksa paslanır.",
     "extra": {
@@ -18429,7 +18429,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:13.692151Z",
+    "updated_at": "2026-04-30T15:38:38.517093Z",
     "en_hash": "3ef67566e087afacf0e4eb12e9a74fa1",
     "attempted_preview": "Karanlık, denizdeki canlıları yakalayarak tüm canlıları yok eder. Bu siyah boşluğa dikkat edin",
     "extra": {
@@ -18451,7 +18451,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:14.281465Z",
+    "updated_at": "2026-04-30T15:38:39.079697Z",
     "en_hash": "e651d792e0f39e1745df3e5f891c26ea",
     "attempted_preview": "Sandalye bu garip makineye bağlı. Uygun talimatlarınız varsa bunu kullanabilirsiniz.",
     "extra": {
@@ -18473,7 +18473,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:18.014281Z",
+    "updated_at": "2026-04-30T15:38:40.850164Z",
     "en_hash": "502aa3f6387a8aa8f6aef4c3fa1cb124",
     "attempted_preview": "Evinizde pasta dolabı yapmak için kullanın",
     "extra": {
@@ -18495,7 +18495,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:18.217974Z",
+    "updated_at": "2026-04-30T15:38:41.019006Z",
     "en_hash": "85c7ef7f6a17d9e060bc0182323c8d83",
     "attempted_preview": "Boş. Biraz KIRMIZI spor topla",
     "extra": {
@@ -18517,7 +18517,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:18.445937Z",
+    "updated_at": "2026-04-30T15:38:41.708193Z",
     "en_hash": "0f8b98d30e2ded148860fce1e059e14a",
     "attempted_preview": "Gün ışığında bile yıldızlar bu kristal baltanın her yönünde yansıyor gibi görünüyor",
     "extra": {
@@ -18539,7 +18539,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T23:22:18.653460Z",
+    "updated_at": "2026-04-30T15:38:41.883459Z",
     "en_hash": "7ef9bd1cc5a2a0699766c2b34237a24f",
     "attempted_preview": "Kulübünüzün dövüş ve koruma becerilerini çevrimdışı olarak geliştirmek için bu heykeli kullanın.",
     "extra": {
@@ -18561,7 +18561,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T23:22:21.756890Z",
+    "updated_at": "2026-04-30T15:38:46.011958Z",
     "en_hash": "04d6915c249ba4ffd547f2c8c24cbbf9",
     "attempted_preview": "ölü dönek şövalye",
     "extra": {
@@ -18581,7 +18581,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T23:22:21.879206Z",
+    "updated_at": "2026-04-30T15:38:46.162175Z",
     "en_hash": "04d6915c249ba4ffd547f2c8c24cbbf9",
     "attempted_preview": "ölü dönek şövalye",
     "extra": {
@@ -93199,5 +93199,365 @@
         "conflicting_translation": "piatră pillar"
       }
     }
+  },
+  "tr::items.json::item.14473.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14473.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.593745Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14474.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14474.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.600704Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14475.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14475.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.608006Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14476.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14476.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.614695Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14477.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14477.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.621519Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14478.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14478.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.628467Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14479.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14479.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.635243Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.1448.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.1448.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-30T15:37:43.640074Z",
+    "en_hash": "a61f46f78c42864ccd64016660c3c963",
+    "attempted_hash": "e77deaf16e3b3ea3037c5a2fb5205d03",
+    "attempted_preview": "lav duvar"
+  },
+  "tr::items.json::item.14480.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14480.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.646779Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14481.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14481.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.653370Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14482.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14482.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.660228Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14483.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14483.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.666865Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14484.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14484.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.673518Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14485.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14485.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.680223Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14486.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14486.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.686810Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14487.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14487.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.693480Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14488.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14488.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.700100Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14489.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14489.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.706610Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.1449.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.1449.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-30T15:37:43.711256Z",
+    "en_hash": "a61f46f78c42864ccd64016660c3c963",
+    "attempted_hash": "e77deaf16e3b3ea3037c5a2fb5205d03",
+    "attempted_preview": "lav duvar"
+  },
+  "tr::items.json::item.14490.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14490.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.717905Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14491.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14491.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.724617Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14492.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14492.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.731190Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14493.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14493.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.737809Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14494.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14494.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.744342Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14495.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14495.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.750962Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14496.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14496.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.757964Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14497.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14497.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.764691Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14498.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14498.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.771469Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.14499.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.14499.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.778740Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
+    "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "tr::items.json::item.1450.name": {
+    "lang": "tr",
+    "json_file": "items.json",
+    "key": "item.1450.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-30T15:37:43.786116Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "786cd9ed50a1dc210c293d35d76db47c",
+    "attempted_preview": "Taş Duvar"
   }
 }

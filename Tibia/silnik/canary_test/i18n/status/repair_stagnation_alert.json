@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-04-30T02:59:40.436365Z",
+  "timestamp": "2026-04-30T15:38:41.055286Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
-  "status": "ok",
+  "status": "warming_up",
   "alert": false,
-  "message": "Repair queue healthy (top_target_changed)",
-  "reason": "top_target_changed",
+  "message": "Stagnation window not ready (window_too_short), span=12.64h samples=1",
+  "reason": "window_too_short",
   "top_key": "es:npc.json",
   "top_count": 2,
-  "old_total": 114127,
+  "old_total": 113385,
   "new_total": 113385,
-  "decrease_pct": 0.65,
-  "old_ts": "2026-04-29T20:47:44.810772Z",
-  "new_ts": "2026-04-30T02:58:35.375336Z",
-  "hours_elapsed": 5.995,
-  "sample_count": 12,
+  "decrease_pct": 0.0,
+  "old_ts": "2026-04-30T02:58:35.375336Z",
+  "new_ts": "2026-04-30T15:37:02.449420Z",
+  "hours_elapsed": 12.641,
+  "sample_count": 1,
   "per_lang_trend": {
     "ar": {
       "old": 878,
@@ -60,10 +60,10 @@
       "decrease_pct": 0.0
     },
     "de": {
-      "old": 19815,
+      "old": 19073,
       "new": 19073,
-      "delta": 742,
-      "decrease_pct": 3.74
+      "delta": 0,
+      "decrease_pct": 0.0
     },
     "el": {
       "old": 638,

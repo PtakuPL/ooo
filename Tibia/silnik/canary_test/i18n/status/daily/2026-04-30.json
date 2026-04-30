@@ -2,12 +2,17 @@
   "cycles": 1,
   "date": "2026-04-30",
   "errors": {
-    "count": 0
+    "count": 1
   },
-  "generated_at_utc": "2026-04-30T15:36:00Z",
+  "generated_at_utc": "2026-04-30T15:41:38Z",
   "work": {
     "auto_translate": {
-      "langs": {}
+      "langs": {
+        "TR": {
+          "skipped": 0,
+          "translated": 30
+        }
+      }
     },
     "compact_keys": {
       "exported_langs": [],

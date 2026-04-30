@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T23:49:35.418680Z",
-  "language": "ro",
+  "timestamp": "2026-04-30T15:38:46.676632Z",
+  "language": "tr",
   "json_file": "items.json",
-  "translated": 60,
+  "translated": 30,
   "entries": [
     {
-      "key": "item.11669.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14482.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11670.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14483.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.1177.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14484.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.1178.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14485.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.1179.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14486.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11809.name",
-      "en": "wooden trunk",
-      "translated": "trunchi de lemn",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14487.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11810.name",
-      "en": "wooden trunk",
-      "translated": "trunchi de lemn",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14488.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11815.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14489.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11816.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.1449.name",
+      "en": "lava wall",
+      "translated": "lav duvar",
+      "source": "simple"
     },
     {
-      "key": "item.11817.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14490.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11818.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14491.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11823.name",
-      "en": "wolf hide",
-      "translated": "ascunzătoare de lup",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14492.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11824.name",
-      "en": "wolf hide",
-      "translated": "ascunzătoare de lup",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14493.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11835.name",
-      "en": "hanging fur",
-      "translated": "blană atârnată",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14494.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11836.name",
-      "en": "hanging fur",
-      "translated": "blană atârnată",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "item.14495.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.13656.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
+      "key": "item.14496.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.13658.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
+      "key": "item.14497.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.14760.desc",
-      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
-      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
-      "source": "term_consistency_autofix"
+      "key": "item.14498.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.10507.name",
-      "en": "lamp",
-      "translated": "lampă",
-      "source": "canonical_name_semantic_autofix"
+      "key": "item.14499.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "item.11365.name",
-      "en": "ramp",
-      "translated": "rampă",
-      "source": "canonical_name_semantic_autofix"
+      "key": "item.1450.name",
+      "en": "stone wall",
+      "translated": "Taş Duvar",
+      "source": "simple"
     }
   ],
   "filtered_untranslated_marker": 0

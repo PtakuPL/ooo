@@ -1,13 +1,13 @@
 {
   "lang": "ro",
-  "coverage_pct": 74.2,
+  "coverage_pct": 74.3,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-04-29T19:44:45.886501Z",
-  "issues_total": 493,
+  "checked_at": "2026-04-30T15:39:57.516540Z",
+  "issues_total": 494,
   "issues_by_type": {
-    "consistency_in_language": 31,
+    "consistency_in_language": 32,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 62
   },
@@ -15,29 +15,10 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "golden rune emblem",
-      "variants": [
-        "emblemăăăăăăăăăă de rună de aur",
-        "emblemăăăăăăăăăăăăă de rună de aur",
-        "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur"
-      ],
-      "variants_count": 4,
-      "examples": [
-        "items:item.11604.name",
-        "items:item.11606.name",
-        "items:item.11608.name",
-        "items:item.11610.name",
-        "items:item.11612.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
       "en": "silver rune emblem",
       "variants": [
-        "emblemăăăăăăăăăă de rună de argint",
-        "emblemăăăăăăăăăăăăă de rună de argint",
+        "emblemăăăăăăăăăăăăăă de rună de argint",
+        "emblemăăăăăăăăăăăăăăăăă de rună de argint",
         "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint"
       ],
       "variants_count": 3,
@@ -47,6 +28,24 @@
         "items:item.11607.name",
         "items:item.11609.name",
         "items:item.11611.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "golden rune emblem",
+      "variants": [
+        "emblemăăăăăăăăăăăăăă de rună de aur",
+        "emblemăăăăăăăăăăăăăăăăă de rună de aur",
+        "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur"
+      ],
+      "variants_count": 3,
+      "examples": [
+        "items:item.11604.name",
+        "items:item.11606.name",
+        "items:item.11608.name",
+        "items:item.11610.name",
+        "items:item.11612.name"
       ]
     },
     {
@@ -97,7 +96,7 @@
       "en": "This lamp is glowing very dimly.",
       "variants": [
         "Această lampă luminează foarte slab.",
-        "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab."
+        "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab."
       ],
       "variants_count": 2,
       "examples": [
@@ -105,6 +104,23 @@
         "items:item.13658.desc",
         "items:item.13655.desc",
         "items:item.13657.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "stone pillar",
+      "variants": [
+        "piatră pillar",
+        "piatră stâlp"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.15611.name",
+        "items:item.2152.name",
+        "items:item.2263.name",
+        "items:item.2289.name",
+        "items:item.8388.name"
       ]
     },
     {
@@ -4376,7 +4392,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 18,
-      "lang_ratio": 3.389,
+      "lang_ratio": 3.5,
       "pl_ratio": 1.278
     },
     {
@@ -4394,7 +4410,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 18,
-      "lang_ratio": 3.389,
+      "lang_ratio": 3.5,
       "pl_ratio": 1.278
     },
     {
@@ -4439,7 +4455,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 32,
-      "lang_ratio": 3.219,
+      "lang_ratio": 3.344,
       "pl_ratio": 0.906
     },
     {
@@ -4448,7 +4464,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 32,
-      "lang_ratio": 3.219,
+      "lang_ratio": 3.344,
       "pl_ratio": 0.906
     },
     {

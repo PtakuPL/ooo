@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-30T15:38:00.677034Z",
+  "timestamp": "2026-04-30T15:42:07.958211Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 626,
-    "heartbeat_at": "2026-04-30T15:35:56Z",
-    "heartbeat_age_s": 124.7,
-    "cycle": 1,
+    "heartbeat_at": "2026-04-30T15:41:14Z",
+    "heartbeat_age_s": 54.0,
+    "cycle": 2,
     "mode": "continuous",
     "category": "?",
     "pid_alive": true,
@@ -15,21 +15,14 @@
     "state": "healthy",
     "throughput_per_h": 0.0,
     "guard_fail_rate_pct": 0.0,
-    "issues": [
-      "no_recent_entries_but_worker_log_fresh (window=20min, log_age=230s)"
-    ]
+    "issues": []
   },
   "translation_kpi": {
     "window_entries": 200,
-    "total_translated": 8938,
-    "total_guard_fail": 281,
-    "guard_fail_rate_pct": 3.05,
+    "total_translated": 8929,
+    "total_guard_fail": 277,
+    "guard_fail_rate_pct": 3.01,
     "per_lang": {
-      "ro": {
-        "translated": 1150,
-        "guard_fail": 64,
-        "cycles": 26
-      },
       "it": {
         "translated": 833,
         "guard_fail": 16,
@@ -46,9 +39,9 @@
         "cycles": 49
       },
       "tr": {
-        "translated": 1181,
+        "translated": 1211,
         "guard_fail": 0,
-        "cycles": 26
+        "cycles": 27
       },
       "ru": {
         "translated": 1188,
@@ -59,18 +52,23 @@
         "translated": 1514,
         "guard_fail": 127,
         "cycles": 25
+      },
+      "ro": {
+        "translated": 1111,
+        "guard_fail": 60,
+        "cycles": 25
       }
     }
   },
   "adaptive_batch": {
     "batch_size": 50,
-    "guard_fail_rate": 0.81,
-    "reason": "increase_low_fail_rate=0.8%"
+    "guard_fail_rate": 0.6,
+    "reason": "increase_low_fail_rate=0.6%"
   },
   "dispatch": {
-    "last_target": "tr:items.json",
-    "cycle_counter": 13315,
-    "pending_total": 28571,
+    "last_target": "ru:items.json",
+    "cycle_counter": 13316,
+    "pending_total": 24020,
     "candidates": 89,
     "skipped_backoff": 7,
     "skipped_guard_fail": 0,
@@ -97,42 +95,40 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-30T15:38:00.677034Z",
+    "generated_at_utc": "2026-04-30T15:42:07.958211Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
-    "current_key": "tr:items.json",
+    "current_key": "ru:items.json",
     "current_phase": "AUTO_TRANSLATE",
     "current_stage": "heartbeat_tick",
-    "current_lang": "tr",
+    "current_lang": "ru",
     "current_file": "items.json",
-    "cycle": 1,
-    "heartbeat_at_utc": "2026-04-30T15:35:56Z",
-    "heartbeat_age_s": 124.677,
+    "cycle": 2,
+    "heartbeat_at_utc": "2026-04-30T15:41:14Z",
+    "heartbeat_age_s": 53.958,
     "worker": {
       "pid": 626,
       "pid_alive": true,
-      "heartbeat_at_utc": "2026-04-30T15:35:56Z",
-      "heartbeat_age_s": 124.677,
+      "heartbeat_at_utc": "2026-04-30T15:41:14Z",
+      "heartbeat_age_s": 53.958,
       "mode": "continuous",
       "category": "",
-      "cycle": 1,
-      "activity_heartbeat_at_utc": "2026-04-30T15:37:02Z",
-      "activity_heartbeat_age_s": 58.677
+      "cycle": 2,
+      "activity_heartbeat_at_utc": "2026-04-30T15:41:14Z",
+      "activity_heartbeat_age_s": 53.958
     },
     "guardian": {
-      "timestamp": "2026-04-30T03:08:17.601669Z",
+      "timestamp": "2026-04-30T15:41:30.217388Z",
       "state": "healthy",
-      "heartbeat_age_s": 242.6,
+      "heartbeat_age_s": 40.2,
       "pid_alive": true,
-      "worker_log_age_s": 230.5,
-      "guard_last_entry_age_s": 11915.0,
+      "worker_log_age_s": 16.1,
+      "guard_last_entry_age_s": 152.7,
       "active_log_grace_seconds": 300.0,
       "throughput_per_h": 0.0,
       "guard_fail_rate_pct": 0.0,
-      "issues": [
-        "no_recent_entries_but_worker_log_fresh (window=20min, log_age=230s)"
-      ]
+      "issues": []
     },
     "guardian_daemon": {
       "timestamp": "2026-04-30T15:35:54.174232Z",
@@ -140,7 +136,7 @@
       "pid": 436,
       "owner_pid": 436,
       "owner_pid_alive": true,
-      "lock_age_s": 126.0
+      "lock_age_s": 38.0
     },
     "thresholds": {
       "heartbeat_aging_seconds": 300.0,
@@ -149,8 +145,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-30T14:37:03.080588Z",
-    "window_end_utc": "2026-04-30T15:37:03.080588Z",
+    "window_start_utc": "2026-04-30T14:41:42.814796Z",
+    "window_end_utc": "2026-04-30T15:41:42.814796Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -158,27 +154,34 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 1,
+    "total_cycles": 5,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 1
+      "AUTO_TRANSLATE": 5
     },
-    "auto_translate_cycles": 1,
+    "auto_translate_cycles": 5,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 0,
+    "translated": 30,
     "guard_fail": 0,
     "guard_fail_rate_pct": 0.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 0.0,
-    "throughput_runtime_hours": 0.0026,
+    "throughput_keys_per_h": 188.0,
+    "throughput_runtime_hours": 0.1596,
     "throughput_runtime_source": "cycle_duration_ms",
-    "suspicious_total": 0,
+    "suspicious_total": 41,
     "deferred_total": 0,
     "top_deferred_reasons": [],
-    "top_guard_fail_targets": []
+    "top_guard_fail_targets": [
+      {
+        "target": "tr/items.json",
+        "translated": 30,
+        "guard_fail": 0,
+        "guard_command": 0
+      }
+    ]
   },
   "coverage": {
     "ar": {
@@ -412,7 +415,7 @@
       "en_copy": 3875
     },
     "tr": {
-      "coverage_pct": 35.91,
+      "coverage_pct": 35.95,
       "missing": 0,
       "en_copy": 3838
     },
@@ -466,7 +469,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-30T15:38:00.805904Z",
+    "statusd_live_snapshot_at_utc": "2026-04-30T15:42:08.202831Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -873,8 +876,8 @@
       },
       "tr": {
         "server_keys": 70637,
-        "server_translated": 24810,
-        "server_pct": 35.12,
+        "server_translated": 24840,
+        "server_pct": 35.17,
         "client_keys": 3899,
         "client_translated": 1959,
         "client_pct": 50.24
@@ -1012,8 +1015,8 @@
     "critical_count": 15000,
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
-    "entries": 0,
-    "translated_total": 0,
+    "entries": 1,
+    "translated_total": 30,
     "suspicious_high_total": 0,
     "suspicious_high_rate_pct": 0.0,
     "status": "clean",
@@ -1023,22 +1026,22 @@
     "top_categories": [],
     "per_lang": [],
     "per_domain": [],
-    "latest_timestamp": ""
+    "latest_timestamp": "2026-04-30T15:38:46.674401Z"
   },
   "deferred_retry_pipeline": {
     "available": true,
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-30T15:37:55.822328Z",
-    "latest_age_s": 4.855,
+    "latest_timestamp": "2026-04-30T15:38:53.678148Z",
+    "latest_age_s": 194.28,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 9020,
     "retry_due_now": 6084,
     "manual_review_locked": 2933,
     "cooldown_locked": 2,
-    "manual_review_queue_size": 3106,
+    "manual_review_queue_size": 3138,
     "deferred_backlog_total": 388,
     "deferred_backlog_total_all_time": 52227,
     "deferred_backlog_window_seconds": 86400,
@@ -1090,9 +1093,9 @@
     "stats": {
       "enqueued": 0,
       "suppressed_cooldown": 0,
-      "suppressed_manual_review": 0,
+      "suppressed_manual_review": 39,
       "deduped_ttl": 0,
-      "manual_review_escalations": 1
+      "manual_review_escalations": 33
     },
     "alerts": []
   },
@@ -1102,8 +1105,8 @@
     "active": false,
     "pending_langs": [],
     "pending_key": "",
-    "cycle_counter": 13315,
-    "start_cycle": 13315,
+    "cycle_counter": 13316,
+    "start_cycle": 13316,
     "cycle_delta": 0,
     "started_at": "",
     "active_minutes": 0.0,
@@ -1161,17 +1164,6 @@
   ],
   "recent_errors": [
     {
-      "action": "placeholder=0 command=0 pipe=0",
-      "category": "ru",
-      "cycle": 27,
-      "domain": "AUTO",
-      "error": "guard_fail=2",
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "stage": "AUTO_TRANSLATE_GUARD",
-      "t": "2026-04-29T23:37:02Z"
-    },
-    {
       "action": "review placeholder/en-copy backlog",
       "category": "cs",
       "cycle": 28,
@@ -1192,6 +1184,17 @@
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_NO_PROGRESS",
       "t": "2026-04-29T23:49:42Z"
+    },
+    {
+      "action": "review placeholder/en-copy backlog",
+      "category": "tr",
+      "cycle": 1,
+      "domain": "AUTO",
+      "error": "strict_skipped_done=4180 translated=30",
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "stage": "AUTO_TRANSLATE_NO_PROGRESS",
+      "t": "2026-04-30T15:38:57Z"
     }
   ],
   "thresholds_snapshot": {
@@ -1234,8 +1237,8 @@
       "baseline_ts_utc": "2026-04-29T19:40:39.756005Z",
       "auto_baseline_on_epoch_change": true,
       "epoch_cooldown_seconds": 600,
-      "runtime_epoch_id": "a3a4d82ab09c8d9a",
-      "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777518258|restart_cause=worker_missing|worker_pid=572",
+      "runtime_epoch_id": "2b90c56a15f170e8",
+      "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777563359|restart_cause=worker_missing|worker_pid=626",
       "baseline_source": "manual_config",
       "auto_baseline_applied": false,
       "auto_baseline_reason": "manual_baseline_active",
@@ -1252,8 +1255,8 @@
     }
   },
   "forced_command_fast_runtime": {
-    "runtime_epoch_id": "a3a4d82ab09c8d9a",
-    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777518258|restart_cause=worker_missing|worker_pid=572",
+    "runtime_epoch_id": "2b90c56a15f170e8",
+    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777563359|restart_cause=worker_missing|worker_pid=626",
     "baseline_ts_utc": "2026-04-29T19:40:39.756005Z",
     "baseline_source": "manual_config",
     "auto_baseline_on_epoch_change": true,

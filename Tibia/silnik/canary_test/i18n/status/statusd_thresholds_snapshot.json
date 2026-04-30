@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-30T15:38:00.677034Z",
+  "timestamp": "2026-04-30T15:42:07.958211Z",
   "source_of_truth": "statusd_thresholds_file",
   "config_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/statusd_thresholds.json",
   "env_overrides_enabled": false,
@@ -39,8 +39,8 @@
     "baseline_ts_utc": "2026-04-29T19:40:39.756005Z",
     "auto_baseline_on_epoch_change": true,
     "epoch_cooldown_seconds": 600,
-    "runtime_epoch_id": "a3a4d82ab09c8d9a",
-    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777518258|restart_cause=worker_missing|worker_pid=572",
+    "runtime_epoch_id": "2b90c56a15f170e8",
+    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777563359|restart_cause=worker_missing|worker_pid=626",
     "baseline_source": "manual_config",
     "auto_baseline_applied": false,
     "auto_baseline_reason": "manual_baseline_active",

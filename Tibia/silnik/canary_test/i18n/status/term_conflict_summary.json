@@ -1,141 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:48:07.038279Z",
-  "lang": "ro",
+  "generated_at_utc": "2026-04-30T15:38:41.883550Z",
+  "lang": "tr",
   "json_file": "items.json",
   "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 80,
+  "term_conflicts_total": 71,
   "keys_visited": 2000,
-  "keys_scanned": 341,
+  "keys_scanned": 337,
   "visit_limit_hit": true,
-  "keys_with_term_usages": 111,
-  "keys_with_conflicts": 44,
-  "term_conflict_rate_pct": 39.64,
-  "term_conflict_rate_delta_pct": 39.64,
-  "registry_terms_total": 14398,
-  "auto_fixed_english_name_leaks": 3,
-  "inflection_suspects_flagged": 3,
-  "manual_review_enqueued": 77,
+  "keys_with_term_usages": 125,
+  "keys_with_conflicts": 32,
+  "term_conflict_rate_pct": 25.6,
+  "term_conflict_rate_delta_pct": 25.6,
+  "registry_terms_total": 9099,
+  "auto_fixed_english_name_leaks": 0,
+  "inflection_suspects_flagged": 1,
+  "manual_review_enqueued": 70,
   "conflict_type_breakdown": {
-    "canonical_term_missing": 77,
-    "canonical_term_inflection_suspect": 3
+    "canonical_term_inflection_suspect": 1,
+    "canonical_term_missing": 70
   },
   "surface_breakdown": {
     "items": {
-      "keys_with_term_usages": 111,
-      "keys_with_conflicts": 44,
-      "term_conflicts_total": 80
+      "keys_with_term_usages": 125,
+      "keys_with_conflicts": 32,
+      "term_conflicts_total": 71
     }
   },
   "top_conflicts": [
     {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "peşte",
-      "canonical_en": "fish",
-      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "kitap",
+      "canonical_en": "book",
+      "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
       "source_file": "items.json",
-      "source_key": "item.10245.name"
+      "source_key": "item.12276.name"
     },
     {
-      "key": "item.10218.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "peşte",
-      "canonical_en": "fish",
-      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.10246.name"
+      "source_key": "item.116.name"
     },
     {
-      "key": "item.10288.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "tronul dragonului",
-      "canonical_en": "dragon throne",
-      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.10286.name"
+      "source_key": "item.117.name"
     },
     {
-      "key": "item.10288.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "tronul dragonului",
-      "canonical_en": "dragon throne",
-      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.10287.name"
+      "source_key": "item.118.name"
     },
     {
-      "key": "item.11473.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Aprinde",
-      "canonical_en": "Light",
-      "translated_text": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
-      "source_file": "spells.json",
-      "source_key": "spell.light.name"
-    },
-    {
-      "key": "item.11609.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Sudden Death Rune",
-      "canonical_en": "sudden death rune",
-      "translated_text": "Este o rună împodobită a morții subite",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.3155.name"
+      "source_key": "item.12763.name"
     },
     {
-      "key": "item.11610.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Sudden Death Rune",
-      "canonical_en": "sudden death rune",
-      "translated_text": "Este o rună împodobită a morții subite",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.3155.name"
+      "source_key": "item.12764.name"
     },
     {
-      "key": "item.11611.desc",
+      "key": "item.10247.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Magic Wall Rune",
-      "canonical_en": "magic wall rune",
-      "translated_text": "Este o rună magică de perete împodobită",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandıkta bir dizi silah var",
       "source_file": "items.json",
-      "source_key": "item.3180.name"
+      "source_key": "item.14166.name"
     },
     {
-      "key": "item.11611.desc",
+      "key": "item.11328.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Runa peretelui magic",
-      "canonical_en": "Magic Wall Rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "spells.json",
-      "source_key": "spell.magic_wall_rune.name"
-    },
-    {
-      "key": "item.11612.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Magic Wall Rune",
-      "canonical_en": "magic wall rune",
-      "translated_text": "Este o rună magică de perete împodobită",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
       "source_file": "items.json",
-      "source_key": "item.3180.name"
+      "source_key": "item.116.name"
     },
     {
-      "key": "item.11612.desc",
+      "key": "item.11328.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Runa peretelui magic",
-      "canonical_en": "Magic Wall Rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "spells.json",
-      "source_key": "spell.magic_wall_rune.name"
-    },
-    {
-      "key": "item.11613.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "anima rune moarte",
-      "canonical_en": "animate dead rune",
-      "translated_text": "Este o rună moartă animată împodobită",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
       "source_file": "items.json",
-      "source_key": "item.3203.name"
+      "source_key": "item.117.name"
+    },
+    {
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "source_file": "items.json",
+      "source_key": "item.118.name"
+    },
+    {
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "source_file": "items.json",
+      "source_key": "item.12763.name"
+    },
+    {
+      "key": "item.11328.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "kasa",
+      "canonical_en": "crate",
+      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "source_file": "items.json",
+      "source_key": "item.12764.name"
     }
   ]
 }

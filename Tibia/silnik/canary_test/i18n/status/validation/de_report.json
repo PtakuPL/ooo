@@ -2,24 +2,48 @@
   "lang": "de",
   "script_group": "latin",
   "total_keys": 74536,
-  "translated": 73098,
-  "identical_to_en": 64847,
-  "placeholder_keys": 1438,
-  "coverage_pct": 98.1,
-  "issues_total": 10,
+  "translated": 73324,
+  "identical_to_en": 64019,
+  "placeholder_keys": 1212,
+  "coverage_pct": 98.4,
+  "issues_total": 14,
   "issues_by_type": {
+    "V1_placeholder_mismatch": 6,
     "V4_artifact": 4,
-    "V2_length_ratio": 4,
-    "V1_placeholder_mismatch": 2
+    "V2_length_ratio": 4
   },
   "issues_by_severity": {
-    "CRITICAL": 2,
+    "CRITICAL": 6,
     "HIGH": 4,
     "MEDIUM": 4,
     "LOW": 0
   },
   "score": 100.0,
   "worst_keys": [
+    {
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.amber.stdmod_31",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.angelo.say_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "npc.jean_pierre.say_3",
       "category": "npc",
@@ -83,11 +107,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 413,
+    "issues_total": 414,
     "consistency": 3,
     "pl_reference": 400,
-    "length_ratio": 10,
+    "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-04-29T19:44:35.754009Z"
+  "validated_at": "2026-04-30T15:39:49.214905Z"
 }

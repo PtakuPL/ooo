@@ -1,13 +1,13 @@
 {
   "lang": "cs",
-  "coverage_pct": 74.1,
+  "coverage_pct": 74.3,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-04-29T19:44:35.188415Z",
-  "issues_total": 431,
+  "checked_at": "2026-04-30T15:39:48.620105Z",
+  "issues_total": 432,
   "issues_by_type": {
-    "consistency_in_language": 13,
+    "consistency_in_language": 14,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 18
   },
@@ -71,6 +71,23 @@
       "examples": [
         "items:item.23729.name",
         "monsters:monster.lost_time.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "broken stone wall",
+      "variants": [
+        "poškozená kamenná zeď",
+        "zlomená kamenná zeď"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.1573.name",
+        "items:item.1574.name",
+        "items:item.1575.name",
+        "items:item.1576.name",
+        "items:item.1577.name"
       ]
     },
     {

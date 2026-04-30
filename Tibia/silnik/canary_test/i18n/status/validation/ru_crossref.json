@@ -1,13 +1,13 @@
 {
   "lang": "ru",
-  "coverage_pct": 51.1,
+  "coverage_pct": 51.2,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-04-29T19:44:47.523342Z",
-  "issues_total": 525,
+  "checked_at": "2026-04-30T15:39:58.920725Z",
+  "issues_total": 526,
   "issues_by_type": {
-    "consistency_in_language": 90,
+    "consistency_in_language": 91,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 35
   },
@@ -925,23 +925,6 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "small stream",
-      "variants": [
-        "маленький поток",
-        "маленький ручей"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "items:item.14913.name",
-        "items:item.14914.name",
-        "items:item.14915.name",
-        "items:item.14916.name",
-        "items:item.14917.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
       "en": "fossilised spine",
       "variants": [
         "ископаемый позвоночник",
@@ -968,6 +951,40 @@
       "examples": [
         "items:item.15124.name",
         "items:item.15125.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "mossy spots",
+      "variants": [
+        "мохнатые пятна",
+        "моховые пятна"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.15393.name",
+        "items:item.15394.name",
+        "items:item.15395.name",
+        "items:item.15396.name",
+        "items:item.15397.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "basalt crystal wall",
+      "variants": [
+        "базальтовая кристальная стена",
+        "кристальная стена из базальта"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.15420.name",
+        "items:item.15421.name",
+        "items:item.15422.name",
+        "items:item.15423.name",
+        "items:item.15424.name"
       ]
     },
     {

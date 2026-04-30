@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-30T14:41:42.814796Z",
-  "window_end_utc": "2026-04-30T15:41:42.814796Z",
+  "window_start_utc": "2026-04-30T14:45:30.875009Z",
+  "window_end_utc": "2026-04-30T15:45:30.875009Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -25,9 +25,31 @@
   "throughput_keys_per_h": 188.0,
   "throughput_runtime_hours": 0.1596,
   "throughput_runtime_source": "cycle_duration_ms",
-  "suspicious_total": 41,
-  "deferred_total": 0,
-  "top_deferred_reasons": [],
+  "suspicious_total": 111,
+  "deferred_total": 34,
+  "top_deferred_reasons": [
+    {
+      "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+      "count": 30,
+      "share_pct": 88.2,
+      "top_target": "ru/items.json",
+      "top_target_count": 30
+    },
+    {
+      "reason": "retry_loop_cooldown_default",
+      "count": 2,
+      "share_pct": 5.9,
+      "top_target": "ru/items.json",
+      "top_target_count": 2
+    },
+    {
+      "reason": "existing_canonical_name_quality_mixed_scripts",
+      "count": 2,
+      "share_pct": 5.9,
+      "top_target": "ru/items.json",
+      "top_target_count": 2
+    }
+  ],
   "top_guard_fail_targets": [
     {
       "target": "tr/items.json",

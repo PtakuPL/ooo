@@ -62241,11 +62241,281 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:06.114748Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.10207.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use it in your house to reveal a snowman",
+      "attempted_translation": "Используйте его в своем доме, чтобы увидеть снеговика.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'sНетwman' for EN 'snowman' from items.json:item.30336.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:12.575619Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.10218.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This fish has been salted and already prepared as provision for soldiers",
+      "attempted_translation": "Эту рыбу засолили и уже заготовили на провизию солдатам.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'рыба' for EN 'fish' from items.json:item.10245.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:35.538133Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.10426.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It seems just perfect to try and create something out of it with a sharp obsidian knife",
+      "attempted_translation": "Кажется, просто идеально попробовать создать из этого что-нибудь острым обсидиановым ножом.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'obsidian нож' for EN 'obsidian knife' from items.json:item.5908.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:35.939566Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.107.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains the smell of a freshly slain slime.",
+      "attempted_translation": "В нем присутствует запах только что убитого слизняка.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Слизь' for EN 'slime' from items.json:item.6.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:37.753847Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11331.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This bowl was made from sacred wood and is currently untreated",
+      "attempted_translation": "Эта чаша была сделана из священного дерева и в настоящее время не подвергается обработке.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'миска' for EN 'bowl' from items.json:item.2902.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:41.238473Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11333.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The water in this bowl has been purified",
+      "attempted_translation": "Вода в этой чаше очищена.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'миска' for EN 'bowl' from items.json:item.2902.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:41.516242Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11334.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Purified by sacred fires, this coal has the power to cleanse a significant amount of impure water",
+      "attempted_translation": "Очищенный священным огнем, этот уголь способен очистить значительное количество нечистой воды.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'вода' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:43.594352Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11339.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This chunk was cut from sacred wood in the temple complex and looks ideal for carving",
+      "attempted_translation": "Этот кусок был вырезан из священного дерева в храмовом комплексе и идеально подходит для резьбы.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'древесина' for EN 'wood' from items.json:item.5901.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:43.894799Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11347.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This bowl was coated with sacred clay and can be used to purify small amounts of corrupted water",
+      "attempted_translation": "Эта чаша была покрыта священной глиной, и ее можно использовать для очистки небольшого количества испорченной воды.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'вода' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:45.715799Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11364.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This plant poison is meant to destroy the growths near the Keeper's lair deep beneath the gardens",
+      "attempted_translation": "Этот растительный яд предназначен для уничтожения порослей возле логова Хранителя глубоко под садами.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Те Кипер' for EN 'The Keeper' from monsters.json:monster.the_keeper.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:45.913540Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11473.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's too large to be worn by humans, but rather light",
+      "attempted_translation": "Он слишком велик, чтобы его могли носить люди, но довольно легкий.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Свет' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:46.100181Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11492.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Though the name implies it, this simple and thin belt is not suited to be used as rope",
+      "attempted_translation": "Хотя название подразумевает, этот простой и тонкий ремень не подходит для использования в качестве веревки.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'верёвка' for EN 'rope' from items.json:item.3003.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:49.359895Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11587.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You're never sure what demonic candy balls will do, but they sure taste sweet and exciting",
+      "attempted_translation": "Никогда не знаешь, на что подействуют демонические леденцы, но на вкус они наверняка сладкие и захватывающие.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'конфеты' for EN 'candy' from items.json:item.6569.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:49.540023Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11603.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned ultimate healing rune",
+      "attempted_translation": "Это украшенная руна окончательного исцеления.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Окончательное исцеление' for EN 'Ultimate Healing' from spells.json:spell.ultimate_healing.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:49.764876Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11604.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned ultimate healing rune",
+      "attempted_translation": "Это украшенная руна окончательного исцеления.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Окончательное исцеление' for EN 'Ultimate Healing' from spells.json:spell.ultimate_healing.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3138
+    "total": 3153
   },
-  "updated_at": 1777563671
+  "updated_at": "2026-04-30T15:45:49.790738Z"
 }

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-30T15:48:38.213165Z",
+  "updated_at": "2026-04-30T15:55:18.895989Z",
   "tracked_keys": 9052,
   "retry_due_now": 6083,
   "manual_review_locked": 2933,
   "cooldown_locked": 3,
   "stats": {
-    "enqueued": 34,
+    "enqueued": 0,
     "suppressed_cooldown": 0,
-    "suppressed_manual_review": 27,
+    "suppressed_manual_review": 41,
     "deduped_ttl": 0,
-    "manual_review_escalations": 24,
+    "manual_review_escalations": 40,
     "partial_staged": 0,
     "partial_completed": 0,
-    "retry_loop_cooldown": 2,
+    "retry_loop_cooldown": 0,
     "retry_loop_manual_review": 0
   }
 }

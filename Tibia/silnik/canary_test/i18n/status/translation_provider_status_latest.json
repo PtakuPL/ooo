@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T15:51:57.813926Z",
+  "generated_at_utc": "2026-04-30T15:55:11.652859Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "simple",
@@ -130,7 +130,7 @@
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
         "recent_writes": 261,
-        "requests_today": 14
+        "requests_today": 20
       }
     },
     "openai_model_pool": {
@@ -173,31 +173,31 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 14,
+      "requests_today": 20,
       "selected_model": "openai/gpt-4.1-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-30T15:51:56.725700Z",
+        "generated_at_utc": "2026-04-30T15:52:07.671612Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4.1-mini",
-        "response_ms": 1819,
+        "response_ms": 1166,
         "rate_limited": false,
-        "requests_total_today": 14,
-        "translated_total_today": 79,
+        "requests_total_today": 20,
+        "translated_total_today": 110,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
           {
             "model": "openai/gpt-4.1-mini",
             "priority": 0,
-            "requests_today": 8,
-            "translated_today": 48,
+            "requests_today": 14,
+            "translated_today": 79,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 1819
+            "last_response_ms": 1166
           },
           {
             "model": "openai/gpt-4o-mini",
@@ -237,10 +237,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 4.8,
+      "used_pct": 8.0,
       "monthly_cap": 250.0,
-      "spent": 12.0,
-      "latest_age_s": 170.18691,
+      "spent": 20.0,
+      "latest_age_s": 148.323384,
       "day_utc": "2026-04-30",
       "unit": "requests_per_day",
       "stale": false

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T15:51:58.399341Z",
+  "generated_at_utc": "2026-04-30T15:55:12.152455Z",
   "overall": "warning",
   "thresholds": {
     "heartbeat_stale_s": 300,
@@ -15,18 +15,18 @@
       "name": "HEARTBEAT_STALE",
       "status": "ok",
       "severity": "ok",
-      "value": 189,
+      "value": 200,
       "threshold": 300,
-      "detail": "Heartbeat świeży (189s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ru:items.json].",
+      "detail": "Heartbeat świeży (200s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=cs:items.json].",
       "source": "worker_runtime_heartbeat.json"
     },
     {
       "name": "NO_WRITE",
-      "status": "ok",
-      "severity": "ok",
-      "value": 791,
+      "status": "alert",
+      "severity": "warning",
+      "value": 985,
       "threshold": 900,
-      "detail": "Recent writes wyglądają zdrowo.",
+      "detail": "Brak świeżych zapisów przy pending=396.",
       "source": "translation_recent_report.jsonl"
     },
     {
@@ -44,7 +44,7 @@
       "severity": "warning",
       "value": {
         "pending": 396,
-        "oldest_s": 86988
+        "oldest_s": 87182
       },
       "threshold": {
         "pending_min": 200,
@@ -70,10 +70,11 @@
   ],
   "summary": {
     "state_label": "🟠 WARNING",
-    "alert_count": 1,
+    "alert_count": 2,
     "critical_count": 0,
-    "warning_count": 1,
+    "warning_count": 2,
     "alert_names": [
+      "NO_WRITE",
       "QUEUE_STARVATION"
     ],
     "dlq_count": 0

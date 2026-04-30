@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-30T15:51:58.961258Z",
+  "timestamp": "2026-04-30T15:53:13.010140Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 1030,
     "heartbeat_at": "2026-04-30T15:49:53Z",
-    "heartbeat_age_s": 126.0,
+    "heartbeat_age_s": 200.0,
     "cycle": 1,
     "mode": "continuous",
     "category": "?",
@@ -95,7 +95,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-30T15:51:58.961258Z",
+    "generated_at_utc": "2026-04-30T15:53:13.010140Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
@@ -106,17 +106,17 @@
     "current_file": "items.json",
     "cycle": 1,
     "heartbeat_at_utc": "2026-04-30T15:49:53Z",
-    "heartbeat_age_s": 125.961,
+    "heartbeat_age_s": 200.01,
     "worker": {
       "pid": 1030,
       "pid_alive": true,
       "heartbeat_at_utc": "2026-04-30T15:49:53Z",
-      "heartbeat_age_s": 125.961,
+      "heartbeat_age_s": 200.01,
       "mode": "continuous",
       "category": "",
       "cycle": 1,
-      "activity_heartbeat_at_utc": "2026-04-30T15:50:35Z",
-      "activity_heartbeat_age_s": 83.961
+      "activity_heartbeat_at_utc": "2026-04-30T15:52:04Z",
+      "activity_heartbeat_age_s": 69.01
     },
     "guardian": {
       "timestamp": "2026-04-30T15:48:22.291516Z",
@@ -136,7 +136,7 @@
       "pid": 872,
       "owner_pid": 872,
       "owner_pid_alive": true,
-      "lock_age_s": 128.0
+      "lock_age_s": 32.0
     },
     "thresholds": {
       "heartbeat_aging_seconds": 300.0,
@@ -491,7 +491,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-30T15:51:59.086426Z",
+    "statusd_live_snapshot_at_utc": "2026-04-30T15:53:13.170914Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1055,15 +1055,15 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-30T15:48:38.213165Z",
-    "latest_age_s": 200.748,
+    "latest_timestamp": "2026-04-30T15:53:09.734401Z",
+    "latest_age_s": 3.276,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 9052,
     "retry_due_now": 6083,
     "manual_review_locked": 2933,
     "cooldown_locked": 3,
-    "manual_review_queue_size": 3165,
+    "manual_review_queue_size": 3171,
     "deferred_backlog_total": 390,
     "deferred_backlog_total_all_time": 52261,
     "deferred_backlog_window_seconds": 86400,
@@ -1113,11 +1113,11 @@
       }
     ],
     "stats": {
-      "enqueued": 34,
+      "enqueued": 0,
       "suppressed_cooldown": 0,
-      "suppressed_manual_review": 27,
+      "suppressed_manual_review": 17,
       "deduped_ttl": 0,
-      "manual_review_escalations": 24
+      "manual_review_escalations": 6
     },
     "alerts": []
   },
@@ -1259,12 +1259,12 @@
       "baseline_ts_utc": "2026-04-29T19:40:39.756005Z",
       "auto_baseline_on_epoch_change": true,
       "epoch_cooldown_seconds": 600,
-      "runtime_epoch_id": "2b90c56a15f170e8",
-      "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777563359|restart_cause=worker_missing|worker_pid=626",
+      "runtime_epoch_id": "2c3045203bafb945",
+      "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777564196|restart_cause=worker_missing|worker_pid=1030",
       "baseline_source": "manual_config",
       "auto_baseline_applied": false,
       "auto_baseline_reason": "manual_baseline_active",
-      "epoch_changed": false
+      "epoch_changed": true
     },
     "guardian_daemon_lock": {
       "stale_owner_threshold_seconds": 60
@@ -1277,14 +1277,14 @@
     }
   },
   "forced_command_fast_runtime": {
-    "runtime_epoch_id": "2b90c56a15f170e8",
-    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777563359|restart_cause=worker_missing|worker_pid=626",
+    "runtime_epoch_id": "2c3045203bafb945",
+    "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777564196|restart_cause=worker_missing|worker_pid=1030",
     "baseline_ts_utc": "2026-04-29T19:40:39.756005Z",
     "baseline_source": "manual_config",
     "auto_baseline_on_epoch_change": true,
     "auto_baseline_applied": false,
     "auto_baseline_reason": "manual_baseline_active",
-    "epoch_changed": false,
+    "epoch_changed": true,
     "epoch_cooldown_seconds": 600
   }
 }

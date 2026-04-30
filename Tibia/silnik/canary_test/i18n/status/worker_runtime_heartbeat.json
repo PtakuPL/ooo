@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-04-30T15:51:58.961258Z",
+  "generated_at_utc": "2026-04-30T15:53:13.010140Z",
   "source": "statusd.aggregate_telemetry",
   "status": "healthy",
   "reason": "heartbeat_fresh",
@@ -11,17 +11,17 @@
   "current_file": "items.json",
   "cycle": 1,
   "heartbeat_at_utc": "2026-04-30T15:49:53Z",
-  "heartbeat_age_s": 125.961,
+  "heartbeat_age_s": 200.01,
   "worker": {
     "pid": 1030,
     "pid_alive": true,
     "heartbeat_at_utc": "2026-04-30T15:49:53Z",
-    "heartbeat_age_s": 125.961,
+    "heartbeat_age_s": 200.01,
     "mode": "continuous",
     "category": "",
     "cycle": 1,
-    "activity_heartbeat_at_utc": "2026-04-30T15:50:35Z",
-    "activity_heartbeat_age_s": 83.961
+    "activity_heartbeat_at_utc": "2026-04-30T15:52:04Z",
+    "activity_heartbeat_age_s": 69.01
   },
   "guardian": {
     "timestamp": "2026-04-30T15:48:22.291516Z",
@@ -41,7 +41,7 @@
     "pid": 872,
     "owner_pid": 872,
     "owner_pid_alive": true,
-    "lock_age_s": 128.0
+    "lock_age_s": 32.0
   },
   "thresholds": {
     "heartbeat_aging_seconds": 300.0,

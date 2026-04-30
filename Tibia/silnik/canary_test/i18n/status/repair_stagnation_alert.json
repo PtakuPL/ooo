@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:27:43.549399Z",
+  "timestamp": "2026-04-30T02:59:40.436365Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
@@ -9,13 +9,13 @@
   "reason": "top_target_changed",
   "top_key": "es:npc.json",
   "top_count": 2,
-  "old_total": 114167,
+  "old_total": 114127,
   "new_total": 113385,
-  "decrease_pct": 0.68,
-  "old_ts": "2026-04-29T17:17:46.794783Z",
-  "new_ts": "2026-04-29T23:22:40.127631Z",
-  "hours_elapsed": 5.502,
-  "sample_count": 25,
+  "decrease_pct": 0.65,
+  "old_ts": "2026-04-29T20:47:44.810772Z",
+  "new_ts": "2026-04-30T02:58:35.375336Z",
+  "hours_elapsed": 5.995,
+  "sample_count": 12,
   "per_lang_trend": {
     "ar": {
       "old": 878,
@@ -60,10 +60,10 @@
       "decrease_pct": 0.0
     },
     "de": {
-      "old": 19855,
+      "old": 19815,
       "new": 19073,
-      "delta": 782,
-      "decrease_pct": 3.94
+      "delta": 742,
+      "decrease_pct": 3.74
     },
     "el": {
       "old": 638,

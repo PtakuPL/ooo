@@ -1,49 +1,49 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-04-30T03:04:14.190315Z",
+  "generated_at_utc": "2026-04-30T15:38:00.677034Z",
   "source": "statusd.aggregate_telemetry",
-  "status": "critical",
-  "reason": "worker_pid_not_alive",
-  "current_key": "es:items.json",
+  "status": "healthy",
+  "reason": "heartbeat_fresh",
+  "current_key": "tr:items.json",
   "current_phase": "AUTO_TRANSLATE",
   "current_stage": "heartbeat_tick",
-  "current_lang": "es",
+  "current_lang": "tr",
   "current_file": "items.json",
   "cycle": 1,
-  "heartbeat_at_utc": "2026-04-30T03:01:40Z",
-  "heartbeat_age_s": 154.19,
+  "heartbeat_at_utc": "2026-04-30T15:35:56Z",
+  "heartbeat_age_s": 124.677,
   "worker": {
-    "pid": 623,
-    "pid_alive": false,
-    "heartbeat_at_utc": "2026-04-30T03:01:40Z",
-    "heartbeat_age_s": 154.19,
+    "pid": 626,
+    "pid_alive": true,
+    "heartbeat_at_utc": "2026-04-30T15:35:56Z",
+    "heartbeat_age_s": 124.677,
     "mode": "continuous",
     "category": "",
     "cycle": 1,
-    "activity_heartbeat_at_utc": "2026-04-30T03:01:40Z",
-    "activity_heartbeat_age_s": 154.19
+    "activity_heartbeat_at_utc": "2026-04-30T15:37:02Z",
+    "activity_heartbeat_age_s": 58.677
   },
   "guardian": {
-    "timestamp": "2026-04-30T03:01:42.997705Z",
+    "timestamp": "2026-04-30T03:08:17.601669Z",
     "state": "healthy",
-    "heartbeat_age_s": 233.0,
+    "heartbeat_age_s": 242.6,
     "pid_alive": true,
-    "worker_log_age_s": 222.7,
-    "guard_last_entry_age_s": 11520.4,
+    "worker_log_age_s": 230.5,
+    "guard_last_entry_age_s": 11915.0,
     "active_log_grace_seconds": 300.0,
     "throughput_per_h": 0.0,
     "guard_fail_rate_pct": 0.0,
     "issues": [
-      "no_recent_entries_but_worker_log_fresh (window=20min, log_age=223s)"
+      "no_recent_entries_but_worker_log_fresh (window=20min, log_age=230s)"
     ]
   },
   "guardian_daemon": {
-    "timestamp": "2026-04-30T03:04:13.061576Z",
+    "timestamp": "2026-04-30T15:35:54.174232Z",
     "state": "running",
-    "pid": 395,
-    "owner_pid": 395,
+    "pid": 436,
+    "owner_pid": 436,
     "owner_pid_alive": true,
-    "lock_age_s": 1.0
+    "lock_age_s": 126.0
   },
   "thresholds": {
     "heartbeat_aging_seconds": 300.0,

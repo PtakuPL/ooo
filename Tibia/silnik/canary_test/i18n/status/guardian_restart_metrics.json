@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T03:04:18Z",
+  "generated_at_utc": "2026-04-30T15:35:59Z",
   "config": {
     "mtime_restart_min_interval_sec": 90,
     "restart_failure_backoff_base_sec": 20,
     "restart_failure_backoff_max_sec": 300
   },
   "last_restart": {
-    "timestamp": "2026-04-30T03:04:18Z",
+    "timestamp": "2026-04-30T15:35:59Z",
     "cause": "worker_missing",
     "success": true,
-    "pid": "572"
+    "pid": "626"
   },
   "failure_streak": 0,
   "cooldown_active": false,
   "cooldown_remaining_sec": 0,
   "next_allowed_utc": "",
   "totals": {
-    "attempts": 243,
-    "successes": 226,
+    "attempts": 244,
+    "successes": 227,
     "failures": 17,
     "blocked": 141
   },
   "causes": {
     "worker_missing": {
-      "attempts": 53,
-      "successes": 45,
+      "attempts": 54,
+      "successes": 46,
       "failures": 8,
       "blocked": 22
     },
@@ -49,15 +49,6 @@
     }
   },
   "recent_events": [
-    {
-      "timestamp": "2026-04-29T16:45:18Z",
-      "type": "result",
-      "cause": "worker_missing",
-      "success": false,
-      "pid": "",
-      "reason": "start_failed",
-      "backoff_sec": 160
-    },
     {
       "timestamp": "2026-04-29T16:45:50Z",
       "type": "blocked",
@@ -212,6 +203,15 @@
       "cause": "worker_missing",
       "success": true,
       "pid": "572",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-04-30T15:35:59Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "626",
       "reason": "pid_file",
       "backoff_sec": 0
     }

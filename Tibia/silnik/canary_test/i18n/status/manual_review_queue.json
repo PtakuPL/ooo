@@ -60322,11 +60322,1750 @@
       ],
       "previous_state_source": "google_translate",
       "previous_state_updated_at": "2026-04-29T23:16:18.476284Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:22.448963Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_31",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The explorer society would like to acquire an ancient urn which is some sort of relic to the lizard people of Tiquanda. Would you like to accept this mission?",
+      "attempted_translation": "Die Entdeckergesellschaft möchte eine alte Urne erwerben, die eine Art Reliquie des Echsenvolkes von Tiquanda darstellt. Möchten Sie diese Mission annehmen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.484991Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:23.706374Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_32",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Did you manage to get the ancient urn?",
+      "attempted_translation": "Haben Sie es geschafft, die alte Urne zu bekommen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.488338Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:23.904536Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_38",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Did you create a copy of the ancient runes as requested?",
+      "attempted_translation": "Haben Sie wie gewünscht eine Kopie der alten Runen erstellt?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.515826Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:24.067006Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_39",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "We will see if you can handle this simple task. Get the pickaxe from Uzgod in Kazordoon and bring it to one of our bases. Report there about the pickaxe.",
+      "attempted_translation": "Wir werden sehen, ob Sie diese einfache Aufgabe bewältigen können. Holen Sie sich die Spitzhacke von Uzgod in Kazordoon und bringen Sie sie zu einer unserer Stützpunkte. Berichten Sie dort über die Spitzhacke.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.527227Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:24.261346Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A whole new land is indeed very tempting. I can hardly imagine all the wonders that await us there. I doubt I could stop our explorers from going there even if I tried to.",
+      "attempted_translation": "Ein ganz neues Land ist in der Tat sehr verlockend. Ich kann mir kaum vorstellen, welche Wunder uns dort erwarten. Ich bezweifle, dass ich unsere Entdecker davon abhalten könnte, dorthin zu gehen, selbst wenn ich es versuchen würde.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.539784Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:24.433773Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_40",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Excellent, you brought just the tool we need! Of course it was only a simple task. However ...",
+      "attempted_translation": "Hervorragend, Sie haben genau das Werkzeug mitgebracht, das wir brauchen! Natürlich war es nur eine einfache Aufgabe. Jedoch ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.546999Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:24.623386Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_44",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This preparation kit will allow you to collect a purple butterfly you have killed ...",
+      "attempted_translation": "Mit diesem Vorbereitungsset können Sie einen lila Schmetterling einsammeln, den Sie getötet haben ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.576044Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:24.807081Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_45",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A little bit battered but it will do. Thank you! If you think you are ready, ask for another butterfly hunt.",
+      "attempted_translation": "Ein bisschen ramponiert, aber es reicht. Danke schön! Wenn Sie denken, dass Sie bereit sind, bitten Sie um eine weitere Schmetterlingsjagd.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.583733Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:24.964729Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_46",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A little bit battered but it will do. Thank you! If you think you are ready, ask for another butterfly hunt.",
+      "attempted_translation": "Ein bisschen ramponiert, aber es reicht. Danke schön! Wenn Sie denken, dass Sie bereit sind, bitten Sie um eine weitere Schmetterlingsjagd.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.591370Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:25.126497Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_47",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "That is an extraordinary species you have brought. Thank you! That was the last butterfly we needed.",
+      "attempted_translation": "Das ist eine außergewöhnliche Art, die Sie mitgebracht haben. Danke schön! Das war der letzte Schmetterling, den wir brauchten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:18.598428Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:25.294721Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_49",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I see. It seems you've got some quite useful sample by sheer luck. Thank you! Just tell me when you are ready to continue with the plant collection.",
+      "attempted_translation": "Ich verstehe. Es scheint, als hätten Sie durch reines Glück eine recht nützliche Probe erhalten. Danke schön! Sagen Sie mir einfach, wann Sie bereit sind, mit der Pflanzensammlung fortzufahren.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.163913Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:25.465519Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "For all I've heard, this is rather a barren isle than a whole new land. There are so many places to explore in this world, I won't send our best explorers on account of a rumour.",
+      "attempted_translation": "Nach allem, was ich gehört habe, ist dies eher eine karge Insel als ein ganz neues Land. Es gibt so viele Orte auf dieser Welt zu erkunden, dass ich unsere besten Entdecker nicht wegen eines Gerüchts entsenden werde.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.173604Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:26.115990Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_50",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Ah, finally. I started to wonder what took you so long. But thank you! Another fine sample, indeed. Just tell me when you are ready to continue with the plant collection.",
+      "attempted_translation": "Ah, endlich. Ich begann mich zu fragen, warum du so lange gebraucht hast. Aber danke! In der Tat ein weiteres schönes Beispiel. Sagen Sie mir einfach, wann Sie bereit sind, mit der Pflanzensammlung fortzufahren.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.182466Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:26.287571Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_51",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What a lovely sample! With that you have finished your plant collection missions.",
+      "attempted_translation": "Was für eine schöne Probe! Damit haben Sie Ihre Pflanzensammelmissionen abgeschlossen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.186247Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:27.168724Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_52",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You have indeed the spirit of an adventurer! In the south-east of Tiquanda is a small settlement of the lizard people ...",
+      "attempted_translation": "Du hast tatsächlich den Geist eines Abenteurers! Im Südosten von Tiquanda liegt eine kleine Siedlung des Echsenvolkes ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.191356Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:27.475497Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_53",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Yes, that is the prized relic we have been looking for so long. You did a great job, thank you.",
+      "attempted_translation": "Ja, das ist das wertvolle Relikt, nach dem wir so lange gesucht haben. Du hast einen tollen Job gemacht, danke.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.195982Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:27.774312Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_55",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You did it! Excellent! The scientific world will be shaken by this discovery!",
+      "attempted_translation": "Du hast es geschafft! Exzellent! Die wissenschaftliche Welt wird von dieser Entdeckung erschüttert sein!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.204038Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:28.070835Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_56",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You are a brave soul. As far as we can tell, the orcs maintain some sort of training facility in some hill in the north-east of their city ...",
+      "attempted_translation": "Du bist eine mutige Seele. Soweit wir wissen, unterhalten die Orks auf einem Hügel im Nordosten ihrer Stadt eine Art Trainingsanlage ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.209762Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:28.493301Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_59",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Let me have a look! Yes, that's what we wanted. A copy of 'Songs of the Forest'. I won't ask any questions about those bloodstains.",
+      "attempted_translation": "Lass mich einen Blick darauf werfen! Ja, das wollten wir. Eine Kopie von 'Songs of the Forest'. Ich werde keine Fragen zu diesen Blutflecken stellen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.223722Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:29.670297Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The missions available for your rank are the {butterfly hunt}, {plant collection} and {ice delivery}.",
+      "attempted_translation": "Die für Ihren Rang verfügbaren Missionen sind {butterfly hunt}, {plant collection} und {ice delivery}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.228470Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:29.815592Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_61",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A flawless memory stone! Incredible! It will take years even to figure out how it works but what an opportunity for science, thank you!",
+      "attempted_translation": "Ein makelloser Erinnerungsstein! Unglaublich! Es wird Jahre dauern, überhaupt herauszufinden, wie es funktioniert, aber was für eine Chance für die Wissenschaft, danke!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.235415Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:29.979413Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_62",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Excellent! Here, take this tracing paper and use it on the object you will find there to create a copy of the ancient runes.",
+      "attempted_translation": "Exzellent! Hier, nehmen Sie dieses Transparentpapier und verwenden Sie es auf dem Objekt, das Sie dort finden, um eine Kopie der alten Runen zu erstellen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.241633Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:30.771065Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_63",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "It's a bit wrinkled but it will do. Thanks again.",
+      "attempted_translation": "Es ist ein bisschen faltig, aber es reicht. Danke noch einmal.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.244396Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:30.890473Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_64",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Good! Take this container and use it on a ghost that was recently slain. Return with the collected ectoplasm and hand me that container ...",
+      "attempted_translation": "Gut! Nehmen Sie diesen Behälter und verwenden Sie ihn bei einem Geist, der kürzlich getötet wurde. Kehre mit dem gesammelten Ektoplasma zurück und gib mir den Behälter ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.251235Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:31.080390Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_66",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Phew, I had no idea that ectoplasm would smell that ... oh, it's you, well, sorry. Thank you for the ectoplasm.",
+      "attempted_translation": "Puh, ich hatte keine Ahnung, dass Ektoplasma so riechen würde ... Oh, das bist du, na ja, tut mir leid. Vielen Dank für das Ektoplasma.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:16:46.259311Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:31.258635Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_67",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Just in time! With this spectral article we can start the final phase of our research.",
+      "attempted_translation": "Gerade noch rechtzeitig! Mit diesem Spektralartikel können wir die letzte Phase unserer Forschung beginnen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.454329Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:31.955409Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_69",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Poor Ratha. Thank you for returning this skull to the society. We will see to a honourable burial of Ratha.",
+      "attempted_translation": "Armer Ratha. Vielen Dank, dass Sie diesen Schädel die Gesellschaft zurückgegeben haben. Wir werden für eine ehrenvolle Beerdigung von Ratha sorgen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.460030Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:32.133326Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The missions available for your rank are {lizard urn}, {bonelord secrets} and {orc powder}.",
+      "attempted_translation": "Die für Ihren Rang verfügbaren Missionen sind {lizard urn}, {bonelord secrets} und {orc powder}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.464156Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:32.310511Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_71",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Marvellous! You brought a giant smith hammer for the explorer society!",
+      "attempted_translation": "Wunderbar! Du hast einen riesigen Schmiedehammer für die Entdeckergesellschaft mitgebracht!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.469454Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:33.096072Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_72",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "No you don't.",
+      "attempted_translation": "Nein, das tust du nicht.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.470642Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:33.461919Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_73",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What a strange map. I wonder if any of our explorers recognises this coastal lines. However, you earned yourself another chance to convince me. Why do you think that Farmine would be interesting for us?",
+      "attempted_translation": "Was für eine seltsame Karte. Ich frage mich, ob einer unserer Entdecker diese Küstenlinien erkennt. Sie haben sich jedoch eine weitere Chance verdient, mich zu überzeugen. Warum glauben Sie, dass Farmine für uns interessant wäre?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.478952Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:33.720200Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_74",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "It's always a sad day when we learn about the death of a member. But at least we learnt about his fate. Thank you, here is your reward.",
+      "attempted_translation": "Es ist immer ein trauriger Tag, wenn wir vom Tod eines Mitglieds erfahren. Aber zumindest erfuhren wir von seinem Schicksal. Vielen Dank, hier ist Ihre Belohnung.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.484996Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:35.706817Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_77",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Come back when you find one.",
+      "attempted_translation": "Kommen Sie zurück, wenn Sie eines finden.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.488765Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:35.840104Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_78",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The explorer society is looking for a genuine giant smith hammer for our collection. It is rumoured the cyclopses of the Plains of Havoc might be using one. Did you by chance obtain such a hammer?",
+      "attempted_translation": "Die Entdeckergesellschaft sucht für unsere Sammlung einen echten Riesenschmiedehammer. Es wird gemunkelt, dass die Zyklopen der Ebenen der Verwüstung einen solchen nutzen könnten. Haben Sie zufällig einen solchen Hammer bekommen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:11.496806Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:37.769866Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_spectral_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Good, just take this spectral essence and use it on the strange carving in this building as well as on the corresponding tile in our base at Northport ...",
+      "attempted_translation": "Gut, nehmen Sie einfach diese Spektralessenz und verwenden Sie sie für die seltsame Schnitzerei in diesem Gebäude sowie für das entsprechende Plättchen in unserer Basis in Northport ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:12.573652Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:37.902864Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.appaloosa.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "We can bring you to Thais with one of our coaches for 125 gold. Are you interested?",
+      "attempted_translation": "Wir können Sie für 125 Gold mit einem unserer Busse nach Thais bringen. Sind Sie interessiert?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:12.582130Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:38.080471Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.appaloosa.say_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I'll give you one of our experienced ones. Take care! Look out for low hanging branches.",
+      "attempted_translation": "Ich gebe Ihnen einen unserer erfahrenen. Aufpassen! Achten Sie auf niedrig hängende Äste.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:37.790248Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:38.212123Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.archery.stdmod_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Come into my tavern and share some stories!",
+      "attempted_translation": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:37.794684Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:38.878770Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.archery.voice_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Come into my tavern and share some stories!",
+      "attempted_translation": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:37.799357Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:39.041551Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.archery_rook.stdmod_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Come into my tavern and share some stories!",
+      "attempted_translation": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:39.335112Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:39.201759Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.archery_rook.voice_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Come into my tavern and share some stories!",
+      "attempted_translation": "Kommen Sie in meine Taverne und erzählen Sie ein paar Geschichten!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:39.339590Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:44.093268Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ariella.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The sailors always tell tales about the famous beer of Carlin. You must know, alcohol is forbidden in that city. ...",
+      "attempted_translation": "Die Seeleute erzählen immer Geschichten über das berühmte Bier von Carlin. Sie müssen wissen, dass Alkohol in dieser Stadt verboten ist. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:39.347289Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:44.244902Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ariella.multi_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The beer is served in a secret whisper bar anyway. Bring me a sample of the whisper beer, NOT the usual beer but whisper beer. I hope you are listening.",
+      "attempted_translation": "Das Bier wird ohnehin in einer geheimen Flüsterbar ausgeschenkt. Bringen Sie mir eine Probe des Flüsterbiers mit, NICHT das übliche Bier, sondern Flüsterbier. Ich hoffe, Sie hören zu.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:39.357314Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:45.241647Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ariella.say_12",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Come back when you got the neccessary item.",
+      "attempted_translation": "Kommen Sie zurück, wenn Sie den benötigten Artikel erhalten haben.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:39.371913Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:49.125607Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ariella.say_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You know, we have plenty of rum here but we lack some basic food. Especially food that easily becomes mouldy is a problem. Bring me 100 breads and you will help me a lot.",
+      "attempted_translation": "Wissen Sie, wir haben hier reichlich Rum, aber es fehlt uns an Grundnahrungsmitteln. Vor allem Lebensmittel, die leicht schimmeln, stellen ein Problem dar. Bring mir 100 Brote und du wirst mir sehr helfen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:39.419366Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:50.762132Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ariella.say_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Are you here to bring me the 100 pieces of bread that I requested?",
+      "attempted_translation": "Sind Sie hier, um mir die 100 Stück Brot zu bringen, die ich angefordert habe?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:17:39.424393Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:52.231941Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ariella.say_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You have no cookie that I'd like.",
+      "attempted_translation": "Du hast keinen Keks, den ich gerne hätte.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:07.826747Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:05:53.156742Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.ariella.say_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What a joy. At least for a few days adequate supply is ensured.",
+      "attempted_translation": "Was für eine Freude. Zumindest für einige Tage ist eine ausreichende Versorgung gewährleistet.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:07.839313Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:06:17.868867Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arito.multi_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You have to know, I was one of them before I opened that shop here. Sure they fear about their hideout being revealed by me. Please go to the north, there is a small cave in the mountains with a rock in the middle. ...",
+      "attempted_translation": "Sie müssen wissen, ich war einer von ihnen, bevor ich diesen Laden hier eröffnet habe. Sicher haben sie Angst, dass ich ihr Versteck preisgeben könnte. Bitte gehen Sie nach Norden, in den Bergen gibt es eine kleine Höhle mit einem Felsen in der Mitte. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:07.861845Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:06:18.051307Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arito.say_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "These are great news!! Thank you for your help! I don't have much, but without you I wouldn't have anything so please take this as a reward.",
+      "attempted_translation": "Das sind tolle Neuigkeiten!! Ich danke Ihnen für Ihre Hilfe! Ich habe nicht viel, aber ohne dich hätte ich nichts, also nimm das bitte als Belohnung.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:07.911288Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:22.508617Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.farewell_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "At last! Good things come to those who wait.",
+      "attempted_translation": "Endlich! Gute Dinge kommen zu denen, die warten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T23:13:03.631579Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:22.629877Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "...if the expected constant is higher than... Hmmm, who are you?? What do you want?",
+      "attempted_translation": "...wenn die erwartete Konstante höher ist als... Hmmm, wer bist du?? Was willst du?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:07.919223Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:34.965661Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_10",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, there should be a way to use that energy and strengthen one of the elementals. If my calculations are right, you will create an Energy Overlord who hopefully will consist of some sort of 'concentrated' energy. ...",
+      "attempted_translation": "Wie auch immer, es sollte eine Möglichkeit geben, diese Energie zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, werden Sie einen Energie-Overlord erschaffen, der hoffentlich aus einer Art 'concentrated'-Energie besteht. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:07.949183Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:35.256153Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_14",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, there should be a way to use that elemental ice and strengthen one of the elementals. If my calculations are right, you will create an Ice Overlord who hopefully will consist of some sort of 'concentrated' ice or something similar. ...",
+      "attempted_translation": "Wie auch immer, es sollte eine Möglichkeit geben, dieses Elementareis zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, erschaffen Sie einen Ice Overlord, der hoffentlich aus einer Art 'concentrated'-Eis oder etwas Ähnlichem besteht. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:34.946040Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:38.919774Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_18",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, there should be a way to use that elemental earth and strengthen one of the elementals. If my calculations are right, you will create an Earth Overlord who hopefully will consist of some sort of 'concentrated' earth or something similar. ...",
+      "attempted_translation": "Wie auch immer, es sollte eine Möglichkeit geben, dieses Elementar Erde zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, werden Sie einen Erde Overlord erschaffen, der hoffentlich aus einer Art 'concentrated'-Erde oder etwas Ähnlichem besteht. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.074863Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:39.598517Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "an ETERNAL FLAME! Now you need to find a knight, a druid, and a paladin who also completed this first task. ...",
+      "attempted_translation": "eine EWIGE FLAMME! Jetzt müssen Sie einen Ritter, einen Druiden und einen Paladin finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.082394Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:39.788307Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_21",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Once you got there, find a way to gather elemental fire in any form. You will face fire elementals, that's for sure, but I don't know how the fire is stored. ...",
+      "attempted_translation": "Sobald Sie dort angekommen sind, finden Sie einen Weg, Elementarfeuer in jeglicher Form zu sammeln. Ihr werdet Feuerelementaren gegenüberstehen, das ist sicher, aber ich weiß nicht, wie das Feuer gespeichert wird. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.101235Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:39.940890Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_22",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, there should be a way to use that elemental fire and strengthen one of the elementals. If my calculations are right, you will create a Fire Overlord who hopefully will consist of some sort of 'concentrated' fire or something similar. ...",
+      "attempted_translation": "Wie auch immer, es sollte eine Möglichkeit geben, dieses Elementarfeuer zu nutzen und einen der Elementare zu stärken. Wenn meine Berechnungen stimmen, werden Sie einen Feuer-Overlord erschaffen, der hoffentlich aus einer Art 'concentrated'-Feuer oder etwas Ähnlichem besteht. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.111833Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:40.107841Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_25",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I found a way to visit them. It's VERY dangerous and there is a decent chance that you won't come back BUT if you succeed you'll write history!!! Ask me about that {mission} if you're interested.",
+      "attempted_translation": "Ich habe einen Weg gefunden, sie zu besuchen. Es ist SEHR gefährlich und es besteht eine gute Chance, dass du nicht zurückkommst, ABER wenn du Erfolg hast, wirst du Geschichte schreiben!!! Fragen Sie mich danach {mission}, wenn Sie interessiert sind.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.130096Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:40.297308Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_26",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The creation of the elemental shrines is a really complex matter. They are actually nodes, locations where the matching elemental sphere is very close. ...",
+      "attempted_translation": "Die Erschaffung der Elementarschreine ist eine wirklich komplexe Angelegenheit. Es handelt sich tatsächlich um Knotenpunkte, Orte, denen die entsprechende Elementarsphäre sehr nahe ist. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.137001Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:40.457954Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_27",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The shrine itself is like a portal between our world and the elemental {sphere} and enables us to use the elemental energy emerging from it.",
+      "attempted_translation": "Der Schrein selbst ist wie ein Portal zwischen unserer Welt und dem Elementar {sphere} und ermöglicht es uns, die daraus hervorgehende Elementarenergie zu nutzen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.143367Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:45.127234Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_29",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, his spell had a different outcome than he had planned. He accidentally created an Ice Overlord, pure living elemental ice, who froze him in a blink of an eye.",
+      "attempted_translation": "Wie auch immer, sein Zauber hatte ein anderes Ergebnis, als er geplant hatte. Er erschuf versehentlich einen Ice Overlord, reines lebendes Elementar-Eis, das ihn im Handumdrehen einfrierte.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.156236Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:45.281919Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "MOTHER SOIL! Now you need to find a knight, a paladin, and a sorcerer who also completed this first task. ...",
+      "attempted_translation": "Mutterboden! Jetzt müssen Sie einen Ritter, einen Paladin und einen Zauberer finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:40.161434Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:46.904561Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_30",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Anyway, his spell had a different outcome than he had planned. He accidentally created an Ice Overlord, pure living elemental ice, who froze him in a blink of an eye.",
+      "attempted_translation": "Wie auch immer, sein Zauber hatte ein anderes Ergebnis, als er geplant hatte. Er erschuf versehentlich einen Ice Overlord, reines lebendes Elementar-Eis, das ihn im Handumdrehen einfrierte.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.431582Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:47.170247Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "a FLAWLESS ICE CRYSTAL! Now you need to find a knight, a druid, and a sorcerer who also completed this first task. ...",
+      "attempted_translation": "ein makelloser EISkristall! Jetzt müssen Sie einen Ritter, einen Druiden und einen Zauberer finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.437290Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:47.535162Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "PURE ENERGY! Now you need to find a druid, a paladin, and a sorcerer who also completed this first task. ...",
+      "attempted_translation": "PURE ENERGIE! Jetzt müssen Sie einen Druiden, einen Paladin und einen Zauberer finden, die diese erste Aufgabe ebenfalls erfüllt haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.442537Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:48.454059Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Go down in the cellar again. I prepared a room under the academy where it should be safe. Your task is to charge the machines with the elemental substances and summon the LORD OF THE ELEMENTS. ...",
+      "attempted_translation": "Gehe noch einmal in den Keller. Ich habe einen Raum unter der Akademie vorbereitet, in dem es sicher sein sollte. Ihre Aufgabe ist es, die Maschinen mit den elementaren Substanzen aufzuladen und den HERRN DER ELEMENTE zu beschwören. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.451658Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:48.722647Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.multi_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "When you use an obsidian knife on it's corpse you hopefully get some of the precious neutral matter. It's the only way to revive my dear friend Alverus!!",
+      "attempted_translation": "Wenn Sie ein Obsidianmesser auf die Leiche anwenden, erhalten Sie hoffentlich etwas von der wertvollen neutralen Substanz. Nur so kann ich meinen lieben Freund Alverus wiederbeleben!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.458110Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:49.173204Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.say_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "AMAZING!! I'm going to start immediately with the research. If it turns out the way I expect it, Alverus will be revived soon!! Here, take this as a reward and try to collect more of this substance. I'll make you a good offer, I promise.",
+      "attempted_translation": "TOLL!! Ich werde sofort mit der Recherche beginnen. Wenn es so läuft, wie ich es erwarte, wird Alverus bald wiederbelebt!! Nehmen Sie dies als Belohnung und versuchen Sie, mehr von dieser Substanz zu sammeln. Ich mache Ihnen ein gutes Angebot, versprochen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.489295Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:51.022841Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.stdmod_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "...the arithmetical paradox has the same value in a metaphysical way, then...",
+      "attempted_translation": "...das arithmetische Paradoxon hat auf metaphysische Weise den gleichen Wert, dann...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.496062Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:51.393061Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.stdmod_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "...the minimum square deviation could cause a dislocation, in a matter of fact...",
+      "attempted_translation": "...die minimale quadratische Abweichung könnte tatsächlich eine Verschiebung verursachen ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.504309Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:52.294359Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.stdmod_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Yes, that's it! The elementary particle are corresponding to the... the ... UNBELIEVEABLE!!!",
+      "attempted_translation": "Ja, das ist es! Die Elementarteilchen entsprechen dem... dem... UNGLAUBLICH!!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.510053Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:52.456727Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.voice_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "...the arithmetical paradox has the same value in a metaphysical way, then...",
+      "attempted_translation": "...das arithmetische Paradoxon hat auf metaphysische Weise den gleichen Wert, dann...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.513144Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:53.147050Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.voice_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "...the minimum square deviation could cause a dislocation, in a matter of fact...",
+      "attempted_translation": "...die minimale quadratische Abweichung könnte tatsächlich eine Verschiebung verursachen ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.521376Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:53.940467Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.arkulius.voice_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Yes, that's it! The elementary particle are corresponding to the... the ... UNBELIEVEABLE!!!",
+      "attempted_translation": "Ja, das ist es! Die Elementarteilchen entsprechen dem... dem... UNGLAUBLICH!!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:18:59.527057Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:54.820542Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.armenius.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What kind of strange offer is this? You're actually offering me a cookie?",
+      "attempted_translation": "Was ist das denn für ein seltsames Angebot? Du bietest mir tatsächlich einen Keks an?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T23:19:05.737600Z"
+    },
+    {
+      "timestamp": "2026-04-30T03:07:55.709194Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.armenius.walkaway_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Oh, the nerve. Go to the rats which raised you.",
+      "attempted_translation": "Oh, der Nerv. Geh zu den Ratten, die dich großgezogen haben.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T23:13:03.683045Z"
+    },
+    {
+      "timestamp": "2026-04-30T15:37:52.414304Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.10247.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate contains a set of weapons",
+      "attempted_translation": "Bu sandıkta bir dizi silah var",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:05.120039Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11328.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate has been marked with lizard symbols. It is large enough for a grown person to fit in",
+      "attempted_translation": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:07.788878Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11341.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This clay has been dug from sacred ground",
+      "attempted_translation": "Bu kil kutsal topraktan çıkarıldı",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'zemin' for EN 'ground' from items.json:item.10548.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:09.463300Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11364.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This plant poison is meant to destroy the growths near the Keeper's lair deep beneath the gardens",
+      "attempted_translation": "Bu bitki zehiri, Gardiyan'ın bahçelerin derinliklerindeki ininin yakınındaki bitkileri yok etmek içindir.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Kaleci' for EN 'The Keeper' from monsters.json:monster.the_keeper.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:09.818472Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11473.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's too large to be worn by humans, but rather light",
+      "attempted_translation": "İnsanlar tarafından giyilemeyecek kadar büyük ama oldukça hafif",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:11.070300Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11623.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Bu süslenmiş bir çığ runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Çığ Rünü' for EN 'Avalanche Rune' from spells.json:spell.avalanche_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:11.307472Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11624.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Bu süslenmiş bir çığ runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Çığ Rünü' for EN 'Avalanche Rune' from spells.json:spell.avalanche_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:13.119881Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11631.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned disintegrate rune",
+      "attempted_translation": "Bu süslü bir parçalanma runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Rün Parçalama' for EN 'Disintegrate Rune' from spells.json:spell.disintegrate_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:13.264568Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11632.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned disintegrate rune",
+      "attempted_translation": "Bu süslü bir parçalanma runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Rün Parçalama' for EN 'Disintegrate Rune' from spells.json:spell.disintegrate_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:13.467751Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11639.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Bu süslü bir yok etme alanı runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Saha Rünü'nü yok et' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:13.925182Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11640.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Bu süslü bir yok etme alanı runesi",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Saha Rünü'nü yok et' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:17.118540Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11647.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned light magic missile rune",
+      "attempted_translation": "Bu süslü bir ışık büyüsü füze rünü",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:17.295104Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11648.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned light magic missile rune",
+      "attempted_translation": "Bu süslü bir ışık büyüsü füze rünü",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:19.775036Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.11699.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The title of this heavy book reads: 'Rabaz' Unabridged Almanach Of Botany'",
+      "attempted_translation": "Bu ağır kitabın başlığı şöyle: 'Rabaz' Kısaltılmamış Botanik Almanağı'",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kitap' for EN 'book' from items.json:item.12276.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:19.994076Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.118.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You swapped it with Bozo's crate of wine flasks",
+      "attempted_translation": "Onu Bozo'nun şarap şişeleriyle dolu sandığıyla değiştirdin",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'kasa' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:24.377194Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12178.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon is awake",
+      "attempted_translation": "Küçük şeytan uyandı",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:24.550969Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12180.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon is sleeping",
+      "attempted_translation": "Küçük şeytan uyuyor",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:25.095502Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12181.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon is pleased",
+      "attempted_translation": "Küçük şeytan memnun",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:25.431364Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12182.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The little demon wants to kiss",
+      "attempted_translation": "Küçük şeytan öpmek istiyor",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Iblis' for EN 'Demon' from monsters.json:monster.demon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:25.880774Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12369.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The trap has imobilized and shrunken the wolf",
+      "attempted_translation": "Tuzak kurdu hareketsiz kıldı ve küçülttü",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Kurt' for EN 'Wolf' from monsters.json:monster.old_wolf.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:26.612919Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.12672.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this knife on a dead war wolf to retrieve some leather. Don't lose it and don't leave the cave",
+      "attempted_translation": "Biraz deri almak için bu bıçağı ölü bir savaş kurdunun üzerinde kullanın. Onu kaybetmeyin ve mağarayı terk etmeyin",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Kurt' for EN 'Wolf' from monsters.json:monster.old_wolf.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:27.119119Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14009.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The strange shape of this key glistens softly in the light",
+      "attempted_translation": "Bu anahtarın tuhaf şekli ışıkta usulca parlıyor",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Aydınlık' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:38:28.006743Z",
+      "status": "pending",
+      "lang": "tr",
+      "json_file": "items.json",
+      "key": "item.14010.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "A belt buckle snatched from a deepling guard",
+      "attempted_translation": "Derin bir muhafızdan çalınan bir kemer tokası",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Deepling Muhafızı' for EN 'Deepling Guard' from monsters.json:monster.deepling_guard.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3028
+    "total": 3128
   },
-  "updated_at": "2026-04-30T03:05:22.282867Z"
+  "updated_at": "2026-04-30T15:38:28.060387Z"
 }

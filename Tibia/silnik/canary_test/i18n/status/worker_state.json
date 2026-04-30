@@ -404,7 +404,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-30T03:04:20Z",
+  "generated_at_utc": "2026-04-30T15:36:00Z",
   "global": {
     "en_keys_total": 74536,
     "errors_total": 11375,
@@ -842,11 +842,11 @@
       "stage": "cycle_start"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2026-04-30T03:04:15Z",
+    "heartbeat_at_utc": "2026-04-30T15:35:56Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 572,
+    "pid": 626,
     "status": "running",
     "version": "unknown"
   }

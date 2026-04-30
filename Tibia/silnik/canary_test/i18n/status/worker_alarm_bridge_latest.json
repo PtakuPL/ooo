@@ -1,25 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T03:04:16.780761Z",
+  "generated_at_utc": "2026-04-30T15:35:57.648007Z",
   "cycle": 1,
   "open_alarms": [
     {
       "code": "GUARD_REPORT_STALE",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 11535s"
+      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 11794s"
     },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
       "severity": "warning",
       "source": "statusd_doctor.json",
       "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.91<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
-    },
-    {
-      "code": "PROVIDER_BUDGET_EXHAUSTED",
-      "severity": "critical",
-      "source": "statusd_doctor.json",
-      "detail": "PROVIDER_BUDGET_EXHAUSTED: used=112.8% cap=250.0 spent=282.0 source=provider_budget_latest.json"
     },
     {
       "code": "QUEUE_STARVATION_DETECTED",
@@ -53,15 +47,11 @@
     }
   ],
   "resolved_this_cycle": [
-    "SUSPICIOUS_HIGH_ELEVATED"
+    "PROVIDER_BUDGET_EXHAUSTED"
   ],
-  "newly_opened": [
-    "GUARD_REPORT_STALE",
-    "REPAIR_TUNING_NO_SAMPLES",
-    "WORKER_STUCK_NO_WRITE"
-  ],
+  "newly_opened": [],
   "summary": {
-    "open_count": 8,
+    "open_count": 7,
     "resolved_count": 1,
     "tracked_alarms": 32
   },
@@ -78,6 +68,6 @@
     "selected_command": "-",
     "result": "resolved_update",
     "result_reason": "resolved_count=1",
-    "updated_at_utc": "2026-04-30T03:04:16.780761Z"
+    "updated_at_utc": "2026-04-30T15:35:57.648007Z"
   }
 }

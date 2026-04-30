@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T15:45:39.232139Z",
+  "generated_at_utc": "2026-04-30T15:51:57.813926Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "simple",
   "active_provider_timestamp": "2026-04-30T15:38:46.676632Z",
   "active_model": "openai/gpt-4.1-mini",
-  "fallback_reason": "OpenAI model pool → fallback chain exhausted high reject types [high_reject_types] items.json",
+  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -97,16 +97,16 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 4,
+    "fallbacks_last_200": 17,
     "fallback_action_breakdown": [
-      {
-        "action": "fallback_chain_exhausted_high_reject_types",
-        "action_label": "fallback chain exhausted high reject types",
-        "count": 2
-      },
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
+        "count": 15
+      },
+      {
+        "action": "fallback_chain_exhausted_high_reject_types",
+        "action_label": "fallback chain exhausted high reject types",
         "count": 2
       }
     ],
@@ -130,7 +130,7 @@
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
         "recent_writes": 261,
-        "requests_today": 12
+        "requests_today": 14
       }
     },
     "openai_model_pool": {
@@ -173,31 +173,31 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 12,
+      "requests_today": 14,
       "selected_model": "openai/gpt-4.1-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-30T15:44:44.064164Z",
+        "generated_at_utc": "2026-04-30T15:51:56.725700Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4.1-mini",
-        "response_ms": 2319,
+        "response_ms": 1819,
         "rate_limited": false,
-        "requests_total_today": 12,
-        "translated_total_today": 67,
+        "requests_total_today": 14,
+        "translated_total_today": 79,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
           {
             "model": "openai/gpt-4.1-mini",
             "priority": 0,
-            "requests_today": 6,
-            "translated_today": 36,
+            "requests_today": 8,
+            "translated_today": 48,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 2319
+            "last_response_ms": 1819
           },
           {
             "model": "openai/gpt-4o-mini",
@@ -240,7 +240,7 @@
       "used_pct": 4.8,
       "monthly_cap": 250.0,
       "spent": 12.0,
-      "latest_age_s": 50.546156,
+      "latest_age_s": 170.18691,
       "day_utc": "2026-04-30",
       "unit": "requests_per_day",
       "stale": false
@@ -273,14 +273,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-30T15:44:30.205561Z",
-    "provider": "openai_model_pool",
-    "provider_label": "OpenAI model pool",
-    "source": "openai_model_pool",
-    "action": "fallback_chain_exhausted_high_reject_types",
-    "action_label": "fallback chain exhausted high reject types",
+    "timestamp": "2026-04-30T15:51:20.537745Z",
+    "provider": "tm_simple",
+    "provider_label": "TM/simple",
+    "source": "tm",
+    "action": "fallback_to_google_translate_high",
+    "action_label": "fallback to google translate high",
     "decision_reason": "high_reject_types",
     "json_file": "items.json",
-    "key": "item.14670.name"
+    "key": "item.15994.name"
   }
 }

@@ -62511,11 +62511,227 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:45:58.140055Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11611.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned magic wall rune",
+      "attempted_translation": "Это украшенная магическая настенная руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'волшебная стена' for EN 'magic wall' from items.json:item.10181.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:46:02.202242Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11612.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned magic wall rune",
+      "attempted_translation": "Это украшенная магическая настенная руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'волшебная стена' for EN 'magic wall' from items.json:item.10181.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:46:22.252445Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11613.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned animate dead rune",
+      "attempted_translation": "Это украшенная ожившая мертвая руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Оживить мертвую руну' for EN 'Animate Dead Rune' from spells.json:spell.animate_dead_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:46:25.051811Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11614.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned animate dead rune",
+      "attempted_translation": "Это украшенная ожившая мертвая руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Оживить мертвую руну' for EN 'Animate Dead Rune' from spells.json:spell.animate_dead_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:46:27.143491Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11623.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Это украшенная лавинная руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Лавина' for EN 'Avalanche' from monsters.json:monster.avalanche.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:46:28.073533Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11624.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Это украшенная лавинная руна.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Лавина' for EN 'Avalanche' from monsters.json:monster.avalanche.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:46:34.435306Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11639.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Это украшенная полевая руна разрушения.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Уничтожить полевые руны' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:47:32.317997Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11640.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned destroy field rune",
+      "attempted_translation": "Это украшенная полевая руна разрушения.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Уничтожить полевые руны' for EN 'Destroy Field Rune' from spells.json:spell.destroy_field_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:47:45.281759Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11649.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned fire field rune",
+      "attempted_translation": "Это украшенная руна огненного поля.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'огненное поле' for EN 'fire field' from items.json:item.10069.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:48:51.481342Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11650.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned fire field rune",
+      "attempted_translation": "Это украшенная руна огненного поля.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'огненное поле' for EN 'fire field' from items.json:item.10069.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:48:54.420190Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.118.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You swapped it with Bozo's crate of wine flasks",
+      "attempted_translation": "Ты подменил его ящиком Бозо с винными флягами.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'вино' for EN 'wine' from items.json:item.2.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:48:54.956917Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12077.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This little critter just loves slime fungus",
+      "attempted_translation": "Это маленькое создание просто обожает слизистый грибок",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'слизевый гриб' for EN 'slime fungus' from items.json:item.12059.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3153
+    "total": 3165
   },
-  "updated_at": "2026-04-30T15:45:49.790738Z"
+  "updated_at": 1777564193
 }

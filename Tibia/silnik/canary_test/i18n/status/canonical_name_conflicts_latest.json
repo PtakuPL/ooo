@@ -1,101 +1,192 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T15:38:50.721318Z",
-  "lang": "tr",
+  "generated_at_utc": "2026-04-30T15:59:02.673877Z",
+  "lang": "cs",
   "source_files": [
     "items.json",
     "monsters.json",
     "spells.json"
   ],
-  "canonical_terms_total": 4592,
-  "total_conflicted_terms": 3,
-  "case_only_conflicts": 2,
-  "semantic_conflicts": 1,
-  "conflict_rate_pct": 0.07,
+  "canonical_terms_total": 4741,
+  "total_conflicted_terms": 6,
+  "case_only_conflicts": 1,
+  "semantic_conflicts": 5,
+  "conflict_rate_pct": 0.13,
   "examples": [
     {
-      "en_name": "dead renegade knight",
-      "selected_translation": "ölü hain şövalye",
+      "en_name": "broken stone wall",
+      "selected_translation": "poškozená kamenná zeď",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "ölü hain şövalye",
-          "count": 2,
+          "translated": "poškozená kamenná zeď",
+          "count": 8,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.22015.name",
-            "item.22020.name"
+            "item.1573.name",
+            "item.1574.name",
+            "item.1575.name",
+            "item.1580.name"
           ]
         },
         {
-          "translated": "ölü dönek şövalye",
-          "count": 2,
+          "translated": "zlomená kamenná zeď",
+          "count": 4,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.22021.name",
-            "item.22022.name"
+            "item.1576.name",
+            "item.1577.name",
+            "item.1578.name",
+            "item.1579.name"
           ]
         }
       ]
     },
     {
-      "en_name": "hive pore",
-      "selected_translation": "kovan gözeneği",
-      "conflict_type": "case_only",
+      "en_name": "dead wilting leaf golem",
+      "selected_translation": "mrtvý vadnoucí list golem",
+      "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "kovan gözeneği",
+          "translated": "mrtvý vadnoucí list golem",
           "count": 2,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.14064.name",
-            "item.14171.name"
+            "item.19117.name",
+            "item.19120.name"
           ]
         },
         {
-          "translated": "Kovan gözeneği",
-          "count": 1,
+          "translated": "mrtvých vadnoucích listů golem",
+          "count": 2,
           "source_files": [
-            "monsters.json"
+            "items.json"
           ],
           "sample_keys": [
-            "monster.hive_pore.name"
+            "item.19118.name",
+            "item.19119.name"
           ]
         }
       ]
     },
     {
-      "en_name": "pillar",
-      "selected_translation": "sütun",
-      "conflict_type": "case_only",
+      "en_name": "eshtaba the conjurer",
+      "selected_translation": "Eshtaba Zaklínač",
+      "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "sütun",
-          "count": 17,
-          "source_files": [
-            "items.json"
-          ],
-          "sample_keys": [
-            "item.10954.name",
-            "item.11047.name",
-            "item.11053.name",
-            "item.11057.name"
-          ]
-        },
-        {
-          "translated": "Sütun",
+          "translated": "Eshtaba Zaklínač",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.pillar.name"
+            "monster.eshtaba_the_conjurer_stop.name"
+          ]
+        },
+        {
+          "translated": "Eshtaba kouzelník",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.eshtaba_the_conjurer.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "lightest missile rune",
+      "selected_translation": "nejlehčí raketová runa",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "nejlehčí raketová runa",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.21352.name",
+            "item.21432.name"
+          ]
+        },
+        {
+          "translated": "Nejlehčí raketová runa",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.lightest_missile_rune.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "mushroom sponge",
+      "selected_translation": "houba houbová",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "houba houbová",
+          "count": 12,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.15584.name",
+            "item.15585.name",
+            "item.15586.name",
+            "item.15587.name"
+          ]
+        },
+        {
+          "translated": "houba houbička",
+          "count": 3,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.15532.name",
+            "item.15533.name",
+            "item.15534.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "timber chair",
+      "selected_translation": "dřevěné křeslo",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "dřevěné křeslo",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.11800.name",
+            "item.11802.name"
+          ]
+        },
+        {
+          "translated": "dřevěná židle",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.11801.name",
+            "item.11803.name"
           ]
         }
       ]
@@ -103,15 +194,26 @@
   ],
   "case_only_autofixed": 0,
   "case_only_autofixed_keys": [],
-  "semantic_autofixed": 0,
-  "semantic_autofixed_keys": [],
+  "semantic_autofixed": 1,
+  "semantic_autofixed_keys": [
+    "item.15747.name"
+  ],
   "semantic_quality_blocked": 0,
   "semantic_quality_blocked_keys": [],
   "existing_quality_sanitized": 0,
   "existing_quality_sanitized_keys": [],
-  "review_candidates_total": 2,
+  "review_candidates_total": 11,
   "review_keys": [
-    "item.22021.name",
-    "item.22022.name"
+    "item.1576.name",
+    "item.1577.name",
+    "item.1578.name",
+    "item.1579.name",
+    "item.19118.name",
+    "item.19119.name",
+    "item.15532.name",
+    "item.15533.name",
+    "item.15534.name",
+    "item.11801.name",
+    "item.11803.name"
   ]
 }

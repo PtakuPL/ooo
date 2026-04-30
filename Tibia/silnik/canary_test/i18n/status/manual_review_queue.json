@@ -63501,11 +63501,461 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:55:31.937978Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12935.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "There is a hole in the ceiling.",
+      "attempted_translation": "Ve stropě je díra.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'otvor' for EN 'hole' from items.json:item.12203.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:55:41.662066Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.133.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains holy water from the white raven monastery.",
+      "attempted_translation": "Obsahuje svěcenou vodu z kláštera bílého havrana.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'voda' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:32.735511Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.13656.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This lamp is glowing very dimly.",
+      "attempted_translation": "Tato lampa svítí velmi slabě.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'svítilna' for EN 'lamp' from items.json:item.10507.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:35.905021Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.13658.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This lamp is glowing very dimly.",
+      "attempted_translation": "Tato lampa svítí velmi slabě.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'svítilna' for EN 'lamp' from items.json:item.10507.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:37.011037Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.140.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It is the parcel for the watchtower on the Femor Hills",
+      "attempted_translation": "Je to parcela pro strážní věž na Femor Hills",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'balíček' for EN 'parcel' from items.json:item.140.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:37.711099Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14032.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This plant urgently needs some water, else it will wither away and disappear completely",
+      "attempted_translation": "Tato rostlina nutně potřebuje trochu vody, jinak uschne a úplně zmizí",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'voda' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:39.415476Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14157.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This continuous stream of water seems strong enough to cut even the hardest of materials.",
+      "attempted_translation": "Tento nepřetržitý proud vody se zdá být dostatečně silný, aby řezal i ty nejtvrdší materiály.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'voda' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:41.459871Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14162.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This blood red gem is still rough",
+      "attempted_translation": "Tento krvavě červený drahokam je stále drsný",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'krev' for EN 'blood' from items.json:item.18620.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:41.586272Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14165.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode",
+      "attempted_translation": "Tato bedna je plná zkamenělých korálů. Musí se včas zablokovat, jinak zkoroduje",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'zkamenělý korál' for EN 'fossilised coral' from items.json:item.14163.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:41.708527Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14166.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode.",
+      "attempted_translation": "Tato bedna je plná zkamenělých korálů. Musí se včas zablokovat, jinak zkoroduje.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'zkamenělý korál' for EN 'fossilised coral' from items.json:item.14163.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:41.837632Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14237.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The chair is tied to this strange machine. You could use this if you had appropriate instructions.",
+      "attempted_translation": "Židle je přivázána k tomuto podivnému stroji. Mohli byste to použít, pokud byste měli příslušné pokyny.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'podivný stroj' for EN 'strange machine' from items.json:item.21743.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:42.085301Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14238.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "There is a hole in the ceiling.",
+      "attempted_translation": "Ve stropě je díra.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'otvor' for EN 'hole' from items.json:item.12203.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:42.896845Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14682.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "No one really knows where it leads to, but the dragon graveyard might reveal the secret - or not",
+      "attempted_translation": "Nikdo vlastně neví, kam to vede, ale dračí hřbitov může tajemství odhalit – nebo ne",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Drak' for EN 'Dragon' from monsters.json:monster.dragon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:43.045525Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.16246.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Another set of strange symbols.",
+      "attempted_translation": "Další sada podivných symbolů.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'podivné symboly' for EN 'strange symbols' from items.json:item.16246.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:50.328376Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1576.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1576.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:52.424450Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1577.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1577.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:52.554125Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1578.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1578.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:54.984606Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1579.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1579.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:56.711725Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.19118.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead wilting leaf golem",
+      "attempted_translation": "mrtvých vadnoucích listů golem",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'mrtvý vadnoucí list golem' for EN 'dead wilting leaf golem', but source key item.19118.name still uses conflicting variant 'mrtvých vadnoucích listů golem'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:56.882036Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.19119.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead wilting leaf golem",
+      "attempted_translation": "mrtvých vadnoucích listů golem",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'mrtvý vadnoucí list golem' for EN 'dead wilting leaf golem', but source key item.19119.name still uses conflicting variant 'mrtvých vadnoucích listů golem'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:57.018042Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.15532.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mushroom sponge",
+      "attempted_translation": "houba houbička",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'houba houbová' for EN 'mushroom sponge', but source key item.15532.name still uses conflicting variant 'houba houbička'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:57.150913Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.15533.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mushroom sponge",
+      "attempted_translation": "houba houbička",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'houba houbová' for EN 'mushroom sponge', but source key item.15533.name still uses conflicting variant 'houba houbička'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:57.297756Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.15534.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mushroom sponge",
+      "attempted_translation": "houba houbička",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'houba houbová' for EN 'mushroom sponge', but source key item.15534.name still uses conflicting variant 'houba houbička'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:57.822708Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11801.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "timber chair",
+      "attempted_translation": "dřevěná židle",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'dřevěné křeslo' for EN 'timber chair', but source key item.11801.name still uses conflicting variant 'dřevěná židle'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-30T15:58:57.951713Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11803.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "timber chair",
+      "attempted_translation": "dřevěná židle",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'dřevěné křeslo' for EN 'timber chair', but source key item.11803.name still uses conflicting variant 'dřevěná židle'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3208
+    "total": 3233
   },
-  "updated_at": "2026-04-30T15:55:28.226627Z"
+  "updated_at": 1777564763
 }

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T15:55:11.652859Z",
-  "active_provider": "TM/simple",
-  "active_provider_code": "tm_simple",
-  "active_provider_source": "simple",
-  "active_provider_timestamp": "2026-04-30T15:38:46.676632Z",
+  "generated_at_utc": "2026-04-30T15:59:51.017031Z",
+  "active_provider": "OpenAI model pool",
+  "active_provider_code": "openai_model_pool",
+  "active_provider_source": "openai:openai/gpt-4.1-mini",
+  "active_provider_timestamp": "2026-04-30T15:58:58.414384Z",
   "active_model": "openai/gpt-4.1-mini",
   "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -69,12 +69,12 @@
       "provider_consistency_debt:518"
     ],
     "provider_consistency_debt": 518,
-    "recent_window_writes": 551,
+    "recent_window_writes": 549,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 261
+        "writes": 278
       },
       {
         "provider": "tm_simple",
@@ -84,12 +84,12 @@
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 110
+        "writes": 90
       },
       {
         "provider": "canonical_name_semantic_autofix",
         "provider_label": "canonical_name_semantic_autofix",
-        "writes": 21
+        "writes": 22
       },
       {
         "provider": "term_consistency_autofix",
@@ -118,7 +118,7 @@
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 110
+        "recent_writes": 90
       },
       "google_cloud": {
         "status": "disabled",
@@ -129,7 +129,7 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
-        "recent_writes": 261,
+        "recent_writes": 278,
         "requests_today": 20
       }
     },
@@ -240,7 +240,7 @@
       "used_pct": 8.0,
       "monthly_cap": 250.0,
       "spent": 20.0,
-      "latest_age_s": 148.323384,
+      "latest_age_s": 459.230094,
       "day_utc": "2026-04-30",
       "unit": "requests_per_day",
       "stale": false

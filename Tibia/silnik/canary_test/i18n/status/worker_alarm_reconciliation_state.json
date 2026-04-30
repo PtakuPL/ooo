@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at_utc": "2026-04-30T15:49:53.137155Z",
+  "updated_at_utc": "2026-04-30T15:59:23.287770Z",
   "cycle": 1,
   "doctor_available": true,
   "doctor_overall": "critical",
@@ -87,11 +87,11 @@
     },
     "GUARD_REPORT_STALE": {
       "first_seen_utc": "2026-04-22T16:14:44.259527Z",
-      "activations": 14,
-      "status": "resolved",
-      "last_seen_utc": "2026-04-30T15:41:10.554902Z",
+      "activations": 15,
+      "status": "active",
+      "last_seen_utc": "2026-04-30T15:59:23.287770Z",
       "last_severity": "warning",
-      "last_message": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 11794s",
+      "last_message": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 1170s",
       "last_resolved_utc": "2026-04-30T15:41:10.554902Z",
       "resolutions": 14
     },
@@ -99,7 +99,7 @@
       "first_seen_utc": "2026-04-22T16:14:44.259527Z",
       "activations": 4,
       "status": "active",
-      "last_seen_utc": "2026-04-30T15:49:53.137155Z",
+      "last_seen_utc": "2026-04-30T15:59:23.287770Z",
       "last_severity": "warning",
       "last_message": "REPAIR_TUNING_NO_SAMPLES: backlog=733 ale samples_2h=0 (repair tuning nie generuje próbek mimo aktywnej kolejki)",
       "last_resolved_utc": "2026-04-28T14:35:51.276319Z",
@@ -129,7 +129,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 2,
       "status": "active",
-      "last_seen_utc": "2026-04-30T15:49:53.137155Z",
+      "last_seen_utc": "2026-04-30T15:59:23.287770Z",
       "last_severity": "warning",
       "last_message": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.95<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0,...] source=statusd_report.json",
       "last_resolved_utc": "2026-04-23T19:26:23.569214Z",
@@ -149,7 +149,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 1,
       "status": "active",
-      "last_seen_utc": "2026-04-30T15:49:53.137155Z",
+      "last_seen_utc": "2026-04-30T15:59:23.287770Z",
       "last_severity": "warning",
       "last_message": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.17pp top=[ru:36.17pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:19.86pp] source=statusd_report.json"
     },
@@ -167,7 +167,7 @@
       "first_seen_utc": "2026-04-22T18:42:28.846541Z",
       "activations": 6,
       "status": "active",
-      "last_seen_utc": "2026-04-30T15:49:53.137155Z",
+      "last_seen_utc": "2026-04-30T15:59:23.287770Z",
       "last_severity": "warning",
       "last_message": "QUEUE_STARVATION_DETECTED: source=deferred_translation_queue.jsonl detail=Duży pending i stara kolejka sugerują głodzenie queue.",
       "last_resolved_utc": "2026-04-23T17:11:02.275660Z",
@@ -275,11 +275,11 @@
     },
     "WORKER_STUCK_NO_WRITE": {
       "first_seen_utc": "2026-04-23T19:35:12.443162Z",
-      "activations": 8,
-      "status": "resolved",
-      "last_seen_utc": "2026-04-30T15:49:53.137155Z",
+      "activations": 9,
+      "status": "active",
+      "last_seen_utc": "2026-04-30T15:59:23.287770Z",
       "last_severity": "warning",
-      "last_message": "WORKER_STUCK_NO_WRITE: source=translation_recent_report.jsonl detail=Brak świeżych zapisów przy pending=398.",
+      "last_message": "WORKER_STUCK_NO_WRITE: source=translation_recent_report.jsonl detail=Brak świeżych zapisów przy pending=396.",
       "last_resolved_utc": "2026-04-30T15:49:53.137155Z",
       "resolutions": 8
     },
@@ -387,7 +387,7 @@
       "first_seen_utc": "2026-04-27T15:23:48.252528Z",
       "activations": 118,
       "status": "active",
-      "last_seen_utc": "2026-04-30T15:49:53.137155Z",
+      "last_seen_utc": "2026-04-30T15:59:23.287770Z",
       "last_severity": "critical",
       "last_message": "TERM_CONSISTENCY_REGRESSION: rate=25.6% delta=25.6% total=71 source=term_conflicts_latest.json",
       "last_resolved_utc": "2026-04-29T23:09:04.212127Z",
@@ -395,14 +395,17 @@
     }
   },
   "active_alarm_tokens": [
+    "GUARD_REPORT_STALE",
     "NATIVE_READINESS_BELOW_THRESHOLD",
     "QUEUE_STARVATION_DETECTED",
     "REPAIR_TUNING_NO_SAMPLES",
     "SURFACE_COVERAGE_IMBALANCE",
-    "TERM_CONSISTENCY_REGRESSION"
-  ],
-  "last_opened_tokens": [],
-  "last_resolved_tokens": [
+    "TERM_CONSISTENCY_REGRESSION",
     "WORKER_STUCK_NO_WRITE"
-  ]
+  ],
+  "last_opened_tokens": [
+    "GUARD_REPORT_STALE",
+    "WORKER_STUCK_NO_WRITE"
+  ],
+  "last_resolved_tokens": []
 }

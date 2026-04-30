@@ -1,141 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-30T15:38:41.883550Z",
-  "lang": "tr",
+  "generated_at_utc": "2026-04-30T15:58:43.179773Z",
+  "lang": "cs",
   "json_file": "items.json",
   "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 71,
+  "term_conflicts_total": 166,
   "keys_visited": 2000,
-  "keys_scanned": 337,
+  "keys_scanned": 340,
   "visit_limit_hit": true,
-  "keys_with_term_usages": 125,
-  "keys_with_conflicts": 32,
-  "term_conflict_rate_pct": 25.6,
-  "term_conflict_rate_delta_pct": 25.6,
-  "registry_terms_total": 9099,
+  "keys_with_term_usages": 128,
+  "keys_with_conflicts": 70,
+  "term_conflict_rate_pct": 54.688,
+  "term_conflict_rate_delta_pct": 54.688,
+  "registry_terms_total": 10460,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 1,
-  "manual_review_enqueued": 70,
+  "inflection_suspects_flagged": 32,
+  "manual_review_enqueued": 134,
   "conflict_type_breakdown": {
-    "canonical_term_inflection_suspect": 1,
-    "canonical_term_missing": 70
+    "canonical_term_missing": 134,
+    "canonical_term_inflection_suspect": 32
   },
   "surface_breakdown": {
     "items": {
-      "keys_with_term_usages": 125,
-      "keys_with_conflicts": 32,
-      "term_conflicts_total": 71
+      "keys_with_term_usages": 128,
+      "keys_with_conflicts": 70,
+      "term_conflicts_total": 166
     }
   },
   "top_conflicts": [
     {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "socha draka",
+      "canonical_en": "dragon statue",
+      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "source_file": "items.json",
+      "source_key": "item.10029.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "socha draka",
+      "canonical_en": "dragon statue",
+      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "source_file": "items.json",
+      "source_key": "item.10030.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "socha draka",
+      "canonical_en": "dragon statue",
+      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "source_file": "items.json",
+      "source_key": "item.10031.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "socha draka",
+      "canonical_en": "dragon statue",
+      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "source_file": "items.json",
+      "source_key": "item.10032.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "socha draka",
+      "canonical_en": "dragon statue",
+      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "source_file": "items.json",
+      "source_key": "item.10172.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "socha draka",
+      "canonical_en": "dragon statue",
+      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "source_file": "items.json",
+      "source_key": "item.10173.name"
+    },
+    {
       "key": "item.10217.desc",
-      "conflict_type": "canonical_term_inflection_suspect",
-      "canonical": "kitap",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "rezervovat",
       "canonical_en": "book",
-      "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
+      "translated_text": "Přineste tuto zašifrovanou knihu mudrci v Farmine, abyste získali moudrost nebo odemkli další Zaovu kulturu",
       "source_file": "items.json",
       "source_key": "item.12276.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "item.10288.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "dračí trůn",
+      "canonical_en": "dragon throne",
+      "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
       "source_file": "items.json",
-      "source_key": "item.116.name"
+      "source_key": "item.10286.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "item.10288.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "dračí trůn",
+      "canonical_en": "dragon throne",
+      "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
       "source_file": "items.json",
-      "source_key": "item.117.name"
+      "source_key": "item.10287.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "item.10288.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.118.name"
+      "canonical": "Drak",
+      "canonical_en": "Dragon",
+      "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
+      "source_file": "monsters.json",
+      "source_key": "monster.dragon.name"
     },
     {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "key": "item.10422.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "socha",
+      "canonical_en": "statue",
+      "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
       "source_file": "items.json",
-      "source_key": "item.12763.name"
+      "source_key": "item.10322.name"
     },
     {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "key": "item.10422.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "socha",
+      "canonical_en": "statue",
+      "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
       "source_file": "items.json",
-      "source_key": "item.12764.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.14166.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.116.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.117.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.118.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.12763.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.12764.name"
+      "source_key": "item.2025.name"
     }
   ]
 }

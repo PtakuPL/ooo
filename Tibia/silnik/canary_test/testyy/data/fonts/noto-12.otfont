@@ -8,6 +8,14 @@ Font
   widget-default: true
   fallback:
     - /fonts/ttf/NotoSansSC-Regular.ttf
-    - /fonts/ttf/NotoSansHebrew-Regular.ttf
-    - /fonts/ttf/NotoNaskhArabic-Regular.ttf
+    - /fonts/ttf/NotoSansTC-Regular.otf
     - /fonts/ttf/NotoSansJP-Regular.otf
+    - /fonts/ttf/NotoSansKR-Regular.otf
+    - /fonts/ttf/NotoNaskhArabic-Regular.ttf
+    - /fonts/ttf/NotoSansHebrew-Regular.ttf
+    - /fonts/ttf/NotoSansThai-Regular.ttf
+    - /fonts/ttf/NotoSansDevanagari-Regular.ttf
+    - /fonts/ttf/NotoSansBengali-Regular.ttf
+    - /fonts/ttf/NotoSansTamil-Regular.ttf
+    - /fonts/ttf/NotoSansGeorgian-Regular.ttf
+    - /fonts/ttf/NotoSansArmenian-Regular.ttf

@@ -419,11 +419,30 @@ jobs:
         env:
           VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
         run: |
-          cmake -S . -B build -G Ninja \
-            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-            -DVCPKG_TARGET_TRIPLET=x64-linux \
-            -DOTCLIENT_PLAYER_BUILD=ON \
-            -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+          set -euo pipefail
+
+          configure_cmake() {
+            cmake -S . -B build -G Ninja \
+              -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+              -DVCPKG_TARGET_TRIPLET=x64-linux \
+              -DOTCLIENT_PLAYER_BUILD=ON \
+              -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+          }
+
+          for attempt in 1 2 3; do
+            if configure_cmake; then
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "CMake configure failed after $attempt attempts"
+              exit 1
+            fi
+
+            echo "::warning::CMake configure failed on attempt $attempt; retrying to survive transient vcpkg/download errors"
+            rm -f build/CMakeCache.txt
+            rm -rf build/CMakeFiles
+          done
 
       - name: Verify sealed player CMake option
         working-directory: ${{ env.CLIENT_SRC }}

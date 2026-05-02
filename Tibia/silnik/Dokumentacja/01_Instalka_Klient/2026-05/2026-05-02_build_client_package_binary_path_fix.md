@@ -20,6 +20,8 @@ Jesli binarka nadal nie zostanie znaleziona, workflow wypisze diagnostyczne `fin
 
 Po tej poprawce GHA doszlo dalej i padlo w `Verify package integrity` na braku fallbackow Unicode w `data/fonts/mono-12.otfont`. Do commita dolaczono pelne fallbacki wymagane przez `tools/verify-player-package.sh` dla wszystkich TTF `.otfont` w `data/fonts`.
 
+Kolejny run Linux doszedl do `Configure CMake` i po ok. 19 minutach padl podczas vcpkg na zewnetrznym pobraniu `https://github.com/zeux/pugixml/archive/v1.15.tar.gz` z HTTP 502. Dodano retry linuxowego `Configure CMake` do 3 prob. Po pierwszej awarii pozostaja juz zbudowane/rozpakowane porty vcpkg, wiec ponowna proba ma szanse przejsc przez chwilowy blad downloadu bez tracenia calego joba.
+
 ## Walidacja lokalna
 - Pobrano logi runa `25252716772` przez GitHub API.
 - Potwierdzono, ze oba joby padly na `Assemble client package` przez brak binarki w oczekiwanej sciezce.
@@ -28,6 +30,7 @@ Po tej poprawce GHA doszlo dalej i padlo w `Verify package integrity` na braku f
 - VS Code diagnostics nie pokazaly bledow w workflowie.
 - Po drugim runie `25255731139` potwierdzono, ze `Assemble client package` przechodzi na Windows i Linux, a nastepna blokada dotyczyla juz font fallbackow.
 - Skryptowo sprawdzono, ze kazdy TTF `.otfont` ma fallbacki wymagane przez `verify-player-package.sh`.
+- Run `25257071038` na commicie `cfd28287d0` padl na Linux w `Configure CMake`: vcpkg nie pobral `pugixml` z GitHuba przez HTTP 502.
 
 ## Uwagi
 Nie instalowano lokalnie zadnych toolchainow ani narzedzi buildowych. Pelna weryfikacja kompilacji nadal odbywa sie przez GitHub Actions.

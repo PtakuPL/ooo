@@ -42,6 +42,101 @@ function versionCompare(string $a, string $b): int {
     return version_compare($a, $b);
 }
 
+function playerManifestDenyPatterns(): array {
+    return [
+        '#(^|/)start_dev\.(sh|bat|cmd|ps1)$#i',
+        '#(^|/)start_player\.(sh|bat|cmd|ps1)$#i',
+        '#(^|/)serverlist\.(json|lua)$#i',
+        '#(^|/)init_serverlist\.lua$#i',
+        '#(^|/)otclientrc\.lua$#i',
+        '#(^|/)otclientrc\.lua\.default$#i',
+        '#(^|/)src/#',
+        '#(^|/)tools/#',
+        '#(^|/)docs/#',
+        '#(^|/)tests/#',
+        '#(^|/)serverSIDE(/|$)#i',
+        '#(^|/)\.github/#',
+        '#\.sh$#i',
+        '#\.bat$#i',
+        '#\.cmd$#i',
+        '#\.ps1$#i',
+        '#\.cpp$#i',
+        '#\.c$#i',
+        '#\.h$#i',
+        '#\.hpp$#i',
+        '#\.rs$#i',
+        '#(^|/)Cargo\.(toml|lock)$#i',
+        '#(^|/)CMakeLists\.txt$#i',
+        '#(^|/)CMakeCache\.txt$#i',
+        '#\.pdb$#i',
+        '#\.ilk$#i',
+        '#\.obj$#i',
+        '#\.o$#i',
+        '#\.lib$#i',
+        '#\.a$#i',
+        '#\.md$#i',
+        '#\.patch$#i',
+        '#\.orig$#i',
+        '#\.bak$#i',
+        '#\.bak\.[^/]+$#i',
+        '#\.txt$#i',
+        '#(^|/)README[^/]*$#i',
+        '#(^|/)\.env(\.|$)#i',
+        '#\.key$#i',
+        '#\.secret$#i',
+    ];
+}
+
+function blockedPlayerManifestPathsForVersion(string $channel, string $version): array {
+    $manifestFile = __DIR__ . '/manifests/' . $channel . '/' . $version . '.json';
+    if (!is_file($manifestFile)) {
+        return ['__manifest_json_missing__:' . $channel . '/' . $version];
+    }
+
+    $manifest = json_decode((string)file_get_contents($manifestFile), true);
+    if (!is_array($manifest)) {
+        return ['__manifest_json_invalid__:' . $channel . '/' . $version];
+    }
+
+    $blocked = [];
+    $patterns = playerManifestDenyPatterns();
+    foreach (($manifest['files'] ?? []) as $file) {
+        $path = is_array($file) ? (string)($file['path'] ?? '') : '';
+        if ($path === '') {
+            continue;
+        }
+        foreach ($patterns as $pattern) {
+            if (preg_match($pattern, $path)) {
+                $blocked[] = $path;
+                break;
+            }
+        }
+    }
+    sort($blocked);
+    return $blocked;
+}
+
+function rejectIfPlayerManifestBlocked(string $channel, string $version, array $ENV, string $ipHash, float $requestStartedAt): void {
+    if (($ENV['ALLOW_DEV_CLIENT_MANIFEST'] ?? '') === '1') {
+        return;
+    }
+
+    $blockedPaths = blockedPlayerManifestPathsForVersion($channel, $version);
+    if ($blockedPaths === []) {
+        return;
+    }
+
+    error_log('[launcher-token.php] blocked dirty player manifest channel=' . $channel . ' version=' . $version . ' paths=' . implode(',', array_slice($blockedPaths, 0, 20)));
+    logTicketEvent('launcher_token.rejected.manifest_blocked', [
+        'endpoint' => 'launcher-token.php',
+        'ipHash' => $ipHash,
+        'manifestVersion' => $version,
+        'channel' => $channel,
+        'latencyMs' => (int)round((microtime(true) - $requestStartedAt) * 1000),
+    ], $ENV);
+    sendLauncherError('manifest_blocked', 'Client manifest is blocked because it contains non-player files. Update will be available after clean client package deploy.', 503);
+}
+
 // ------- read request -------
 $raw = file_get_contents('php://input') ?: '';
 $req = json_decode($raw, true);
@@ -142,7 +237,7 @@ if ($manifestVersion !== '') {
     // Sprawdź czy filesHash zgadza się z oczekiwanym hashem z manifest_versions
     // FIX-AUD13: dodano channel do WHERE — schema ma UNIQUE(version, channel)
     $stmt = $apiDb->prepare(
-        "SELECT files_hash FROM manifest_versions WHERE version = ? AND channel = ? AND is_active = 1 LIMIT 1"
+        "SELECT version, files_hash FROM manifest_versions WHERE version = ? AND channel = ? AND is_active = 1 LIMIT 1"
     );
     $stmt->execute([$manifestVersion, $requestChannel]);
     $mv = $stmt->fetch();
@@ -152,13 +247,15 @@ if ($manifestVersion !== '') {
             // Sprawdź previous version (grace period) — w tym samym kanale
             // FIX-AUD13: grace period query też filtruje po channel
             $stmt2 = $apiDb->prepare(
-                "SELECT files_hash FROM manifest_versions WHERE channel = ? AND is_active = 1 ORDER BY id DESC LIMIT 2"
+                "SELECT version, files_hash FROM manifest_versions WHERE channel = ? AND is_active = 1 ORDER BY id DESC LIMIT 2"
             );
             $stmt2->execute([$requestChannel]);
             $accepted = false;
+            $acceptedVersion = '';
             while ($row = $stmt2->fetch()) {
                 if ($row['files_hash'] === $filesHash) {
                     $accepted = true;
+                    $acceptedVersion = (string)$row['version'];
                     break;
                 }
             }
@@ -173,6 +270,9 @@ if ($manifestVersion !== '') {
                 ], $ENV);
                 sendLauncherError('files_hash_mismatch', 'Client files hash mismatch. Pliki klienta nie pasują do oczekiwanych. Zrestartuj launcher.', 403);
             }
+            rejectIfPlayerManifestBlocked($requestChannel, $acceptedVersion, $ENV, $ipHash, $requestStartedAt);
+        } else {
+            rejectIfPlayerManifestBlocked($requestChannel, (string)$mv['version'], $ENV, $ipHash, $requestStartedAt);
         }
     } else {
         // FIX-AUD5: manifestVersion podany ale nie istnieje w DB → FAIL-CLOSED
@@ -191,7 +291,7 @@ if ($manifestVersion !== '') {
     // FIX12: manifestVersion jest pusty — sprawdź filesHash przeciwko najnowszemu aktywnemu manifestowi
     // FIX-AUD13: filtruj po kanale klienta
     $stmt = $apiDb->prepare(
-        "SELECT files_hash FROM manifest_versions WHERE channel = ? AND is_active = 1 ORDER BY id DESC LIMIT 2"
+        "SELECT version, files_hash FROM manifest_versions WHERE channel = ? AND is_active = 1 ORDER BY id DESC LIMIT 2"
     );
     $stmt->execute([$requestChannel]);
     $rows = $stmt->fetchAll();
@@ -199,9 +299,11 @@ if ($manifestVersion !== '') {
     if (count($rows) > 0) {
         // Mamy aktywne manifesty — filesHash MUSI pasować do jednego z nich
         $accepted = false;
+        $acceptedVersion = '';
         foreach ($rows as $row) {
             if ($row['files_hash'] === $filesHash) {
                 $accepted = true;
+                $acceptedVersion = (string)$row['version'];
                 break;
             }
         }
@@ -216,6 +318,7 @@ if ($manifestVersion !== '') {
             ], $ENV);
             sendLauncherError('files_hash_mismatch', 'Client files hash mismatch (no manifest version provided). Update your launcher.', 403);
         }
+        rejectIfPlayerManifestBlocked($requestChannel, $acceptedVersion, $ENV, $ipHash, $requestStartedAt);
     } else {
         // FIX21: Brak aktywnych manifestów w DB → FAIL-CLOSED.
         // Nie przepuszczamy bez weryfikacji — admin musi dodać manifest do DB.

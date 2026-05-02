@@ -109,7 +109,7 @@ pub fn write_config(install_dir: &Path, bootstrap_version: &str) -> Result<(), I
     // Do not overwrite existing config
     if !config_path.exists() {
         let json = serde_json::to_string_pretty(&config)
-            .map_err(|e| InstallError::Io(io::Error::new(io::ErrorKind::Other, e.to_string())))?;
+            .map_err(|e| InstallError::Io(io::Error::other(e.to_string())))?;
         fs::write(&config_path, json)?;
     }
 

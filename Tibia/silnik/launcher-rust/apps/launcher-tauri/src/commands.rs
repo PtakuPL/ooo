@@ -7,6 +7,7 @@
 
 use semver::Version;
 use std::collections::BTreeSet;
+use std::fs;
 use std::path::{Path, PathBuf};
 use tauri::State;
 
@@ -25,7 +26,6 @@ use launcher_core::patcher::{self, PatchContext};
 use launcher_core::planner::build_update_plan;
 use launcher_core::process_runner::{launch_client, LaunchConfig};
 use launcher_core::repair::diagnose_installation;
-use launcher_core::serverlist_sync;
 use launcher_core::state as core_state;
 
 use crate::session_store;
@@ -209,7 +209,95 @@ fn run_preflight_for_launch(client_dir: &Path, launcher_data: &Path) -> Result<(
     ensure_path_writable(client_dir, "client_dir")?;
     ensure_path_writable(launcher_data, "launcher_data_dir")?;
     let _ = ensure_free_space(client_dir, "client_dir", PREFLIGHT_MIN_LAUNCH_FREE_BYTES)?;
+    let quarantined = quarantine_player_runtime_leftovers(client_dir, launcher_data)?;
+    if !quarantined.is_empty() {
+        tracing::warn!(
+            "Player runtime cleanup before launch quarantined {} leftover files: {:?}",
+            quarantined.len(),
+            quarantined
+        );
+    }
     Ok(())
+}
+
+fn quarantine_player_runtime_leftovers(
+    client_dir: &Path,
+    launcher_data: &Path,
+) -> Result<Vec<String>, String> {
+    let mut candidates: Vec<PathBuf> = Vec::new();
+    let root_files = [
+        "serverlist.lua",
+        "serverlist.json",
+        "init_serverlist.lua",
+        "otclientrc.lua",
+        "otclientrc.lua.default",
+        "start_dev.bat",
+        "start_dev.sh",
+        "start_player.bat",
+        "start_player.sh",
+        "OTClient.sublime-project",
+        "README.md",
+        "README.txt",
+        "AUTHORS",
+        "BUGS",
+    ];
+
+    for name in root_files {
+        let path = client_dir.join(name);
+        if path.exists() {
+            candidates.push(PathBuf::from(name));
+        }
+    }
+
+    let root_dirs = [
+        "serverSIDE",
+        "data/styles.bak",
+        "data/locales/disabled",
+        "modules/.project",
+    ];
+    for name in root_dirs {
+        let path = client_dir.join(name);
+        if path.exists() {
+            candidates.push(PathBuf::from(name));
+        }
+    }
+
+    if candidates.is_empty() {
+        return Ok(Vec::new());
+    }
+
+    let stamp = chrono_utc_now().replace([':', '-'], "");
+    let quarantine_dir = launcher_data
+        .join("quarantine")
+        .join(format!("player-leftovers-{stamp}"));
+    fs::create_dir_all(&quarantine_dir)
+        .map_err(|e| format!("LCH_PLAYER_CLEANUP_QUARANTINE_CREATE_FAILED: {e}"))?;
+
+    let mut moved = Vec::new();
+    for rel in candidates {
+        let src = client_dir.join(&rel);
+        if !src.exists() {
+            continue;
+        }
+        let dst = quarantine_dir.join(&rel);
+        if let Some(parent) = dst.parent() {
+            fs::create_dir_all(parent).map_err(|e| {
+                format!(
+                    "LCH_PLAYER_CLEANUP_QUARANTINE_PARENT_FAILED: {}: {e}",
+                    rel.display()
+                )
+            })?;
+        }
+        fs::rename(&src, &dst).map_err(|e| {
+            format!(
+                "LCH_PLAYER_CLEANUP_QUARANTINE_MOVE_FAILED: {}: {e}",
+                rel.display()
+            )
+        })?;
+        moved.push(rel.to_string_lossy().to_string());
+    }
+
+    Ok(moved)
 }
 
 fn load_stored_launcher_session_key(launcher_data: &Path) -> Result<String, String> {
@@ -543,6 +631,15 @@ async fn run_update_inner(
     run_preflight_for_update(&client_dir, &launcher_data, plan.total_download_bytes)?;
 
     if plan.is_up_to_date {
+        let quarantined = quarantine_player_runtime_leftovers(&client_dir, &launcher_data)?;
+        if !quarantined.is_empty() {
+            tracing::warn!(
+                "Player runtime cleanup on up-to-date install quarantined {} leftover files: {:?}",
+                quarantined.len(),
+                quarantined
+            );
+        }
+
         let files_hash = compute_files_hash(&manifest, &client_dir)
             .map_err(|e| format!("LCH_FILES_HASH_COMPUTE_FAILED: {e}"))?;
         enforce_manifest_files_hash(&manifest, &files_hash, bootstrap_mode)?;
@@ -612,6 +709,15 @@ async fn run_update_inner(
     patcher::apply_plan(&ctx, &plan, &staged_paths, &mut installed)
         .map_err(|e| format!("LCH_PATCH_APPLY_FAILED: {e}"))?;
 
+    let quarantined = quarantine_player_runtime_leftovers(&client_dir, &launcher_data)?;
+    if !quarantined.is_empty() {
+        tracing::warn!(
+            "Player runtime cleanup after update quarantined {} leftover files: {:?}",
+            quarantined.len(),
+            quarantined
+        );
+    }
+
     // --- Faza 5: Finalizacja ---
     let files_hash = compute_files_hash(&manifest, &client_dir)
         .map_err(|e| format!("LCH_FILES_HASH_COMPUTE_FAILED: {e}"))?;
@@ -626,12 +732,10 @@ async fn run_update_inner(
 
     ctx.cleanup().ok();
 
-    // Serverlist sync
     if !manifest.servers.is_empty() {
-        let lua_path = client_dir.join("serverlist.lua");
-        let json_path = client_dir.join("serverlist.json");
-        serverlist_sync::sync_serverlist(&manifest.servers, &lua_path).ok();
-        serverlist_sync::sync_serverlist_json(&manifest.servers, &json_path).ok();
+        tracing::info!(
+            "Skipping launcher-generated serverlist files for player runtime; sealed client config/API ticket are authoritative"
+        );
     }
 
     core_state::save_state(&installed, &state_path)
@@ -1158,6 +1262,58 @@ fn percent_encode_component(input: &str) -> String {
 fn append_query_param(url: &str, key: &str, value: &str) -> String {
     let separator = if url.contains('?') { '&' } else { '?' };
     format!("{url}{separator}{key}={}", percent_encode_component(value))
+}
+
+/// Extract the scheme+host(+port) origin from a full base URL.
+/// Returns `None` if `base_url` does not start with `http://` or `https://`.
+///
+/// Used by `download_and_verify_artifact` to resolve relative artifact URLs
+/// returned from `installer-catalog.php` (e.g. `/files/foo.zip`).
+fn extract_origin(base_url: &str) -> Option<String> {
+    let (scheme, rest) = if let Some(r) = base_url.strip_prefix("https://") {
+        ("https://", r)
+    } else if let Some(r) = base_url.strip_prefix("http://") {
+        ("http://", r)
+    } else {
+        return None;
+    };
+    let host_end = rest.find('/').unwrap_or(rest.len());
+    Some(format!("{scheme}{}", &rest[..host_end]))
+}
+
+/// Resolve an artifact URL from `installer-catalog.php` to an absolute URL.
+/// Relative paths (`/files/...`) and protocol-relative (`//host/...`) are
+/// resolved against `api_base_url`'s origin. Absolute http(s) URLs pass through.
+fn resolve_artifact_url(api_base_url: &str, url: &str) -> Result<String, String> {
+    let trimmed = url.trim();
+    if trimmed.is_empty() {
+        return Err("Pusty URL artefaktu w katalogu".to_string());
+    }
+    if trimmed.starts_with("https://") || trimmed.starts_with("http://") {
+        return Ok(trimmed.to_string());
+    }
+    let origin = extract_origin(api_base_url)
+        .ok_or_else(|| format!("Nieprawidłowy api_base_url: {api_base_url}"))?;
+    if let Some(rest) = trimmed.strip_prefix("//") {
+        let scheme = if origin.starts_with("https://") {
+            "https:"
+        } else {
+            "http:"
+        };
+        return Ok(format!("{scheme}//{rest}"));
+    }
+    if trimmed.starts_with('/') {
+        return Ok(format!("{origin}{trimmed}"));
+    }
+    Ok(format!("{}/{trimmed}", api_base_url.trim_end_matches('/')))
+}
+
+/// Returns true iff `s` is a 64-character hex string (lower or upper case).
+fn is_valid_sha256_hex(s: &str) -> bool {
+    let t = s.trim();
+    t.len() == 64
+        && t.chars()
+            .all(|c| matches!(c, '0'..='9' | 'a'..='f' | 'A'..='F'))
 }
 
 fn pending_account_sync_path(launcher_data: &Path) -> std::path::PathBuf {
@@ -2092,6 +2248,16 @@ pub async fn download_and_verify_artifact(
         )
     };
 
+    // Reject early: relative URLs from the catalog must be resolvable, and the
+    // catalog must publish a valid SHA-256. Without these we cannot anchor the
+    // trust chain even if `verify_artifact_strict` would later catch a mismatch.
+    if !is_valid_sha256_hex(&expected_sha256) {
+        return Err(format!(
+            "Brak/nieprawidłowy SHA-256 dla '{filename}' (oczekiwane 64 znaki hex)"
+        ));
+    }
+    let resolved_url = resolve_artifact_url(&api_url, &url)?;
+
     let config = launcher_api::client::ApiClientConfig {
         base_url: api_url,
         dev_mode,
@@ -2101,7 +2267,7 @@ pub async fn download_and_verify_artifact(
 
     // Pobierz plik
     let data = client
-        .download_file(&url)
+        .download_file(&resolved_url)
         .await
         .map_err(|e| format!("Pobieranie nie powiodło się: {e}"))?;
 

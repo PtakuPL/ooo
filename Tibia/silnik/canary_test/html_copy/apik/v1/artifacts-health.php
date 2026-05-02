@@ -18,45 +18,55 @@ require_once __DIR__ . '/common.php';
 $env = loadEnvFiles([__DIR__ . '/.env']);
 $deep = isset($_GET['deep']) && $_GET['deep'] !== '0';
 
-$baseDir = realpath(__DIR__ . '/..') ?: __DIR__;
+$baseDir = realpath(__DIR__ . '/../..') ?: dirname(__DIR__, 2);
 
 $artifacts = [];
 
-// Bootstrap launcher — Windows
-$bsWinUrl = trim((string)($env['BOOTSTRAP_DOWNLOAD_URL_WIN'] ?? ''));
-if ($bsWinUrl !== '') {
-    $bsWinPath = $baseDir . '/' . ltrim($bsWinUrl, '/');
+function artifactLocalPath(string $baseDir, string $url): ?string {
+    $path = parse_url($url, PHP_URL_PATH);
+    if (!is_string($path) || $path === '' || $path[0] !== '/') {
+        return null;
+    }
+
+    return $baseDir . '/' . ltrim($path, '/');
+}
+
+function addArtifactCheck(array &$artifacts, string $id, string $url, string $expectedSha256, string $baseDir): void {
+    if ($url === '' || $url === '/downloads') {
+        return;
+    }
+
+    $path = artifactLocalPath($baseDir, $url);
     $artifacts[] = [
-        'id' => 'bootstrap-win',
-        'file' => $bsWinUrl,
-        'exists' => is_file($bsWinPath),
-        'expectedSha256' => strtolower(trim((string)($env['BOOTSTRAP_SHA256_WIN'] ?? ''))),
+        'id' => $id,
+        'file' => $url,
+        'path' => $path,
+        'exists' => $path !== null && is_file($path),
+        'expectedSha256' => strtolower(trim($expectedSha256)),
     ];
 }
+
+// Bootstrap launcher — Windows
+$bsWinUrl = trim((string)($env['BOOTSTRAP_DOWNLOAD_URL_WIN'] ?? ''));
+addArtifactCheck($artifacts, 'bootstrap-win', $bsWinUrl, (string)($env['BOOTSTRAP_SHA256_WIN'] ?? ''), $baseDir);
 
 // Bootstrap launcher — Linux
 $bsLinuxUrl = trim((string)($env['BOOTSTRAP_DOWNLOAD_URL_LINUX'] ?? ''));
-if ($bsLinuxUrl !== '') {
-    $bsLinuxPath = $baseDir . '/' . ltrim($bsLinuxUrl, '/');
-    $artifacts[] = [
-        'id' => 'bootstrap-linux',
-        'file' => $bsLinuxUrl,
-        'exists' => is_file($bsLinuxPath),
-        'expectedSha256' => strtolower(trim((string)($env['BOOTSTRAP_SHA256_LINUX'] ?? ''))),
-    ];
-}
+addArtifactCheck($artifacts, 'bootstrap-linux', $bsLinuxUrl, (string)($env['BOOTSTRAP_SHA256_LINUX'] ?? ''), $baseDir);
 
-// Pełny launcher
+// Pełny launcher — paczki instalowane przez bootstrap
+$launcherPackageUrlWin = trim((string)($env['LAUNCHER_PACKAGE_URL_WIN'] ?? ''));
+addArtifactCheck($artifacts, 'launcher-package-win', $launcherPackageUrlWin, (string)($env['LAUNCHER_PACKAGE_SHA256_WIN'] ?? ''), $baseDir);
+
+$launcherPackageUrlLinux = trim((string)($env['LAUNCHER_PACKAGE_URL_LINUX'] ?? ''));
+addArtifactCheck($artifacts, 'launcher-package-linux', $launcherPackageUrlLinux, (string)($env['LAUNCHER_PACKAGE_SHA256_LINUX'] ?? ''), $baseDir);
+
+// Pełny launcher — raw binarki do self-update
 $launcherUrl = trim((string)($env['LAUNCHER_DOWNLOAD_URL'] ?? ''));
-if ($launcherUrl !== '' && $launcherUrl !== '/downloads') {
-    $launcherPath = $baseDir . '/' . ltrim($launcherUrl, '/');
-    $artifacts[] = [
-        'id' => 'launcher-main',
-        'file' => $launcherUrl,
-        'exists' => is_file($launcherPath),
-        'expectedSha256' => strtolower(trim((string)($env['LAUNCHER_SHA256'] ?? ''))),
-    ];
-}
+addArtifactCheck($artifacts, 'launcher-selfupdate-win', $launcherUrl, (string)($env['LAUNCHER_SHA256'] ?? ''), $baseDir);
+
+$launcherUrlLinux = trim((string)($env['LAUNCHER_DOWNLOAD_URL_LINUX'] ?? ''));
+addArtifactCheck($artifacts, 'launcher-selfupdate-linux', $launcherUrlLinux, (string)($env['LAUNCHER_SHA256_LINUX'] ?? ''), $baseDir);
 
 // Sprawdzanie SHA-256 (jeśli deep=1)
 $allOk = true;
@@ -67,7 +77,13 @@ foreach ($artifacts as &$a) {
         continue;
     }
 
-    $filePath = $baseDir . '/' . ltrim($a['file'], '/');
+    $filePath = $a['path'];
+
+    if ($filePath === null) {
+        $a['status'] = 'invalid_path';
+        $allOk = false;
+        continue;
+    }
 
     if ($deep && $a['expectedSha256'] !== '') {
         $actualHash = hash_file('sha256', $filePath);
@@ -86,6 +102,7 @@ foreach ($artifacts as &$a) {
 
     // Nie ujawniaj oczekiwanego hasha w odpowiedzi publicznej
     unset($a['expectedSha256']);
+    unset($a['path']);
 }
 unset($a);
 

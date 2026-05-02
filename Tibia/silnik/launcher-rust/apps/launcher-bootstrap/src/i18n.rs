@@ -331,6 +331,7 @@ static DE: Strings = Strings {
 
 /// Detect the user's preferred language from OS settings.
 /// Returns None if the language is not in our supported list.
+#[allow(dead_code)]
 pub fn detect_system_language() -> Option<Lang> {
     #[cfg(target_os = "windows")]
     {
@@ -343,6 +344,7 @@ pub fn detect_system_language() -> Option<Lang> {
 }
 
 #[cfg(target_os = "windows")]
+#[allow(dead_code)]
 fn detect_windows_language() -> Option<Lang> {
     extern "system" {
         fn GetUserDefaultUILanguage() -> u16;
@@ -360,6 +362,7 @@ fn detect_windows_language() -> Option<Lang> {
 }
 
 #[cfg(not(target_os = "windows"))]
+#[allow(dead_code)]
 fn detect_unix_language() -> Option<Lang> {
     let lang_var = std::env::var("LANG")
         .or_else(|_| std::env::var("LC_ALL"))

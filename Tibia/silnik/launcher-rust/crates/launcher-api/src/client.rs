@@ -65,6 +65,9 @@ pub enum ApiError {
     #[error("TLS required but base_url is not HTTPS")]
     TlsRequired,
 
+    #[error("Invalid URL: {0}")]
+    InvalidUrl(String),
+
     #[error("Max retries ({0}) exceeded")]
     MaxRetriesExceeded(u32),
 
@@ -134,13 +137,63 @@ impl ApiClient {
         format!("{}/{}", base, endpoint.trim_start_matches('/'))
     }
 
+    fn resolve_download_url(&self, url: &str) -> Result<String, ApiError> {
+        let trimmed = url.trim();
+        if trimmed.is_empty() {
+            return Err(ApiError::InvalidUrl("empty download URL".to_string()));
+        }
+
+        let resolved = match reqwest::Url::parse(trimmed) {
+            Ok(parsed) => parsed,
+            Err(_) => {
+                if self.config.base_url.trim().is_empty() {
+                    return Err(ApiError::InvalidUrl(trimmed.to_string()));
+                }
+                let base = reqwest::Url::parse(&format!(
+                    "{}/",
+                    self.config.base_url.trim_end_matches('/')
+                ))
+                .map_err(|e| ApiError::InvalidUrl(format!("{} ({e})", self.config.base_url)))?;
+                base.join(trimmed)
+                    .map_err(|e| ApiError::InvalidUrl(format!("{trimmed} ({e})")))?
+            }
+        };
+
+        let resolved_string = resolved.to_string();
+        if resolved.scheme() != "https"
+            && !is_loopback_origin(&resolved_string)
+            && !self.config.dev_mode
+        {
+            return Err(ApiError::TlsRequired);
+        }
+
+        Ok(resolved_string)
+    }
+
     // ─────────────────────────────────────────
     // LR-013: launcher-version.php
     // ─────────────────────────────────────────
 
     /// Sprawdza najnowszą wersję launchera na serwerze.
     pub async fn check_launcher_version(&self) -> Result<LauncherVersionResponse, ApiError> {
-        let url = self.url("launcher-version.php");
+        let platform = if cfg!(target_os = "windows") {
+            "windows"
+        } else if cfg!(target_os = "linux") {
+            "linux"
+        } else {
+            "unknown"
+        };
+        let arch = if cfg!(target_arch = "x86_64") {
+            "x86_64"
+        } else if cfg!(target_arch = "aarch64") {
+            "arm64"
+        } else {
+            "unknown"
+        };
+        let url = self.url(&format!(
+            "launcher-version.php?platform={}&arch={}",
+            platform, arch
+        ));
         tracing::info!("Sprawdzam wersję launchera: {}", url);
 
         let resp = self.get_with_retry(&url).await?;
@@ -817,7 +870,8 @@ impl ApiClient {
     /// Pobiera plik z podanego URL, zwraca bajty.
     /// Obsługuje retry wg `max_retries` z konfiguracji.
     pub async fn download_file(&self, url: &str) -> Result<Vec<u8>, ApiError> {
-        tracing::debug!("Pobieram plik: {}", url);
+        let resolved_url = self.resolve_download_url(url)?;
+        tracing::debug!("Pobieram plik: {}", resolved_url);
 
         let mut last_error: Option<ApiError> = None;
 
@@ -829,12 +883,12 @@ impl ApiClient {
                     attempt,
                     self.config.max_retries,
                     delay,
-                    url
+                    resolved_url
                 );
                 tokio::time::sleep(delay).await;
             }
 
-            match self.http.get(url).send().await {
+            match self.http.get(&resolved_url).send().await {
                 Ok(resp) => {
                     let status = resp.status();
                     if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
@@ -1237,6 +1291,26 @@ mod tests {
         assert_eq!(
             client.url("launcher-version.php"),
             "https://api.example.com/v1/launcher-version.php"
+        );
+    }
+
+    #[test]
+    fn test_resolve_download_url_relative_paths() {
+        let config = ApiClientConfig {
+            base_url: "https://api.example.com/apik/v1".to_string(),
+            ..Default::default()
+        };
+        let client = ApiClient::new(config).expect("client");
+
+        assert_eq!(
+            client
+                .resolve_download_url("/files/bootstrap/a.zip")
+                .unwrap(),
+            "https://api.example.com/files/bootstrap/a.zip"
+        );
+        assert_eq!(
+            client.resolve_download_url("files/stable/a.dat").unwrap(),
+            "https://api.example.com/apik/v1/files/stable/a.dat"
         );
     }
 

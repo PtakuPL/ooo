@@ -1728,6 +1728,22 @@ function EnterGame.showGameModeSelection()
     recalculateWindowSize()
 end
 
+local function showLauncherAutoLoginUi()
+    if not enterGame then return end
+
+    for i = 1, enterGame:getChildCount() do
+        local child = enterGame:getChildByIndex(i)
+        if child then
+            local childId = child:getId()
+            if childId == 'selectedModeLabel' or childId == 'serverInfoLabel' then
+                child:setVisible(true)
+            elseif childId ~= 'enterGame' then
+                child:setVisible(false)
+            end
+        end
+    end
+end
+
 -- Gracz wybrał tryb gry
 function EnterGame.selectGameMode(modeKey)
     if not GameModes or not GameModes[modeKey] then
@@ -1774,22 +1790,8 @@ function EnterGame.selectGameMode(modeKey)
 
     -- OTC-005: W player mode z launch tokenem, ukryj pola email/hasło
     -- (auto-login nastapi natychmiast, gracz nie musi ich widzieć)
-    if isPlayerMode() and G.launchToken and #tostring(G.launchToken) > 0 then
-        local emailField = getEnterGameWidget('accountNameTextEdit')
-        if emailField then emailField:setVisible(false) end
-        local emailLabel = getEnterGameWidget('emailLabel')
-        if emailLabel then emailLabel:setVisible(false) end
-        local pwField = getEnterGameWidget('accountPasswordTextEdit')
-        if pwField then pwField:setVisible(false) end
-        local pwLabel = getEnterGameWidget('passwordLabel')
-        if pwLabel then pwLabel:setVisible(false) end
-        local rememberBox = getEnterGameWidget('rememberEmailBox')
-        if rememberBox then rememberBox:setVisible(false) end
-        local autoLoginBox = getEnterGameWidget('autoLoginBox')
-        if autoLoginBox then autoLoginBox:setVisible(false) end
-        local stayLoggedBox = getEnterGameWidget('stayLoggedBox')
-        if stayLoggedBox then stayLoggedBox:setVisible(false) end
-
+    if isPlayerMode() and hasLaunchTokenContext() then
+        showLauncherAutoLoginUi()
         local infoLabel = getEnterGameWidget('serverInfoLabel')
         if infoLabel then
             infoLabel:setText(tr("otclient_modules.entergame.auto_login_msg"))

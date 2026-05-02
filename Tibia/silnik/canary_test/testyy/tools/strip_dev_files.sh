@@ -10,7 +10,8 @@
 #
 # Wzorce denylist: src/, CMake*, *.cpp, *.h, *.hpp, *.pdb, *.ilk, *.exp,
 #   *.lib, *.a, *.obj, *.o, *.rs, Cargo.*, .env*, *.key, *.secret,
-#   *.ps1, *.bat, *.cmd, *.log, Makefile, .git*
+#   *.ps1, *.bat, *.cmd, *.log, Makefile, .git*, backupy locale,
+#   katalogi stagingowe typu data/locales/disabled i modules/.project
 
 set -euo pipefail
 
@@ -60,9 +61,9 @@ find "$PKG" \( \
     -o -name "*.pem.key" -o -name "*.key" -o -name "*.secret" \
 \) -type f -delete 2>/dev/null || true
 
-# ── 7. Remove Windows scripts and logs ──
+# ── 7. Remove scripts and logs ──
 find "$PKG" \( \
-    -name "*.ps1" -o -name "*.bat" -o -name "*.cmd" \
+    -name "*.ps1" -o -name "*.bat" -o -name "*.cmd" -o -name "*.sh" \
     -o -name "*.log" \
 \) -type f -delete 2>/dev/null || true
 
@@ -71,9 +72,23 @@ find "$PKG" \( \
     -name ".ai_cache" -o -name ".vscode" -o -name ".idea" \
 \) -type d -exec rm -rf {} + 2>/dev/null || true
 
+# ── 8b. Remove player-package staging leftovers ──
+rm -rf "$PKG/data/locales/disabled" 2>/dev/null || true
+rm -rf "$PKG/modules/.project" 2>/dev/null || true
+find "$PKG/modules" -type d -iname "serverSIDE" -prune -exec rm -rf {} + 2>/dev/null || true
+find "$PKG" \( \
+    -name "*.bak" -o -name "*.bak.*" \
+    -o -name "*.backup" -o -name "*.corrupted_backup" \
+    -o -name "*.utf8.bak*" -o -name "*_upstream.lua" \
+\) -type f -delete 2>/dev/null || true
+
 # ── 9. Remove misc dev files ──
+rm -f "$PKG/start_dev.bat" "$PKG/start_dev.sh" "$PKG/start_player.bat" "$PKG/start_player.sh" 2>/dev/null || true
+rm -f "$PKG/serverlist.lua" "$PKG/serverlist.json" "$PKG/init_serverlist.lua" 2>/dev/null || true
+rm -f "$PKG/otclientrc.lua" "$PKG/otclientrc.lua.default" 2>/dev/null || true
 find "$PKG" \( \
     -name "*.md" -o -name "*.patch" -o -name "*.orig" \
+    -o -name "*.txt" -o -iname "README*" \
     -o -name "*.bak" -o -name "*~" \
 \) -type f -delete 2>/dev/null || true
 

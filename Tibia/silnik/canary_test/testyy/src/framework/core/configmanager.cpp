@@ -149,8 +149,13 @@ void ConfigManager::remove(const ConfigPtr& config) { m_configs.remove(config); 
 
 void ConfigManager::loadRuntimePolicy()
 {
+#ifdef OTCLIENT_PLAYER_BUILD
+    m_devMode = false;
+    m_clientLocked = true;
+#else
     m_devMode = envFlagEnabled("OTC_DEV_MODE");
     m_clientLocked = !m_devMode;
+#endif
     m_startupGameMode = envString("OTC_GAME_MODE");
     initBuiltinGameModes();
 }

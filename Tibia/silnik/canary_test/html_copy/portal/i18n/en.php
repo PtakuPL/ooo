@@ -93,7 +93,7 @@ return [
     'download.how.step1' => 'Download the quick installer above (~200 KB).',
     'download.how.step2' => 'Run it — it will automatically download the full launcher.',
     'download.how.step3' => 'The full launcher will start and download the game client.',
-    'download.how.step4' => 'Log in with account created in portal or launcher.',,
+    'download.how.step4' => 'Log in with account created in portal or launcher.',
 
     'redirect.invalid.title' => 'Invalid redirect',
     'redirect.invalid.heading' => 'Invalid redirect target',

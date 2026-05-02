@@ -93,7 +93,7 @@ return [
     'download.how.step1' => 'Pobierz lekki instalator powyzej (~200 KB).',
     'download.how.step2' => 'Uruchom go — automatycznie pobierze pelny launcher.',
     'download.how.step3' => 'Pelny launcher uruchomi sie sam i pobierze klienta gry.',
-    'download.how.step4' => 'Zaloguj sie kontem utworzonym na portalu lub w launcherze.',,
+    'download.how.step4' => 'Zaloguj sie kontem utworzonym na portalu lub w launcherze.',
 
     'redirect.invalid.title' => 'Nieprawidlowe przekierowanie',
     'redirect.invalid.heading' => 'Nieprawidlowy cel przekierowania',

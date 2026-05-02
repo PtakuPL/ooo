@@ -206,46 +206,32 @@ pub fn launcher_exe_name() -> &'static str {
 }
 
 /// Path to the user's Desktop folder.
+#[cfg(target_os = "windows")]
 pub fn desktop_path() -> Option<PathBuf> {
-    #[cfg(target_os = "windows")]
-    {
-        std::env::var("USERPROFILE")
-            .ok()
-            .map(|p| PathBuf::from(p).join("Desktop"))
-    }
-    #[cfg(not(target_os = "windows"))]
-    {
-        std::env::var("HOME")
-            .ok()
-            .map(|p| PathBuf::from(p).join("Desktop"))
-    }
+    std::env::var("USERPROFILE")
+        .ok()
+        .map(|p| PathBuf::from(p).join("Desktop"))
 }
 
 /// Path to the Start Menu Programs folder (Windows only).
+#[cfg(target_os = "windows")]
 pub fn start_menu_path() -> Option<PathBuf> {
-    #[cfg(target_os = "windows")]
-    {
-        std::env::var("APPDATA").ok().map(|p| {
-            PathBuf::from(p)
-                .join("Microsoft")
-                .join("Windows")
-                .join("Start Menu")
-                .join("Programs")
-        })
-    }
-    #[cfg(not(target_os = "windows"))]
-    {
-        None
-    }
+    std::env::var("APPDATA").ok().map(|p| {
+        PathBuf::from(p)
+            .join("Microsoft")
+            .join("Windows")
+            .join("Start Menu")
+            .join("Programs")
+    })
 }
 
 /// Create shortcuts for the launcher.
 /// `ask_desktop` — if true, also creates a desktop shortcut.
 pub fn create_shortcuts(install_dir: &std::path::Path, ask_desktop: bool) {
-    let launcher_exe = install_dir.join(launcher_exe_name());
-
     #[cfg(target_os = "windows")]
     {
+        let launcher_exe = install_dir.join(launcher_exe_name());
+
         // Start Menu shortcut (always)
         if let Some(sm_dir) = start_menu_path() {
             let lnk = sm_dir.join("RedDaxe.lnk");

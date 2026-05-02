@@ -45,6 +45,20 @@ pub struct LaunchResult {
     pub exit_code: Option<i32>,
 }
 
+fn scrub_client_environment(cmd: &mut Command) {
+    for key in [
+        "OTC_DEV_MODE",
+        "OTC_GAME_MODE",
+        "OTC_LAUNCH_TOKEN",
+        "OTC_SESSION_TOKEN",
+        "OTC_ACCOUNT",
+        "OTC_CHARACTER_HINT",
+        "OTC_CHANNEL",
+    ] {
+        cmd.env_remove(key);
+    }
+}
+
 /// Uruchamia klienta gry z tokenem w zmiennej środowiskowej.
 ///
 /// Klient dostaje:
@@ -67,6 +81,7 @@ pub fn launch_client(config: &LaunchConfig) -> Result<LaunchResult, ProcessError
 
     let mut cmd = Command::new(exe_path);
     cmd.current_dir(&config.working_dir);
+    scrub_client_environment(&mut cmd);
 
     // Token WYŁĄCZNIE przez env — nigdy przez CLI arg
     cmd.env("OTC_LAUNCH_TOKEN", &config.launch_token);
@@ -99,6 +114,7 @@ pub fn launch_client_and_wait(config: &LaunchConfig) -> Result<LaunchResult, Pro
 
     let mut cmd = Command::new(exe_path);
     cmd.current_dir(&config.working_dir);
+    scrub_client_environment(&mut cmd);
     cmd.env("OTC_LAUNCH_TOKEN", &config.launch_token);
     cmd.env("OTC_CHANNEL", &config.channel);
 

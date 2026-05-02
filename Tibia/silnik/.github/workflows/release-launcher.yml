@@ -109,21 +109,58 @@ jobs:
         with:
           path: all-artifacts
 
+      - name: Build bootstrap-compatible launcher ZIPs
+        working-directory: .
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p release-packages
+
+          WIN_LAUNCHER=$(find all-artifacts -type f -name 'launcher-tauri-windows-x86_64.exe' -print -quit)
+          WIN_HELPER=$(find all-artifacts -type f -name 'launcher-helper-windows-x86_64.exe' -print -quit)
+          LINUX_LAUNCHER=$(find all-artifacts -type f -name 'launcher-tauri-linux-x86_64' -print -quit)
+          LINUX_HELPER=$(find all-artifacts -type f -name 'launcher-helper-linux-x86_64' -print -quit)
+
+          for required in "$WIN_LAUNCHER" "$WIN_HELPER" "$LINUX_LAUNCHER" "$LINUX_HELPER"; do
+            if [[ -z "$required" || ! -f "$required" ]]; then
+              echo "::error::Missing launcher release binary needed for bootstrap package"
+              exit 1
+            fi
+          done
+
+          rm -rf release-package-work
+          mkdir -p release-package-work/windows release-package-work/linux
+
+          cp "$WIN_LAUNCHER" release-package-work/windows/launcher-tauri-windows-x86_64.exe
+          cp "$WIN_HELPER" release-package-work/windows/LauncherHelper.exe
+          cp "$LINUX_LAUNCHER" release-package-work/linux/launcher-tauri-linux-x86_64
+          cp "$LINUX_HELPER" release-package-work/linux/launcher-helper
+          chmod +x release-package-work/linux/launcher-tauri-linux-x86_64 release-package-work/linux/launcher-helper
+
+          (cd release-package-work/windows && zip -9 -r ../../release-packages/launcher-tauri-windows-x86_64.zip .)
+          (cd release-package-work/linux && zip -9 -r ../../release-packages/launcher-tauri-linux-x86_64.zip .)
+          ls -lh release-packages
+
       - name: Extract version from tag
         id: version
         run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
 
       # LR-067: Checksums
       - name: Generate checksums.txt
+        working-directory: .
         run: |
-          cd all-artifacts
-          find . -type f \( -name 'launcher-*' \) -exec sha256sum {} + | sort > ../checksums.txt
-          cat ../checksums.txt
+          {
+            find all-artifacts -type f \( -name 'launcher-*' \) -exec sha256sum {} +
+            find release-packages -type f -name 'launcher-*.zip' -exec sha256sum {} +
+          } | sort > checksums.txt
+          cat checksums.txt
 
       # LR-069: installer-catalog.json
       - name: Generate installer-catalog.json
+        working-directory: .
         shell: bash
         run: |
+          set -euo pipefail
           VERSION="${{ steps.version.outputs.version }}"
           TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           
@@ -141,31 +178,53 @@ jobs:
               SIZES["$file"]=$(stat -c%s "$filepath" 2>/dev/null || echo "0")
             fi
           done < checksums.txt
+
+          for required in launcher-tauri-windows-x86_64.zip launcher-tauri-linux-x86_64.zip; do
+            if [[ ! "${HASHES[$required]:-}" =~ ^[a-f0-9]{64}$ || "${SIZES[$required]:-0}" == "0" ]]; then
+              echo "::error::Missing checksum/size for $required"
+              exit 1
+            fi
+          done
           
           # Generuj JSON
           cat > installer-catalog.json <<CATALOG_EOF
           {
+            "brand": "RedDAXE.pl",
             "channel": "stable",
             "version": "$VERSION",
             "generatedAtUtc": "$TIMESTAMP",
             "artifacts": [
               {
+                "id": "launcher-main-win",
+                "name": "Launcher",
+                "type": "launcher",
                 "platform": "windows",
                 "arch": "x86_64",
-                "filename": "launcher-tauri-windows-x86_64.exe",
-                "url": "https://github.com/${{ github.repository }}/releases/download/${GITHUB_REF_NAME}/launcher-tauri-windows-x86_64.exe",
-                "sha256": "${HASHES[launcher-tauri-windows-x86_64.exe]:-unknown}",
-                "size": ${SIZES[launcher-tauri-windows-x86_64.exe]:-0},
-                "type": "portable"
+                "channel": "stable",
+                "version": "$VERSION",
+                "minVersion": "$VERSION",
+                "filename": "launcher-tauri-windows-x86_64.zip",
+                "url": "https://github.com/${{ github.repository }}/releases/download/${GITHUB_REF_NAME}/launcher-tauri-windows-x86_64.zip",
+                "sha256": "${HASHES[launcher-tauri-windows-x86_64.zip]}",
+                "size": ${SIZES[launcher-tauri-windows-x86_64.zip]},
+                "releaseDate": "$(date -u +%Y-%m-%d)",
+                "notes": "Launcher v$VERSION"
               },
               {
+                "id": "launcher-main-linux",
+                "name": "Launcher",
+                "type": "launcher",
                 "platform": "linux",
                 "arch": "x86_64",
-                "filename": "launcher-tauri-linux-x86_64",
-                "url": "https://github.com/${{ github.repository }}/releases/download/${GITHUB_REF_NAME}/launcher-tauri-linux-x86_64",
-                "sha256": "${HASHES[launcher-tauri-linux-x86_64]:-unknown}",
-                "size": ${SIZES[launcher-tauri-linux-x86_64]:-0},
-                "type": "portable"
+                "channel": "stable",
+                "version": "$VERSION",
+                "minVersion": "$VERSION",
+                "filename": "launcher-tauri-linux-x86_64.zip",
+                "url": "https://github.com/${{ github.repository }}/releases/download/${GITHUB_REF_NAME}/launcher-tauri-linux-x86_64.zip",
+                "sha256": "${HASHES[launcher-tauri-linux-x86_64.zip]}",
+                "size": ${SIZES[launcher-tauri-linux-x86_64.zip]},
+                "releaseDate": "$(date -u +%Y-%m-%d)",
+                "notes": "Launcher v$VERSION"
               }
             ]
           }
@@ -178,6 +237,7 @@ jobs:
           path: |
             checksums.txt
             installer-catalog.json
+            release-packages/*.zip
 
   # ─────────────────────────────────────────────────
   # 3. Create GitHub Release
@@ -195,6 +255,7 @@ jobs:
           path: all-artifacts
 
       - name: Flatten artifacts
+        working-directory: .
         run: |
           mkdir -p release-files
           find all-artifacts -type f -exec cp {} release-files/ \;
@@ -226,6 +287,10 @@ jobs:
             |----------|-----|------------------|--------|
             | Windows x86_64 | `launcher-cli-windows-x86_64.exe` | `launcher-tauri-windows-x86_64.exe` | `launcher-helper-windows-x86_64.exe` |
             | Linux x86_64 | `launcher-cli-linux-x86_64` | `launcher-tauri-linux-x86_64` | `launcher-helper-linux-x86_64` |
+
+            Bootstrap-compatible packages:
+            - `launcher-tauri-windows-x86_64.zip`
+            - `launcher-tauri-linux-x86_64.zip`
             
             ### Weryfikacja
             Sprawdź `checksums.txt` dla SHA-256 hashów.

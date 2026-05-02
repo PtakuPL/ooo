@@ -6,7 +6,10 @@ require_once __DIR__ . '/bootstrap.php';
 $cfg = reddaxe_build_config();
 $apiEnv = reddaxe_env(__DIR__ . '/../apik/v1/.env');
 $siteName = trim((string)($apiEnv['SITE_NAME'] ?? 'CanaryAAC'));
-$launcherDownloadUrl = trim((string)($apiEnv['LAUNCHER_DOWNLOAD_URL'] ?? ''));
+$launcherDownloadUrl = trim((string)($apiEnv['BOOTSTRAP_DOWNLOAD_URL_WIN'] ?? ''));
+if ($launcherDownloadUrl === '') {
+    $launcherDownloadUrl = trim((string)($apiEnv['LAUNCHER_DOWNLOAD_URL'] ?? ''));
+}
 if ($launcherDownloadUrl === '') {
     $launcherDownloadUrl = (string)($cfg['downloadPageUrl'] ?? '/downloads');
 }

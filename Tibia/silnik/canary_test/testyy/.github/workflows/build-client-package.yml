@@ -75,9 +75,15 @@ jobs:
             -DCMAKE_BUILD_TYPE=RelWithDebInfo `
             -DVCPKG_TARGET_TRIPLET=x64-windows-static `
             -DVCPKG_OVERLAY_TRIPLETS="${{ github.workspace }}/${{ env.CLIENT_SRC }}/custom-triplets" `
+            -DOTCLIENT_PLAYER_BUILD=ON `
             -DBUILD_STATIC_LIBRARY=ON `
             -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake" `
             -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded"
+
+      - name: Verify sealed player CMake option
+        shell: bash
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: grep -q '^OTCLIENT_PLAYER_BUILD:BOOL=ON$' build/CMakeCache.txt
 
       - name: Build
         working-directory: ${{ env.CLIENT_SRC }}
@@ -126,7 +132,6 @@ jobs:
           cp init.lua "$PKG/"
           [ -f meta.lua ] && cp meta.lua "$PKG/"
           [ -f cacert.pem ] && cp cacert.pem "$PKG/"
-          [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
 
           # ── 5. Inject customizations ──
           # NOTE: CLIENT_LOCKED is now handled via getNativeClientLocked() in C++ —
@@ -163,18 +168,19 @@ jobs:
 
           # ── 6b. Remove dev/operator files not needed by player ──
           rm -f "$PKG/start_dev.bat" "$PKG/start_dev.sh" 2>/dev/null || true
-          rm -f "$PKG/start_player.bat" 2>/dev/null || true
-          rm -f "$PKG/otclientrc.lua" 2>/dev/null || true
-          rm -f "$PKG/serverlist.json" "$PKG/init_serverlist.lua" 2>/dev/null || true
+          rm -f "$PKG/start_player.bat" "$PKG/start_player.sh" 2>/dev/null || true
+          rm -f "$PKG/serverlist.lua" "$PKG/serverlist.json" "$PKG/init_serverlist.lua" 2>/dev/null || true
+          rm -f "$PKG/otclientrc.lua" "$PKG/otclientrc.lua.default" 2>/dev/null || true
           rm -rf "$PKG/data/styles.bak" 2>/dev/null || true
           # Remove any leftover shell/batch scripts
           find "$PKG" -maxdepth 1 \( -name "*.sh" -o -name "*.bat" -o -name "*.cmd" \) -delete 2>/dev/null || true
+          bash tools/strip_dev_files.sh "$PKG"
           echo "  → dev files stripped"
 
           # ── 6c. Trim locales — keep only base languages, rest downloaded on-demand ──
           LOCALE_DIR="$PKG/data/locales"
           if [ -d "$LOCALE_DIR" ]; then
-            KEEP_LOCALES="en.lua|pl.lua|de.lua|pt.lua|game_i18n_en.lua|game_i18n_pl.lua|game_i18n_de.lua|game_i18n_pt.lua|game_i18n_en_compact.lua|game_i18n_pl_compact.lua|game_i18n_de_compact.lua|game_i18n_pt_compact.lua|disabled"
+            KEEP_LOCALES="en.lua|pl.lua|de.lua|pt.lua|game_i18n_en.lua|game_i18n_pl.lua|game_i18n_de.lua|game_i18n_pt.lua|game_i18n_en_compact.lua|game_i18n_pl_compact.lua|game_i18n_de_compact.lua|game_i18n_pt_compact.lua"
             BEFORE=$(find "$LOCALE_DIR" -type f | wc -l)
             find "$LOCALE_DIR" -maxdepth 1 -type f | while read -r f; do
               BASE=$(basename "$f")
@@ -222,8 +228,8 @@ jobs:
           [ -d "$PKG/data" ] || { echo "FAIL: missing data/"; exit 1; }
 
           # Must NOT have dev files
-          DEV_FILES=$(find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "otclientrc*" -o -name "serverlist.json" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \) | wc -l)
-          [ "$DEV_FILES" -eq 0 ] || { echo "FAIL: found $DEV_FILES dev files in player package"; find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "otclientrc*" -o -name "serverlist.json" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \); exit 1; }
+          DEV_FILES=$(find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "start_player*" -o -name "otclientrc*" -o -name "serverlist.*" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \) | wc -l)
+          [ "$DEV_FILES" -eq 0 ] || { echo "FAIL: found $DEV_FILES dev files in player package"; find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "start_player*" -o -name "otclientrc*" -o -name "serverlist.*" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \); exit 1; }
 
           # DLL count check — target is zero-DLL (GHA-007)
           DLL_COUNT=$(find "$PKG" -maxdepth 1 -name "*.dll" | wc -l)
@@ -232,6 +238,8 @@ jobs:
             echo "::warning::Found $DLL_COUNT DLLs in package — zero-DLL target not yet met (see GHA-007)"
             find "$PKG" -maxdepth 1 -name "*.dll" -exec ls -lh {} \;
           fi
+
+          bash tools/verify-player-package.sh "$PKG" windows
 
           echo "All integrity checks passed (Windows)"
 
@@ -247,7 +255,7 @@ jobs:
           echo "[LINT] Top-level allowlist check" | tee -a "$REPORT"
           find "$PKG" -mindepth 1 -maxdepth 1 -printf '%f\n' | while read -r item; do
             case "$item" in
-              otclient.exe|init.lua|meta.lua|cacert.pem|otclientrc.lua.default|data|modules|mods|records|*.dll)
+              otclient.exe|init.lua|meta.lua|cacert.pem|data|modules|mods|records|*.dll)
                 ;;
               *)
                 echo "FAIL: unexpected top-level item: $item" | tee -a "$REPORT"
@@ -269,6 +277,19 @@ jobs:
               -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' -o -name '*.rs' -o -name 'Cargo.toml' -o -name 'Cargo.lock' \
               -o -name '.env' -o -name '.env.*' -o -name '*.pem.key' -o -name '*.key' -o -name '*.secret' \
               -o -name '*.ps1' -o -name '*.bat' -o -name '*.cmd' -o -name 'CMakeLists.txt' \) | sort | tee -a "$REPORT"
+            exit 1
+          fi
+
+          echo "[LINT] Player cleanup leak check" | tee -a "$REPORT"
+          PLAYER_LEAKS=$(find "$PKG" \( \
+            -path "$PKG/data/locales/disabled" -o -path "$PKG/data/locales/disabled/*" \
+            -o -path "$PKG/modules/.project" -o -path "$PKG/modules/.project/*" \
+            -o -name '*.bak' -o -name '*.bak.*' -o -name '*.backup' -o -name '*.corrupted_backup' \
+            -o -name '*.utf8.bak*' -o -name '*_upstream.lua' -o -name '*.orig' \
+          \) -print)
+          if [ -n "$PLAYER_LEAKS" ]; then
+            echo "FAIL: player package contains staging/backup files" | tee -a "$REPORT"
+            echo "$PLAYER_LEAKS" | sort | tee -a "$REPORT"
             exit 1
           fi
 
@@ -385,7 +406,12 @@ jobs:
           cmake -S . -B build -G Ninja \
             -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DVCPKG_TARGET_TRIPLET=x64-linux \
+            -DOTCLIENT_PLAYER_BUILD=ON \
             -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+
+      - name: Verify sealed player CMake option
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: grep -q '^OTCLIENT_PLAYER_BUILD:BOOL=ON$' build/CMakeCache.txt
 
       - name: Build
         working-directory: ${{ env.CLIENT_SRC }}
@@ -431,7 +457,6 @@ jobs:
           cp init.lua "$PKG/"
           [ -f meta.lua ] && cp meta.lua "$PKG/"
           [ -f cacert.pem ] && cp cacert.pem "$PKG/"
-          [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
 
           # ── 5. Inject customizations ──
           # NOTE: CLIENT_LOCKED handled via getNativeClientLocked() — no sed needed.
@@ -463,17 +488,18 @@ jobs:
 
           # ── 6b. Remove dev/operator files not needed by player ──
           rm -f "$PKG/start_dev.bat" "$PKG/start_dev.sh" 2>/dev/null || true
-          rm -f "$PKG/start_player.bat" 2>/dev/null || true
-          rm -f "$PKG/otclientrc.lua" 2>/dev/null || true
-          rm -f "$PKG/serverlist.json" "$PKG/init_serverlist.lua" 2>/dev/null || true
+          rm -f "$PKG/start_player.bat" "$PKG/start_player.sh" 2>/dev/null || true
+          rm -f "$PKG/serverlist.lua" "$PKG/serverlist.json" "$PKG/init_serverlist.lua" 2>/dev/null || true
+          rm -f "$PKG/otclientrc.lua" "$PKG/otclientrc.lua.default" 2>/dev/null || true
           rm -rf "$PKG/data/styles.bak" 2>/dev/null || true
           find "$PKG" -maxdepth 1 \( -name "*.sh" -o -name "*.bat" -o -name "*.cmd" \) -delete 2>/dev/null || true
+          bash tools/strip_dev_files.sh "$PKG"
           echo "  → dev files stripped"
 
           # ── 6c. Trim locales — keep only base languages ──
           LOCALE_DIR="$PKG/data/locales"
           if [ -d "$LOCALE_DIR" ]; then
-            KEEP_LOCALES="en.lua|pl.lua|de.lua|pt.lua|game_i18n_en.lua|game_i18n_pl.lua|game_i18n_de.lua|game_i18n_pt.lua|game_i18n_en_compact.lua|game_i18n_pl_compact.lua|game_i18n_de_compact.lua|game_i18n_pt_compact.lua|disabled"
+            KEEP_LOCALES="en.lua|pl.lua|de.lua|pt.lua|game_i18n_en.lua|game_i18n_pl.lua|game_i18n_de.lua|game_i18n_pt.lua|game_i18n_en_compact.lua|game_i18n_pl_compact.lua|game_i18n_de_compact.lua|game_i18n_pt_compact.lua"
             BEFORE=$(find "$LOCALE_DIR" -type f | wc -l)
             find "$LOCALE_DIR" -maxdepth 1 -type f | while read -r f; do
               BASE=$(basename "$f")
@@ -512,8 +538,10 @@ jobs:
           [ -d "$PKG/data" ] || { echo "FAIL: missing data/"; exit 1; }
 
           # Must NOT have dev files
-          DEV_FILES=$(find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "otclientrc*" -o -name "serverlist.json" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \) | wc -l)
+          DEV_FILES=$(find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "start_player*" -o -name "otclientrc*" -o -name "serverlist.*" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \) | wc -l)
           [ "$DEV_FILES" -eq 0 ] || { echo "FAIL: found $DEV_FILES dev files in player package"; exit 1; }
+
+          bash tools/verify-player-package.sh "$PKG" linux
 
           echo "All integrity checks passed (Linux)"
 
@@ -528,7 +556,7 @@ jobs:
           echo "[LINT] Top-level allowlist check" | tee -a "$REPORT"
           find "$PKG" -mindepth 1 -maxdepth 1 -printf '%f\n' | while read -r item; do
             case "$item" in
-              otclient|init.lua|meta.lua|cacert.pem|otclientrc.lua.default|data|modules|mods|records|*.so|*.so.*)
+              otclient|init.lua|meta.lua|cacert.pem|data|modules|mods|records|*.so|*.so.*)
                 ;;
               *)
                 echo "FAIL: unexpected top-level item: $item" | tee -a "$REPORT"
@@ -550,6 +578,19 @@ jobs:
               -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' -o -name '*.rs' -o -name 'Cargo.toml' -o -name 'Cargo.lock' \
               -o -name '.env' -o -name '.env.*' -o -name '*.pem.key' -o -name '*.key' -o -name '*.secret' \
               -o -name '*.ps1' -o -name '*.bat' -o -name '*.cmd' -o -name 'CMakeLists.txt' \) | sort | tee -a "$REPORT"
+            exit 1
+          fi
+
+          echo "[LINT] Player cleanup leak check" | tee -a "$REPORT"
+          PLAYER_LEAKS=$(find "$PKG" \( \
+            -path "$PKG/data/locales/disabled" -o -path "$PKG/data/locales/disabled/*" \
+            -o -path "$PKG/modules/.project" -o -path "$PKG/modules/.project/*" \
+            -o -name '*.bak' -o -name '*.bak.*' -o -name '*.backup' -o -name '*.corrupted_backup' \
+            -o -name '*.utf8.bak*' -o -name '*_upstream.lua' -o -name '*.orig' \
+          \) -print)
+          if [ -n "$PLAYER_LEAKS" ]; then
+            echo "FAIL: player package contains staging/backup files" | tee -a "$REPORT"
+            echo "$PLAYER_LEAKS" | sort | tee -a "$REPORT"
             exit 1
           fi
 

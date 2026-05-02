@@ -950,6 +950,13 @@ function getCharacterCountForMode(mode, context = launcherAccountContext) {
   return Number.isFinite(value) ? Number(value) : 0;
 }
 
+function getTotalCharacterCount(context = launcherAccountContext) {
+  const counts = context && typeof context === "object" ? context.counts : null;
+  if (!counts || typeof counts !== "object") return 0;
+  const value = counts.all;
+  return Number.isFinite(value) ? Number(value) : 0;
+}
+
 function getEffectiveLaunchMode() {
   const selected = normalizeSelectableLaunchMode(selectedLaunchMode);
   if (selected) return selected;
@@ -975,33 +982,18 @@ function updatePlayGateState(options = {}) {
     return;
   }
 
-  const sessionMode = normalizeGameMode(launcherAccountContext.gameMode) || "all";
-  const launchMode = getEffectiveLaunchMode();
-
-  if (sessionMode === "all" && !launchMode) {
-    btnPlay.disabled = true;
-    if (!preserveHint) setAccountContextHint(t("alerts.launchModeRequired"), "error");
-    return;
-  }
-
-  if (!launchMode) {
-    btnPlay.disabled = true;
-    if (!preserveHint) setAccountContextHint(t("alerts.launchModeRequired"), "error");
-    return;
-  }
-
-  const count = getCharacterCountForMode(launchMode, launcherAccountContext);
-  if (count <= 0) {
+  const totalCount = getTotalCharacterCount(launcherAccountContext);
+  if (totalCount <= 0) {
     btnPlay.disabled = true;
     if (!preserveHint) {
-      setAccountContextHint(t("alerts.playBlockedNoCharacterOnMode", [getModeLabel(launchMode)]), "error");
+      setAccountContextHint(t("alerts.playBlockedNoCharacters"), "error");
     }
     return;
   }
 
   btnPlay.disabled = false;
   if (!preserveHint) {
-    setAccountContextHint(t("alerts.playReadyForMode", [getModeLabel(launchMode), count]), "ok");
+    setAccountContextHint(t("alerts.playReadyClientMode", [totalCount]), "ok");
   }
 }
 
@@ -1640,30 +1632,9 @@ function updateProgress(dto) {
 // ─────────────────────────────────────────────
 
 btnPlay.addEventListener("click", async () => {
-  const launchMode = getEffectiveLaunchMode();
-  const modeRequired = normalizeGameMode(launcherAccountContext?.gameMode) === "all" && !launchMode;
-  if (modeRequired) {
-    const msg = t("alerts.launchModeRequired");
-    setAccountContextHint(msg, "error");
-    setAccountLoginStatus(msg, true);
-    if (elLaunchModeSelect) elLaunchModeSelect.focus();
-    btnPlay.textContent = t("buttons.play");
-    btnPlay.disabled = true;
-    return;
-  }
-
-  if (!launchMode) {
-    const msg = t("alerts.launchModeRequired");
-    setAccountContextHint(msg, "error");
-    setAccountLoginStatus(msg, true);
-    btnPlay.textContent = t("buttons.play");
-    btnPlay.disabled = true;
-    return;
-  }
-
-  const charCount = getCharacterCountForMode(launchMode, launcherAccountContext);
+  const charCount = getTotalCharacterCount(launcherAccountContext);
   if (charCount <= 0) {
-    const msg = t("alerts.playBlockedNoCharacterOnMode", [getModeLabel(launchMode)]);
+    const msg = t("alerts.playBlockedNoCharacters");
     setAccountContextHint(msg, "error");
     setAccountLoginStatus(msg, true);
     btnPlay.textContent = t("buttons.play");
@@ -1735,10 +1706,10 @@ btnPlay.addEventListener("click", async () => {
     await invoke("launch_game", {
       email: email || null,
       characterHint: null,
-      gameMode: launchMode,
+      gameMode: null,
     });
     launcherAccountPassword = "";
-    setAccountContextHint(t("alerts.playReadyForMode", [getModeLabel(launchMode), charCount]), "ok");
+    setAccountContextHint(t("alerts.playReadyClientMode", [charCount]), "ok");
     btnPlay.textContent = t("buttons.playLaunched");
     setTimeout(() => {
       btnPlay.textContent = t("buttons.play");
@@ -2030,11 +2001,17 @@ btnExportLogs.addEventListener("click", async () => {
 // ─────────────────────────────────────────────
 
 function formatBytes(bytes) {
-  if (bytes === 0) return "0 B";
+  const numeric = Number(bytes);
+  if (!Number.isFinite(numeric) || numeric < 0) return "n/a";
+  if (numeric === 0) return "0 B";
   const units = ["B", "KB", "MB", "GB"];
-  const i = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
-  const val = (bytes / Math.pow(1024, i)).toFixed(i === 0 ? 0 : 1);
+  const i = Math.min(Math.floor(Math.log(numeric) / Math.log(1024)), units.length - 1);
+  const val = (numeric / Math.pow(1024, i)).toFixed(i === 0 ? 0 : 1);
   return `${val} ${units[i]}`;
+}
+
+function isSha256Hex(value) {
+  return /^[a-f0-9]{64}$/i.test(String(value || "").trim());
 }
 
 // ─────────────────────────────────────────────
@@ -2069,6 +2046,8 @@ async function loadDownloadCenter() {
       card.className = "download-card";
 
       const platformClass = art.platform.toLowerCase();
+      const size = Number(art.size);
+      const canDownload = Boolean(art.url && art.filename && isSha256Hex(art.sha256) && Number.isFinite(size) && size > 0);
       card.innerHTML = `
         <div class="download-info">
           <div class="filename">${escapeHtml(art.filename)}</div>
@@ -2076,10 +2055,10 @@ async function loadDownloadCenter() {
             <span class="platform-badge ${platformClass}">${escapeHtml(art.platform)}</span>
             <span>${escapeHtml(art.arch)}</span> · 
             <span>${formatBytes(art.size)}</span> · 
-            <span class="mono">${escapeHtml(art.sha256.substring(0, 12))}…</span>
+            <span class="mono">${escapeHtml(String(art.sha256 || "").substring(0, 12))}…</span>
           </div>
         </div>
-        <button class="btn-download" data-url="${escapeHtml(art.url)}" data-filename="${escapeHtml(art.filename)}" data-sha256="${escapeHtml(art.sha256)}" data-size="${art.size}">
+        <button class="btn-download" data-url="${escapeHtml(art.url)}" data-filename="${escapeHtml(art.filename)}" data-sha256="${escapeHtml(art.sha256)}" data-size="${Number.isFinite(size) ? size : ""}" ${canDownload ? "" : "disabled"}>
           ${t("buttons.download")}
         </button>
       `;
@@ -2107,6 +2086,11 @@ async function downloadArtifact(btn) {
   const filename = btn.dataset.filename;
   const sha256 = btn.dataset.sha256;
   const size = parseInt(btn.dataset.size, 10);
+
+  if (!isSha256Hex(sha256) || !Number.isFinite(size) || size <= 0) {
+    showError("Artefakt nie ma poprawnego SHA-256 albo rozmiaru w katalogu.", "DOWNLOAD_METADATA_INVALID", true);
+    return;
+  }
 
   btn.disabled = true;
   btn.textContent = t("buttons.downloading");

@@ -70,6 +70,16 @@ fn try_download(
     expected_sha256: &str,
     dest: &std::path::Path,
 ) -> Result<(), DownloadError> {
+    let expected = expected_sha256.trim().to_ascii_lowercase();
+    let expected_is_valid_hex =
+        expected.len() == 64 && expected.chars().all(|c| matches!(c, '0'..='9' | 'a'..='f'));
+    if !expected_is_valid_hex {
+        return Err(DownloadError::HashMismatch {
+            expected,
+            got: "invalid expected SHA-256".to_string(),
+        });
+    }
+
     let resp = client
         .get(url)
         .send()
@@ -88,7 +98,7 @@ fn try_download(
     let mut buf = vec![0u8; CHUNK_SIZE];
 
     loop {
-        let n = reader.read(&mut buf).map_err(|e| DownloadError::Io(e))?;
+        let n = reader.read(&mut buf).map_err(DownloadError::Io)?;
         if n == 0 {
             break;
         }
@@ -105,11 +115,12 @@ fn try_download(
     file.flush().map_err(DownloadError::Io)?;
     drop(file);
 
-    // Verify SHA-256
+    // Verify SHA-256 — empty/invalid expected hashes are rejected to keep
+    // the bootstrap trust chain anchored. Callers (main.rs) should pre-validate
+    // the catalog value, but we double-check here as a defense-in-depth gate.
     let hash = format!("{:x}", hasher.finalize());
-    let expected = expected_sha256.to_ascii_lowercase();
-    if !expected.is_empty() && hash != expected {
-        // Remove corrupted file
+    if hash != expected {
+        // Remove corrupted/unverified file
         let _ = std::fs::remove_file(dest);
         return Err(DownloadError::HashMismatch {
             expected,

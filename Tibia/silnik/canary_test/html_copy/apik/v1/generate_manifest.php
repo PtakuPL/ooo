@@ -88,7 +88,59 @@ $ignorePatterns = [
     '#Zone\.Identifier$#',
 ];
 
+$denyPatterns = [
+    '#(^|/)start_dev\.(sh|bat|cmd|ps1)$#i',
+    '#(^|/)start_player\.(sh|bat|cmd|ps1)$#i',
+    '#(^|/)serverlist\.(json|lua)$#i',
+    '#(^|/)init_serverlist\.lua$#i',
+    '#(^|/)otclientrc\.lua$#i',
+    '#(^|/)otclientrc\.lua\.default$#i',
+    '#(^|/)src/#',
+    '#(^|/)tools/#',
+    '#(^|/)docs/#',
+    '#(^|/)tests/#',
+    '#(^|/)serverSIDE(/|$)#i',
+    '#(^|/)\.github/#',
+    '#\.sh$#i',
+    '#\.bat$#i',
+    '#\.cmd$#i',
+    '#\.ps1$#i',
+    '#\.cpp$#i',
+    '#\.c$#i',
+    '#\.h$#i',
+    '#\.hpp$#i',
+    '#\.rs$#i',
+    '#(^|/)Cargo\.(toml|lock)$#i',
+    '#(^|/)CMakeLists\.txt$#i',
+    '#(^|/)CMakeCache\.txt$#i',
+    '#\.pdb$#i',
+    '#\.ilk$#i',
+    '#\.obj$#i',
+    '#\.o$#i',
+    '#\.lib$#i',
+    '#\.a$#i',
+    '#\.md$#i',
+    '#\.patch$#i',
+    '#\.orig$#i',
+    '#\.bak$#i',
+    '#\.bak\.[^/]+$#i',
+    '#\.txt$#i',
+    '#(^|/)README[^/]*$#i',
+    '#(^|/)\.env(\.|$)#i',
+    '#\.key$#i',
+    '#\.secret$#i',
+];
+
 function shouldIgnore(string $relativePath, array $patterns): bool {
+    foreach ($patterns as $pattern) {
+        if (preg_match($pattern, $relativePath)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function matchesAnyPattern(string $relativePath, array $patterns): bool {
     foreach ($patterns as $pattern) {
         if (preg_match($pattern, $relativePath)) {
             return true;
@@ -146,6 +198,7 @@ $criticalFilePatterns = [
 // ------- scan files -------
 $files = [];
 $totalSize = 0;
+$blockedFiles = [];
 
 $iterator = new RecursiveIteratorIterator(
     new RecursiveDirectoryIterator($clientDir, FilesystemIterator::SKIP_DOTS),
@@ -160,6 +213,11 @@ foreach ($iterator as $file) {
     $relativePath = str_replace($clientDir . '/', '', $fullPath);
     // Normalize separators
     $relativePath = str_replace('\\', '/', $relativePath);
+
+    if (matchesAnyPattern($relativePath, $denyPatterns)) {
+        $blockedFiles[] = $relativePath;
+        continue;
+    }
 
     if (shouldIgnore($relativePath, $ignorePatterns)) {
         continue;
@@ -184,6 +242,16 @@ foreach ($iterator as $file) {
     if ($fileCount % 100 === 0) {
         fwrite(STDERR, "  Skanowanie... {$fileCount} plików\r");
     }
+}
+
+if ($blockedFiles !== [] && (($ENV['ALLOW_DEV_CLIENT_MANIFEST'] ?? '') !== '1')) {
+    sort($blockedFiles);
+    fwrite(STDERR, "BŁĄD: manifest klienta zawierałby pliki zabronione dla paczki gracza:\n");
+    foreach ($blockedFiles as $blockedFile) {
+        fwrite(STDERR, "  - {$blockedFile}\n");
+    }
+    fwrite(STDERR, "Usuń pliki z runtime albo ustaw ALLOW_DEV_CLIENT_MANIFEST=1 tylko dla środowiska dev.\n");
+    exit(1);
 }
 
 // Sort by path for deterministic output

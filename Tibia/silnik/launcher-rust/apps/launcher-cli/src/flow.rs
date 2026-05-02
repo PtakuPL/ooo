@@ -2,6 +2,7 @@
 //!
 //! Każdy krok loguje postęp i obsługuje błędy z kodami `LCH_*`.
 
+use std::fs;
 use std::path::{Path, PathBuf};
 
 use common_models::api_responses::LaunchTokenRequest;
@@ -15,7 +16,6 @@ use launcher_core::patcher::{self, PatchContext};
 use launcher_core::planner;
 use launcher_core::process_runner::{self, LaunchConfig};
 use launcher_core::repair;
-use launcher_core::serverlist_sync;
 use launcher_core::state;
 
 use crate::cli::CliArgs;
@@ -462,9 +462,7 @@ async fn run_update_flow(
 
     if plan.is_up_to_date {
         tracing::info!("Klient jest aktualny — brak zmian do pobrania.");
-
-        // Sync serverlist nawet jeśli nie ma update
-        sync_serverlist_if_needed(&manifest, client_dir);
+        quarantine_player_runtime_leftovers(client_dir, launcher_data)?;
 
         return Ok(manifest);
     }
@@ -575,6 +573,8 @@ async fn run_update_flow(
         return Err(36);
     }
 
+    quarantine_player_runtime_leftovers(client_dir, launcher_data)?;
+
     // 8. Finalizuj
     installed_state.update_transaction.status = UpdateTxStatus::Finalizing;
     let _ = state::save_state(&installed_state, &state_path);
@@ -599,8 +599,11 @@ async fn run_update_flow(
     // Cleanup staging/backup
     let _ = ctx.cleanup();
 
-    // Sync serverlist
-    sync_serverlist_if_needed(&manifest, client_dir);
+    if !manifest.servers.is_empty() {
+        tracing::info!(
+            "Pomijam generowanie serverlist w katalogu klienta; player runtime używa sealed config i API ticket"
+        );
+    }
 
     tracing::info!("Aktualizacja zakończona pomyślnie!");
     Ok(manifest)
@@ -642,21 +645,96 @@ async fn request_token(
     }
 }
 
-/// Sync serverlist jeśli manifest zawiera serwery.
-fn sync_serverlist_if_needed(manifest: &NormalizedManifest, client_dir: &Path) {
-    if manifest.servers.is_empty() {
-        return;
+fn quarantine_player_runtime_leftovers(
+    client_dir: &Path,
+    launcher_data: &Path,
+) -> Result<Vec<String>, i32> {
+    let mut candidates: Vec<PathBuf> = Vec::new();
+    let root_files = [
+        "serverlist.lua",
+        "serverlist.json",
+        "init_serverlist.lua",
+        "otclientrc.lua",
+        "otclientrc.lua.default",
+        "start_dev.bat",
+        "start_dev.sh",
+        "start_player.bat",
+        "start_player.sh",
+        "OTClient.sublime-project",
+        "README.md",
+        "README.txt",
+        "AUTHORS",
+        "BUGS",
+    ];
+
+    for name in root_files {
+        let path = client_dir.join(name);
+        if path.exists() {
+            candidates.push(PathBuf::from(name));
+        }
     }
 
-    let lua_path = client_dir.join("init_serverlist.lua");
-    if let Err(e) = serverlist_sync::sync_serverlist(&manifest.servers, &lua_path) {
-        tracing::warn!("Sync serverlist nie powiódł się: {}", e);
+    let root_dirs = [
+        "serverSIDE",
+        "data/styles.bak",
+        "data/locales/disabled",
+        "modules/.project",
+    ];
+    for name in root_dirs {
+        let path = client_dir.join(name);
+        if path.exists() {
+            candidates.push(PathBuf::from(name));
+        }
     }
 
-    let json_path = client_dir.join("serverlist.json");
-    if let Err(e) = serverlist_sync::sync_serverlist_json(&manifest.servers, &json_path) {
-        tracing::warn!("Sync serverlist JSON nie powiódł się: {}", e);
+    if candidates.is_empty() {
+        return Ok(Vec::new());
     }
+
+    let stamp = chrono_utc_now().replace([':', '-'], "");
+    let quarantine_dir = launcher_data
+        .join("quarantine")
+        .join(format!("player-leftovers-{stamp}"));
+    fs::create_dir_all(&quarantine_dir).map_err(|e| {
+        eprintln!("[BŁĄD] Nie mogę utworzyć kwarantanny player runtime: {e}");
+        37
+    })?;
+
+    let mut moved = Vec::new();
+    for rel in candidates {
+        let src = client_dir.join(&rel);
+        if !src.exists() {
+            continue;
+        }
+        let dst = quarantine_dir.join(&rel);
+        if let Some(parent) = dst.parent() {
+            fs::create_dir_all(parent).map_err(|e| {
+                eprintln!(
+                    "[BŁĄD] Nie mogę przygotować katalogu kwarantanny dla {}: {e}",
+                    rel.display()
+                );
+                37
+            })?;
+        }
+        fs::rename(&src, &dst).map_err(|e| {
+            eprintln!(
+                "[BŁĄD] Nie mogę przenieść legacy/dev pliku {} do kwarantanny: {e}",
+                rel.display()
+            );
+            37
+        })?;
+        moved.push(rel.to_string_lossy().to_string());
+    }
+
+    if !moved.is_empty() {
+        tracing::warn!(
+            "Player runtime cleanup quarantined {} leftover files: {:?}",
+            moved.len(),
+            moved
+        );
+    }
+
+    Ok(moved)
 }
 
 /// Prosta implementacja UTC now (bez dodatkowej zależności od chrono).

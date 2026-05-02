@@ -15,46 +15,19 @@ $loggedUserName = $isLoggedIn ? trim((string)($sessionAccount['name'] ?? '')) : 
 $loggedUserEmail = $isLoggedIn ? trim((string)($sessionAccount['email'] ?? '')) : '';
 session_write_close();
 
-$artifact = [
-    'version' => '-',
-    'releaseDate' => '-',
-    'sha256' => '',
-    'url' => $cfg['downloadPageUrl'],
-    'fallbackUrl' => $cfg['downloadPageUrl'],
-];
-
-$catalogErrorKey = '';
-$artifact['version'] = (string)($apiEnv['LAUNCHER_VERSION'] ?? $artifact['version']);
-$artifact['releaseDate'] = (string)($apiEnv['LAUNCHER_RELEASE_DATE'] ?? $artifact['releaseDate']);
-$artifact['sha256'] = strtolower(trim((string)($apiEnv['LAUNCHER_SHA256'] ?? '')));
-$artifact['url'] = (string)($apiEnv['LAUNCHER_DOWNLOAD_URL'] ?? $artifact['url']);
-$artifact['fallbackUrl'] = (string)($apiEnv['REDDAXE_LAUNCHER_FALLBACK_URL'] ?? $artifact['fallbackUrl']);
-
-if ($artifact['url'] === '') {
-    $artifact['url'] = $cfg['downloadPageUrl'];
+$launcherDownloadUrl = trim((string)($apiEnv['BOOTSTRAP_DOWNLOAD_URL_WIN'] ?? ''));
+if ($launcherDownloadUrl === '') {
+    $launcherDownloadUrl = trim((string)($apiEnv['LAUNCHER_DOWNLOAD_URL'] ?? ''));
 }
-if ($artifact['fallbackUrl'] === '') {
-    $artifact['fallbackUrl'] = $cfg['downloadPageUrl'];
+if ($launcherDownloadUrl === '') {
+    $launcherDownloadUrl = (string)$cfg['downloadPageUrl'];
 }
-if ($artifact['sha256'] !== '' && !preg_match('/^[a-f0-9]{64}$/', $artifact['sha256'])) {
-    $artifact['sha256'] = '';
-    $catalogErrorKey = 'index.warn.invalid_sha';
+$downloadPath = (string)(parse_url($launcherDownloadUrl, PHP_URL_PATH) ?? '');
+$downloadExt = strtolower((string)pathinfo($downloadPath, PATHINFO_EXTENSION));
+if ($downloadExt === '') {
+    $downloadExt = 'exe';
 }
-if (($apiEnv['LAUNCHER_VERSION'] ?? '') === '') {
-    $catalogErrorKey = 'index.warn.missing_version';
-}
-
-// Bootstrap launcher data from .env
-$bootstrap = [
-    'version' => (string)($apiEnv['BOOTSTRAP_VERSION'] ?? ''),
-    'url' => (string)($apiEnv['BOOTSTRAP_DOWNLOAD_URL_WIN'] ?? ''),
-    'sha256' => strtolower(trim((string)($apiEnv['BOOTSTRAP_SHA256_WIN'] ?? ''))),
-    'releaseDate' => (string)($apiEnv['BOOTSTRAP_RELEASE_DATE'] ?? ''),
-];
-if ($bootstrap['sha256'] !== '' && !preg_match('/^[a-f0-9]{64}$/', $bootstrap['sha256'])) {
-    $bootstrap['sha256'] = '';
-}
-$hasBootstrap = ($bootstrap['url'] !== '');
+$launcherDownloadName = 'launcher_reddaxe.' . $downloadExt;
 
 header('Content-Type: text/html; charset=utf-8');
 ?>
@@ -154,40 +127,6 @@ header('Content-Type: text/html; charset=utf-8');
             background: var(--accent-2);
             color: #fff;
         }
-        code.hash {
-            display: block;
-            margin-top: 8px;
-            padding: 8px;
-            border-radius: 8px;
-            background: #0f1722;
-            border: 1px solid var(--border);
-            font-size: .78rem;
-            overflow-wrap: anywhere;
-        }
-        .pill {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 999px;
-            background: rgba(76, 175, 80, .15);
-            border: 1px solid rgba(76, 175, 80, .5);
-            color: #b6f5bf;
-            font-size: .8rem;
-            margin-left: 8px;
-        }
-        .warn {
-            margin-top: 12px;
-            padding: 9px 12px;
-            border-radius: 8px;
-            border: 1px solid #8f6738;
-            background: #3a2c19;
-            color: #ffd9a6;
-            font-size: .88rem;
-        }
-        footer {
-            margin-top: 26px;
-            color: var(--muted);
-            font-size: .85rem;
-        }
     </style>
 </head>
 <body>
@@ -200,7 +139,7 @@ header('Content-Type: text/html; charset=utf-8');
         <?php endforeach; ?>
     </div>
 
-    <h1><?php echo reddaxe_e($cfg['brand']); ?> <span class="pill"><?php echo reddaxe_e(reddaxe_t('common.badge.precompile')); ?></span></h1>
+    <h1><?php echo reddaxe_e($cfg['brand']); ?></h1>
     <p class="lead"><?php echo reddaxe_e(reddaxe_t('index.lead')); ?></p>
 
     <div class="grid">
@@ -224,30 +163,13 @@ header('Content-Type: text/html; charset=utf-8');
 
         <section class="card">
             <h2><?php echo reddaxe_e(reddaxe_t('index.section.launcher.title')); ?></h2>
-            <p class="muted">
-                <?php echo reddaxe_e(reddaxe_t('index.section.launcher.version')); ?>: <strong><?php echo reddaxe_e($artifact['version']); ?></strong><br>
-                <?php echo reddaxe_e(reddaxe_t('index.section.launcher.date')); ?>: <strong><?php echo reddaxe_e($artifact['releaseDate']); ?></strong>
-            </p>
-            <?php if ($hasBootstrap): ?>
-                <p class="muted" style="margin-top:8px; font-size:.85rem;">
-                    <?php echo reddaxe_e(reddaxe_t('index.section.launcher.bootstrap_info')); ?>
-                </p>
-                <div class="button-row">
-                    <a class="btn" href="<?php echo reddaxe_e($bootstrap['url']); ?>"><?php echo reddaxe_e(reddaxe_t('index.section.launcher.download_bootstrap')); ?></a>
-                    <a class="btn secondary" href="<?php echo reddaxe_e($artifact['url']); ?>"><?php echo reddaxe_e(reddaxe_t('index.section.launcher.portable')); ?></a>
-                </div>
-                <?php if ($bootstrap['sha256'] !== ''): ?>
-                    <code class="hash">sha256 (bootstrap): <?php echo reddaxe_e($bootstrap['sha256']); ?></code>
-                <?php endif; ?>
-            <?php else: ?>
-                <div class="button-row">
-                    <a class="btn" href="<?php echo reddaxe_e($artifact['url']); ?>"><?php echo reddaxe_e(reddaxe_t('index.section.launcher.download')); ?></a>
-                    <a class="btn secondary" href="<?php echo reddaxe_e($artifact['fallbackUrl']); ?>"><?php echo reddaxe_e(reddaxe_t('index.section.launcher.fallback')); ?></a>
-                </div>
-            <?php endif; ?>
-            <?php if ($artifact['sha256'] !== ''): ?>
-                <code class="hash">sha256: <?php echo reddaxe_e($artifact['sha256']); ?></code>
-            <?php endif; ?>
+            <p class="muted"><?php echo reddaxe_e(reddaxe_t('index.section.launcher.player_info')); ?></p>
+            <div class="button-row">
+                <a class="btn" href="<?php echo reddaxe_e($launcherDownloadUrl); ?>" download="<?php echo reddaxe_e($launcherDownloadName); ?>">
+                    <?php echo reddaxe_e(reddaxe_t('index.section.launcher.download_bootstrap')); ?>
+                </a>
+            </div>
+            <p class="muted" style="margin-top:10px; font-size:.85rem;"><?php echo reddaxe_e(reddaxe_t('index.section.launcher.after_download')); ?></p>
         </section>
 
         <section class="card">
@@ -262,13 +184,6 @@ header('Content-Type: text/html; charset=utf-8');
         </section>
     </div>
 
-    <?php if ($catalogErrorKey !== ''): ?>
-        <div class="warn"><?php echo reddaxe_e(reddaxe_t($catalogErrorKey)); ?></div>
-    <?php endif; ?>
-
-    <footer>
-        <?php echo reddaxe_e(reddaxe_t('index.footer.catalog_api')); ?>: <code><?php echo reddaxe_e($cfg['installerCatalogApiUrl']); ?></code>
-    </footer>
 </div>
 </body>
 </html>

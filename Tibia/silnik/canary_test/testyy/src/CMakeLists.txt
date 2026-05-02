@@ -30,6 +30,7 @@ option(OTC_ENABLE_HTTPLIB "Enable cpp-httplib (HTTP server/client)" ON)
 option(OTC_ENABLE_GMP "Enable GMP (multiprecision library)" ON)
 option(OTC_ENABLE_OPENSSL "Enable OpenSSL (cryptographic library)" ON)
 option(OTC_ENABLE_ABSEIL "Enable Abseil (Google C++ library)" ON)
+option(OTCLIENT_PLAYER_BUILD "Build sealed player runtime; ignores OTC_DEV_MODE" OFF)
 
 # *****************************************************************************
 # Cmake Features
@@ -237,6 +238,13 @@ endif()
 add_definitions(-DCLIENT)
 add_definitions(${FRAMEWORK_DEFINITIONS})
 target_compile_definitions(${PROJECT_NAME} PRIVATE "VERSION=${VERSION}")
+
+if(OTCLIENT_PLAYER_BUILD)
+  target_compile_definitions(${PROJECT_NAME} PRIVATE OTCLIENT_PLAYER_BUILD=1)
+  log_option_enabled("sealed player runtime")
+else()
+  log_option_disabled("sealed player runtime")
+endif()
 
 # === Build options ===
 # Use target_compile_definitions instead of add_definitions for string defines.

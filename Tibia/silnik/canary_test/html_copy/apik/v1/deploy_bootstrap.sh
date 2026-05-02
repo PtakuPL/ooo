@@ -14,8 +14,8 @@
 set -euo pipefail
 
 # ─── Konfiguracja ───
-DEPLOY_DIR="/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/files/bootstrap"
-ENV_FILE="/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/apik/v1/.env"
+DEPLOY_DIR="${DEPLOY_DIR:-/var/www/html/files/bootstrap}"
+ENV_FILE="${ENV_FILE:-/var/www/html/apik/v1/.env}"
 
 # ─── Argumenty ───
 VERSION="${1:-}"
@@ -83,12 +83,14 @@ if [[ -f "$ENV_FILE" ]]; then
     update_env_key "BOOTSTRAP_VERSION" "$VERSION"
     update_env_key "BOOTSTRAP_DOWNLOAD_URL_WIN" "/files/bootstrap/launcher-bootstrap-windows-x86_64.exe"
     update_env_key "BOOTSTRAP_SHA256_WIN" "$SHA_WIN"
+    update_env_key "BOOTSTRAP_SIZE_WIN" "$SIZE_WIN"
     update_env_key "BOOTSTRAP_RELEASE_DATE" "$(date +%Y-%m-%d)"
     update_env_key "BOOTSTRAP_NOTES" "Bootstrap Launcher v${VERSION}"
 
     if [[ -n "$LINUX_BINARY" && -f "$LINUX_BINARY" ]]; then
         update_env_key "BOOTSTRAP_DOWNLOAD_URL_LINUX" "/files/bootstrap/launcher-bootstrap-linux-x86_64"
         update_env_key "BOOTSTRAP_SHA256_LINUX" "$SHA_LINUX"
+        update_env_key "BOOTSTRAP_SIZE_LINUX" "$SIZE_LINUX"
     fi
 
     echo "✅ .env zaktualizowany"
@@ -104,5 +106,5 @@ echo "  Katalog:  ${DEPLOY_DIR}"
 echo "═══════════════════════════════════════════"
 echo ""
 echo "Następne kroki:"
-echo "  1. Sprawdź stronę: https://reddaxe.pl/portal/download.php"
-echo "  2. Sprawdź API:    curl -s https://reddaxe.pl/apik/v1/installer-catalog.php?type=bootstrap | jq"
+echo "  1. Sprawdź stronę: https://tibia.reddaxe.pl/portal/download.php"
+echo "  2. Sprawdź API:    curl -s https://tibia.reddaxe.pl/apik/v1/installer-catalog.php?type=bootstrap | jq"

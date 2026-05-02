@@ -13,7 +13,9 @@ $catalogError = '';
 
 if (is_file($catalogPath)) {
     // Wywolaj przez wewnetrzny HTTP (ten sam serwer) aby uzyskac odpowiedz JSON
-    $catalogUrl = 'https://tibia.reddaxe.pl/apik/v1/installer-catalog.php';
+    $host = $_SERVER['HTTP_HOST'] ?? '127.0.0.1';
+    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    $catalogUrl = $scheme . '://' . $host . '/apik/v1/installer-catalog.php?type=all';
     $ctx = stream_context_create([
         'ssl' => ['verify_peer' => false, 'verify_peer_name' => false],
         'http' => ['timeout' => 5],

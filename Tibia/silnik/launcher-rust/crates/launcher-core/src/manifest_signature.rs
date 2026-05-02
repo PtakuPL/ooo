@@ -185,7 +185,7 @@ fn verify_ed25519_placeholder(message: &[u8], signature: &[u8], public_key: &[u8
 
 /// Dekoduje hex string na bajty.
 fn hex_decode(hex: &str) -> Result<Vec<u8>, String> {
-    if hex.len() % 2 != 0 {
+    if !hex.len().is_multiple_of(2) {
         return Err("Hex string has odd length".to_string());
     }
     (0..hex.len())

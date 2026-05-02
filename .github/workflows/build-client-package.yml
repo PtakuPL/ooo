@@ -114,7 +114,20 @@ jobs:
           mkdir -p "$PKG"
 
           # ── 1. Compiled binary ──
-          cp build/otclient.exe "$PKG/" 2>/dev/null || cp build/Release/otclient.exe "$PKG/" 2>/dev/null || cp build/RelWithDebInfo/otclient.exe "$PKG/" || { echo "ERROR: otclient.exe not found"; exit 1; }
+          CLIENT_EXE=""
+          for candidate in otclient.exe build/otclient.exe build/Release/otclient.exe build/RelWithDebInfo/otclient.exe; do
+            if [ -f "$candidate" ]; then
+              CLIENT_EXE="$candidate"
+              break
+            fi
+          done
+          if [ -z "$CLIENT_EXE" ]; then
+            echo "ERROR: otclient.exe not found"
+            find . -maxdepth 3 -iname 'otclient*.exe' -print 2>/dev/null || true
+            exit 1
+          fi
+          echo "Using client executable: $CLIENT_EXE"
+          cp "$CLIENT_EXE" "$PKG/otclient.exe"
 
           # ── 2. Runtime DLLs (from build output or vcpkg installed) ──
           # Copy DLLs co-located with exe first, then root DLLs as fallback
@@ -443,7 +456,20 @@ jobs:
           mkdir -p "$PKG"
 
           # ── 1. Compiled binary ──
-          cp build/otclient "$PKG/" || { echo "ERROR: otclient binary not found"; exit 1; }
+          CLIENT_BIN=""
+          for candidate in otclient build/otclient build/Release/otclient build/RelWithDebInfo/otclient; do
+            if [ -f "$candidate" ]; then
+              CLIENT_BIN="$candidate"
+              break
+            fi
+          done
+          if [ -z "$CLIENT_BIN" ]; then
+            echo "ERROR: otclient binary not found"
+            find . -maxdepth 3 -name 'otclient' -type f -print 2>/dev/null || true
+            exit 1
+          fi
+          echo "Using client executable: $CLIENT_BIN"
+          cp "$CLIENT_BIN" "$PKG/otclient"
           chmod +x "$PKG/otclient"
 
           # ── 2. Shared libraries (if any from build) ──

@@ -3,11 +3,11 @@
   "php.accounts.text2": "карта-информация о карте",
   "php.accounts.text3": "acc_datatable table table-striped table-bordered table-responsive d-md-table",
   "php.accounts.text4": "БТН БТН-Успех БТН-СМ",
-  "php.accounts.text5": "fas fa-pencil-alt",
+  "php.accounts.text5": "фас фа-пенцил-алт",
   "php.createcharacter.text1": "Ошибка. Не могу создать персонажа. Вероятно, проблема с базой данных. Пожалуйста, повторите попытку позже или свяжитесь с администратором.",
   "php.exception.text1": "Не удалось открыть еррор.лог для записи… Подробности не были сохранены… Убедитесь, что сйстем/логс доступен для записи веб‑серверу, затем обновите страницу.",
   "php.exception.text2": "$message<br/><br/>",
-  "php.forum.text1": ". FORUM_TABLE_PREFIX .",
+  "php.forum.text1": ". ФОРУМ_ТАБЛЕ_ПРЕФИКс .",
   "php.index.text1": " . BASE_URL . install",
   "php.mailer.text1": "Successfully mailed <strong>$mail_to</strong>",
   "php.mailer.text2": "Еррор виле сендинг майл то <стронг>$майл_то</стронг>. Море инфо кан бе фунд ин сйстем/логс/майлер-еррор.лог",
@@ -34,7 +34,7 @@
   "php.plugins.text3": ", и у вас установлена версия",
   "php.plugins.text4": "для установки.",
   "php.plugins.text5": "должно существовать в базе данных.",
-  "php.rfc6238.text1": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
+  "php.rfc6238.text1": "234567КВЕРТЮИОПАСДФГДжКЛЗКсКВБНМ",
   "php.rfc6238.text2": "from $counter <br/>",
   "php.rfc6238.text3": "Prior to HMAC calculation pad with zero on the left until 8 characters.<br/>",
   "php.rfc6238.text4": "преобразование шестнадцатеричного хэша в символы<br/>",
@@ -57,5 +57,5 @@
   "php.validator.text2": "Имя персонажа слишком длинное. Макс. длина <b>$максЛенгт</b> символов.",
   "php.validator.text3": "Неверный формат имени. Используйте только A-Z, пробелы и точку.",
   "php.validator.text4": "Неверный формат имени. Используйте только A-Z, пробелы и точку.",
-  "php.validator.text5": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-"
+  "php.validator.text5": "квертюиопасдфгджклзксквбнмКВЕРТЮИОПАСДФГДжКЛЗКсКВБНМ0123456789-"
 }

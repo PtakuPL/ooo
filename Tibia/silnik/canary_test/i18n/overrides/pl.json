@@ -1,8 +1,0 @@
-{
-  "_comment": "Ręczne nadpisania tłumaczeń PL. Worker automatycznie stosuje te wartości jako priorytet.",
-  "otclient_modules.createaccount_otui.tr_39": "Rozpocznij przygodę",
-  "otclient_modules.entergame.tr_17": "Kontynuuj przygodę",
-  "spell.azerus_soulfire_1.name": "Ogień duszy Azerusa 1",
-  "spell.quara_constrictor_electrify.name": "Elektryzacja Quara Constrictora",
-  "spell.lava_golem_soulfire2.name": "Ogień duszy lawowego golema 2"
-}
